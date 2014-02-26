@@ -1,0 +1,173 @@
+Loading db file '/s/synopsys-2012_06_27/@sys/G-2012.06/libraries/syn/gtech.db'
+Loading db file '/s/synopsys-2012_06_27/@sys/G-2012.06/libraries/syn/standard.sldb'
+  Loading link library 'saed32rvt_tt1p05v25c'
+  Loading link library 'gtech'
+Running PRESTO HDLC
+Presto compilation completed successfully.
+Elaborated 1 design.
+Current design is now 'lsu'.
+Information: Building the design 'PS_flops_issue_lsu'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'lsu_rd_stage_router'. (HDL-193)
+
+Statistics for case statements in always block at line 91 in file
+	'../../../src/verilog/rtl/lsu/build/lsu_rd_stage_router.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            93            |    auto/auto     |
+===============================================
+
+Statistics for case statements in always block at line 133 in file
+	'../../../src/verilog/rtl/lsu/build/lsu_rd_stage_router.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           135            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'PS_flops_rd_ex_lsu'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'lsu_addr_calculator'. (HDL-193)
+
+Statistics for case statements in always block at line 33 in file
+	'../../../src/verilog/rtl/lsu/build/lsu_addr_calculator.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            35            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'PS_flops_ex_mem_lsu'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'PS_flops_mem_wb_lsu'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'lsu_in_flight_counter'. (HDL-193)
+Warning:  ../../../src/verilog/rtl/lsu/build/lsu_in_flight_counter.v:72: signed to unsigned conversion occurs. (VER-318)
+
+Statistics for case statements in always block at line 38 in file
+	'../../../src/verilog/rtl/lsu/build/lsu_in_flight_counter.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            40            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'lsu_transit_table'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'lsu_wb_router'. (HDL-193)
+Warning:  ../../../src/verilog/rtl/lsu/build/lsu_wb_router.v:68: DEFAULT branch of CASE statement cannot be reached. (ELAB-311)
+
+Statistics for case statements in always block at line 67 in file
+	'../../../src/verilog/rtl/lsu/build/lsu_wb_router.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            68            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'dff'. (HDL-193)
+
+Inferred memory devices in process
+	in routine dff line 12 in file
+		'../../../src/verilog/rtl/common/build/dff.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      state_reg      | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'dff_en'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'mtbuf_addr_calc'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'ds_addr_calc'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'reg_40xX_1r_1w' instantiated from design 'lsu_transit_table' with
+	the parameters "12". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'reg_40xX_1r_1w' instantiated from design 'lsu_transit_table' with
+	the parameters "64". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'reg_40xX_1r_1w' instantiated from design 'lsu_transit_table' with
+	the parameters "1". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'reg_40xX_1r_1w' instantiated from design 'lsu_transit_table' with
+	the parameters "32". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'reg_40xX_1r_1w' instantiated from design 'lsu_transit_table' with
+	the parameters "4". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'mux_40xX_to_1xX' instantiated from design 'reg_40xX_1r_1w_WIDTH12' with
+	the parameters "12". (HDL-193)
+
+Statistics for case statements in always block at line 10 in file
+	'../../../src/verilog/rtl/common/build/mux_40xX_to_1xX.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            11            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'decoder_6_to_40'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'register' instantiated from design 'reg_40xX_1r_1w_WIDTH12' with
+	the parameters "12". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'mux_40xX_to_1xX' instantiated from design 'reg_40xX_1r_1w_WIDTH64' with
+	the parameters "64". (HDL-193)
+
+Statistics for case statements in always block at line 10 in file
+	'../../../src/verilog/rtl/common/build/mux_40xX_to_1xX.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            11            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'register' instantiated from design 'reg_40xX_1r_1w_WIDTH64' with
+	the parameters "64". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'mux_40xX_to_1xX' instantiated from design 'reg_40xX_1r_1w_WIDTH1' with
+	the parameters "1". (HDL-193)
+
+Statistics for case statements in always block at line 10 in file
+	'../../../src/verilog/rtl/common/build/mux_40xX_to_1xX.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            11            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'register' instantiated from design 'reg_40xX_1r_1w_WIDTH1' with
+	the parameters "1". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'mux_40xX_to_1xX' instantiated from design 'reg_40xX_1r_1w_WIDTH32' with
+	the parameters "32". (HDL-193)
+
+Statistics for case statements in always block at line 10 in file
+	'../../../src/verilog/rtl/common/build/mux_40xX_to_1xX.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            11            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'register' instantiated from design 'reg_40xX_1r_1w_WIDTH32' with
+	the parameters "32". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'mux_40xX_to_1xX' instantiated from design 'reg_40xX_1r_1w_WIDTH4' with
+	the parameters "4". (HDL-193)
+
+Statistics for case statements in always block at line 10 in file
+	'../../../src/verilog/rtl/common/build/mux_40xX_to_1xX.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            11            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'register' instantiated from design 'reg_40xX_1r_1w_WIDTH4' with
+	the parameters "4". (HDL-193)
+Presto compilation completed successfully.
+1

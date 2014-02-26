@@ -1,0 +1,383 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 5
+Design : salu
+Version: G-2012.06
+Date   : Thu May 16 12:48:48 2013
+****************************************
+
+Operating Conditions: tt1p05v25c   Library: saed32rvt_tt1p05v25c
+Wire Load Model Mode: enclosed
+
+  Startpoint: source_input/d1[193]/state_reg
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: writeback/d1[135]/state_reg
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  salu               16000                 saed32rvt_tt1p05v25c
+  salu_DW02_mult_0   8000                  saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                               0.000000   0.000000
+  clock network delay (ideal)                         0.000000   0.000000
+  source_input/d1[193]/state_reg/CLK (DFFARX1_RVT)    0.000000   0.000000 r
+  source_input/d1[193]/state_reg/Q (DFFARX1_RVT)      0.090497   0.090497 f
+  U1719/Y (NBUFFX2_RVT)                               0.059820   0.150317 f
+  r242/A[1] (salu_DW02_mult_0)                        0.000000   0.150317 f
+  r242/U65/Y (NBUFFX2_RVT)                            0.081989   0.232306 f
+  r242/U488/Y (AND2X1_RVT)                            0.060128   0.292434 f
+  r242/U134/Y (XOR2X1_RVT)                            0.096710   0.389144 r
+  r242/S2_2_29/S (FADDX1_RVT)                         0.113388   0.502532 f
+  r242/S2_3_28/S (FADDX1_RVT)                         0.113998   0.616530 r
+  r242/S2_4_27/S (FADDX1_RVT)                         0.113180   0.729709 f
+  r242/S2_5_26/S (FADDX1_RVT)                         0.114016   0.843726 r
+  r242/S2_6_25/S (FADDX1_RVT)                         0.113180   0.956905 f
+  r242/S2_7_24/S (FADDX1_RVT)                         0.114016   1.070922 r
+  r242/S2_8_23/S (FADDX1_RVT)                         0.113180   1.184101 f
+  r242/S2_9_22/S (FADDX1_RVT)                         0.114016   1.298118 r
+  r242/S2_10_21/S (FADDX1_RVT)                        0.113179   1.411297 f
+  r242/S2_11_20/S (FADDX1_RVT)                        0.114016   1.525313 r
+  r242/S2_12_19/S (FADDX1_RVT)                        0.113180   1.638494 f
+  r242/S2_13_18/S (FADDX1_RVT)                        0.114016   1.752510 r
+  r242/S2_14_17/S (FADDX1_RVT)                        0.113179   1.865689 f
+  r242/S2_15_16/S (FADDX1_RVT)                        0.114016   1.979705 r
+  r242/S2_16_15/S (FADDX1_RVT)                        0.113180   2.092885 f
+  r242/S2_17_14/S (FADDX1_RVT)                        0.114016   2.206901 r
+  r242/S2_18_13/S (FADDX1_RVT)                        0.113179   2.320081 f
+  r242/S2_19_12/S (FADDX1_RVT)                        0.114016   2.434097 r
+  r242/S2_20_11/S (FADDX1_RVT)                        0.113179   2.547276 f
+  r242/S2_21_10/S (FADDX1_RVT)                        0.114016   2.661293 r
+  r242/S2_22_9/S (FADDX1_RVT)                         0.113179   2.774472 f
+  r242/S2_23_8/S (FADDX1_RVT)                         0.114016   2.888489 r
+  r242/S2_24_7/S (FADDX1_RVT)                         0.113179   3.001668 f
+  r242/S2_25_6/S (FADDX1_RVT)                         0.114016   3.115684 r
+  r242/S2_26_5/S (FADDX1_RVT)                         0.113179   3.228864 f
+  r242/S2_27_4/S (FADDX1_RVT)                         0.114016   3.342880 r
+  r242/S2_28_3/S (FADDX1_RVT)                         0.113181   3.456061 f
+  r242/S2_29_2/S (FADDX1_RVT)                         0.114016   3.570077 r
+  r242/S2_30_1/S (FADDX1_RVT)                         0.113180   3.683257 f
+  r242/S4_0/S (FADDX1_RVT)                            0.111965   3.795222 r
+  r242/PRODUCT[31] (salu_DW02_mult_0)                 0.000000   3.795222 r
+  U833/Y (AO22X1_RVT)                                 0.048451   3.843673 r
+  U828/Y (OR3X1_RVT)                                  0.050058   3.893731 r
+  U827/Y (AO222X1_RVT)                                0.083452   3.977183 r
+  U826/Y (OR2X1_RVT)                                  0.046241   4.023423 r
+  U1620/Y (OR4X1_RVT)                                 0.071403   4.094826 r
+  U58/Y (NOR4X1_RVT)                                  0.072293   4.167119 f
+  U818/Y (NAND2X0_RVT)                                0.039445   4.206564 r
+  U1900/Y (INVX1_RVT)                                 0.028089   4.234653 f
+  U817/Y (NAND4X0_RVT)                                0.031855   4.266508 r
+  U57/Y (NOR4X1_RVT)                                  0.064867   4.331375 f
+  U816/Y (NAND4X0_RVT)                                0.037505   4.368880 r
+  U795/Y (AO221X1_RVT)                                0.061786   4.430666 r
+  U791/Y (AO221X1_RVT)                                0.058863   4.489529 r
+  writeback/d1[135]/state_reg/D (DFFARX1_RVT)         0.010355   4.499884 r
+  data arrival time                                              4.499884
+
+  clock clk (rise edge)                               8.000000   8.000000
+  clock network delay (ideal)                         0.000000   8.000000
+  writeback/d1[135]/state_reg/CLK (DFFARX1_RVT)       0.000000   8.000000 r
+  library setup time                                  -0.032438  7.967562
+  data required time                                             7.967562
+  --------------------------------------------------------------------------
+  data required time                                             7.967562
+  data arrival time                                              -4.499884
+  --------------------------------------------------------------------------
+  slack (MET)                                                    3.467678
+
+
+  Startpoint: source_input/d1[193]/state_reg
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: writeback/d1[167]/state_reg
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  salu               16000                 saed32rvt_tt1p05v25c
+  salu_DW02_mult_0   8000                  saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                               0.000000   0.000000
+  clock network delay (ideal)                         0.000000   0.000000
+  source_input/d1[193]/state_reg/CLK (DFFARX1_RVT)    0.000000   0.000000 r
+  source_input/d1[193]/state_reg/Q (DFFARX1_RVT)      0.090497   0.090497 f
+  U1719/Y (NBUFFX2_RVT)                               0.059820   0.150317 f
+  r242/A[1] (salu_DW02_mult_0)                        0.000000   0.150317 f
+  r242/U65/Y (NBUFFX2_RVT)                            0.081989   0.232306 f
+  r242/U488/Y (AND2X1_RVT)                            0.060128   0.292434 f
+  r242/U134/Y (XOR2X1_RVT)                            0.096710   0.389144 r
+  r242/S2_2_29/S (FADDX1_RVT)                         0.113388   0.502532 f
+  r242/S2_3_28/S (FADDX1_RVT)                         0.113998   0.616530 r
+  r242/S2_4_27/S (FADDX1_RVT)                         0.113180   0.729709 f
+  r242/S2_5_26/S (FADDX1_RVT)                         0.114016   0.843726 r
+  r242/S2_6_25/S (FADDX1_RVT)                         0.113180   0.956905 f
+  r242/S2_7_24/S (FADDX1_RVT)                         0.114016   1.070922 r
+  r242/S2_8_23/S (FADDX1_RVT)                         0.113180   1.184101 f
+  r242/S2_9_22/S (FADDX1_RVT)                         0.114016   1.298118 r
+  r242/S2_10_21/S (FADDX1_RVT)                        0.113179   1.411297 f
+  r242/S2_11_20/S (FADDX1_RVT)                        0.114016   1.525313 r
+  r242/S2_12_19/S (FADDX1_RVT)                        0.113180   1.638494 f
+  r242/S2_13_18/S (FADDX1_RVT)                        0.114016   1.752510 r
+  r242/S2_14_17/S (FADDX1_RVT)                        0.113179   1.865689 f
+  r242/S2_15_16/S (FADDX1_RVT)                        0.114016   1.979705 r
+  r242/S2_16_15/S (FADDX1_RVT)                        0.113180   2.092885 f
+  r242/S2_17_14/S (FADDX1_RVT)                        0.114016   2.206901 r
+  r242/S2_18_13/S (FADDX1_RVT)                        0.113179   2.320081 f
+  r242/S2_19_12/S (FADDX1_RVT)                        0.114016   2.434097 r
+  r242/S2_20_11/S (FADDX1_RVT)                        0.113179   2.547276 f
+  r242/S2_21_10/S (FADDX1_RVT)                        0.114016   2.661293 r
+  r242/S2_22_9/S (FADDX1_RVT)                         0.113179   2.774472 f
+  r242/S2_23_8/S (FADDX1_RVT)                         0.114016   2.888489 r
+  r242/S2_24_7/S (FADDX1_RVT)                         0.113179   3.001668 f
+  r242/S2_25_6/S (FADDX1_RVT)                         0.114016   3.115684 r
+  r242/S2_26_5/S (FADDX1_RVT)                         0.113179   3.228864 f
+  r242/S2_27_4/S (FADDX1_RVT)                         0.114016   3.342880 r
+  r242/S2_28_3/S (FADDX1_RVT)                         0.113181   3.456061 f
+  r242/S2_29_2/S (FADDX1_RVT)                         0.114016   3.570077 r
+  r242/S2_30_1/S (FADDX1_RVT)                         0.113180   3.683257 f
+  r242/S4_0/S (FADDX1_RVT)                            0.111965   3.795222 r
+  r242/PRODUCT[31] (salu_DW02_mult_0)                 0.000000   3.795222 r
+  U833/Y (AO22X1_RVT)                                 0.048451   3.843673 r
+  U828/Y (OR3X1_RVT)                                  0.050058   3.893731 r
+  U827/Y (AO222X1_RVT)                                0.083452   3.977183 r
+  U826/Y (OR2X1_RVT)                                  0.046241   4.023423 r
+  writeback/d1[167]/state_reg/D (DFFARX1_RVT)         0.011889   4.035313 r
+  data arrival time                                              4.035313
+
+  clock clk (rise edge)                               8.000000   8.000000
+  clock network delay (ideal)                         0.000000   8.000000
+  writeback/d1[167]/state_reg/CLK (DFFARX1_RVT)       0.000000   8.000000 r
+  library setup time                                  -0.027680  7.972320
+  data required time                                             7.972320
+  --------------------------------------------------------------------------
+  data required time                                             7.972320
+  data arrival time                                              -4.035313
+  --------------------------------------------------------------------------
+  slack (MET)                                                    3.937007
+
+
+  Startpoint: source_input/d1[193]/state_reg
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: writeback/d1[166]/state_reg
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  salu               16000                 saed32rvt_tt1p05v25c
+  salu_DW02_mult_0   8000                  saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                               0.000000   0.000000
+  clock network delay (ideal)                         0.000000   0.000000
+  source_input/d1[193]/state_reg/CLK (DFFARX1_RVT)    0.000000   0.000000 r
+  source_input/d1[193]/state_reg/Q (DFFARX1_RVT)      0.092580   0.092580 r
+  U1719/Y (NBUFFX2_RVT)                               0.058934   0.151513 r
+  r242/A[1] (salu_DW02_mult_0)                        0.000000   0.151513 r
+  r242/U65/Y (NBUFFX2_RVT)                            0.077973   0.229487 r
+  r242/U490/Y (AND2X1_RVT)                            0.056884   0.286371 r
+  r242/U132/Y (XOR2X1_RVT)                            0.093542   0.379913 f
+  r242/S2_2_28/S (FADDX1_RVT)                         0.114217   0.494129 r
+  r242/S2_3_27/S (FADDX1_RVT)                         0.113180   0.607309 f
+  r242/S2_4_26/S (FADDX1_RVT)                         0.114016   0.721325 r
+  r242/S2_5_25/S (FADDX1_RVT)                         0.113180   0.834505 f
+  r242/S2_6_24/S (FADDX1_RVT)                         0.114016   0.948521 r
+  r242/S2_7_23/S (FADDX1_RVT)                         0.113179   1.061701 f
+  r242/S2_8_22/S (FADDX1_RVT)                         0.114016   1.175717 r
+  r242/S2_9_21/S (FADDX1_RVT)                         0.113179   1.288896 f
+  r242/S2_10_20/S (FADDX1_RVT)                        0.114016   1.402913 r
+  r242/S2_11_19/S (FADDX1_RVT)                        0.113180   1.516093 f
+  r242/S2_12_18/S (FADDX1_RVT)                        0.114016   1.630109 r
+  r242/S2_13_17/S (FADDX1_RVT)                        0.113179   1.743289 f
+  r242/S2_14_16/S (FADDX1_RVT)                        0.114016   1.857305 r
+  r242/S2_15_15/S (FADDX1_RVT)                        0.113179   1.970484 f
+  r242/S2_16_14/S (FADDX1_RVT)                        0.114016   2.084501 r
+  r242/S2_17_13/S (FADDX1_RVT)                        0.113179   2.197680 f
+  r242/S2_18_12/S (FADDX1_RVT)                        0.114016   2.311696 r
+  r242/S2_19_11/S (FADDX1_RVT)                        0.113179   2.424876 f
+  r242/S2_20_10/S (FADDX1_RVT)                        0.114016   2.538892 r
+  r242/S2_21_9/S (FADDX1_RVT)                         0.113179   2.652071 f
+  r242/S2_22_8/S (FADDX1_RVT)                         0.114016   2.766088 r
+  r242/S2_23_7/S (FADDX1_RVT)                         0.113179   2.879267 f
+  r242/S2_24_6/S (FADDX1_RVT)                         0.114016   2.993284 r
+  r242/S2_25_5/S (FADDX1_RVT)                         0.113179   3.106463 f
+  r242/S2_26_4/S (FADDX1_RVT)                         0.114016   3.220479 r
+  r242/S2_27_3/S (FADDX1_RVT)                         0.113179   3.333659 f
+  r242/S2_28_2/S (FADDX1_RVT)                         0.114016   3.447675 r
+  r242/S2_29_1/S (FADDX1_RVT)                         0.113180   3.560855 f
+  r242/S1_30_0/S (FADDX1_RVT)                         0.111784   3.672640 r
+  r242/PRODUCT[30] (salu_DW02_mult_0)                 0.000000   3.672640 r
+  U841/Y (AO222X1_RVT)                                0.083744   3.756384 r
+  U840/Y (OR3X1_RVT)                                  0.048653   3.805037 r
+  U839/Y (AO222X1_RVT)                                0.083453   3.888490 r
+  U838/Y (OR2X1_RVT)                                  0.046124   3.934615 r
+  writeback/d1[166]/state_reg/D (DFFARX1_RVT)         0.011890   3.946505 r
+  data arrival time                                              3.946505
+
+  clock clk (rise edge)                               8.000000   8.000000
+  clock network delay (ideal)                         0.000000   8.000000
+  writeback/d1[166]/state_reg/CLK (DFFARX1_RVT)       0.000000   8.000000 r
+  library setup time                                  -0.027604  7.972396
+  data required time                                             7.972396
+  --------------------------------------------------------------------------
+  data required time                                             7.972396
+  data arrival time                                              -3.946505
+  --------------------------------------------------------------------------
+  slack (MET)                                                    4.025892
+
+
+  Startpoint: source_input/d1[193]/state_reg
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: writeback/d1[165]/state_reg
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  salu               16000                 saed32rvt_tt1p05v25c
+  salu_DW02_mult_0   8000                  saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                               0.000000   0.000000
+  clock network delay (ideal)                         0.000000   0.000000
+  source_input/d1[193]/state_reg/CLK (DFFARX1_RVT)    0.000000   0.000000 r
+  source_input/d1[193]/state_reg/Q (DFFARX1_RVT)      0.090497   0.090497 f
+  U1719/Y (NBUFFX2_RVT)                               0.059820   0.150317 f
+  r242/A[1] (salu_DW02_mult_0)                        0.000000   0.150317 f
+  r242/U65/Y (NBUFFX2_RVT)                            0.081989   0.232306 f
+  r242/U491/Y (AND2X1_RVT)                            0.060128   0.292434 f
+  r242/U133/Y (XOR2X1_RVT)                            0.096028   0.388462 r
+  r242/S2_2_27/S (FADDX1_RVT)                         0.113378   0.501840 f
+  r242/S2_3_26/S (FADDX1_RVT)                         0.113998   0.615838 r
+  r242/S2_4_25/S (FADDX1_RVT)                         0.113180   0.729018 f
+  r242/S2_5_24/S (FADDX1_RVT)                         0.114016   0.843034 r
+  r242/S2_6_23/S (FADDX1_RVT)                         0.113180   0.956214 f
+  r242/S2_7_22/S (FADDX1_RVT)                         0.114016   1.070230 r
+  r242/S2_8_21/S (FADDX1_RVT)                         0.113179   1.183409 f
+  r242/S2_9_20/S (FADDX1_RVT)                         0.114016   1.297426 r
+  r242/S2_10_19/S (FADDX1_RVT)                        0.113180   1.410606 f
+  r242/S2_11_18/S (FADDX1_RVT)                        0.114016   1.524622 r
+  r242/S2_12_17/S (FADDX1_RVT)                        0.113179   1.637802 f
+  r242/S2_13_16/S (FADDX1_RVT)                        0.114016   1.751818 r
+  r242/S2_14_15/S (FADDX1_RVT)                        0.113179   1.864997 f
+  r242/S2_15_14/S (FADDX1_RVT)                        0.114016   1.979013 r
+  r242/S2_16_13/S (FADDX1_RVT)                        0.113179   2.092193 f
+  r242/S2_17_12/S (FADDX1_RVT)                        0.114016   2.206209 r
+  r242/S2_18_11/S (FADDX1_RVT)                        0.113179   2.319389 f
+  r242/S2_19_10/S (FADDX1_RVT)                        0.114016   2.433405 r
+  r242/S2_20_9/S (FADDX1_RVT)                         0.113179   2.546584 f
+  r242/S2_21_8/S (FADDX1_RVT)                         0.114016   2.660601 r
+  r242/S2_22_7/S (FADDX1_RVT)                         0.113179   2.773780 f
+  r242/S2_23_6/S (FADDX1_RVT)                         0.114016   2.887796 r
+  r242/S2_24_5/S (FADDX1_RVT)                         0.113179   3.000976 f
+  r242/S2_25_4/S (FADDX1_RVT)                         0.114016   3.114992 r
+  r242/S2_26_3/S (FADDX1_RVT)                         0.113179   3.228172 f
+  r242/S2_27_2/S (FADDX1_RVT)                         0.114016   3.342188 r
+  r242/S2_28_1/S (FADDX1_RVT)                         0.113181   3.455369 f
+  r242/S1_29_0/S (FADDX1_RVT)                         0.111784   3.567153 r
+  r242/PRODUCT[29] (salu_DW02_mult_0)                 0.000000   3.567153 r
+  U851/Y (AO222X1_RVT)                                0.083744   3.650897 r
+  U850/Y (OR3X1_RVT)                                  0.048653   3.699550 r
+  U849/Y (AO222X1_RVT)                                0.083454   3.783004 r
+  U848/Y (OR2X1_RVT)                                  0.046036   3.829040 r
+  writeback/d1[165]/state_reg/D (DFFARX1_RVT)         0.011890   3.840930 r
+  data arrival time                                              3.840930
+
+  clock clk (rise edge)                               8.000000   8.000000
+  clock network delay (ideal)                         0.000000   8.000000
+  writeback/d1[165]/state_reg/CLK (DFFARX1_RVT)       0.000000   8.000000 r
+  library setup time                                  -0.027538  7.972462
+  data required time                                             7.972462
+  --------------------------------------------------------------------------
+  data required time                                             7.972462
+  data arrival time                                              -3.840930
+  --------------------------------------------------------------------------
+  slack (MET)                                                    4.131533
+
+
+  Startpoint: source_input/d1[193]/state_reg
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: writeback/d1[164]/state_reg
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  salu               16000                 saed32rvt_tt1p05v25c
+  salu_DW02_mult_0   8000                  saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                               0.000000   0.000000
+  clock network delay (ideal)                         0.000000   0.000000
+  source_input/d1[193]/state_reg/CLK (DFFARX1_RVT)    0.000000   0.000000 r
+  source_input/d1[193]/state_reg/Q (DFFARX1_RVT)      0.092580   0.092580 r
+  U1719/Y (NBUFFX2_RVT)                               0.058934   0.151513 r
+  r242/A[1] (salu_DW02_mult_0)                        0.000000   0.151513 r
+  r242/U64/Y (NBUFFX2_RVT)                            0.077973   0.229487 r
+  r242/U492/Y (AND2X1_RVT)                            0.056884   0.286371 r
+  r242/U130/Y (XOR2X1_RVT)                            0.093575   0.379946 f
+  r242/S2_2_26/S (FADDX1_RVT)                         0.114217   0.494163 r
+  r242/S2_3_25/S (FADDX1_RVT)                         0.113180   0.607343 f
+  r242/S2_4_24/S (FADDX1_RVT)                         0.114016   0.721359 r
+  r242/S2_5_23/S (FADDX1_RVT)                         0.113179   0.834539 f
+  r242/S2_6_22/S (FADDX1_RVT)                         0.114016   0.948555 r
+  r242/S2_7_21/S (FADDX1_RVT)                         0.113179   1.061734 f
+  r242/S2_8_20/S (FADDX1_RVT)                         0.114016   1.175750 r
+  r242/S2_9_19/S (FADDX1_RVT)                         0.113180   1.288931 f
+  r242/S2_10_18/S (FADDX1_RVT)                        0.114016   1.402947 r
+  r242/S2_11_17/S (FADDX1_RVT)                        0.113179   1.516126 f
+  r242/S2_12_16/S (FADDX1_RVT)                        0.114016   1.630143 r
+  r242/S2_13_15/S (FADDX1_RVT)                        0.113179   1.743322 f
+  r242/S2_14_14/S (FADDX1_RVT)                        0.114016   1.857338 r
+  r242/S2_15_13/S (FADDX1_RVT)                        0.113179   1.970518 f
+  r242/S2_16_12/S (FADDX1_RVT)                        0.114016   2.084534 r
+  r242/S2_17_11/S (FADDX1_RVT)                        0.113179   2.197713 f
+  r242/S2_18_10/S (FADDX1_RVT)                        0.114016   2.311730 r
+  r242/S2_19_9/S (FADDX1_RVT)                         0.113179   2.424909 f
+  r242/S2_20_8/S (FADDX1_RVT)                         0.114016   2.538925 r
+  r242/S2_21_7/S (FADDX1_RVT)                         0.113179   2.652105 f
+  r242/S2_22_6/S (FADDX1_RVT)                         0.114016   2.766121 r
+  r242/S2_23_5/S (FADDX1_RVT)                         0.113179   2.879301 f
+  r242/S2_24_4/S (FADDX1_RVT)                         0.114016   2.993317 r
+  r242/S2_25_3/S (FADDX1_RVT)                         0.113179   3.106496 f
+  r242/S2_26_2/S (FADDX1_RVT)                         0.114016   3.220513 r
+  r242/S2_27_1/S (FADDX1_RVT)                         0.113179   3.333692 f
+  r242/S1_28_0/S (FADDX1_RVT)                         0.111784   3.445476 r
+  r242/PRODUCT[28] (salu_DW02_mult_0)                 0.000000   3.445476 r
+  U861/Y (AO222X1_RVT)                                0.083744   3.529220 r
+  U860/Y (OR3X1_RVT)                                  0.048653   3.577874 r
+  U859/Y (AO222X1_RVT)                                0.083454   3.661328 r
+  U858/Y (OR2X1_RVT)                                  0.045949   3.707276 r
+  writeback/d1[164]/state_reg/D (DFFARX1_RVT)         0.011890   3.719166 r
+  data arrival time                                              3.719166
+
+  clock clk (rise edge)                               8.000000   8.000000
+  clock network delay (ideal)                         0.000000   8.000000
+  writeback/d1[164]/state_reg/CLK (DFFARX1_RVT)       0.000000   8.000000 r
+  library setup time                                  -0.027471  7.972529
+  data required time                                             7.972529
+  --------------------------------------------------------------------------
+  data required time                                             7.972529
+  data arrival time                                              -3.719166
+  --------------------------------------------------------------------------
+  slack (MET)                                                    4.253363
+
+
+1

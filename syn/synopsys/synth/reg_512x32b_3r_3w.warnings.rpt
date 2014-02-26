@@ -1,0 +1,26 @@
+ 
+****************************************
+check_design summary:
+Version:     G-2012.06
+Date:        Thu May 16 12:54:56 2013
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Inputs/Outputs                                                      8
+    Unconnected ports (LINT-28)                                     8
+
+Designs                                                             1
+    Black box (LINT-55)                                             1
+--------------------------------------------------------------------------------
+
+Warning: In design 'reg_512x32b_3r_3w', port 'wr2_addr[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'reg_512x32b_3r_3w', port 'wr0_en[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'reg_512x32b_3r_3w_DW01_inc_0', port 'SUM[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'reg_512x32b_3r_3w_DW01_inc_0', port 'SUM[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'reg_512x32b_3r_3w_DW01_inc_1', port 'SUM[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'reg_512x32b_3r_3w_DW01_inc_1', port 'SUM[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'reg_512x32b_3r_3w_DW01_inc_2', port 'SUM[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'reg_512x32b_3r_3w_DW01_inc_2', port 'SUM[0]' is not connected to any nets. (LINT-28)
+Information: Design 'reg_128x32b_3r_3w' does not contain any cells or nets. (LINT-55)
+1

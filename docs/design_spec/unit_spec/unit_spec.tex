@@ -1,0 +1,223 @@
+\documentclass{article}
+\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
+\usepackage{graphicx}
+\title{Miaow - Unit Specification}
+
+\begin{document}
+\maketitle
+\section{Introduction}
+Between stage flops are owned by the unit for whose signals are inputs.
+\section{Units}
+
+\subsection{Fetch}
+\subsubsection{Wavefront identifiers - WF\_ID and WF\_TAG}
+\begin{description}
+\item[WF\_ID:] Identifies a wavefront within the Compute Unit, used to address values that are private for each wavefront.
+\item[WF\_TAG:] Global identifier for a wavefront on the kernel
+\end{description}
+
+\subsubsection{INTERFACE}
+\begin{description}
+\item[{WF\_DISPATCH:}] Dispatch enable 
+\item[{WF\_TAG\_DISPATCH:}] Global identifier for a wavefront on the kernel
+\item[{WF\_SIZE\_DISPATCH:}] Number of threads in wavefront
+\item[{WF\_PC:}] Start PC of wavefront
+\item[{VGPR\_BASE:}] VGPR base address for the wavefront
+\item[{SGPR\_BASE:}] SGPR base address for the wavefront
+\item[{LDS\_BASE:}] LDS base address for the wavefront
+\item[{WFID\_DONE:}] WF\_ID of wavefront halted
+\item[{HALT:}] End of wavefront received from Issue stage
+\item[{ACK:}] Ack from instruction memory
+\item[{WF\_ID:}] Global identifier for a wavefront on the kernel
+\item[{BUFF\_RD:}] Read enable for instruction memory
+\item[{BUFF\_ADDR:}] PC of next instruction to be read 
+\item[{MASK\_INIT:}] Start PC of wavefront
+\item[{BASE\_WR:}] Write enable for base values and mask
+\item[{BUFF\_TAG:}] 
+\end{description}
+
+\begin{tabular}{l p{4.5in}} 
+  BUFF\_TAG[39] & Set if its first instruction of the wavefront \\
+  BUFF\_TAG[38:7] & PC of instruction sent to memory \\
+  BUFF\_TAG[6:0] & WF\_ID of instruction sent to memory \\
+\end{tabular}
+
+\subsubsection{DESCRIPTION}
+When a wavefront is dispatched by the dispatcher, the base values, start address and EXEC mask values are generated and are sent as output from the fetch unit. WF\_ID is generated for the new wavefront and the mapping between WF\_TAG and WF\_ID is stored in the register block. As the maximum number of wavefronts in a Compute Unit is 40, WF\_ID can range from 0 to 40. Vacant register consists of 40 bits where each set bit corresponds to unassigned WF\_ID. The PC block stores the next PC of instruction for all active wavefronts. The Round Robin scheduler schedules one of the dispatched wavefronts using the vacant register value. The WF\_ID selected by scheduler is used to select BUFF\_ADDR from the PC block. The selected PC is sent to the instruction memory and the incremented PC is stored back in the corresponding WF\_ID slot in the PC block. The MSB of BUFF\_TAG is set for the first instruction of the wavefront. PC and WF\_ID of selected wavefront instruction are passed as a part of BUFF\_TAG to the Instruction memory. The halt signal is received from the issue stage along with the corresponding WF\_ID. The vacant bit for the WF\_ID\_DONE is set so that it is not scheduled again until another wavefront is assigned that WF\_ID.
+
+
+\subsection{Wavegroup}
+
+\subsection{Decode}
+The decode unit reads instructions fetched and decode them in fields. All fields decoded are described. All instructions, except halt, must have at least a 16 bit opcode, a identifier for the functional unit where it will be executed, a WF\_ID and a PC value.
+SOMEBODY HAVE TO LIST WHAT EACH OPCODE DOES.
+
+\subsubsection{Functional units identifiers - FU\_ID}
+Identifies functional units where instructions will be executed \\ \\
+\begin{tabular}{l p{4.5in}}
+00 & Reserved value \\
+01 & Instruction will be executed by vALU \\
+10 & Instruction will be executed by sALU \\
+11 & Instruction will be executed by LSU \\
+\end{tabular}
+
+\subsubsection{vALU opcode - VALU\_OP}
+Identifies instructions that will be executed on vALU
+\begin{description}
+\item[VOP1] Instructions with this format have the following values on their opcode field:
+  \begin{description}
+  \item VALU\_OP[15:8] = 8'b0000\_0001
+  \item VALU\_OP[7:0] = VOP1\_OP8
+  \end{description}
+
+\item[VOP2]  Instructions with this format have the following values on their opcode field:
+  \begin{description}
+  \item[{VALU\_OP[15:8]}] = 8'b0000\_0010
+  \item[{VALU\_OP[5:0]}] = VOP2\_OP6
+  \end{description}
+\end{description}
+
+\subsubsection{sALU opcode - SALU\_OP}
+Identifies instructions that will be executed on sALU
+
+\begin{description}
+\item[SOPP] Instructions with this format have the following values on their opcode field:
+  \begin{description}
+  \item[{SALU\_OP[15:8]}] = 8'b0000\_0001
+  \item[{SALU\_OP[6:0]}] = SOPP\_OP7
+  \end{description}
+
+\item[SOP1] Instructions with this format have the following values on their opcode field:
+  \begin{description}
+  \item[{SALU\_OP[15:8]}] = 8'b0000\_0010
+  \item[{SALU\_OP[7:0]}] = SOP1\_OP8
+  \end{description}
+
+\item[SOP2] Instructions with this format have the following values on their opcode field:
+  \begin{description}
+  \item[{SALU\_OP[15:8]}] = 8'b0000\_0100
+  \item[{SALU\_OP[6:0]}] = SOP2\_OP7
+  \end{description}
+\end{description}
+
+\subsubsection{LSU opcode - LSU\_OP}
+Identifies instructions that will be executed on LSU
+
+\begin{description}
+\item[SMRD] Instructions with this format have the following values on their opcode field:
+  \begin{description}
+  \item[{SMRD[15:8]}] = 8'b0000\_0001
+  \item[{SMRD[5:0]}] = {IMM,SMRD\_OP5}
+  \end{description}
+
+\item[MTBUFF] Instructions with this format have the following values on their opcode field:
+  \begin{description}
+  \item[{MTBUFF[15:8]}] = 8'b0000\_0010
+  \item[{MTBUFF[7:0]}] = {IDXEN,OFFEN,MTBUFF\_OP3}
+  \end{description}
+
+\end{description}
+
+\subsubsection{Operand field encoding}
+The instructions opperands are encoded by OPERAND\_REG\_VALID and OPERAND\_ID, with widths of 1 and 11 bits respectively.
+
+\begin{description}
+\item[OPERAND\_REG\_VALID:] Flag that, when set, identifies whether the operand have to be read from vGPR or sGPR. If cleared the value is a state register or a constant.
+
+\item[OPERAND\_ID:] This value is encoded as follows:
+  \begin{description}
+  \item If OPERAND\_REG\_VALID == 1'b1:
+    \begin{description}
+    \item If OPERAND\_ID[10] == 1'b1:
+      \begin{description}
+      \item If OPERAND\_ID[9] == 1'b1.
+        \begin{description}
+        \item OPERAND\_ID[8:0] addresses one of 512 scalar registers in SGPR
+        \end{description}
+      \item If OPERAND\_ID[9] == 1'b0:
+        \begin{description}
+        \item OPERAND\_ID[8:7] == 2'b0.
+        \item If OPERAND\_ID[6:0] == 16'h01 the operand is VCC\_LO
+        \item If OPERAND\_ID[6:0] == 16'h02 the operand is VCC\_HI
+        \item If OPERAND\_ID[6:0] == 16'h04 the operand is VCC\_Z. This encoding shall not be used for destination regs.
+        \item If OPERAND\_ID[6:0] == 16'h08 the operand is EXEC\_LO
+        \item If OPERAND\_ID[6:0] == 16'h10 the operand is EXEC\_HI
+        \item If OPERAND\_ID[6:0] == 16'h20 the operand is EXEC\_Z. This encoding shall not be used for destination regs.
+        \item If OPERAND\_ID[6:0] == 16'h40 the operand is SCC. This encoding shall not be used for destination regs.
+        \end{description}
+      \end{description}
+    \item If OPERAND\_ID[10] == 1'b0:
+      \begin{description}
+      \item OPERAND\_ID[9:0] addresses one of 1024 vector registers in VGPR
+      \end{description}
+    \end{description}
+  
+  \item If  OPERAND\_REG\_VALID == 0:
+    \begin{description}
+    \item OPERAND\_ID[10:0]denotes a constant supplied by decoder.
+    \end{description}
+
+  \end{description}
+  
+\end{description}
+
+\subsection{Issue}
+This unit combines a scoreboard and a arbiter. The scoreboard keeps track of all register being written by inflight instructions (i.e. have these registers as destination). All instructions whose operands depend on such registers are delayed untill the dependency is cleared. RAW and WAW dependencies are considered.
+
+The issue unit choses one wavefront to issue from based on a round robin policy, from all wavefronts that can be issued at a given cycle. A instruction cannot bypass the scoreboard. It must rest on it for at least on cycle.
+
+Every cycle, the issue stage can issue one instruction to LSU and another to SIMDs and SALU. Issue stage also keeps track of 
+
+\subsection{SIMD}
+\subsection{Scalar ALU}
+\subsection{Load store unit}
+\subsubsection{INTERFACE}
+\begin{description}
+\item[MEM\_TAG:] It consists of MEM\_TYPE and MEM\_WF\_ID. MEM\_TYPE is the MSB, the other bits are MEM\_WF\_ID
+\item[MEM\_TYPE:] If this bit is set, the instruction issued is a load, otherwise it is a store 
+\item[MEM\_WF\_ID:] WF\_ID of the wavefront that issued the memory operation
+\item[MEM\_SGPR\_SOURCE1 :] Memory resource constant address
+\item[MEM\_SGPR\_SOURCE2 :] SGPR (soffset)
+\item[MEM\_VGPR\_SOURCE1:] VDATA VGPR 
+\item[MEM\_VGPR\_SOURCE2:] VGPR (voffset if OFFEN = 1, index if IDXEN = 1)
+\item[MEM\_DEST\_REG:] Destination register for Load 
+\item[MEM\_INSTR\_PC:] PC of wavefront instruction
+\item[LOAD\_VALUE:] Load value from data memory
+\item[DEST\_SGPR:] Destination SGPR address
+\item[DEST\_SGPR\_WR:] Destination SGPR write enable
+\item[DEST\_VGPR:] Destination VGPR address 
+\item[DEST\_VGPR\_WR:] Destination VGPR write enable
+\item[MEM\_DONE:] Set when ACK is received
+\item[MEM\_DONE\_WFID:] WFID of completed memory instruction
+\end{description}
+
+\subsubsection{DESCRIPTION}
+LSU supports two instruction types:
+\begin{description}
+\item[SMRD: ] Scalar Load
+\item[MTBUF: ] Vector Load or Store
+\end{description}
+The load store unit consists of 40 entry buffer addressed by WF\_ID. Only one LD/ST instruction for a wavefront can be in flight. The issue stage keeps track of the issued Load-Store instruction for a particular WF\_ID. Only after a Load-Store instruction in LSU buffer retires for a WF\_ID, issue stage issues another LD/ST instruction. A valid bit for each entry indicates a valid entry for a WF\_ID. The valid bit is cleared when a request is sent to memory. MEM\_RD and MEM\_WR are generated according to the MEM\_TYPE bit of the buffer entry. For a non empty buffer, a request is issued to memory every cycle with priority given to lowest WF\_ID. The ACK received from memory is out of order; therefore Issued\_Instr buffer stores all the LD/ST requests stored in buffer. For store instructions, EXEC\_MASK is also sent to memory. WF\_ID(tag) is received along with ACK when a memory request is complete which is used to locate the corresponding MASK value, DEST\_REG address and LOAD VALUE. The LD/ST instructions read from and write to SGPR and VGPR.\\
+
+\vspace{1 mm}
+
+ A Load store buffer entry consists of: 
+
+[ MEM\_ADDR, MEM\_TYPE, STORE\_VALUE, VALID ]\\
+
+\vspace{1 mm} 
+ 
+An Issued\_Instr entry consists of: 
+
+[ LOAD\_DEST\_REG, STORE\_VALUE\_REG, INSTR\_PC, EXEC\_MASK, MEM\_TYPE ]
+\subsection{Register files}
+\subsubsection{vGPR}
+\subsubsection{sGPR}
+\subsubsection{State registers}
+\subsubsection{EXEC and VCC}
+\subsection{Testbench modeled units}
+\subsubsection{Instruction buffer}
+\subsubsection{Memory}
+\subsubsection{Dispatcher}
+\subsubsection{Tracemon}
+\end{document}

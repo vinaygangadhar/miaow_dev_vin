@@ -1,0 +1,200 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 5
+Design : vgpr
+Version: G-2012.06
+Date   : Thu May 16 12:53:29 2013
+****************************************
+
+Operating Conditions: tt1p05v25c   Library: saed32rvt_tt1p05v25c
+Wire Load Model Mode: enclosed
+
+  Startpoint: rfa_select_fu[4]
+              (input port clocked by clk)
+  Endpoint: issue_alu_dest_reg_addr[1]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  vgpr               70000                 saed32rvt_tt1p05v25c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                0.000000   0.000000
+  clock network delay (ideal)          0.000000   0.000000
+  input external delay                 0.000000   0.000000 r
+  rfa_select_fu[4] (in)                0.000000   0.000000 r
+  U12679/Y (INVX1_RVT)                 0.187104   0.187104 f
+  U12523/Y (INVX1_RVT)                 0.337160   0.524264 r
+  U11099/Y (NBUFFX2_RVT)               0.245765   0.770029 r
+  U10967/Y (AO22X1_RVT)                0.273852   1.043881 r
+  U10966/Y (AO221X1_RVT)               0.139232   1.183112 r
+  U11078/Y (OR2X1_RVT)                 0.152416   1.335528 r
+  issue_alu_dest_reg_addr[1] (out)     0.029311   1.364839 r
+  data arrival time                               1.364839
+
+  clock clk (rise edge)                8.000000   8.000000
+  clock network delay (ideal)          0.000000   8.000000
+  output external delay                0.000000   8.000000
+  data required time                              8.000000
+  -----------------------------------------------------------
+  data required time                              8.000000
+  data arrival time                               -1.364839
+  -----------------------------------------------------------
+  slack (MET)                                     6.635160
+
+
+  Startpoint: rfa_select_fu[4]
+              (input port clocked by clk)
+  Endpoint: issue_alu_dest_reg_addr[2]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  vgpr               70000                 saed32rvt_tt1p05v25c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                0.000000   0.000000
+  clock network delay (ideal)          0.000000   0.000000
+  input external delay                 0.000000   0.000000 r
+  rfa_select_fu[4] (in)                0.000000   0.000000 r
+  U12679/Y (INVX1_RVT)                 0.187104   0.187104 f
+  U12519/Y (INVX1_RVT)                 0.337160   0.524264 r
+  U11097/Y (NBUFFX2_RVT)               0.245765   0.770029 r
+  U10962/Y (AO22X1_RVT)                0.273852   1.043881 r
+  U10961/Y (AO221X1_RVT)               0.139232   1.183112 r
+  U11079/Y (OR2X1_RVT)                 0.152416   1.335528 r
+  issue_alu_dest_reg_addr[2] (out)     0.029311   1.364839 r
+  data arrival time                               1.364839
+
+  clock clk (rise edge)                8.000000   8.000000
+  clock network delay (ideal)          0.000000   8.000000
+  output external delay                0.000000   8.000000
+  data required time                              8.000000
+  -----------------------------------------------------------
+  data required time                              8.000000
+  data arrival time                               -1.364839
+  -----------------------------------------------------------
+  slack (MET)                                     6.635160
+
+
+  Startpoint: rfa_select_fu[4]
+              (input port clocked by clk)
+  Endpoint: issue_alu_dest_reg_addr[3]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  vgpr               70000                 saed32rvt_tt1p05v25c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                0.000000   0.000000
+  clock network delay (ideal)          0.000000   0.000000
+  input external delay                 0.000000   0.000000 r
+  rfa_select_fu[4] (in)                0.000000   0.000000 r
+  U12679/Y (INVX1_RVT)                 0.187104   0.187104 f
+  U12519/Y (INVX1_RVT)                 0.337160   0.524264 r
+  U11097/Y (NBUFFX2_RVT)               0.245765   0.770029 r
+  U10957/Y (AO22X1_RVT)                0.273852   1.043881 r
+  U10956/Y (AO221X1_RVT)               0.139232   1.183112 r
+  U11080/Y (OR2X1_RVT)                 0.152416   1.335528 r
+  issue_alu_dest_reg_addr[3] (out)     0.029311   1.364839 r
+  data arrival time                               1.364839
+
+  clock clk (rise edge)                8.000000   8.000000
+  clock network delay (ideal)          0.000000   8.000000
+  output external delay                0.000000   8.000000
+  data required time                              8.000000
+  -----------------------------------------------------------
+  data required time                              8.000000
+  data arrival time                               -1.364839
+  -----------------------------------------------------------
+  slack (MET)                                     6.635160
+
+
+  Startpoint: rfa_select_fu[4]
+              (input port clocked by clk)
+  Endpoint: issue_alu_dest_reg_addr[4]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  vgpr               70000                 saed32rvt_tt1p05v25c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                0.000000   0.000000
+  clock network delay (ideal)          0.000000   0.000000
+  input external delay                 0.000000   0.000000 r
+  rfa_select_fu[4] (in)                0.000000   0.000000 r
+  U12679/Y (INVX1_RVT)                 0.187104   0.187104 f
+  U12519/Y (INVX1_RVT)                 0.337160   0.524264 r
+  U11097/Y (NBUFFX2_RVT)               0.245765   0.770029 r
+  U10952/Y (AO22X1_RVT)                0.273852   1.043881 r
+  U10951/Y (AO221X1_RVT)               0.139232   1.183112 r
+  U11081/Y (OR2X1_RVT)                 0.152416   1.335528 r
+  issue_alu_dest_reg_addr[4] (out)     0.029311   1.364839 r
+  data arrival time                               1.364839
+
+  clock clk (rise edge)                8.000000   8.000000
+  clock network delay (ideal)          0.000000   8.000000
+  output external delay                0.000000   8.000000
+  data required time                              8.000000
+  -----------------------------------------------------------
+  data required time                              8.000000
+  data arrival time                               -1.364839
+  -----------------------------------------------------------
+  slack (MET)                                     6.635160
+
+
+  Startpoint: rfa_select_fu[4]
+              (input port clocked by clk)
+  Endpoint: issue_alu_dest_reg_addr[5]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  vgpr               70000                 saed32rvt_tt1p05v25c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                0.000000   0.000000
+  clock network delay (ideal)          0.000000   0.000000
+  input external delay                 0.000000   0.000000 r
+  rfa_select_fu[4] (in)                0.000000   0.000000 r
+  U12679/Y (INVX1_RVT)                 0.187104   0.187104 f
+  U12519/Y (INVX1_RVT)                 0.337160   0.524264 r
+  U11097/Y (NBUFFX2_RVT)               0.245765   0.770029 r
+  U10947/Y (AO22X1_RVT)                0.273852   1.043881 r
+  U10946/Y (AO221X1_RVT)               0.139232   1.183112 r
+  U11082/Y (OR2X1_RVT)                 0.152416   1.335528 r
+  issue_alu_dest_reg_addr[5] (out)     0.029311   1.364839 r
+  data arrival time                               1.364839
+
+  clock clk (rise edge)                8.000000   8.000000
+  clock network delay (ideal)          0.000000   8.000000
+  output external delay                0.000000   8.000000
+  data required time                              8.000000
+  -----------------------------------------------------------
+  data required time                              8.000000
+  data arrival time                               -1.364839
+  -----------------------------------------------------------
+  slack (MET)                                     6.635160
+
+
+1

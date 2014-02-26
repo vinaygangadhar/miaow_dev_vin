@@ -1,0 +1,1 @@
+vcs -full64 -debug_all +vcs+loopreport -debug_pp testbench.v compiledefs.v or1800_stats.v +incdir+/scratch/ragh/hgrepo/openrisc/dualooo/rtl/+ ./memorySubSystem.c /scratch/ragh/hgrepo/openrisc/dualooo/rtl/*.v +v2k -sverilog

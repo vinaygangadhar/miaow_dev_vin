@@ -1,0 +1,119 @@
+ 
+****************************************
+check_design summary:
+Version:     G-2012.06
+Date:        Thu May 16 12:30:32 2013
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Inputs/Outputs                                                     34
+    Unconnected ports (LINT-28)                                    34
+
+Cells                                                              34
+    Connected to power or ground (LINT-32)                         34
+--------------------------------------------------------------------------------
+
+Warning: In design 'issue_DW01_inc_0', port 'A[9]' is not connected to any nets. (LINT-28)
+Warning: In design 'issue_DW01_inc_1', port 'A[9]' is not connected to any nets. (LINT-28)
+Warning: In design 'issue_DW01_inc_2', port 'A[9]' is not connected to any nets. (LINT-28)
+Warning: In design 'issue_DW01_inc_3', port 'A[9]' is not connected to any nets. (LINT-28)
+Warning: In design 'issue_DW01_inc_4', port 'A[9]' is not connected to any nets. (LINT-28)
+Warning: In design 'issue_DW01_inc_5', port 'A[9]' is not connected to any nets. (LINT-28)
+Warning: In design 'issue_DW01_inc_6', port 'A[9]' is not connected to any nets. (LINT-28)
+Warning: In design 'issue_DW01_inc_7', port 'A[9]' is not connected to any nets. (LINT-28)
+Warning: In design 'issue_DW01_inc_8', port 'A[9]' is not connected to any nets. (LINT-28)
+Warning: In design 'issue_DW01_inc_9', port 'A[9]' is not connected to any nets. (LINT-28)
+Warning: In design 'issue_DW01_inc_10', port 'A[9]' is not connected to any nets. (LINT-28)
+Warning: In design 'issue_DW01_inc_11', port 'A[9]' is not connected to any nets. (LINT-28)
+Warning: In design 'issue_DW01_inc_12', port 'A[9]' is not connected to any nets. (LINT-28)
+Warning: In design 'issue_DW01_inc_13', port 'A[9]' is not connected to any nets. (LINT-28)
+Warning: In design 'issue_DW01_inc_14', port 'A[9]' is not connected to any nets. (LINT-28)
+Warning: In design 'issue_DW01_inc_15', port 'A[9]' is not connected to any nets. (LINT-28)
+Warning: In design 'issue_DW01_inc_16', port 'A[9]' is not connected to any nets. (LINT-28)
+Warning: In design 'issue_DW01_inc_17', port 'A[9]' is not connected to any nets. (LINT-28)
+Warning: In design 'issue_DW01_inc_18', port 'A[9]' is not connected to any nets. (LINT-28)
+Warning: In design 'issue_DW01_inc_19', port 'A[9]' is not connected to any nets. (LINT-28)
+Warning: In design 'issue_DW01_inc_20', port 'A[9]' is not connected to any nets. (LINT-28)
+Warning: In design 'issue_DW01_inc_21', port 'A[10]' is not connected to any nets. (LINT-28)
+Warning: In design 'issue_DW01_inc_22', port 'A[10]' is not connected to any nets. (LINT-28)
+Warning: In design 'issue_DW01_inc_23', port 'A[10]' is not connected to any nets. (LINT-28)
+Warning: In design 'issue_DW01_inc_24', port 'A[10]' is not connected to any nets. (LINT-28)
+Warning: In design 'issue_DW01_inc_25', port 'A[10]' is not connected to any nets. (LINT-28)
+Warning: In design 'issue_DW01_inc_26', port 'A[10]' is not connected to any nets. (LINT-28)
+Warning: In design 'issue_DW01_inc_27', port 'A[10]' is not connected to any nets. (LINT-28)
+Warning: In design 'issue_DW01_inc_28', port 'A[10]' is not connected to any nets. (LINT-28)
+Warning: In design 'issue_DW01_inc_29', port 'A[10]' is not connected to any nets. (LINT-28)
+Warning: In design 'issue_DW01_inc_30', port 'A[10]' is not connected to any nets. (LINT-28)
+Warning: In design 'issue_DW01_inc_31', port 'A[10]' is not connected to any nets. (LINT-28)
+Warning: In design 'issue_DW01_inc_32', port 'A[10]' is not connected to any nets. (LINT-28)
+Warning: In design 'issue_DW01_inc_33', port 'A[10]' is not connected to any nets. (LINT-28)
+Warning: In design 'issue', a pin on submodule 'scoreboard/sgpr_lsu_cmp/add_134_C66' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'A[9]' is connected to logic 0. 
+Warning: In design 'issue', a pin on submodule 'scoreboard/sgpr_lsu_cmp/add_115_3_C62' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'A[9]' is connected to logic 0. 
+Warning: In design 'issue', a pin on submodule 'scoreboard/sgpr_lsu_cmp/add_115_3_C58' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'A[9]' is connected to logic 0. 
+Warning: In design 'issue', a pin on submodule 'scoreboard/sgpr_lsu_cmp/add_134_C54' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'A[9]' is connected to logic 0. 
+Warning: In design 'issue', a pin on submodule 'scoreboard/sgpr_lsu_cmp/add_134_C50' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'A[9]' is connected to logic 0. 
+Warning: In design 'issue', a pin on submodule 'scoreboard/sgpr_lsu_cmp/add_115_4_C46' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'A[9]' is connected to logic 0. 
+Warning: In design 'issue', a pin on submodule 'scoreboard/sgpr_lsu_cmp/add_115_3_C46' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'A[9]' is connected to logic 0. 
+Warning: In design 'issue', a pin on submodule 'scoreboard/sgpr_valu_cmp/add_134_C66' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'A[9]' is connected to logic 0. 
+Warning: In design 'issue', a pin on submodule 'scoreboard/sgpr_valu_cmp/add_115_3_C62' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'A[9]' is connected to logic 0. 
+Warning: In design 'issue', a pin on submodule 'scoreboard/sgpr_valu_cmp/add_115_3_C58' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'A[9]' is connected to logic 0. 
+Warning: In design 'issue', a pin on submodule 'scoreboard/sgpr_valu_cmp/add_134_C54' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'A[9]' is connected to logic 0. 
+Warning: In design 'issue', a pin on submodule 'scoreboard/sgpr_valu_cmp/add_134_C50' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'A[9]' is connected to logic 0. 
+Warning: In design 'issue', a pin on submodule 'scoreboard/sgpr_valu_cmp/add_115_4_C46' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'A[9]' is connected to logic 0. 
+Warning: In design 'issue', a pin on submodule 'scoreboard/sgpr_valu_cmp/add_115_3_C46' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'A[9]' is connected to logic 0. 
+Warning: In design 'issue', a pin on submodule 'scoreboard/sgpr_alu_cmp/add_134_C66' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'A[9]' is connected to logic 0. 
+Warning: In design 'issue', a pin on submodule 'scoreboard/sgpr_alu_cmp/add_115_3_C62' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'A[9]' is connected to logic 0. 
+Warning: In design 'issue', a pin on submodule 'scoreboard/sgpr_alu_cmp/add_115_3_C58' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'A[9]' is connected to logic 0. 
+Warning: In design 'issue', a pin on submodule 'scoreboard/sgpr_alu_cmp/add_134_C54' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'A[9]' is connected to logic 0. 
+Warning: In design 'issue', a pin on submodule 'scoreboard/sgpr_alu_cmp/add_134_C50' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'A[9]' is connected to logic 0. 
+Warning: In design 'issue', a pin on submodule 'scoreboard/sgpr_alu_cmp/add_115_4_C46' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'A[9]' is connected to logic 0. 
+Warning: In design 'issue', a pin on submodule 'scoreboard/sgpr_alu_cmp/add_115_3_C46' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'A[9]' is connected to logic 0. 
+Warning: In design 'issue', a pin on submodule 'scoreboard/vgpr_lsu_cmp/add_133_C66' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'A[10]' is connected to logic 0. 
+Warning: In design 'issue', a pin on submodule 'scoreboard/vgpr_lsu_cmp/add_114_3_C62' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'A[10]' is connected to logic 0. 
+Warning: In design 'issue', a pin on submodule 'scoreboard/vgpr_lsu_cmp/add_114_3_C58' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'A[10]' is connected to logic 0. 
+Warning: In design 'issue', a pin on submodule 'scoreboard/vgpr_lsu_cmp/add_133_C54' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'A[10]' is connected to logic 0. 
+Warning: In design 'issue', a pin on submodule 'scoreboard/vgpr_lsu_cmp/add_133_C50' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'A[10]' is connected to logic 0. 
+Warning: In design 'issue', a pin on submodule 'scoreboard/vgpr_lsu_cmp/add_114_4_C46' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'A[10]' is connected to logic 0. 
+Warning: In design 'issue', a pin on submodule 'scoreboard/vgpr_lsu_cmp/add_114_3_C46' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'A[10]' is connected to logic 0. 
+Warning: In design 'issue', a pin on submodule 'scoreboard/vgpr_alu_cmp/add_133_C66' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'A[10]' is connected to logic 0. 
+Warning: In design 'issue', a pin on submodule 'scoreboard/vgpr_alu_cmp/add_114_3_C62' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'A[10]' is connected to logic 0. 
+Warning: In design 'issue', a pin on submodule 'scoreboard/vgpr_alu_cmp/add_114_3_C58' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'A[10]' is connected to logic 0. 
+Warning: In design 'issue', a pin on submodule 'scoreboard/vgpr_alu_cmp/add_133_C54' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'A[10]' is connected to logic 0. 
+Warning: In design 'issue', a pin on submodule 'scoreboard/vgpr_alu_cmp/add_133_C50' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'A[10]' is connected to logic 0. 
+Warning: In design 'issue', a pin on submodule 'scoreboard/vgpr_alu_cmp/add_114_3_C46' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'A[10]' is connected to logic 0. 
+1

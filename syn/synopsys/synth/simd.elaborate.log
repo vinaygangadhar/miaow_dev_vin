@@ -1,0 +1,256 @@
+Loading db file '/s/synopsys-2012_06_27/@sys/G-2012.06/libraries/syn/gtech.db'
+Loading db file '/s/synopsys-2012_06_27/@sys/G-2012.06/libraries/syn/standard.sldb'
+  Loading link library 'saed32rvt_tt1p05v25c'
+  Loading link library 'gtech'
+Running PRESTO HDLC
+Presto compilation completed successfully.
+Elaborated 1 design.
+Current design is now 'simd'.
+Information: Building the design 'alu' instantiated from design 'simd' with
+	the parameters "MODULE=0". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'PS_flops_issue_alu'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'alu_controller' instantiated from design 'alu_MODULE0' with
+	the parameters "MODULE=0". (HDL-193)
+Warning:  ../../../src/verilog/rtl/alu/build/alu_controller.v:178: DEFAULT branch of CASE statement cannot be reached. (ELAB-311)
+Warning:  ../../../src/verilog/rtl/alu/build/alu_controller.v:210: DEFAULT branch of CASE statement cannot be reached. (ELAB-311)
+Warning:  ../../../src/verilog/rtl/alu/build/alu_controller.v:227: DEFAULT branch of CASE statement cannot be reached. (ELAB-311)
+
+Statistics for case statements in always block at line 91 in file
+	'../../../src/verilog/rtl/alu/build/alu_controller.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            92            |     auto/no      |
+===============================================
+
+Statistics for case statements in always block at line 176 in file
+	'../../../src/verilog/rtl/alu/build/alu_controller.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           178            |    auto/auto     |
+===============================================
+
+Statistics for case statements in always block at line 209 in file
+	'../../../src/verilog/rtl/alu/build/alu_controller.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           210            |    auto/auto     |
+===============================================
+
+Statistics for case statements in always block at line 226 in file
+	'../../../src/verilog/rtl/alu/build/alu_controller.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           227            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'src_mux'. (HDL-193)
+
+Statistics for case statements in always block at line 27 in file
+	'../../../src/verilog/rtl/alu/build/src_mux.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            31            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'src_shift_reg'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'valu' instantiated from design 'alu_MODULE0' with
+	the parameters "MODULE=0". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'dest_shift_reg'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'PS_flops_EX_WB_alu'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'alu_wb_queue'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'dff_en'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'simd_instr_decoder'. (HDL-193)
+
+Statistics for case statements in always block at line 55 in file
+	'../../../src/verilog/rtl/simd/build/simd_instr_decoder.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            56            |    auto/auto     |
+===============================================
+
+Statistics for case statements in always block at line 75 in file
+	'../../../src/verilog/rtl/simd/build/simd_instr_decoder.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            76            |    auto/auto     |
+===============================================
+
+Statistics for case statements in always block at line 398 in file
+	'../../../src/verilog/rtl/simd/build/simd_instr_decoder.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           399            |    auto/auto     |
+===============================================
+
+Statistics for case statements in always block at line 468 in file
+	'../../../src/verilog/rtl/simd/build/simd_instr_decoder.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           469            |    auto/auto     |
+===============================================
+
+Statistics for case statements in always block at line 538 in file
+	'../../../src/verilog/rtl/simd/build/simd_instr_decoder.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           539            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'alu_fsm'. (HDL-193)
+
+Statistics for case statements in always block at line 45 in file
+	'../../../src/verilog/rtl/alu/build/alu_fsm.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            46            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'shift_in' instantiated from design 'src_shift_reg' with
+	the parameters "32". (HDL-193)
+
+Statistics for case statements in always block at line 24 in file
+	'../../../src/verilog/rtl/alu/build/shift_in.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            26            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'shift_in' instantiated from design 'src_shift_reg' with
+	the parameters "1". (HDL-193)
+
+Statistics for case statements in always block at line 24 in file
+	'../../../src/verilog/rtl/alu/build/shift_in.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            26            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'simd_alu'. (HDL-193)
+Warning:  ../../../src/verilog/rtl/simd/build/simd_alu.v:425: signed to unsigned conversion occurs. (VER-318)
+
+Statistics for case statements in always block at line 69 in file
+	'../../../src/verilog/rtl/simd/build/simd_alu.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            70            |    auto/auto     |
+===============================================
+
+Statistics for case statements in always block at line 88 in file
+	'../../../src/verilog/rtl/simd/build/simd_alu.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            89            |    auto/auto     |
+===============================================
+
+Statistics for case statements in always block at line 114 in file
+	'../../../src/verilog/rtl/simd/build/simd_alu.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           115            |    auto/auto     |
+===============================================
+
+Statistics for case statements in always block at line 445 in file
+	'../../../src/verilog/rtl/simd/build/simd_alu.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           446            |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+	in routine simd_alu line 547 in file
+		'../../../src/verilog/rtl/simd/build/simd_alu.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|  mul_cycles_s_reg   | Flip-flop |   2   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'shift_out' instantiated from design 'dest_shift_reg' with
+	the parameters "32". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'shift_out' instantiated from design 'dest_shift_reg' with
+	the parameters "1". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'dff'. (HDL-193)
+
+Inferred memory devices in process
+	in routine dff line 12 in file
+		'../../../src/verilog/rtl/common/build/dff.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      state_reg      | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'queue_param_1r_1w' instantiated from design 'alu_wb_queue' with
+	the parameters "BITS=2,SIZE=4,WIDTH=2301". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'register' instantiated from design 'shift_in_WIDTH32' with
+	the parameters "512". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'mux_2_to_1' instantiated from design 'shift_in_WIDTH32' with
+	the parameters "512". (HDL-193)
+Warning:  ../../../src/verilog/rtl/alu/build/mux_2_to_1.v:11: DEFAULT branch of CASE statement cannot be reached. (ELAB-311)
+
+Statistics for case statements in always block at line 10 in file
+	'../../../src/verilog/rtl/alu/build/mux_2_to_1.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            11            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'register' instantiated from design 'shift_in_WIDTH1' with
+	the parameters "16". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'mux_2_to_1' instantiated from design 'shift_in_WIDTH1' with
+	the parameters "16". (HDL-193)
+Warning:  ../../../src/verilog/rtl/alu/build/mux_2_to_1.v:11: DEFAULT branch of CASE statement cannot be reached. (ELAB-311)
+
+Statistics for case statements in always block at line 10 in file
+	'../../../src/verilog/rtl/alu/build/mux_2_to_1.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            11            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'mux_param' instantiated from design 'queue_param_1r_1w_BITS2_SIZE4_WIDTH2301' with
+	the parameters "BITS=2,SIZE=4,WIDTH=2301". (HDL-193)
+Warning:  Starting with the 2000.11-1 release, the Presto Verilog reader treats Verilog 'integer' types as signed; synthesized result may not match earlier versions of HDL Compiler. (VER-314)
+Warning:  ../../../src/verilog/rtl/common/build/mux_param.v:20: signed to unsigned conversion occurs. (VER-318)
+Presto compilation completed successfully.
+Information: Building the design 'decoder_param' instantiated from design 'queue_param_1r_1w_BITS2_SIZE4_WIDTH2301' with
+	the parameters "BITS=2,SIZE=4". (HDL-193)
+Warning:  Starting with the 2000.11-1 release, the Presto Verilog reader treats Verilog 'integer' types as signed; synthesized result may not match earlier versions of HDL Compiler. (VER-314)
+Warning:  ../../../src/verilog/rtl/common/build/decoder_param.v:16: signed to unsigned conversion occurs. (VER-318)
+Presto compilation completed successfully.
+Information: Building the design 'reg_param' instantiated from design 'queue_param_1r_1w_BITS2_SIZE4_WIDTH2301' with
+	the parameters "WIDTH=2301". (HDL-193)
+Presto compilation completed successfully.
+1

@@ -1,0 +1,1520 @@
+Warning: Ignoring -power_effort option since there is no power constraint. (PWR-59)
+Warning: Setting attribute 'fix_multiple_port_nets' on design 'simd'. (UIO-59)
+Information: Evaluating DesignWare library utilization. (UISN-27)
+
+============================================================================
+| DesignWare Building Block Library  |         Version         | Available |
+============================================================================
+| Basic DW Building Blocks           | G-2012.06-DWBB_201206.0 |     *     |
+| Licensed DW Building Blocks        |                         |     *     |
+============================================================================
+
+
+Information: There are 617 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
+
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'simd'
+Information: The register 'alu/alu_controller/alu_fsm/alu_start_flop/state_reg' will be removed. (OPT-1207)
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+
+  Beginning Implementation Selection
+  ----------------------------------
+  Processing 'simd_DW01_dec_0'
+  Processing 'simd_DW01_ash_0'
+  Processing 'simd_DW_rash_0'
+  Processing 'simd_DW_rash_1'
+  Processing 'simd_DW01_ash_1'
+  Processing 'simd_DW01_sub_0'
+  Processing 'simd_DW01_add_0'
+  Processing 'simd_DW01_sub_1'
+  Processing 'simd_DW01_sub_2'
+  Processing 'simd_DW01_dec_1'
+  Processing 'simd_DW01_ash_2'
+  Processing 'simd_DW_rash_2'
+  Processing 'simd_DW_rash_3'
+  Processing 'simd_DW01_ash_3'
+  Processing 'simd_DW01_sub_3'
+  Processing 'simd_DW01_add_1'
+  Processing 'simd_DW01_sub_4'
+  Processing 'simd_DW01_sub_5'
+  Processing 'simd_DW01_dec_2'
+  Processing 'simd_DW01_ash_4'
+  Processing 'simd_DW_rash_4'
+  Processing 'simd_DW_rash_5'
+  Processing 'simd_DW01_ash_5'
+  Processing 'simd_DW01_sub_6'
+  Processing 'simd_DW01_add_2'
+  Processing 'simd_DW01_sub_7'
+  Processing 'simd_DW01_sub_8'
+  Processing 'simd_DW01_dec_3'
+  Processing 'simd_DW01_ash_6'
+  Processing 'simd_DW_rash_6'
+  Processing 'simd_DW_rash_7'
+  Processing 'simd_DW01_ash_7'
+  Processing 'simd_DW01_sub_9'
+  Processing 'simd_DW01_add_3'
+  Processing 'simd_DW01_sub_10'
+  Processing 'simd_DW01_sub_11'
+  Processing 'simd_DW01_dec_4'
+  Processing 'simd_DW01_ash_8'
+  Processing 'simd_DW_rash_8'
+  Processing 'simd_DW_rash_9'
+  Processing 'simd_DW01_ash_9'
+  Processing 'simd_DW01_sub_12'
+  Processing 'simd_DW01_add_4'
+  Processing 'simd_DW01_sub_13'
+  Processing 'simd_DW01_sub_14'
+  Processing 'simd_DW01_dec_5'
+  Processing 'simd_DW01_ash_10'
+  Processing 'simd_DW_rash_10'
+  Processing 'simd_DW_rash_11'
+  Processing 'simd_DW01_ash_11'
+  Processing 'simd_DW01_sub_15'
+  Processing 'simd_DW01_add_5'
+  Processing 'simd_DW01_sub_16'
+  Processing 'simd_DW01_sub_17'
+  Processing 'simd_DW01_dec_6'
+  Processing 'simd_DW01_ash_12'
+  Processing 'simd_DW_rash_12'
+  Processing 'simd_DW_rash_13'
+  Processing 'simd_DW01_ash_13'
+  Processing 'simd_DW01_sub_18'
+  Processing 'simd_DW01_add_6'
+  Processing 'simd_DW01_sub_19'
+  Processing 'simd_DW01_sub_20'
+  Processing 'simd_DW01_dec_7'
+  Processing 'simd_DW01_ash_14'
+  Processing 'simd_DW_rash_14'
+  Processing 'simd_DW_rash_15'
+  Processing 'simd_DW01_ash_15'
+  Processing 'simd_DW01_sub_21'
+  Processing 'simd_DW01_add_7'
+  Processing 'simd_DW01_sub_22'
+  Processing 'simd_DW01_sub_23'
+  Processing 'simd_DW01_dec_8'
+  Processing 'simd_DW01_ash_16'
+  Processing 'simd_DW_rash_16'
+  Processing 'simd_DW_rash_17'
+  Processing 'simd_DW01_ash_17'
+  Processing 'simd_DW01_sub_24'
+  Processing 'simd_DW01_add_8'
+  Processing 'simd_DW01_sub_25'
+  Processing 'simd_DW01_sub_26'
+  Processing 'simd_DW01_dec_9'
+  Processing 'simd_DW01_ash_18'
+  Processing 'simd_DW_rash_18'
+  Processing 'simd_DW_rash_19'
+  Processing 'simd_DW01_ash_19'
+  Processing 'simd_DW01_sub_27'
+  Processing 'simd_DW01_add_9'
+  Processing 'simd_DW01_sub_28'
+  Processing 'simd_DW01_sub_29'
+  Processing 'simd_DW01_dec_10'
+  Processing 'simd_DW01_ash_20'
+  Processing 'simd_DW_rash_20'
+  Processing 'simd_DW_rash_21'
+  Processing 'simd_DW01_ash_21'
+  Processing 'simd_DW01_sub_30'
+  Processing 'simd_DW01_add_10'
+  Processing 'simd_DW01_sub_31'
+  Processing 'simd_DW01_sub_32'
+  Processing 'simd_DW01_dec_11'
+  Processing 'simd_DW01_ash_22'
+  Processing 'simd_DW_rash_22'
+  Processing 'simd_DW_rash_23'
+  Processing 'simd_DW01_ash_23'
+  Processing 'simd_DW01_sub_33'
+  Processing 'simd_DW01_add_11'
+  Processing 'simd_DW01_sub_34'
+  Processing 'simd_DW01_sub_35'
+  Processing 'simd_DW01_dec_12'
+  Processing 'simd_DW01_ash_24'
+  Processing 'simd_DW_rash_24'
+  Processing 'simd_DW_rash_25'
+  Processing 'simd_DW01_ash_25'
+  Processing 'simd_DW01_sub_36'
+  Processing 'simd_DW01_add_12'
+  Processing 'simd_DW01_sub_37'
+  Processing 'simd_DW01_sub_38'
+  Processing 'simd_DW01_dec_13'
+  Processing 'simd_DW01_ash_26'
+  Processing 'simd_DW_rash_26'
+  Processing 'simd_DW_rash_27'
+  Processing 'simd_DW01_ash_27'
+  Processing 'simd_DW01_sub_39'
+  Processing 'simd_DW01_add_13'
+  Processing 'simd_DW01_sub_40'
+  Processing 'simd_DW01_sub_41'
+  Processing 'simd_DW01_dec_14'
+  Processing 'simd_DW01_ash_28'
+  Processing 'simd_DW_rash_28'
+  Processing 'simd_DW_rash_29'
+  Processing 'simd_DW01_ash_29'
+  Processing 'simd_DW01_sub_42'
+  Processing 'simd_DW01_add_14'
+  Processing 'simd_DW01_sub_43'
+  Processing 'simd_DW01_sub_44'
+  Processing 'simd_DW01_dec_15'
+  Processing 'simd_DW01_ash_30'
+  Processing 'simd_DW_rash_30'
+  Processing 'simd_DW_rash_31'
+  Processing 'simd_DW01_ash_31'
+  Processing 'simd_DW01_sub_45'
+  Processing 'simd_DW01_add_15'
+  Processing 'simd_DW01_sub_46'
+  Processing 'simd_DW01_sub_47'
+  Processing 'simd_DW01_cmp6_0'
+  Processing 'simd_DW01_cmp6_1'
+  Processing 'simd_DW01_cmp6_2'
+  Processing 'simd_DW01_cmp6_3'
+  Processing 'simd_DW01_cmp6_4'
+  Processing 'simd_DW01_cmp6_5'
+  Processing 'simd_DW01_cmp6_6'
+  Processing 'simd_DW01_cmp6_7'
+  Processing 'simd_DW01_cmp6_8'
+  Processing 'simd_DW01_cmp6_9'
+  Processing 'simd_DW01_cmp6_10'
+  Processing 'simd_DW01_cmp6_11'
+  Processing 'simd_DW01_cmp6_12'
+  Processing 'simd_DW01_cmp6_13'
+  Processing 'simd_DW01_cmp6_14'
+  Processing 'simd_DW01_cmp6_15'
+  Processing 'simd_DW02_mult_0'
+  Processing 'simd_DW01_add_16'
+  Processing 'simd_DW02_mult_1'
+  Processing 'simd_DW01_add_17'
+  Processing 'simd_DW02_mult_2'
+  Processing 'simd_DW01_add_18'
+  Processing 'simd_DW02_mult_3'
+  Processing 'simd_DW01_add_19'
+  Processing 'simd_DW02_mult_4'
+  Processing 'simd_DW01_add_20'
+  Processing 'simd_DW02_mult_5'
+  Processing 'simd_DW01_add_21'
+  Processing 'simd_DW02_mult_6'
+  Processing 'simd_DW01_add_22'
+  Processing 'simd_DW02_mult_7'
+  Processing 'simd_DW01_add_23'
+  Processing 'simd_DW02_mult_8'
+  Processing 'simd_DW01_add_24'
+  Processing 'simd_DW02_mult_9'
+  Processing 'simd_DW01_add_25'
+  Processing 'simd_DW02_mult_10'
+  Processing 'simd_DW01_add_26'
+  Processing 'simd_DW02_mult_11'
+  Processing 'simd_DW01_add_27'
+  Processing 'simd_DW02_mult_12'
+  Processing 'simd_DW01_add_28'
+  Processing 'simd_DW02_mult_13'
+  Processing 'simd_DW01_add_29'
+  Processing 'simd_DW02_mult_14'
+  Processing 'simd_DW01_add_30'
+  Processing 'simd_DW02_mult_15'
+  Processing 'simd_DW01_add_31'
+
+  Beginning Mapping Optimizations  (High effort)
+  -------------------------------
+
+   ELAPSED            WORST NEG TOTAL NEG  DESIGN                             MIN DELAY
+    TIME      AREA      SLACK     SLACK   RULE COST         ENDPOINT            COST   
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:05:38  857946.4     91.37 1466620.5   73694.8                                0.00
+    0:05:38  857946.4     91.37 1466620.5   73694.8                                0.00
+    0:05:38  856161.0     91.37 1466620.5   72578.7                                0.00
+    0:05:39  854381.6     91.37 1466620.5   71462.5                                0.00
+    0:05:40  848456.9     91.37 1466620.5   70386.6                                0.00
+    0:05:41  842074.8     91.37 1466620.5   69303.3                                0.00
+    0:05:42  835692.6     91.37 1466620.5   68220.0                                0.00
+    0:05:42  829310.5     91.37 1466620.5   67136.3                                0.00
+    0:05:43  822928.3     91.37 1466620.5   66053.0                                0.00
+    0:05:44  816546.2     91.37 1466620.5   64969.7                                0.00
+    0:05:45  810163.6     91.37 1466620.5   63885.9                                0.00
+    0:05:46  803780.2     91.37 1466620.5   62801.3                                0.00
+    0:05:51  724121.3     90.87  707049.1   20153.5                                0.00
+    0:06:53  642305.2      2.03   13203.0     224.4                                0.00
+    0:06:54  642304.1      1.93   12475.7     224.4                                0.00
+    0:06:54  642304.1      1.93   12475.7     224.4                                0.00
+    0:06:55  642304.1      1.93   12475.7     224.4                                0.00
+    0:06:55  642304.1      1.93   12475.7     224.4                                0.00
+    0:06:56  642304.1      1.93   12475.7     224.4                                0.00
+    0:07:15  611427.8      1.87    4236.4     184.6                                0.00
+    0:07:18  611437.0      1.86    2748.5     164.8                                0.00
+    0:07:26  611439.0      1.85    2673.2     101.1                                0.00
+    0:07:28  611440.3      1.80    2390.5     101.1                                0.00
+    0:07:29  611442.2      1.78    2206.0     101.1                                0.00
+    0:07:30  611448.1      1.77    2202.1     101.1                                0.00
+    0:07:31  611445.8      1.75    2192.3     101.1                                0.00
+    0:07:32  611445.8      1.75    2192.3     101.1                                0.00
+    0:07:32  611445.8      1.75    2192.3     101.1                                0.00
+    0:07:32  611445.8      1.75    2192.3     101.1                                0.00
+    0:07:34  611533.0      1.75    2192.3      63.7                                0.00
+    0:07:35  611589.1      1.75    2192.3      39.1                                0.00
+    0:07:36  611618.3      1.75    2192.2      20.8                                0.00
+    0:07:36  611642.5      1.75    2192.2       7.6                                0.00
+    0:07:37  611651.6      1.75    2192.2       3.2                                0.00
+    0:07:38  611658.8      1.75    2192.2       0.0                                0.00
+    0:07:38  611658.8      1.75    2192.2       0.0                                0.00
+    0:07:38  611658.8      1.75    2192.2       0.0                                0.00
+    0:07:38  611658.8      1.75    2192.2       0.0                                0.00
+    0:07:38  611475.9      1.75    2192.2     104.4                                0.00
+
+
+
+  Beginning Delay Optimization Phase
+  ----------------------------------
+
+   ELAPSED            WORST NEG TOTAL NEG  DESIGN                             MIN DELAY
+    TIME      AREA      SLACK     SLACK   RULE COST         ENDPOINT            COST   
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:07:38  611475.9      1.75    2192.2     104.4                                0.00
+    0:07:41  611491.6      1.74    2200.2     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[127]/dff_0/state_reg/D      0.00
+    0:07:41  611641.3      1.74    2196.6     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[255]/dff_0/state_reg/D      0.00
+    0:07:43  611722.0      1.72    2155.7     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[479]/dff_0/state_reg/D      0.00
+    0:07:43  611743.6      1.72    2152.0     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[95]/dff_0/state_reg/D      0.00
+    0:07:45  611756.3      1.70    2146.0     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[159]/dff_0/state_reg/D      0.00
+    0:07:47  611807.3      1.66    1311.8     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[415]/dff_0/state_reg/D      0.00
+    0:07:49  611837.0      1.65    1309.2     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[95]/dff_0/state_reg/D      0.00
+    0:07:49  611849.8      1.64    1300.3     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[159]/dff_0/state_reg/D      0.00
+    0:07:51  611879.7      1.62    1184.7     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[95]/dff_0/state_reg/D      0.00
+    0:07:53  611919.0      1.60    1173.5     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[447]/dff_0/state_reg/D      0.00
+    0:07:54  611930.4      1.52     661.8     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[255]/dff_0/state_reg/D      0.00
+    0:07:54  611940.9      1.52     661.8     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[127]/dff_0/state_reg/D      0.00
+    0:07:54  611945.2      1.52     659.8     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[95]/dff_0/state_reg/D      0.00
+    0:07:54  611982.4      1.52     659.7     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[255]/dff_0/state_reg/D      0.00
+    0:07:55  612020.3      1.52     656.7     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[95]/dff_0/state_reg/D      0.00
+    0:07:57  612042.1      1.47     637.1     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[415]/dff_0/state_reg/D      0.00
+    0:07:58  612058.9      1.47     758.6     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[415]/dff_0/state_reg/D      0.00
+    0:07:58  612093.2      1.47     758.5     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[415]/dff_0/state_reg/D      0.00
+    0:07:58  612136.7      1.47     755.5     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[127]/dff_0/state_reg/D      0.00
+    0:07:58  612160.4      1.46     747.7     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[95]/dff_0/state_reg/D      0.00
+    0:07:59  612184.2      1.45     744.5     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[191]/dff_0/state_reg/D      0.00
+    0:07:59  612244.4      1.43     738.9     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[63]/dff_0/state_reg/D      0.00
+    0:07:59  612219.5      1.42     735.4     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[351]/dff_0/state_reg/D      0.00
+    0:08:00  612274.7      1.41     735.1     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[447]/dff_0/state_reg/D      0.00
+    0:08:01  612279.3      1.37     713.6     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[223]/dff_0/state_reg/D      0.00
+    0:08:02  612293.2      1.35     698.1     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[63]/dff_0/state_reg/D      0.00
+    0:08:03  612327.4      1.34     694.0     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[63]/dff_0/state_reg/D      0.00
+    0:08:04  612352.0      1.32     308.2     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[63]/dff_0/state_reg/D      0.00
+    0:08:04  612402.9      1.31     304.5     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[447]/dff_0/state_reg/D      0.00
+    0:08:05  612410.8      1.30     303.1     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[63]/dff_0/state_reg/D      0.00
+    0:08:06  612424.4      1.28     295.0     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[63]/dff_0/state_reg/D      0.00
+    0:08:09  612456.1      1.27     317.1     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[447]/dff_0/state_reg/D      0.00
+    0:08:10  612473.6      1.24     313.9     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[511]/dff_0/state_reg/D      0.00
+    0:08:11  612485.1      1.24     310.2     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[383]/dff_0/state_reg/D      0.00
+    0:08:12  612497.7      1.23     306.1     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[223]/dff_0/state_reg/D      0.00
+    0:08:12  612513.2      1.23     305.8     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[479]/dff_0/state_reg/D      0.00
+    0:08:12  612531.8      1.23     305.8     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[287]/dff_0/state_reg/D      0.00
+    0:08:13  612573.6      1.23     305.8     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[287]/dff_0/state_reg/D      0.00
+    0:08:13  612576.4      1.21     294.5     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[479]/dff_0/state_reg/D      0.00
+    0:08:14  612626.8      1.20     292.3     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[63]/dff_0/state_reg/D      0.00
+    0:08:14  612652.1      1.20     292.1     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[255]/dff_0/state_reg/D      0.00
+    0:08:14  612657.3      1.20     291.6     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[415]/dff_0/state_reg/D      0.00
+    0:08:14  612683.0      1.20     291.2     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[447]/dff_0/state_reg/D      0.00
+    0:08:15  612689.3      1.20     287.9     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[383]/dff_0/state_reg/D      0.00
+    0:08:15  612721.8      1.20     287.2     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[255]/dff_0/state_reg/D      0.00
+    0:08:15  612744.8      1.19     286.4     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[319]/dff_0/state_reg/D      0.00
+    0:08:16  612744.5      1.15     267.5     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[383]/dff_0/state_reg/D      0.00
+    0:08:19  612747.9      1.08     955.0     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[287]/dff_0/state_reg/D      0.00
+    0:08:19  612764.3      1.08     935.9     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[511]/dff_0/state_reg/D      0.00
+    0:08:20  612775.9      1.07     929.0     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[287]/dff_0/state_reg/D      0.00
+    0:08:21  612845.5      1.04     468.7     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[95]/dff_0/state_reg/D      0.00
+    0:08:22  612910.0      1.02     460.6     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[415]/dff_0/state_reg/D      0.00
+    0:08:23  612926.0      1.00     455.8     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[255]/dff_0/state_reg/D      0.00
+    0:08:24  612931.5      0.98     445.2     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[415]/dff_0/state_reg/D      0.00
+    0:08:25  612935.0      0.95     628.2     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[511]/dff_0/state_reg/D      0.00
+    0:08:26  612943.0      0.94     627.1     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[351]/dff_0/state_reg/D      0.00
+    0:08:26  612971.3      0.93     626.3     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[31]/dff_0/state_reg/D      0.00
+    0:08:26  612991.2      0.93     626.2     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[479]/dff_0/state_reg/D      0.00
+    0:08:27  613003.9      0.93     625.6     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[31]/dff_0/state_reg/D      0.00
+    0:08:27  613018.0      0.93     833.4     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[287]/dff_0/state_reg/D      0.00
+    0:08:28  613034.8      0.93     833.2     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[383]/dff_0/state_reg/D      0.00
+    0:08:28  613039.1      0.92     833.1     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[383]/dff_0/state_reg/D      0.00
+    0:08:28  613068.5      0.92     831.5     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[383]/dff_0/state_reg/D      0.00
+    0:08:29  613087.7      0.92     831.3     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[159]/dff_0/state_reg/D      0.00
+    0:08:29  613093.4      0.92     831.1     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[383]/dff_0/state_reg/D      0.00
+    0:08:30  613124.3      0.91     678.8     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[511]/dff_0/state_reg/D      0.00
+    0:08:30  613136.1      0.90     678.4     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[31]/dff_0/state_reg/D      0.00
+    0:08:31  613202.3      0.89     677.9     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[351]/dff_0/state_reg/D      0.00
+    0:08:31  613206.4      0.88     670.7     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[223]/dff_0/state_reg/D      0.00
+    0:08:32  613246.1      0.88     696.5     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[223]/dff_0/state_reg/D      0.00
+    0:08:33  613246.7      0.87     696.1     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[31]/dff_0/state_reg/D      0.00
+    0:08:33  613269.0      0.87     695.3     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[31]/dff_0/state_reg/D      0.00
+    0:08:34  613279.0      0.86     694.8     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[223]/dff_0/state_reg/D      0.00
+    0:08:34  613285.7      0.86     694.4     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[31]/dff_0/state_reg/D      0.00
+    0:08:34  613297.9      0.86     694.2     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[255]/dff_0/state_reg/D      0.00
+    0:08:34  613288.0      0.86     693.8     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[95]/dff_0/state_reg/D      0.00
+    0:08:34  613297.2      0.85     693.6     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[287]/dff_0/state_reg/D      0.00
+    0:08:35  613264.5      0.85     693.4     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[223]/dff_0/state_reg/D      0.00
+    0:08:35  613282.7      0.85     693.3     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[191]/dff_0/state_reg/D      0.00
+    0:08:35  613283.5      0.85     693.3     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[63]/dff_0/state_reg/D      0.00
+    0:08:35  613287.8      0.85     692.9     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[287]/dff_0/state_reg/D      0.00
+    0:08:36  613297.1      0.85    1145.8     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[191]/dff_0/state_reg/D      0.00
+    0:08:37  613309.0      0.84    1137.2     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[319]/dff_0/state_reg/D      0.00
+    0:08:37  613335.0      0.83    1136.9     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[95]/dff_0/state_reg/D      0.00
+    0:08:37  613367.1      0.82    1136.7     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[319]/dff_0/state_reg/D      0.00
+    0:08:38  613370.6      0.78    1127.9     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[287]/dff_0/state_reg/D      0.00
+    0:08:38  613373.9      0.78    1127.1     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[287]/dff_0/state_reg/D      0.00
+    0:08:40  613441.0      0.77    1125.4     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[255]/dff_0/state_reg/D      0.00
+    0:08:40  613446.6      0.77    1125.4     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[127]/dff_0/state_reg/D      0.00
+    0:08:40  613454.7      0.77    1119.6     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[511]/dff_0/state_reg/D      0.00
+    0:08:41  613462.6      0.76    1117.5     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[479]/dff_0/state_reg/D      0.00
+    0:08:41  613487.8      0.75    1115.6     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[255]/dff_0/state_reg/D      0.00
+    0:08:42  613486.9      0.75    1115.5     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[255]/dff_0/state_reg/D      0.00
+    0:08:42  613508.3      0.74    1114.9     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[255]/dff_0/state_reg/D      0.00
+    0:08:42  613525.1      0.74    1114.5     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[95]/dff_0/state_reg/D      0.00
+    0:08:42  613510.8      0.73    1112.5     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[127]/dff_0/state_reg/D      0.00
+    0:08:43  613508.0      0.72    1109.7     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[319]/dff_0/state_reg/D      0.00
+    0:08:45  613522.9      0.71    1108.3     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[383]/dff_0/state_reg/D      0.00
+    0:08:45  613524.4      0.71    1107.8     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[159]/dff_0/state_reg/D      0.00
+    0:08:45  613558.7      0.71    1107.7     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[479]/dff_0/state_reg/D      0.00
+    0:08:45  613601.6      0.70    1106.9     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[479]/dff_0/state_reg/D      0.00
+    0:08:46  613625.4      0.70    1104.3     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[255]/dff_0/state_reg/D      0.00
+    0:08:46  613639.6      0.69    1104.3     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[511]/dff_0/state_reg/D      0.00
+    0:08:47  613666.8      0.69    1079.0     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[479]/dff_0/state_reg/D      0.00
+    0:08:48  613735.9      0.68    1078.2     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[255]/dff_0/state_reg/D      0.00
+    0:08:49  613765.6      0.68     622.3     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[511]/dff_0/state_reg/D      0.00
+    0:08:49  613816.6      0.67     622.2     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[511]/dff_0/state_reg/D      0.00
+    0:08:49  613831.9      0.67     621.1     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[223]/dff_0/state_reg/D      0.00
+    0:08:49  613854.7      0.66     621.1     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[223]/dff_0/state_reg/D      0.00
+    0:08:50  613910.4      0.66     617.7     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[223]/dff_0/state_reg/D      0.00
+    0:08:50  613913.2      0.66     617.5     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[511]/dff_0/state_reg/D      0.00
+    0:08:50  613936.1      0.66     617.5     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[479]/dff_0/state_reg/D      0.00
+    0:08:51  613977.1      0.66     617.2     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[447]/dff_0/state_reg/D      0.00
+    0:08:51  614006.7      0.65     616.5     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[479]/dff_0/state_reg/D      0.00
+    0:08:51  614066.7      0.65     615.9     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[447]/dff_0/state_reg/D      0.00
+    0:08:51  614073.2      0.64     615.5     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[415]/dff_0/state_reg/D      0.00
+    0:08:52  614089.5      0.63     614.8     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[223]/dff_0/state_reg/D      0.00
+    0:08:53  614165.4      0.63     614.5     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[127]/dff_0/state_reg/D      0.00
+    0:08:53  614197.5      0.62     614.1     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[223]/dff_0/state_reg/D      0.00
+    0:08:54  614198.8      0.62     614.0     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[447]/dff_0/state_reg/D      0.00
+    0:08:54  614210.4      0.62     613.4     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[415]/dff_0/state_reg/D      0.00
+    0:08:55  614220.4      0.62     612.9     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[31]/dff_0/state_reg/D      0.00
+    0:08:55  614269.2      0.62     612.6     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[351]/dff_0/state_reg/D      0.00
+    0:08:55  614280.2      0.62     612.6     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[447]/dff_0/state_reg/D      0.00
+    0:08:55  614300.5      0.61     612.4     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[31]/dff_0/state_reg/D      0.00
+    0:08:56  614308.1      0.61     612.1     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[191]/dff_0/state_reg/D      0.00
+    0:08:56  614365.2      0.61     612.0     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[191]/dff_0/state_reg/D      0.00
+    0:08:56  614420.6      0.61     611.9     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[127]/dff_0/state_reg/D      0.00
+    0:08:56  614420.5      0.61     611.8     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[447]/dff_0/state_reg/D      0.00
+    0:08:57  614425.5      0.61     611.8     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[479]/dff_0/state_reg/D      0.00
+    0:08:57  614481.7      0.60     611.3     104.5 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[127]/dff_0/state_reg/D      0.00
+    0:08:57  614513.3      0.60     611.2     104.5 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[191]/dff_0/state_reg/D      0.00
+    0:08:57  614559.3      0.60     611.1     104.5 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[191]/dff_0/state_reg/D      0.00
+    0:08:57  614577.2      0.60     611.0     104.5 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[63]/dff_0/state_reg/D      0.00
+    0:08:58  614612.3      0.60     610.9     104.5 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[287]/dff_0/state_reg/D      0.00
+    0:08:58  614643.6      0.60     610.8     104.5 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[31]/dff_0/state_reg/D      0.00
+    0:08:59  614684.2      0.59     496.9     104.5 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[31]/dff_0/state_reg/D      0.00
+    0:09:00  614713.1      0.59     496.7     104.5 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[31]/dff_0/state_reg/D      0.00
+    0:09:00  614732.2      0.58     493.2     104.5 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[351]/dff_0/state_reg/D      0.00
+    0:09:00  614748.8      0.58     493.0     104.5 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[31]/dff_0/state_reg/D      0.00
+    0:09:00  614748.2      0.58     493.0     104.5 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[383]/dff_0/state_reg/D      0.00
+    0:09:00  614765.7      0.56     492.6     104.5 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[95]/dff_0/state_reg/D      0.00
+    0:09:01  614810.3      0.56     492.6     104.5 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[95]/dff_0/state_reg/D      0.00
+    0:09:01  614820.2      0.56     526.8     104.5 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[95]/dff_0/state_reg/D      0.00
+    0:09:01  614819.9      0.56     526.8     104.5 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[255]/dff_0/state_reg/D      0.00
+    0:09:02  614785.4      0.56     526.7     104.5 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[447]/dff_0/state_reg/D      0.00
+    0:09:02  614793.7      0.56     526.6     104.5 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[191]/dff_0/state_reg/D      0.00
+    0:09:02  614827.9      0.56     526.4     104.5 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[479]/dff_0/state_reg/D      0.00
+    0:09:02  614834.0      0.55     525.4     104.5 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[95]/dff_0/state_reg/D      0.00
+    0:09:03  614877.7      0.55     524.7     104.5 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[63]/dff_0/state_reg/D      0.00
+    0:09:03  614886.6      0.55     524.6     104.5 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[351]/dff_0/state_reg/D      0.00
+    0:09:04  614923.2      0.54     524.5     104.5 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[447]/dff_0/state_reg/D      0.00
+    0:09:04  614950.8      0.54     524.3     104.5 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[95]/dff_0/state_reg/D      0.00
+    0:09:04  614958.2      0.54     524.3     104.5 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[415]/dff_0/state_reg/D      0.00
+    0:09:04  614972.5      0.54     524.1     104.5 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[351]/dff_0/state_reg/D      0.00
+    0:09:05  614981.4      0.52     642.1     104.5 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[127]/dff_0/state_reg/D      0.00
+    0:09:05  615008.4      0.52     641.8     104.5 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[383]/dff_0/state_reg/D      0.00
+    0:09:05  615017.6      0.52     641.8     104.5 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[383]/dff_0/state_reg/D      0.00
+    0:09:06  615036.6      0.51     641.3     104.5 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[415]/dff_0/state_reg/D      0.00
+    0:09:06  615077.1      0.51     641.3     104.5 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[511]/dff_0/state_reg/D      0.00
+    0:09:07  615082.7      0.51     642.1     104.5 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[351]/dff_0/state_reg/D      0.00
+    0:09:07  615105.4      0.51     641.7     104.5 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[447]/dff_0/state_reg/D      0.00
+    0:09:08  615160.5      0.51     641.7     104.5 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[127]/dff_0/state_reg/D      0.00
+    0:09:08  615195.8      0.50     641.4     104.5 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[255]/dff_0/state_reg/D      0.00
+    0:09:09  615225.2      0.50     641.4     104.5 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[511]/dff_0/state_reg/D      0.00
+    0:09:09  615238.7      0.50     640.6     104.5 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[191]/dff_0/state_reg/D      0.00
+    0:09:10  615276.7      0.50     640.3     104.5 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[95]/dff_0/state_reg/D      0.00
+    0:09:10  615325.2      0.50     640.3     104.5 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[127]/dff_0/state_reg/D      0.00
+    0:09:10  615409.3      0.50     640.2     104.5 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[191]/dff_0/state_reg/D      0.00
+    0:09:10  615430.1      0.49     640.2     104.5 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[159]/dff_0/state_reg/D      0.00
+    0:09:10  615455.8      0.49     640.2     104.5 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[63]/dff_0/state_reg/D      0.00
+    0:09:11  615475.3      0.49     640.1     104.5 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[95]/dff_0/state_reg/D      0.00
+    0:09:11  615507.6      0.49     640.0     104.5 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[159]/dff_0/state_reg/D      0.00
+    0:09:11  615506.1      0.49     640.0     104.5 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[95]/dff_0/state_reg/D      0.00
+    0:09:11  615521.5      0.49     639.9     104.5 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[383]/dff_0/state_reg/D      0.00
+    0:09:11  615525.6      0.49     639.7     104.5 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[287]/dff_0/state_reg/D      0.00
+    0:09:11  615544.5      0.49     639.6     104.5 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[63]/dff_0/state_reg/D      0.00
+    0:09:12  615566.0      0.49     639.7     104.5 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[95]/dff_0/state_reg/D      0.00
+    0:09:12  615655.1      0.49     639.6     104.5 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[511]/dff_0/state_reg/D      0.00
+    0:09:12  615656.9      0.49     639.5     104.5 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[383]/dff_0/state_reg/D      0.00
+    0:09:12  615662.2      0.49     639.3     104.5 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[63]/dff_0/state_reg/D      0.00
+    0:09:14  615689.3      0.49     639.1     104.5 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[31]/dff_0/state_reg/D      0.00
+    0:09:14  615711.7      0.49     638.9     104.5 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[415]/dff_0/state_reg/D      0.00
+    0:09:14  615712.2      0.48     638.9     104.5 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[287]/dff_0/state_reg/D      0.00
+    0:09:14  615715.8      0.48     638.8     104.5 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[351]/dff_0/state_reg/D      0.00
+    0:09:15  615745.3      0.48     638.5     104.5 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[63]/dff_0/state_reg/D      0.00
+    0:09:15  615739.3      0.48     638.3     104.5 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[287]/dff_0/state_reg/D      0.00
+    0:09:16  615737.2      0.48     638.1     104.5 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[223]/dff_0/state_reg/D      0.00
+    0:09:16  615752.8      0.48     637.9     104.5 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[351]/dff_0/state_reg/D      0.00
+    0:09:16  615760.7      0.48     637.8     104.5 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[159]/dff_0/state_reg/D      0.00
+    0:09:16  615766.6      0.48     637.8     104.5 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[447]/dff_0/state_reg/D      0.00
+    0:09:16  615770.1      0.48     637.6     104.5 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[447]/dff_0/state_reg/D      0.00
+    0:09:17  615769.6      0.48     637.6     104.5 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[479]/dff_0/state_reg/D      0.00
+    0:09:17  615804.3      0.48     637.5     104.5 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[415]/dff_0/state_reg/D      0.00
+    0:09:17  615827.5      0.47     637.4     104.5 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[255]/dff_0/state_reg/D      0.00
+    0:09:18  615831.6      0.47     637.3     104.5 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[479]/dff_0/state_reg/D      0.00
+    0:09:18  615838.2      0.47     637.3     104.5 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[159]/dff_0/state_reg/D      0.00
+    0:09:18  615885.5      0.47     637.3     104.5 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[95]/dff_0/state_reg/D      0.00
+    0:09:18  615886.1      0.47     637.3     104.5 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[511]/dff_0/state_reg/D      0.00
+    0:09:19  615887.1      0.47     637.2     104.5 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[479]/dff_0/state_reg/D      0.00
+    0:09:19  615935.5      0.47     637.0     104.5 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[191]/dff_0/state_reg/D      0.00
+    0:09:19  615934.3      0.47     636.6     104.5 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[95]/dff_0/state_reg/D      0.00
+    0:09:19  615948.5      0.47     636.6     104.5 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[223]/dff_0/state_reg/D      0.00
+    0:09:20  615984.3      0.47     635.8     104.5 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[191]/dff_0/state_reg/D      0.00
+    0:09:20  616008.6      0.46     635.8     104.5 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[191]/dff_0/state_reg/D      0.00
+    0:09:20  616029.3      0.46     635.8     104.5 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[351]/dff_0/state_reg/D      0.00
+    0:09:20  616044.6      0.46     635.7     104.5 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[31]/dff_0/state_reg/D      0.00
+    0:09:20  616089.9      0.46     635.7     104.5 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[127]/dff_0/state_reg/D      0.00
+    0:09:20  616101.6      0.46     635.5     104.5 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[287]/dff_0/state_reg/D      0.00
+    0:09:21  616108.6      0.46     635.5     104.5 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[415]/dff_0/state_reg/D      0.00
+    0:09:21  616121.0      0.46     635.4     104.5 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[31]/dff_0/state_reg/D      0.00
+    0:09:21  616160.7      0.46     635.3     104.5 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[479]/dff_0/state_reg/D      0.00
+    0:09:21  616208.2      0.46     635.2     104.5 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[127]/dff_0/state_reg/D      0.00
+    0:09:21  616220.4      0.46     635.2     104.5 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[415]/dff_0/state_reg/D      0.00
+    0:09:21  616259.7      0.46     635.0     104.5 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[95]/dff_0/state_reg/D      0.00
+    0:09:22  616280.6      0.46     634.9     104.5 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[127]/dff_0/state_reg/D      0.00
+    0:09:22  616302.3      0.45     634.5     104.5 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[447]/dff_0/state_reg/D      0.00
+    0:09:22  616313.2      0.45     634.4     104.5 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[351]/dff_0/state_reg/D      0.00
+    0:09:23  616337.4      0.45     634.1     104.5 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[415]/dff_0/state_reg/D      0.00
+    0:09:23  616385.1      0.45     634.0     104.5 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[191]/dff_0/state_reg/D      0.00
+    0:09:23  616388.8      0.45     633.9     104.5 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[63]/dff_0/state_reg/D      0.00
+    0:09:23  616402.1      0.45     633.9     104.5 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[63]/dff_0/state_reg/D      0.00
+    0:09:23  616425.5      0.45     633.9     104.5 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[63]/dff_0/state_reg/D      0.00
+    0:09:24  616429.4      0.45     633.8     104.5 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[63]/dff_0/state_reg/D      0.00
+    0:09:24  616433.9      0.45     633.8     104.5 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[127]/dff_0/state_reg/D      0.00
+    0:09:24  616459.8      0.44     633.7     104.5 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[63]/dff_0/state_reg/D      0.00
+    0:09:24  616458.5      0.44     633.7     104.5 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[127]/dff_0/state_reg/D      0.00
+    0:09:25  616499.7      0.44     633.6     104.5 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[127]/dff_0/state_reg/D      0.00
+    0:09:25  616536.7      0.44     634.3     104.5 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[191]/dff_0/state_reg/D      0.00
+    0:09:25  616545.5      0.44     634.3     104.5 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[415]/dff_0/state_reg/D      0.00
+    0:09:26  616593.8      0.44     634.2     104.5 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[127]/dff_0/state_reg/D      0.00
+    0:09:26  616601.2      0.44     634.1     104.5 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[31]/dff_0/state_reg/D      0.00
+    0:09:26  616627.2      0.44     634.1     104.5 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[95]/dff_0/state_reg/D      0.00
+    0:09:26  616629.7      0.44     634.1     104.5 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[95]/dff_0/state_reg/D      0.00
+    0:09:26  616673.1      0.44     634.0     104.5 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[511]/dff_0/state_reg/D      0.00
+    0:09:27  616692.2      0.44     633.9     104.5 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[127]/dff_0/state_reg/D      0.00
+    0:09:28  616713.6      0.44     633.2     104.5 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[159]/dff_0/state_reg/D      0.00
+    0:09:28  616733.9      0.44     633.1     104.5 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[191]/dff_0/state_reg/D      0.00
+    0:09:28  616774.7      0.44     633.1     104.5 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[191]/dff_0/state_reg/D      0.00
+    0:09:28  616790.0      0.44     633.0     104.5 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[127]/dff_0/state_reg/D      0.00
+    0:09:28  616795.2      0.44     632.7     104.5 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[415]/dff_0/state_reg/D      0.00
+    0:09:29  616844.0      0.43     632.5     104.5 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[255]/dff_0/state_reg/D      0.00
+    0:09:29  616898.7      0.43     632.3     104.5 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[223]/dff_0/state_reg/D      0.00
+    0:09:29  616916.3      0.43     632.1     104.5 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[63]/dff_0/state_reg/D      0.00
+    0:09:29  616922.5      0.43     632.1     104.5 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[415]/dff_0/state_reg/D      0.00
+    0:09:30  616964.0      0.43     632.1     104.5 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[383]/dff_0/state_reg/D      0.00
+    0:09:30  616979.2      0.43     631.9     104.5 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[287]/dff_0/state_reg/D      0.00
+    0:09:30  616994.4      0.43     631.9     104.5 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[479]/dff_0/state_reg/D      0.00
+    0:09:30  617022.1      0.43     631.8     104.5 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[159]/dff_0/state_reg/D      0.00
+    0:09:31  617026.3      0.43     631.0     104.5 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[351]/dff_0/state_reg/D      0.00
+    0:09:31  617037.4      0.42     631.0     104.5 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[63]/dff_0/state_reg/D      0.00
+    0:09:31  617071.8      0.42     630.8     104.5 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[63]/dff_0/state_reg/D      0.00
+    0:09:32  617099.4      0.42     630.7     104.5 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[127]/dff_0/state_reg/D      0.00
+    0:09:32  617131.2      0.42     628.4     104.5 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[383]/dff_0/state_reg/D      0.00
+    0:09:32  617175.0      0.41     628.0     104.5 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[95]/dff_0/state_reg/D      0.00
+    0:09:32  617185.6      0.41     628.0     104.5 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[511]/dff_0/state_reg/D      0.00
+    0:09:33  617214.9      0.41     627.9     104.5 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[127]/dff_0/state_reg/D      0.00
+    0:09:33  617260.3      0.41     627.8     104.5 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[479]/dff_0/state_reg/D      0.00
+    0:09:34  617268.9      0.40     628.5     104.5 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[255]/dff_0/state_reg/D      0.00
+    0:09:34  617294.5      0.40     628.6     104.5 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[479]/dff_0/state_reg/D      0.00
+    0:09:34  617304.6      0.40     628.0     104.5 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[415]/dff_0/state_reg/D      0.00
+    0:09:35  617316.3      0.40     628.0     104.5 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[31]/dff_0/state_reg/D      0.00
+    0:09:35  617315.6      0.40     648.4     104.5 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[31]/dff_0/state_reg/D      0.00
+    0:09:35  617323.1      0.39     648.3     104.5 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[351]/dff_0/state_reg/D      0.00
+    0:09:36  617367.2      0.39     648.2     104.5 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[127]/dff_0/state_reg/D      0.00
+    0:09:36  617407.9      0.39     648.2     104.5 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[127]/dff_0/state_reg/D      0.00
+    0:09:36  617428.0      0.39     648.1     104.5 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[159]/dff_0/state_reg/D      0.00
+    0:09:36  617453.1      0.39     648.0     104.5 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[191]/dff_0/state_reg/D      0.00
+    0:09:36  617463.6      0.39     648.0     104.5 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[127]/dff_0/state_reg/D      0.00
+    0:09:36  617460.7      0.39     647.8     104.5 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[319]/dff_0/state_reg/D      0.00
+    0:09:37  617465.0      0.38     647.8     104.5 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[31]/dff_0/state_reg/D      0.00
+    0:09:37  617461.6      0.38     646.2     104.5 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[31]/dff_0/state_reg/D      0.00
+    0:09:37  617481.2      0.38     645.7     104.5 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[95]/dff_0/state_reg/D      0.00
+    0:09:37  617503.7      0.37     645.6     104.5 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[255]/dff_0/state_reg/D      0.00
+    0:09:38  617518.4      0.37     645.6     104.5 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[255]/dff_0/state_reg/D      0.00
+    0:09:38  617521.1      0.37     645.5     104.5 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[95]/dff_0/state_reg/D      0.00
+    0:09:38  617563.3      0.37     645.5     104.5 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[255]/dff_0/state_reg/D      0.00
+    0:09:38  617571.5      0.37     645.4     104.5 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[479]/dff_0/state_reg/D      0.00
+    0:09:38  617624.5      0.37     645.4     104.5 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[479]/dff_0/state_reg/D      0.00
+    0:09:39  617664.5      0.37     645.4     104.5 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[287]/dff_0/state_reg/D      0.00
+    0:09:39  617698.6      0.37     645.3     104.5 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[479]/dff_0/state_reg/D      0.00
+    0:09:39  617719.8      0.37     645.2     104.5 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[287]/dff_0/state_reg/D      0.00
+    0:09:39  617742.7      0.37     645.2     104.5 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[95]/dff_0/state_reg/D      0.00
+    0:09:39  617753.7      0.37     645.2     104.5 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[255]/dff_0/state_reg/D      0.00
+    0:09:40  617788.8      0.37     645.1     104.5 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[95]/dff_0/state_reg/D      0.00
+    0:09:40  617790.9      0.36     644.9     104.5 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[127]/dff_0/state_reg/D      0.00
+    0:09:40  617809.8      0.36     644.8     104.5 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[287]/dff_0/state_reg/D      0.00
+    0:09:41  617850.4      0.36     644.7     104.5 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[95]/dff_0/state_reg/D      0.00
+    0:09:41  617875.8      0.36     644.7     104.5 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[415]/dff_0/state_reg/D      0.00
+    0:09:41  617894.6      0.36     644.6     104.5 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[95]/dff_0/state_reg/D      0.00
+    0:09:41  617906.4      0.36     644.6     104.5 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[319]/dff_0/state_reg/D      0.00
+    0:09:41  617906.0      0.36     644.6     104.5 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[415]/dff_0/state_reg/D      0.00
+    0:09:41  617917.9      0.36     644.6     104.5 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[319]/dff_0/state_reg/D      0.00
+    0:09:42  617931.2      0.36     644.6     104.5 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[415]/dff_0/state_reg/D      0.00
+    0:09:42  618006.3      0.36     644.5     104.5 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[415]/dff_0/state_reg/D      0.00
+    0:09:42  618035.8      0.36     644.5     104.5 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[511]/dff_0/state_reg/D      0.00
+    0:09:42  618048.7      0.36     644.4     104.5 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[511]/dff_0/state_reg/D      0.00
+    0:09:42  618093.0      0.35     644.4     104.5 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[63]/dff_0/state_reg/D      0.00
+    0:09:43  618111.7      0.35     644.3     104.5 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[223]/dff_0/state_reg/D      0.00
+    0:09:43  618121.9      0.35     644.2     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[127]/dff_0/state_reg/D      0.00
+    0:09:44  618120.9      0.35     644.1     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[63]/dff_0/state_reg/D      0.00
+    0:09:44  618140.6      0.35     644.1     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[95]/dff_0/state_reg/D      0.00
+    0:09:44  618159.0      0.35     643.9     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[447]/dff_0/state_reg/D      0.00
+    0:09:44  618158.5      0.35     643.9     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[319]/dff_0/state_reg/D      0.00
+    0:09:45  618163.4      0.35     643.9     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[287]/dff_0/state_reg/D      0.00
+    0:09:45  618194.9      0.35     643.8     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[31]/dff_0/state_reg/D      0.00
+    0:09:45  618201.1      0.35     643.6     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[511]/dff_0/state_reg/D      0.00
+    0:09:45  618210.0      0.35     643.5     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[255]/dff_0/state_reg/D      0.00
+    0:09:46  618220.9      0.35     643.4     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[223]/dff_0/state_reg/D      0.00
+    0:09:46  618241.8      0.35     643.3     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[479]/dff_0/state_reg/D      0.00
+    0:09:46  618246.9      0.35     643.1     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[95]/dff_0/state_reg/D      0.00
+    0:09:47  618257.0      0.35     643.1     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[191]/dff_0/state_reg/D      0.00
+    0:09:47  618270.7      0.34     643.1     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[127]/dff_0/state_reg/D      0.00
+    0:09:47  618275.8      0.34     643.1     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[415]/dff_0/state_reg/D      0.00
+    0:09:47  618294.3      0.34     643.0     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[223]/dff_0/state_reg/D      0.00
+    0:09:47  618344.8      0.34     643.0     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[159]/dff_0/state_reg/D      0.00
+    0:09:48  618356.4      0.34     642.9     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[127]/dff_0/state_reg/D      0.00
+    0:09:48  618393.6      0.34     642.9     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[415]/dff_0/state_reg/D      0.00
+    0:09:49  618413.3      0.34     642.8     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[255]/dff_0/state_reg/D      0.00
+    0:09:49  618435.6      0.34     642.8     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[287]/dff_0/state_reg/D      0.00
+    0:09:49  618447.3      0.34     642.7     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[127]/dff_0/state_reg/D      0.00
+    0:09:50  618453.9      0.34     644.6     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[319]/dff_0/state_reg/D      0.00
+    0:09:50  618454.3      0.34     644.5     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[319]/dff_0/state_reg/D      0.00
+    0:09:50  618467.5      0.34     644.5     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[159]/dff_0/state_reg/D      0.00
+    0:09:51  618479.9      0.34     644.5     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[159]/dff_0/state_reg/D      0.00
+    0:09:51  618490.4      0.34     644.5     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[255]/dff_0/state_reg/D      0.00
+    0:09:52  618512.0      0.34     644.5     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[255]/dff_0/state_reg/D      0.00
+    0:09:52  618548.7      0.34     644.4     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[63]/dff_0/state_reg/D      0.00
+    0:09:52  618550.6      0.34     644.3     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[287]/dff_0/state_reg/D      0.00
+    0:09:52  618550.4      0.34     644.3     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[287]/dff_0/state_reg/D      0.00
+    0:09:53  618565.5      0.34     644.2     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[383]/dff_0/state_reg/D      0.00
+    0:09:53  618574.0      0.34     644.2     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[255]/dff_0/state_reg/D      0.00
+    0:09:53  618571.2      0.34     644.0     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[31]/dff_0/state_reg/D      0.00
+    0:09:54  618577.4      0.33     644.1     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[479]/dff_0/state_reg/D      0.00
+    0:09:54  618603.1      0.33     644.1     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[287]/dff_0/state_reg/D      0.00
+    0:09:55  618628.3      0.33     644.0     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[31]/dff_0/state_reg/D      0.00
+    0:09:55  618629.1      0.33     644.0     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[287]/dff_0/state_reg/D      0.00
+    0:09:55  618634.7      0.33     644.0     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[95]/dff_0/state_reg/D      0.00
+    0:09:55  618643.7      0.33     643.9     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[415]/dff_0/state_reg/D      0.00
+    0:09:55  618677.4      0.33     643.9     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[127]/dff_0/state_reg/D      0.00
+    0:09:56  618690.7      0.33     643.8     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[415]/dff_0/state_reg/D      0.00
+    0:09:56  618707.2      0.33     643.8     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[287]/dff_0/state_reg/D      0.00
+    0:09:56  618701.9      0.33     643.7     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[223]/dff_0/state_reg/D      0.00
+    0:09:57  618677.5      0.33     643.6     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[127]/dff_0/state_reg/D      0.00
+    0:09:57  618678.6      0.33     643.6     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[63]/dff_0/state_reg/D      0.00
+    0:09:57  618680.4      0.33     643.2     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[287]/dff_0/state_reg/D      0.00
+    0:09:57  618708.5      0.33     643.0     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[415]/dff_0/state_reg/D      0.00
+    0:09:58  618741.0      0.33     644.2     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[95]/dff_0/state_reg/D      0.00
+    0:09:59  618763.9      0.32     644.2     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[479]/dff_0/state_reg/D      0.00
+    0:09:59  618775.5      0.32     644.1     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[319]/dff_0/state_reg/D      0.00
+    0:10:00  618791.8      0.32     643.0     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[31]/dff_0/state_reg/D      0.00
+    0:10:00  618799.5      0.32     643.0     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[255]/dff_0/state_reg/D      0.00
+    0:10:00  618813.3      0.32     642.9     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[351]/dff_0/state_reg/D      0.00
+    0:10:00  618827.8      0.32     642.9     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[287]/dff_0/state_reg/D      0.00
+    0:10:00  618829.7      0.32     642.9     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[287]/dff_0/state_reg/D      0.00
+    0:10:01  618831.0      0.32     642.9     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[287]/dff_0/state_reg/D      0.00
+    0:10:01  618844.5      0.31     642.7     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[479]/dff_0/state_reg/D      0.00
+    0:10:01  618854.9      0.31     642.6     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[351]/dff_0/state_reg/D      0.00
+    0:10:01  618854.9      0.31     642.6     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[255]/dff_0/state_reg/D      0.00
+    0:10:02  618915.2      0.31     642.5     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[159]/dff_0/state_reg/D      0.00
+    0:10:02  618944.6      0.31     642.4     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[223]/dff_0/state_reg/D      0.00
+    0:10:02  618974.2      0.31     642.3     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[255]/dff_0/state_reg/D      0.00
+    0:10:02  619053.6      0.31     642.2     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[479]/dff_0/state_reg/D      0.00
+    0:10:02  619054.4      0.30     642.1     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[31]/dff_0/state_reg/D      0.00
+    0:10:03  619070.4      0.30     642.1     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[287]/dff_0/state_reg/D      0.00
+    0:10:03  619072.7      0.30     642.0     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[287]/dff_0/state_reg/D      0.00
+    0:10:03  619083.9      0.30     641.9     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[223]/dff_0/state_reg/D      0.00
+    0:10:04  619104.9      0.30     641.9     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[255]/dff_0/state_reg/D      0.00
+    0:10:04  619121.8      0.30     641.8     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[63]/dff_0/state_reg/D      0.00
+    0:10:04  619130.6      0.30     641.8     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[447]/dff_0/state_reg/D      0.00
+    0:10:04  619179.7      0.30     641.7     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[287]/dff_0/state_reg/D      0.00
+    0:10:04  619197.8      0.30     641.7     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[191]/dff_0/state_reg/D      0.00
+    0:10:05  619214.3      0.30     641.7     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[95]/dff_0/state_reg/D      0.00
+    0:10:05  619243.9      0.30     641.6     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[287]/dff_0/state_reg/D      0.00
+    0:10:05  619267.0      0.30     641.5     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[31]/dff_0/state_reg/D      0.00
+    0:10:05  619285.2      0.30     641.5     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[255]/dff_0/state_reg/D      0.00
+    0:10:05  619301.9      0.30     641.5     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[127]/dff_0/state_reg/D      0.00
+    0:10:06  619315.1      0.30     641.5     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[447]/dff_0/state_reg/D      0.00
+    0:10:06  619325.8      0.30     641.5     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[255]/dff_0/state_reg/D      0.00
+    0:10:06  619326.9      0.30     641.4     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[479]/dff_0/state_reg/D      0.00
+    0:10:06  619373.0      0.29     641.4     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[319]/dff_0/state_reg/D      0.00
+    0:10:06  619400.4      0.29     641.4     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[287]/dff_0/state_reg/D      0.00
+    0:10:07  619435.0      0.29     641.3     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[319]/dff_0/state_reg/D      0.00
+    0:10:07  619469.2      0.29     641.3     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[63]/dff_0/state_reg/D      0.00
+    0:10:07  619477.5      0.29     641.3     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[159]/dff_0/state_reg/D      0.00
+    0:10:07  619544.7      0.29     641.2     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[447]/dff_0/state_reg/D      0.00
+    0:10:07  619545.5      0.29     641.1     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[511]/dff_0/state_reg/D      0.00
+    0:10:07  619569.1      0.29     641.0     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[319]/dff_0/state_reg/D      0.00
+    0:10:08  619607.2      0.29     641.0     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[287]/dff_0/state_reg/D      0.00
+    0:10:08  619627.3      0.29     641.0     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[127]/dff_0/state_reg/D      0.00
+    0:10:08  619636.9      0.29     641.0     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[447]/dff_0/state_reg/D      0.00
+    0:10:08  619649.6      0.29     641.0     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[95]/dff_0/state_reg/D      0.00
+    0:10:08  619660.5      0.29     640.9     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[255]/dff_0/state_reg/D      0.00
+    0:10:10  619664.9      0.29     640.9     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[63]/dff_0/state_reg/D      0.00
+    0:10:10  619668.9      0.29     640.2     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[479]/dff_0/state_reg/D      0.00
+    0:10:11  619705.7      0.29     639.7     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[383]/dff_0/state_reg/D      0.00
+    0:10:11  619720.0      0.28     639.7     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[287]/dff_0/state_reg/D      0.00
+    0:10:11  619736.6      0.28     639.7     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[63]/dff_0/state_reg/D      0.00
+    0:10:11  619756.7      0.28     639.5     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[63]/dff_0/state_reg/D      0.00
+    0:10:12  619768.9      0.28     638.4     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[63]/dff_0/state_reg/D      0.00
+    0:10:12  619774.1      0.28     638.3     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[319]/dff_0/state_reg/D      0.00
+    0:10:13  619801.7      0.27     637.8     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[447]/dff_0/state_reg/D      0.00
+    0:10:13  619860.7      0.27     637.6     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[63]/dff_0/state_reg/D      0.00
+    0:10:14  619856.1      0.27     637.6     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[319]/dff_0/state_reg/D      0.00
+    0:10:14  619869.8      0.27     637.4     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[383]/dff_0/state_reg/D      0.00
+    0:10:14  619900.5      0.27     637.4     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[127]/dff_0/state_reg/D      0.00
+    0:10:14  619931.8      0.27     637.4     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[95]/dff_0/state_reg/D      0.00
+    0:10:14  619953.2      0.26     637.4     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[127]/dff_0/state_reg/D      0.00
+    0:10:15  619998.5      0.26     637.3     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[95]/dff_0/state_reg/D      0.00
+    0:10:15  620020.7      0.26     637.3     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[127]/dff_0/state_reg/D      0.00
+    0:10:15  620042.6      0.26     637.3     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[383]/dff_0/state_reg/D      0.00
+    0:10:15  620056.7      0.26     637.3     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[223]/dff_0/state_reg/D      0.00
+    0:10:15  620063.2      0.26     637.2     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[127]/dff_0/state_reg/D      0.00
+    0:10:16  620075.3      0.26     636.9     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[127]/dff_0/state_reg/D      0.00
+    0:10:16  620112.3      0.26     636.8     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[511]/dff_0/state_reg/D      0.00
+    0:10:16  620149.5      0.26     636.8     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[127]/dff_0/state_reg/D      0.00
+    0:10:16  620188.2      0.26     636.8     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[351]/dff_0/state_reg/D      0.00
+    0:10:17  620201.9      0.26     636.7     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[31]/dff_0/state_reg/D      0.00
+    0:10:17  620212.9      0.26     636.4     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[159]/dff_0/state_reg/D      0.00
+    0:10:17  620212.1      0.26     636.4     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[95]/dff_0/state_reg/D      0.00
+    0:10:17  620224.0      0.25     636.3     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[447]/dff_0/state_reg/D      0.00
+    0:10:18  620237.3      0.25     636.3     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[351]/dff_0/state_reg/D      0.00
+    0:10:18  620286.4      0.25     636.1     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[447]/dff_0/state_reg/D      0.00
+    0:10:18  620331.4      0.25     636.1     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[511]/dff_0/state_reg/D      0.00
+    0:10:18  620352.9      0.25     636.1     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[511]/dff_0/state_reg/D      0.00
+    0:10:19  620365.6      0.25     636.1     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[31]/dff_0/state_reg/D      0.00
+    0:10:19  620395.5      0.25     636.0     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[63]/dff_0/state_reg/D      0.00
+    0:10:19  620396.7      0.25     636.0     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[447]/dff_0/state_reg/D      0.00
+    0:10:20  620416.7      0.25     635.9     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[447]/dff_0/state_reg/D      0.00
+    0:10:20  620441.0      0.25     635.5     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[127]/dff_0/state_reg/D      0.00
+    0:10:20  620471.2      0.25     635.4     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[95]/dff_0/state_reg/D      0.00
+    0:10:20  620477.5      0.25     635.4     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[31]/dff_0/state_reg/D      0.00
+    0:10:20  620492.5      0.25     635.4     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[351]/dff_0/state_reg/D      0.00
+    0:10:21  620495.7      0.25     635.4     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[287]/dff_0/state_reg/D      0.00
+    0:10:21  620498.1      0.25     635.3     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[287]/dff_0/state_reg/D      0.00
+    0:10:21  620527.0      0.25     635.1     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[63]/dff_0/state_reg/D      0.00
+    0:10:21  620540.9      0.24     635.0     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[383]/dff_0/state_reg/D      0.00
+    0:10:22  620561.0      0.24     634.9     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[351]/dff_0/state_reg/D      0.00
+    0:10:22  620576.3      0.24     634.9     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[223]/dff_0/state_reg/D      0.00
+    0:10:22  620579.1      0.24     634.7     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[447]/dff_0/state_reg/D      0.00
+    0:10:22  620589.5      0.24     634.7     104.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[255]/dff_0/state_reg/D      0.00
+    0:10:23  620594.7      0.24     634.8     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[31]/dff_0/state_reg/D      0.00
+    0:10:23  620633.0      0.23     634.6     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[223]/dff_0/state_reg/D      0.00
+    0:10:24  620688.3      0.23     634.5     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[351]/dff_0/state_reg/D      0.00
+    0:10:24  620702.0      0.23     634.4     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[255]/dff_0/state_reg/D      0.00
+    0:10:25  620719.3      0.23     634.3     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[255]/dff_0/state_reg/D      0.00
+    0:10:25  620749.2      0.23     634.3     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[511]/dff_0/state_reg/D      0.00
+    0:10:25  620818.2      0.23     634.3     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[223]/dff_0/state_reg/D      0.00
+    0:10:25  620818.4      0.23     634.3     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[159]/dff_0/state_reg/D      0.00
+    0:10:25  620865.2      0.23     634.2     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[383]/dff_0/state_reg/D      0.00
+    0:10:26  620887.3      0.23     634.2     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[383]/dff_0/state_reg/D      0.00
+    0:10:26  620893.6      0.23     633.9     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[191]/dff_0/state_reg/D      0.00
+    0:10:26  620897.0      0.23     633.9     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[191]/dff_0/state_reg/D      0.00
+    0:10:27  620915.1      0.22     633.7     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[319]/dff_0/state_reg/D      0.00
+    0:10:27  620937.6      0.22     633.7     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[159]/dff_0/state_reg/D      0.00
+    0:10:27  620947.2      0.22     633.6     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[511]/dff_0/state_reg/D      0.00
+    0:10:27  620957.6      0.22     633.6     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[511]/dff_0/state_reg/D      0.00
+    0:10:27  621015.8      0.22     633.5     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[351]/dff_0/state_reg/D      0.00
+    0:10:28  621030.1      0.22     633.4     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[223]/dff_0/state_reg/D      0.00
+    0:10:28  621065.8      0.22     633.4     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[447]/dff_0/state_reg/D      0.00
+    0:10:28  621094.1      0.22     633.3     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[255]/dff_0/state_reg/D      0.00
+    0:10:29  621119.3      0.22     633.0     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[511]/dff_0/state_reg/D      0.00
+    0:10:29  621123.4      0.22     632.9     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[383]/dff_0/state_reg/D      0.00
+    0:10:29  621139.7      0.22     632.9     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[191]/dff_0/state_reg/D      0.00
+    0:10:29  621183.4      0.21     632.9     107.9 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[127]/dff_0/state_reg/D      0.00
+    0:10:30  621262.6      0.21     632.8     107.9 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[511]/dff_0/state_reg/D      0.00
+    0:10:30  621282.2      0.21     632.8     107.9 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[511]/dff_0/state_reg/D      0.00
+    0:10:30  621325.3      0.21     632.6     107.9 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[223]/dff_0/state_reg/D      0.00
+    0:10:30  621338.6      0.21     632.5     107.9 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[223]/dff_0/state_reg/D      0.00
+    0:10:30  621347.8      0.21     632.4     107.9 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[31]/dff_0/state_reg/D      0.00
+    0:10:31  621336.6      0.21     630.4     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[31]/dff_0/state_reg/D      0.00
+    0:10:31  621350.9      0.21     628.6     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[447]/dff_0/state_reg/D      0.00
+    0:10:32  621358.5      0.21     628.6     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[191]/dff_0/state_reg/D      0.00
+    0:10:32  621354.7      0.20     628.6     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[127]/dff_0/state_reg/D      0.00
+    0:10:33  621365.1      0.20     628.5     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[287]/dff_0/state_reg/D      0.00
+    0:10:33  621397.1      0.20     628.5     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[383]/dff_0/state_reg/D      0.00
+    0:10:34  621422.4      0.20     628.4     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[223]/dff_0/state_reg/D      0.00
+    0:10:34  621422.3      0.20     628.4     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[31]/dff_0/state_reg/D      0.00
+    0:10:34  621432.1      0.20     628.3     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[479]/dff_0/state_reg/D      0.00
+    0:10:34  621440.2      0.20     628.3     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[319]/dff_0/state_reg/D      0.00
+    0:10:35  621484.6      0.20     628.3     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[31]/dff_0/state_reg/D      0.00
+    0:10:35  621491.9      0.20     628.3     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[31]/dff_0/state_reg/D      0.00
+    0:10:35  621504.5      0.20     628.3     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[319]/dff_0/state_reg/D      0.00
+    0:10:35  621505.1      0.20     628.3     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[351]/dff_0/state_reg/D      0.00
+    0:10:35  621517.1      0.20     628.2     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[255]/dff_0/state_reg/D      0.00
+    0:10:35  621550.9      0.20     628.1     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[255]/dff_0/state_reg/D      0.00
+    0:10:36  621578.1      0.20     628.1     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[31]/dff_0/state_reg/D      0.00
+    0:10:36  621578.4      0.20     628.1     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[223]/dff_0/state_reg/D      0.00
+    0:10:36  621605.9      0.20     628.1     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[159]/dff_0/state_reg/D      0.00
+    0:10:36  621617.7      0.20     628.1     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[287]/dff_0/state_reg/D      0.00
+    0:10:36  621635.8      0.20     628.0     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[255]/dff_0/state_reg/D      0.00
+    0:10:37  621646.8      0.19     627.9     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[383]/dff_0/state_reg/D      0.00
+    0:10:37  621657.5      0.19     627.9     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[159]/dff_0/state_reg/D      0.00
+    0:10:37  621681.1      0.19     627.9     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[159]/dff_0/state_reg/D      0.00
+    0:10:37  621712.2      0.19     627.9     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[159]/dff_0/state_reg/D      0.00
+    0:10:37  621725.7      0.19     627.9     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[351]/dff_0/state_reg/D      0.00
+    0:10:38  621774.4      0.19     627.9     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[351]/dff_0/state_reg/D      0.00
+    0:10:38  621826.8      0.19     627.9     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[447]/dff_0/state_reg/D      0.00
+    0:10:38  621848.2      0.19     627.8     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[447]/dff_0/state_reg/D      0.00
+    0:10:38  621855.4      0.19     627.7     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[191]/dff_0/state_reg/D      0.00
+    0:10:38  621865.5      0.19     627.7     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[63]/dff_0/state_reg/D      0.00
+    0:10:39  621917.7      0.19     627.7     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[63]/dff_0/state_reg/D      0.00
+    0:10:39  621924.6      0.19     627.7     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[447]/dff_0/state_reg/D      0.00
+    0:10:39  621935.8      0.19     627.7     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[63]/dff_0/state_reg/D      0.00
+    0:10:39  621961.9      0.19     627.6     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[479]/dff_0/state_reg/D      0.00
+    0:10:39  622019.1      0.19     627.6     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[287]/dff_0/state_reg/D      0.00
+    0:10:39  622085.1      0.19     627.6     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[191]/dff_0/state_reg/D      0.00
+    0:10:40  622109.1      0.19     627.6     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[447]/dff_0/state_reg/D      0.00
+    0:10:40  622151.7      0.19     627.6     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[223]/dff_0/state_reg/D      0.00
+    0:10:40  622195.7      0.19     627.6     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[223]/dff_0/state_reg/D      0.00
+    0:10:40  622213.5      0.19     627.6     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[159]/dff_0/state_reg/D      0.00
+    0:10:40  622220.6      0.19     627.5     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[31]/dff_0/state_reg/D      0.00
+    0:10:41  622241.0      0.19     627.4     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[223]/dff_0/state_reg/D      0.00
+    0:10:41  622251.3      0.19     627.4     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[31]/dff_0/state_reg/D      0.00
+    0:10:41  622254.4      0.19     627.3     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[287]/dff_0/state_reg/D      0.00
+    0:10:41  622289.3      0.19     627.3     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[31]/dff_0/state_reg/D      0.00
+    0:10:41  622304.0      0.19     627.3     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[255]/dff_0/state_reg/D      0.00
+    0:10:41  622353.0      0.19     627.3     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[95]/dff_0/state_reg/D      0.00
+    0:10:42  622353.5      0.19     627.3     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[255]/dff_0/state_reg/D      0.00
+    0:10:42  622377.7      0.19     627.2     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[447]/dff_0/state_reg/D      0.00
+    0:10:42  622398.7      0.19     627.2     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[191]/dff_0/state_reg/D      0.00
+    0:10:42  622398.0      0.19     627.2     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[415]/dff_0/state_reg/D      0.00
+    0:10:42  622402.3      0.19     627.2     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[415]/dff_0/state_reg/D      0.00
+    0:10:42  622438.9      0.18     627.1     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[511]/dff_0/state_reg/D      0.00
+    0:10:42  622450.4      0.18     627.1     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[31]/dff_0/state_reg/D      0.00
+    0:10:43  622484.8      0.18     627.1     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[511]/dff_0/state_reg/D      0.00
+    0:10:44  622497.3      0.18     627.1     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[511]/dff_0/state_reg/D      0.00
+    0:10:44  622518.2      0.18     627.1     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[511]/dff_0/state_reg/D      0.00
+    0:10:44  622562.7      0.18     627.1     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[255]/dff_0/state_reg/D      0.00
+    0:10:45  622554.7      0.18     627.0     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[255]/dff_0/state_reg/D      0.00
+    0:10:45  622560.7      0.18     627.0     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[287]/dff_0/state_reg/D      0.00
+    0:10:45  622580.8      0.18     627.0     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[159]/dff_0/state_reg/D      0.00
+    0:10:45  622607.2      0.18     626.9     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[415]/dff_0/state_reg/D      0.00
+    0:10:45  622611.7      0.18     626.9     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[383]/dff_0/state_reg/D      0.00
+    0:10:46  622644.8      0.18     626.8     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[63]/dff_0/state_reg/D      0.00
+    0:10:46  622686.5      0.18     626.8     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[287]/dff_0/state_reg/D      0.00
+    0:10:46  622696.5      0.18     626.7     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[383]/dff_0/state_reg/D      0.00
+    0:10:46  622685.5      0.18     626.7     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[63]/dff_0/state_reg/D      0.00
+    0:10:46  622685.3      0.18     626.7     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[63]/dff_0/state_reg/D      0.00
+    0:10:46  622688.8      0.18     626.7     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[63]/dff_0/state_reg/D      0.00
+    0:10:47  622700.0      0.18     626.6     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[447]/dff_0/state_reg/D      0.00
+    0:10:47  622703.9      0.18     626.6     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[319]/dff_0/state_reg/D      0.00
+    0:10:47  622718.9      0.18     626.7     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[447]/dff_0/state_reg/D      0.00
+    0:10:47  622723.4      0.18     626.6     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[95]/dff_0/state_reg/D      0.00
+    0:10:47  622739.1      0.18     626.6     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[479]/dff_0/state_reg/D      0.00
+    0:10:47  622742.2      0.18     626.6     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[479]/dff_0/state_reg/D      0.00
+    0:10:47  622772.6      0.18     626.6     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[447]/dff_0/state_reg/D      0.00
+    0:10:48  622810.1      0.18     626.6     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[287]/dff_0/state_reg/D      0.00
+    0:10:48  622833.4      0.18     626.6     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[191]/dff_0/state_reg/D      0.00
+    0:10:48  622833.4      0.18     626.6     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[127]/dff_0/state_reg/D      0.00
+    0:10:48  622829.6      0.17     626.5     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[415]/dff_0/state_reg/D      0.00
+    0:10:48  622828.8      0.17     626.5     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[63]/dff_0/state_reg/D      0.00
+    0:10:49  622834.1      0.17     626.3     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[31]/dff_0/state_reg/D      0.00
+    0:10:49  622877.7      0.17     626.3     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[191]/dff_0/state_reg/D      0.00
+    0:10:49  622886.7      0.17     626.2     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[223]/dff_0/state_reg/D      0.00
+    0:10:49  622899.3      0.17     626.2     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[95]/dff_0/state_reg/D      0.00
+    0:10:49  622917.6      0.17     626.2     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[95]/dff_0/state_reg/D      0.00
+    0:10:50  622953.4      0.17     626.2     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[31]/dff_0/state_reg/D      0.00
+    0:10:50  622968.4      0.17     626.1     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[447]/dff_0/state_reg/D      0.00
+    0:10:50  622993.0      0.17     626.1     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[223]/dff_0/state_reg/D      0.00
+    0:10:50  622994.3      0.17     626.1     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[31]/dff_0/state_reg/D      0.00
+    0:10:51  623037.9      0.17     625.9     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[95]/dff_0/state_reg/D      0.00
+    0:10:51  623044.7      0.17     625.9     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[31]/dff_0/state_reg/D      0.00
+    0:10:51  623039.8      0.17     505.5     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[31]/dff_0/state_reg/D      0.00
+    0:10:52  623050.2      0.17     505.2     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[191]/dff_0/state_reg/D      0.00
+    0:10:52  623062.8      0.17     505.2     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[479]/dff_0/state_reg/D      0.00
+    0:10:52  623082.7      0.16     505.2     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[479]/dff_0/state_reg/D      0.00
+    0:10:53  623094.3      0.16     486.5     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[31]/dff_0/state_reg/D      0.00
+    0:10:53  623107.3      0.16     486.3     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[191]/dff_0/state_reg/D      0.00
+    0:10:54  623156.2      0.16     486.2     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[223]/dff_0/state_reg/D      0.00
+    0:10:54  623221.9      0.16     486.2     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[479]/dff_0/state_reg/D      0.00
+    0:10:54  623232.6      0.16     486.2     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[319]/dff_0/state_reg/D      0.00
+    0:10:54  623276.7      0.16     486.2     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[415]/dff_0/state_reg/D      0.00
+    0:10:54  623275.6      0.16     486.2     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[415]/dff_0/state_reg/D      0.00
+    0:10:55  623284.3      0.16     486.2     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[191]/dff_0/state_reg/D      0.00
+    0:10:55  623299.5      0.16     486.1     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[447]/dff_0/state_reg/D      0.00
+    0:10:55  623312.4      0.16     486.1     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[351]/dff_0/state_reg/D      0.00
+    0:10:55  623302.2      0.16     486.1     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[319]/dff_0/state_reg/D      0.00
+    0:10:56  623327.6      0.16     486.1     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[191]/dff_0/state_reg/D      0.00
+    0:10:56  623329.6      0.16     486.1     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[31]/dff_0/state_reg/D      0.00
+    0:10:56  623329.6      0.16     486.0     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[319]/dff_0/state_reg/D      0.00
+    0:10:56  623358.9      0.16     486.1     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[255]/dff_0/state_reg/D      0.00
+    0:10:56  623369.3      0.16     486.1     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[447]/dff_0/state_reg/D      0.00
+    0:10:56  623382.0      0.16     486.1     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[447]/dff_0/state_reg/D      0.00
+    0:10:57  623383.5      0.16     486.1     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[31]/dff_0/state_reg/D      0.00
+    0:10:57  623397.6      0.16     486.0     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[31]/dff_0/state_reg/D      0.00
+    0:10:57  623399.2      0.15     486.0     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[447]/dff_0/state_reg/D      0.00
+    0:10:57  623425.3      0.15     486.0     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[447]/dff_0/state_reg/D      0.00
+    0:10:57  623448.7      0.15     486.0     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[511]/dff_0/state_reg/D      0.00
+    0:10:58  623449.5      0.15     486.0     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[511]/dff_0/state_reg/D      0.00
+    0:10:58  623453.2      0.15     485.9     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[319]/dff_0/state_reg/D      0.00
+    0:10:59  623461.2      0.15     485.8     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[31]/dff_0/state_reg/D      0.00
+    0:10:59  623545.1      0.15     485.8     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[447]/dff_0/state_reg/D      0.00
+    0:10:59  623559.5      0.15     485.8     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[191]/dff_0/state_reg/D      0.00
+    0:10:59  623559.5      0.15     485.7     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[223]/dff_0/state_reg/D      0.00
+    0:11:00  623628.6      0.15     485.7     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[319]/dff_0/state_reg/D      0.00
+    0:11:00  623669.5      0.15     485.6     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[447]/dff_0/state_reg/D      0.00
+    0:11:00  623668.2      0.15     485.6     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[127]/dff_0/state_reg/D      0.00
+    0:11:00  623722.0      0.15     485.6     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[95]/dff_0/state_reg/D      0.00
+    0:11:00  623758.7      0.15     485.6     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[63]/dff_0/state_reg/D      0.00
+    0:11:01  623759.2      0.15     485.6     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[127]/dff_0/state_reg/D      0.00
+    0:11:01  623788.3      0.15     485.5     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[447]/dff_0/state_reg/D      0.00
+    0:11:01  623870.4      0.14     485.5     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[255]/dff_0/state_reg/D      0.00
+    0:11:01  623871.9      0.14     485.5     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[255]/dff_0/state_reg/D      0.00
+    0:11:01  623894.1      0.14     485.5     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[191]/dff_0/state_reg/D      0.00
+    0:11:02  623893.3      0.14     485.5     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[479]/dff_0/state_reg/D      0.00
+    0:11:02  623910.1      0.14     485.3     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[447]/dff_0/state_reg/D      0.00
+    0:11:02  623933.7      0.14     485.3     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[511]/dff_0/state_reg/D      0.00
+    0:11:02  623947.3      0.14     485.3     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[191]/dff_0/state_reg/D      0.00
+    0:11:02  623963.2      0.14     485.3     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[511]/dff_0/state_reg/D      0.00
+    0:11:02  623957.6      0.14     485.2     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[191]/dff_0/state_reg/D      0.00
+    0:11:03  623966.1      0.14     485.1     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[95]/dff_0/state_reg/D      0.00
+    0:11:03  624005.0      0.14     485.1     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[255]/dff_0/state_reg/D      0.00
+    0:11:03  624046.0      0.14     485.3     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[383]/dff_0/state_reg/D      0.00
+    0:11:03  624089.0      0.14     485.3     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[255]/dff_0/state_reg/D      0.00
+    0:11:04  624133.6      0.14     485.3     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[255]/dff_0/state_reg/D      0.00
+    0:11:04  624131.5      0.14     485.2     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[447]/dff_0/state_reg/D      0.00
+    0:11:04  624173.7      0.14     485.2     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[415]/dff_0/state_reg/D      0.00
+    0:11:04  624212.4      0.14     485.1     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[479]/dff_0/state_reg/D      0.00
+    0:11:04  624232.5      0.14     485.0     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[287]/dff_0/state_reg/D      0.00
+    0:11:05  624255.8      0.14     485.0     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[383]/dff_0/state_reg/D      0.00
+    0:11:05  624287.5      0.14     485.0     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[287]/dff_0/state_reg/D      0.00
+    0:11:05  624339.7      0.14     485.0     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[447]/dff_0/state_reg/D      0.00
+    0:11:05  624348.5      0.14     485.0     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[383]/dff_0/state_reg/D      0.00
+    0:11:06  624368.6      0.14     484.8     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[415]/dff_0/state_reg/D      0.00
+    0:11:06  624381.5      0.13     484.8     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[447]/dff_0/state_reg/D      0.00
+    0:11:06  624378.3      0.13     484.7     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[319]/dff_0/state_reg/D      0.00
+    0:11:06  624395.3      0.13     484.7     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[127]/dff_0/state_reg/D      0.00
+    0:11:06  624413.5      0.13     484.7     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[191]/dff_0/state_reg/D      0.00
+    0:11:06  624416.0      0.13     484.6     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[127]/dff_0/state_reg/D      0.00
+    0:11:07  624443.6      0.13     484.6     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[127]/dff_0/state_reg/D      0.00
+    0:11:07  624558.0      0.13     484.6     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[31]/dff_0/state_reg/D      0.00
+    0:11:07  624578.3      0.13     484.6     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[255]/dff_0/state_reg/D      0.00
+    0:11:07  624623.6      0.13     484.6     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[383]/dff_0/state_reg/D      0.00
+    0:11:07  624629.4      0.13     484.5     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[255]/dff_0/state_reg/D      0.00
+    0:11:08  624658.1      0.13     484.5     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[255]/dff_0/state_reg/D      0.00
+    0:11:08  624665.1      0.13     484.4     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[31]/dff_0/state_reg/D      0.00
+    0:11:08  624672.2      0.12     484.4     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[415]/dff_0/state_reg/D      0.00
+    0:11:08  624693.1      0.12     484.4     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[447]/dff_0/state_reg/D      0.00
+    0:11:08  624749.8      0.12     484.4     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[255]/dff_0/state_reg/D      0.00
+    0:11:09  624797.4      0.12     484.3     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[447]/dff_0/state_reg/D      0.00
+    0:11:09  624851.0      0.12     484.3     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[255]/dff_0/state_reg/D      0.00
+    0:11:09  624887.9      0.12     484.3     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[447]/dff_0/state_reg/D      0.00
+    0:11:09  624913.9      0.12     484.2     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[447]/dff_0/state_reg/D      0.00
+    0:11:10  624906.8      0.12     484.2     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[447]/dff_0/state_reg/D      0.00
+    0:11:10  624920.1      0.12     484.2     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[191]/dff_0/state_reg/D      0.00
+    0:11:10  624930.6      0.12     484.2     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[191]/dff_0/state_reg/D      0.00
+    0:11:10  624967.6      0.12     484.2     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[287]/dff_0/state_reg/D      0.00
+    0:11:10  624993.1      0.12     484.2     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[31]/dff_0/state_reg/D      0.00
+    0:11:11  625002.1      0.12     484.1     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[191]/dff_0/state_reg/D      0.00
+    0:11:11  625022.7      0.12     484.1     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[191]/dff_0/state_reg/D      0.00
+    0:11:11  625068.0      0.12     484.0     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[255]/dff_0/state_reg/D      0.00
+    0:11:11  625088.8      0.12     484.0     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[287]/dff_0/state_reg/D      0.00
+    0:11:11  625125.9      0.11     484.0     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[127]/dff_0/state_reg/D      0.00
+    0:11:11  625127.3      0.11     484.0     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[223]/dff_0/state_reg/D      0.00
+    0:11:12  625138.4      0.11     483.9     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[447]/dff_0/state_reg/D      0.00
+    0:11:12  625163.3      0.11     483.9     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[127]/dff_0/state_reg/D      0.00
+    0:11:12  625184.4      0.11     483.9     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[447]/dff_0/state_reg/D      0.00
+    0:11:12  625198.2      0.11     483.9     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[127]/dff_0/state_reg/D      0.00
+    0:11:12  625218.5      0.11     483.9     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[287]/dff_0/state_reg/D      0.00
+    0:11:13  625233.8      0.11     483.9     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[351]/dff_0/state_reg/D      0.00
+    0:11:13  625244.3      0.11     483.9     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[159]/dff_0/state_reg/D      0.00
+    0:11:13  625266.0      0.11     483.9     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[255]/dff_0/state_reg/D      0.00
+    0:11:13  625288.2      0.11     483.9     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[447]/dff_0/state_reg/D      0.00
+    0:11:13  625332.4      0.11     483.8     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[159]/dff_0/state_reg/D      0.00
+    0:11:14  625337.4      0.11     483.8     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[479]/dff_0/state_reg/D      0.00
+    0:11:14  625360.5      0.11     483.8     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[95]/dff_0/state_reg/D      0.00
+    0:11:14  625370.3      0.11     483.8     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[287]/dff_0/state_reg/D      0.00
+    0:11:14  625380.8      0.11     483.8     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[191]/dff_0/state_reg/D      0.00
+    0:11:15  625411.8      0.11     483.7     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[127]/dff_0/state_reg/D      0.00
+    0:11:15  625424.1      0.11     483.7     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[447]/dff_0/state_reg/D      0.00
+    0:11:15  625475.8      0.11     483.7     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[95]/dff_0/state_reg/D      0.00
+    0:11:15  625485.5      0.11     483.7     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[287]/dff_0/state_reg/D      0.00
+    0:11:15  625485.5      0.11     483.7     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[191]/dff_0/state_reg/D      0.00
+    0:11:16  625502.9      0.11     483.7     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[383]/dff_0/state_reg/D      0.00
+    0:11:16  625535.2      0.11     483.6     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[191]/dff_0/state_reg/D      0.00
+    0:11:16  625551.0      0.11     483.6     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[447]/dff_0/state_reg/D      0.00
+    0:11:16  625560.7      0.11     483.6     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[287]/dff_0/state_reg/D      0.00
+    0:11:16  625595.4      0.10     483.6     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[95]/dff_0/state_reg/D      0.00
+    0:11:16  625595.4      0.10     483.6     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[287]/dff_0/state_reg/D      0.00
+    0:11:17  625622.8      0.10     483.6     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[95]/dff_0/state_reg/D      0.00
+    0:11:17  625625.0      0.10     483.6     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[287]/dff_0/state_reg/D      0.00
+    0:11:17  625644.6      0.10     483.6     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[447]/dff_0/state_reg/D      0.00
+    0:11:17  625659.1      0.10     483.6     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[447]/dff_0/state_reg/D      0.00
+    0:11:17  625659.4      0.10     483.6     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[31]/dff_0/state_reg/D      0.00
+    0:11:17  625679.5      0.10     483.6     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[383]/dff_0/state_reg/D      0.00
+    0:11:17  625687.9      0.10     483.5     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[287]/dff_0/state_reg/D      0.00
+    0:11:18  625692.3      0.10     483.5     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[287]/dff_0/state_reg/D      0.00
+    0:11:18  625708.6      0.10     483.4     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[415]/dff_0/state_reg/D      0.00
+    0:11:18  625733.3      0.10     483.3     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[319]/dff_0/state_reg/D      0.00
+    0:11:18  625762.8      0.10     483.3     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[479]/dff_0/state_reg/D      0.00
+    0:11:19  625809.2      0.10     483.3     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[31]/dff_0/state_reg/D      0.00
+    0:11:19  625818.7      0.10     483.3     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[159]/dff_0/state_reg/D      0.00
+    0:11:19  625851.4      0.10     483.3     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[63]/dff_0/state_reg/D      0.00
+    0:11:19  625851.7      0.10     483.3     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[511]/dff_0/state_reg/D      0.00
+    0:11:19  625864.5      0.10     483.3     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[447]/dff_0/state_reg/D      0.00
+    0:11:20  625846.7      0.10     483.2     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[287]/dff_0/state_reg/D      0.00
+    0:11:20  625847.2      0.10     483.2     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[479]/dff_0/state_reg/D      0.00
+    0:11:20  625853.5      0.10     483.2     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[31]/dff_0/state_reg/D      0.00
+    0:11:20  625865.2      0.10     483.1     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[479]/dff_0/state_reg/D      0.00
+    0:11:21  625862.3      0.10     483.1     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[447]/dff_0/state_reg/D      0.00
+    0:11:21  625874.8      0.10     483.1     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[223]/dff_0/state_reg/D      0.00
+    0:11:21  625888.2      0.10     483.1     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[447]/dff_0/state_reg/D      0.00
+    0:11:21  625886.8      0.10     483.0     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[31]/dff_0/state_reg/D      0.00
+    0:11:21  625897.2      0.10     483.0     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[31]/dff_0/state_reg/D      0.00
+    0:11:21  625897.2      0.09     483.0     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[31]/dff_0/state_reg/D      0.00
+    0:11:22  625929.7      0.09     483.0     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[351]/dff_0/state_reg/D      0.00
+    0:11:22  625939.1      0.09     482.9     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[255]/dff_0/state_reg/D      0.00
+    0:11:22  625951.3      0.09     482.9     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[95]/dff_0/state_reg/D      0.00
+    0:11:22  625966.3      0.09     482.8     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[447]/dff_0/state_reg/D      0.00
+    0:11:23  625970.1      0.09     482.8     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[223]/dff_0/state_reg/D      0.00
+    0:11:23  625980.6      0.09     482.8     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[447]/dff_0/state_reg/D      0.00
+    0:11:23  625990.4      0.09     482.8     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[383]/dff_0/state_reg/D      0.00
+    0:11:23  626018.2      0.09     482.8     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[479]/dff_0/state_reg/D      0.00
+    0:11:23  626019.2      0.09     482.8     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[479]/dff_0/state_reg/D      0.00
+    0:11:23  626064.5      0.09     482.9     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[127]/dff_0/state_reg/D      0.00
+    0:11:23  626090.8      0.09     482.9     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[383]/dff_0/state_reg/D      0.00
+    0:11:24  626112.5      0.09     482.9     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[223]/dff_0/state_reg/D      0.00
+    0:11:24  626113.4      0.09     482.9     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[383]/dff_0/state_reg/D      0.00
+    0:11:24  626147.0      0.09     482.9     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[319]/dff_0/state_reg/D      0.00
+    0:11:24  626194.4      0.09     482.9     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[223]/dff_0/state_reg/D      0.00
+    0:11:24  626205.1      0.09     482.9     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[255]/dff_0/state_reg/D      0.00
+    0:11:25  626227.8      0.09     482.8     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[223]/dff_0/state_reg/D      0.00
+    0:11:25  626290.3      0.09     482.8     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[447]/dff_0/state_reg/D      0.00
+    0:11:25  626300.7      0.09     482.8     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[447]/dff_0/state_reg/D      0.00
+    0:11:25  626314.8      0.09     482.8     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[223]/dff_0/state_reg/D      0.00
+    0:11:25  626333.3      0.09     482.8     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[319]/dff_0/state_reg/D      0.00
+    0:11:26  626332.9      0.09     482.7     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[127]/dff_0/state_reg/D      0.00
+    0:11:26  626348.7      0.09       2.9     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[223]/dff_0/state_reg/D      0.00
+    0:11:26  626349.7      0.09       2.9     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[479]/dff_0/state_reg/D      0.00
+    0:11:26  626364.1      0.09       2.9     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[159]/dff_0/state_reg/D      0.00
+    0:11:27  626374.6      0.09       2.9     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[255]/dff_0/state_reg/D      0.00
+    0:11:27  626374.6      0.09       2.9     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[479]/dff_0/state_reg/D      0.00
+    0:11:27  626384.7      0.09       2.8     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[479]/dff_0/state_reg/D      0.00
+    0:11:27  626388.9      0.09       2.8     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[479]/dff_0/state_reg/D      0.00
+    0:11:27  626414.9      0.08       2.8     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[479]/dff_0/state_reg/D      0.00
+    0:11:27  626415.8      0.08       2.8     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[95]/dff_0/state_reg/D      0.00
+    0:11:28  626426.4      0.08       2.8     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[95]/dff_0/state_reg/D      0.00
+    0:11:28  626444.9      0.08       2.8     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[223]/dff_0/state_reg/D      0.00
+    0:11:28  626457.4      0.08       2.8     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[191]/dff_0/state_reg/D      0.00
+    0:11:28  626497.3      0.08       2.8     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[223]/dff_0/state_reg/D      0.00
+    0:11:28  626522.2      0.08       2.9     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[191]/dff_0/state_reg/D      0.00
+    0:11:28  626535.9      0.08       2.8     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[223]/dff_0/state_reg/D      0.00
+    0:11:29  626560.7      0.08       2.8     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[63]/dff_0/state_reg/D      0.00
+    0:11:29  626563.8      0.08       2.8     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[479]/dff_0/state_reg/D      0.00
+    0:11:29  626568.8      0.08       2.8     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[255]/dff_0/state_reg/D      0.00
+    0:11:29  626581.5      0.08       2.8     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[191]/dff_0/state_reg/D      0.00
+    0:11:29  626596.8      0.08       2.7     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[159]/dff_0/state_reg/D      0.00
+    0:11:29  626636.5      0.08       2.7     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[63]/dff_0/state_reg/D      0.00
+    0:11:30  626673.2      0.08       2.7     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[319]/dff_0/state_reg/D      0.00
+    0:11:30  626697.1      0.08       2.7     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[351]/dff_0/state_reg/D      0.00
+    0:11:30  626723.7      0.08       2.6     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[159]/dff_0/state_reg/D      0.00
+    0:11:30  626779.5      0.08       2.6     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[319]/dff_0/state_reg/D      0.00
+    0:11:30  626778.5      0.08       2.6     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[319]/dff_0/state_reg/D      0.00
+    0:11:31  626811.8      0.08       2.6     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[127]/dff_0/state_reg/D      0.00
+    0:11:31  626845.4      0.08       2.6     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[223]/dff_0/state_reg/D      0.00
+    0:11:31  626858.0      0.08       2.5     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[191]/dff_0/state_reg/D      0.00
+    0:11:31  626867.4      0.08       2.5     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[511]/dff_0/state_reg/D      0.00
+    0:11:31  626907.9      0.08       2.5     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[159]/dff_0/state_reg/D      0.00
+    0:11:32  626910.2      0.08       2.4     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[63]/dff_0/state_reg/D      0.00
+    0:11:32  626934.9      0.08       2.4     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[191]/dff_0/state_reg/D      0.00
+    0:11:32  626948.4      0.07       2.4     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[191]/dff_0/state_reg/D      0.00
+    0:11:32  626989.5      0.07       2.4     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[127]/dff_0/state_reg/D      0.00
+    0:11:32  626991.3      0.07       2.4     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[383]/dff_0/state_reg/D      0.00
+    0:11:33  626997.2      0.07       2.3     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[191]/dff_0/state_reg/D      0.00
+    0:11:33  627021.2      0.07       2.3     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[511]/dff_0/state_reg/D      0.00
+    0:11:33  627044.1      0.07       2.3     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[479]/dff_0/state_reg/D      0.00
+    0:11:33  627054.8      0.07       2.3     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[319]/dff_0/state_reg/D      0.00
+    0:11:33  627066.2      0.07       2.3     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[95]/dff_0/state_reg/D      0.00
+    0:11:34  627067.8      0.07       2.3     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[159]/dff_0/state_reg/D      0.00
+    0:11:34  627099.3      0.07       2.3     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[159]/dff_0/state_reg/D      0.00
+    0:11:34  627101.1      0.07       2.3     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[319]/dff_0/state_reg/D      0.00
+    0:11:34  627134.2      0.07       2.2     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[63]/dff_0/state_reg/D      0.00
+    0:11:34  627162.6      0.07       2.2     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[127]/dff_0/state_reg/D      0.00
+    0:11:35  627219.4      0.07       2.2     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[511]/dff_0/state_reg/D      0.00
+    0:11:35  627229.1      0.07       2.2     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[223]/dff_0/state_reg/D      0.00
+    0:11:35  627253.5      0.07       2.2     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[95]/dff_0/state_reg/D      0.00
+    0:11:35  627296.8      0.07       2.2     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[95]/dff_0/state_reg/D      0.00
+    0:11:35  627317.0      0.07       2.2     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[351]/dff_0/state_reg/D      0.00
+    0:11:35  627325.8      0.07       2.1     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[319]/dff_0/state_reg/D      0.00
+    0:11:36  627367.9      0.07       2.1     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[191]/dff_0/state_reg/D      0.00
+    0:11:36  627388.7      0.07       2.1     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[479]/dff_0/state_reg/D      0.00
+    0:11:36  627442.5      0.07       2.1     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[95]/dff_0/state_reg/D      0.00
+    0:11:36  627457.2      0.07       2.1     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[95]/dff_0/state_reg/D      0.00
+    0:11:36  627464.8      0.07       2.1     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[95]/dff_0/state_reg/D      0.00
+    0:11:36  627492.1      0.07       2.1     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[191]/dff_0/state_reg/D      0.00
+    0:11:37  627494.4      0.07       2.0     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[511]/dff_0/state_reg/D      0.00
+    0:11:37  627526.9      0.06       2.0     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[383]/dff_0/state_reg/D      0.00
+    0:11:37  627572.4      0.06       2.0     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[95]/dff_0/state_reg/D      0.00
+    0:11:37  627616.2      0.06       2.0     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[191]/dff_0/state_reg/D      0.00
+    0:11:37  627630.7      0.06       1.9     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[383]/dff_0/state_reg/D      0.00
+    0:11:38  627633.1      0.06       1.9     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[479]/dff_0/state_reg/D      0.00
+    0:11:38  627667.0      0.06       1.9     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[255]/dff_0/state_reg/D      0.00
+    0:11:38  627668.0      0.06       1.9     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[31]/dff_0/state_reg/D      0.00
+    0:11:38  627701.1      0.06       1.9     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[415]/dff_0/state_reg/D      0.00
+    0:11:38  627728.8      0.06       1.9     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[351]/dff_0/state_reg/D      0.00
+    0:11:39  627750.4      0.06       1.9     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[383]/dff_0/state_reg/D      0.00
+    0:11:39  627778.3      0.06       1.9     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[383]/dff_0/state_reg/D      0.00
+    0:11:39  627813.8      0.06       1.9     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[255]/dff_0/state_reg/D      0.00
+    0:11:39  627829.2      0.06       1.9     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[223]/dff_0/state_reg/D      0.00
+    0:11:39  627854.8      0.06       1.9     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[191]/dff_0/state_reg/D      0.00
+    0:11:40  627867.6      0.06       1.8     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[383]/dff_0/state_reg/D      0.00
+    0:11:40  627890.5      0.06       1.8     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[255]/dff_0/state_reg/D      0.00
+    0:11:40  627914.6      0.06       1.8     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[191]/dff_0/state_reg/D      0.00
+    0:11:41  627945.4      0.06       1.8     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[351]/dff_0/state_reg/D      0.00
+    0:11:41  627961.7      0.06       1.8     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[351]/dff_0/state_reg/D      0.00
+    0:11:41  627988.8      0.06       1.8     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[95]/dff_0/state_reg/D      0.00
+    0:11:41  627988.6      0.06       1.8     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[95]/dff_0/state_reg/D      0.00
+    0:11:41  628001.6      0.06       1.8     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[191]/dff_0/state_reg/D      0.00
+    0:11:41  628006.1      0.06       1.8     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[479]/dff_0/state_reg/D      0.00
+    0:11:41  628018.8      0.06       1.8     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[287]/dff_0/state_reg/D      0.00
+    0:11:42  628023.8      0.06       1.7     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[63]/dff_0/state_reg/D      0.00
+    0:11:42  628049.7      0.06       1.7     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[383]/dff_0/state_reg/D      0.00
+    0:11:42  628062.0      0.06       1.7     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[319]/dff_0/state_reg/D      0.00
+    0:11:42  628085.2      0.06       1.7     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[95]/dff_0/state_reg/D      0.00
+    0:11:42  628100.4      0.06       1.7     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[95]/dff_0/state_reg/D      0.00
+    0:11:43  628122.6      0.06       1.7     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[447]/dff_0/state_reg/D      0.00
+    0:11:43  628153.9      0.06       1.7     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[159]/dff_0/state_reg/D      0.00
+    0:11:43  628190.2      0.06       1.7     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[255]/dff_0/state_reg/D      0.00
+    0:11:43  628240.4      0.06       1.7     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[31]/dff_0/state_reg/D      0.00
+    0:11:43  628250.8      0.06       1.7     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[31]/dff_0/state_reg/D      0.00
+    0:11:43  628280.1      0.06       1.7     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[415]/dff_0/state_reg/D      0.00
+    0:11:44  628282.9      0.06       1.7     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[415]/dff_0/state_reg/D      0.00
+    0:11:44  628309.5      0.06       1.7     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[287]/dff_0/state_reg/D      0.00
+    0:11:44  628341.1      0.06       1.7     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[63]/dff_0/state_reg/D      0.00
+    0:11:44  628355.6      0.06       1.7     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[287]/dff_0/state_reg/D      0.00
+    0:11:44  628379.4      0.06       1.7     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[383]/dff_0/state_reg/D      0.00
+    0:11:44  628381.2      0.06       1.7     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[95]/dff_0/state_reg/D      0.00
+    0:11:45  628407.6      0.05       1.7     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[223]/dff_0/state_reg/D      0.00
+    0:11:45  628429.5      0.05       1.7     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[287]/dff_0/state_reg/D      0.00
+    0:11:45  628439.5      0.05       1.6     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[159]/dff_0/state_reg/D      0.00
+    0:11:45  628465.0      0.05       1.6     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[223]/dff_0/state_reg/D      0.00
+    0:11:45  628470.3      0.05       1.6     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[287]/dff_0/state_reg/D      0.00
+    0:11:45  628502.4      0.05       1.6     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[479]/dff_0/state_reg/D      0.00
+    0:11:46  628506.2      0.05       1.6     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[223]/dff_0/state_reg/D      0.00
+    0:11:46  628527.7      0.05       1.6     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[223]/dff_0/state_reg/D      0.00
+    0:11:46  628543.7      0.05       1.6     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[319]/dff_0/state_reg/D      0.00
+    0:11:46  628587.0      0.05       1.6     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[159]/dff_0/state_reg/D      0.00
+    0:11:46  628598.4      0.05       1.6     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[95]/dff_0/state_reg/D      0.00
+    0:11:47  628597.6      0.05       1.6     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[255]/dff_0/state_reg/D      0.00
+    0:11:47  628651.0      0.05       1.5     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[415]/dff_0/state_reg/D      0.00
+    0:11:47  628664.2      0.05       1.5     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[31]/dff_0/state_reg/D      0.00
+    0:11:47  628701.3      0.05       1.5     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[159]/dff_0/state_reg/D      0.00
+    0:11:48  628731.0      0.05       1.5     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[447]/dff_0/state_reg/D      0.00
+    0:11:48  628772.8      0.05       1.5     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[383]/dff_0/state_reg/D      0.00
+    0:11:48  628779.4      0.05       1.5     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[255]/dff_0/state_reg/D      0.00
+    0:11:49  628781.5      0.05       1.5     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[383]/dff_0/state_reg/D      0.00
+    0:11:49  628792.2      0.05       1.5     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[127]/dff_0/state_reg/D      0.00
+    0:11:49  628843.5      0.05       1.5     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[191]/dff_0/state_reg/D      0.00
+    0:11:49  628869.8      0.05       1.4     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[447]/dff_0/state_reg/D      0.00
+    0:11:49  628890.9      0.05       1.4     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[479]/dff_0/state_reg/D      0.00
+    0:11:50  628915.3      0.05       1.4     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[191]/dff_0/state_reg/D      0.00
+    0:11:50  628933.1      0.05       1.4     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[223]/dff_0/state_reg/D      0.00
+    0:11:50  628955.1      0.05       1.4     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[479]/dff_0/state_reg/D      0.00
+    0:11:50  628970.9      0.05       1.4     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[511]/dff_0/state_reg/D      0.00
+    0:11:50  628984.7      0.05       1.4     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[479]/dff_0/state_reg/D      0.00
+    0:11:50  629005.9      0.05       1.4     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[319]/dff_0/state_reg/D      0.00
+    0:11:50  629017.7      0.05       1.4     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[191]/dff_0/state_reg/D      0.00
+    0:11:50  629039.6      0.05       1.4     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[479]/dff_0/state_reg/D      0.00
+    0:11:50  629050.9      0.05       1.4     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[287]/dff_0/state_reg/D      0.00
+    0:11:51  629078.4      0.05       1.4     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[255]/dff_0/state_reg/D      0.00
+    0:11:51  629111.2      0.05       1.4     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[255]/dff_0/state_reg/D      0.00
+    0:11:51  629119.7      0.05       1.4     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[255]/dff_0/state_reg/D      0.00
+    0:11:51  629121.7      0.05       1.4     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[511]/dff_0/state_reg/D      0.00
+    0:11:52  629133.4      0.05       1.4     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[63]/dff_0/state_reg/D      0.00
+    0:11:52  629153.0      0.05       1.4     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[511]/dff_0/state_reg/D      0.00
+    0:11:52  629186.6      0.05       1.4     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[511]/dff_0/state_reg/D      0.00
+    0:11:52  629191.8      0.05       1.4     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[127]/dff_0/state_reg/D      0.00
+    0:11:53  629202.2      0.05       1.4     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[95]/dff_0/state_reg/D      0.00
+    0:11:53  629205.0      0.05       1.3     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[191]/dff_0/state_reg/D      0.00
+    0:11:53  629236.4      0.05       1.3     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[159]/dff_0/state_reg/D      0.00
+    0:11:53  629246.8      0.05       1.3     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[127]/dff_0/state_reg/D      0.00
+    0:11:54  629248.5      0.05       1.3     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[479]/dff_0/state_reg/D      0.00
+    0:11:54  629259.5      0.05       1.3     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[95]/dff_0/state_reg/D      0.00
+    0:11:54  629269.9      0.05       1.3     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[127]/dff_0/state_reg/D      0.00
+    0:11:54  629271.2      0.04       1.3     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[62]/dff_0/state_reg/D      0.00
+    0:11:54  629279.4      0.04       1.3     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[95]/dff_0/state_reg/D      0.00
+    0:11:55  629281.8      0.04       1.3     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[351]/dff_0/state_reg/D      0.00
+    0:11:55  629287.8      0.04       1.3     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[383]/dff_0/state_reg/D      0.00
+    0:11:55  629338.4      0.04       1.3     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[287]/dff_0/state_reg/D      0.00
+    0:11:55  629351.3      0.04       1.3     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[255]/dff_0/state_reg/D      0.00
+    0:11:55  629385.5      0.04       1.3     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[127]/dff_0/state_reg/D      0.00
+    0:11:55  629381.3      0.04       1.2     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[127]/dff_0/state_reg/D      0.00
+    0:11:56  629446.1      0.04       1.2     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[287]/dff_0/state_reg/D      0.00
+    0:11:56  629471.1      0.04       1.1     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[59]/dff_0/state_reg/D      0.00
+    0:11:56  629470.4      0.04       1.1     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[191]/dff_0/state_reg/D      0.00
+    0:11:56  629492.5      0.04       1.1     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[191]/dff_0/state_reg/D      0.00
+    0:11:56  629521.6      0.04       1.1     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[351]/dff_0/state_reg/D      0.00
+    0:11:56  629525.9      0.04       1.1     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[287]/dff_0/state_reg/D      0.00
+    0:11:57  629524.7      0.04       1.1     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[223]/dff_0/state_reg/D      0.00
+    0:11:57  629545.9      0.04       1.1     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[479]/dff_0/state_reg/D      0.00
+    0:11:57  629573.1      0.04       1.1     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[190]/dff_0/state_reg/D      0.00
+    0:11:57  629583.5      0.04       1.1     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[383]/dff_0/state_reg/D      0.00
+    0:11:57  629617.1      0.04       1.1     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[287]/dff_0/state_reg/D      0.00
+    0:11:58  629627.2      0.04       1.1     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[447]/dff_0/state_reg/D      0.00
+    0:11:58  629641.5      0.04       1.1     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[255]/dff_0/state_reg/D      0.00
+    0:11:58  629644.3      0.04       1.1     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[287]/dff_0/state_reg/D      0.00
+    0:11:58  629671.3      0.04       1.1     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[287]/dff_0/state_reg/D      0.00
+    0:11:58  629676.7      0.04       1.1     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[351]/dff_0/state_reg/D      0.00
+    0:11:58  629666.7      0.04       1.1     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[479]/dff_0/state_reg/D      0.00
+    0:11:58  629692.4      0.04       1.0     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[447]/dff_0/state_reg/D      0.00
+    0:11:59  629735.5      0.04       1.0     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[447]/dff_0/state_reg/D      0.00
+    0:11:59  629752.4      0.04       1.0     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[479]/dff_0/state_reg/D      0.00
+    0:11:59  629764.6      0.04       1.0     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[127]/dff_0/state_reg/D      0.00
+    0:11:59  629779.0      0.04       1.0     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[383]/dff_0/state_reg/D      0.00
+    0:11:59  629817.7      0.04       1.0     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[223]/dff_0/state_reg/D      0.00
+    0:11:59  629828.2      0.04       1.0     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[127]/dff_0/state_reg/D      0.00
+    0:11:59  629832.6      0.04       1.0     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[447]/dff_0/state_reg/D      0.00
+    0:12:00  629843.5      0.04       1.0     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[479]/dff_0/state_reg/D      0.00
+    0:12:00  629865.2      0.04       1.0     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[31]/dff_0/state_reg/D      0.00
+    0:12:00  629899.6      0.04       1.0     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[447]/dff_0/state_reg/D      0.00
+    0:12:00  629937.3      0.04       1.0     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[511]/dff_0/state_reg/D      0.00
+    0:12:00  629950.3      0.04       1.0     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[479]/dff_0/state_reg/D      0.00
+    0:12:00  629950.3      0.04       1.0     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[191]/dff_0/state_reg/D      0.00
+    0:12:01  629982.4      0.04       1.0     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[191]/dff_0/state_reg/D      0.00
+    0:12:01  629995.3      0.04       1.0     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[287]/dff_0/state_reg/D      0.00
+    0:12:01  630003.8      0.04       1.0     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[319]/dff_0/state_reg/D      0.00
+    0:12:01  630013.2      0.04       1.0     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[223]/dff_0/state_reg/D      0.00
+    0:12:01  630053.1      0.04       1.0     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[127]/dff_0/state_reg/D      0.00
+    0:12:02  630063.9      0.04       0.9     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[319]/dff_0/state_reg/D      0.00
+    0:12:02  630059.3      0.04       0.9     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[191]/dff_0/state_reg/D      0.00
+    0:12:02  630080.7      0.04       0.9     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[383]/dff_0/state_reg/D      0.00
+    0:12:02  630119.6      0.04       0.9     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[223]/dff_0/state_reg/D      0.00
+    0:12:02  630163.7      0.04       0.9     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[447]/dff_0/state_reg/D      0.00
+    0:12:02  630165.5      0.04       0.9     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[319]/dff_0/state_reg/D      0.00
+    0:12:02  630174.4      0.04       0.9     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[447]/dff_0/state_reg/D      0.00
+    0:12:03  630182.9      0.03       0.9     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[191]/dff_0/state_reg/D      0.00
+    0:12:03  630227.7      0.03       0.9     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[383]/dff_0/state_reg/D      0.00
+    0:12:03  630250.1      0.03       0.9     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[383]/dff_0/state_reg/D      0.00
+    0:12:03  630269.4      0.03       0.9     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[191]/dff_0/state_reg/D      0.00
+    0:12:03  630278.2      0.03       0.9     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[191]/dff_0/state_reg/D      0.00
+    0:12:03  630291.3      0.03       0.9     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[191]/dff_0/state_reg/D      0.00
+    0:12:03  630306.7      0.03       0.9     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[383]/dff_0/state_reg/D      0.00
+    0:12:04  630322.7      0.03       0.9     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[479]/dff_0/state_reg/D      0.00
+    0:12:04  630358.1      0.03       0.9     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[159]/dff_0/state_reg/D      0.00
+    0:12:04  630374.6      0.03       0.9     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[511]/dff_0/state_reg/D      0.00
+    0:12:04  630401.1      0.03       0.9     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[159]/dff_0/state_reg/D      0.00
+    0:12:04  630454.8      0.03       0.9     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[319]/dff_0/state_reg/D      0.00
+    0:12:04  630487.0      0.03       0.8     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[223]/dff_0/state_reg/D      0.00
+    0:12:04  630500.7      0.03       0.8     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[191]/dff_0/state_reg/D      0.00
+    0:12:05  630524.0      0.03       0.8     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[223]/dff_0/state_reg/D      0.00
+    0:12:05  630545.3      0.03       0.8     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[479]/dff_0/state_reg/D      0.00
+    0:12:05  630543.8      0.03       0.8     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[319]/dff_0/state_reg/D      0.00
+    0:12:05  630553.1      0.03       0.8     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[415]/dff_0/state_reg/D      0.00
+    0:12:05  630578.2      0.03       0.8     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[415]/dff_0/state_reg/D      0.00
+    0:12:06  630615.4      0.03       0.8     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[31]/dff_0/state_reg/D      0.00
+    0:12:06  630614.4      0.03       0.8     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[479]/dff_0/state_reg/D      0.00
+    0:12:06  630655.7      0.03       0.8     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[415]/dff_0/state_reg/D      0.00
+    0:12:06  630689.1      0.03       0.8     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[383]/dff_0/state_reg/D      0.00
+    0:12:06  630691.1      0.03       0.8     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[511]/dff_0/state_reg/D      0.00
+    0:12:06  630707.6      0.03       0.8     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[351]/dff_0/state_reg/D      0.00
+    0:12:06  630729.5      0.03       0.8     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[191]/dff_0/state_reg/D      0.00
+    0:12:07  630774.3      0.03       0.7     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[319]/dff_0/state_reg/D      0.00
+    0:12:07  630799.4      0.03       0.7     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[351]/dff_0/state_reg/D      0.00
+    0:12:07  630838.7      0.03       0.7     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[191]/dff_0/state_reg/D      0.00
+    0:12:07  630849.2      0.03       0.7     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[351]/dff_0/state_reg/D      0.00
+    0:12:07  630859.1      0.03       0.7     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[511]/dff_0/state_reg/D      0.00
+    0:12:07  630871.9      0.03       0.7     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[191]/dff_0/state_reg/D      0.00
+    0:12:08  630876.2      0.03       0.7     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[127]/dff_0/state_reg/D      0.00
+    0:12:08  630884.1      0.03       0.7     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[191]/dff_0/state_reg/D      0.00
+    0:12:08  630899.9      0.03       0.7     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[351]/dff_0/state_reg/D      0.00
+    0:12:08  630923.3      0.03       0.7     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[159]/dff_0/state_reg/D      0.00
+    0:12:09  630942.0      0.03       0.7     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[479]/dff_0/state_reg/D      0.00
+    0:12:09  630954.2      0.03       0.7     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[447]/dff_0/state_reg/D      0.00
+    0:12:09  630965.4      0.03       0.7     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[383]/dff_0/state_reg/D      0.00
+    0:12:10  630974.4      0.03       0.7     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[511]/dff_0/state_reg/D      0.00
+    0:12:10  630995.6      0.03       0.6     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[31]/dff_0/state_reg/D      0.00
+    0:12:10  631009.0      0.03       0.6     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[191]/dff_0/state_reg/D      0.00
+    0:12:10  631019.0      0.03       0.6     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[447]/dff_0/state_reg/D      0.00
+    0:12:10  631030.7      0.03       0.6     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[511]/dff_0/state_reg/D      0.00
+    0:12:10  631042.1      0.03       0.6     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[191]/dff_0/state_reg/D      0.00
+    0:12:11  631064.0      0.03       0.6     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[511]/dff_0/state_reg/D      0.00
+    0:12:11  631086.8      0.03       0.6     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[191]/dff_0/state_reg/D      0.00
+    0:12:11  631103.8      0.03       0.6     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[447]/dff_0/state_reg/D      0.00
+    0:12:11  631111.7      0.03       0.6     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[479]/dff_0/state_reg/D      0.00
+    0:12:11  631141.3      0.03       0.6     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[255]/dff_0/state_reg/D      0.00
+    0:12:11  631143.5      0.03       0.6     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[319]/dff_0/state_reg/D      0.00
+    0:12:11  631172.0      0.03       0.6     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[447]/dff_0/state_reg/D      0.00
+    0:12:12  631170.7      0.03       0.6     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[351]/dff_0/state_reg/D      0.00
+    0:12:12  631184.6      0.03       0.6     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[415]/dff_0/state_reg/D      0.00
+    0:12:12  631226.2      0.02       0.6     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[31]/dff_0/state_reg/D      0.00
+    0:12:12  631238.1      0.02       0.6     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[447]/dff_0/state_reg/D      0.00
+    0:12:13  631243.8      0.02       0.5     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[415]/dff_0/state_reg/D      0.00
+    0:12:13  631244.0      0.02       0.5     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[479]/dff_0/state_reg/D      0.00
+    0:12:13  631275.3      0.02       0.5     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[415]/dff_0/state_reg/D      0.00
+    0:12:14  631288.2      0.02       0.5     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[287]/dff_0/state_reg/D      0.00
+    0:12:14  631288.1      0.02       0.5     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[319]/dff_0/state_reg/D      0.00
+    0:12:14  631300.6      0.02       0.5     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[191]/dff_0/state_reg/D      0.00
+    0:12:14  631300.1      0.02       0.5     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[319]/dff_0/state_reg/D      0.00
+    0:12:14  631316.0      0.02       0.5     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[159]/dff_0/state_reg/D      0.00
+    0:12:14  631342.5      0.02       0.5     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[159]/dff_0/state_reg/D      0.00
+    0:12:15  631343.6      0.02       0.5     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[479]/dff_0/state_reg/D      0.00
+    0:12:15  631353.2      0.02       0.5     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[319]/dff_0/state_reg/D      0.00
+    0:12:15  631400.6      0.02       0.5     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[159]/dff_0/state_reg/D      0.00
+    0:12:15  631402.7      0.02       0.5     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[319]/dff_0/state_reg/D      0.00
+    0:12:15  631415.1      0.02       0.5     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[479]/dff_0/state_reg/D      0.00
+    0:12:15  631417.0      0.02       0.5     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[511]/dff_0/state_reg/D      0.00
+    0:12:16  631413.5      0.02       0.5     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[31]/dff_0/state_reg/D      0.00
+    0:12:16  631425.3      0.02       0.5     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[351]/dff_0/state_reg/D      0.00
+    0:12:16  631451.3      0.02       0.5     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[351]/dff_0/state_reg/D      0.00
+    0:12:16  631491.6      0.02       0.5     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[511]/dff_0/state_reg/D      0.00
+    0:12:16  631521.4      0.02       0.5     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[223]/dff_0/state_reg/D      0.00
+    0:12:16  631576.6      0.02       0.5     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[479]/dff_0/state_reg/D      0.00
+    0:12:17  631587.4      0.02       0.5     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[415]/dff_0/state_reg/D      0.00
+    0:12:17  631601.3      0.02       0.5     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[479]/dff_0/state_reg/D      0.00
+    0:12:17  631616.1      0.02       0.5     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[191]/dff_0/state_reg/D      0.00
+    0:12:17  631619.6      0.02       0.5     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[383]/dff_0/state_reg/D      0.00
+    0:12:17  631641.9      0.02       0.5     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[351]/dff_0/state_reg/D      0.00
+    0:12:17  631648.4      0.02       0.5     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[479]/dff_0/state_reg/D      0.00
+    0:12:17  631675.3      0.02       0.5     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[287]/dff_0/state_reg/D      0.00
+    0:12:17  631696.2      0.02       0.4     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[415]/dff_0/state_reg/D      0.00
+    0:12:18  631705.8      0.02       0.4     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[479]/dff_0/state_reg/D      0.00
+    0:12:18  631719.5      0.02       0.4     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[319]/dff_0/state_reg/D      0.00
+    0:12:19  631722.6      0.02       0.4     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[191]/dff_0/state_reg/D      0.00
+    0:12:19  631734.3      0.02       0.4     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[31]/dff_0/state_reg/D      0.00
+    0:12:20  631758.3      0.02       0.4     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[159]/dff_0/state_reg/D      0.00
+    0:12:20  631760.6      0.02       0.4     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[191]/dff_0/state_reg/D      0.00
+    0:12:20  631783.9      0.02       0.4     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[383]/dff_0/state_reg/D      0.00
+    0:12:20  631783.4      0.02       0.4     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[255]/dff_0/state_reg/D      0.00
+    0:12:20  631784.6      0.02       0.4     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[287]/dff_0/state_reg/D      0.00
+    0:12:21  631794.5      0.02       0.4     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[479]/dff_0/state_reg/D      0.00
+    0:12:21  631805.2      0.02       0.4     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[287]/dff_0/state_reg/D      0.00
+    0:12:21  631820.5      0.02       0.4     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[191]/dff_0/state_reg/D      0.00
+    0:12:21  631843.9      0.02       0.4     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[223]/dff_0/state_reg/D      0.00
+    0:12:21  631856.1      0.02       0.4     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[319]/dff_0/state_reg/D      0.00
+    0:12:21  631865.9      0.02       0.4     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[319]/dff_0/state_reg/D      0.00
+    0:12:22  631889.1      0.02       0.4     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[479]/dff_0/state_reg/D      0.00
+    0:12:22  631892.9      0.02       0.4     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[319]/dff_0/state_reg/D      0.00
+    0:12:22  631898.7      0.02       0.3     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[95]/dff_0/state_reg/D      0.00
+    0:12:22  631898.7      0.02       0.3     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[191]/dff_0/state_reg/D      0.00
+    0:12:22  631900.0      0.02       0.3     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[479]/dff_0/state_reg/D      0.00
+    0:12:22  631910.9      0.02       0.3     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[479]/dff_0/state_reg/D      0.00
+    0:12:22  631922.8      0.02       0.3     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[319]/dff_0/state_reg/D      0.00
+    0:12:23  631934.5      0.02       0.3     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[31]/dff_0/state_reg/D      0.00
+    0:12:23  631952.8      0.02       0.3     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[191]/dff_0/state_reg/D      0.00
+    0:12:23  631974.1      0.02       0.3     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[319]/dff_0/state_reg/D      0.00
+    0:12:23  631975.1      0.02       0.3     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[95]/dff_0/state_reg/D      0.00
+    0:12:23  632009.7      0.02       0.3     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[415]/dff_0/state_reg/D      0.00
+    0:12:23  632023.5      0.02       0.3     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[191]/dff_0/state_reg/D      0.00
+    0:12:24  632046.6      0.02       0.3     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[31]/dff_0/state_reg/D      0.00
+    0:12:24  632059.3      0.02       0.3     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[383]/dff_0/state_reg/D      0.00
+    0:12:24  632061.6      0.02       0.3     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[191]/dff_0/state_reg/D      0.00
+    0:12:24  632064.5      0.01       0.3     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[479]/dff_0/state_reg/D      0.00
+    0:12:24  632074.1      0.01       0.3     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[191]/dff_0/state_reg/D      0.00
+    0:12:24  632074.1      0.01       0.3     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[191]/dff_0/state_reg/D      0.00
+    0:12:24  632085.2      0.01       0.3     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[191]/dff_0/state_reg/D      0.00
+    0:12:24  632111.9      0.01       0.3     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[447]/dff_0/state_reg/D      0.00
+    0:12:25  632157.1      0.01       0.3     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[191]/dff_0/state_reg/D      0.00
+    0:12:25  632176.5      0.01       0.3     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[63]/dff_0/state_reg/D      0.00
+    0:12:25  632217.0      0.01       0.3     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[159]/dff_0/state_reg/D      0.00
+    0:12:25  632267.8      0.01       0.2     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[191]/dff_0/state_reg/D      0.00
+    0:12:25  632276.9      0.01       0.2     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[447]/dff_0/state_reg/D      0.00
+    0:12:25  632282.2      0.01       0.2     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[191]/dff_0/state_reg/D      0.00
+    0:12:26  632292.1      0.01       0.2     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[287]/dff_0/state_reg/D      0.00
+    0:12:26  632295.5      0.01       0.2     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[159]/dff_0/state_reg/D      0.00
+    0:12:26  632293.8      0.01       0.2     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[447]/dff_0/state_reg/D      0.00
+    0:12:26  632333.0      0.01       0.2     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[63]/dff_0/state_reg/D      0.00
+    0:12:26  632345.0      0.01       0.2     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[415]/dff_0/state_reg/D      0.00
+    0:12:26  632374.0      0.01       0.2     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[191]/dff_0/state_reg/D      0.00
+    0:12:26  632395.5      0.01       0.2     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[319]/dff_0/state_reg/D      0.00
+    0:12:26  632406.0      0.01       0.2     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[351]/dff_0/state_reg/D      0.00
+    0:12:27  632451.2      0.01       0.2     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[319]/dff_0/state_reg/D      0.00
+    0:12:27  632484.2      0.01       0.2     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[255]/dff_0/state_reg/D      0.00
+    0:12:27  632483.1      0.01       0.2     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[287]/dff_0/state_reg/D      0.00
+    0:12:27  632484.9      0.01       0.2     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[191]/dff_0/state_reg/D      0.00
+    0:12:27  632529.0      0.01       0.2     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[191]/dff_0/state_reg/D      0.00
+    0:12:27  632543.5      0.01       0.2     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[351]/dff_0/state_reg/D      0.00
+    0:12:28  632580.6      0.01       0.2     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[159]/dff_0/state_reg/D      0.00
+    0:12:28  632604.7      0.01       0.2     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[319]/dff_0/state_reg/D      0.00
+    0:12:28  632649.5      0.01       0.2     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[127]/dff_0/state_reg/D      0.00
+    0:12:28  632650.3      0.01       0.2     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[319]/dff_0/state_reg/D      0.00
+    0:12:28  632667.6      0.01       0.2     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[383]/dff_0/state_reg/D      0.00
+    0:12:28  632672.0      0.01       0.2     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[191]/dff_0/state_reg/D      0.00
+    0:12:28  632728.8      0.01       0.2     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[191]/dff_0/state_reg/D      0.00
+    0:12:29  632740.6      0.01       0.2     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[95]/dff_0/state_reg/D      0.00
+    0:12:29  632767.8      0.01       0.2     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[383]/dff_0/state_reg/D      0.00
+    0:12:29  632768.9      0.01       0.2     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[95]/dff_0/state_reg/D      0.00
+    0:12:29  632785.9      0.01       0.1     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[319]/dff_0/state_reg/D      0.00
+    0:12:29  632786.9      0.01       0.1     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[127]/dff_0/state_reg/D      0.00
+    0:12:29  632789.2      0.01       0.1     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[191]/dff_0/state_reg/D      0.00
+    0:12:30  632803.1      0.01       0.1     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[127]/dff_0/state_reg/D      0.00
+    0:12:30  632802.3      0.01       0.1     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[63]/dff_0/state_reg/D      0.00
+    0:12:30  632819.9      0.01       0.1     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[351]/dff_0/state_reg/D      0.00
+    0:12:30  632845.5      0.01       0.1     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[447]/dff_0/state_reg/D      0.00
+    0:12:30  632845.5      0.01       0.1     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[223]/dff_0/state_reg/D      0.00
+    0:12:31  632867.3      0.01       0.1     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[223]/dff_0/state_reg/D      0.00
+    0:12:31  632879.6      0.01       0.1     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[191]/dff_0/state_reg/D      0.00
+    0:12:31  632879.1      0.01       0.1     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[319]/dff_0/state_reg/D      0.00
+    0:12:31  632880.9      0.01       0.1     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[223]/dff_0/state_reg/D      0.00
+    0:12:31  632887.4      0.01       0.1     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[31]/dff_0/state_reg/D      0.00
+    0:12:32  632887.5      0.01       0.1     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[63]/dff_0/state_reg/D      0.00
+    0:12:32  632887.5      0.01       0.1     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[287]/dff_0/state_reg/D      0.00
+    0:12:32  632910.7      0.01       0.1     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[191]/dff_0/state_reg/D      0.00
+    0:12:32  632913.5      0.01       0.1     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[255]/dff_0/state_reg/D      0.00
+    0:12:32  632934.2      0.01       0.1     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[287]/dff_0/state_reg/D      0.00
+    0:12:32  632944.9      0.01       0.1     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[255]/dff_0/state_reg/D      0.00
+    0:12:32  632950.0      0.01       0.1     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[415]/dff_0/state_reg/D      0.00
+    0:12:33  632972.1      0.01       0.1     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[255]/dff_0/state_reg/D      0.00
+    0:12:33  632987.0      0.01       0.1     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[415]/dff_0/state_reg/D      0.00
+    0:12:33  632987.0      0.01       0.1     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[287]/dff_0/state_reg/D      0.00
+    0:12:33  633001.8      0.01       0.1     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[287]/dff_0/state_reg/D      0.00
+    0:12:33  633040.2      0.01       0.1     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[255]/dff_0/state_reg/D      0.00
+    0:12:33  633041.2      0.01       0.1     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[31]/dff_0/state_reg/D      0.00
+    0:12:33  633040.4      0.01       0.1     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[415]/dff_0/state_reg/D      0.00
+    0:12:34  633049.0      0.01       0.1     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[351]/dff_0/state_reg/D      0.00
+    0:12:34  633062.7      0.01       0.1     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[383]/dff_0/state_reg/D      0.00
+    0:12:34  633079.3      0.01       0.1     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[191]/dff_0/state_reg/D      0.00
+    0:12:34  633110.5      0.01       0.1     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[95]/dff_0/state_reg/D      0.00
+    0:12:34  633123.7      0.01       0.1     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[415]/dff_0/state_reg/D      0.00
+    0:12:34  633134.3      0.01       0.1     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[31]/dff_0/state_reg/D      0.00
+    0:12:35  633145.1      0.01       0.1     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[351]/dff_0/state_reg/D      0.00
+    0:12:35  633146.3      0.00       0.1     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[191]/dff_0/state_reg/D      0.00
+    0:12:35  633146.6      0.00       0.1     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[191]/dff_0/state_reg/D      0.00
+    0:12:35  633168.6      0.00       0.1     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[191]/dff_0/state_reg/D      0.00
+    0:12:35  633194.8      0.00       0.1     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[351]/dff_0/state_reg/D      0.00
+    0:12:35  633226.7      0.00       0.1     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[319]/dff_0/state_reg/D      0.00
+    0:12:36  633234.6      0.00       0.1     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[319]/dff_0/state_reg/D      0.00
+    0:12:36  633252.9      0.00       0.1     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[191]/dff_0/state_reg/D      0.00
+    0:12:36  633260.2      0.00       0.1     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[351]/dff_0/state_reg/D      0.00
+    0:12:36  633282.5      0.00       0.1     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[191]/dff_0/state_reg/D      0.00
+    0:12:36  633307.1      0.00       0.1     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[351]/dff_0/state_reg/D      0.00
+    0:12:36  633347.3      0.00       0.1     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[191]/dff_0/state_reg/D      0.00
+    0:12:36  633348.4      0.00       0.1     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[415]/dff_0/state_reg/D      0.00
+    0:12:37  633399.7      0.00       0.1     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[223]/dff_0/state_reg/D      0.00
+    0:12:37  633415.0      0.00       0.1     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[383]/dff_0/state_reg/D      0.00
+    0:12:37  633414.7      0.00       0.0     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[383]/dff_0/state_reg/D      0.00
+    0:12:37  633414.7      0.00       0.0     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[191]/dff_0/state_reg/D      0.00
+    0:12:38  633423.7      0.00       0.0     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[31]/dff_0/state_reg/D      0.00
+    0:12:38  633426.4      0.00       0.0     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[223]/dff_0/state_reg/D      0.00
+    0:12:38  633440.7      0.00       0.0     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[479]/dff_0/state_reg/D      0.00
+    0:12:38  633440.7      0.00       0.0     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[191]/dff_0/state_reg/D      0.00
+    0:12:38  633471.0      0.00       0.0     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[415]/dff_0/state_reg/D      0.00
+    0:12:39  633485.3      0.00       0.0     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[191]/dff_0/state_reg/D      0.00
+    0:12:39  633484.4      0.00       0.0     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[287]/dff_0/state_reg/D      0.00
+    0:12:39  633503.6      0.00       0.0     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[511]/dff_0/state_reg/D      0.00
+    0:12:39  633503.6      0.00       0.0     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[191]/dff_0/state_reg/D      0.00
+    0:12:39  633515.4      0.00       0.0     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[191]/dff_0/state_reg/D      0.00
+    0:12:40  633524.5      0.00       0.0     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[287]/dff_0/state_reg/D      0.00
+    0:12:40  633536.9      0.00       0.0     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[383]/dff_0/state_reg/D      0.00
+    0:12:40  633539.2      0.00       0.0     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[191]/dff_0/state_reg/D      0.00
+    0:12:40  633539.2      0.00       0.0     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[287]/dff_0/state_reg/D      0.00
+    0:12:40  633549.2      0.00       0.0     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[95]/dff_0/state_reg/D      0.00
+    0:12:40  633561.0      0.00       0.0     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[287]/dff_0/state_reg/D      0.00
+    0:12:40  633562.0      0.00       0.0     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[191]/dff_0/state_reg/D      0.00
+    0:12:41  633564.1      0.00       0.0     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[95]/dff_0/state_reg/D      0.00
+    0:12:41  633574.3      0.00       0.0     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[95]/dff_0/state_reg/D      0.00
+    0:12:41  633621.8      0.00       0.0     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[95]/dff_0/state_reg/D      0.00
+    0:12:41  633611.2      0.00       0.0     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[383]/dff_0/state_reg/D      0.00
+    0:12:41  633622.0      0.00       0.0     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[223]/dff_0/state_reg/D      0.00
+    0:12:41  633655.3      0.00       0.0     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[511]/dff_0/state_reg/D      0.00
+    0:12:42  633666.0      0.00       0.0     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[223]/dff_0/state_reg/D      0.00
+    0:12:42  633657.5      0.00       0.0     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[383]/dff_0/state_reg/D      0.00
+    0:12:42  633677.3      0.00       0.0     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[415]/dff_0/state_reg/D      0.00
+    0:12:42  633676.7      0.00       0.0     107.4 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[319]/dff_0/state_reg/D      0.00
+    0:12:42  633676.1      0.00       0.0     107.4                                0.00
+    0:12:44  633676.1      0.00       0.0     107.4                                0.00
+
+
+  Beginning Design Rule Fixing  (max_capacitance)
+  ----------------------------
+
+   ELAPSED            WORST NEG TOTAL NEG  DESIGN                             MIN DELAY
+    TIME      AREA      SLACK     SLACK   RULE COST         ENDPOINT            COST   
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:12:50  636013.8      0.00       0.0     107.7                                0.00
+    0:12:52  636017.9      0.00       0.0       3.3 alu/valu/genblk1.simd_alu[0]/sll_425/net360758      0.00
+    0:12:52  636005.0      0.00       0.0       0.0                                0.00
+
+
+  Beginning Area-Recovery Phase  (cleanup)
+  -----------------------------
+
+   ELAPSED            WORST NEG TOTAL NEG  DESIGN                             MIN DELAY
+    TIME      AREA      SLACK     SLACK   RULE COST         ENDPOINT            COST   
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:12:52  636005.0      0.00       0.0       0.0                                0.00
+    0:12:52  636005.0      0.00       0.0       0.0                                0.00
+    0:12:52  636005.0      0.00       0.0       0.0                                0.00
+    0:13:05  633971.4      0.10       1.6       0.0                                0.00
+    0:13:15  633601.0      0.07       1.0       0.0                                0.00
+    0:13:29  633496.6      0.07       1.0       0.0                                0.00
+    0:13:42  633432.0      0.07       1.0       0.0                                0.00
+    0:13:56  633410.3      0.07       1.0       0.0                                0.00
+    0:14:12  633387.4      0.07      13.1       0.0                                0.00
+    0:14:32  633370.9      0.07       1.0       0.0                                0.00
+    0:14:40  633355.0      0.07       1.0       0.0                                0.00
+    0:14:54  633338.0      0.07       1.0       0.0                                0.00
+    0:15:01  633323.5      0.07       1.0       0.0                                0.00
+    0:15:06  633312.3      0.07       1.0       0.0                                0.00
+    0:15:22  633298.8      0.07       1.0       0.0                                0.00
+    0:15:40  633287.2      0.07       1.0       0.0                                0.00
+    0:15:43  633277.0      0.07       1.0       0.0                                0.00
+    0:15:46  633271.8      0.07       1.0       0.0                                0.00
+    0:15:49  633268.5      0.07       1.0       0.0                                0.00
+    0:15:49  633268.5      0.07       1.0       0.0                                0.00
+    0:15:51  633299.0      0.04       0.6       0.0 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[447]/dff_0/state_reg/D      0.00
+    0:15:51  633309.0      0.04       0.5       0.0 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[159]/dff_0/state_reg/D      0.00
+    0:15:52  633320.6      0.04       0.5       0.0 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[159]/dff_0/state_reg/D      0.00
+    0:15:53  633454.4      0.03       0.4       0.0 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[127]/dff_0/state_reg/D      0.00
+    0:15:53  633454.4      0.03       0.4       0.0 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[159]/dff_0/state_reg/D      0.00
+    0:15:53  633456.0      0.03       0.4       0.0 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[159]/dff_0/state_reg/D      0.00
+    0:15:53  633458.4      0.03       0.4       0.0 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[159]/dff_0/state_reg/D      0.00
+    0:15:54  633468.6      0.03       0.3       0.0 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[351]/dff_0/state_reg/D      0.00
+    0:15:54  633494.9      0.02       0.3       0.0 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[159]/dff_0/state_reg/D      0.00
+    0:15:55  633494.9      0.02       0.3       0.0 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[415]/dff_0/state_reg/D      0.00
+    0:15:55  633519.5      0.02       0.3       0.0 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[159]/dff_0/state_reg/D      0.00
+    0:15:55  633558.5      0.02       0.2       0.0 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[511]/dff_0/state_reg/D      0.00
+    0:15:55  633602.5      0.02       0.2       0.0 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[351]/dff_0/state_reg/D      0.00
+    0:15:55  633620.3      0.02       0.2       0.0 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[127]/dff_0/state_reg/D      0.00
+    0:15:56  633633.5      0.02       0.2       0.0 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[351]/dff_0/state_reg/D      0.00
+    0:15:56  633658.8      0.01       0.1       0.0 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[511]/dff_0/state_reg/D      0.00
+    0:15:58  633671.7      0.01       0.0       0.0 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[319]/dff_0/state_reg/D      0.00
+    0:16:01  633689.3      0.00       0.0       0.0 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[351]/dff_0/state_reg/D      0.00
+    0:16:01  633713.8      0.00       0.0       0.0 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[127]/dff_0/state_reg/D      0.00
+    0:16:01  633735.6      0.00       0.0       0.0 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[31]/dff_0/state_reg/D      0.00
+    0:16:01  633737.6      0.00       0.0       0.0                                0.00
+    0:16:01  633737.6      0.00       0.0       0.0                                0.00
+    0:16:03  633737.6      0.00       0.0       0.0                                0.00
+    0:16:07  631815.5      0.08       1.2       0.0                                0.00
+    0:16:09  631324.3      0.09       1.1       0.0                                0.00
+    0:16:10  631278.5      0.09       1.1       0.0                                0.00
+    0:16:10  631278.0      0.09       1.1       0.0                                0.00
+    0:16:10  631278.0      0.09       1.1       0.0                                0.00
+    0:16:10  631278.0      0.09       1.1       0.0                                0.00
+    0:16:10  631278.0      0.09       1.1       0.0                                0.00
+    0:16:10  631278.0      0.09       1.1       0.0                                0.00
+    0:16:11  631292.1      0.03       0.4       0.0 alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[191]/dff_0/state_reg/D      0.00
+    0:16:12  631310.3      0.02       0.3       0.0                                0.00
+    0:16:13  631338.2      0.01       0.2       0.0                                0.00
+    0:16:13  631359.1      0.01       0.1       0.0                                0.00
+    0:16:13  631372.6      0.01       0.1       0.0                                0.00
+    0:16:13  631382.6      0.01       0.1       0.0                                0.00
+    0:16:14  631388.9      0.00       0.0       0.0                                0.00
+    0:16:15  631392.9      0.00       0.0       0.0                                0.00
+    0:16:15  631406.0      0.00       0.0       0.0                                0.00
+    0:16:15  631429.7      0.00       0.0       0.0                                0.00
+    0:16:15  631439.8      0.00       0.0       0.0                                0.00
+    0:16:15  631442.9      0.00       0.0       0.0                                0.00
+    0:16:17  631442.9      0.00       0.0       0.0                                0.00
+Loading db file '/p/vertical/afs-huge0/synopsys/32nmlib/SAED32_EDK/lib/stdcell_rvt/db_nldm/saed32rvt_tt1p05v25c.db'
+
+  Optimization Complete
+  ---------------------
+Warning: Design 'simd' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+     Net 'clk': 17980 load(s), 1 driver(s)
+1

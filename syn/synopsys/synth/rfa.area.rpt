@@ -1,0 +1,41 @@
+ 
+****************************************
+Report : area
+Design : rfa
+Version: G-2012.06
+Date   : Thu May 16 11:42:41 2013
+****************************************
+
+Library(s) Used:
+
+    saed32rvt_tt1p05v25c (File: /p/vertical/afs-huge0/synopsys/32nmlib/SAED32_EDK/lib/stdcell_rvt/db_nldm/saed32rvt_tt1p05v25c.db)
+
+Number of ports:                           34
+Number of nets:                           153
+Number of cells:                          133
+Number of combinational cells:            129
+Number of sequential cells:                 4
+Number of macros:                           0
+Number of buf/inv:                         24
+Number of references:                      19
+
+Combinational area:        290.232452
+Noncombinational area:      28.464128
+Net Interconnect area:      66.094948  
+
+Total cell area:           318.696581
+Total area:                384.791529
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area          Local cell area
+                                  ------------------  --------------------------- 
+Hierarchical cell                 Absolute   Percent  Combi-    Noncombi-  Black
+                                  Total      Total    national  national   boxes   Design
+--------------------------------  ---------  -------  --------  ---------  ------  ---------
+rfa                                318.6966    100.0  290.2325    28.4641  0.0000  rfa
+--------------------------------  ---------  -------  --------  ---------  ------  ---------
+Total                                                 290.2325    28.4641  0.0000
+
+1

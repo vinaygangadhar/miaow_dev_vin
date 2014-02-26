@@ -1,0 +1,691 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 5
+Design : simf
+Version: G-2012.06
+Date   : Thu May 16 12:01:42 2013
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: tt1p05v25c   Library: saed32rvt_tt1p05v25c
+Wire Load Model Mode: enclosed
+
+  Startpoint: alu/valu/genblk1.simf_alu[13]/fpu/fpu_div/s_count_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: alu/valu/genblk1.simf_alu[13]/fpu/fpu_div/s_dvd_reg[26]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  simf               540000                saed32rvt_tt1p05v25c
+  simf_DW02_mult_26  ForQA                 saed32rvt_tt1p05v25c
+  simf_DW01_sub_298  ForQA                 saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                               0.000000   0.000000
+  clock network delay (ideal)                         0.000000   0.000000
+  alu/valu/genblk1.simf_alu[13]/fpu/fpu_div/s_count_reg[0]/CLK (DFFARX1_RVT)
+                                                      0.000000 # 0.000000 r
+  alu/valu/genblk1.simf_alu[13]/fpu/fpu_div/s_count_reg[0]/QN (DFFARX1_RVT)
+                                                      0.072369   0.072369 r
+  U43941/Y (AND2X1_RVT)                               0.192652   0.265021 r
+  U78761/Y (NAND4X0_RVT)                              0.170799   0.435820 f
+  U78760/Y (INVX0_RVT)                                0.224402   0.660222 r
+  U78762/Y (INVX0_RVT)                                0.287799   0.948021 f
+  U43900/Y (AO22X1_RVT)                               0.326036   1.274057 f
+  U91679/Y (INVX1_RVT)                                0.226605   1.500662 r
+  U91660/Y (OA222X1_RVT)                              0.184708   1.685370 r
+  U91661/Y (AO221X1_RVT)                              0.170713   1.856083 r
+  U91662/Y (OAI221X1_RVT)                             0.153029   2.009112 f
+  U87067/Y (AND3X1_RVT)                               0.139936   2.149048 f
+  U91663/Y (AO221X1_RVT)                              0.158669   2.307717 f
+  U87037/Y (AND3X1_RVT)                               0.141584   2.449301 f
+  U91664/Y (AO221X1_RVT)                              0.158693   2.607994 f
+  U87031/Y (AND3X1_RVT)                               0.141584   2.749578 f
+  U91665/Y (AO221X1_RVT)                              0.158693   2.908271 f
+  U87078/Y (AND3X1_RVT)                               0.141584   3.049855 f
+  U91666/Y (AO221X1_RVT)                              0.158790   3.208645 f
+  U91667/Y (OA221X1_RVT)                              0.143085   3.351730 f
+  U91668/Y (AO221X1_RVT)                              0.160726   3.512456 f
+  U91669/Y (OA221X1_RVT)                              0.143085   3.655541 f
+  U91670/Y (AO221X1_RVT)                              0.160726   3.816267 f
+  U91671/Y (OA221X1_RVT)                              0.143085   3.959352 f
+  U91672/Y (AO221X1_RVT)                              0.160726   4.120078 f
+  U91673/Y (OA221X1_RVT)                              0.143086   4.263164 f
+  U91674/Y (AO221X1_RVT)                              0.160726   4.423890 f
+  U91675/Y (OA221X1_RVT)                              0.143086   4.566976 f
+  U91676/Y (AO221X1_RVT)                              0.160726   4.727701 f
+  U91677/Y (OA221X1_RVT)                              0.142990   4.870691 f
+  U87085/Y (AO21X1_RVT)                               0.151419   5.022110 f
+  U83919/Y (OR4X1_RVT)                                0.198306   5.220416 f
+  alu/valu/genblk1.simf_alu[13]/fpu/fpu_div/mult_sub_159_aco/B[0] (simf_DW02_mult_26)
+                                                      0.000000   5.220416 f
+  alu/valu/genblk1.simf_alu[13]/fpu/fpu_div/mult_sub_159_aco/U26/Y (NBUFFX2_RVT)
+                                                      0.157614   5.378030 f
+  alu/valu/genblk1.simf_alu[13]/fpu/fpu_div/mult_sub_159_aco/U29/Y (NBUFFX2_RVT)
+                                                      0.041675   5.419705 f
+  alu/valu/genblk1.simf_alu[13]/fpu/fpu_div/mult_sub_159_aco/U25/Y (AND2X1_RVT)
+                                                      0.041727   5.461432 f
+  alu/valu/genblk1.simf_alu[13]/fpu/fpu_div/mult_sub_159_aco/PRODUCT[0] (simf_DW02_mult_26)
+                                                      0.000000   5.461432 f
+  alu/valu/genblk1.simf_alu[13]/fpu/fpu_div/sub_159_aco/B[0] (simf_DW01_sub_298)
+                                                      0.000000   5.461432 f
+  alu/valu/genblk1.simf_alu[13]/fpu/fpu_div/sub_159_aco/U8/Y (INVX0_RVT)
+                                                      0.154051   5.615483 r
+  alu/valu/genblk1.simf_alu[13]/fpu/fpu_div/sub_159_aco/U5/Y (OR2X1_RVT)
+                                                      0.052866   5.668349 r
+  alu/valu/genblk1.simf_alu[13]/fpu/fpu_div/sub_159_aco/U2_1/CO (FADDX1_RVT)
+                                                      0.080168   5.748517 r
+  alu/valu/genblk1.simf_alu[13]/fpu/fpu_div/sub_159_aco/U2_2/CO (FADDX1_RVT)
+                                                      0.082789   5.831306 r
+  alu/valu/genblk1.simf_alu[13]/fpu/fpu_div/sub_159_aco/U2_3/CO (FADDX1_RVT)
+                                                      0.082791   5.914097 r
+  alu/valu/genblk1.simf_alu[13]/fpu/fpu_div/sub_159_aco/U2_4/CO (FADDX1_RVT)
+                                                      0.082791   5.996888 r
+  alu/valu/genblk1.simf_alu[13]/fpu/fpu_div/sub_159_aco/U2_5/CO (FADDX1_RVT)
+                                                      0.082793   6.079681 r
+  alu/valu/genblk1.simf_alu[13]/fpu/fpu_div/sub_159_aco/U2_6/CO (FADDX1_RVT)
+                                                      0.082792   6.162473 r
+  alu/valu/genblk1.simf_alu[13]/fpu/fpu_div/sub_159_aco/U2_7/CO (FADDX1_RVT)
+                                                      0.082792   6.245265 r
+  alu/valu/genblk1.simf_alu[13]/fpu/fpu_div/sub_159_aco/U2_8/CO (FADDX1_RVT)
+                                                      0.082792   6.328057 r
+  alu/valu/genblk1.simf_alu[13]/fpu/fpu_div/sub_159_aco/U2_9/CO (FADDX1_RVT)
+                                                      0.082792   6.410849 r
+  alu/valu/genblk1.simf_alu[13]/fpu/fpu_div/sub_159_aco/U2_10/CO (FADDX1_RVT)
+                                                      0.082792   6.493641 r
+  alu/valu/genblk1.simf_alu[13]/fpu/fpu_div/sub_159_aco/U2_11/CO (FADDX1_RVT)
+                                                      0.082792   6.576433 r
+  alu/valu/genblk1.simf_alu[13]/fpu/fpu_div/sub_159_aco/U2_12/CO (FADDX1_RVT)
+                                                      0.082792   6.659225 r
+  alu/valu/genblk1.simf_alu[13]/fpu/fpu_div/sub_159_aco/U2_13/CO (FADDX1_RVT)
+                                                      0.082792   6.742016 r
+  alu/valu/genblk1.simf_alu[13]/fpu/fpu_div/sub_159_aco/U2_14/CO (FADDX1_RVT)
+                                                      0.082791   6.824807 r
+  alu/valu/genblk1.simf_alu[13]/fpu/fpu_div/sub_159_aco/U2_15/CO (FADDX1_RVT)
+                                                      0.082791   6.907598 r
+  alu/valu/genblk1.simf_alu[13]/fpu/fpu_div/sub_159_aco/U2_16/CO (FADDX1_RVT)
+                                                      0.082792   6.990390 r
+  alu/valu/genblk1.simf_alu[13]/fpu/fpu_div/sub_159_aco/U2_17/CO (FADDX1_RVT)
+                                                      0.082791   7.073182 r
+  alu/valu/genblk1.simf_alu[13]/fpu/fpu_div/sub_159_aco/U2_18/CO (FADDX1_RVT)
+                                                      0.082791   7.155972 r
+  alu/valu/genblk1.simf_alu[13]/fpu/fpu_div/sub_159_aco/U2_19/CO (FADDX1_RVT)
+                                                      0.082792   7.238764 r
+  alu/valu/genblk1.simf_alu[13]/fpu/fpu_div/sub_159_aco/U2_20/CO (FADDX1_RVT)
+                                                      0.082791   7.321555 r
+  alu/valu/genblk1.simf_alu[13]/fpu/fpu_div/sub_159_aco/U2_21/CO (FADDX1_RVT)
+                                                      0.082791   7.404346 r
+  alu/valu/genblk1.simf_alu[13]/fpu/fpu_div/sub_159_aco/U2_22/CO (FADDX1_RVT)
+                                                      0.082792   7.487138 r
+  alu/valu/genblk1.simf_alu[13]/fpu/fpu_div/sub_159_aco/U2_23/CO (FADDX1_RVT)
+                                                      0.085225   7.572363 r
+  alu/valu/genblk1.simf_alu[13]/fpu/fpu_div/sub_159_aco/U6/Y (OR2X1_RVT)
+                                                      0.055134   7.627498 r
+  alu/valu/genblk1.simf_alu[13]/fpu/fpu_div/sub_159_aco/U2_25/Y (XOR3X1_RVT)
+                                                      0.053162   7.680660 r
+  alu/valu/genblk1.simf_alu[13]/fpu/fpu_div/sub_159_aco/DIFF[25] (simf_DW01_sub_298)
+                                                      0.000000   7.680660 r
+  U5998/Y (AO22X1_RVT)                                0.154350   7.835010 r
+  alu/valu/genblk1.simf_alu[13]/fpu/fpu_div/s_dvd_reg[26]/D (DFFX1_RVT)
+                                                      0.129314   7.964324 r
+  data arrival time                                              7.964324
+
+  clock clk (rise edge)                               8.000000   8.000000
+  clock network delay (ideal)                         0.000000   8.000000
+  alu/valu/genblk1.simf_alu[13]/fpu/fpu_div/s_dvd_reg[26]/CLK (DFFX1_RVT)
+                                                      0.000000   8.000000 r
+  library setup time                                  -0.032143  7.967857
+  data required time                                             7.967857
+  --------------------------------------------------------------------------
+  data required time                                             7.967857
+  data arrival time                                              -7.964324
+  --------------------------------------------------------------------------
+  slack (MET)                                                    0.003533
+
+
+  Startpoint: alu/valu/genblk1.simf_alu[1]/fpu/fpu_div/s_count_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: alu/valu/genblk1.simf_alu[1]/fpu/fpu_div/s_dvd_reg[26]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  simf               540000                saed32rvt_tt1p05v25c
+  simf_DW02_mult_24  ForQA                 saed32rvt_tt1p05v25c
+  simf_DW01_sub_296  ForQA                 saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                               0.000000   0.000000
+  clock network delay (ideal)                         0.000000   0.000000
+  alu/valu/genblk1.simf_alu[1]/fpu/fpu_div/s_count_reg[0]/CLK (DFFARX1_RVT)
+                                                      0.000000 # 0.000000 r
+  alu/valu/genblk1.simf_alu[1]/fpu/fpu_div/s_count_reg[0]/QN (DFFARX1_RVT)
+                                                      0.060798   0.060798 f
+  U40095/Y (AND2X1_RVT)                               0.179780   0.240578 f
+  U78661/Y (NAND4X0_RVT)                              0.194105   0.434683 r
+  U78951/Y (IBUFFX4_RVT)                              0.193514   0.628197 f
+  U40070/Y (AO22X1_RVT)                               0.565208   1.193404 f
+  U86945/Y (INVX0_RVT)                                0.178254   1.371658 r
+  U91404/Y (AND2X1_RVT)                               0.169259   1.540917 r
+  U91405/Y (OA222X1_RVT)                              0.156366   1.697284 r
+  U91406/Y (AO221X1_RVT)                              0.170713   1.867997 r
+  U91407/Y (OAI221X1_RVT)                             0.153027   2.021024 f
+  U87010/Y (AND3X1_RVT)                               0.139936   2.160960 f
+  U91408/Y (AO221X1_RVT)                              0.158669   2.319629 f
+  U86952/Y (AND3X1_RVT)                               0.141584   2.461213 f
+  U91409/Y (AO221X1_RVT)                              0.158693   2.619906 f
+  U86955/Y (AND3X1_RVT)                               0.141584   2.761490 f
+  U91410/Y (AO221X1_RVT)                              0.158790   2.920281 f
+  U91411/Y (OA221X1_RVT)                              0.143085   3.063366 f
+  U91412/Y (AO221X1_RVT)                              0.160726   3.224092 f
+  U91413/Y (OA221X1_RVT)                              0.143085   3.367177 f
+  U91414/Y (AO221X1_RVT)                              0.160726   3.527903 f
+  U91415/Y (OA221X1_RVT)                              0.143085   3.670988 f
+  U91416/Y (AO221X1_RVT)                              0.160726   3.831714 f
+  U91417/Y (OA221X1_RVT)                              0.143085   3.974799 f
+  U91418/Y (AO221X1_RVT)                              0.160725   4.135525 f
+  U91419/Y (OA221X1_RVT)                              0.143086   4.278611 f
+  U91420/Y (AO221X1_RVT)                              0.160628   4.439239 f
+  U87096/Y (AND3X1_RVT)                               0.141585   4.580823 f
+  U91421/Y (AO221X1_RVT)                              0.158791   4.739614 f
+  U91422/Y (OA221X1_RVT)                              0.143010   4.882624 f
+  U84732/Y (AOI21X1_RVT)                              0.164746   5.047370 r
+  U78956/Y (NAND4X1_RVT)                              0.161228   5.208598 f
+  alu/valu/genblk1.simf_alu[1]/fpu/fpu_div/mult_sub_159_aco/B[0] (simf_DW02_mult_24)
+                                                      0.000000   5.208598 f
+  alu/valu/genblk1.simf_alu[1]/fpu/fpu_div/mult_sub_159_aco/U28/Y (NBUFFX2_RVT)
+                                                      0.183028   5.391625 f
+  alu/valu/genblk1.simf_alu[1]/fpu/fpu_div/mult_sub_159_aco/U25/Y (AND2X1_RVT)
+                                                      0.041977   5.433603 f
+  alu/valu/genblk1.simf_alu[1]/fpu/fpu_div/mult_sub_159_aco/PRODUCT[0] (simf_DW02_mult_24)
+                                                      0.000000   5.433603 f
+  alu/valu/genblk1.simf_alu[1]/fpu/fpu_div/sub_159_aco/B[0] (simf_DW01_sub_296)
+                                                      0.000000   5.433603 f
+  alu/valu/genblk1.simf_alu[1]/fpu/fpu_div/sub_159_aco/U8/Y (INVX0_RVT)
+                                                      0.154071   5.587674 r
+  alu/valu/genblk1.simf_alu[1]/fpu/fpu_div/sub_159_aco/U6/Y (OR2X1_RVT)
+                                                      0.052870   5.640544 r
+  alu/valu/genblk1.simf_alu[1]/fpu/fpu_div/sub_159_aco/U2_1/CO (FADDX1_RVT)
+                                                      0.080168   5.720712 r
+  alu/valu/genblk1.simf_alu[1]/fpu/fpu_div/sub_159_aco/U2_2/CO (FADDX1_RVT)
+                                                      0.082789   5.803501 r
+  alu/valu/genblk1.simf_alu[1]/fpu/fpu_div/sub_159_aco/U2_3/CO (FADDX1_RVT)
+                                                      0.082791   5.886292 r
+  alu/valu/genblk1.simf_alu[1]/fpu/fpu_div/sub_159_aco/U2_4/CO (FADDX1_RVT)
+                                                      0.082791   5.969084 r
+  alu/valu/genblk1.simf_alu[1]/fpu/fpu_div/sub_159_aco/U2_5/CO (FADDX1_RVT)
+                                                      0.082804   6.051888 r
+  alu/valu/genblk1.simf_alu[1]/fpu/fpu_div/sub_159_aco/U2_6/CO (FADDX1_RVT)
+                                                      0.082793   6.134681 r
+  alu/valu/genblk1.simf_alu[1]/fpu/fpu_div/sub_159_aco/U2_7/CO (FADDX1_RVT)
+                                                      0.082793   6.217474 r
+  alu/valu/genblk1.simf_alu[1]/fpu/fpu_div/sub_159_aco/U2_8/CO (FADDX1_RVT)
+                                                      0.082793   6.300266 r
+  alu/valu/genblk1.simf_alu[1]/fpu/fpu_div/sub_159_aco/U2_9/CO (FADDX1_RVT)
+                                                      0.082792   6.383058 r
+  alu/valu/genblk1.simf_alu[1]/fpu/fpu_div/sub_159_aco/U2_10/CO (FADDX1_RVT)
+                                                      0.082792   6.465850 r
+  alu/valu/genblk1.simf_alu[1]/fpu/fpu_div/sub_159_aco/U2_11/CO (FADDX1_RVT)
+                                                      0.082791   6.548642 r
+  alu/valu/genblk1.simf_alu[1]/fpu/fpu_div/sub_159_aco/U2_12/CO (FADDX1_RVT)
+                                                      0.082791   6.631433 r
+  alu/valu/genblk1.simf_alu[1]/fpu/fpu_div/sub_159_aco/U2_13/CO (FADDX1_RVT)
+                                                      0.082791   6.714224 r
+  alu/valu/genblk1.simf_alu[1]/fpu/fpu_div/sub_159_aco/U2_14/CO (FADDX1_RVT)
+                                                      0.082791   6.797016 r
+  alu/valu/genblk1.simf_alu[1]/fpu/fpu_div/sub_159_aco/U2_15/CO (FADDX1_RVT)
+                                                      0.082791   6.879807 r
+  alu/valu/genblk1.simf_alu[1]/fpu/fpu_div/sub_159_aco/U2_16/CO (FADDX1_RVT)
+                                                      0.082791   6.962598 r
+  alu/valu/genblk1.simf_alu[1]/fpu/fpu_div/sub_159_aco/U2_17/CO (FADDX1_RVT)
+                                                      0.082791   7.045390 r
+  alu/valu/genblk1.simf_alu[1]/fpu/fpu_div/sub_159_aco/U2_18/CO (FADDX1_RVT)
+                                                      0.082791   7.128181 r
+  alu/valu/genblk1.simf_alu[1]/fpu/fpu_div/sub_159_aco/U2_19/CO (FADDX1_RVT)
+                                                      0.082791   7.210972 r
+  alu/valu/genblk1.simf_alu[1]/fpu/fpu_div/sub_159_aco/U2_20/CO (FADDX1_RVT)
+                                                      0.082791   7.293764 r
+  alu/valu/genblk1.simf_alu[1]/fpu/fpu_div/sub_159_aco/U2_21/CO (FADDX1_RVT)
+                                                      0.082792   7.376556 r
+  alu/valu/genblk1.simf_alu[1]/fpu/fpu_div/sub_159_aco/U2_22/CO (FADDX1_RVT)
+                                                      0.082792   7.459348 r
+  alu/valu/genblk1.simf_alu[1]/fpu/fpu_div/sub_159_aco/U2_23/CO (FADDX1_RVT)
+                                                      0.085226   7.544573 r
+  alu/valu/genblk1.simf_alu[1]/fpu/fpu_div/sub_159_aco/U7/Y (OR2X1_RVT)
+                                                      0.053958   7.598532 r
+  alu/valu/genblk1.simf_alu[1]/fpu/fpu_div/sub_159_aco/U5/Y (XNOR2X1_RVT)
+                                                      0.083274   7.681806 r
+  alu/valu/genblk1.simf_alu[1]/fpu/fpu_div/sub_159_aco/DIFF[25] (simf_DW01_sub_296)
+                                                      0.000000   7.681806 r
+  U5800/Y (AO22X1_RVT)                                0.152130   7.833936 r
+  alu/valu/genblk1.simf_alu[1]/fpu/fpu_div/s_dvd_reg[26]/D (DFFX2_RVT)
+                                                      0.129228   7.963164 r
+  data arrival time                                              7.963164
+
+  clock clk (rise edge)                               8.000000   8.000000
+  clock network delay (ideal)                         0.000000   8.000000
+  alu/valu/genblk1.simf_alu[1]/fpu/fpu_div/s_dvd_reg[26]/CLK (DFFX2_RVT)
+                                                      0.000000   8.000000 r
+  library setup time                                  -0.031665  7.968335
+  data required time                                             7.968335
+  --------------------------------------------------------------------------
+  data required time                                             7.968335
+  data arrival time                                              -7.963164
+  --------------------------------------------------------------------------
+  slack (MET)                                                    0.005171
+
+
+  Startpoint: alu/valu/genblk1.simf_alu[3]/fpu/fpu_div/s_count_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: alu/valu/genblk1.simf_alu[3]/fpu/fpu_div/s_dvd_reg[26]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  simf               540000                saed32rvt_tt1p05v25c
+  simf_DW02_mult_22  ForQA                 saed32rvt_tt1p05v25c
+  simf_DW01_sub_294  ForQA                 saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                               0.000000   0.000000
+  clock network delay (ideal)                         0.000000   0.000000
+  alu/valu/genblk1.simf_alu[3]/fpu/fpu_div/s_count_reg[0]/CLK (DFFARX1_RVT)
+                                                      0.000000 # 0.000000 r
+  alu/valu/genblk1.simf_alu[3]/fpu/fpu_div/s_count_reg[0]/QN (DFFARX1_RVT)
+                                                      0.072369   0.072369 r
+  U37531/Y (AND2X1_RVT)                               0.192652   0.265021 r
+  U78764/Y (NAND4X0_RVT)                              0.170799   0.435820 f
+  U78763/Y (INVX0_RVT)                                0.224402   0.660222 r
+  U78765/Y (INVX0_RVT)                                0.287430   0.947652 f
+  U37490/Y (AO22X1_RVT)                               0.325863   1.273514 f
+  U91469/Y (INVX1_RVT)                                0.226597   1.500111 r
+  U91451/Y (OA222X1_RVT)                              0.184705   1.684816 r
+  U91452/Y (AO221X1_RVT)                              0.170713   1.855530 r
+  U91453/Y (OAI221X1_RVT)                             0.153029   2.008558 f
+  U87081/Y (AND3X1_RVT)                               0.139936   2.148494 f
+  U91454/Y (AO221X1_RVT)                              0.158669   2.307163 f
+  U87061/Y (AND3X1_RVT)                               0.141584   2.448747 f
+  U91455/Y (AO221X1_RVT)                              0.158693   2.607440 f
+  U87034/Y (AND3X1_RVT)                               0.141584   2.749024 f
+  U91456/Y (AO221X1_RVT)                              0.158693   2.907717 f
+  U87040/Y (AND3X1_RVT)                               0.141584   3.049301 f
+  U91457/Y (AO221X1_RVT)                              0.158790   3.208092 f
+  U91458/Y (OA221X1_RVT)                              0.143085   3.351177 f
+  U91459/Y (AO221X1_RVT)                              0.160726   3.511902 f
+  U91460/Y (OA221X1_RVT)                              0.143085   3.654988 f
+  U91461/Y (AO221X1_RVT)                              0.160726   3.815713 f
+  U91462/Y (OA221X1_RVT)                              0.143085   3.958799 f
+  U91463/Y (AO221X1_RVT)                              0.160726   4.119524 f
+  U91464/Y (OA221X1_RVT)                              0.143086   4.262610 f
+  U91465/Y (AO221X1_RVT)                              0.160726   4.423336 f
+  U91466/Y (OA221X1_RVT)                              0.143086   4.566422 f
+  U91467/Y (AO221X1_RVT)                              0.160726   4.727148 f
+  U91468/Y (OA221X1_RVT)                              0.143010   4.870158 f
+  U78953/Y (AOI21X1_RVT)                              0.165191   5.035349 r
+  U78662/Y (NAND4X0_RVT)                              0.161032   5.196381 f
+  alu/valu/genblk1.simf_alu[3]/fpu/fpu_div/mult_sub_159_aco/B[0] (simf_DW02_mult_22)
+                                                      0.000000   5.196381 f
+  alu/valu/genblk1.simf_alu[3]/fpu/fpu_div/mult_sub_159_aco/U28/Y (NBUFFX2_RVT)
+                                                      0.191699   5.388079 f
+  alu/valu/genblk1.simf_alu[3]/fpu/fpu_div/mult_sub_159_aco/U26/Y (AND2X1_RVT)
+                                                      0.043966   5.432045 f
+  alu/valu/genblk1.simf_alu[3]/fpu/fpu_div/mult_sub_159_aco/PRODUCT[0] (simf_DW02_mult_22)
+                                                      0.000000   5.432045 f
+  alu/valu/genblk1.simf_alu[3]/fpu/fpu_div/sub_159_aco/B[0] (simf_DW01_sub_294)
+                                                      0.000000   5.432045 f
+  alu/valu/genblk1.simf_alu[3]/fpu/fpu_div/sub_159_aco/U10/Y (INVX0_RVT)
+                                                      0.154271   5.586316 r
+  alu/valu/genblk1.simf_alu[3]/fpu/fpu_div/sub_159_aco/U8/Y (OR2X1_RVT)
+                                                      0.052913   5.639229 r
+  alu/valu/genblk1.simf_alu[3]/fpu/fpu_div/sub_159_aco/U2_1/CO (FADDX1_RVT)
+                                                      0.080170   5.719399 r
+  alu/valu/genblk1.simf_alu[3]/fpu/fpu_div/sub_159_aco/U2_2/CO (FADDX1_RVT)
+                                                      0.082789   5.802188 r
+  alu/valu/genblk1.simf_alu[3]/fpu/fpu_div/sub_159_aco/U2_3/CO (FADDX1_RVT)
+                                                      0.082791   5.884979 r
+  alu/valu/genblk1.simf_alu[3]/fpu/fpu_div/sub_159_aco/U2_4/CO (FADDX1_RVT)
+                                                      0.082790   5.967770 r
+  alu/valu/genblk1.simf_alu[3]/fpu/fpu_div/sub_159_aco/U2_5/CO (FADDX1_RVT)
+                                                      0.082800   6.050570 r
+  alu/valu/genblk1.simf_alu[3]/fpu/fpu_div/sub_159_aco/U2_6/CO (FADDX1_RVT)
+                                                      0.082792   6.133361 r
+  alu/valu/genblk1.simf_alu[3]/fpu/fpu_div/sub_159_aco/U2_7/CO (FADDX1_RVT)
+                                                      0.082792   6.216154 r
+  alu/valu/genblk1.simf_alu[3]/fpu/fpu_div/sub_159_aco/U2_8/CO (FADDX1_RVT)
+                                                      0.082792   6.298945 r
+  alu/valu/genblk1.simf_alu[3]/fpu/fpu_div/sub_159_aco/U2_9/CO (FADDX1_RVT)
+                                                      0.082792   6.381737 r
+  alu/valu/genblk1.simf_alu[3]/fpu/fpu_div/sub_159_aco/U2_10/CO (FADDX1_RVT)
+                                                      0.082792   6.464529 r
+  alu/valu/genblk1.simf_alu[3]/fpu/fpu_div/sub_159_aco/U2_11/CO (FADDX1_RVT)
+                                                      0.082792   6.547321 r
+  alu/valu/genblk1.simf_alu[3]/fpu/fpu_div/sub_159_aco/U2_12/CO (FADDX1_RVT)
+                                                      0.082792   6.630113 r
+  alu/valu/genblk1.simf_alu[3]/fpu/fpu_div/sub_159_aco/U2_13/CO (FADDX1_RVT)
+                                                      0.082791   6.712904 r
+  alu/valu/genblk1.simf_alu[3]/fpu/fpu_div/sub_159_aco/U2_14/CO (FADDX1_RVT)
+                                                      0.082792   6.795696 r
+  alu/valu/genblk1.simf_alu[3]/fpu/fpu_div/sub_159_aco/U2_15/CO (FADDX1_RVT)
+                                                      0.082791   6.878488 r
+  alu/valu/genblk1.simf_alu[3]/fpu/fpu_div/sub_159_aco/U2_16/CO (FADDX1_RVT)
+                                                      0.082791   6.961278 r
+  alu/valu/genblk1.simf_alu[3]/fpu/fpu_div/sub_159_aco/U2_17/CO (FADDX1_RVT)
+                                                      0.082792   7.044070 r
+  alu/valu/genblk1.simf_alu[3]/fpu/fpu_div/sub_159_aco/U2_18/CO (FADDX1_RVT)
+                                                      0.082791   7.126861 r
+  alu/valu/genblk1.simf_alu[3]/fpu/fpu_div/sub_159_aco/U2_19/CO (FADDX1_RVT)
+                                                      0.082791   7.209652 r
+  alu/valu/genblk1.simf_alu[3]/fpu/fpu_div/sub_159_aco/U2_20/CO (FADDX1_RVT)
+                                                      0.082792   7.292444 r
+  alu/valu/genblk1.simf_alu[3]/fpu/fpu_div/sub_159_aco/U2_21/CO (FADDX1_RVT)
+                                                      0.082791   7.375236 r
+  alu/valu/genblk1.simf_alu[3]/fpu/fpu_div/sub_159_aco/U2_22/CO (FADDX1_RVT)
+                                                      0.082791   7.458026 r
+  alu/valu/genblk1.simf_alu[3]/fpu/fpu_div/sub_159_aco/U2_23/CO (FADDX1_RVT)
+                                                      0.085225   7.543252 r
+  alu/valu/genblk1.simf_alu[3]/fpu/fpu_div/sub_159_aco/U2/Y (OR2X1_RVT)
+                                                      0.055182   7.598433 r
+  alu/valu/genblk1.simf_alu[3]/fpu/fpu_div/sub_159_aco/U1/Y (XNOR2X2_RVT)
+                                                      0.081413   7.679846 r
+  alu/valu/genblk1.simf_alu[3]/fpu/fpu_div/sub_159_aco/DIFF[25] (simf_DW01_sub_294)
+                                                      0.000000   7.679846 r
+  U5602/Y (AO22X1_RVT)                                0.151703   7.831549 r
+  alu/valu/genblk1.simf_alu[3]/fpu/fpu_div/s_dvd_reg[26]/D (DFFX1_RVT)
+                                                      0.129314   7.960863 r
+  data arrival time                                              7.960863
+
+  clock clk (rise edge)                               8.000000   8.000000
+  clock network delay (ideal)                         0.000000   8.000000
+  alu/valu/genblk1.simf_alu[3]/fpu/fpu_div/s_dvd_reg[26]/CLK (DFFX1_RVT)
+                                                      0.000000   8.000000 r
+  library setup time                                  -0.032143  7.967857
+  data required time                                             7.967857
+  --------------------------------------------------------------------------
+  data required time                                             7.967857
+  data arrival time                                              -7.960863
+  --------------------------------------------------------------------------
+  slack (MET)                                                    0.006994
+
+
+  Startpoint: alu/valu/genblk1.simf_alu[13]/fpu/fpu_div/s_count_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: alu/valu/genblk1.simf_alu[13]/fpu/fpu_div/s_dvd_reg[25]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  simf               540000                saed32rvt_tt1p05v25c
+  simf_DW02_mult_26  ForQA                 saed32rvt_tt1p05v25c
+  simf_DW01_sub_298  ForQA                 saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                               0.000000   0.000000
+  clock network delay (ideal)                         0.000000   0.000000
+  alu/valu/genblk1.simf_alu[13]/fpu/fpu_div/s_count_reg[0]/CLK (DFFARX1_RVT)
+                                                      0.000000 # 0.000000 r
+  alu/valu/genblk1.simf_alu[13]/fpu/fpu_div/s_count_reg[0]/QN (DFFARX1_RVT)
+                                                      0.072369   0.072369 r
+  U43941/Y (AND2X1_RVT)                               0.192652   0.265021 r
+  U78761/Y (NAND4X0_RVT)                              0.170799   0.435820 f
+  U78760/Y (INVX0_RVT)                                0.224402   0.660222 r
+  U78762/Y (INVX0_RVT)                                0.287799   0.948021 f
+  U43900/Y (AO22X1_RVT)                               0.326036   1.274057 f
+  U91679/Y (INVX1_RVT)                                0.226605   1.500662 r
+  U91660/Y (OA222X1_RVT)                              0.184708   1.685370 r
+  U91661/Y (AO221X1_RVT)                              0.170713   1.856083 r
+  U91662/Y (OAI221X1_RVT)                             0.153029   2.009112 f
+  U87067/Y (AND3X1_RVT)                               0.139936   2.149048 f
+  U91663/Y (AO221X1_RVT)                              0.158669   2.307717 f
+  U87037/Y (AND3X1_RVT)                               0.141584   2.449301 f
+  U91664/Y (AO221X1_RVT)                              0.158693   2.607994 f
+  U87031/Y (AND3X1_RVT)                               0.141584   2.749578 f
+  U91665/Y (AO221X1_RVT)                              0.158693   2.908271 f
+  U87078/Y (AND3X1_RVT)                               0.141584   3.049855 f
+  U91666/Y (AO221X1_RVT)                              0.158790   3.208645 f
+  U91667/Y (OA221X1_RVT)                              0.143085   3.351730 f
+  U91668/Y (AO221X1_RVT)                              0.160726   3.512456 f
+  U91669/Y (OA221X1_RVT)                              0.143085   3.655541 f
+  U91670/Y (AO221X1_RVT)                              0.160726   3.816267 f
+  U91671/Y (OA221X1_RVT)                              0.143085   3.959352 f
+  U91672/Y (AO221X1_RVT)                              0.160726   4.120078 f
+  U91673/Y (OA221X1_RVT)                              0.143086   4.263164 f
+  U91674/Y (AO221X1_RVT)                              0.160726   4.423890 f
+  U91675/Y (OA221X1_RVT)                              0.143086   4.566976 f
+  U91676/Y (AO221X1_RVT)                              0.160726   4.727701 f
+  U91677/Y (OA221X1_RVT)                              0.142990   4.870691 f
+  U87085/Y (AO21X1_RVT)                               0.151419   5.022110 f
+  U83919/Y (OR4X1_RVT)                                0.198306   5.220416 f
+  alu/valu/genblk1.simf_alu[13]/fpu/fpu_div/mult_sub_159_aco/B[0] (simf_DW02_mult_26)
+                                                      0.000000   5.220416 f
+  alu/valu/genblk1.simf_alu[13]/fpu/fpu_div/mult_sub_159_aco/U26/Y (NBUFFX2_RVT)
+                                                      0.157614   5.378030 f
+  alu/valu/genblk1.simf_alu[13]/fpu/fpu_div/mult_sub_159_aco/U29/Y (NBUFFX2_RVT)
+                                                      0.041675   5.419705 f
+  alu/valu/genblk1.simf_alu[13]/fpu/fpu_div/mult_sub_159_aco/U25/Y (AND2X1_RVT)
+                                                      0.041727   5.461432 f
+  alu/valu/genblk1.simf_alu[13]/fpu/fpu_div/mult_sub_159_aco/PRODUCT[0] (simf_DW02_mult_26)
+                                                      0.000000   5.461432 f
+  alu/valu/genblk1.simf_alu[13]/fpu/fpu_div/sub_159_aco/B[0] (simf_DW01_sub_298)
+                                                      0.000000   5.461432 f
+  alu/valu/genblk1.simf_alu[13]/fpu/fpu_div/sub_159_aco/U8/Y (INVX0_RVT)
+                                                      0.154051   5.615483 r
+  alu/valu/genblk1.simf_alu[13]/fpu/fpu_div/sub_159_aco/U5/Y (OR2X1_RVT)
+                                                      0.052866   5.668349 r
+  alu/valu/genblk1.simf_alu[13]/fpu/fpu_div/sub_159_aco/U2_1/CO (FADDX1_RVT)
+                                                      0.080168   5.748517 r
+  alu/valu/genblk1.simf_alu[13]/fpu/fpu_div/sub_159_aco/U2_2/CO (FADDX1_RVT)
+                                                      0.082789   5.831306 r
+  alu/valu/genblk1.simf_alu[13]/fpu/fpu_div/sub_159_aco/U2_3/CO (FADDX1_RVT)
+                                                      0.082791   5.914097 r
+  alu/valu/genblk1.simf_alu[13]/fpu/fpu_div/sub_159_aco/U2_4/CO (FADDX1_RVT)
+                                                      0.082791   5.996888 r
+  alu/valu/genblk1.simf_alu[13]/fpu/fpu_div/sub_159_aco/U2_5/CO (FADDX1_RVT)
+                                                      0.082793   6.079681 r
+  alu/valu/genblk1.simf_alu[13]/fpu/fpu_div/sub_159_aco/U2_6/CO (FADDX1_RVT)
+                                                      0.082792   6.162473 r
+  alu/valu/genblk1.simf_alu[13]/fpu/fpu_div/sub_159_aco/U2_7/CO (FADDX1_RVT)
+                                                      0.082792   6.245265 r
+  alu/valu/genblk1.simf_alu[13]/fpu/fpu_div/sub_159_aco/U2_8/CO (FADDX1_RVT)
+                                                      0.082792   6.328057 r
+  alu/valu/genblk1.simf_alu[13]/fpu/fpu_div/sub_159_aco/U2_9/CO (FADDX1_RVT)
+                                                      0.082792   6.410849 r
+  alu/valu/genblk1.simf_alu[13]/fpu/fpu_div/sub_159_aco/U2_10/CO (FADDX1_RVT)
+                                                      0.082792   6.493641 r
+  alu/valu/genblk1.simf_alu[13]/fpu/fpu_div/sub_159_aco/U2_11/CO (FADDX1_RVT)
+                                                      0.082792   6.576433 r
+  alu/valu/genblk1.simf_alu[13]/fpu/fpu_div/sub_159_aco/U2_12/CO (FADDX1_RVT)
+                                                      0.082792   6.659225 r
+  alu/valu/genblk1.simf_alu[13]/fpu/fpu_div/sub_159_aco/U2_13/CO (FADDX1_RVT)
+                                                      0.082792   6.742016 r
+  alu/valu/genblk1.simf_alu[13]/fpu/fpu_div/sub_159_aco/U2_14/CO (FADDX1_RVT)
+                                                      0.082791   6.824807 r
+  alu/valu/genblk1.simf_alu[13]/fpu/fpu_div/sub_159_aco/U2_15/CO (FADDX1_RVT)
+                                                      0.082791   6.907598 r
+  alu/valu/genblk1.simf_alu[13]/fpu/fpu_div/sub_159_aco/U2_16/CO (FADDX1_RVT)
+                                                      0.082792   6.990390 r
+  alu/valu/genblk1.simf_alu[13]/fpu/fpu_div/sub_159_aco/U2_17/CO (FADDX1_RVT)
+                                                      0.082791   7.073182 r
+  alu/valu/genblk1.simf_alu[13]/fpu/fpu_div/sub_159_aco/U2_18/CO (FADDX1_RVT)
+                                                      0.082791   7.155972 r
+  alu/valu/genblk1.simf_alu[13]/fpu/fpu_div/sub_159_aco/U2_19/CO (FADDX1_RVT)
+                                                      0.082792   7.238764 r
+  alu/valu/genblk1.simf_alu[13]/fpu/fpu_div/sub_159_aco/U2_20/CO (FADDX1_RVT)
+                                                      0.082791   7.321555 r
+  alu/valu/genblk1.simf_alu[13]/fpu/fpu_div/sub_159_aco/U2_21/CO (FADDX1_RVT)
+                                                      0.082791   7.404346 r
+  alu/valu/genblk1.simf_alu[13]/fpu/fpu_div/sub_159_aco/U2_22/CO (FADDX1_RVT)
+                                                      0.082792   7.487138 r
+  alu/valu/genblk1.simf_alu[13]/fpu/fpu_div/sub_159_aco/U2_23/CO (FADDX1_RVT)
+                                                      0.085225   7.572363 r
+  alu/valu/genblk1.simf_alu[13]/fpu/fpu_div/sub_159_aco/U3/Y (XNOR2X1_RVT)
+                                                      0.090313   7.662676 r
+  alu/valu/genblk1.simf_alu[13]/fpu/fpu_div/sub_159_aco/DIFF[24] (simf_DW01_sub_298)
+                                                      0.000000   7.662676 r
+  U5999/Y (AO22X1_RVT)                                0.152122   7.814799 r
+  alu/valu/genblk1.simf_alu[13]/fpu/fpu_div/s_dvd_reg[25]/D (DFFX1_RVT)
+                                                      0.129314   7.944113 r
+  data arrival time                                              7.944113
+
+  clock clk (rise edge)                               8.000000   8.000000
+  clock network delay (ideal)                         0.000000   8.000000
+  alu/valu/genblk1.simf_alu[13]/fpu/fpu_div/s_dvd_reg[25]/CLK (DFFX1_RVT)
+                                                      0.000000   8.000000 r
+  library setup time                                  -0.033121  7.966878
+  data required time                                             7.966878
+  --------------------------------------------------------------------------
+  data required time                                             7.966878
+  data arrival time                                              -7.944113
+  --------------------------------------------------------------------------
+  slack (MET)                                                    0.022765
+
+
+  Startpoint: alu/valu/genblk1.simf_alu[4]/fpu/fpu_div/s_count_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: alu/valu/genblk1.simf_alu[4]/fpu/fpu_div/s_dvd_reg[26]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  simf               540000                saed32rvt_tt1p05v25c
+  simf_DW02_mult_21  ForQA                 saed32rvt_tt1p05v25c
+  simf_DW01_sub_293  ForQA                 saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                               0.000000   0.000000
+  clock network delay (ideal)                         0.000000   0.000000
+  alu/valu/genblk1.simf_alu[4]/fpu/fpu_div/s_count_reg[0]/CLK (DFFARX1_RVT)
+                                                      0.000000 # 0.000000 r
+  alu/valu/genblk1.simf_alu[4]/fpu/fpu_div/s_count_reg[0]/QN (DFFARX1_RVT)
+                                                      0.063563   0.063563 f
+  U36249/Y (AND2X1_RVT)                               0.197141   0.260704 f
+  U78910/Y (NAND4X0_RVT)                              0.177072   0.437776 r
+  U78924/Y (INVX2_RVT)                                0.362128   0.799904 f
+  U36206/Y (AO22X1_RVT)                               0.757529   1.557433 f
+  U84746/Y (INVX0_RVT)                                0.194925   1.752358 r
+  U91473/Y (OAI221X1_RVT)                             0.167961   1.920318 f
+  U91474/Y (OA221X1_RVT)                              0.141415   2.061733 f
+  U91475/Y (AO221X1_RVT)                              0.160726   2.222459 f
+  U91476/Y (OA221X1_RVT)                              0.143085   2.365544 f
+  U91477/Y (AO221X1_RVT)                              0.160628   2.526172 f
+  U86924/Y (AND3X1_RVT)                               0.141584   2.667756 f
+  U91478/Y (AO221X1_RVT)                              0.158725   2.826481 f
+  U86976/Y (OAI221X1_RVT)                             0.153764   2.980246 r
+  U86975/Y (OAI221X1_RVT)                             0.151170   3.131415 f
+  U91479/Y (OA221X1_RVT)                              0.141411   3.272826 f
+  U91480/Y (AO221X1_RVT)                              0.160726   3.433552 f
+  U91481/Y (OA221X1_RVT)                              0.143085   3.576637 f
+  U91482/Y (AO221X1_RVT)                              0.160726   3.737363 f
+  U91483/Y (OA221X1_RVT)                              0.143085   3.880448 f
+  U91484/Y (AO221X1_RVT)                              0.160725   4.041173 f
+  U91485/Y (OA221X1_RVT)                              0.143086   4.184259 f
+  U91486/Y (AO221X1_RVT)                              0.160726   4.344985 f
+  U91487/Y (OA221X1_RVT)                              0.143086   4.488071 f
+  U91488/Y (AO221X1_RVT)                              0.160726   4.648797 f
+  U91489/Y (OA221X1_RVT)                              0.142990   4.791787 f
+  U91490/Y (AO21X1_RVT)                               0.151419   4.943205 f
+  U78663/Y (OR4X1_RVT)                                0.204787   5.147992 f
+  alu/valu/genblk1.simf_alu[4]/fpu/fpu_div/mult_sub_159_aco/B[0] (simf_DW02_mult_21)
+                                                      0.000000   5.147992 f
+  alu/valu/genblk1.simf_alu[4]/fpu/fpu_div/mult_sub_159_aco/U28/Y (NBUFFX2_RVT)
+                                                      0.223355   5.371347 f
+  alu/valu/genblk1.simf_alu[4]/fpu/fpu_div/mult_sub_159_aco/U27/Y (AND2X1_RVT)
+                                                      0.041975   5.413322 f
+  alu/valu/genblk1.simf_alu[4]/fpu/fpu_div/mult_sub_159_aco/PRODUCT[0] (simf_DW02_mult_21)
+                                                      0.000000   5.413322 f
+  alu/valu/genblk1.simf_alu[4]/fpu/fpu_div/sub_159_aco/B[0] (simf_DW01_sub_293)
+                                                      0.000000   5.413322 f
+  alu/valu/genblk1.simf_alu[4]/fpu/fpu_div/sub_159_aco/U8/Y (INVX0_RVT)
+                                                      0.154071   5.567393 r
+  alu/valu/genblk1.simf_alu[4]/fpu/fpu_div/sub_159_aco/U6/Y (OR2X1_RVT)
+                                                      0.052870   5.620263 r
+  alu/valu/genblk1.simf_alu[4]/fpu/fpu_div/sub_159_aco/U2_1/CO (FADDX1_RVT)
+                                                      0.080168   5.700431 r
+  alu/valu/genblk1.simf_alu[4]/fpu/fpu_div/sub_159_aco/U2_2/CO (FADDX1_RVT)
+                                                      0.082789   5.783220 r
+  alu/valu/genblk1.simf_alu[4]/fpu/fpu_div/sub_159_aco/U2_3/CO (FADDX1_RVT)
+                                                      0.082791   5.866012 r
+  alu/valu/genblk1.simf_alu[4]/fpu/fpu_div/sub_159_aco/U2_4/CO (FADDX1_RVT)
+                                                      0.082791   5.948803 r
+  alu/valu/genblk1.simf_alu[4]/fpu/fpu_div/sub_159_aco/U2_5/CO (FADDX1_RVT)
+                                                      0.082792   6.031595 r
+  alu/valu/genblk1.simf_alu[4]/fpu/fpu_div/sub_159_aco/U2_6/CO (FADDX1_RVT)
+                                                      0.082791   6.114387 r
+  alu/valu/genblk1.simf_alu[4]/fpu/fpu_div/sub_159_aco/U2_7/CO (FADDX1_RVT)
+                                                      0.082791   6.197178 r
+  alu/valu/genblk1.simf_alu[4]/fpu/fpu_div/sub_159_aco/U2_8/CO (FADDX1_RVT)
+                                                      0.082791   6.279969 r
+  alu/valu/genblk1.simf_alu[4]/fpu/fpu_div/sub_159_aco/U2_9/CO (FADDX1_RVT)
+                                                      0.082792   6.362761 r
+  alu/valu/genblk1.simf_alu[4]/fpu/fpu_div/sub_159_aco/U2_10/CO (FADDX1_RVT)
+                                                      0.082792   6.445553 r
+  alu/valu/genblk1.simf_alu[4]/fpu/fpu_div/sub_159_aco/U2_11/CO (FADDX1_RVT)
+                                                      0.082791   6.528344 r
+  alu/valu/genblk1.simf_alu[4]/fpu/fpu_div/sub_159_aco/U2_12/CO (FADDX1_RVT)
+                                                      0.082792   6.611136 r
+  alu/valu/genblk1.simf_alu[4]/fpu/fpu_div/sub_159_aco/U2_13/CO (FADDX1_RVT)
+                                                      0.082793   6.693929 r
+  alu/valu/genblk1.simf_alu[4]/fpu/fpu_div/sub_159_aco/U2_14/CO (FADDX1_RVT)
+                                                      0.082791   6.776721 r
+  alu/valu/genblk1.simf_alu[4]/fpu/fpu_div/sub_159_aco/U2_15/CO (FADDX1_RVT)
+                                                      0.082791   6.859512 r
+  alu/valu/genblk1.simf_alu[4]/fpu/fpu_div/sub_159_aco/U2_16/CO (FADDX1_RVT)
+                                                      0.082791   6.942303 r
+  alu/valu/genblk1.simf_alu[4]/fpu/fpu_div/sub_159_aco/U2_17/CO (FADDX1_RVT)
+                                                      0.082791   7.025095 r
+  alu/valu/genblk1.simf_alu[4]/fpu/fpu_div/sub_159_aco/U2_18/CO (FADDX1_RVT)
+                                                      0.082791   7.107886 r
+  alu/valu/genblk1.simf_alu[4]/fpu/fpu_div/sub_159_aco/U2_19/CO (FADDX1_RVT)
+                                                      0.082791   7.190677 r
+  alu/valu/genblk1.simf_alu[4]/fpu/fpu_div/sub_159_aco/U2_20/CO (FADDX1_RVT)
+                                                      0.082791   7.273468 r
+  alu/valu/genblk1.simf_alu[4]/fpu/fpu_div/sub_159_aco/U2_21/CO (FADDX1_RVT)
+                                                      0.082791   7.356260 r
+  alu/valu/genblk1.simf_alu[4]/fpu/fpu_div/sub_159_aco/U2_22/CO (FADDX1_RVT)
+                                                      0.082791   7.439051 r
+  alu/valu/genblk1.simf_alu[4]/fpu/fpu_div/sub_159_aco/U2_23/CO (FADDX1_RVT)
+                                                      0.085226   7.524277 r
+  alu/valu/genblk1.simf_alu[4]/fpu/fpu_div/sub_159_aco/U7/Y (OR2X1_RVT)
+                                                      0.053958   7.578235 r
+  alu/valu/genblk1.simf_alu[4]/fpu/fpu_div/sub_159_aco/U3/Y (XNOR2X1_RVT)
+                                                      0.083274   7.661509 r
+  alu/valu/genblk1.simf_alu[4]/fpu/fpu_div/sub_159_aco/DIFF[25] (simf_DW01_sub_293)
+                                                      0.000000   7.661509 r
+  U5503/Y (AO22X1_RVT)                                0.152132   7.813641 r
+  alu/valu/genblk1.simf_alu[4]/fpu/fpu_div/s_dvd_reg[26]/D (DFFX1_RVT)
+                                                      0.129314   7.942955 r
+  data arrival time                                              7.942955
+
+  clock clk (rise edge)                               8.000000   8.000000
+  clock network delay (ideal)                         0.000000   8.000000
+  alu/valu/genblk1.simf_alu[4]/fpu/fpu_div/s_dvd_reg[26]/CLK (DFFX1_RVT)
+                                                      0.000000   8.000000 r
+  library setup time                                  -0.032143  7.967857
+  data required time                                             7.967857
+  --------------------------------------------------------------------------
+  data required time                                             7.967857
+  data arrival time                                              -7.942955
+  --------------------------------------------------------------------------
+  slack (MET)                                                    0.024902
+
+
+1

@@ -1,0 +1,64 @@
+Loading db file '/s/synopsys-2012_06_27/@sys/G-2012.06/libraries/syn/gtech.db'
+Loading db file '/s/synopsys-2012_06_27/@sys/G-2012.06/libraries/syn/standard.sldb'
+  Loading link library 'saed32rvt_tt1p05v25c'
+  Loading link library 'gtech'
+Running PRESTO HDLC
+Warning:  ../../../src/verilog/rtl/vgpr/build/reg_1024x32b_3r_2w.v:75: DEFAULT branch of CASE statement cannot be reached. (ELAB-311)
+Warning:  ../../../src/verilog/rtl/vgpr/build/reg_1024x32b_3r_2w.v:126: DEFAULT branch of CASE statement cannot be reached. (ELAB-311)
+Warning:  ../../../src/verilog/rtl/vgpr/build/reg_1024x32b_3r_2w.v:158: DEFAULT branch of CASE statement cannot be reached. (ELAB-311)
+Warning:  ../../../src/verilog/rtl/vgpr/build/reg_1024x32b_3r_2w.v:190: DEFAULT branch of CASE statement cannot be reached. (ELAB-311)
+Warning:  ../../../src/verilog/rtl/vgpr/build/reg_1024x32b_3r_2w.v:253: DEFAULT branch of CASE statement cannot be reached. (ELAB-311)
+
+Statistics for case statements in always block at line 72 in file
+	'../../../src/verilog/rtl/vgpr/build/reg_1024x32b_3r_2w.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            75            |    auto/auto     |
+===============================================
+
+Statistics for case statements in always block at line 124 in file
+	'../../../src/verilog/rtl/vgpr/build/reg_1024x32b_3r_2w.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           126            |    auto/auto     |
+===============================================
+
+Statistics for case statements in always block at line 156 in file
+	'../../../src/verilog/rtl/vgpr/build/reg_1024x32b_3r_2w.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           158            |    auto/auto     |
+===============================================
+
+Statistics for case statements in always block at line 188 in file
+	'../../../src/verilog/rtl/vgpr/build/reg_1024x32b_3r_2w.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           190            |    auto/auto     |
+===============================================
+
+Statistics for case statements in always block at line 251 in file
+	'../../../src/verilog/rtl/vgpr/build/reg_1024x32b_3r_2w.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           253            |    auto/auto     |
+===============================================
+
+Statistics for case statements in always block at line 317 in file
+	'../../../src/verilog/rtl/vgpr/build/reg_1024x32b_3r_2w.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           319            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Elaborated 1 design.
+Current design is now 'reg_1024x32b_3r_2w'.
+Information: Building the design 'reg_256x32b_3r_2w'. (HDL-193)
+Presto compilation completed successfully.
+1

@@ -1,0 +1,99 @@
+Loading db file '/s/synopsys-2012_06_27/@sys/G-2012.06/libraries/syn/gtech.db'
+Loading db file '/s/synopsys-2012_06_27/@sys/G-2012.06/libraries/syn/standard.sldb'
+  Loading link library 'saed32rvt_tt1p05v25c'
+  Loading link library 'gtech'
+Running PRESTO HDLC
+Presto compilation completed successfully.
+Elaborated 1 design.
+Current design is now 'exec'.
+Information: Building the design 'rd_port_9_to_1' instantiated from design 'exec' with
+	the parameters "6". (HDL-193)
+
+Statistics for case statements in always block at line 57 in file
+	'../../../src/verilog/rtl/exec/build/rd_port_9_to_1.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            63            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'wr_port_40x64b_8_to_1'. (HDL-193)
+
+Statistics for case statements in always block at line 83 in file
+	'../../../src/verilog/rtl/exec/build/wr_port_40x64b_8_to_1.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            91            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'reg_40xX_2r_2w' instantiated from design 'exec' with
+	the parameters "32". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'reg_40xX_2r_2w' instantiated from design 'exec' with
+	the parameters "1". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'reg_40xX_2r_3w' instantiated from design 'exec' with
+	the parameters "64". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'reg_40xX_2r_2w' instantiated from design 'exec' with
+	the parameters "64". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'mux_40xX_to_1xX' instantiated from design 'reg_40xX_2r_2w_WIDTH32' with
+	the parameters "32". (HDL-193)
+
+Statistics for case statements in always block at line 10 in file
+	'../../../src/verilog/rtl/common/build/mux_40xX_to_1xX.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            11            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'decoder_6_to_40'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'register' instantiated from design 'reg_40xX_2r_2w_WIDTH32' with
+	the parameters "32". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'mux_40xX_to_1xX' instantiated from design 'reg_40xX_2r_2w_WIDTH1' with
+	the parameters "1". (HDL-193)
+
+Statistics for case statements in always block at line 10 in file
+	'../../../src/verilog/rtl/common/build/mux_40xX_to_1xX.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            11            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'register' instantiated from design 'reg_40xX_2r_2w_WIDTH1' with
+	the parameters "1". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'mux_40xX_to_1xX' instantiated from design 'reg_40xX_2r_3w_WIDTH64' with
+	the parameters "64". (HDL-193)
+
+Statistics for case statements in always block at line 10 in file
+	'../../../src/verilog/rtl/common/build/mux_40xX_to_1xX.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            11            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'register' instantiated from design 'reg_40xX_2r_3w_WIDTH64' with
+	the parameters "64". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'dff_en'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'dff'. (HDL-193)
+
+Inferred memory devices in process
+	in routine dff line 12 in file
+		'../../../src/verilog/rtl/common/build/dff.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      state_reg      | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+1

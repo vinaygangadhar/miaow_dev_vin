@@ -1,0 +1,257 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 5
+Design : exec
+Version: G-2012.06
+Date   : Thu May 16 12:51:55 2013
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: tt1p05v25c   Library: saed32rvt_tt1p05v25c
+Wire Load Model Mode: enclosed
+
+  Startpoint: rfa_select_fu[4]
+              (input port clocked by clk)
+  Endpoint: vcc_file/word[29]/bits[1]/dff_0/state_reg
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  exec               140000                saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                               0.000000   0.000000
+  clock network delay (ideal)                         0.000000   0.000000
+  input external delay                                0.000000   0.000000 r
+  rfa_select_fu[4] (in)                               0.000000   0.000000 r
+  U16518/Y (NBUFFX2_RVT)                              0.215845   0.215845 r
+  U9859/Y (AO22X1_RVT)                                0.314548   0.530394 r
+  U9858/Y (AO221X1_RVT)                               0.148468   0.678862 r
+  U9857/Y (OR2X1_RVT)                                 0.162942   0.841804 r
+  U177/Y (INVX1_RVT)                                  0.199687   1.041491 f
+  U3333/Y (AND2X1_RVT)                                0.127820   1.169311 f
+  U2519/Y (AND2X1_RVT)                                0.149120   1.318431 f
+  U1892/Y (AND2X1_RVT)                                0.160961   1.479393 f
+  U1821/Y (AND2X1_RVT)                                0.150484   1.629877 f
+  U1544/Y (NAND2X0_RVT)                               0.151763   1.781640 r
+  U1542/Y (NAND3X0_RVT)                               0.153646   1.935286 f
+  U68/Y (INVX1_RVT)                                   0.224455   2.159740 r
+  U13633/Y (NBUFFX2_RVT)                              0.225180   2.384921 r
+  U1528/Y (AO222X1_RVT)                               0.348251   2.733172 r
+  vcc_file/word[29]/bits[1]/dff_0/state_reg/D (DFFARX1_RVT)
+                                                      0.106857   2.840029 r
+  data arrival time                                              2.840029
+
+  clock clk (rise edge)                               8.000000   8.000000
+  clock network delay (ideal)                         0.000000   8.000000
+  vcc_file/word[29]/bits[1]/dff_0/state_reg/CLK (DFFARX1_RVT)
+                                                      0.000000   8.000000 r
+  library setup time                                  -0.035878  7.964122
+  data required time                                             7.964122
+  --------------------------------------------------------------------------
+  data required time                                             7.964122
+  data arrival time                                              -2.840029
+  --------------------------------------------------------------------------
+  slack (MET)                                                    5.124093
+
+
+  Startpoint: rfa_select_fu[4]
+              (input port clocked by clk)
+  Endpoint: vcc_file/word[29]/bits[2]/dff_0/state_reg
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  exec               140000                saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                               0.000000   0.000000
+  clock network delay (ideal)                         0.000000   0.000000
+  input external delay                                0.000000   0.000000 r
+  rfa_select_fu[4] (in)                               0.000000   0.000000 r
+  U16518/Y (NBUFFX2_RVT)                              0.215845   0.215845 r
+  U9859/Y (AO22X1_RVT)                                0.314548   0.530394 r
+  U9858/Y (AO221X1_RVT)                               0.148468   0.678862 r
+  U9857/Y (OR2X1_RVT)                                 0.162942   0.841804 r
+  U177/Y (INVX1_RVT)                                  0.199687   1.041491 f
+  U3333/Y (AND2X1_RVT)                                0.127820   1.169311 f
+  U2519/Y (AND2X1_RVT)                                0.149120   1.318431 f
+  U1892/Y (AND2X1_RVT)                                0.160961   1.479393 f
+  U1821/Y (AND2X1_RVT)                                0.150484   1.629877 f
+  U1544/Y (NAND2X0_RVT)                               0.151763   1.781640 r
+  U1542/Y (NAND3X0_RVT)                               0.153646   1.935286 f
+  U68/Y (INVX1_RVT)                                   0.224455   2.159740 r
+  U13632/Y (NBUFFX2_RVT)                              0.225180   2.384921 r
+  U1517/Y (AO222X1_RVT)                               0.348251   2.733172 r
+  vcc_file/word[29]/bits[2]/dff_0/state_reg/D (DFFARX1_RVT)
+                                                      0.106857   2.840029 r
+  data arrival time                                              2.840029
+
+  clock clk (rise edge)                               8.000000   8.000000
+  clock network delay (ideal)                         0.000000   8.000000
+  vcc_file/word[29]/bits[2]/dff_0/state_reg/CLK (DFFARX1_RVT)
+                                                      0.000000   8.000000 r
+  library setup time                                  -0.035878  7.964122
+  data required time                                             7.964122
+  --------------------------------------------------------------------------
+  data required time                                             7.964122
+  data arrival time                                              -2.840029
+  --------------------------------------------------------------------------
+  slack (MET)                                                    5.124093
+
+
+  Startpoint: rfa_select_fu[4]
+              (input port clocked by clk)
+  Endpoint: vcc_file/word[29]/bits[3]/dff_0/state_reg
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  exec               140000                saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                               0.000000   0.000000
+  clock network delay (ideal)                         0.000000   0.000000
+  input external delay                                0.000000   0.000000 r
+  rfa_select_fu[4] (in)                               0.000000   0.000000 r
+  U16518/Y (NBUFFX2_RVT)                              0.215845   0.215845 r
+  U9859/Y (AO22X1_RVT)                                0.314548   0.530394 r
+  U9858/Y (AO221X1_RVT)                               0.148468   0.678862 r
+  U9857/Y (OR2X1_RVT)                                 0.162942   0.841804 r
+  U177/Y (INVX1_RVT)                                  0.199687   1.041491 f
+  U3333/Y (AND2X1_RVT)                                0.127820   1.169311 f
+  U2519/Y (AND2X1_RVT)                                0.149120   1.318431 f
+  U1892/Y (AND2X1_RVT)                                0.160961   1.479393 f
+  U1821/Y (AND2X1_RVT)                                0.150484   1.629877 f
+  U1544/Y (NAND2X0_RVT)                               0.151763   1.781640 r
+  U1542/Y (NAND3X0_RVT)                               0.153646   1.935286 f
+  U68/Y (INVX1_RVT)                                   0.224455   2.159740 r
+  U13631/Y (NBUFFX2_RVT)                              0.225180   2.384921 r
+  U1506/Y (AO222X1_RVT)                               0.348251   2.733172 r
+  vcc_file/word[29]/bits[3]/dff_0/state_reg/D (DFFARX1_RVT)
+                                                      0.106857   2.840029 r
+  data arrival time                                              2.840029
+
+  clock clk (rise edge)                               8.000000   8.000000
+  clock network delay (ideal)                         0.000000   8.000000
+  vcc_file/word[29]/bits[3]/dff_0/state_reg/CLK (DFFARX1_RVT)
+                                                      0.000000   8.000000 r
+  library setup time                                  -0.035878  7.964122
+  data required time                                             7.964122
+  --------------------------------------------------------------------------
+  data required time                                             7.964122
+  data arrival time                                              -2.840029
+  --------------------------------------------------------------------------
+  slack (MET)                                                    5.124093
+
+
+  Startpoint: rfa_select_fu[4]
+              (input port clocked by clk)
+  Endpoint: vcc_file/word[29]/bits[4]/dff_0/state_reg
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  exec               140000                saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                               0.000000   0.000000
+  clock network delay (ideal)                         0.000000   0.000000
+  input external delay                                0.000000   0.000000 r
+  rfa_select_fu[4] (in)                               0.000000   0.000000 r
+  U16518/Y (NBUFFX2_RVT)                              0.215845   0.215845 r
+  U9859/Y (AO22X1_RVT)                                0.314548   0.530394 r
+  U9858/Y (AO221X1_RVT)                               0.148468   0.678862 r
+  U9857/Y (OR2X1_RVT)                                 0.162942   0.841804 r
+  U177/Y (INVX1_RVT)                                  0.199687   1.041491 f
+  U3333/Y (AND2X1_RVT)                                0.127820   1.169311 f
+  U2519/Y (AND2X1_RVT)                                0.149120   1.318431 f
+  U1892/Y (AND2X1_RVT)                                0.160961   1.479393 f
+  U1821/Y (AND2X1_RVT)                                0.150484   1.629877 f
+  U1544/Y (NAND2X0_RVT)                               0.151763   1.781640 r
+  U1542/Y (NAND3X0_RVT)                               0.153646   1.935286 f
+  U68/Y (INVX1_RVT)                                   0.224455   2.159740 r
+  U13630/Y (NBUFFX2_RVT)                              0.225180   2.384921 r
+  U1495/Y (AO222X1_RVT)                               0.348251   2.733172 r
+  vcc_file/word[29]/bits[4]/dff_0/state_reg/D (DFFARX1_RVT)
+                                                      0.106857   2.840029 r
+  data arrival time                                              2.840029
+
+  clock clk (rise edge)                               8.000000   8.000000
+  clock network delay (ideal)                         0.000000   8.000000
+  vcc_file/word[29]/bits[4]/dff_0/state_reg/CLK (DFFARX1_RVT)
+                                                      0.000000   8.000000 r
+  library setup time                                  -0.035878  7.964122
+  data required time                                             7.964122
+  --------------------------------------------------------------------------
+  data required time                                             7.964122
+  data arrival time                                              -2.840029
+  --------------------------------------------------------------------------
+  slack (MET)                                                    5.124093
+
+
+  Startpoint: rfa_select_fu[4]
+              (input port clocked by clk)
+  Endpoint: vcc_file/word[29]/bits[5]/dff_0/state_reg
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  exec               140000                saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                               0.000000   0.000000
+  clock network delay (ideal)                         0.000000   0.000000
+  input external delay                                0.000000   0.000000 r
+  rfa_select_fu[4] (in)                               0.000000   0.000000 r
+  U16518/Y (NBUFFX2_RVT)                              0.215845   0.215845 r
+  U9859/Y (AO22X1_RVT)                                0.314548   0.530394 r
+  U9858/Y (AO221X1_RVT)                               0.148468   0.678862 r
+  U9857/Y (OR2X1_RVT)                                 0.162942   0.841804 r
+  U177/Y (INVX1_RVT)                                  0.199687   1.041491 f
+  U3333/Y (AND2X1_RVT)                                0.127820   1.169311 f
+  U2519/Y (AND2X1_RVT)                                0.149120   1.318431 f
+  U1892/Y (AND2X1_RVT)                                0.160961   1.479393 f
+  U1821/Y (AND2X1_RVT)                                0.150484   1.629877 f
+  U1544/Y (NAND2X0_RVT)                               0.151763   1.781640 r
+  U1542/Y (NAND3X0_RVT)                               0.153646   1.935286 f
+  U68/Y (INVX1_RVT)                                   0.224455   2.159740 r
+  U13629/Y (NBUFFX2_RVT)                              0.225180   2.384921 r
+  U1484/Y (AO222X1_RVT)                               0.348251   2.733172 r
+  vcc_file/word[29]/bits[5]/dff_0/state_reg/D (DFFARX1_RVT)
+                                                      0.106857   2.840029 r
+  data arrival time                                              2.840029
+
+  clock clk (rise edge)                               8.000000   8.000000
+  clock network delay (ideal)                         0.000000   8.000000
+  vcc_file/word[29]/bits[5]/dff_0/state_reg/CLK (DFFARX1_RVT)
+                                                      0.000000   8.000000 r
+  library setup time                                  -0.035878  7.964122
+  data required time                                             7.964122
+  --------------------------------------------------------------------------
+  data required time                                             7.964122
+  data arrival time                                              -2.840029
+  --------------------------------------------------------------------------
+  slack (MET)                                                    5.124093
+
+
+1

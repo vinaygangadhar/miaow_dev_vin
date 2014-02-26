@@ -1,0 +1,4 @@
+rfa d
+Unit that controls access to register file
+simd0_queue_entry_valid 1, simd1_queue_entry_valid 1, simd2_queue_entry_valid 1, simd3_queue_entry_valid 1, simf0_queue_entry_valid 1, simf1_queue_entry_valid 1, simf2_queue_entry_valid 1, simf3_queue_entry_valid 1
+simd0_queue_entry_serviced 1, simd1_queue_entry_serviced 1, simd2_queue_entry_serviced 1, simd3_queue_entry_serviced 1, simf0_queue_entry_serviced 1, simf1_queue_entry_serviced 1, simf2_queue_entry_serviced 1, simf3_queue_entry_serviced 1, execvgprsgpr_select_fu 16

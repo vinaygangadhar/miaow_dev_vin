@@ -1,0 +1,1105 @@
+Loading db file '/s/synopsys-2012_06_27/@sys/G-2012.06/libraries/syn/gtech.db'
+Loading db file '/s/synopsys-2012_06_27/@sys/G-2012.06/libraries/syn/standard.sldb'
+  Loading link library 'saed32rvt_tt1p05v25c'
+  Loading link library 'gtech'
+Running PRESTO HDLC
+Presto compilation completed successfully.
+Elaborated 1 design.
+Current design is now 'simf'.
+Information: Building the design 'alu' instantiated from design 'simf' with
+	the parameters "MODULE=1". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'PS_flops_issue_alu'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'alu_controller' instantiated from design 'alu_MODULE1' with
+	the parameters "MODULE=1". (HDL-193)
+Warning:  ../../../src/verilog/rtl/alu/build/alu_controller.v:178: DEFAULT branch of CASE statement cannot be reached. (ELAB-311)
+Warning:  ../../../src/verilog/rtl/alu/build/alu_controller.v:210: DEFAULT branch of CASE statement cannot be reached. (ELAB-311)
+Warning:  ../../../src/verilog/rtl/alu/build/alu_controller.v:227: DEFAULT branch of CASE statement cannot be reached. (ELAB-311)
+
+Statistics for case statements in always block at line 91 in file
+	'../../../src/verilog/rtl/alu/build/alu_controller.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            92            |     auto/no      |
+===============================================
+
+Statistics for case statements in always block at line 176 in file
+	'../../../src/verilog/rtl/alu/build/alu_controller.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           178            |    auto/auto     |
+===============================================
+
+Statistics for case statements in always block at line 209 in file
+	'../../../src/verilog/rtl/alu/build/alu_controller.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           210            |    auto/auto     |
+===============================================
+
+Statistics for case statements in always block at line 226 in file
+	'../../../src/verilog/rtl/alu/build/alu_controller.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           227            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'src_mux'. (HDL-193)
+
+Statistics for case statements in always block at line 27 in file
+	'../../../src/verilog/rtl/alu/build/src_mux.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            31            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'src_shift_reg'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'valu' instantiated from design 'alu_MODULE1' with
+	the parameters "MODULE=1". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'dest_shift_reg'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'PS_flops_EX_WB_alu'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'alu_wb_queue'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'dff_en'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'simf_instr_decoder'. (HDL-193)
+
+Statistics for case statements in always block at line 55 in file
+	'../../../src/verilog/rtl/simf/build/simf_instr_decoder.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            56            |    auto/auto     |
+===============================================
+
+Statistics for case statements in always block at line 75 in file
+	'../../../src/verilog/rtl/simf/build/simf_instr_decoder.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            76            |    auto/auto     |
+===============================================
+
+Statistics for case statements in always block at line 302 in file
+	'../../../src/verilog/rtl/simf/build/simf_instr_decoder.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           304            |    auto/auto     |
+===============================================
+
+Statistics for case statements in always block at line 373 in file
+	'../../../src/verilog/rtl/simf/build/simf_instr_decoder.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           374            |    auto/auto     |
+===============================================
+
+Statistics for case statements in always block at line 443 in file
+	'../../../src/verilog/rtl/simf/build/simf_instr_decoder.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           444            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'alu_fsm'. (HDL-193)
+
+Statistics for case statements in always block at line 45 in file
+	'../../../src/verilog/rtl/alu/build/alu_fsm.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            46            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'shift_in' instantiated from design 'src_shift_reg' with
+	the parameters "32". (HDL-193)
+
+Statistics for case statements in always block at line 24 in file
+	'../../../src/verilog/rtl/alu/build/shift_in.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            26            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'shift_in' instantiated from design 'src_shift_reg' with
+	the parameters "1". (HDL-193)
+
+Statistics for case statements in always block at line 24 in file
+	'../../../src/verilog/rtl/alu/build/shift_in.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            26            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'simf_alu'. (HDL-193)
+
+Statistics for case statements in always block at line 78 in file
+	'../../../src/verilog/rtl/simf/build/simf_alu.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            79            |    auto/auto     |
+===============================================
+
+Statistics for case statements in always block at line 98 in file
+	'../../../src/verilog/rtl/simf/build/simf_alu.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            99            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'shift_out' instantiated from design 'dest_shift_reg' with
+	the parameters "32". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'shift_out' instantiated from design 'dest_shift_reg' with
+	the parameters "1". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'dff'. (HDL-193)
+
+Inferred memory devices in process
+	in routine dff line 12 in file
+		'../../../src/verilog/rtl/common/build/dff.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      state_reg      | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'queue_param_1r_1w' instantiated from design 'alu_wb_queue' with
+	the parameters "BITS=2,SIZE=4,WIDTH=2301". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'register' instantiated from design 'shift_in_WIDTH32' with
+	the parameters "512". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'mux_2_to_1' instantiated from design 'shift_in_WIDTH32' with
+	the parameters "512". (HDL-193)
+Warning:  ../../../src/verilog/rtl/alu/build/mux_2_to_1.v:11: DEFAULT branch of CASE statement cannot be reached. (ELAB-311)
+
+Statistics for case statements in always block at line 10 in file
+	'../../../src/verilog/rtl/alu/build/mux_2_to_1.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            11            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'register' instantiated from design 'shift_in_WIDTH1' with
+	the parameters "16". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'mux_2_to_1' instantiated from design 'shift_in_WIDTH1' with
+	the parameters "16". (HDL-193)
+Warning:  ../../../src/verilog/rtl/alu/build/mux_2_to_1.v:11: DEFAULT branch of CASE statement cannot be reached. (ELAB-311)
+
+Statistics for case statements in always block at line 10 in file
+	'../../../src/verilog/rtl/alu/build/mux_2_to_1.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            11            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'mux_param' instantiated from design 'queue_param_1r_1w_BITS2_SIZE4_WIDTH2301' with
+	the parameters "BITS=2,SIZE=4,WIDTH=2301". (HDL-193)
+Warning:  Starting with the 2000.11-1 release, the Presto Verilog reader treats Verilog 'integer' types as signed; synthesized result may not match earlier versions of HDL Compiler. (VER-314)
+Warning:  ../../../src/verilog/rtl/common/build/mux_param.v:20: signed to unsigned conversion occurs. (VER-318)
+Presto compilation completed successfully.
+Information: Building the design 'decoder_param' instantiated from design 'queue_param_1r_1w_BITS2_SIZE4_WIDTH2301' with
+	the parameters "BITS=2,SIZE=4". (HDL-193)
+Warning:  Starting with the 2000.11-1 release, the Presto Verilog reader treats Verilog 'integer' types as signed; synthesized result may not match earlier versions of HDL Compiler. (VER-314)
+Warning:  ../../../src/verilog/rtl/common/build/decoder_param.v:16: signed to unsigned conversion occurs. (VER-318)
+Presto compilation completed successfully.
+Information: Building the design 'reg_param' instantiated from design 'queue_param_1r_1w_BITS2_SIZE4_WIDTH2301' with
+	the parameters "WIDTH=2301". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'fpu_arith'. (HDL-193)
+
+Statistics for case statements in always block at line 412 in file
+	'../../../src/verilog/rtl/simf/build/fpu_arith.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           420            |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+	in routine fpu_arith line 332 in file
+		'../../../src/verilog/rtl/simf/build/fpu_arith.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    s_rmode_i_reg    | Flip-flop |   2   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    s_start_i_reg    | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|     s_opa_i_reg     | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+|     s_opb_i_reg     | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+|   s_fpu_op_i_reg    | Flip-flop |   3   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine fpu_arith line 351 in file
+		'../../../src/verilog/rtl/simf/build/fpu_arith.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     qnan_o_reg      | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|     snan_o_reg      | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|    output_o_reg     | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+|      ine_o_reg      | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|   overflow_o_reg    | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|   underflow_o_reg   | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|   div_zero_o_reg    | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|      inf_o_reg      | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|     zero_o_reg      | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine fpu_arith line 377 in file
+		'../../../src/verilog/rtl/simf/build/fpu_arith.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     ready_o_reg     | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|     s_count_reg     | Flip-flop |   6   |  Y  | N  | Y  | N  | N  | N  | N  |
+|     s_state_reg     | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine fpu_arith line 412 in file
+		'../../../src/verilog/rtl/simf/build/fpu_arith.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     s_ine_o_reg     | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|    s_output1_reg    | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'fpu_pre_norm_addsub'. (HDL-193)
+
+Statistics for case statements in always block at line 151 in file
+	'../../../src/verilog/rtl/simf/build/fpu_pre_norm_addsub.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           156            |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+	in routine fpu_pre_norm_addsub line 106 in file
+		'../../../src/verilog/rtl/simf/build/fpu_pre_norm_addsub.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|   fracta_28_o_reg   | Flip-flop |  28   |  Y  | N  | Y  | N  | N  | N  | N  |
+|   fractb_28_o_reg   | Flip-flop |  28   |  Y  | N  | Y  | N  | N  | N  | N  |
+|      exp_o_reg      | Flip-flop |   8   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine fpu_pre_norm_addsub line 136 in file
+		'../../../src/verilog/rtl/simf/build/fpu_pre_norm_addsub.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     s_exp_o_reg     | Flip-flop |   8   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine fpu_pre_norm_addsub line 151 in file
+		'../../../src/verilog/rtl/simf/build/fpu_pre_norm_addsub.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|   s_exp_diff_reg    | Flip-flop |   8   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'fpu_addsub'. (HDL-193)
+
+Inferred memory devices in process
+	in routine fpu_addsub line 93 in file
+		'../../../src/verilog/rtl/simf/build/fpu_addsub.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     fract_o_reg     | Flip-flop |  28   |  Y  | N  | Y  | N  | N  | N  | N  |
+|     sign_o_reg      | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'fpu_post_norm_addsub'. (HDL-193)
+
+Inferred memory devices in process
+	in routine fpu_post_norm_addsub line 124 in file
+		'../../../src/verilog/rtl/simf/build/fpu_post_norm_addsub.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    output_o_reg     | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+|      ine_o_reg      | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine fpu_post_norm_addsub line 180 in file
+		'../../../src/verilog/rtl/simf/build/fpu_post_norm_addsub.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    s_expo9_1_reg    | Flip-flop |   9   |  Y  | N  | Y  | N  | N  | N  | N  |
+|     s_shl1_reg      | Flip-flop |   6   |  Y  | N  | Y  | N  | N  | N  | N  |
+|     s_shr1_reg      | Flip-flop |   6   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine fpu_post_norm_addsub line 218 in file
+		'../../../src/verilog/rtl/simf/build/fpu_post_norm_addsub.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|  s_fracto28_1_reg   | Flip-flop |  28   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'fpu_pre_norm_mul'. (HDL-193)
+
+Inferred memory devices in process
+	in routine fpu_pre_norm_mul line 93 in file
+		'../../../src/verilog/rtl/simf/build/fpu_pre_norm_mul.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    exp_10_o_reg     | Flip-flop |  10   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'fpu_mul'. (HDL-193)
+
+Inferred memory devices in process
+	in routine fpu_mul line 95 in file
+		'../../../src/verilog/rtl/simf/build/fpu_mul.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|   s_fractb_i_reg    | Flip-flop |  24   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    s_start_i_reg    | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|   s_fracta_i_reg    | Flip-flop |  24   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine fpu_mul line 114 in file
+		'../../../src/verilog/rtl/simf/build/fpu_mul.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     sign_o_reg      | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|     ready_o_reg     | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|     fract_o_reg     | Flip-flop |  48   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine fpu_mul line 131 in file
+		'../../../src/verilog/rtl/simf/build/fpu_mul.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     s_state_reg     | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|     s_count_reg     | Flip-flop |   5   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    s_ready_o_reg    | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine fpu_mul line 185 in file
+		'../../../src/verilog/rtl/simf/build/fpu_mul.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    s_fract_o_reg    | Flip-flop |  48   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'fpu_post_norm_mul'. (HDL-193)
+
+Statistics for case statements in always block at line 161 in file
+	'../../../src/verilog/rtl/simf/build/fpu_post_norm_mul.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           166            |    user/user     |
+===============================================
+
+Statistics for case statements in always block at line 219 in file
+	'../../../src/verilog/rtl/simf/build/fpu_post_norm_mul.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           223            |    user/user     |
+===============================================
+
+Inferred memory devices in process
+	in routine fpu_post_norm_mul line 117 in file
+		'../../../src/verilog/rtl/simf/build/fpu_post_norm_mul.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|   s_exp_10_i_reg    | Flip-flop |  10   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    s_sign_i_reg     | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|  s_fract_48_i_reg   | Flip-flop |  48   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    s_rmode_i_reg    | Flip-flop |   2   |  Y  | N  | Y  | N  | N  | N  | N  |
+|     s_opa_i_reg     | Flip-flop |  31   |  Y  | N  | Y  | N  | N  | N  | N  |
+|     s_opb_i_reg     | Flip-flop |  31   |  Y  | N  | Y  | N  | N  | N  | N  |
+|     s_expa_reg      | Flip-flop |   8   |  Y  | N  | Y  | N  | N  | N  | N  |
+|     s_expb_reg      | Flip-flop |   8   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine fpu_post_norm_mul line 142 in file
+		'../../../src/verilog/rtl/simf/build/fpu_post_norm_mul.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    output_o_reg     | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+|      ine_o_reg      | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine fpu_post_norm_mul line 161 in file
+		'../../../src/verilog/rtl/simf/build/fpu_post_norm_mul.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     s_zeros_reg     | Flip-flop |   6   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine fpu_post_norm_mul line 219 in file
+		'../../../src/verilog/rtl/simf/build/fpu_post_norm_mul.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    s_r_zeros_reg    | Flip-flop |   6   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine fpu_post_norm_mul line 296 in file
+		'../../../src/verilog/rtl/simf/build/fpu_post_norm_mul.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     s_shl2_reg      | Flip-flop |   6   |  Y  | N  | N  | N  | N  | N  | N  |
+|     s_expo1_reg     | Flip-flop |   9   |  Y  | N  | Y  | N  | N  | N  | N  |
+|     s_shr2_reg      | Flip-flop |   6   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine fpu_post_norm_mul line 323 in file
+		'../../../src/verilog/rtl/simf/build/fpu_post_norm_mul.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    s_frac2a_reg     | Flip-flop |  48   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine fpu_post_norm_mul line 358 in file
+		'../../../src/verilog/rtl/simf/build/fpu_post_norm_mul.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|   s_frac_rnd_reg    | Flip-flop |  25   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'fpu_pre_norm_div'. (HDL-193)
+
+Inferred memory devices in process
+	in routine fpu_pre_norm_div line 102 in file
+		'../../../src/verilog/rtl/simf/build/fpu_pre_norm_div.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    exp_10_o_reg     | Flip-flop |  10   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine fpu_pre_norm_div line 186 in file
+		'../../../src/verilog/rtl/simf/build/fpu_pre_norm_div.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    s_expb_in_reg    | Flip-flop |  10   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    s_expa_in_reg    | Flip-flop |  10   |  Y  | N  | Y  | N  | N  | N  | N  |
+|   s_exp_10_o_reg    | Flip-flop |  10   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'fpu_div'. (HDL-193)
+
+Inferred memory devices in process
+	in routine fpu_div line 101 in file
+		'../../../src/verilog/rtl/simf/build/fpu_div.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    s_dvsor_i_reg    | Flip-flop |  27   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    s_start_i_reg    | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|    s_dvdnd_i_reg    | Flip-flop |  50   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine fpu_div line 129 in file
+		'../../../src/verilog/rtl/simf/build/fpu_div.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    s_ready_o_reg    | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|     s_count_reg     | Flip-flop |   5   |  Y  | N  | Y  | N  | N  | N  | N  |
+|     s_state_reg     | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine fpu_div line 162 in file
+		'../../../src/verilog/rtl/simf/build/fpu_div.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    s_qutnt_o_reg    | Flip-flop |  27   |  N  | N  | Y  | N  | N  | N  | N  |
+|    s_rmndr_o_reg    | Flip-flop |  27   |  Y  | N  | Y  | N  | N  | N  | N  |
+|      s_dvd_reg      | Flip-flop |  27   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'fpu_post_norm_div'. (HDL-193)
+
+Inferred memory devices in process
+	in routine fpu_post_norm_div line 116 in file
+		'../../../src/verilog/rtl/simf/build/fpu_post_norm_div.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    s_rmndr_i_reg    | Flip-flop |  27   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    s_sign_i_reg     | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|   s_exp_10_i_reg    | Flip-flop |  10   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    s_rmode_i_reg    | Flip-flop |   2   |  Y  | N  | Y  | N  | N  | N  | N  |
+|     s_opa_i_reg     | Flip-flop |  31   |  Y  | N  | Y  | N  | N  | N  | N  |
+|     s_opb_i_reg     | Flip-flop |  31   |  Y  | N  | Y  | N  | N  | N  | N  |
+|     s_expa_reg      | Flip-flop |   8   |  Y  | N  | Y  | N  | N  | N  | N  |
+|     s_expb_reg      | Flip-flop |   8   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    s_qutnt_i_reg    | Flip-flop |  27   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine fpu_post_norm_div line 143 in file
+		'../../../src/verilog/rtl/simf/build/fpu_post_norm_div.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    output_o_reg     | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+|      ine_o_reg      | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine fpu_post_norm_div line 182 in file
+		'../../../src/verilog/rtl/simf/build/fpu_post_norm_div.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     s_expo1_reg     | Flip-flop |   9   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine fpu_post_norm_div line 191 in file
+		'../../../src/verilog/rtl/simf/build/fpu_post_norm_div.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     s_shr1_reg      | Flip-flop |   6   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine fpu_post_norm_div line 197 in file
+		'../../../src/verilog/rtl/simf/build/fpu_post_norm_div.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     s_shl1_reg      | Flip-flop |   6   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine fpu_post_norm_div line 207 in file
+		'../../../src/verilog/rtl/simf/build/fpu_post_norm_div.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    s_fraco1_reg     | Flip-flop |  27   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine fpu_post_norm_div line 272 in file
+		'../../../src/verilog/rtl/simf/build/fpu_post_norm_div.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    s_fraco2_reg     | Flip-flop |  23   |  Y  | N  | Y  | N  | N  | N  | N  |
+|     s_expo3_reg     | Flip-flop |   9   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'fpu_intfloat_conv'. (HDL-193)
+
+Statistics for case statements in always block at line 229 in file
+	'../../../src/verilog/rtl/simf/build/fpu_intfloat_conv.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           233            |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+	in routine fpu_intfloat_conv line 116 in file
+		'../../../src/verilog/rtl/simf/build/fpu_intfloat_conv.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      opa_r_reg      | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine fpu_intfloat_conv line 123 in file
+		'../../../src/verilog/rtl/simf/build/fpu_intfloat_conv.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    rmode_r1_reg     | Flip-flop |   2   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine fpu_intfloat_conv line 129 in file
+		'../../../src/verilog/rtl/simf/build/fpu_intfloat_conv.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    rmode_r2_reg     | Flip-flop |   2   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine fpu_intfloat_conv line 135 in file
+		'../../../src/verilog/rtl/simf/build/fpu_intfloat_conv.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    rmode_r3_reg     | Flip-flop |   2   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine fpu_intfloat_conv line 141 in file
+		'../../../src/verilog/rtl/simf/build/fpu_intfloat_conv.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    fpu_op_r1_reg    | Flip-flop |   3   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine fpu_intfloat_conv line 147 in file
+		'../../../src/verilog/rtl/simf/build/fpu_intfloat_conv.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    fpu_op_r2_reg    | Flip-flop |   3   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine fpu_intfloat_conv line 153 in file
+		'../../../src/verilog/rtl/simf/build/fpu_intfloat_conv.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    fpu_op_r3_reg    | Flip-flop |   3   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine fpu_intfloat_conv line 202 in file
+		'../../../src/verilog/rtl/simf/build/fpu_intfloat_conv.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|   opa_sign_r_reg    | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine fpu_intfloat_conv line 208 in file
+		'../../../src/verilog/rtl/simf/build/fpu_intfloat_conv.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|   sign_fasu_r_reg   | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine fpu_intfloat_conv line 229 in file
+		'../../../src/verilog/rtl/simf/build/fpu_intfloat_conv.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      exp_r_reg      | Flip-flop |   8   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine fpu_intfloat_conv line 239 in file
+		'../../../src/verilog/rtl/simf/build/fpu_intfloat_conv.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     opa_r1_reg      | Flip-flop |  31   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine fpu_intfloat_conv line 245 in file
+		'../../../src/verilog/rtl/simf/build/fpu_intfloat_conv.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    fract_i2f_reg    | Flip-flop |  48   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine fpu_intfloat_conv line 256 in file
+		'../../../src/verilog/rtl/simf/build/fpu_intfloat_conv.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     opas_r1_reg     | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine fpu_intfloat_conv line 262 in file
+		'../../../src/verilog/rtl/simf/build/fpu_intfloat_conv.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     opas_r2_reg     | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine fpu_intfloat_conv line 270 in file
+		'../../../src/verilog/rtl/simf/build/fpu_intfloat_conv.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      sign_reg       | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine fpu_intfloat_conv line 333 in file
+		'../../../src/verilog/rtl/simf/build/fpu_intfloat_conv.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|       out_reg       | Flip-flop |  31   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine fpu_intfloat_conv line 343 in file
+		'../../../src/verilog/rtl/simf/build/fpu_intfloat_conv.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|       out_reg       | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine fpu_intfloat_conv line 355 in file
+		'../../../src/verilog/rtl/simf/build/fpu_intfloat_conv.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|       ine_reg       | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine fpu_intfloat_conv line 364 in file
+		'../../../src/verilog/rtl/simf/build/fpu_intfloat_conv.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      snan_reg       | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine fpu_intfloat_conv line 373 in file
+		'../../../src/verilog/rtl/simf/build/fpu_intfloat_conv.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      zero_reg       | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'fpu_intfloat_conv_except'. (HDL-193)
+
+Inferred memory devices in process
+	in routine fpu_intfloat_conv_except line 84 in file
+		'../../../src/verilog/rtl/simf/build/fpu_intfloat_conv_except.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     expa_ff_reg     | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine fpu_intfloat_conv_except line 90 in file
+		'../../../src/verilog/rtl/simf/build/fpu_intfloat_conv_except.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     expb_ff_reg     | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine fpu_intfloat_conv_except line 96 in file
+		'../../../src/verilog/rtl/simf/build/fpu_intfloat_conv_except.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    infa_f_r_reg     | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine fpu_intfloat_conv_except line 102 in file
+		'../../../src/verilog/rtl/simf/build/fpu_intfloat_conv_except.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    infb_f_r_reg     | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine fpu_intfloat_conv_except line 108 in file
+		'../../../src/verilog/rtl/simf/build/fpu_intfloat_conv_except.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    qnan_r_a_reg     | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine fpu_intfloat_conv_except line 114 in file
+		'../../../src/verilog/rtl/simf/build/fpu_intfloat_conv_except.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    snan_r_a_reg     | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine fpu_intfloat_conv_except line 132 in file
+		'../../../src/verilog/rtl/simf/build/fpu_intfloat_conv_except.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|       ind_reg       | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine fpu_intfloat_conv_except line 138 in file
+		'../../../src/verilog/rtl/simf/build/fpu_intfloat_conv_except.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|       inf_reg       | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine fpu_intfloat_conv_except line 144 in file
+		'../../../src/verilog/rtl/simf/build/fpu_intfloat_conv_except.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      qnan_reg       | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine fpu_intfloat_conv_except line 150 in file
+		'../../../src/verilog/rtl/simf/build/fpu_intfloat_conv_except.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      snan_reg       | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine fpu_intfloat_conv_except line 156 in file
+		'../../../src/verilog/rtl/simf/build/fpu_intfloat_conv_except.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     opa_nan_reg     | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine fpu_intfloat_conv_except line 162 in file
+		'../../../src/verilog/rtl/simf/build/fpu_intfloat_conv_except.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     opb_nan_reg     | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine fpu_intfloat_conv_except line 168 in file
+		'../../../src/verilog/rtl/simf/build/fpu_intfloat_conv_except.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     opa_inf_reg     | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine fpu_intfloat_conv_except line 174 in file
+		'../../../src/verilog/rtl/simf/build/fpu_intfloat_conv_except.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     opb_inf_reg     | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine fpu_intfloat_conv_except line 180 in file
+		'../../../src/verilog/rtl/simf/build/fpu_intfloat_conv_except.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     expa_00_reg     | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine fpu_intfloat_conv_except line 186 in file
+		'../../../src/verilog/rtl/simf/build/fpu_intfloat_conv_except.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     expb_00_reg     | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine fpu_intfloat_conv_except line 192 in file
+		'../../../src/verilog/rtl/simf/build/fpu_intfloat_conv_except.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    fracta_00_reg    | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine fpu_intfloat_conv_except line 198 in file
+		'../../../src/verilog/rtl/simf/build/fpu_intfloat_conv_except.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    fractb_00_reg    | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine fpu_intfloat_conv_except line 204 in file
+		'../../../src/verilog/rtl/simf/build/fpu_intfloat_conv_except.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     opa_00_reg      | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine fpu_intfloat_conv_except line 210 in file
+		'../../../src/verilog/rtl/simf/build/fpu_intfloat_conv_except.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     opb_00_reg      | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine fpu_intfloat_conv_except line 216 in file
+		'../../../src/verilog/rtl/simf/build/fpu_intfloat_conv_except.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     opa_dn_reg      | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine fpu_intfloat_conv_except line 222 in file
+		'../../../src/verilog/rtl/simf/build/fpu_intfloat_conv_except.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     opb_dn_reg      | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'fpu_post_norm_intfloat_conv'. (HDL-193)
+
+Statistics for case statements in always block at line 139 in file
+	'../../../src/verilog/rtl/simf/build/fpu_post_norm_intfloat_conv.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           143            |    user/user     |
+===============================================
+
+Statistics for case statements in always block at line 403 in file
+	'../../../src/verilog/rtl/simf/build/fpu_post_norm_intfloat_conv.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           404            |    user/user     |
+===============================================
+
+Statistics for case statements in always block at line 410 in file
+	'../../../src/verilog/rtl/simf/build/fpu_post_norm_intfloat_conv.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           411            |    user/user     |
+===============================================
+
+Inferred memory devices in process
+	in routine fpu_post_norm_intfloat_conv line 139 in file
+		'../../../src/verilog/rtl/simf/build/fpu_post_norm_intfloat_conv.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     fi_ldz_reg      | Flip-flop |   6   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine fpu_post_norm_intfloat_conv line 213 in file
+		'../../../src/verilog/rtl/simf/build/fpu_post_norm_intfloat_conv.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|   fract_in_00_reg   | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine fpu_post_norm_intfloat_conv line 288 in file
+		'../../../src/verilog/rtl/simf/build/fpu_post_norm_intfloat_conv.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|   fract_trunc_reg   | Flip-flop |  25   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    fract_out_reg    | Flip-flop |  23   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine fpu_post_norm_intfloat_conv line 331 in file
+		'../../../src/verilog/rtl/simf/build/fpu_post_norm_intfloat_conv.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     exp_out_reg     | Flip-flop |   8   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+1

@@ -1,0 +1,5 @@
+memory d
+Memory module - will be implemented by the testbench
+rd_en 4, wr_en 4, addresses 2048, wr_data 8192, input_tag 7, wr_mask 64, gm_or_lds 1, 
+rd_data 8192, output_tag 7, ack 1
+

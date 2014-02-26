@@ -1,0 +1,105 @@
+Loading db file '/s/synopsys-2012_06_27/@sys/G-2012.06/libraries/syn/gtech.db'
+Loading db file '/s/synopsys-2012_06_27/@sys/G-2012.06/libraries/syn/standard.sldb'
+  Loading link library 'saed32rvt_tt1p05v25c'
+  Loading link library 'gtech'
+Running PRESTO HDLC
+Presto compilation completed successfully.
+Elaborated 1 design.
+Current design is now 'fetch'.
+Information: Building the design 'regfile' instantiated from design 'fetch' with
+	the parameters "93". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'wfid_generator'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'wavegrp_info'. (HDL-193)
+Warning:  Starting with the 2000.11-1 release, the Presto Verilog reader treats Verilog 'integer' types as signed; synthesized result may not match earlier versions of HDL Compiler. (VER-314)
+Presto compilation completed successfully.
+Information: Building the design 'regfile_clr' instantiated from design 'fetch' with
+	the parameters "40". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'fetch_controller'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'round_robin'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'pc_block'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'mask_gen'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'dff'. (HDL-193)
+
+Inferred memory devices in process
+	in routine dff line 12 in file
+		'../../../src/verilog/rtl/common/build/dff.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      state_reg      | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'mux2_1'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'encoder'. (HDL-193)
+Warning:  ../../../src/verilog/rtl/common/build/encoder.v:5: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Presto compilation completed successfully.
+Information: Building the design 'vacant_mask_gen'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'regblock' instantiated from design 'wfid_generator' with
+	the parameters "15". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'regfile' instantiated from design 'wavegrp_info' with
+	the parameters "22". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'dff_clr'. (HDL-193)
+
+Inferred memory devices in process
+	in routine dff_clr line 12 in file
+		'../../../src/verilog/rtl/fetch/build/dff_clr.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      state_reg      | Flip-flop |   1   |  N  | N  | N  | Y  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'mux4to1_6bit'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'dff_en_fixed_reset_value'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'dff_en'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'circular_barrel_shift'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'priority_encoder_40to6'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'add_wraparound_after40'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'incr_wraparound_at40'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'regfile' instantiated from design 'pc_block' with
+	the parameters "33". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'adder'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'decoder_6b_40b_en'. (HDL-193)
+
+Statistics for case statements in always block at line 16 in file
+	'../../../src/verilog/rtl/common/build/decoder_6b_40b_en.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            19            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'regfile' instantiated from design 'regblock_BITWIDTH15' with
+	the parameters "15". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'adder6bit'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'adder7bit'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'not1'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'nand2'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'adder1bit'. (HDL-193)
+Presto compilation completed successfully.
+1

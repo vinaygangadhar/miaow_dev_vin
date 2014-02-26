@@ -1,0 +1,222 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 5
+Design : reg_128x32b_3r_3w
+Version: G-2012.06
+Date   : Thu May 16 12:54:38 2013
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: tt1p05v25c   Library: saed32rvt_tt1p05v25c
+Wire Load Model Mode: enclosed
+
+  Startpoint: wr1_addr[2]
+              (input port clocked by clk)
+  Endpoint: word[99]/bits[1]/flop_0/state_reg
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  reg_128x32b_3r_3w  140000                saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                               0.000000   0.000000
+  clock network delay (ideal)                         0.000000   0.000000
+  input external delay                                0.000000   0.000000 r
+  wr1_addr[2] (in)                                    0.000000   0.000000 r
+  U353/Y (INVX1_RVT)                                  0.220776   0.220776 f
+  U9553/Y (AND2X1_RVT)                                0.157839   0.378615 f
+  U20803/Y (AND2X1_RVT)                               0.169392   0.548007 f
+  U503/Y (NAND2X0_RVT)                                0.374671   0.922679 r
+  U501/Y (NAND3X0_RVT)                                0.172720   1.095398 f
+  U245/Y (INVX1_RVT)                                  0.234473   1.329872 r
+  U17156/Y (NBUFFX2_RVT)                              0.179265   1.509136 r
+  U475/Y (AO22X1_RVT)                                 0.305629   1.814765 r
+  U474/Y (AO221X1_RVT)                                0.147807   1.962572 r
+  word[99]/bits[1]/flop_0/state_reg/D (DFFX1_RVT)     0.106639   2.069211 r
+  data arrival time                                              2.069211
+
+  clock clk (rise edge)                               8.000000   8.000000
+  clock network delay (ideal)                         0.000000   8.000000
+  word[99]/bits[1]/flop_0/state_reg/CLK (DFFX1_RVT)   0.000000   8.000000 r
+  library setup time                                  -0.032329  7.967671
+  data required time                                             7.967671
+  --------------------------------------------------------------------------
+  data required time                                             7.967671
+  data arrival time                                              -2.069211
+  --------------------------------------------------------------------------
+  slack (MET)                                                    5.898460
+
+
+  Startpoint: wr1_addr[2]
+              (input port clocked by clk)
+  Endpoint: word[99]/bits[2]/flop_0/state_reg
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  reg_128x32b_3r_3w  140000                saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                               0.000000   0.000000
+  clock network delay (ideal)                         0.000000   0.000000
+  input external delay                                0.000000   0.000000 r
+  wr1_addr[2] (in)                                    0.000000   0.000000 r
+  U353/Y (INVX1_RVT)                                  0.220776   0.220776 f
+  U9553/Y (AND2X1_RVT)                                0.157839   0.378615 f
+  U20803/Y (AND2X1_RVT)                               0.169392   0.548007 f
+  U503/Y (NAND2X0_RVT)                                0.374671   0.922679 r
+  U501/Y (NAND3X0_RVT)                                0.172720   1.095398 f
+  U245/Y (INVX1_RVT)                                  0.234473   1.329872 r
+  U17155/Y (NBUFFX2_RVT)                              0.179265   1.509136 r
+  U453/Y (AO22X1_RVT)                                 0.305629   1.814765 r
+  U452/Y (AO221X1_RVT)                                0.147807   1.962572 r
+  word[99]/bits[2]/flop_0/state_reg/D (DFFX1_RVT)     0.106639   2.069211 r
+  data arrival time                                              2.069211
+
+  clock clk (rise edge)                               8.000000   8.000000
+  clock network delay (ideal)                         0.000000   8.000000
+  word[99]/bits[2]/flop_0/state_reg/CLK (DFFX1_RVT)   0.000000   8.000000 r
+  library setup time                                  -0.032329  7.967671
+  data required time                                             7.967671
+  --------------------------------------------------------------------------
+  data required time                                             7.967671
+  data arrival time                                              -2.069211
+  --------------------------------------------------------------------------
+  slack (MET)                                                    5.898460
+
+
+  Startpoint: wr1_addr[2]
+              (input port clocked by clk)
+  Endpoint: word[99]/bits[3]/flop_0/state_reg
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  reg_128x32b_3r_3w  140000                saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                               0.000000   0.000000
+  clock network delay (ideal)                         0.000000   0.000000
+  input external delay                                0.000000   0.000000 r
+  wr1_addr[2] (in)                                    0.000000   0.000000 r
+  U353/Y (INVX1_RVT)                                  0.220776   0.220776 f
+  U9553/Y (AND2X1_RVT)                                0.157839   0.378615 f
+  U20803/Y (AND2X1_RVT)                               0.169392   0.548007 f
+  U503/Y (NAND2X0_RVT)                                0.374671   0.922679 r
+  U501/Y (NAND3X0_RVT)                                0.172720   1.095398 f
+  U245/Y (INVX1_RVT)                                  0.234473   1.329872 r
+  U17155/Y (NBUFFX2_RVT)                              0.179265   1.509136 r
+  U447/Y (AO22X1_RVT)                                 0.305629   1.814765 r
+  U446/Y (AO221X1_RVT)                                0.147807   1.962572 r
+  word[99]/bits[3]/flop_0/state_reg/D (DFFX1_RVT)     0.106639   2.069211 r
+  data arrival time                                              2.069211
+
+  clock clk (rise edge)                               8.000000   8.000000
+  clock network delay (ideal)                         0.000000   8.000000
+  word[99]/bits[3]/flop_0/state_reg/CLK (DFFX1_RVT)   0.000000   8.000000 r
+  library setup time                                  -0.032329  7.967671
+  data required time                                             7.967671
+  --------------------------------------------------------------------------
+  data required time                                             7.967671
+  data arrival time                                              -2.069211
+  --------------------------------------------------------------------------
+  slack (MET)                                                    5.898460
+
+
+  Startpoint: wr1_addr[2]
+              (input port clocked by clk)
+  Endpoint: word[99]/bits[4]/flop_0/state_reg
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  reg_128x32b_3r_3w  140000                saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                               0.000000   0.000000
+  clock network delay (ideal)                         0.000000   0.000000
+  input external delay                                0.000000   0.000000 r
+  wr1_addr[2] (in)                                    0.000000   0.000000 r
+  U353/Y (INVX1_RVT)                                  0.220776   0.220776 f
+  U9553/Y (AND2X1_RVT)                                0.157839   0.378615 f
+  U20803/Y (AND2X1_RVT)                               0.169392   0.548007 f
+  U503/Y (NAND2X0_RVT)                                0.374671   0.922679 r
+  U501/Y (NAND3X0_RVT)                                0.172720   1.095398 f
+  U245/Y (INVX1_RVT)                                  0.234473   1.329872 r
+  U17155/Y (NBUFFX2_RVT)                              0.179265   1.509136 r
+  U445/Y (AO22X1_RVT)                                 0.305629   1.814765 r
+  U444/Y (AO221X1_RVT)                                0.147807   1.962572 r
+  word[99]/bits[4]/flop_0/state_reg/D (DFFX1_RVT)     0.106639   2.069211 r
+  data arrival time                                              2.069211
+
+  clock clk (rise edge)                               8.000000   8.000000
+  clock network delay (ideal)                         0.000000   8.000000
+  word[99]/bits[4]/flop_0/state_reg/CLK (DFFX1_RVT)   0.000000   8.000000 r
+  library setup time                                  -0.032329  7.967671
+  data required time                                             7.967671
+  --------------------------------------------------------------------------
+  data required time                                             7.967671
+  data arrival time                                              -2.069211
+  --------------------------------------------------------------------------
+  slack (MET)                                                    5.898460
+
+
+  Startpoint: wr1_addr[2]
+              (input port clocked by clk)
+  Endpoint: word[99]/bits[5]/flop_0/state_reg
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  reg_128x32b_3r_3w  140000                saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                               0.000000   0.000000
+  clock network delay (ideal)                         0.000000   0.000000
+  input external delay                                0.000000   0.000000 r
+  wr1_addr[2] (in)                                    0.000000   0.000000 r
+  U353/Y (INVX1_RVT)                                  0.220776   0.220776 f
+  U9553/Y (AND2X1_RVT)                                0.157839   0.378615 f
+  U20803/Y (AND2X1_RVT)                               0.169392   0.548007 f
+  U503/Y (NAND2X0_RVT)                                0.374671   0.922679 r
+  U501/Y (NAND3X0_RVT)                                0.172720   1.095398 f
+  U245/Y (INVX1_RVT)                                  0.234473   1.329872 r
+  U17155/Y (NBUFFX2_RVT)                              0.179265   1.509136 r
+  U443/Y (AO22X1_RVT)                                 0.305629   1.814765 r
+  U442/Y (AO221X1_RVT)                                0.147807   1.962572 r
+  word[99]/bits[5]/flop_0/state_reg/D (DFFX1_RVT)     0.106639   2.069211 r
+  data arrival time                                              2.069211
+
+  clock clk (rise edge)                               8.000000   8.000000
+  clock network delay (ideal)                         0.000000   8.000000
+  word[99]/bits[5]/flop_0/state_reg/CLK (DFFX1_RVT)   0.000000   8.000000 r
+  library setup time                                  -0.032329  7.967671
+  data required time                                             7.967671
+  --------------------------------------------------------------------------
+  data required time                                             7.967671
+  data arrival time                                              -2.069211
+  --------------------------------------------------------------------------
+  slack (MET)                                                    5.898460
+
+
+1

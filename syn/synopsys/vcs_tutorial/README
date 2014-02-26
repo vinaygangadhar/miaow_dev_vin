@@ -1,0 +1,23 @@
+1) Setup the vcs environment
+source ../setup_synopsys
+-sets environment variables VCS_HOME, SNPSLMD_LICENSE_FILE
+-adds vcs installation directory to PATH
+
+2) Compile verilog and generate the vcs executable (simv)
+make compile
+
+3) Run simulations in batch mode (simple run, all you get is a log file)
+make run
+
+4.a) Run simulations in batch mode while dumping waves
+make waves
+
+4.b) Open up and browse existing waves in DVE for passive debug
+make browse
+
+5) Interactive mode debug
+make interact
+
+6) Using tickle scripts
+source <script>
+

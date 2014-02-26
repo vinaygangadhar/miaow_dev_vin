@@ -1,0 +1,269 @@
+Loading db file '/s/synopsys-2012_06_27/@sys/G-2012.06/libraries/syn/gtech.db'
+Loading db file '/s/synopsys-2012_06_27/@sys/G-2012.06/libraries/syn/standard.sldb'
+  Loading link library 'saed32rvt_tt1p05v25c'
+  Loading link library 'gtech'
+Running PRESTO HDLC
+Presto compilation completed successfully.
+Elaborated 1 design.
+Current design is now 'issue'.
+Information: Building the design 'dff'. (HDL-193)
+
+Inferred memory devices in process
+	in routine dff line 12 in file
+		'../../../src/verilog/rtl/common/build/dff.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      state_reg      | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'valid_entry'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'functional_unit_reg_bank'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'issue_flow_control'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'scoreboard'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'instruction_arbiter'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'mem_wait'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'branch_wait'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'barrier_wait'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'finished_wf'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'decoder_6b_40b_en'. (HDL-193)
+
+Statistics for case statements in always block at line 16 in file
+	'../../../src/verilog/rtl/common/build/decoder_6b_40b_en.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            19            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'functional_unit_reg'. (HDL-193)
+Warning:  ../../../src/verilog/rtl/issue/build/functional_unit_reg.v:22: DEFAULT branch of CASE statement cannot be reached. (ELAB-311)
+
+Statistics for case statements in always block at line 19 in file
+	'../../../src/verilog/rtl/issue/build/functional_unit_reg.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            22            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'instr_info_table'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'busy_gpr_table'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'vgpr_comparator'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'sgpr_comparator'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'gpr_dependency_table'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'spr_dependency_table'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'arbiter'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'alu_issue_logic'. (HDL-193)
+
+Statistics for case statements in always block at line 59 in file
+	'../../../src/verilog/rtl/issue/build/alu_issue_logic.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            78            |    auto/auto     |
+|            85            |    auto/auto     |
+|           114            |    auto/auto     |
+|           122            |    auto/auto     |
+|           159            |    auto/auto     |
+|           200            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'dff_set_en_rst'. (HDL-193)
+
+Inferred memory devices in process
+	in routine dff_set_en_rst line 24 in file
+		'../../../src/verilog/rtl/common/build/dff_set_en_rst.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      state_reg      | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'reg_40xX_1r_1w' instantiated from design 'barrier_wait' with
+	the parameters "56". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'dff_en'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'inflight_instr_counter'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'mux_40xPARAMb_to_1xPARAMb' instantiated from design 'instr_info_table' with
+	the parameters "214". (HDL-193)
+
+Statistics for case statements in always block at line 13 in file
+	'../../../src/verilog/rtl/issue/build/mux_40xPARAMb_to_1xPARAMb.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            14            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'reg_param' instantiated from design 'instr_info_table' with
+	the parameters "214". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'vgpr_busy_table_decoder' instantiated from design 'busy_gpr_table' with
+	the parameters "2". (HDL-193)
+Warning:  ../../../src/verilog/rtl/issue/build/vgpr_busy_table_decoder.v:20: DEFAULT branch of CASE statement cannot be reached. (ELAB-311)
+
+Statistics for case statements in always block at line 18 in file
+	'../../../src/verilog/rtl/issue/build/vgpr_busy_table_decoder.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            20            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'vgpr_busy_table_decoder' instantiated from design 'busy_gpr_table' with
+	the parameters "4". (HDL-193)
+Warning:  ../../../src/verilog/rtl/issue/build/vgpr_busy_table_decoder.v:20: DEFAULT branch of CASE statement cannot be reached. (ELAB-311)
+
+Statistics for case statements in always block at line 18 in file
+	'../../../src/verilog/rtl/issue/build/vgpr_busy_table_decoder.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            20            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'sgpr_busy_table_decoder' instantiated from design 'busy_gpr_table' with
+	the parameters "4". (HDL-193)
+Warning:  ../../../src/verilog/rtl/issue/build/sgpr_busy_table_decoder.v:20: DEFAULT branch of CASE statement cannot be reached. (ELAB-311)
+
+Statistics for case statements in always block at line 18 in file
+	'../../../src/verilog/rtl/issue/build/sgpr_busy_table_decoder.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            20            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'sgpr_busy_table_decoder' instantiated from design 'busy_gpr_table' with
+	the parameters "2". (HDL-193)
+Warning:  ../../../src/verilog/rtl/issue/build/sgpr_busy_table_decoder.v:20: DEFAULT branch of CASE statement cannot be reached. (ELAB-311)
+
+Statistics for case statements in always block at line 18 in file
+	'../../../src/verilog/rtl/issue/build/sgpr_busy_table_decoder.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            20            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'vgpr_busy_table_mux' instantiated from design 'busy_gpr_table' with
+	the parameters "4". (HDL-193)
+Warning:  ../../../src/verilog/rtl/issue/build/vgpr_busy_table_mux.v:18: DEFAULT branch of CASE statement cannot be reached. (ELAB-311)
+
+Statistics for case statements in always block at line 17 in file
+	'../../../src/verilog/rtl/issue/build/vgpr_busy_table_mux.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            18            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'vgpr_busy_table_mux' instantiated from design 'busy_gpr_table' with
+	the parameters "2". (HDL-193)
+Warning:  ../../../src/verilog/rtl/issue/build/vgpr_busy_table_mux.v:18: DEFAULT branch of CASE statement cannot be reached. (ELAB-311)
+
+Statistics for case statements in always block at line 17 in file
+	'../../../src/verilog/rtl/issue/build/vgpr_busy_table_mux.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            18            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'sgpr_busy_table_mux' instantiated from design 'busy_gpr_table' with
+	the parameters "4". (HDL-193)
+Warning:  ../../../src/verilog/rtl/issue/build/sgpr_busy_table_mux.v:18: DEFAULT branch of CASE statement cannot be reached. (ELAB-311)
+
+Statistics for case statements in always block at line 17 in file
+	'../../../src/verilog/rtl/issue/build/sgpr_busy_table_mux.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            18            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'sgpr_busy_table_mux' instantiated from design 'busy_gpr_table' with
+	the parameters "2". (HDL-193)
+Warning:  ../../../src/verilog/rtl/issue/build/sgpr_busy_table_mux.v:18: DEFAULT branch of CASE statement cannot be reached. (ELAB-311)
+
+Statistics for case statements in always block at line 17 in file
+	'../../../src/verilog/rtl/issue/build/sgpr_busy_table_mux.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            18            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'ready_bits_demux'. (HDL-193)
+
+Statistics for case statements in always block at line 16 in file
+	'../../../src/verilog/rtl/issue/build/ready_bits_demux.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            18            |     no/auto      |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'reg_param' instantiated from design 'gpr_dependency_table' with
+	the parameters "18". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'reg_param' instantiated from design 'arbiter' with
+	the parameters "6". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'circular_barrel_shift'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'priority_encoder_40to6'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'encoder'. (HDL-193)
+Warning:  ../../../src/verilog/rtl/common/build/encoder.v:5: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Presto compilation completed successfully.
+Information: Building the design 'reg_param' instantiated from design 'alu_issue_logic' with
+	the parameters "2". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'mux_40xX_to_1xX' instantiated from design 'reg_40xX_1r_1w_WIDTH56' with
+	the parameters "56". (HDL-193)
+
+Statistics for case statements in always block at line 10 in file
+	'../../../src/verilog/rtl/common/build/mux_40xX_to_1xX.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            11            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'decoder_6_to_40'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'register' instantiated from design 'reg_40xX_1r_1w_WIDTH56' with
+	the parameters "56". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'adder1bit'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'adder_param' instantiated from design 'inflight_instr_counter' with
+	the parameters "3". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'adder_param' instantiated from design 'inflight_instr_counter' with
+	the parameters "4". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'register' instantiated from design 'inflight_instr_counter' with
+	the parameters "4". (HDL-193)
+Presto compilation completed successfully.
+1

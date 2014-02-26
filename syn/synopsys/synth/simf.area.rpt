@@ -1,0 +1,953 @@
+ 
+****************************************
+Report : area
+Design : simf
+Version: G-2012.06
+Date   : Thu May 16 12:01:29 2013
+****************************************
+
+Library(s) Used:
+
+    saed32rvt_tt1p05v25c (File: /p/vertical/afs-huge0/synopsys/32nmlib/SAED32_EDK/lib/stdcell_rvt/db_nldm/saed32rvt_tt1p05v25c.db)
+
+Number of ports:                         8942
+Number of nets:                        104362
+Number of cells:                        85968
+Number of combinational cells:          56211
+Number of sequential cells:             29293
+Number of macros:                           0
+Number of buf/inv:                      10127
+Number of references:                     518
+
+Combinational area:       229571.580728
+Noncombinational area:    208271.519940
+Net Interconnect area:    248558.102936
+
+Total cell area:          437843.100669
+Total area:               686401.203604
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area              Local cell area
+                                  --------------------  -------------------------------- 
+Hierarchical cell                 Absolute     Percent  Combi-       Noncombi-    Black
+                                  Total        Total    national     national     boxes   Design
+--------------------------------  -----------  -------  -----------  -----------  ------  -----------------
+simf                              437843.1007    100.0  135926.1231  208271.5199  0.0000  simf
+add_0_root_add_0_root_alu/valu/genblk1.simf_alu[0]/fpu/fpu_postnorm_addsub/sub_178
+                                      50.3205      0.0      50.3205       0.0000  0.0000  simf_DW01_add_192
+add_0_root_add_0_root_alu/valu/genblk1.simf_alu[10]/fpu/fpu_postnorm_addsub/sub_178
+                                      50.3205      0.0      50.3205       0.0000  0.0000  simf_DW01_add_201
+add_0_root_add_0_root_alu/valu/genblk1.simf_alu[11]/fpu/fpu_postnorm_addsub/sub_178
+                                      50.3205      0.0      50.3205       0.0000  0.0000  simf_DW01_add_200
+add_0_root_add_0_root_alu/valu/genblk1.simf_alu[12]/fpu/fpu_postnorm_addsub/sub_178
+                                      50.3205      0.0      50.3205       0.0000  0.0000  simf_DW01_add_199
+add_0_root_add_0_root_alu/valu/genblk1.simf_alu[13]/fpu/fpu_postnorm_addsub/sub_178
+                                      50.3205      0.0      50.3205       0.0000  0.0000  simf_DW01_add_198
+add_0_root_add_0_root_alu/valu/genblk1.simf_alu[14]/fpu/fpu_postnorm_addsub/sub_178
+                                      50.3205      0.0      50.3205       0.0000  0.0000  simf_DW01_add_197
+add_0_root_add_0_root_alu/valu/genblk1.simf_alu[15]/fpu/fpu_postnorm_addsub/sub_178
+                                      50.3205      0.0      50.3205       0.0000  0.0000  simf_DW01_add_196
+add_0_root_add_0_root_alu/valu/genblk1.simf_alu[1]/fpu/fpu_postnorm_addsub/sub_178
+                                      50.3205      0.0      50.3205       0.0000  0.0000  simf_DW01_add_195
+add_0_root_add_0_root_alu/valu/genblk1.simf_alu[2]/fpu/fpu_postnorm_addsub/sub_178
+                                      50.3205      0.0      50.3205       0.0000  0.0000  simf_DW01_add_194
+add_0_root_add_0_root_alu/valu/genblk1.simf_alu[3]/fpu/fpu_postnorm_addsub/sub_178
+                                      50.3205      0.0      50.3205       0.0000  0.0000  simf_DW01_add_193
+add_0_root_add_0_root_alu/valu/genblk1.simf_alu[4]/fpu/fpu_postnorm_addsub/sub_178
+                                      50.3205      0.0      50.3205       0.0000  0.0000  simf_DW01_add_207
+add_0_root_add_0_root_alu/valu/genblk1.simf_alu[5]/fpu/fpu_postnorm_addsub/sub_178
+                                      50.3205      0.0      50.3205       0.0000  0.0000  simf_DW01_add_206
+add_0_root_add_0_root_alu/valu/genblk1.simf_alu[6]/fpu/fpu_postnorm_addsub/sub_178
+                                      50.3205      0.0      50.3205       0.0000  0.0000  simf_DW01_add_205
+add_0_root_add_0_root_alu/valu/genblk1.simf_alu[7]/fpu/fpu_postnorm_addsub/sub_178
+                                      50.3205      0.0      50.3205       0.0000  0.0000  simf_DW01_add_204
+add_0_root_add_0_root_alu/valu/genblk1.simf_alu[8]/fpu/fpu_postnorm_addsub/sub_178
+                                      50.3205      0.0      50.3205       0.0000  0.0000  simf_DW01_add_203
+add_0_root_add_0_root_alu/valu/genblk1.simf_alu[9]/fpu/fpu_postnorm_addsub/sub_178
+                                      50.3205      0.0      50.3205       0.0000  0.0000  simf_DW01_add_202
+add_1_root_add_1_root_alu/valu/genblk1.simf_alu[0]/fpu/fpu_pre_norm_mul/sub_109
+                                      38.6299      0.0      38.6299       0.0000  0.0000  simf_DW01_add_119
+add_1_root_add_1_root_alu/valu/genblk1.simf_alu[10]/fpu/fpu_pre_norm_mul/sub_109
+                                      38.6299      0.0      38.6299       0.0000  0.0000  simf_DW01_add_111
+add_1_root_add_1_root_alu/valu/genblk1.simf_alu[11]/fpu/fpu_pre_norm_mul/sub_109
+                                      38.6299      0.0      38.6299       0.0000  0.0000  simf_DW01_add_109
+add_1_root_add_1_root_alu/valu/genblk1.simf_alu[12]/fpu/fpu_pre_norm_mul/sub_109
+                                      38.6299      0.0      38.6299       0.0000  0.0000  simf_DW01_add_107
+add_1_root_add_1_root_alu/valu/genblk1.simf_alu[13]/fpu/fpu_pre_norm_mul/sub_109
+                                      38.6299      0.0      38.6299       0.0000  0.0000  simf_DW01_add_105
+add_1_root_add_1_root_alu/valu/genblk1.simf_alu[14]/fpu/fpu_pre_norm_mul/sub_109
+                                      38.6299      0.0      38.6299       0.0000  0.0000  simf_DW01_add_103
+add_1_root_add_1_root_alu/valu/genblk1.simf_alu[15]/fpu/fpu_pre_norm_mul/sub_109
+                                      38.6299      0.0      38.6299       0.0000  0.0000  simf_DW01_add_101
+add_1_root_add_1_root_alu/valu/genblk1.simf_alu[1]/fpu/fpu_pre_norm_mul/sub_109
+                                      38.6299      0.0      38.6299       0.0000  0.0000  simf_DW01_add_99
+add_1_root_add_1_root_alu/valu/genblk1.simf_alu[2]/fpu/fpu_pre_norm_mul/sub_109
+                                      38.6299      0.0      38.6299       0.0000  0.0000  simf_DW01_add_97
+add_1_root_add_1_root_alu/valu/genblk1.simf_alu[3]/fpu/fpu_pre_norm_mul/sub_109
+                                      38.6299      0.0      38.6299       0.0000  0.0000  simf_DW01_add_127
+add_1_root_add_1_root_alu/valu/genblk1.simf_alu[4]/fpu/fpu_pre_norm_mul/sub_109
+                                      38.6299      0.0      38.6299       0.0000  0.0000  simf_DW01_add_125
+add_1_root_add_1_root_alu/valu/genblk1.simf_alu[5]/fpu/fpu_pre_norm_mul/sub_109
+                                      38.6299      0.0      38.6299       0.0000  0.0000  simf_DW01_add_123
+add_1_root_add_1_root_alu/valu/genblk1.simf_alu[6]/fpu/fpu_pre_norm_mul/sub_109
+                                      38.6299      0.0      38.6299       0.0000  0.0000  simf_DW01_add_121
+add_1_root_add_1_root_alu/valu/genblk1.simf_alu[7]/fpu/fpu_pre_norm_mul/sub_109
+                                      38.6299      0.0      38.6299       0.0000  0.0000  simf_DW01_add_117
+add_1_root_add_1_root_alu/valu/genblk1.simf_alu[8]/fpu/fpu_pre_norm_mul/sub_109
+                                      38.6299      0.0      38.6299       0.0000  0.0000  simf_DW01_add_115
+add_1_root_add_1_root_alu/valu/genblk1.simf_alu[9]/fpu/fpu_pre_norm_mul/sub_109
+                                      38.6299      0.0      38.6299       0.0000  0.0000  simf_DW01_add_113
+alu/valu/genblk1.simf_alu[0]/fpu/fpu_addsub/add_117
+                                     131.9007      0.0     131.9007       0.0000  0.0000  simf_DW01_add_95
+alu/valu/genblk1.simf_alu[0]/fpu/fpu_addsub/sub_117
+                                     167.4809      0.0     167.4809       0.0000  0.0000  simf_DW01_sub_111
+alu/valu/genblk1.simf_alu[0]/fpu/fpu_addsub/sub_117_2
+                                     167.4809      0.0     167.4809       0.0000  0.0000  simf_DW01_sub_110
+alu/valu/genblk1.simf_alu[0]/fpu/fpu_div/mult_sub_159_aco
+                                      53.3702      0.0      53.3702       0.0000  0.0000  simf_DW02_mult_30
+alu/valu/genblk1.simf_alu[0]/fpu/fpu_div/sub_159_aco
+                                     158.5859      0.0     158.5859       0.0000  0.0000  simf_DW01_sub_302
+alu/valu/genblk1.simf_alu[0]/fpu/fpu_mul/add_192_aco
+                                     233.3042      0.1     233.3042       0.0000  0.0000  simf_DW01_add_222
+alu/valu/genblk1.simf_alu[0]/fpu/fpu_mul/mult_add_192_aco
+                                     107.7571      0.0     107.7571       0.0000  0.0000  simf_DW02_mult_14
+alu/valu/genblk1.simf_alu[0]/fpu/fpu_mul/sll_183
+                                     522.0118      0.1     522.0118       0.0000  0.0000  simf_DW01_ash_79
+alu/valu/genblk1.simf_alu[0]/fpu/fpu_post_norm_mul/add_363
+                                      81.5802      0.0      81.5802       0.0000  0.0000  simf_DW01_inc_47
+alu/valu/genblk1.simf_alu[0]/fpu/fpu_post_norm_mul/add_370
+                                      28.7183      0.0      28.7183       0.0000  0.0000  simf_DW01_inc_46
+alu/valu/genblk1.simf_alu[0]/fpu/fpu_post_norm_mul/sll_330
+                                     927.3715      0.2     927.3715       0.0000  0.0000  simf_DW01_ash_63
+alu/valu/genblk1.simf_alu[0]/fpu/fpu_post_norm_mul/srl_328
+                                     757.0950      0.2     757.0950       0.0000  0.0000  simf_DW_rash_31
+alu/valu/genblk1.simf_alu[0]/fpu/fpu_post_norm_mul/sub_276
+                                      61.5028      0.0      61.5028       0.0000  0.0000  simf_DW01_sub_63
+alu/valu/genblk1.simf_alu[0]/fpu/fpu_post_norm_mul/sub_288
+                                      38.1216      0.0      38.1216       0.0000  0.0000  simf_DW01_sub_62
+alu/valu/genblk1.simf_alu[0]/fpu/fpu_postnorm_addsub/add_247_aco
+                                     156.2986      0.0     156.2986       0.0000  0.0000  simf_DW01_add_79
+alu/valu/genblk1.simf_alu[0]/fpu/fpu_postnorm_addsub/add_255
+                                      28.7183      0.0      28.7183       0.0000  0.0000  simf_DW01_inc_79
+alu/valu/genblk1.simf_alu[0]/fpu/fpu_postnorm_addsub/sll_225
+                                     475.2493      0.1     475.2493       0.0000  0.0000  simf_DW01_ash_95
+alu/valu/genblk1.simf_alu[0]/fpu/fpu_pre_norm_div/sll_179
+                                     380.1994      0.1     380.1994       0.0000  0.0000  simf_DW01_ash_47
+alu/valu/genblk1.simf_alu[0]/fpu/fpu_pre_norm_div/sll_180
+                                     379.9453      0.1     379.9453       0.0000  0.0000  simf_DW01_ash_46
+alu/valu/genblk1.simf_alu[0]/fpu/fpu_prenorm_addsub/add_158
+                                      25.4144      0.0      25.4144       0.0000  0.0000  simf_DW01_inc_119
+alu/valu/genblk1.simf_alu[0]/fpu/fpu_prenorm_addsub/add_160
+                                      25.4144      0.0      25.4144       0.0000  0.0000  simf_DW01_inc_118
+alu/valu/genblk1.simf_alu[0]/fpu/fpu_prenorm_addsub/srl_167
+                                     344.3651      0.1     344.3651       0.0000  0.0000  simf_DW_rash_63
+alu/valu/genblk1.simf_alu[0]/fpu/fpu_prenorm_addsub/sub_157
+                                      50.3205      0.0      50.3205       0.0000  0.0000  simf_DW01_sub_143
+alu/valu/genblk1.simf_alu[0]/fpu/fpu_prenorm_addsub/sub_158
+                                      50.3205      0.0      50.3205       0.0000  0.0000  simf_DW01_sub_167
+alu/valu/genblk1.simf_alu[0]/fpu/fpu_prenorm_addsub/sub_159
+                                      50.3205      0.0      50.3205       0.0000  0.0000  simf_DW01_sub_142
+alu/valu/genblk1.simf_alu[0]/fpu/fpu_prenorm_addsub/sub_160
+                                      50.3205      0.0      50.3205       0.0000  0.0000  simf_DW01_sub_166
+alu/valu/genblk1.simf_alu[10]/fpu/fpu_addsub/add_117
+                                     131.9007      0.0     131.9007       0.0000  0.0000  simf_DW01_add_85
+alu/valu/genblk1.simf_alu[10]/fpu/fpu_addsub/sub_117
+                                     167.4809      0.0     167.4809       0.0000  0.0000  simf_DW01_sub_91
+alu/valu/genblk1.simf_alu[10]/fpu/fpu_addsub/sub_117_2
+                                     167.4809      0.0     167.4809       0.0000  0.0000  simf_DW01_sub_90
+alu/valu/genblk1.simf_alu[10]/fpu/fpu_div/mult_sub_159_aco
+                                      54.8951      0.0      54.8951       0.0000  0.0000  simf_DW02_mult_29
+alu/valu/genblk1.simf_alu[10]/fpu/fpu_div/sub_159_aco
+                                     158.5859      0.0     158.5859       0.0000  0.0000  simf_DW01_sub_301
+alu/valu/genblk1.simf_alu[10]/fpu/fpu_mul/add_192_aco
+                                     233.3042      0.1     233.3042       0.0000  0.0000  simf_DW01_add_221
+alu/valu/genblk1.simf_alu[10]/fpu/fpu_mul/mult_add_192_aco
+                                     107.7571      0.0     107.7571       0.0000  0.0000  simf_DW02_mult_13
+alu/valu/genblk1.simf_alu[10]/fpu/fpu_mul/sll_183
+                                     522.0118      0.1     522.0118       0.0000  0.0000  simf_DW01_ash_69
+alu/valu/genblk1.simf_alu[10]/fpu/fpu_post_norm_mul/add_363
+                                      81.5802      0.0      81.5802       0.0000  0.0000  simf_DW01_inc_27
+alu/valu/genblk1.simf_alu[10]/fpu/fpu_post_norm_mul/add_370
+                                      28.7183      0.0      28.7183       0.0000  0.0000  simf_DW01_inc_26
+alu/valu/genblk1.simf_alu[10]/fpu/fpu_post_norm_mul/sll_330
+                                     927.3715      0.2     927.3715       0.0000  0.0000  simf_DW01_ash_53
+alu/valu/genblk1.simf_alu[10]/fpu/fpu_post_norm_mul/srl_328
+                                     757.0950      0.2     757.0950       0.0000  0.0000  simf_DW_rash_21
+alu/valu/genblk1.simf_alu[10]/fpu/fpu_post_norm_mul/sub_276
+                                      61.5028      0.0      61.5028       0.0000  0.0000  simf_DW01_sub_33
+alu/valu/genblk1.simf_alu[10]/fpu/fpu_post_norm_mul/sub_288
+                                      38.1216      0.0      38.1216       0.0000  0.0000  simf_DW01_sub_32
+alu/valu/genblk1.simf_alu[10]/fpu/fpu_postnorm_addsub/add_247_aco
+                                     156.2986      0.0     156.2986       0.0000  0.0000  simf_DW01_add_69
+alu/valu/genblk1.simf_alu[10]/fpu/fpu_postnorm_addsub/add_255
+                                      28.7183      0.0      28.7183       0.0000  0.0000  simf_DW01_inc_69
+alu/valu/genblk1.simf_alu[10]/fpu/fpu_postnorm_addsub/sll_225
+                                     475.2493      0.1     475.2493       0.0000  0.0000  simf_DW01_ash_85
+alu/valu/genblk1.simf_alu[10]/fpu/fpu_pre_norm_div/sll_179
+                                     380.1994      0.1     380.1994       0.0000  0.0000  simf_DW01_ash_27
+alu/valu/genblk1.simf_alu[10]/fpu/fpu_pre_norm_div/sll_180
+                                     379.9453      0.1     379.9453       0.0000  0.0000  simf_DW01_ash_26
+alu/valu/genblk1.simf_alu[10]/fpu/fpu_prenorm_addsub/add_158
+                                      25.4144      0.0      25.4144       0.0000  0.0000  simf_DW01_inc_111
+alu/valu/genblk1.simf_alu[10]/fpu/fpu_prenorm_addsub/add_160
+                                      25.4144      0.0      25.4144       0.0000  0.0000  simf_DW01_inc_110
+alu/valu/genblk1.simf_alu[10]/fpu/fpu_prenorm_addsub/srl_167
+                                     344.3651      0.1     344.3651       0.0000  0.0000  simf_DW_rash_53
+alu/valu/genblk1.simf_alu[10]/fpu/fpu_prenorm_addsub/sub_157
+                                      50.3205      0.0      50.3205       0.0000  0.0000  simf_DW01_sub_123
+alu/valu/genblk1.simf_alu[10]/fpu/fpu_prenorm_addsub/sub_158
+                                      50.3205      0.0      50.3205       0.0000  0.0000  simf_DW01_sub_159
+alu/valu/genblk1.simf_alu[10]/fpu/fpu_prenorm_addsub/sub_159
+                                      50.3205      0.0      50.3205       0.0000  0.0000  simf_DW01_sub_122
+alu/valu/genblk1.simf_alu[10]/fpu/fpu_prenorm_addsub/sub_160
+                                      50.3205      0.0      50.3205       0.0000  0.0000  simf_DW01_sub_158
+alu/valu/genblk1.simf_alu[11]/fpu/fpu_addsub/add_117
+                                     131.9007      0.0     131.9007       0.0000  0.0000  simf_DW01_add_84
+alu/valu/genblk1.simf_alu[11]/fpu/fpu_addsub/sub_117
+                                     167.4809      0.0     167.4809       0.0000  0.0000  simf_DW01_sub_89
+alu/valu/genblk1.simf_alu[11]/fpu/fpu_addsub/sub_117_2
+                                     167.4809      0.0     167.4809       0.0000  0.0000  simf_DW01_sub_88
+alu/valu/genblk1.simf_alu[11]/fpu/fpu_div/mult_sub_159_aco
+                                      54.8951      0.0      54.8951       0.0000  0.0000  simf_DW02_mult_28
+alu/valu/genblk1.simf_alu[11]/fpu/fpu_div/sub_159_aco
+                                     158.5859      0.0     158.5859       0.0000  0.0000  simf_DW01_sub_300
+alu/valu/genblk1.simf_alu[11]/fpu/fpu_mul/add_192_aco
+                                     233.3042      0.1     233.3042       0.0000  0.0000  simf_DW01_add_220
+alu/valu/genblk1.simf_alu[11]/fpu/fpu_mul/mult_add_192_aco
+                                     107.7571      0.0     107.7571       0.0000  0.0000  simf_DW02_mult_12
+alu/valu/genblk1.simf_alu[11]/fpu/fpu_mul/sll_183
+                                     522.0118      0.1     522.0118       0.0000  0.0000  simf_DW01_ash_68
+alu/valu/genblk1.simf_alu[11]/fpu/fpu_post_norm_mul/add_363
+                                      81.5802      0.0      81.5802       0.0000  0.0000  simf_DW01_inc_25
+alu/valu/genblk1.simf_alu[11]/fpu/fpu_post_norm_mul/add_370
+                                      28.7183      0.0      28.7183       0.0000  0.0000  simf_DW01_inc_24
+alu/valu/genblk1.simf_alu[11]/fpu/fpu_post_norm_mul/sll_330
+                                     927.3715      0.2     927.3715       0.0000  0.0000  simf_DW01_ash_52
+alu/valu/genblk1.simf_alu[11]/fpu/fpu_post_norm_mul/srl_328
+                                     757.0950      0.2     757.0950       0.0000  0.0000  simf_DW_rash_20
+alu/valu/genblk1.simf_alu[11]/fpu/fpu_post_norm_mul/sub_276
+                                      61.5028      0.0      61.5028       0.0000  0.0000  simf_DW01_sub_30
+alu/valu/genblk1.simf_alu[11]/fpu/fpu_post_norm_mul/sub_288
+                                      38.1216      0.0      38.1216       0.0000  0.0000  simf_DW01_sub_29
+alu/valu/genblk1.simf_alu[11]/fpu/fpu_postnorm_addsub/add_247_aco
+                                     156.2986      0.0     156.2986       0.0000  0.0000  simf_DW01_add_68
+alu/valu/genblk1.simf_alu[11]/fpu/fpu_postnorm_addsub/add_255
+                                      28.7183      0.0      28.7183       0.0000  0.0000  simf_DW01_inc_68
+alu/valu/genblk1.simf_alu[11]/fpu/fpu_postnorm_addsub/sll_225
+                                     475.2493      0.1     475.2493       0.0000  0.0000  simf_DW01_ash_84
+alu/valu/genblk1.simf_alu[11]/fpu/fpu_pre_norm_div/sll_179
+                                     380.1994      0.1     380.1994       0.0000  0.0000  simf_DW01_ash_25
+alu/valu/genblk1.simf_alu[11]/fpu/fpu_pre_norm_div/sll_180
+                                     379.9453      0.1     379.9453       0.0000  0.0000  simf_DW01_ash_24
+alu/valu/genblk1.simf_alu[11]/fpu/fpu_prenorm_addsub/add_158
+                                      25.4144      0.0      25.4144       0.0000  0.0000  simf_DW01_inc_109
+alu/valu/genblk1.simf_alu[11]/fpu/fpu_prenorm_addsub/add_160
+                                      25.4144      0.0      25.4144       0.0000  0.0000  simf_DW01_inc_108
+alu/valu/genblk1.simf_alu[11]/fpu/fpu_prenorm_addsub/srl_167
+                                     344.3651      0.1     344.3651       0.0000  0.0000  simf_DW_rash_52
+alu/valu/genblk1.simf_alu[11]/fpu/fpu_prenorm_addsub/sub_157
+                                      50.3205      0.0      50.3205       0.0000  0.0000  simf_DW01_sub_121
+alu/valu/genblk1.simf_alu[11]/fpu/fpu_prenorm_addsub/sub_158
+                                      50.3205      0.0      50.3205       0.0000  0.0000  simf_DW01_sub_157
+alu/valu/genblk1.simf_alu[11]/fpu/fpu_prenorm_addsub/sub_159
+                                      50.3205      0.0      50.3205       0.0000  0.0000  simf_DW01_sub_120
+alu/valu/genblk1.simf_alu[11]/fpu/fpu_prenorm_addsub/sub_160
+                                      50.3205      0.0      50.3205       0.0000  0.0000  simf_DW01_sub_156
+alu/valu/genblk1.simf_alu[12]/fpu/fpu_addsub/add_117
+                                     131.9007      0.0     131.9007       0.0000  0.0000  simf_DW01_add_83
+alu/valu/genblk1.simf_alu[12]/fpu/fpu_addsub/sub_117
+                                     167.4809      0.0     167.4809       0.0000  0.0000  simf_DW01_sub_87
+alu/valu/genblk1.simf_alu[12]/fpu/fpu_addsub/sub_117_2
+                                     167.4809      0.0     167.4809       0.0000  0.0000  simf_DW01_sub_86
+alu/valu/genblk1.simf_alu[12]/fpu/fpu_div/mult_sub_159_aco
+                                      54.8951      0.0      54.8951       0.0000  0.0000  simf_DW02_mult_27
+alu/valu/genblk1.simf_alu[12]/fpu/fpu_div/sub_159_aco
+                                     158.5859      0.0     158.5859       0.0000  0.0000  simf_DW01_sub_299
+alu/valu/genblk1.simf_alu[12]/fpu/fpu_mul/add_192_aco
+                                     233.3042      0.1     233.3042       0.0000  0.0000  simf_DW01_add_219
+alu/valu/genblk1.simf_alu[12]/fpu/fpu_mul/mult_add_192_aco
+                                     107.7571      0.0     107.7571       0.0000  0.0000  simf_DW02_mult_11
+alu/valu/genblk1.simf_alu[12]/fpu/fpu_mul/sll_183
+                                     522.0118      0.1     522.0118       0.0000  0.0000  simf_DW01_ash_67
+alu/valu/genblk1.simf_alu[12]/fpu/fpu_post_norm_mul/add_363
+                                      81.5802      0.0      81.5802       0.0000  0.0000  simf_DW01_inc_23
+alu/valu/genblk1.simf_alu[12]/fpu/fpu_post_norm_mul/add_370
+                                      28.7183      0.0      28.7183       0.0000  0.0000  simf_DW01_inc_22
+alu/valu/genblk1.simf_alu[12]/fpu/fpu_post_norm_mul/sll_330
+                                     927.3715      0.2     927.3715       0.0000  0.0000  simf_DW01_ash_51
+alu/valu/genblk1.simf_alu[12]/fpu/fpu_post_norm_mul/srl_328
+                                     757.0950      0.2     757.0950       0.0000  0.0000  simf_DW_rash_19
+alu/valu/genblk1.simf_alu[12]/fpu/fpu_post_norm_mul/sub_276
+                                      61.5028      0.0      61.5028       0.0000  0.0000  simf_DW01_sub_27
+alu/valu/genblk1.simf_alu[12]/fpu/fpu_post_norm_mul/sub_288
+                                      38.1216      0.0      38.1216       0.0000  0.0000  simf_DW01_sub_26
+alu/valu/genblk1.simf_alu[12]/fpu/fpu_postnorm_addsub/add_247_aco
+                                     156.2986      0.0     156.2986       0.0000  0.0000  simf_DW01_add_67
+alu/valu/genblk1.simf_alu[12]/fpu/fpu_postnorm_addsub/add_255
+                                      28.7183      0.0      28.7183       0.0000  0.0000  simf_DW01_inc_67
+alu/valu/genblk1.simf_alu[12]/fpu/fpu_postnorm_addsub/sll_225
+                                     475.2493      0.1     475.2493       0.0000  0.0000  simf_DW01_ash_83
+alu/valu/genblk1.simf_alu[12]/fpu/fpu_pre_norm_div/sll_179
+                                     380.1994      0.1     380.1994       0.0000  0.0000  simf_DW01_ash_23
+alu/valu/genblk1.simf_alu[12]/fpu/fpu_pre_norm_div/sll_180
+                                     379.9453      0.1     379.9453       0.0000  0.0000  simf_DW01_ash_22
+alu/valu/genblk1.simf_alu[12]/fpu/fpu_prenorm_addsub/add_158
+                                      25.4144      0.0      25.4144       0.0000  0.0000  simf_DW01_inc_107
+alu/valu/genblk1.simf_alu[12]/fpu/fpu_prenorm_addsub/add_160
+                                      25.4144      0.0      25.4144       0.0000  0.0000  simf_DW01_inc_106
+alu/valu/genblk1.simf_alu[12]/fpu/fpu_prenorm_addsub/srl_167
+                                     344.3651      0.1     344.3651       0.0000  0.0000  simf_DW_rash_51
+alu/valu/genblk1.simf_alu[12]/fpu/fpu_prenorm_addsub/sub_157
+                                      50.3205      0.0      50.3205       0.0000  0.0000  simf_DW01_sub_119
+alu/valu/genblk1.simf_alu[12]/fpu/fpu_prenorm_addsub/sub_158
+                                      50.3205      0.0      50.3205       0.0000  0.0000  simf_DW01_sub_155
+alu/valu/genblk1.simf_alu[12]/fpu/fpu_prenorm_addsub/sub_159
+                                      50.3205      0.0      50.3205       0.0000  0.0000  simf_DW01_sub_118
+alu/valu/genblk1.simf_alu[12]/fpu/fpu_prenorm_addsub/sub_160
+                                      50.3205      0.0      50.3205       0.0000  0.0000  simf_DW01_sub_154
+alu/valu/genblk1.simf_alu[13]/fpu/fpu_addsub/add_117
+                                     131.9007      0.0     131.9007       0.0000  0.0000  simf_DW01_add_82
+alu/valu/genblk1.simf_alu[13]/fpu/fpu_addsub/sub_117
+                                     167.4809      0.0     167.4809       0.0000  0.0000  simf_DW01_sub_85
+alu/valu/genblk1.simf_alu[13]/fpu/fpu_addsub/sub_117_2
+                                     167.4809      0.0     167.4809       0.0000  0.0000  simf_DW01_sub_84
+alu/valu/genblk1.simf_alu[13]/fpu/fpu_div/mult_sub_159_aco
+                                      56.9283      0.0      56.9283       0.0000  0.0000  simf_DW02_mult_26
+alu/valu/genblk1.simf_alu[13]/fpu/fpu_div/sub_159_aco
+                                     161.3814      0.0     161.3814       0.0000  0.0000  simf_DW01_sub_298
+alu/valu/genblk1.simf_alu[13]/fpu/fpu_mul/add_192_aco
+                                     233.3042      0.1     233.3042       0.0000  0.0000  simf_DW01_add_218
+alu/valu/genblk1.simf_alu[13]/fpu/fpu_mul/mult_add_192_aco
+                                     107.7571      0.0     107.7571       0.0000  0.0000  simf_DW02_mult_10
+alu/valu/genblk1.simf_alu[13]/fpu/fpu_mul/sll_183
+                                     522.0118      0.1     522.0118       0.0000  0.0000  simf_DW01_ash_66
+alu/valu/genblk1.simf_alu[13]/fpu/fpu_post_norm_mul/add_363
+                                      81.5802      0.0      81.5802       0.0000  0.0000  simf_DW01_inc_21
+alu/valu/genblk1.simf_alu[13]/fpu/fpu_post_norm_mul/add_370
+                                      28.7183      0.0      28.7183       0.0000  0.0000  simf_DW01_inc_20
+alu/valu/genblk1.simf_alu[13]/fpu/fpu_post_norm_mul/sll_330
+                                     927.3715      0.2     927.3715       0.0000  0.0000  simf_DW01_ash_50
+alu/valu/genblk1.simf_alu[13]/fpu/fpu_post_norm_mul/srl_328
+                                     757.0950      0.2     757.0950       0.0000  0.0000  simf_DW_rash_18
+alu/valu/genblk1.simf_alu[13]/fpu/fpu_post_norm_mul/sub_276
+                                      61.5028      0.0      61.5028       0.0000  0.0000  simf_DW01_sub_24
+alu/valu/genblk1.simf_alu[13]/fpu/fpu_post_norm_mul/sub_288
+                                      38.1216      0.0      38.1216       0.0000  0.0000  simf_DW01_sub_23
+alu/valu/genblk1.simf_alu[13]/fpu/fpu_postnorm_addsub/add_247_aco
+                                     156.2986      0.0     156.2986       0.0000  0.0000  simf_DW01_add_66
+alu/valu/genblk1.simf_alu[13]/fpu/fpu_postnorm_addsub/add_255
+                                      28.7183      0.0      28.7183       0.0000  0.0000  simf_DW01_inc_66
+alu/valu/genblk1.simf_alu[13]/fpu/fpu_postnorm_addsub/sll_225
+                                     475.2493      0.1     475.2493       0.0000  0.0000  simf_DW01_ash_82
+alu/valu/genblk1.simf_alu[13]/fpu/fpu_pre_norm_div/sll_179
+                                     380.1994      0.1     380.1994       0.0000  0.0000  simf_DW01_ash_21
+alu/valu/genblk1.simf_alu[13]/fpu/fpu_pre_norm_div/sll_180
+                                     379.9453      0.1     379.9453       0.0000  0.0000  simf_DW01_ash_20
+alu/valu/genblk1.simf_alu[13]/fpu/fpu_prenorm_addsub/add_158
+                                      25.4144      0.0      25.4144       0.0000  0.0000  simf_DW01_inc_105
+alu/valu/genblk1.simf_alu[13]/fpu/fpu_prenorm_addsub/add_160
+                                      25.4144      0.0      25.4144       0.0000  0.0000  simf_DW01_inc_104
+alu/valu/genblk1.simf_alu[13]/fpu/fpu_prenorm_addsub/srl_167
+                                     344.3651      0.1     344.3651       0.0000  0.0000  simf_DW_rash_50
+alu/valu/genblk1.simf_alu[13]/fpu/fpu_prenorm_addsub/sub_157
+                                      50.3205      0.0      50.3205       0.0000  0.0000  simf_DW01_sub_117
+alu/valu/genblk1.simf_alu[13]/fpu/fpu_prenorm_addsub/sub_158
+                                      50.3205      0.0      50.3205       0.0000  0.0000  simf_DW01_sub_153
+alu/valu/genblk1.simf_alu[13]/fpu/fpu_prenorm_addsub/sub_159
+                                      50.3205      0.0      50.3205       0.0000  0.0000  simf_DW01_sub_116
+alu/valu/genblk1.simf_alu[13]/fpu/fpu_prenorm_addsub/sub_160
+                                      50.3205      0.0      50.3205       0.0000  0.0000  simf_DW01_sub_152
+alu/valu/genblk1.simf_alu[14]/fpu/fpu_addsub/add_117
+                                     131.9007      0.0     131.9007       0.0000  0.0000  simf_DW01_add_81
+alu/valu/genblk1.simf_alu[14]/fpu/fpu_addsub/sub_117
+                                     167.4809      0.0     167.4809       0.0000  0.0000  simf_DW01_sub_83
+alu/valu/genblk1.simf_alu[14]/fpu/fpu_addsub/sub_117_2
+                                     167.4809      0.0     167.4809       0.0000  0.0000  simf_DW01_sub_82
+alu/valu/genblk1.simf_alu[14]/fpu/fpu_div/mult_sub_159_aco
+                                      54.8951      0.0      54.8951       0.0000  0.0000  simf_DW02_mult_25
+alu/valu/genblk1.simf_alu[14]/fpu/fpu_div/sub_159_aco
+                                     158.5859      0.0     158.5859       0.0000  0.0000  simf_DW01_sub_297
+alu/valu/genblk1.simf_alu[14]/fpu/fpu_mul/add_192_aco
+                                     233.3042      0.1     233.3042       0.0000  0.0000  simf_DW01_add_217
+alu/valu/genblk1.simf_alu[14]/fpu/fpu_mul/mult_add_192_aco
+                                     107.7571      0.0     107.7571       0.0000  0.0000  simf_DW02_mult_9
+alu/valu/genblk1.simf_alu[14]/fpu/fpu_mul/sll_183
+                                     522.0118      0.1     522.0118       0.0000  0.0000  simf_DW01_ash_65
+alu/valu/genblk1.simf_alu[14]/fpu/fpu_post_norm_mul/add_363
+                                      81.5802      0.0      81.5802       0.0000  0.0000  simf_DW01_inc_19
+alu/valu/genblk1.simf_alu[14]/fpu/fpu_post_norm_mul/add_370
+                                      28.7183      0.0      28.7183       0.0000  0.0000  simf_DW01_inc_18
+alu/valu/genblk1.simf_alu[14]/fpu/fpu_post_norm_mul/sll_330
+                                     927.3715      0.2     927.3715       0.0000  0.0000  simf_DW01_ash_49
+alu/valu/genblk1.simf_alu[14]/fpu/fpu_post_norm_mul/srl_328
+                                     757.0950      0.2     757.0950       0.0000  0.0000  simf_DW_rash_17
+alu/valu/genblk1.simf_alu[14]/fpu/fpu_post_norm_mul/sub_276
+                                      61.5028      0.0      61.5028       0.0000  0.0000  simf_DW01_sub_21
+alu/valu/genblk1.simf_alu[14]/fpu/fpu_post_norm_mul/sub_288
+                                      38.1216      0.0      38.1216       0.0000  0.0000  simf_DW01_sub_20
+alu/valu/genblk1.simf_alu[14]/fpu/fpu_postnorm_addsub/add_247_aco
+                                     156.2986      0.0     156.2986       0.0000  0.0000  simf_DW01_add_65
+alu/valu/genblk1.simf_alu[14]/fpu/fpu_postnorm_addsub/add_255
+                                      28.7183      0.0      28.7183       0.0000  0.0000  simf_DW01_inc_65
+alu/valu/genblk1.simf_alu[14]/fpu/fpu_postnorm_addsub/sll_225
+                                     475.2493      0.1     475.2493       0.0000  0.0000  simf_DW01_ash_81
+alu/valu/genblk1.simf_alu[14]/fpu/fpu_pre_norm_div/sll_179
+                                     380.1994      0.1     380.1994       0.0000  0.0000  simf_DW01_ash_19
+alu/valu/genblk1.simf_alu[14]/fpu/fpu_pre_norm_div/sll_180
+                                     379.9453      0.1     379.9453       0.0000  0.0000  simf_DW01_ash_18
+alu/valu/genblk1.simf_alu[14]/fpu/fpu_prenorm_addsub/add_158
+                                      25.4144      0.0      25.4144       0.0000  0.0000  simf_DW01_inc_103
+alu/valu/genblk1.simf_alu[14]/fpu/fpu_prenorm_addsub/add_160
+                                      25.4144      0.0      25.4144       0.0000  0.0000  simf_DW01_inc_102
+alu/valu/genblk1.simf_alu[14]/fpu/fpu_prenorm_addsub/srl_167
+                                     344.3651      0.1     344.3651       0.0000  0.0000  simf_DW_rash_49
+alu/valu/genblk1.simf_alu[14]/fpu/fpu_prenorm_addsub/sub_157
+                                      50.3205      0.0      50.3205       0.0000  0.0000  simf_DW01_sub_115
+alu/valu/genblk1.simf_alu[14]/fpu/fpu_prenorm_addsub/sub_158
+                                      50.3205      0.0      50.3205       0.0000  0.0000  simf_DW01_sub_151
+alu/valu/genblk1.simf_alu[14]/fpu/fpu_prenorm_addsub/sub_159
+                                      50.3205      0.0      50.3205       0.0000  0.0000  simf_DW01_sub_114
+alu/valu/genblk1.simf_alu[14]/fpu/fpu_prenorm_addsub/sub_160
+                                      50.3205      0.0      50.3205       0.0000  0.0000  simf_DW01_sub_150
+alu/valu/genblk1.simf_alu[15]/fpu/fpu_addsub/add_117
+                                     131.9007      0.0     131.9007       0.0000  0.0000  simf_DW01_add_80
+alu/valu/genblk1.simf_alu[15]/fpu/fpu_addsub/sub_117
+                                     167.4809      0.0     167.4809       0.0000  0.0000  simf_DW01_sub_81
+alu/valu/genblk1.simf_alu[15]/fpu/fpu_addsub/sub_117_2
+                                     167.4809      0.0     167.4809       0.0000  0.0000  simf_DW01_sub_80
+alu/valu/genblk1.simf_alu[15]/fpu/fpu_div/mult_sub_159_aco
+                                      54.8951      0.0      54.8951       0.0000  0.0000  simf_DW02_mult_31
+alu/valu/genblk1.simf_alu[15]/fpu/fpu_div/sub_159_aco
+                                     158.5859      0.0     158.5859       0.0000  0.0000  simf_DW01_sub_303
+alu/valu/genblk1.simf_alu[15]/fpu/fpu_mul/add_192_aco
+                                     233.3042      0.1     233.3042       0.0000  0.0000  simf_DW01_add_223
+alu/valu/genblk1.simf_alu[15]/fpu/fpu_mul/mult_add_192_aco
+                                     107.7571      0.0     107.7571       0.0000  0.0000  simf_DW02_mult_15
+alu/valu/genblk1.simf_alu[15]/fpu/fpu_mul/sll_183
+                                     522.0118      0.1     522.0118       0.0000  0.0000  simf_DW01_ash_64
+alu/valu/genblk1.simf_alu[15]/fpu/fpu_post_norm_mul/add_363
+                                      81.5802      0.0      81.5802       0.0000  0.0000  simf_DW01_inc_17
+alu/valu/genblk1.simf_alu[15]/fpu/fpu_post_norm_mul/add_370
+                                      28.7183      0.0      28.7183       0.0000  0.0000  simf_DW01_inc_16
+alu/valu/genblk1.simf_alu[15]/fpu/fpu_post_norm_mul/sll_330
+                                     927.3715      0.2     927.3715       0.0000  0.0000  simf_DW01_ash_48
+alu/valu/genblk1.simf_alu[15]/fpu/fpu_post_norm_mul/srl_328
+                                     757.0950      0.2     757.0950       0.0000  0.0000  simf_DW_rash_16
+alu/valu/genblk1.simf_alu[15]/fpu/fpu_post_norm_mul/sub_276
+                                      61.5028      0.0      61.5028       0.0000  0.0000  simf_DW01_sub_18
+alu/valu/genblk1.simf_alu[15]/fpu/fpu_post_norm_mul/sub_288
+                                      38.1216      0.0      38.1216       0.0000  0.0000  simf_DW01_sub_17
+alu/valu/genblk1.simf_alu[15]/fpu/fpu_postnorm_addsub/add_247_aco
+                                     156.2986      0.0     156.2986       0.0000  0.0000  simf_DW01_add_64
+alu/valu/genblk1.simf_alu[15]/fpu/fpu_postnorm_addsub/add_255
+                                      28.7183      0.0      28.7183       0.0000  0.0000  simf_DW01_inc_64
+alu/valu/genblk1.simf_alu[15]/fpu/fpu_postnorm_addsub/sll_225
+                                     475.2493      0.1     475.2493       0.0000  0.0000  simf_DW01_ash_80
+alu/valu/genblk1.simf_alu[15]/fpu/fpu_pre_norm_div/sll_179
+                                     380.1994      0.1     380.1994       0.0000  0.0000  simf_DW01_ash_17
+alu/valu/genblk1.simf_alu[15]/fpu/fpu_pre_norm_div/sll_180
+                                     379.9453      0.1     379.9453       0.0000  0.0000  simf_DW01_ash_16
+alu/valu/genblk1.simf_alu[15]/fpu/fpu_prenorm_addsub/add_158
+                                      25.4144      0.0      25.4144       0.0000  0.0000  simf_DW01_inc_101
+alu/valu/genblk1.simf_alu[15]/fpu/fpu_prenorm_addsub/add_160
+                                      25.4144      0.0      25.4144       0.0000  0.0000  simf_DW01_inc_100
+alu/valu/genblk1.simf_alu[15]/fpu/fpu_prenorm_addsub/srl_167
+                                     344.3651      0.1     344.3651       0.0000  0.0000  simf_DW_rash_48
+alu/valu/genblk1.simf_alu[15]/fpu/fpu_prenorm_addsub/sub_157
+                                      50.3205      0.0      50.3205       0.0000  0.0000  simf_DW01_sub_113
+alu/valu/genblk1.simf_alu[15]/fpu/fpu_prenorm_addsub/sub_158
+                                      50.3205      0.0      50.3205       0.0000  0.0000  simf_DW01_sub_149
+alu/valu/genblk1.simf_alu[15]/fpu/fpu_prenorm_addsub/sub_159
+                                      50.3205      0.0      50.3205       0.0000  0.0000  simf_DW01_sub_112
+alu/valu/genblk1.simf_alu[15]/fpu/fpu_prenorm_addsub/sub_160
+                                      50.3205      0.0      50.3205       0.0000  0.0000  simf_DW01_sub_148
+alu/valu/genblk1.simf_alu[1]/fpu/fpu_addsub/add_117
+                                     131.9007      0.0     131.9007       0.0000  0.0000  simf_DW01_add_94
+alu/valu/genblk1.simf_alu[1]/fpu/fpu_addsub/sub_117
+                                     167.4809      0.0     167.4809       0.0000  0.0000  simf_DW01_sub_109
+alu/valu/genblk1.simf_alu[1]/fpu/fpu_addsub/sub_117_2
+                                     167.4809      0.0     167.4809       0.0000  0.0000  simf_DW01_sub_108
+alu/valu/genblk1.simf_alu[1]/fpu/fpu_div/mult_sub_159_aco
+                                      54.8951      0.0      54.8951       0.0000  0.0000  simf_DW02_mult_24
+alu/valu/genblk1.simf_alu[1]/fpu/fpu_div/sub_159_aco
+                                     158.5859      0.0     158.5859       0.0000  0.0000  simf_DW01_sub_296
+alu/valu/genblk1.simf_alu[1]/fpu/fpu_mul/add_192_aco
+                                     233.3042      0.1     233.3042       0.0000  0.0000  simf_DW01_add_216
+alu/valu/genblk1.simf_alu[1]/fpu/fpu_mul/mult_add_192_aco
+                                     107.7571      0.0     107.7571       0.0000  0.0000  simf_DW02_mult_8
+alu/valu/genblk1.simf_alu[1]/fpu/fpu_mul/sll_183
+                                     522.0118      0.1     522.0118       0.0000  0.0000  simf_DW01_ash_78
+alu/valu/genblk1.simf_alu[1]/fpu/fpu_post_norm_mul/add_363
+                                      81.5802      0.0      81.5802       0.0000  0.0000  simf_DW01_inc_45
+alu/valu/genblk1.simf_alu[1]/fpu/fpu_post_norm_mul/add_370
+                                      28.7183      0.0      28.7183       0.0000  0.0000  simf_DW01_inc_44
+alu/valu/genblk1.simf_alu[1]/fpu/fpu_post_norm_mul/sll_330
+                                     927.3715      0.2     927.3715       0.0000  0.0000  simf_DW01_ash_62
+alu/valu/genblk1.simf_alu[1]/fpu/fpu_post_norm_mul/srl_328
+                                     757.0950      0.2     757.0950       0.0000  0.0000  simf_DW_rash_30
+alu/valu/genblk1.simf_alu[1]/fpu/fpu_post_norm_mul/sub_276
+                                      61.5028      0.0      61.5028       0.0000  0.0000  simf_DW01_sub_60
+alu/valu/genblk1.simf_alu[1]/fpu/fpu_post_norm_mul/sub_288
+                                      38.1216      0.0      38.1216       0.0000  0.0000  simf_DW01_sub_59
+alu/valu/genblk1.simf_alu[1]/fpu/fpu_postnorm_addsub/add_247_aco
+                                     156.2986      0.0     156.2986       0.0000  0.0000  simf_DW01_add_78
+alu/valu/genblk1.simf_alu[1]/fpu/fpu_postnorm_addsub/add_255
+                                      28.7183      0.0      28.7183       0.0000  0.0000  simf_DW01_inc_78
+alu/valu/genblk1.simf_alu[1]/fpu/fpu_postnorm_addsub/sll_225
+                                     475.2493      0.1     475.2493       0.0000  0.0000  simf_DW01_ash_94
+alu/valu/genblk1.simf_alu[1]/fpu/fpu_pre_norm_div/sll_179
+                                     380.1994      0.1     380.1994       0.0000  0.0000  simf_DW01_ash_45
+alu/valu/genblk1.simf_alu[1]/fpu/fpu_pre_norm_div/sll_180
+                                     379.9453      0.1     379.9453       0.0000  0.0000  simf_DW01_ash_44
+alu/valu/genblk1.simf_alu[1]/fpu/fpu_prenorm_addsub/add_158
+                                      25.4144      0.0      25.4144       0.0000  0.0000  simf_DW01_inc_99
+alu/valu/genblk1.simf_alu[1]/fpu/fpu_prenorm_addsub/add_160
+                                      25.4144      0.0      25.4144       0.0000  0.0000  simf_DW01_inc_98
+alu/valu/genblk1.simf_alu[1]/fpu/fpu_prenorm_addsub/srl_167
+                                     344.3651      0.1     344.3651       0.0000  0.0000  simf_DW_rash_62
+alu/valu/genblk1.simf_alu[1]/fpu/fpu_prenorm_addsub/sub_157
+                                      50.3205      0.0      50.3205       0.0000  0.0000  simf_DW01_sub_141
+alu/valu/genblk1.simf_alu[1]/fpu/fpu_prenorm_addsub/sub_158
+                                      50.3205      0.0      50.3205       0.0000  0.0000  simf_DW01_sub_147
+alu/valu/genblk1.simf_alu[1]/fpu/fpu_prenorm_addsub/sub_159
+                                      50.3205      0.0      50.3205       0.0000  0.0000  simf_DW01_sub_140
+alu/valu/genblk1.simf_alu[1]/fpu/fpu_prenorm_addsub/sub_160
+                                      50.3205      0.0      50.3205       0.0000  0.0000  simf_DW01_sub_146
+alu/valu/genblk1.simf_alu[2]/fpu/fpu_addsub/add_117
+                                     131.9007      0.0     131.9007       0.0000  0.0000  simf_DW01_add_93
+alu/valu/genblk1.simf_alu[2]/fpu/fpu_addsub/sub_117
+                                     167.4809      0.0     167.4809       0.0000  0.0000  simf_DW01_sub_107
+alu/valu/genblk1.simf_alu[2]/fpu/fpu_addsub/sub_117_2
+                                     167.4809      0.0     167.4809       0.0000  0.0000  simf_DW01_sub_106
+alu/valu/genblk1.simf_alu[2]/fpu/fpu_div/mult_sub_159_aco
+                                      54.8951      0.0      54.8951       0.0000  0.0000  simf_DW02_mult_23
+alu/valu/genblk1.simf_alu[2]/fpu/fpu_div/sub_159_aco
+                                     158.5859      0.0     158.5859       0.0000  0.0000  simf_DW01_sub_295
+alu/valu/genblk1.simf_alu[2]/fpu/fpu_mul/add_192_aco
+                                     233.3042      0.1     233.3042       0.0000  0.0000  simf_DW01_add_215
+alu/valu/genblk1.simf_alu[2]/fpu/fpu_mul/mult_add_192_aco
+                                     107.7571      0.0     107.7571       0.0000  0.0000  simf_DW02_mult_7
+alu/valu/genblk1.simf_alu[2]/fpu/fpu_mul/sll_183
+                                     522.0118      0.1     522.0118       0.0000  0.0000  simf_DW01_ash_77
+alu/valu/genblk1.simf_alu[2]/fpu/fpu_post_norm_mul/add_363
+                                      81.5802      0.0      81.5802       0.0000  0.0000  simf_DW01_inc_43
+alu/valu/genblk1.simf_alu[2]/fpu/fpu_post_norm_mul/add_370
+                                      28.7183      0.0      28.7183       0.0000  0.0000  simf_DW01_inc_42
+alu/valu/genblk1.simf_alu[2]/fpu/fpu_post_norm_mul/sll_330
+                                     927.3715      0.2     927.3715       0.0000  0.0000  simf_DW01_ash_61
+alu/valu/genblk1.simf_alu[2]/fpu/fpu_post_norm_mul/srl_328
+                                     757.0950      0.2     757.0950       0.0000  0.0000  simf_DW_rash_29
+alu/valu/genblk1.simf_alu[2]/fpu/fpu_post_norm_mul/sub_276
+                                      61.5028      0.0      61.5028       0.0000  0.0000  simf_DW01_sub_57
+alu/valu/genblk1.simf_alu[2]/fpu/fpu_post_norm_mul/sub_288
+                                      38.1216      0.0      38.1216       0.0000  0.0000  simf_DW01_sub_56
+alu/valu/genblk1.simf_alu[2]/fpu/fpu_postnorm_addsub/add_247_aco
+                                     156.2986      0.0     156.2986       0.0000  0.0000  simf_DW01_add_77
+alu/valu/genblk1.simf_alu[2]/fpu/fpu_postnorm_addsub/add_255
+                                      28.7183      0.0      28.7183       0.0000  0.0000  simf_DW01_inc_77
+alu/valu/genblk1.simf_alu[2]/fpu/fpu_postnorm_addsub/sll_225
+                                     475.2493      0.1     475.2493       0.0000  0.0000  simf_DW01_ash_93
+alu/valu/genblk1.simf_alu[2]/fpu/fpu_pre_norm_div/sll_179
+                                     380.1994      0.1     380.1994       0.0000  0.0000  simf_DW01_ash_43
+alu/valu/genblk1.simf_alu[2]/fpu/fpu_pre_norm_div/sll_180
+                                     379.9453      0.1     379.9453       0.0000  0.0000  simf_DW01_ash_42
+alu/valu/genblk1.simf_alu[2]/fpu/fpu_prenorm_addsub/add_158
+                                      25.4144      0.0      25.4144       0.0000  0.0000  simf_DW01_inc_97
+alu/valu/genblk1.simf_alu[2]/fpu/fpu_prenorm_addsub/add_160
+                                      25.4144      0.0      25.4144       0.0000  0.0000  simf_DW01_inc_96
+alu/valu/genblk1.simf_alu[2]/fpu/fpu_prenorm_addsub/srl_167
+                                     344.3651      0.1     344.3651       0.0000  0.0000  simf_DW_rash_61
+alu/valu/genblk1.simf_alu[2]/fpu/fpu_prenorm_addsub/sub_157
+                                      50.3205      0.0      50.3205       0.0000  0.0000  simf_DW01_sub_139
+alu/valu/genblk1.simf_alu[2]/fpu/fpu_prenorm_addsub/sub_158
+                                      50.3205      0.0      50.3205       0.0000  0.0000  simf_DW01_sub_145
+alu/valu/genblk1.simf_alu[2]/fpu/fpu_prenorm_addsub/sub_159
+                                      50.3205      0.0      50.3205       0.0000  0.0000  simf_DW01_sub_138
+alu/valu/genblk1.simf_alu[2]/fpu/fpu_prenorm_addsub/sub_160
+                                      50.3205      0.0      50.3205       0.0000  0.0000  simf_DW01_sub_144
+alu/valu/genblk1.simf_alu[3]/fpu/fpu_addsub/add_117
+                                     131.9007      0.0     131.9007       0.0000  0.0000  simf_DW01_add_92
+alu/valu/genblk1.simf_alu[3]/fpu/fpu_addsub/sub_117
+                                     167.4809      0.0     167.4809       0.0000  0.0000  simf_DW01_sub_105
+alu/valu/genblk1.simf_alu[3]/fpu/fpu_addsub/sub_117_2
+                                     167.4809      0.0     167.4809       0.0000  0.0000  simf_DW01_sub_104
+alu/valu/genblk1.simf_alu[3]/fpu/fpu_div/mult_sub_159_aco
+                                      55.4034      0.0      55.4034       0.0000  0.0000  simf_DW02_mult_22
+alu/valu/genblk1.simf_alu[3]/fpu/fpu_div/sub_159_aco
+                                     158.8400      0.0     158.8400       0.0000  0.0000  simf_DW01_sub_294
+alu/valu/genblk1.simf_alu[3]/fpu/fpu_mul/add_192_aco
+                                     233.3042      0.1     233.3042       0.0000  0.0000  simf_DW01_add_214
+alu/valu/genblk1.simf_alu[3]/fpu/fpu_mul/mult_add_192_aco
+                                     107.7571      0.0     107.7571       0.0000  0.0000  simf_DW02_mult_6
+alu/valu/genblk1.simf_alu[3]/fpu/fpu_mul/sll_183
+                                     522.0118      0.1     522.0118       0.0000  0.0000  simf_DW01_ash_76
+alu/valu/genblk1.simf_alu[3]/fpu/fpu_post_norm_mul/add_363
+                                      81.5802      0.0      81.5802       0.0000  0.0000  simf_DW01_inc_41
+alu/valu/genblk1.simf_alu[3]/fpu/fpu_post_norm_mul/add_370
+                                      28.7183      0.0      28.7183       0.0000  0.0000  simf_DW01_inc_40
+alu/valu/genblk1.simf_alu[3]/fpu/fpu_post_norm_mul/sll_330
+                                     927.3715      0.2     927.3715       0.0000  0.0000  simf_DW01_ash_60
+alu/valu/genblk1.simf_alu[3]/fpu/fpu_post_norm_mul/srl_328
+                                     757.0950      0.2     757.0950       0.0000  0.0000  simf_DW_rash_28
+alu/valu/genblk1.simf_alu[3]/fpu/fpu_post_norm_mul/sub_276
+                                      61.5028      0.0      61.5028       0.0000  0.0000  simf_DW01_sub_54
+alu/valu/genblk1.simf_alu[3]/fpu/fpu_post_norm_mul/sub_288
+                                      38.1216      0.0      38.1216       0.0000  0.0000  simf_DW01_sub_53
+alu/valu/genblk1.simf_alu[3]/fpu/fpu_postnorm_addsub/add_247_aco
+                                     156.2986      0.0     156.2986       0.0000  0.0000  simf_DW01_add_76
+alu/valu/genblk1.simf_alu[3]/fpu/fpu_postnorm_addsub/add_255
+                                      28.7183      0.0      28.7183       0.0000  0.0000  simf_DW01_inc_76
+alu/valu/genblk1.simf_alu[3]/fpu/fpu_postnorm_addsub/sll_225
+                                     475.2493      0.1     475.2493       0.0000  0.0000  simf_DW01_ash_92
+alu/valu/genblk1.simf_alu[3]/fpu/fpu_pre_norm_div/sll_179
+                                     380.1994      0.1     380.1994       0.0000  0.0000  simf_DW01_ash_41
+alu/valu/genblk1.simf_alu[3]/fpu/fpu_pre_norm_div/sll_180
+                                     379.9453      0.1     379.9453       0.0000  0.0000  simf_DW01_ash_40
+alu/valu/genblk1.simf_alu[3]/fpu/fpu_prenorm_addsub/add_158
+                                      25.4144      0.0      25.4144       0.0000  0.0000  simf_DW01_inc_127
+alu/valu/genblk1.simf_alu[3]/fpu/fpu_prenorm_addsub/add_160
+                                      25.4144      0.0      25.4144       0.0000  0.0000  simf_DW01_inc_126
+alu/valu/genblk1.simf_alu[3]/fpu/fpu_prenorm_addsub/srl_167
+                                     344.3651      0.1     344.3651       0.0000  0.0000  simf_DW_rash_60
+alu/valu/genblk1.simf_alu[3]/fpu/fpu_prenorm_addsub/sub_157
+                                      50.3205      0.0      50.3205       0.0000  0.0000  simf_DW01_sub_137
+alu/valu/genblk1.simf_alu[3]/fpu/fpu_prenorm_addsub/sub_158
+                                      50.3205      0.0      50.3205       0.0000  0.0000  simf_DW01_sub_175
+alu/valu/genblk1.simf_alu[3]/fpu/fpu_prenorm_addsub/sub_159
+                                      50.3205      0.0      50.3205       0.0000  0.0000  simf_DW01_sub_136
+alu/valu/genblk1.simf_alu[3]/fpu/fpu_prenorm_addsub/sub_160
+                                      50.3205      0.0      50.3205       0.0000  0.0000  simf_DW01_sub_174
+alu/valu/genblk1.simf_alu[4]/fpu/fpu_addsub/add_117
+                                     131.9007      0.0     131.9007       0.0000  0.0000  simf_DW01_add_91
+alu/valu/genblk1.simf_alu[4]/fpu/fpu_addsub/sub_117
+                                     167.4809      0.0     167.4809       0.0000  0.0000  simf_DW01_sub_103
+alu/valu/genblk1.simf_alu[4]/fpu/fpu_addsub/sub_117_2
+                                     167.4809      0.0     167.4809       0.0000  0.0000  simf_DW01_sub_102
+alu/valu/genblk1.simf_alu[4]/fpu/fpu_div/mult_sub_159_aco
+                                      54.8951      0.0      54.8951       0.0000  0.0000  simf_DW02_mult_21
+alu/valu/genblk1.simf_alu[4]/fpu/fpu_div/sub_159_aco
+                                     158.5859      0.0     158.5859       0.0000  0.0000  simf_DW01_sub_293
+alu/valu/genblk1.simf_alu[4]/fpu/fpu_mul/add_192_aco
+                                     233.3042      0.1     233.3042       0.0000  0.0000  simf_DW01_add_213
+alu/valu/genblk1.simf_alu[4]/fpu/fpu_mul/mult_add_192_aco
+                                     107.7571      0.0     107.7571       0.0000  0.0000  simf_DW02_mult_5
+alu/valu/genblk1.simf_alu[4]/fpu/fpu_mul/sll_183
+                                     522.0118      0.1     522.0118       0.0000  0.0000  simf_DW01_ash_75
+alu/valu/genblk1.simf_alu[4]/fpu/fpu_post_norm_mul/add_363
+                                      81.5802      0.0      81.5802       0.0000  0.0000  simf_DW01_inc_39
+alu/valu/genblk1.simf_alu[4]/fpu/fpu_post_norm_mul/add_370
+                                      28.7183      0.0      28.7183       0.0000  0.0000  simf_DW01_inc_38
+alu/valu/genblk1.simf_alu[4]/fpu/fpu_post_norm_mul/sll_330
+                                     927.3715      0.2     927.3715       0.0000  0.0000  simf_DW01_ash_59
+alu/valu/genblk1.simf_alu[4]/fpu/fpu_post_norm_mul/srl_328
+                                     757.0950      0.2     757.0950       0.0000  0.0000  simf_DW_rash_27
+alu/valu/genblk1.simf_alu[4]/fpu/fpu_post_norm_mul/sub_276
+                                      61.5028      0.0      61.5028       0.0000  0.0000  simf_DW01_sub_51
+alu/valu/genblk1.simf_alu[4]/fpu/fpu_post_norm_mul/sub_288
+                                      38.1216      0.0      38.1216       0.0000  0.0000  simf_DW01_sub_50
+alu/valu/genblk1.simf_alu[4]/fpu/fpu_postnorm_addsub/add_247_aco
+                                     156.2986      0.0     156.2986       0.0000  0.0000  simf_DW01_add_75
+alu/valu/genblk1.simf_alu[4]/fpu/fpu_postnorm_addsub/add_255
+                                      28.7183      0.0      28.7183       0.0000  0.0000  simf_DW01_inc_75
+alu/valu/genblk1.simf_alu[4]/fpu/fpu_postnorm_addsub/sll_225
+                                     475.2493      0.1     475.2493       0.0000  0.0000  simf_DW01_ash_91
+alu/valu/genblk1.simf_alu[4]/fpu/fpu_pre_norm_div/sll_179
+                                     379.9453      0.1     379.9453       0.0000  0.0000  simf_DW01_ash_39
+alu/valu/genblk1.simf_alu[4]/fpu/fpu_pre_norm_div/sll_180
+                                     379.9453      0.1     379.9453       0.0000  0.0000  simf_DW01_ash_38
+alu/valu/genblk1.simf_alu[4]/fpu/fpu_prenorm_addsub/add_158
+                                      25.4144      0.0      25.4144       0.0000  0.0000  simf_DW01_inc_125
+alu/valu/genblk1.simf_alu[4]/fpu/fpu_prenorm_addsub/add_160
+                                      25.4144      0.0      25.4144       0.0000  0.0000  simf_DW01_inc_124
+alu/valu/genblk1.simf_alu[4]/fpu/fpu_prenorm_addsub/srl_167
+                                     344.3651      0.1     344.3651       0.0000  0.0000  simf_DW_rash_59
+alu/valu/genblk1.simf_alu[4]/fpu/fpu_prenorm_addsub/sub_157
+                                      50.3205      0.0      50.3205       0.0000  0.0000  simf_DW01_sub_135
+alu/valu/genblk1.simf_alu[4]/fpu/fpu_prenorm_addsub/sub_158
+                                      50.3205      0.0      50.3205       0.0000  0.0000  simf_DW01_sub_173
+alu/valu/genblk1.simf_alu[4]/fpu/fpu_prenorm_addsub/sub_159
+                                      50.3205      0.0      50.3205       0.0000  0.0000  simf_DW01_sub_134
+alu/valu/genblk1.simf_alu[4]/fpu/fpu_prenorm_addsub/sub_160
+                                      50.3205      0.0      50.3205       0.0000  0.0000  simf_DW01_sub_172
+alu/valu/genblk1.simf_alu[5]/fpu/fpu_addsub/add_117
+                                     131.9007      0.0     131.9007       0.0000  0.0000  simf_DW01_add_90
+alu/valu/genblk1.simf_alu[5]/fpu/fpu_addsub/sub_117
+                                     167.4809      0.0     167.4809       0.0000  0.0000  simf_DW01_sub_101
+alu/valu/genblk1.simf_alu[5]/fpu/fpu_addsub/sub_117_2
+                                     167.4809      0.0     167.4809       0.0000  0.0000  simf_DW01_sub_100
+alu/valu/genblk1.simf_alu[5]/fpu/fpu_div/mult_sub_159_aco
+                                      54.8951      0.0      54.8951       0.0000  0.0000  simf_DW02_mult_20
+alu/valu/genblk1.simf_alu[5]/fpu/fpu_div/sub_159_aco
+                                     158.5859      0.0     158.5859       0.0000  0.0000  simf_DW01_sub_292
+alu/valu/genblk1.simf_alu[5]/fpu/fpu_mul/add_192_aco
+                                     233.3042      0.1     233.3042       0.0000  0.0000  simf_DW01_add_212
+alu/valu/genblk1.simf_alu[5]/fpu/fpu_mul/mult_add_192_aco
+                                     107.7571      0.0     107.7571       0.0000  0.0000  simf_DW02_mult_4
+alu/valu/genblk1.simf_alu[5]/fpu/fpu_mul/sll_183
+                                     522.0118      0.1     522.0118       0.0000  0.0000  simf_DW01_ash_74
+alu/valu/genblk1.simf_alu[5]/fpu/fpu_post_norm_mul/add_363
+                                      81.5802      0.0      81.5802       0.0000  0.0000  simf_DW01_inc_37
+alu/valu/genblk1.simf_alu[5]/fpu/fpu_post_norm_mul/add_370
+                                      28.7183      0.0      28.7183       0.0000  0.0000  simf_DW01_inc_36
+alu/valu/genblk1.simf_alu[5]/fpu/fpu_post_norm_mul/sll_330
+                                     927.3715      0.2     927.3715       0.0000  0.0000  simf_DW01_ash_58
+alu/valu/genblk1.simf_alu[5]/fpu/fpu_post_norm_mul/srl_328
+                                     757.0950      0.2     757.0950       0.0000  0.0000  simf_DW_rash_26
+alu/valu/genblk1.simf_alu[5]/fpu/fpu_post_norm_mul/sub_276
+                                      61.5028      0.0      61.5028       0.0000  0.0000  simf_DW01_sub_48
+alu/valu/genblk1.simf_alu[5]/fpu/fpu_post_norm_mul/sub_288
+                                      38.1216      0.0      38.1216       0.0000  0.0000  simf_DW01_sub_47
+alu/valu/genblk1.simf_alu[5]/fpu/fpu_postnorm_addsub/add_247_aco
+                                     156.2986      0.0     156.2986       0.0000  0.0000  simf_DW01_add_74
+alu/valu/genblk1.simf_alu[5]/fpu/fpu_postnorm_addsub/add_255
+                                      28.7183      0.0      28.7183       0.0000  0.0000  simf_DW01_inc_74
+alu/valu/genblk1.simf_alu[5]/fpu/fpu_postnorm_addsub/sll_225
+                                     475.2493      0.1     475.2493       0.0000  0.0000  simf_DW01_ash_90
+alu/valu/genblk1.simf_alu[5]/fpu/fpu_pre_norm_div/sll_179
+                                     380.1994      0.1     380.1994       0.0000  0.0000  simf_DW01_ash_37
+alu/valu/genblk1.simf_alu[5]/fpu/fpu_pre_norm_div/sll_180
+                                     379.9453      0.1     379.9453       0.0000  0.0000  simf_DW01_ash_36
+alu/valu/genblk1.simf_alu[5]/fpu/fpu_prenorm_addsub/add_158
+                                      25.4144      0.0      25.4144       0.0000  0.0000  simf_DW01_inc_123
+alu/valu/genblk1.simf_alu[5]/fpu/fpu_prenorm_addsub/add_160
+                                      25.4144      0.0      25.4144       0.0000  0.0000  simf_DW01_inc_122
+alu/valu/genblk1.simf_alu[5]/fpu/fpu_prenorm_addsub/srl_167
+                                     344.3651      0.1     344.3651       0.0000  0.0000  simf_DW_rash_58
+alu/valu/genblk1.simf_alu[5]/fpu/fpu_prenorm_addsub/sub_157
+                                      50.3205      0.0      50.3205       0.0000  0.0000  simf_DW01_sub_133
+alu/valu/genblk1.simf_alu[5]/fpu/fpu_prenorm_addsub/sub_158
+                                      50.3205      0.0      50.3205       0.0000  0.0000  simf_DW01_sub_171
+alu/valu/genblk1.simf_alu[5]/fpu/fpu_prenorm_addsub/sub_159
+                                      50.3205      0.0      50.3205       0.0000  0.0000  simf_DW01_sub_132
+alu/valu/genblk1.simf_alu[5]/fpu/fpu_prenorm_addsub/sub_160
+                                      50.3205      0.0      50.3205       0.0000  0.0000  simf_DW01_sub_170
+alu/valu/genblk1.simf_alu[6]/fpu/fpu_addsub/add_117
+                                     131.9007      0.0     131.9007       0.0000  0.0000  simf_DW01_add_89
+alu/valu/genblk1.simf_alu[6]/fpu/fpu_addsub/sub_117
+                                     167.4809      0.0     167.4809       0.0000  0.0000  simf_DW01_sub_99
+alu/valu/genblk1.simf_alu[6]/fpu/fpu_addsub/sub_117_2
+                                     167.4809      0.0     167.4809       0.0000  0.0000  simf_DW01_sub_98
+alu/valu/genblk1.simf_alu[6]/fpu/fpu_div/mult_sub_159_aco
+                                      54.8951      0.0      54.8951       0.0000  0.0000  simf_DW02_mult_19
+alu/valu/genblk1.simf_alu[6]/fpu/fpu_div/sub_159_aco
+                                     158.8400      0.0     158.8400       0.0000  0.0000  simf_DW01_sub_291
+alu/valu/genblk1.simf_alu[6]/fpu/fpu_mul/add_192_aco
+                                     233.3042      0.1     233.3042       0.0000  0.0000  simf_DW01_add_211
+alu/valu/genblk1.simf_alu[6]/fpu/fpu_mul/mult_add_192_aco
+                                     107.7571      0.0     107.7571       0.0000  0.0000  simf_DW02_mult_3
+alu/valu/genblk1.simf_alu[6]/fpu/fpu_mul/sll_183
+                                     522.0118      0.1     522.0118       0.0000  0.0000  simf_DW01_ash_73
+alu/valu/genblk1.simf_alu[6]/fpu/fpu_post_norm_mul/add_363
+                                      81.5802      0.0      81.5802       0.0000  0.0000  simf_DW01_inc_35
+alu/valu/genblk1.simf_alu[6]/fpu/fpu_post_norm_mul/add_370
+                                      28.7183      0.0      28.7183       0.0000  0.0000  simf_DW01_inc_34
+alu/valu/genblk1.simf_alu[6]/fpu/fpu_post_norm_mul/sll_330
+                                     927.3715      0.2     927.3715       0.0000  0.0000  simf_DW01_ash_57
+alu/valu/genblk1.simf_alu[6]/fpu/fpu_post_norm_mul/srl_328
+                                     757.0950      0.2     757.0950       0.0000  0.0000  simf_DW_rash_25
+alu/valu/genblk1.simf_alu[6]/fpu/fpu_post_norm_mul/sub_276
+                                      61.5028      0.0      61.5028       0.0000  0.0000  simf_DW01_sub_45
+alu/valu/genblk1.simf_alu[6]/fpu/fpu_post_norm_mul/sub_288
+                                      38.1216      0.0      38.1216       0.0000  0.0000  simf_DW01_sub_44
+alu/valu/genblk1.simf_alu[6]/fpu/fpu_postnorm_addsub/add_247_aco
+                                     156.2986      0.0     156.2986       0.0000  0.0000  simf_DW01_add_73
+alu/valu/genblk1.simf_alu[6]/fpu/fpu_postnorm_addsub/add_255
+                                      28.7183      0.0      28.7183       0.0000  0.0000  simf_DW01_inc_73
+alu/valu/genblk1.simf_alu[6]/fpu/fpu_postnorm_addsub/sll_225
+                                     475.2493      0.1     475.2493       0.0000  0.0000  simf_DW01_ash_89
+alu/valu/genblk1.simf_alu[6]/fpu/fpu_pre_norm_div/sll_179
+                                     380.1994      0.1     380.1994       0.0000  0.0000  simf_DW01_ash_35
+alu/valu/genblk1.simf_alu[6]/fpu/fpu_pre_norm_div/sll_180
+                                     379.9453      0.1     379.9453       0.0000  0.0000  simf_DW01_ash_34
+alu/valu/genblk1.simf_alu[6]/fpu/fpu_prenorm_addsub/add_158
+                                      25.4144      0.0      25.4144       0.0000  0.0000  simf_DW01_inc_121
+alu/valu/genblk1.simf_alu[6]/fpu/fpu_prenorm_addsub/add_160
+                                      25.4144      0.0      25.4144       0.0000  0.0000  simf_DW01_inc_120
+alu/valu/genblk1.simf_alu[6]/fpu/fpu_prenorm_addsub/srl_167
+                                     344.3651      0.1     344.3651       0.0000  0.0000  simf_DW_rash_57
+alu/valu/genblk1.simf_alu[6]/fpu/fpu_prenorm_addsub/sub_157
+                                      50.3205      0.0      50.3205       0.0000  0.0000  simf_DW01_sub_131
+alu/valu/genblk1.simf_alu[6]/fpu/fpu_prenorm_addsub/sub_158
+                                      50.3205      0.0      50.3205       0.0000  0.0000  simf_DW01_sub_169
+alu/valu/genblk1.simf_alu[6]/fpu/fpu_prenorm_addsub/sub_159
+                                      50.3205      0.0      50.3205       0.0000  0.0000  simf_DW01_sub_130
+alu/valu/genblk1.simf_alu[6]/fpu/fpu_prenorm_addsub/sub_160
+                                      50.3205      0.0      50.3205       0.0000  0.0000  simf_DW01_sub_168
+alu/valu/genblk1.simf_alu[7]/fpu/fpu_addsub/add_117
+                                     131.9007      0.0     131.9007       0.0000  0.0000  simf_DW01_add_88
+alu/valu/genblk1.simf_alu[7]/fpu/fpu_addsub/sub_117
+                                     167.4809      0.0     167.4809       0.0000  0.0000  simf_DW01_sub_97
+alu/valu/genblk1.simf_alu[7]/fpu/fpu_addsub/sub_117_2
+                                     167.4809      0.0     167.4809       0.0000  0.0000  simf_DW01_sub_96
+alu/valu/genblk1.simf_alu[7]/fpu/fpu_div/mult_sub_159_aco
+                                      53.3702      0.0      53.3702       0.0000  0.0000  simf_DW02_mult_18
+alu/valu/genblk1.simf_alu[7]/fpu/fpu_div/sub_159_aco
+                                     158.5859      0.0     158.5859       0.0000  0.0000  simf_DW01_sub_290
+alu/valu/genblk1.simf_alu[7]/fpu/fpu_mul/add_192_aco
+                                     233.3042      0.1     233.3042       0.0000  0.0000  simf_DW01_add_210
+alu/valu/genblk1.simf_alu[7]/fpu/fpu_mul/mult_add_192_aco
+                                     107.7571      0.0     107.7571       0.0000  0.0000  simf_DW02_mult_2
+alu/valu/genblk1.simf_alu[7]/fpu/fpu_mul/sll_183
+                                     522.0118      0.1     522.0118       0.0000  0.0000  simf_DW01_ash_72
+alu/valu/genblk1.simf_alu[7]/fpu/fpu_post_norm_mul/add_363
+                                      81.5802      0.0      81.5802       0.0000  0.0000  simf_DW01_inc_33
+alu/valu/genblk1.simf_alu[7]/fpu/fpu_post_norm_mul/add_370
+                                      28.7183      0.0      28.7183       0.0000  0.0000  simf_DW01_inc_32
+alu/valu/genblk1.simf_alu[7]/fpu/fpu_post_norm_mul/sll_330
+                                     927.3715      0.2     927.3715       0.0000  0.0000  simf_DW01_ash_56
+alu/valu/genblk1.simf_alu[7]/fpu/fpu_post_norm_mul/srl_328
+                                     757.0950      0.2     757.0950       0.0000  0.0000  simf_DW_rash_24
+alu/valu/genblk1.simf_alu[7]/fpu/fpu_post_norm_mul/sub_276
+                                      61.5028      0.0      61.5028       0.0000  0.0000  simf_DW01_sub_42
+alu/valu/genblk1.simf_alu[7]/fpu/fpu_post_norm_mul/sub_288
+                                      38.1216      0.0      38.1216       0.0000  0.0000  simf_DW01_sub_41
+alu/valu/genblk1.simf_alu[7]/fpu/fpu_postnorm_addsub/add_247_aco
+                                     156.2986      0.0     156.2986       0.0000  0.0000  simf_DW01_add_72
+alu/valu/genblk1.simf_alu[7]/fpu/fpu_postnorm_addsub/add_255
+                                      28.7183      0.0      28.7183       0.0000  0.0000  simf_DW01_inc_72
+alu/valu/genblk1.simf_alu[7]/fpu/fpu_postnorm_addsub/sll_225
+                                     475.2493      0.1     475.2493       0.0000  0.0000  simf_DW01_ash_88
+alu/valu/genblk1.simf_alu[7]/fpu/fpu_pre_norm_div/sll_179
+                                     380.1994      0.1     380.1994       0.0000  0.0000  simf_DW01_ash_33
+alu/valu/genblk1.simf_alu[7]/fpu/fpu_pre_norm_div/sll_180
+                                     379.9453      0.1     379.9453       0.0000  0.0000  simf_DW01_ash_32
+alu/valu/genblk1.simf_alu[7]/fpu/fpu_prenorm_addsub/add_158
+                                      25.4144      0.0      25.4144       0.0000  0.0000  simf_DW01_inc_117
+alu/valu/genblk1.simf_alu[7]/fpu/fpu_prenorm_addsub/add_160
+                                      25.4144      0.0      25.4144       0.0000  0.0000  simf_DW01_inc_116
+alu/valu/genblk1.simf_alu[7]/fpu/fpu_prenorm_addsub/srl_167
+                                     344.3651      0.1     344.3651       0.0000  0.0000  simf_DW_rash_56
+alu/valu/genblk1.simf_alu[7]/fpu/fpu_prenorm_addsub/sub_157
+                                      50.3205      0.0      50.3205       0.0000  0.0000  simf_DW01_sub_129
+alu/valu/genblk1.simf_alu[7]/fpu/fpu_prenorm_addsub/sub_158
+                                      50.3205      0.0      50.3205       0.0000  0.0000  simf_DW01_sub_165
+alu/valu/genblk1.simf_alu[7]/fpu/fpu_prenorm_addsub/sub_159
+                                      50.3205      0.0      50.3205       0.0000  0.0000  simf_DW01_sub_128
+alu/valu/genblk1.simf_alu[7]/fpu/fpu_prenorm_addsub/sub_160
+                                      50.3205      0.0      50.3205       0.0000  0.0000  simf_DW01_sub_164
+alu/valu/genblk1.simf_alu[8]/fpu/fpu_addsub/add_117
+                                     131.9007      0.0     131.9007       0.0000  0.0000  simf_DW01_add_87
+alu/valu/genblk1.simf_alu[8]/fpu/fpu_addsub/sub_117
+                                     167.4809      0.0     167.4809       0.0000  0.0000  simf_DW01_sub_95
+alu/valu/genblk1.simf_alu[8]/fpu/fpu_addsub/sub_117_2
+                                     167.4809      0.0     167.4809       0.0000  0.0000  simf_DW01_sub_94
+alu/valu/genblk1.simf_alu[8]/fpu/fpu_div/mult_sub_159_aco
+                                      54.8951      0.0      54.8951       0.0000  0.0000  simf_DW02_mult_17
+alu/valu/genblk1.simf_alu[8]/fpu/fpu_div/sub_159_aco
+                                     158.5859      0.0     158.5859       0.0000  0.0000  simf_DW01_sub_289
+alu/valu/genblk1.simf_alu[8]/fpu/fpu_mul/add_192_aco
+                                     233.3042      0.1     233.3042       0.0000  0.0000  simf_DW01_add_209
+alu/valu/genblk1.simf_alu[8]/fpu/fpu_mul/mult_add_192_aco
+                                     107.7571      0.0     107.7571       0.0000  0.0000  simf_DW02_mult_1
+alu/valu/genblk1.simf_alu[8]/fpu/fpu_mul/sll_183
+                                     522.0118      0.1     522.0118       0.0000  0.0000  simf_DW01_ash_71
+alu/valu/genblk1.simf_alu[8]/fpu/fpu_post_norm_mul/add_363
+                                      81.5802      0.0      81.5802       0.0000  0.0000  simf_DW01_inc_31
+alu/valu/genblk1.simf_alu[8]/fpu/fpu_post_norm_mul/add_370
+                                      28.7183      0.0      28.7183       0.0000  0.0000  simf_DW01_inc_30
+alu/valu/genblk1.simf_alu[8]/fpu/fpu_post_norm_mul/sll_330
+                                     927.3715      0.2     927.3715       0.0000  0.0000  simf_DW01_ash_55
+alu/valu/genblk1.simf_alu[8]/fpu/fpu_post_norm_mul/srl_328
+                                     757.0950      0.2     757.0950       0.0000  0.0000  simf_DW_rash_23
+alu/valu/genblk1.simf_alu[8]/fpu/fpu_post_norm_mul/sub_276
+                                      61.5028      0.0      61.5028       0.0000  0.0000  simf_DW01_sub_39
+alu/valu/genblk1.simf_alu[8]/fpu/fpu_post_norm_mul/sub_288
+                                      38.1216      0.0      38.1216       0.0000  0.0000  simf_DW01_sub_38
+alu/valu/genblk1.simf_alu[8]/fpu/fpu_postnorm_addsub/add_247_aco
+                                     156.2986      0.0     156.2986       0.0000  0.0000  simf_DW01_add_71
+alu/valu/genblk1.simf_alu[8]/fpu/fpu_postnorm_addsub/add_255
+                                      28.7183      0.0      28.7183       0.0000  0.0000  simf_DW01_inc_71
+alu/valu/genblk1.simf_alu[8]/fpu/fpu_postnorm_addsub/sll_225
+                                     475.2493      0.1     475.2493       0.0000  0.0000  simf_DW01_ash_87
+alu/valu/genblk1.simf_alu[8]/fpu/fpu_pre_norm_div/sll_179
+                                     380.1994      0.1     380.1994       0.0000  0.0000  simf_DW01_ash_31
+alu/valu/genblk1.simf_alu[8]/fpu/fpu_pre_norm_div/sll_180
+                                     379.9453      0.1     379.9453       0.0000  0.0000  simf_DW01_ash_30
+alu/valu/genblk1.simf_alu[8]/fpu/fpu_prenorm_addsub/add_158
+                                      25.4144      0.0      25.4144       0.0000  0.0000  simf_DW01_inc_115
+alu/valu/genblk1.simf_alu[8]/fpu/fpu_prenorm_addsub/add_160
+                                      25.4144      0.0      25.4144       0.0000  0.0000  simf_DW01_inc_114
+alu/valu/genblk1.simf_alu[8]/fpu/fpu_prenorm_addsub/srl_167
+                                     344.3651      0.1     344.3651       0.0000  0.0000  simf_DW_rash_55
+alu/valu/genblk1.simf_alu[8]/fpu/fpu_prenorm_addsub/sub_157
+                                      50.3205      0.0      50.3205       0.0000  0.0000  simf_DW01_sub_127
+alu/valu/genblk1.simf_alu[8]/fpu/fpu_prenorm_addsub/sub_158
+                                      50.3205      0.0      50.3205       0.0000  0.0000  simf_DW01_sub_163
+alu/valu/genblk1.simf_alu[8]/fpu/fpu_prenorm_addsub/sub_159
+                                      50.3205      0.0      50.3205       0.0000  0.0000  simf_DW01_sub_126
+alu/valu/genblk1.simf_alu[8]/fpu/fpu_prenorm_addsub/sub_160
+                                      50.3205      0.0      50.3205       0.0000  0.0000  simf_DW01_sub_162
+alu/valu/genblk1.simf_alu[9]/fpu/fpu_addsub/add_117
+                                     131.9007      0.0     131.9007       0.0000  0.0000  simf_DW01_add_86
+alu/valu/genblk1.simf_alu[9]/fpu/fpu_addsub/sub_117
+                                     167.4809      0.0     167.4809       0.0000  0.0000  simf_DW01_sub_93
+alu/valu/genblk1.simf_alu[9]/fpu/fpu_addsub/sub_117_2
+                                     167.4809      0.0     167.4809       0.0000  0.0000  simf_DW01_sub_92
+alu/valu/genblk1.simf_alu[9]/fpu/fpu_div/mult_sub_159_aco
+                                      54.8951      0.0      54.8951       0.0000  0.0000  simf_DW02_mult_16
+alu/valu/genblk1.simf_alu[9]/fpu/fpu_div/sub_159_aco
+                                     158.5859      0.0     158.5859       0.0000  0.0000  simf_DW01_sub_288
+alu/valu/genblk1.simf_alu[9]/fpu/fpu_mul/add_192_aco
+                                     233.3042      0.1     233.3042       0.0000  0.0000  simf_DW01_add_208
+alu/valu/genblk1.simf_alu[9]/fpu/fpu_mul/mult_add_192_aco
+                                     107.7571      0.0     107.7571       0.0000  0.0000  simf_DW02_mult_0
+alu/valu/genblk1.simf_alu[9]/fpu/fpu_mul/sll_183
+                                     522.0118      0.1     522.0118       0.0000  0.0000  simf_DW01_ash_70
+alu/valu/genblk1.simf_alu[9]/fpu/fpu_post_norm_mul/add_363
+                                      81.5802      0.0      81.5802       0.0000  0.0000  simf_DW01_inc_29
+alu/valu/genblk1.simf_alu[9]/fpu/fpu_post_norm_mul/add_370
+                                      28.7183      0.0      28.7183       0.0000  0.0000  simf_DW01_inc_28
+alu/valu/genblk1.simf_alu[9]/fpu/fpu_post_norm_mul/sll_330
+                                     927.3715      0.2     927.3715       0.0000  0.0000  simf_DW01_ash_54
+alu/valu/genblk1.simf_alu[9]/fpu/fpu_post_norm_mul/srl_328
+                                     757.0950      0.2     757.0950       0.0000  0.0000  simf_DW_rash_22
+alu/valu/genblk1.simf_alu[9]/fpu/fpu_post_norm_mul/sub_276
+                                      61.5028      0.0      61.5028       0.0000  0.0000  simf_DW01_sub_36
+alu/valu/genblk1.simf_alu[9]/fpu/fpu_post_norm_mul/sub_288
+                                      38.1216      0.0      38.1216       0.0000  0.0000  simf_DW01_sub_35
+alu/valu/genblk1.simf_alu[9]/fpu/fpu_postnorm_addsub/add_247_aco
+                                     156.2986      0.0     156.2986       0.0000  0.0000  simf_DW01_add_70
+alu/valu/genblk1.simf_alu[9]/fpu/fpu_postnorm_addsub/add_255
+                                      28.7183      0.0      28.7183       0.0000  0.0000  simf_DW01_inc_70
+alu/valu/genblk1.simf_alu[9]/fpu/fpu_postnorm_addsub/sll_225
+                                     475.2493      0.1     475.2493       0.0000  0.0000  simf_DW01_ash_86
+alu/valu/genblk1.simf_alu[9]/fpu/fpu_pre_norm_div/sll_179
+                                     380.1994      0.1     380.1994       0.0000  0.0000  simf_DW01_ash_29
+alu/valu/genblk1.simf_alu[9]/fpu/fpu_pre_norm_div/sll_180
+                                     379.9453      0.1     379.9453       0.0000  0.0000  simf_DW01_ash_28
+alu/valu/genblk1.simf_alu[9]/fpu/fpu_prenorm_addsub/add_158
+                                      25.4144      0.0      25.4144       0.0000  0.0000  simf_DW01_inc_113
+alu/valu/genblk1.simf_alu[9]/fpu/fpu_prenorm_addsub/add_160
+                                      25.4144      0.0      25.4144       0.0000  0.0000  simf_DW01_inc_112
+alu/valu/genblk1.simf_alu[9]/fpu/fpu_prenorm_addsub/srl_167
+                                     344.3651      0.1     344.3651       0.0000  0.0000  simf_DW_rash_54
+alu/valu/genblk1.simf_alu[9]/fpu/fpu_prenorm_addsub/sub_157
+                                      50.3205      0.0      50.3205       0.0000  0.0000  simf_DW01_sub_125
+alu/valu/genblk1.simf_alu[9]/fpu/fpu_prenorm_addsub/sub_158
+                                      50.3205      0.0      50.3205       0.0000  0.0000  simf_DW01_sub_161
+alu/valu/genblk1.simf_alu[9]/fpu/fpu_prenorm_addsub/sub_159
+                                      50.3205      0.0      50.3205       0.0000  0.0000  simf_DW01_sub_124
+alu/valu/genblk1.simf_alu[9]/fpu/fpu_prenorm_addsub/sub_160
+                                      50.3205      0.0      50.3205       0.0000  0.0000  simf_DW01_sub_160
+r26571                               309.0391      0.1     309.0391       0.0000  0.0000  simf_DW01_cmp6_15
+r26572                               309.0391      0.1     309.0391       0.0000  0.0000  simf_DW01_cmp6_14
+r26573                               309.0391      0.1     309.0391       0.0000  0.0000  simf_DW01_cmp6_13
+r26574                               309.0391      0.1     309.0391       0.0000  0.0000  simf_DW01_cmp6_12
+r26575                               309.0391      0.1     309.0391       0.0000  0.0000  simf_DW01_cmp6_11
+r26576                               309.0391      0.1     309.0391       0.0000  0.0000  simf_DW01_cmp6_10
+r26577                               309.0391      0.1     309.0391       0.0000  0.0000  simf_DW01_cmp6_9
+r26578                               309.0391      0.1     309.0391       0.0000  0.0000  simf_DW01_cmp6_8
+r26579                               309.0391      0.1     309.0391       0.0000  0.0000  simf_DW01_cmp6_7
+r26580                               309.0391      0.1     309.0391       0.0000  0.0000  simf_DW01_cmp6_6
+r26581                               309.0391      0.1     309.0391       0.0000  0.0000  simf_DW01_cmp6_5
+r26582                               309.0391      0.1     309.0391       0.0000  0.0000  simf_DW01_cmp6_4
+r26583                               309.0391      0.1     309.0391       0.0000  0.0000  simf_DW01_cmp6_3
+r26584                               309.0391      0.1     309.0391       0.0000  0.0000  simf_DW01_cmp6_2
+r26585                               309.0391      0.1     309.0391       0.0000  0.0000  simf_DW01_cmp6_1
+r26586                               309.0391      0.1     309.0391       0.0000  0.0000  simf_DW01_cmp6_0
+--------------------------------  -----------  -------  -----------  -----------  ------  -----------------
+Total                                                   229571.5807  208271.5199  0.0000
+
+1

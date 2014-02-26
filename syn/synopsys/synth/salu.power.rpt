@@ -1,0 +1,64 @@
+Loading db file '/p/vertical/afs-huge0/synopsys/32nmlib/SAED32_EDK/lib/stdcell_rvt/db_nldm/saed32rvt_tt1p05v25c.db'
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+ 
+****************************************
+Report : power
+        -hier
+        -analysis_effort low
+Design : salu
+Version: G-2012.06
+Date   : Thu May 16 12:48:48 2013
+****************************************
+
+
+Library(s) Used:
+
+    saed32rvt_tt1p05v25c (File: /p/vertical/afs-huge0/synopsys/32nmlib/SAED32_EDK/lib/stdcell_rvt/db_nldm/saed32rvt_tt1p05v25c.db)
+
+
+Operating Conditions: tt1p05v25c   Library: saed32rvt_tt1p05v25c
+Wire Load Model Mode: enclosed
+
+Design        Wire Load Model            Library
+------------------------------------------------
+salu                   16000             saed32rvt_tt1p05v25c
+salu_DW01_ash_0        8000              saed32rvt_tt1p05v25c
+salu_DW01_add_0        ForQA             saed32rvt_tt1p05v25c
+salu_DW_rash_0         8000              saed32rvt_tt1p05v25c
+salu_DW01_cmp6_0       8000              saed32rvt_tt1p05v25c
+salu_DW01_add_1        ForQA             saed32rvt_tt1p05v25c
+salu_DW01_sub_0        ForQA             saed32rvt_tt1p05v25c
+salu_DW01_add_2        ForQA             saed32rvt_tt1p05v25c
+salu_DW02_mult_0       8000              saed32rvt_tt1p05v25c
+salu_DW01_add_4        ForQA             saed32rvt_tt1p05v25c
+salu_DW01_add_5        ForQA             saed32rvt_tt1p05v25c
+
+
+Global Operating Voltage = 1.05 
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ns
+    Dynamic Power Units = 1uW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+--------------------------------------------------------------------------------
+                                       Switch   Int      Leak     Total
+Hierarchy                              Power    Power    Power    Power    %
+--------------------------------------------------------------------------------
+salu                                     43.158  712.775 1.57e+09 2.32e+03 100.0
+  r242 (salu_DW02_mult_0)                14.954   47.837 2.67e+08  329.413  14.2
+  add_0_root_r234 (salu_DW01_add_4)       0.433    2.835 1.20e+07   15.232   0.7
+  add_1_root_r234 (salu_DW01_add_5)       0.397    1.082 1.18e+07   13.240   0.6
+  r235 (salu_DW01_add_2)                  0.584    3.322 1.15e+07   15.388   0.7
+  r236 (salu_DW01_sub_0)                  0.988    3.518 1.82e+07   22.755   1.0
+  r237 (salu_DW01_add_1)                  0.458    1.307 9.63e+06   11.394   0.5
+  r239 (salu_DW01_cmp6_0)                 0.957    2.184 2.39e+07   27.040   1.2
+  r241 (salu_DW_rash_0)                   1.358    2.879 2.93e+07   33.489   1.4
+  add_1_root_salu_gpu/add_113_2 (salu_DW01_add_0)
+                                          0.541    1.432 1.59e+07   17.862   0.8
+  salu_gpu/sll_158 (salu_DW01_ash_0)      1.850    5.203 3.15e+07   38.541   1.7
+1

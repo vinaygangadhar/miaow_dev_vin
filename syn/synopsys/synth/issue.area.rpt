@@ -1,0 +1,109 @@
+ 
+****************************************
+Report : area
+Design : issue
+Version: G-2012.06
+Date   : Thu May 16 12:30:24 2013
+****************************************
+
+Library(s) Used:
+
+    saed32rvt_tt1p05v25c (File: /p/vertical/afs-huge0/synopsys/32nmlib/SAED32_EDK/lib/stdcell_rvt/db_nldm/saed32rvt_tt1p05v25c.db)
+
+Number of ports:                          911
+Number of nets:                         85430
+Number of cells:                        76867
+Number of combinational cells:          62296
+Number of sequential cells:             14537
+Number of macros:                           0
+Number of buf/inv:                      11722
+Number of references:                     111
+
+Combinational area:       162476.293770
+Noncombinational area:    103456.941314
+Net Interconnect area:    159686.113091
+
+Total cell area:          265933.235084
+Total area:               425619.348175
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area              Local cell area
+                                  --------------------  -------------------------------- 
+Hierarchical cell                 Absolute     Percent  Combi-       Noncombi-    Black
+                                  Total        Total    national     national     boxes   Design
+--------------------------------  -----------  -------  -----------  -----------  ------  -----------------
+issue                             265933.2351    100.0  161491.4857  103456.9413  0.0000  issue
+scoreboard/sgpr_alu_cmp/add_115_3_C46
+                                      27.7017      0.0      27.7017       0.0000  0.0000  issue_DW01_inc_20
+scoreboard/sgpr_alu_cmp/add_115_3_C58
+                                      27.7017      0.0      27.7017       0.0000  0.0000  issue_DW01_inc_16
+scoreboard/sgpr_alu_cmp/add_115_3_C62
+                                      27.7017      0.0      27.7017       0.0000  0.0000  issue_DW01_inc_15
+scoreboard/sgpr_alu_cmp/add_115_4_C46
+                                      27.7017      0.0      27.7017       0.0000  0.0000  issue_DW01_inc_19
+scoreboard/sgpr_alu_cmp/add_134_C50
+                                      27.7017      0.0      27.7017       0.0000  0.0000  issue_DW01_inc_18
+scoreboard/sgpr_alu_cmp/add_134_C54
+                                      27.7017      0.0      27.7017       0.0000  0.0000  issue_DW01_inc_17
+scoreboard/sgpr_alu_cmp/add_134_C66
+                                      27.7017      0.0      27.7017       0.0000  0.0000  issue_DW01_inc_14
+scoreboard/sgpr_lsu_cmp/add_115_3_C46
+                                      27.7017      0.0      27.7017       0.0000  0.0000  issue_DW01_inc_6
+scoreboard/sgpr_lsu_cmp/add_115_3_C58
+                                      27.7017      0.0      27.7017       0.0000  0.0000  issue_DW01_inc_2
+scoreboard/sgpr_lsu_cmp/add_115_3_C62
+                                      27.7017      0.0      27.7017       0.0000  0.0000  issue_DW01_inc_1
+scoreboard/sgpr_lsu_cmp/add_115_4_C46
+                                      27.7017      0.0      27.7017       0.0000  0.0000  issue_DW01_inc_5
+scoreboard/sgpr_lsu_cmp/add_134_C50
+                                      27.7017      0.0      27.7017       0.0000  0.0000  issue_DW01_inc_4
+scoreboard/sgpr_lsu_cmp/add_134_C54
+                                      27.7017      0.0      27.7017       0.0000  0.0000  issue_DW01_inc_3
+scoreboard/sgpr_lsu_cmp/add_134_C66
+                                      27.7017      0.0      27.7017       0.0000  0.0000  issue_DW01_inc_0
+scoreboard/sgpr_valu_cmp/add_115_3_C46
+                                      27.7017      0.0      27.7017       0.0000  0.0000  issue_DW01_inc_13
+scoreboard/sgpr_valu_cmp/add_115_3_C58
+                                      27.7017      0.0      27.7017       0.0000  0.0000  issue_DW01_inc_9
+scoreboard/sgpr_valu_cmp/add_115_3_C62
+                                      27.7017      0.0      27.7017       0.0000  0.0000  issue_DW01_inc_8
+scoreboard/sgpr_valu_cmp/add_115_4_C46
+                                      27.7017      0.0      27.7017       0.0000  0.0000  issue_DW01_inc_12
+scoreboard/sgpr_valu_cmp/add_134_C50
+                                      27.7017      0.0      27.7017       0.0000  0.0000  issue_DW01_inc_11
+scoreboard/sgpr_valu_cmp/add_134_C54
+                                      27.7017      0.0      27.7017       0.0000  0.0000  issue_DW01_inc_10
+scoreboard/sgpr_valu_cmp/add_134_C66
+                                      27.7017      0.0      27.7017       0.0000  0.0000  issue_DW01_inc_7
+scoreboard/vgpr_alu_cmp/add_114_3_C46
+                                      31.0056      0.0      31.0056       0.0000  0.0000  issue_DW01_inc_33
+scoreboard/vgpr_alu_cmp/add_114_3_C58
+                                      31.0056      0.0      31.0056       0.0000  0.0000  issue_DW01_inc_30
+scoreboard/vgpr_alu_cmp/add_114_3_C62
+                                      31.0056      0.0      31.0056       0.0000  0.0000  issue_DW01_inc_29
+scoreboard/vgpr_alu_cmp/add_133_C50
+                                      31.0056      0.0      31.0056       0.0000  0.0000  issue_DW01_inc_32
+scoreboard/vgpr_alu_cmp/add_133_C54
+                                      31.0056      0.0      31.0056       0.0000  0.0000  issue_DW01_inc_31
+scoreboard/vgpr_alu_cmp/add_133_C66
+                                      31.0056      0.0      31.0056       0.0000  0.0000  issue_DW01_inc_28
+scoreboard/vgpr_lsu_cmp/add_114_3_C46
+                                      31.0056      0.0      31.0056       0.0000  0.0000  issue_DW01_inc_27
+scoreboard/vgpr_lsu_cmp/add_114_3_C58
+                                      31.0056      0.0      31.0056       0.0000  0.0000  issue_DW01_inc_23
+scoreboard/vgpr_lsu_cmp/add_114_3_C62
+                                      31.0056      0.0      31.0056       0.0000  0.0000  issue_DW01_inc_22
+scoreboard/vgpr_lsu_cmp/add_114_4_C46
+                                      31.0056      0.0      31.0056       0.0000  0.0000  issue_DW01_inc_26
+scoreboard/vgpr_lsu_cmp/add_133_C50
+                                      31.0056      0.0      31.0056       0.0000  0.0000  issue_DW01_inc_25
+scoreboard/vgpr_lsu_cmp/add_133_C54
+                                      31.0056      0.0      31.0056       0.0000  0.0000  issue_DW01_inc_24
+scoreboard/vgpr_lsu_cmp/add_133_C66
+                                      31.0056      0.0      31.0056       0.0000  0.0000  issue_DW01_inc_21
+--------------------------------  -----------  -------  -----------  -----------  ------  -----------------
+Total                                                   162476.2938  103456.9413  0.0000
+
+1

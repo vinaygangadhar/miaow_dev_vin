@@ -1,0 +1,146 @@
+Warning: Ignoring -power_effort option since there is no power constraint. (PWR-59)
+Warning: Setting attribute 'fix_multiple_port_nets' on design 'salu'. (UIO-59)
+Information: Evaluating DesignWare library utilization. (UISN-27)
+
+============================================================================
+| DesignWare Building Block Library  |         Version         | Available |
+============================================================================
+| Basic DW Building Blocks           | G-2012.06-DWBB_201206.0 |     *     |
+| Licensed DW Building Blocks        |                         |     *     |
+============================================================================
+
+
+Information: There are 68 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
+
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'salu'
+Information: The register 'writeback/d1[217]/state_reg' will be removed. (OPT-1207)
+Information: The register 'writeback/d1[216]/state_reg' will be removed. (OPT-1207)
+Information: The register 'writeback/d1[215]/state_reg' will be removed. (OPT-1207)
+Information: The register 'salu_decode/d1[96]/state_reg' will be removed. (OPT-1207)
+Information: The register 'salu_decode/d1[95]/state_reg' will be removed. (OPT-1207)
+Information: The register 'salu_decode/d1[94]/state_reg' will be removed. (OPT-1207)
+Information: The register 'salu_decode/d1[93]/state_reg' will be removed. (OPT-1207)
+Information: The register 'salu_decode/d1[45]/state_reg' will be removed. (OPT-1207)
+Information: The register 'salu_decode/d1[44]/state_reg' will be removed. (OPT-1207)
+Information: The register 'salu_decode/d1[43]/state_reg' will be removed. (OPT-1207)
+Information: The register 'salu_decode/d1[37]/state_reg' will be removed. (OPT-1207)
+Information: The register 'salu_decode/d1[36]/state_reg' will be removed. (OPT-1207)
+Information: The register 'salu_decode/d1[35]/state_reg' will be removed. (OPT-1207)
+Information: The register 'salu_decode/d1[34]/state_reg' will be removed. (OPT-1207)
+Information: The register 'salu_decode/d1[33]/state_reg' will be removed. (OPT-1207)
+Information: The register 'salu_decode/d1[32]/state_reg' will be removed. (OPT-1207)
+Information: The register 'salu_decode/d1[31]/state_reg' will be removed. (OPT-1207)
+Information: The register 'salu_decode/d1[30]/state_reg' will be removed. (OPT-1207)
+Information: The register 'salu_decode/d1[29]/state_reg' will be removed. (OPT-1207)
+Information: The register 'salu_decode/d1[28]/state_reg' will be removed. (OPT-1207)
+Information: The register 'salu_decode/d1[27]/state_reg' will be removed. (OPT-1207)
+Information: The register 'salu_decode/d1[26]/state_reg' will be removed. (OPT-1207)
+Information: The register 'salu_decode/d1[25]/state_reg' will be removed. (OPT-1207)
+Information: The register 'salu_decode/d1[24]/state_reg' will be removed. (OPT-1207)
+Information: The register 'salu_decode/d1[23]/state_reg' will be removed. (OPT-1207)
+Information: The register 'salu_decode/d1[22]/state_reg' will be removed. (OPT-1207)
+Information: The register 'salu_decode/d1[21]/state_reg' will be removed. (OPT-1207)
+Information: The register 'salu_decode/d1[20]/state_reg' will be removed. (OPT-1207)
+Information: The register 'salu_decode/d1[0]/state_reg' will be removed. (OPT-1207)
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+
+  Beginning Implementation Selection
+  ----------------------------------
+  Processing 'salu_DW01_ash_0'
+  Processing 'salu_DW01_add_0'
+  Processing 'salu_DW_rash_0'
+  Processing 'salu_DW01_cmp6_0'
+  Processing 'salu_DW01_add_1'
+  Processing 'salu_DW01_sub_0'
+  Processing 'salu_DW01_add_2'
+  Processing 'salu_DW02_mult_0'
+  Processing 'salu_DW01_add_3'
+  Processing 'salu_DW01_add_4'
+  Processing 'salu_DW01_add_5'
+
+  Beginning Mapping Optimizations  (High effort)
+  -------------------------------
+
+   ELAPSED            WORST NEG TOTAL NEG  DESIGN                             MIN DELAY
+    TIME      AREA      SLACK     SLACK   RULE COST         ENDPOINT            COST   
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:06   20451.3      0.00       0.0    1747.5                                0.00
+    0:00:06   20451.3      0.00       0.0    1747.5                                0.00
+    0:00:08   21199.0      0.00       0.0       0.2                                0.00
+    0:00:08   21199.0      0.00       0.0       0.2                                0.00
+    0:00:08   21199.0      0.00       0.0       0.2                                0.00
+    0:00:08   21199.0      0.00       0.0       0.2                                0.00
+    0:00:08   21199.0      0.00       0.0       0.2                                0.00
+    0:00:08   21199.0      0.00       0.0       0.2                                0.00
+    0:00:08   20168.6      0.00       0.0       0.2                                0.00
+    0:00:08   20168.3      0.00       0.0       0.2                                0.00
+    0:00:09   20168.3      0.00       0.0       0.0                                0.00
+    0:00:09   20168.3      0.00       0.0       0.0                                0.00
+    0:00:09   20168.3      0.00       0.0       0.0                                0.00
+    0:00:09   20168.3      0.00       0.0       0.0                                0.00
+    0:00:09   20168.3      0.00       0.0       0.0                                0.00
+    0:00:09   20168.3      0.00       0.0       0.0                                0.00
+    0:00:09   20168.3      0.00       0.0       0.0                                0.00
+    0:00:09   20168.3      0.00       0.0       0.0                                0.00
+    0:00:09   19517.3      0.00       0.0       0.0                                0.00
+
+
+
+  Beginning Delay Optimization Phase
+  ----------------------------------
+
+   ELAPSED            WORST NEG TOTAL NEG  DESIGN                             MIN DELAY
+    TIME      AREA      SLACK     SLACK   RULE COST         ENDPOINT            COST   
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:09   19517.3      0.00       0.0       0.0                                0.00
+    0:00:09   19517.3      0.00       0.0       0.0                                0.00
+    0:00:09   19516.8      0.00       0.0       0.0                                0.00
+
+
+  Beginning Design Rule Fixing  (max_capacitance)
+  ----------------------------
+
+   ELAPSED            WORST NEG TOTAL NEG  DESIGN                             MIN DELAY
+    TIME      AREA      SLACK     SLACK   RULE COST         ENDPOINT            COST   
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:09   19516.8      0.00       0.0       0.0                                0.00
+    0:00:09   19514.5      0.00       0.0       0.0                                0.00
+
+
+  Beginning Area-Recovery Phase  (cleanup)
+  -----------------------------
+
+   ELAPSED            WORST NEG TOTAL NEG  DESIGN                             MIN DELAY
+    TIME      AREA      SLACK     SLACK   RULE COST         ENDPOINT            COST   
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:09   19514.5      0.00       0.0       0.0                                0.00
+    0:00:09   19514.5      0.00       0.0       0.0                                0.00
+    0:00:09   19514.5      0.00       0.0       0.0                                0.00
+    0:00:10   19489.7      0.00       0.0       0.0                                0.00
+    0:00:10   19483.5      0.00       0.0       0.0                                0.00
+    0:00:10   19482.2      0.00       0.0       0.0                                0.00
+    0:00:10   19480.9      0.00       0.0       0.0                                0.00
+    0:00:10   19480.9      0.00       0.0       0.0                                0.00
+    0:00:10   19480.9      0.00       0.0       0.0                                0.00
+    0:00:10   19480.9      0.00       0.0       0.0                                0.00
+    0:00:10   19480.9      0.00       0.0       0.0                                0.00
+    0:00:10   19480.9      0.00       0.0       0.0                                0.00
+    0:00:10   19480.4      0.00       0.0       0.0                                0.00
+    0:00:10   19480.4      0.00       0.0       0.0                                0.00
+    0:00:10   19480.4      0.00       0.0       0.0                                0.00
+    0:00:10   19480.4      0.00       0.0       0.0                                0.00
+    0:00:10   19480.4      0.00       0.0       0.0                                0.00
+    0:00:10   19480.4      0.00       0.0       0.0                                0.00
+    0:00:10   19480.4      0.00       0.0       0.0                                0.00
+    0:00:10   19480.4      0.00       0.0       0.0                                0.00
+Loading db file '/p/vertical/afs-huge0/synopsys/32nmlib/SAED32_EDK/lib/stdcell_rvt/db_nldm/saed32rvt_tt1p05v25c.db'
+
+  Optimization Complete
+  ---------------------
+1

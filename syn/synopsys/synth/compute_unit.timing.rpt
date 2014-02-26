@@ -1,0 +1,110 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 5
+Design : compute_unit
+Version: G-2012.06
+Date   : Thu May 16 11:42:35 2013
+****************************************
+
+Operating Conditions: tt1p05v25c   Library: saed32rvt_tt1p05v25c
+Wire Load Model Mode: enclosed
+
+  Startpoint: salu0/fetchwaveissue_branch_wfid[1] (internal pin)
+  Endpoint: salu2fetchwaveissue_branch_wfid[1]
+            (output port clocked by clk)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  compute_unit       ForQA                 saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  salu0/fetchwaveissue_branch_wfid[1] (salu)          0.000000   0.000000 r
+  salu2fetchwaveissue_branch_wfid[1] (out)            0.005780   0.005780 r
+  data arrival time                                              0.005780
+  --------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: salu0/fetchwaveissue_branch_wfid[2] (internal pin)
+  Endpoint: salu2fetchwaveissue_branch_wfid[2]
+            (output port clocked by clk)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  compute_unit       ForQA                 saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  salu0/fetchwaveissue_branch_wfid[2] (salu)          0.000000   0.000000 r
+  salu2fetchwaveissue_branch_wfid[2] (out)            0.005780   0.005780 r
+  data arrival time                                              0.005780
+  --------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: salu0/fetchwaveissue_branch_wfid[3] (internal pin)
+  Endpoint: salu2fetchwaveissue_branch_wfid[3]
+            (output port clocked by clk)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  compute_unit       ForQA                 saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  salu0/fetchwaveissue_branch_wfid[3] (salu)          0.000000   0.000000 r
+  salu2fetchwaveissue_branch_wfid[3] (out)            0.005780   0.005780 r
+  data arrival time                                              0.005780
+  --------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: salu0/fetchwaveissue_branch_wfid[4] (internal pin)
+  Endpoint: salu2fetchwaveissue_branch_wfid[4]
+            (output port clocked by clk)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  compute_unit       ForQA                 saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  salu0/fetchwaveissue_branch_wfid[4] (salu)          0.000000   0.000000 r
+  salu2fetchwaveissue_branch_wfid[4] (out)            0.005780   0.005780 r
+  data arrival time                                              0.005780
+  --------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: salu0/fetchwaveissue_branch_wfid[5] (internal pin)
+  Endpoint: salu2fetchwaveissue_branch_wfid[5]
+            (output port clocked by clk)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  compute_unit       ForQA                 saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  salu0/fetchwaveissue_branch_wfid[5] (salu)          0.000000   0.000000 r
+  salu2fetchwaveissue_branch_wfid[5] (out)            0.005780   0.005780 r
+  data arrival time                                              0.005780
+  --------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+1

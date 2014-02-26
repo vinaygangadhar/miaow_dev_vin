@@ -1,0 +1,195 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 5
+Design : reg_512x32b_3r_3w
+Version: G-2012.06
+Date   : Thu May 16 12:54:56 2013
+****************************************
+
+Operating Conditions: tt1p05v25c   Library: saed32rvt_tt1p05v25c
+Wire Load Model Mode: enclosed
+
+  Startpoint: rd1_addr[0]
+              (input port clocked by clk)
+  Endpoint: rd1_data[0]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  reg_512x32b_3r_3w  8000                  saed32rvt_tt1p05v25c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                0.000000   0.000000
+  clock network delay (ideal)          0.000000   0.000000
+  input external delay                 0.000000   0.000000 f
+  rd1_addr[0] (in)                     0.000000   0.000000 f
+  U1050/Y (INVX2_RVT)                  0.105660   0.105660 r
+  U579/Y (AND2X1_RVT)                  0.068882   0.174543 r
+  U940/Y (NBUFFX2_RVT)                 0.055111   0.229653 r
+  U577/Y (AO22X1_RVT)                  0.068836   0.298489 r
+  U576/Y (AO221X1_RVT)                 0.050264   0.348753 r
+  rd1_data[0] (out)                    0.000095   0.348849 r
+  data arrival time                               0.348849
+
+  clock clk (rise edge)                8.000000   8.000000
+  clock network delay (ideal)          0.000000   8.000000
+  output external delay                0.000000   8.000000
+  data required time                              8.000000
+  -----------------------------------------------------------
+  data required time                              8.000000
+  data arrival time                               -0.348849
+  -----------------------------------------------------------
+  slack (MET)                                     7.651152
+
+
+  Startpoint: rd1_addr[0]
+              (input port clocked by clk)
+  Endpoint: rd1_data[1]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  reg_512x32b_3r_3w  8000                  saed32rvt_tt1p05v25c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                0.000000   0.000000
+  clock network delay (ideal)          0.000000   0.000000
+  input external delay                 0.000000   0.000000 f
+  rd1_addr[0] (in)                     0.000000   0.000000 f
+  U1050/Y (INVX2_RVT)                  0.105660   0.105660 r
+  U579/Y (AND2X1_RVT)                  0.068882   0.174543 r
+  U936/Y (NBUFFX2_RVT)                 0.055111   0.229653 r
+  U555/Y (AO22X1_RVT)                  0.068836   0.298489 r
+  U554/Y (AO221X1_RVT)                 0.050264   0.348753 r
+  rd1_data[1] (out)                    0.000095   0.348849 r
+  data arrival time                               0.348849
+
+  clock clk (rise edge)                8.000000   8.000000
+  clock network delay (ideal)          0.000000   8.000000
+  output external delay                0.000000   8.000000
+  data required time                              8.000000
+  -----------------------------------------------------------
+  data required time                              8.000000
+  data arrival time                               -0.348849
+  -----------------------------------------------------------
+  slack (MET)                                     7.651152
+
+
+  Startpoint: rd1_addr[0]
+              (input port clocked by clk)
+  Endpoint: rd1_data[2]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  reg_512x32b_3r_3w  8000                  saed32rvt_tt1p05v25c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                0.000000   0.000000
+  clock network delay (ideal)          0.000000   0.000000
+  input external delay                 0.000000   0.000000 f
+  rd1_addr[0] (in)                     0.000000   0.000000 f
+  U1050/Y (INVX2_RVT)                  0.105660   0.105660 r
+  U579/Y (AND2X1_RVT)                  0.068882   0.174543 r
+  U937/Y (NBUFFX2_RVT)                 0.055111   0.229653 r
+  U533/Y (AO22X1_RVT)                  0.068836   0.298489 r
+  U532/Y (AO221X1_RVT)                 0.050264   0.348753 r
+  rd1_data[2] (out)                    0.000095   0.348849 r
+  data arrival time                               0.348849
+
+  clock clk (rise edge)                8.000000   8.000000
+  clock network delay (ideal)          0.000000   8.000000
+  output external delay                0.000000   8.000000
+  data required time                              8.000000
+  -----------------------------------------------------------
+  data required time                              8.000000
+  data arrival time                               -0.348849
+  -----------------------------------------------------------
+  slack (MET)                                     7.651152
+
+
+  Startpoint: rd1_addr[0]
+              (input port clocked by clk)
+  Endpoint: rd1_data[3]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  reg_512x32b_3r_3w  8000                  saed32rvt_tt1p05v25c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                0.000000   0.000000
+  clock network delay (ideal)          0.000000   0.000000
+  input external delay                 0.000000   0.000000 f
+  rd1_addr[0] (in)                     0.000000   0.000000 f
+  U1050/Y (INVX2_RVT)                  0.105660   0.105660 r
+  U579/Y (AND2X1_RVT)                  0.068882   0.174543 r
+  U938/Y (NBUFFX2_RVT)                 0.055111   0.229653 r
+  U511/Y (AO22X1_RVT)                  0.068836   0.298489 r
+  U510/Y (AO221X1_RVT)                 0.050264   0.348753 r
+  rd1_data[3] (out)                    0.000095   0.348849 r
+  data arrival time                               0.348849
+
+  clock clk (rise edge)                8.000000   8.000000
+  clock network delay (ideal)          0.000000   8.000000
+  output external delay                0.000000   8.000000
+  data required time                              8.000000
+  -----------------------------------------------------------
+  data required time                              8.000000
+  data arrival time                               -0.348849
+  -----------------------------------------------------------
+  slack (MET)                                     7.651152
+
+
+  Startpoint: rd1_addr[0]
+              (input port clocked by clk)
+  Endpoint: rd1_data[4]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  reg_512x32b_3r_3w  8000                  saed32rvt_tt1p05v25c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                0.000000   0.000000
+  clock network delay (ideal)          0.000000   0.000000
+  input external delay                 0.000000   0.000000 f
+  rd1_addr[0] (in)                     0.000000   0.000000 f
+  U1050/Y (INVX2_RVT)                  0.105660   0.105660 r
+  U579/Y (AND2X1_RVT)                  0.068882   0.174543 r
+  U939/Y (NBUFFX2_RVT)                 0.055111   0.229653 r
+  U489/Y (AO22X1_RVT)                  0.068836   0.298489 r
+  U488/Y (AO221X1_RVT)                 0.050264   0.348753 r
+  rd1_data[4] (out)                    0.000095   0.348849 r
+  data arrival time                               0.348849
+
+  clock clk (rise edge)                8.000000   8.000000
+  clock network delay (ideal)          0.000000   8.000000
+  output external delay                0.000000   8.000000
+  data required time                              8.000000
+  -----------------------------------------------------------
+  data required time                              8.000000
+  data arrival time                               -0.348849
+  -----------------------------------------------------------
+  slack (MET)                                     7.651152
+
+
+1

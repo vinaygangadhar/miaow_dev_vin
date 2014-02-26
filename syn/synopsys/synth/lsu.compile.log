@@ -1,0 +1,522 @@
+Warning: Ignoring -power_effort option since there is no power constraint. (PWR-59)
+Warning: Setting attribute 'fix_multiple_port_nets' on design 'lsu'. (UIO-59)
+Information: Evaluating DesignWare library utilization. (UISN-27)
+
+============================================================================
+| DesignWare Building Block Library  |         Version         | Available |
+============================================================================
+| Basic DW Building Blocks           | G-2012.06-DWBB_201206.0 |     *     |
+| Licensed DW Building Blocks        |                         |     *     |
+============================================================================
+
+
+Information: There are 333 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
+
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'lsu'
+Information: The register 'flops_rd_ex/flop_opcode[22]/state_reg' will be removed. (OPT-1207)
+Information: The register 'flops_rd_ex/flop_opcode[21]/state_reg' will be removed. (OPT-1207)
+Information: The register 'flops_rd_ex/flop_opcode[20]/state_reg' will be removed. (OPT-1207)
+Information: The register 'flops_rd_ex/flop_opcode[19]/state_reg' will be removed. (OPT-1207)
+Information: The register 'flops_rd_ex/flop_opcode[18]/state_reg' will be removed. (OPT-1207)
+Information: The register 'flops_rd_ex/flop_opcode[17]/state_reg' will be removed. (OPT-1207)
+Information: The register 'flops_rd_ex/flop_opcode[16]/state_reg' will be removed. (OPT-1207)
+Information: The register 'flops_rd_ex/flop_opcode[15]/state_reg' will be removed. (OPT-1207)
+Information: The register 'flops_rd_ex/flop_opcode[14]/state_reg' will be removed. (OPT-1207)
+Information: The register 'flops_rd_ex/flop_opcode[13]/state_reg' will be removed. (OPT-1207)
+Information: The register 'flops_rd_ex/flop_opcode[10]/state_reg' will be removed. (OPT-1207)
+Information: The register 'flops_rd_ex/flop_opcode[9]/state_reg' will be removed. (OPT-1207)
+Information: The register 'flops_rd_ex/flop_opcode[8]/state_reg' will be removed. (OPT-1207)
+Information: The register 'flops_rd_ex/flop_opcode[7]/state_reg' will be removed. (OPT-1207)
+Information: The register 'flops_rd_ex/flop_opcode[6]/state_reg' will be removed. (OPT-1207)
+Information: The register 'flops_rd_ex/flop_opcode[5]/state_reg' will be removed. (OPT-1207)
+Information: The register 'flops_rd_ex/flop_opcode[4]/state_reg' will be removed. (OPT-1207)
+Information: The register 'flops_rd_ex/flop_opcode[3]/state_reg' will be removed. (OPT-1207)
+Information: The register 'flops_rd_ex/flop_opcode[2]/state_reg' will be removed. (OPT-1207)
+Information: The register 'flops_rd_ex/flop_opcode[1]/state_reg' will be removed. (OPT-1207)
+Information: The register 'flops_rd_ex/flop_opcode[0]/state_reg' will be removed. (OPT-1207)
+Information: The register 'flops_rd_ex/flop_scalar_source_a[127]/state_reg' will be removed. (OPT-1207)
+Information: The register 'flops_rd_ex/flop_scalar_source_a[126]/state_reg' will be removed. (OPT-1207)
+Information: The register 'flops_rd_ex/flop_scalar_source_a[125]/state_reg' will be removed. (OPT-1207)
+Information: The register 'flops_rd_ex/flop_scalar_source_a[124]/state_reg' will be removed. (OPT-1207)
+Information: The register 'flops_rd_ex/flop_scalar_source_a[123]/state_reg' will be removed. (OPT-1207)
+Information: The register 'flops_rd_ex/flop_scalar_source_a[122]/state_reg' will be removed. (OPT-1207)
+Information: The register 'flops_rd_ex/flop_scalar_source_a[121]/state_reg' will be removed. (OPT-1207)
+Information: The register 'flops_rd_ex/flop_scalar_source_a[120]/state_reg' will be removed. (OPT-1207)
+Information: The register 'flops_rd_ex/flop_scalar_source_a[119]/state_reg' will be removed. (OPT-1207)
+Information: The register 'flops_rd_ex/flop_scalar_source_a[118]/state_reg' will be removed. (OPT-1207)
+Information: The register 'flops_rd_ex/flop_scalar_source_a[117]/state_reg' will be removed. (OPT-1207)
+Information: The register 'flops_rd_ex/flop_scalar_source_a[116]/state_reg' will be removed. (OPT-1207)
+Information: The register 'flops_rd_ex/flop_scalar_source_a[115]/state_reg' will be removed. (OPT-1207)
+Information: The register 'flops_rd_ex/flop_scalar_source_a[114]/state_reg' will be removed. (OPT-1207)
+Information: The register 'flops_rd_ex/flop_scalar_source_a[113]/state_reg' will be removed. (OPT-1207)
+Information: The register 'flops_rd_ex/flop_scalar_source_a[112]/state_reg' will be removed. (OPT-1207)
+Information: The register 'flops_rd_ex/flop_scalar_source_a[111]/state_reg' will be removed. (OPT-1207)
+Information: The register 'flops_rd_ex/flop_scalar_source_a[110]/state_reg' will be removed. (OPT-1207)
+Information: The register 'flops_rd_ex/flop_scalar_source_a[109]/state_reg' will be removed. (OPT-1207)
+Information: The register 'flops_rd_ex/flop_scalar_source_a[108]/state_reg' will be removed. (OPT-1207)
+Information: The register 'flops_rd_ex/flop_scalar_source_a[107]/state_reg' will be removed. (OPT-1207)
+Information: The register 'flops_rd_ex/flop_scalar_source_a[106]/state_reg' will be removed. (OPT-1207)
+Information: The register 'flops_rd_ex/flop_scalar_source_a[105]/state_reg' will be removed. (OPT-1207)
+Information: The register 'flops_rd_ex/flop_scalar_source_a[104]/state_reg' will be removed. (OPT-1207)
+Information: The register 'flops_rd_ex/flop_scalar_source_a[103]/state_reg' will be removed. (OPT-1207)
+Information: The register 'flops_rd_ex/flop_scalar_source_a[102]/state_reg' will be removed. (OPT-1207)
+Information: The register 'flops_rd_ex/flop_scalar_source_a[101]/state_reg' will be removed. (OPT-1207)
+Information: The register 'flops_rd_ex/flop_scalar_source_a[100]/state_reg' will be removed. (OPT-1207)
+Information: The register 'flops_rd_ex/flop_scalar_source_a[99]/state_reg' will be removed. (OPT-1207)
+Information: The register 'flops_rd_ex/flop_scalar_source_a[98]/state_reg' will be removed. (OPT-1207)
+Information: The register 'flops_rd_ex/flop_scalar_source_a[97]/state_reg' will be removed. (OPT-1207)
+Information: The register 'flops_rd_ex/flop_scalar_source_a[96]/state_reg' will be removed. (OPT-1207)
+Information: The register 'flops_rd_ex/flop_scalar_source_a[95]/state_reg' will be removed. (OPT-1207)
+Information: The register 'flops_rd_ex/flop_scalar_source_a[94]/state_reg' will be removed. (OPT-1207)
+Information: The register 'flops_rd_ex/flop_scalar_source_a[93]/state_reg' will be removed. (OPT-1207)
+Information: The register 'flops_rd_ex/flop_scalar_source_a[92]/state_reg' will be removed. (OPT-1207)
+Information: The register 'flops_rd_ex/flop_scalar_source_a[91]/state_reg' will be removed. (OPT-1207)
+Information: The register 'flops_rd_ex/flop_scalar_source_a[90]/state_reg' will be removed. (OPT-1207)
+Information: The register 'flops_rd_ex/flop_scalar_source_a[89]/state_reg' will be removed. (OPT-1207)
+Information: The register 'flops_rd_ex/flop_scalar_source_a[88]/state_reg' will be removed. (OPT-1207)
+Information: The register 'flops_rd_ex/flop_scalar_source_a[87]/state_reg' will be removed. (OPT-1207)
+Information: The register 'flops_rd_ex/flop_scalar_source_a[86]/state_reg' will be removed. (OPT-1207)
+Information: The register 'flops_rd_ex/flop_scalar_source_a[85]/state_reg' will be removed. (OPT-1207)
+Information: The register 'flops_rd_ex/flop_scalar_source_a[84]/state_reg' will be removed. (OPT-1207)
+Information: The register 'flops_rd_ex/flop_scalar_source_a[83]/state_reg' will be removed. (OPT-1207)
+Information: The register 'flops_rd_ex/flop_scalar_source_a[82]/state_reg' will be removed. (OPT-1207)
+Information: The register 'flops_rd_ex/flop_scalar_source_a[81]/state_reg' will be removed. (OPT-1207)
+Information: The register 'flops_rd_ex/flop_scalar_source_a[80]/state_reg' will be removed. (OPT-1207)
+Information: The register 'flops_rd_ex/flop_scalar_source_a[79]/state_reg' will be removed. (OPT-1207)
+Information: The register 'flops_rd_ex/flop_scalar_source_a[78]/state_reg' will be removed. (OPT-1207)
+Information: The register 'flops_rd_ex/flop_scalar_source_a[77]/state_reg' will be removed. (OPT-1207)
+Information: The register 'flops_rd_ex/flop_scalar_source_a[76]/state_reg' will be removed. (OPT-1207)
+Information: The register 'flops_rd_ex/flop_scalar_source_a[75]/state_reg' will be removed. (OPT-1207)
+Information: The register 'flops_rd_ex/flop_scalar_source_a[74]/state_reg' will be removed. (OPT-1207)
+Information: The register 'flops_rd_ex/flop_scalar_source_a[73]/state_reg' will be removed. (OPT-1207)
+Information: The register 'flops_rd_ex/flop_scalar_source_a[72]/state_reg' will be removed. (OPT-1207)
+Information: The register 'flops_rd_ex/flop_scalar_source_a[71]/state_reg' will be removed. (OPT-1207)
+Information: The register 'flops_rd_ex/flop_scalar_source_a[70]/state_reg' will be removed. (OPT-1207)
+Information: The register 'flops_rd_ex/flop_scalar_source_a[69]/state_reg' will be removed. (OPT-1207)
+Information: The register 'flops_rd_ex/flop_scalar_source_a[68]/state_reg' will be removed. (OPT-1207)
+Information: The register 'flops_rd_ex/flop_scalar_source_a[67]/state_reg' will be removed. (OPT-1207)
+Information: The register 'flops_rd_ex/flop_scalar_source_a[66]/state_reg' will be removed. (OPT-1207)
+Information: The register 'flops_rd_ex/flop_scalar_source_a[65]/state_reg' will be removed. (OPT-1207)
+Information: The register 'flops_rd_ex/flop_scalar_source_a[64]/state_reg' will be removed. (OPT-1207)
+Information: The register 'flops_rd_ex/flop_scalar_source_a[63]/state_reg' will be removed. (OPT-1207)
+Information: The register 'flops_rd_ex/flop_scalar_source_a[62]/state_reg' will be removed. (OPT-1207)
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+
+  Beginning Implementation Selection
+  ----------------------------------
+  Processing 'lsu_DW01_add_0'
+  Processing 'lsu_DW01_add_1'
+  Processing 'lsu_DW01_add_2'
+  Processing 'lsu_DW01_add_3'
+  Processing 'lsu_DW01_add_4'
+  Processing 'lsu_DW01_add_5'
+  Processing 'lsu_DW01_add_6'
+  Processing 'lsu_DW01_add_7'
+  Processing 'lsu_DW01_add_8'
+  Processing 'lsu_DW01_add_9'
+  Processing 'lsu_DW01_add_10'
+  Processing 'lsu_DW01_add_11'
+  Processing 'lsu_DW01_add_12'
+  Processing 'lsu_DW01_add_13'
+  Processing 'lsu_DW01_add_14'
+  Processing 'lsu_DW01_add_15'
+  Processing 'lsu_DW01_add_16'
+  Processing 'lsu_DW01_add_17'
+  Processing 'lsu_DW01_add_18'
+  Processing 'lsu_DW01_add_19'
+  Processing 'lsu_DW01_add_20'
+  Processing 'lsu_DW01_add_21'
+  Processing 'lsu_DW01_add_22'
+  Processing 'lsu_DW01_add_23'
+  Processing 'lsu_DW01_add_24'
+  Processing 'lsu_DW01_add_25'
+  Processing 'lsu_DW01_add_26'
+  Processing 'lsu_DW01_add_27'
+  Processing 'lsu_DW01_add_28'
+  Processing 'lsu_DW01_add_29'
+  Processing 'lsu_DW01_add_30'
+  Processing 'lsu_DW01_add_31'
+  Processing 'lsu_DW01_add_32'
+  Processing 'lsu_DW01_add_33'
+  Processing 'lsu_DW01_add_34'
+  Processing 'lsu_DW01_add_35'
+  Processing 'lsu_DW01_add_36'
+  Processing 'lsu_DW01_add_37'
+  Processing 'lsu_DW01_add_38'
+  Processing 'lsu_DW01_add_39'
+  Processing 'lsu_DW01_add_40'
+  Processing 'lsu_DW01_add_41'
+  Processing 'lsu_DW01_add_42'
+  Processing 'lsu_DW01_add_43'
+  Processing 'lsu_DW01_add_44'
+  Processing 'lsu_DW01_add_45'
+  Processing 'lsu_DW01_add_46'
+  Processing 'lsu_DW01_add_47'
+  Processing 'lsu_DW01_add_48'
+  Processing 'lsu_DW01_add_49'
+  Processing 'lsu_DW01_add_50'
+  Processing 'lsu_DW01_add_51'
+  Processing 'lsu_DW01_add_52'
+  Processing 'lsu_DW01_add_53'
+  Processing 'lsu_DW01_add_54'
+  Processing 'lsu_DW01_add_55'
+  Processing 'lsu_DW01_add_56'
+  Processing 'lsu_DW01_add_57'
+  Processing 'lsu_DW01_add_58'
+  Processing 'lsu_DW01_add_59'
+  Processing 'lsu_DW01_add_60'
+  Processing 'lsu_DW01_add_61'
+  Processing 'lsu_DW01_add_62'
+  Processing 'lsu_DW01_add_63'
+  Processing 'lsu_DW01_add_64'
+  Processing 'lsu_DW01_add_65'
+  Processing 'lsu_DW01_add_66'
+  Processing 'lsu_DW01_add_67'
+  Processing 'lsu_DW01_add_68'
+  Processing 'lsu_DW01_add_69'
+  Processing 'lsu_DW01_add_70'
+  Processing 'lsu_DW01_add_71'
+  Processing 'lsu_DW01_add_72'
+  Processing 'lsu_DW01_add_73'
+  Processing 'lsu_DW01_add_74'
+  Processing 'lsu_DW01_add_75'
+  Processing 'lsu_DW01_add_76'
+  Processing 'lsu_DW01_add_77'
+  Processing 'lsu_DW01_add_78'
+  Processing 'lsu_DW01_add_79'
+  Processing 'lsu_DW01_add_80'
+  Processing 'lsu_DW01_add_81'
+  Processing 'lsu_DW01_add_82'
+  Processing 'lsu_DW01_add_83'
+  Processing 'lsu_DW01_add_84'
+  Processing 'lsu_DW01_add_85'
+  Processing 'lsu_DW01_add_86'
+  Processing 'lsu_DW01_add_87'
+  Processing 'lsu_DW01_add_88'
+  Processing 'lsu_DW01_add_89'
+  Processing 'lsu_DW01_add_90'
+  Processing 'lsu_DW01_add_91'
+  Processing 'lsu_DW01_add_92'
+  Processing 'lsu_DW01_add_93'
+  Processing 'lsu_DW01_add_94'
+  Processing 'lsu_DW01_add_95'
+  Processing 'lsu_DW01_add_96'
+  Processing 'lsu_DW01_add_97'
+  Processing 'lsu_DW01_add_98'
+  Processing 'lsu_DW01_add_99'
+  Processing 'lsu_DW01_add_100'
+  Processing 'lsu_DW01_add_101'
+  Processing 'lsu_DW01_add_102'
+  Processing 'lsu_DW01_add_103'
+  Processing 'lsu_DW01_add_104'
+  Processing 'lsu_DW01_add_105'
+  Processing 'lsu_DW01_add_106'
+  Processing 'lsu_DW01_add_107'
+  Processing 'lsu_DW01_add_108'
+  Processing 'lsu_DW01_add_109'
+  Processing 'lsu_DW01_add_110'
+  Processing 'lsu_DW01_add_111'
+  Processing 'lsu_DW01_add_112'
+  Processing 'lsu_DW01_add_113'
+  Processing 'lsu_DW01_add_114'
+  Processing 'lsu_DW01_add_115'
+  Processing 'lsu_DW01_add_116'
+  Processing 'lsu_DW01_add_117'
+  Processing 'lsu_DW01_add_118'
+  Processing 'lsu_DW01_add_119'
+  Processing 'lsu_DW01_add_120'
+  Processing 'lsu_DW01_add_121'
+  Processing 'lsu_DW01_add_122'
+  Processing 'lsu_DW01_add_123'
+  Processing 'lsu_DW01_add_124'
+  Processing 'lsu_DW01_add_125'
+  Processing 'lsu_DW01_add_126'
+  Processing 'lsu_DW01_add_127'
+  Processing 'lsu_DW01_add_128'
+  Processing 'lsu_DW02_mult_0'
+  Processing 'lsu_DW01_add_129'
+  Processing 'lsu_DW01_add_130'
+  Processing 'lsu_DW02_mult_1'
+  Processing 'lsu_DW01_add_131'
+  Processing 'lsu_DW01_add_132'
+  Processing 'lsu_DW02_mult_2'
+  Processing 'lsu_DW01_add_133'
+  Processing 'lsu_DW01_add_134'
+  Processing 'lsu_DW02_mult_3'
+  Processing 'lsu_DW01_add_135'
+  Processing 'lsu_DW01_add_136'
+  Processing 'lsu_DW02_mult_4'
+  Processing 'lsu_DW01_add_137'
+  Processing 'lsu_DW01_add_138'
+  Processing 'lsu_DW02_mult_5'
+  Processing 'lsu_DW01_add_139'
+  Processing 'lsu_DW01_add_140'
+  Processing 'lsu_DW02_mult_6'
+  Processing 'lsu_DW01_add_141'
+  Processing 'lsu_DW01_add_142'
+  Processing 'lsu_DW02_mult_7'
+  Processing 'lsu_DW01_add_143'
+  Processing 'lsu_DW01_add_144'
+  Processing 'lsu_DW02_mult_8'
+  Processing 'lsu_DW01_add_145'
+  Processing 'lsu_DW01_add_146'
+  Processing 'lsu_DW02_mult_9'
+  Processing 'lsu_DW01_add_147'
+  Processing 'lsu_DW01_add_148'
+  Processing 'lsu_DW02_mult_10'
+  Processing 'lsu_DW01_add_149'
+  Processing 'lsu_DW01_add_150'
+  Processing 'lsu_DW02_mult_11'
+  Processing 'lsu_DW01_add_151'
+  Processing 'lsu_DW01_add_152'
+  Processing 'lsu_DW02_mult_12'
+  Processing 'lsu_DW01_add_153'
+  Processing 'lsu_DW01_add_154'
+  Processing 'lsu_DW02_mult_13'
+  Processing 'lsu_DW01_add_155'
+  Processing 'lsu_DW01_add_156'
+  Processing 'lsu_DW02_mult_14'
+  Processing 'lsu_DW01_add_157'
+  Processing 'lsu_DW01_add_158'
+  Processing 'lsu_DW02_mult_15'
+  Processing 'lsu_DW01_add_159'
+  Processing 'lsu_DW01_add_160'
+  Processing 'lsu_DW02_mult_16'
+  Processing 'lsu_DW01_add_161'
+  Processing 'lsu_DW01_add_162'
+  Processing 'lsu_DW02_mult_17'
+  Processing 'lsu_DW01_add_163'
+  Processing 'lsu_DW01_add_164'
+  Processing 'lsu_DW02_mult_18'
+  Processing 'lsu_DW01_add_165'
+  Processing 'lsu_DW01_add_166'
+  Processing 'lsu_DW02_mult_19'
+  Processing 'lsu_DW01_add_167'
+  Processing 'lsu_DW01_add_168'
+  Processing 'lsu_DW02_mult_20'
+  Processing 'lsu_DW01_add_169'
+  Processing 'lsu_DW01_add_170'
+  Processing 'lsu_DW02_mult_21'
+  Processing 'lsu_DW01_add_171'
+  Processing 'lsu_DW01_add_172'
+  Processing 'lsu_DW02_mult_22'
+  Processing 'lsu_DW01_add_173'
+  Processing 'lsu_DW01_add_174'
+  Processing 'lsu_DW02_mult_23'
+  Processing 'lsu_DW01_add_175'
+  Processing 'lsu_DW01_add_176'
+  Processing 'lsu_DW02_mult_24'
+  Processing 'lsu_DW01_add_177'
+  Processing 'lsu_DW01_add_178'
+  Processing 'lsu_DW02_mult_25'
+  Processing 'lsu_DW01_add_179'
+  Processing 'lsu_DW01_add_180'
+  Processing 'lsu_DW02_mult_26'
+  Processing 'lsu_DW01_add_181'
+  Processing 'lsu_DW01_add_182'
+  Processing 'lsu_DW02_mult_27'
+  Processing 'lsu_DW01_add_183'
+  Processing 'lsu_DW01_add_184'
+  Processing 'lsu_DW02_mult_28'
+  Processing 'lsu_DW01_add_185'
+  Processing 'lsu_DW01_add_186'
+  Processing 'lsu_DW02_mult_29'
+  Processing 'lsu_DW01_add_187'
+  Processing 'lsu_DW01_add_188'
+  Processing 'lsu_DW02_mult_30'
+  Processing 'lsu_DW01_add_189'
+  Processing 'lsu_DW01_add_190'
+  Processing 'lsu_DW02_mult_31'
+  Processing 'lsu_DW01_add_191'
+  Processing 'lsu_DW01_add_192'
+  Processing 'lsu_DW02_mult_32'
+  Processing 'lsu_DW01_add_193'
+  Processing 'lsu_DW01_add_194'
+  Processing 'lsu_DW02_mult_33'
+  Processing 'lsu_DW01_add_195'
+  Processing 'lsu_DW01_add_196'
+  Processing 'lsu_DW02_mult_34'
+  Processing 'lsu_DW01_add_197'
+  Processing 'lsu_DW01_add_198'
+  Processing 'lsu_DW02_mult_35'
+  Processing 'lsu_DW01_add_199'
+  Processing 'lsu_DW01_add_200'
+  Processing 'lsu_DW02_mult_36'
+  Processing 'lsu_DW01_add_201'
+  Processing 'lsu_DW01_add_202'
+  Processing 'lsu_DW02_mult_37'
+  Processing 'lsu_DW01_add_203'
+  Processing 'lsu_DW01_add_204'
+  Processing 'lsu_DW02_mult_38'
+  Processing 'lsu_DW01_add_205'
+  Processing 'lsu_DW01_add_206'
+  Processing 'lsu_DW02_mult_39'
+  Processing 'lsu_DW01_add_207'
+  Processing 'lsu_DW01_add_208'
+  Processing 'lsu_DW02_mult_40'
+  Processing 'lsu_DW01_add_209'
+  Processing 'lsu_DW01_add_210'
+  Processing 'lsu_DW02_mult_41'
+  Processing 'lsu_DW01_add_211'
+  Processing 'lsu_DW01_add_212'
+  Processing 'lsu_DW02_mult_42'
+  Processing 'lsu_DW01_add_213'
+  Processing 'lsu_DW01_add_214'
+  Processing 'lsu_DW02_mult_43'
+  Processing 'lsu_DW01_add_215'
+  Processing 'lsu_DW01_add_216'
+  Processing 'lsu_DW02_mult_44'
+  Processing 'lsu_DW01_add_217'
+  Processing 'lsu_DW01_add_218'
+  Processing 'lsu_DW02_mult_45'
+  Processing 'lsu_DW01_add_219'
+  Processing 'lsu_DW01_add_220'
+  Processing 'lsu_DW02_mult_46'
+  Processing 'lsu_DW01_add_221'
+  Processing 'lsu_DW01_add_222'
+  Processing 'lsu_DW02_mult_47'
+  Processing 'lsu_DW01_add_223'
+  Processing 'lsu_DW01_add_224'
+  Processing 'lsu_DW02_mult_48'
+  Processing 'lsu_DW01_add_225'
+  Processing 'lsu_DW01_add_226'
+  Processing 'lsu_DW02_mult_49'
+  Processing 'lsu_DW01_add_227'
+  Processing 'lsu_DW01_add_228'
+  Processing 'lsu_DW02_mult_50'
+  Processing 'lsu_DW01_add_229'
+  Processing 'lsu_DW01_add_230'
+  Processing 'lsu_DW02_mult_51'
+  Processing 'lsu_DW01_add_231'
+  Processing 'lsu_DW01_add_232'
+  Processing 'lsu_DW02_mult_52'
+  Processing 'lsu_DW01_add_233'
+  Processing 'lsu_DW01_add_234'
+  Processing 'lsu_DW02_mult_53'
+  Processing 'lsu_DW01_add_235'
+  Processing 'lsu_DW01_add_236'
+  Processing 'lsu_DW02_mult_54'
+  Processing 'lsu_DW01_add_237'
+  Processing 'lsu_DW01_add_238'
+  Processing 'lsu_DW02_mult_55'
+  Processing 'lsu_DW01_add_239'
+  Processing 'lsu_DW01_add_240'
+  Processing 'lsu_DW02_mult_56'
+  Processing 'lsu_DW01_add_241'
+  Processing 'lsu_DW01_add_242'
+  Processing 'lsu_DW02_mult_57'
+  Processing 'lsu_DW01_add_243'
+  Processing 'lsu_DW01_add_244'
+  Processing 'lsu_DW02_mult_58'
+  Processing 'lsu_DW01_add_245'
+  Processing 'lsu_DW01_add_246'
+  Processing 'lsu_DW02_mult_59'
+  Processing 'lsu_DW01_add_247'
+  Processing 'lsu_DW01_add_248'
+  Processing 'lsu_DW02_mult_60'
+  Processing 'lsu_DW01_add_249'
+  Processing 'lsu_DW01_add_250'
+  Processing 'lsu_DW02_mult_61'
+  Processing 'lsu_DW01_add_251'
+  Processing 'lsu_DW01_add_252'
+  Processing 'lsu_DW02_mult_62'
+  Processing 'lsu_DW01_add_253'
+  Processing 'lsu_DW01_inc_0'
+  Processing 'lsu_DW02_mult_63'
+  Processing 'lsu_DW01_add_254'
+  Processing 'lsu_DW01_add_255'
+
+  Beginning Mapping Optimizations  (High effort)
+  -------------------------------
+
+   ELAPSED            WORST NEG TOTAL NEG  DESIGN                             MIN DELAY
+    TIME      AREA      SLACK     SLACK   RULE COST         ENDPOINT            COST   
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:04:26  953626.1      4.62   15457.5   38104.5                                0.00
+    0:04:26  953626.1      4.62   15457.5   38104.5                                0.00
+    0:04:29  932721.9      4.62   15395.1   29915.8                                0.00
+    0:04:33  911817.8      4.62   15321.8   21627.7                                0.00
+    0:04:36  887791.6      4.57   12329.0   11915.1                                0.00
+    0:04:37  887424.5      4.57   12302.8   11452.3                                0.00
+    0:04:37  887057.4      4.57   12277.8   10989.4                                0.00
+    0:04:37  886690.2      4.57   12252.8   10526.6                                0.00
+    0:04:39  867532.1      0.00       0.0    4261.1                                0.00
+    0:05:36  896689.9      0.00       0.0       0.0                                0.00
+    0:05:37  896689.9      0.00       0.0       0.0                                0.00
+    0:05:37  896689.9      0.00       0.0       0.0                                0.00
+    0:05:38  896689.9      0.00       0.0       0.0                                0.00
+    0:05:38  896689.9      0.00       0.0       0.0                                0.00
+    0:05:39  896689.9      0.00       0.0       0.0                                0.00
+    0:05:52  806904.3      0.00       0.0       0.0                                0.00
+    0:05:55  806850.9      0.00       0.0       0.0                                0.00
+    0:06:06  806850.9      0.00       0.0       0.0                                0.00
+    0:06:06  806850.9      0.00       0.0       0.0                                0.00
+    0:06:07  806850.9      0.00       0.0       0.0                                0.00
+    0:06:07  806850.9      0.00       0.0       0.0                                0.00
+    0:06:07  806850.9      0.00       0.0       0.0                                0.00
+    0:06:07  806850.9      0.00       0.0       0.0                                0.00
+    0:06:07  806850.9      0.00       0.0       0.0                                0.00
+    0:06:08  806729.5      0.00       0.0       0.0                                0.00
+
+
+
+  Beginning Delay Optimization Phase
+  ----------------------------------
+
+   ELAPSED            WORST NEG TOTAL NEG  DESIGN                             MIN DELAY
+    TIME      AREA      SLACK     SLACK   RULE COST         ENDPOINT            COST   
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:06:08  806729.5      0.00       0.0       0.0                                0.00
+    0:06:08  806729.5      0.00       0.0       0.0                                0.00
+    0:06:10  806729.5      0.00       0.0       0.0                                0.00
+
+
+  Beginning Area-Recovery Phase  (cleanup)
+  -----------------------------
+
+   ELAPSED            WORST NEG TOTAL NEG  DESIGN                             MIN DELAY
+    TIME      AREA      SLACK     SLACK   RULE COST         ENDPOINT            COST   
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:06:17  806729.5      0.00       0.0       0.0                                0.00
+    0:06:17  806729.5      0.00       0.0       0.0                                0.00
+    0:06:17  806729.5      0.00       0.0       0.0                                0.00
+    0:06:36  806301.1      0.00       0.0       0.0                                0.00
+    0:06:49  806177.2      0.00       0.0       0.0                                0.00
+    0:07:04  806098.0      0.00       0.0       0.0                                0.00
+    0:07:18  806027.6      0.00       0.0       0.0                                0.00
+    0:07:30  805937.1      0.00       0.0       0.0                                0.00
+    0:07:42  805891.8      0.00       0.0       0.0                                0.00
+    0:07:56  805867.9      0.00       0.0       0.0                                0.00
+    0:08:07  805858.0      0.00       0.0       0.0                                0.00
+    0:08:17  805855.5      0.00       0.0       0.0                                0.00
+    0:08:26  805854.0      0.00       0.0       0.0                                0.00
+    0:08:35  805852.6      0.00       0.0       0.0                                0.00
+    0:08:45  805851.3      0.00       0.0       0.0                                0.00
+    0:08:54  805850.2      0.00       0.0       0.0                                0.00
+    0:09:03  805848.8      0.00       0.0       0.0                                0.00
+    0:09:13  805847.6      0.00       0.0       0.0                                0.00
+    0:09:22  805846.2      0.00       0.0       0.0                                0.00
+    0:09:22  805846.2      0.00       0.0       0.0                                0.00
+    0:09:22  805846.2      0.00       0.0       0.0                                0.00
+    0:09:22  805846.2      0.00       0.0       0.0                                0.00
+    0:09:23  805846.2      0.00       0.0       0.0                                0.00
+    0:09:24  805846.2      0.00       0.0       0.0                                0.00
+    0:09:24  805846.2      0.00       0.0       0.0                                0.00
+    0:09:24  805846.2      0.00       0.0       0.0                                0.00
+    0:09:24  805846.2      0.00       0.0       0.0                                0.00
+    0:09:24  805846.2      0.00       0.0       0.0                                0.00
+    0:09:24  805846.2      0.00       0.0       0.0                                0.00
+    0:09:26  805846.2      0.00       0.0       0.0                                0.00
+Loading db file '/p/vertical/afs-huge0/synopsys/32nmlib/SAED32_EDK/lib/stdcell_rvt/db_nldm/saed32rvt_tt1p05v25c.db'
+
+  Optimization Complete
+  ---------------------
+Warning: Design 'lsu' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+     Net 'clk': 33686 load(s), 1 driver(s)
+1

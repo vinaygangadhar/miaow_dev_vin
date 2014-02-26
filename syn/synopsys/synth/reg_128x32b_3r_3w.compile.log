@@ -1,0 +1,90 @@
+Warning: Ignoring -power_effort option since there is no power constraint. (PWR-59)
+Warning: Setting attribute 'fix_multiple_port_nets' on design 'reg_128x32b_3r_3w'. (UIO-59)
+Information: Evaluating DesignWare library utilization. (UISN-27)
+
+============================================================================
+| DesignWare Building Block Library  |         Version         | Available |
+============================================================================
+| Basic DW Building Blocks           | G-2012.06-DWBB_201206.0 |     *     |
+| Licensed DW Building Blocks        |                         |     *     |
+============================================================================
+
+
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'reg_128x32b_3r_3w'
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+
+  Beginning Mapping Optimizations  (High effort)
+  -------------------------------
+
+   ELAPSED            WORST NEG TOTAL NEG  DESIGN                             MIN DELAY
+    TIME      AREA      SLACK     SLACK   RULE COST         ENDPOINT            COST   
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:31  142236.8      0.00       0.0    5273.1                                0.00
+    0:00:31  142236.8      0.00       0.0    5273.1                                0.00
+    0:00:32  137292.7      0.00       0.0    3444.9                                0.00
+    0:00:32  132348.6      0.00       0.0    1673.4                                0.00
+    0:00:36  127582.5      0.00       0.0       0.0                                0.00
+    0:00:36  127582.5      0.00       0.0       0.0                                0.00
+    0:00:36  127582.5      0.00       0.0       0.0                                0.00
+    0:00:36  127582.5      0.00       0.0       0.0                                0.00
+    0:00:36  127582.5      0.00       0.0       0.0                                0.00
+    0:00:36  127582.5      0.00       0.0       0.0                                0.00
+    0:00:40  120528.0      0.00       0.0       0.0                                0.00
+    0:00:41  120528.0      0.00       0.0       0.0                                0.00
+    0:00:41  120528.0      0.00       0.0       0.0                                0.00
+    0:00:41  120528.0      0.00       0.0       0.0                                0.00
+    0:00:41  120528.0      0.00       0.0       0.0                                0.00
+    0:00:41  120528.0      0.00       0.0       0.0                                0.00
+    0:00:41  120528.0      0.00       0.0       0.0                                0.00
+    0:00:41  120528.0      0.00       0.0       0.0                                0.00
+    0:00:41  120528.0      0.00       0.0       0.0                                0.00
+
+
+
+  Beginning Delay Optimization Phase
+  ----------------------------------
+
+   ELAPSED            WORST NEG TOTAL NEG  DESIGN                             MIN DELAY
+    TIME      AREA      SLACK     SLACK   RULE COST         ENDPOINT            COST   
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:41  120528.0      0.00       0.0       0.0                                0.00
+    0:00:41  120528.0      0.00       0.0       0.0                                0.00
+    0:00:41  120528.0      0.00       0.0       0.0                                0.00
+
+
+  Beginning Area-Recovery Phase  (cleanup)
+  -----------------------------
+
+   ELAPSED            WORST NEG TOTAL NEG  DESIGN                             MIN DELAY
+    TIME      AREA      SLACK     SLACK   RULE COST         ENDPOINT            COST   
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:42  120528.0      0.00       0.0       0.0                                0.00
+    0:00:42  120528.0      0.00       0.0       0.0                                0.00
+    0:00:42  120528.0      0.00       0.0       0.0                                0.00
+    0:00:46  120395.5      0.00       0.0       0.0                                0.00
+    0:00:46  120274.6      0.00       0.0       0.0                                0.00
+    0:00:48  120274.6      0.00       0.0       0.0                                0.00
+    0:00:48  120274.6      0.00       0.0       0.0                                0.00
+    0:00:48  120274.6      0.00       0.0       0.0                                0.00
+    0:00:48  120274.6      0.00       0.0       0.0                                0.00
+    0:00:48  120274.6      0.00       0.0       0.0                                0.00
+    0:00:49  120274.6      0.00       0.0       0.0                                0.00
+    0:00:49  120274.6      0.00       0.0       0.0                                0.00
+    0:00:49  120274.6      0.00       0.0       0.0                                0.00
+    0:00:49  120274.6      0.00       0.0       0.0                                0.00
+    0:00:49  120274.6      0.00       0.0       0.0                                0.00
+    0:00:49  120274.6      0.00       0.0       0.0                                0.00
+    0:00:49  120274.6      0.00       0.0       0.0                                0.00
+    0:00:49  120274.6      0.00       0.0       0.0                                0.00
+Loading db file '/p/vertical/afs-huge0/synopsys/32nmlib/SAED32_EDK/lib/stdcell_rvt/db_nldm/saed32rvt_tt1p05v25c.db'
+
+  Optimization Complete
+  ---------------------
+Warning: Design 'reg_128x32b_3r_3w' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+     Net 'clk': 4096 load(s), 1 driver(s)
+1

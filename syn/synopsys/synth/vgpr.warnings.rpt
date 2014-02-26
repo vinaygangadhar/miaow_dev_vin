@@ -1,0 +1,29 @@
+ 
+****************************************
+check_design summary:
+Version:     G-2012.06
+Date:        Thu May 16 12:53:29 2013
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Inputs/Outputs                                                     11
+    Unconnected ports (LINT-28)                                    11
+
+Designs                                                             1
+    Black box (LINT-55)                                             1
+--------------------------------------------------------------------------------
+
+Warning: In design 'vgpr', port 'lsu_source1_rd_en' is not connected to any nets. (LINT-28)
+Warning: In design 'vgpr', port 'lsu_source2_rd_en' is not connected to any nets. (LINT-28)
+Warning: In design 'vgpr', port 'rfa_select_fu[15]' is not connected to any nets. (LINT-28)
+Warning: In design 'vgpr', port 'rfa_select_fu[14]' is not connected to any nets. (LINT-28)
+Warning: In design 'vgpr', port 'rfa_select_fu[13]' is not connected to any nets. (LINT-28)
+Warning: In design 'vgpr', port 'rfa_select_fu[12]' is not connected to any nets. (LINT-28)
+Warning: In design 'vgpr', port 'rfa_select_fu[11]' is not connected to any nets. (LINT-28)
+Warning: In design 'vgpr', port 'rfa_select_fu[10]' is not connected to any nets. (LINT-28)
+Warning: In design 'vgpr', port 'rfa_select_fu[9]' is not connected to any nets. (LINT-28)
+Warning: In design 'vgpr', port 'rfa_select_fu[8]' is not connected to any nets. (LINT-28)
+Warning: In design 'vgpr', port 'rst' is not connected to any nets. (LINT-28)
+Information: Design 'reg_1024x32b_3r_2w' does not contain any cells or nets. (LINT-55)
+1

@@ -1,0 +1,4 @@
+salu d
+The scalar alu for scalar operations
+issue_source_reg1 12, issue_source_reg2 12, issue_dest_reg 12, issue_imm_value0 16, issue_imm_value1 32, issue_opcode 32, issue_wfid 6, issue_alu_select 1, exec_rd_exec_value 64, exec_rd_vcc_value 64, exec_rd_m0_value 32, exec_rd_scc_value 1, sgpr_source2_data 64, sgpr_source1_data 64, issue_instr_pc 32
+exec_wr_exec_en 1, exec_wr_vcc_en 1, exec_wr_m0_en 1, exec_wr_scc_en 1, exec_wr_exec_value 64, exec_wr_vcc_value 64, exec_wr_m0_value 32, exec_wr_scc_value 1, exec_wr_wfid 6, exec_rd_en  1, exec_rd_wfid 6, sgpr_dest_data 64, sgpr_dest_addr 9, sgpr_dest_wr_en 2, sgpr_source2_addr 9, sgpr_source1_addr 9, sgpr_source1_rd_en 1, sgpr_source2_rd_en 1, issue_alu_ready 1, sgpr_instr_done_wfid 6, sgpr_instr_done 1, fetchwaveissue_branch_wfid 6, fetchwaveissue_branch_en 1, fetchwaveissue_branch_taken 1, fetch_branch_pc_value 32, tracemon_retire_pc 32, tracemon_exec_word_sel 2, tracemon_vcc_word_sel 2

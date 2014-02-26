@@ -1,0 +1,571 @@
+Loading db file '/p/vertical/afs-huge0/synopsys/32nmlib/SAED32_EDK/lib/stdcell_rvt/db_nldm/saed32rvt_tt1p05v25c.db'
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+ 
+****************************************
+Report : power
+        -hier
+        -analysis_effort low
+Design : simd
+Version: G-2012.06
+Date   : Thu May 16 13:13:59 2013
+****************************************
+
+
+Library(s) Used:
+
+    saed32rvt_tt1p05v25c (File: /p/vertical/afs-huge0/synopsys/32nmlib/SAED32_EDK/lib/stdcell_rvt/db_nldm/saed32rvt_tt1p05v25c.db)
+
+
+Operating Conditions: tt1p05v25c   Library: saed32rvt_tt1p05v25c
+Wire Load Model Mode: enclosed
+
+Design        Wire Load Model            Library
+------------------------------------------------
+simd                   540000            saed32rvt_tt1p05v25c
+simd_DW01_dec_0        ForQA             saed32rvt_tt1p05v25c
+simd_DW01_ash_0        ForQA             saed32rvt_tt1p05v25c
+simd_DW_rash_0         8000              saed32rvt_tt1p05v25c
+simd_DW_rash_1         8000              saed32rvt_tt1p05v25c
+simd_DW01_ash_1        8000              saed32rvt_tt1p05v25c
+simd_DW01_sub_0        ForQA             saed32rvt_tt1p05v25c
+simd_DW01_add_0        ForQA             saed32rvt_tt1p05v25c
+simd_DW01_sub_1        8000              saed32rvt_tt1p05v25c
+simd_DW01_sub_2        8000              saed32rvt_tt1p05v25c
+simd_DW01_dec_1        ForQA             saed32rvt_tt1p05v25c
+simd_DW01_ash_2        ForQA             saed32rvt_tt1p05v25c
+simd_DW_rash_2         8000              saed32rvt_tt1p05v25c
+simd_DW_rash_3         8000              saed32rvt_tt1p05v25c
+simd_DW01_ash_3        8000              saed32rvt_tt1p05v25c
+simd_DW01_sub_3        ForQA             saed32rvt_tt1p05v25c
+simd_DW01_add_1        ForQA             saed32rvt_tt1p05v25c
+simd_DW01_sub_4        8000              saed32rvt_tt1p05v25c
+simd_DW01_sub_5        8000              saed32rvt_tt1p05v25c
+simd_DW01_dec_2        ForQA             saed32rvt_tt1p05v25c
+simd_DW01_ash_4        ForQA             saed32rvt_tt1p05v25c
+simd_DW_rash_4         8000              saed32rvt_tt1p05v25c
+simd_DW_rash_5         8000              saed32rvt_tt1p05v25c
+simd_DW01_ash_5        8000              saed32rvt_tt1p05v25c
+simd_DW01_sub_6        ForQA             saed32rvt_tt1p05v25c
+simd_DW01_add_2        ForQA             saed32rvt_tt1p05v25c
+simd_DW01_sub_7        8000              saed32rvt_tt1p05v25c
+simd_DW01_sub_8        8000              saed32rvt_tt1p05v25c
+simd_DW01_dec_3        ForQA             saed32rvt_tt1p05v25c
+simd_DW01_ash_6        ForQA             saed32rvt_tt1p05v25c
+simd_DW_rash_6         8000              saed32rvt_tt1p05v25c
+simd_DW_rash_7         8000              saed32rvt_tt1p05v25c
+simd_DW01_ash_7        8000              saed32rvt_tt1p05v25c
+simd_DW01_sub_9        ForQA             saed32rvt_tt1p05v25c
+simd_DW01_add_3        ForQA             saed32rvt_tt1p05v25c
+simd_DW01_sub_10       8000              saed32rvt_tt1p05v25c
+simd_DW01_sub_11       8000              saed32rvt_tt1p05v25c
+simd_DW01_dec_4        ForQA             saed32rvt_tt1p05v25c
+simd_DW01_ash_8        ForQA             saed32rvt_tt1p05v25c
+simd_DW_rash_8         8000              saed32rvt_tt1p05v25c
+simd_DW_rash_9         8000              saed32rvt_tt1p05v25c
+simd_DW01_ash_9        8000              saed32rvt_tt1p05v25c
+simd_DW01_sub_12       ForQA             saed32rvt_tt1p05v25c
+simd_DW01_add_4        ForQA             saed32rvt_tt1p05v25c
+simd_DW01_sub_13       8000              saed32rvt_tt1p05v25c
+simd_DW01_sub_14       8000              saed32rvt_tt1p05v25c
+simd_DW01_dec_5        ForQA             saed32rvt_tt1p05v25c
+simd_DW01_ash_10       ForQA             saed32rvt_tt1p05v25c
+simd_DW_rash_10        8000              saed32rvt_tt1p05v25c
+simd_DW_rash_11        8000              saed32rvt_tt1p05v25c
+simd_DW01_ash_11       8000              saed32rvt_tt1p05v25c
+simd_DW01_sub_15       ForQA             saed32rvt_tt1p05v25c
+simd_DW01_add_5        ForQA             saed32rvt_tt1p05v25c
+simd_DW01_sub_16       8000              saed32rvt_tt1p05v25c
+simd_DW01_sub_17       8000              saed32rvt_tt1p05v25c
+simd_DW01_dec_6        ForQA             saed32rvt_tt1p05v25c
+simd_DW01_ash_12       ForQA             saed32rvt_tt1p05v25c
+simd_DW_rash_12        8000              saed32rvt_tt1p05v25c
+simd_DW_rash_13        8000              saed32rvt_tt1p05v25c
+simd_DW01_ash_13       8000              saed32rvt_tt1p05v25c
+simd_DW01_sub_18       ForQA             saed32rvt_tt1p05v25c
+simd_DW01_add_6        ForQA             saed32rvt_tt1p05v25c
+simd_DW01_sub_19       8000              saed32rvt_tt1p05v25c
+simd_DW01_sub_20       8000              saed32rvt_tt1p05v25c
+simd_DW01_dec_7        ForQA             saed32rvt_tt1p05v25c
+simd_DW01_ash_14       ForQA             saed32rvt_tt1p05v25c
+simd_DW_rash_14        8000              saed32rvt_tt1p05v25c
+simd_DW_rash_15        8000              saed32rvt_tt1p05v25c
+simd_DW01_ash_15       8000              saed32rvt_tt1p05v25c
+simd_DW01_sub_21       ForQA             saed32rvt_tt1p05v25c
+simd_DW01_add_7        ForQA             saed32rvt_tt1p05v25c
+simd_DW01_sub_22       8000              saed32rvt_tt1p05v25c
+simd_DW01_sub_23       8000              saed32rvt_tt1p05v25c
+simd_DW01_dec_8        ForQA             saed32rvt_tt1p05v25c
+simd_DW01_ash_16       ForQA             saed32rvt_tt1p05v25c
+simd_DW_rash_16        8000              saed32rvt_tt1p05v25c
+simd_DW_rash_17        8000              saed32rvt_tt1p05v25c
+simd_DW01_ash_17       8000              saed32rvt_tt1p05v25c
+simd_DW01_sub_24       ForQA             saed32rvt_tt1p05v25c
+simd_DW01_add_8        ForQA             saed32rvt_tt1p05v25c
+simd_DW01_sub_25       8000              saed32rvt_tt1p05v25c
+simd_DW01_sub_26       8000              saed32rvt_tt1p05v25c
+simd_DW01_dec_9        ForQA             saed32rvt_tt1p05v25c
+simd_DW01_ash_18       ForQA             saed32rvt_tt1p05v25c
+simd_DW_rash_18        8000              saed32rvt_tt1p05v25c
+simd_DW_rash_19        8000              saed32rvt_tt1p05v25c
+simd_DW01_ash_19       8000              saed32rvt_tt1p05v25c
+simd_DW01_sub_27       ForQA             saed32rvt_tt1p05v25c
+simd_DW01_add_9        ForQA             saed32rvt_tt1p05v25c
+simd_DW01_sub_28       8000              saed32rvt_tt1p05v25c
+simd_DW01_sub_29       8000              saed32rvt_tt1p05v25c
+simd_DW01_dec_10       ForQA             saed32rvt_tt1p05v25c
+simd_DW01_ash_20       ForQA             saed32rvt_tt1p05v25c
+simd_DW_rash_20        8000              saed32rvt_tt1p05v25c
+simd_DW_rash_21        8000              saed32rvt_tt1p05v25c
+simd_DW01_ash_21       8000              saed32rvt_tt1p05v25c
+simd_DW01_sub_30       ForQA             saed32rvt_tt1p05v25c
+simd_DW01_add_10       ForQA             saed32rvt_tt1p05v25c
+simd_DW01_sub_31       8000              saed32rvt_tt1p05v25c
+simd_DW01_sub_32       8000              saed32rvt_tt1p05v25c
+simd_DW01_dec_11       ForQA             saed32rvt_tt1p05v25c
+simd_DW01_ash_22       ForQA             saed32rvt_tt1p05v25c
+simd_DW_rash_22        8000              saed32rvt_tt1p05v25c
+simd_DW_rash_23        8000              saed32rvt_tt1p05v25c
+simd_DW01_ash_23       8000              saed32rvt_tt1p05v25c
+simd_DW01_sub_33       ForQA             saed32rvt_tt1p05v25c
+simd_DW01_add_11       ForQA             saed32rvt_tt1p05v25c
+simd_DW01_sub_34       8000              saed32rvt_tt1p05v25c
+simd_DW01_sub_35       8000              saed32rvt_tt1p05v25c
+simd_DW01_dec_12       ForQA             saed32rvt_tt1p05v25c
+simd_DW01_ash_24       ForQA             saed32rvt_tt1p05v25c
+simd_DW_rash_24        8000              saed32rvt_tt1p05v25c
+simd_DW_rash_25        8000              saed32rvt_tt1p05v25c
+simd_DW01_ash_25       8000              saed32rvt_tt1p05v25c
+simd_DW01_sub_36       ForQA             saed32rvt_tt1p05v25c
+simd_DW01_add_12       ForQA             saed32rvt_tt1p05v25c
+simd_DW01_sub_37       8000              saed32rvt_tt1p05v25c
+simd_DW01_sub_38       8000              saed32rvt_tt1p05v25c
+simd_DW01_dec_13       ForQA             saed32rvt_tt1p05v25c
+simd_DW01_ash_26       ForQA             saed32rvt_tt1p05v25c
+simd_DW_rash_26        8000              saed32rvt_tt1p05v25c
+simd_DW_rash_27        8000              saed32rvt_tt1p05v25c
+simd_DW01_ash_27       8000              saed32rvt_tt1p05v25c
+simd_DW01_sub_39       ForQA             saed32rvt_tt1p05v25c
+simd_DW01_add_13       ForQA             saed32rvt_tt1p05v25c
+simd_DW01_sub_40       8000              saed32rvt_tt1p05v25c
+simd_DW01_sub_41       8000              saed32rvt_tt1p05v25c
+simd_DW01_dec_14       ForQA             saed32rvt_tt1p05v25c
+simd_DW01_ash_28       ForQA             saed32rvt_tt1p05v25c
+simd_DW_rash_28        8000              saed32rvt_tt1p05v25c
+simd_DW_rash_29        8000              saed32rvt_tt1p05v25c
+simd_DW01_ash_29       8000              saed32rvt_tt1p05v25c
+simd_DW01_sub_42       ForQA             saed32rvt_tt1p05v25c
+simd_DW01_add_14       ForQA             saed32rvt_tt1p05v25c
+simd_DW01_sub_43       8000              saed32rvt_tt1p05v25c
+simd_DW01_sub_44       8000              saed32rvt_tt1p05v25c
+simd_DW01_dec_15       ForQA             saed32rvt_tt1p05v25c
+simd_DW01_ash_30       ForQA             saed32rvt_tt1p05v25c
+simd_DW_rash_30        8000              saed32rvt_tt1p05v25c
+simd_DW_rash_31        8000              saed32rvt_tt1p05v25c
+simd_DW01_ash_31       8000              saed32rvt_tt1p05v25c
+simd_DW01_sub_45       ForQA             saed32rvt_tt1p05v25c
+simd_DW01_add_15       ForQA             saed32rvt_tt1p05v25c
+simd_DW01_sub_46       8000              saed32rvt_tt1p05v25c
+simd_DW01_sub_47       8000              saed32rvt_tt1p05v25c
+simd_DW01_cmp6_0       8000              saed32rvt_tt1p05v25c
+simd_DW01_cmp6_1       8000              saed32rvt_tt1p05v25c
+simd_DW01_cmp6_2       8000              saed32rvt_tt1p05v25c
+simd_DW01_cmp6_3       8000              saed32rvt_tt1p05v25c
+simd_DW01_cmp6_4       8000              saed32rvt_tt1p05v25c
+simd_DW01_cmp6_5       8000              saed32rvt_tt1p05v25c
+simd_DW01_cmp6_6       8000              saed32rvt_tt1p05v25c
+simd_DW01_cmp6_7       8000              saed32rvt_tt1p05v25c
+simd_DW01_cmp6_8       8000              saed32rvt_tt1p05v25c
+simd_DW01_cmp6_9       8000              saed32rvt_tt1p05v25c
+simd_DW01_cmp6_10      8000              saed32rvt_tt1p05v25c
+simd_DW01_cmp6_11      8000              saed32rvt_tt1p05v25c
+simd_DW01_cmp6_12      8000              saed32rvt_tt1p05v25c
+simd_DW01_cmp6_13      8000              saed32rvt_tt1p05v25c
+simd_DW01_cmp6_14      8000              saed32rvt_tt1p05v25c
+simd_DW01_cmp6_15      8000              saed32rvt_tt1p05v25c
+simd_DW02_mult_0       16000             saed32rvt_tt1p05v25c
+simd_DW01_add_16       8000              saed32rvt_tt1p05v25c
+simd_DW02_mult_1       16000             saed32rvt_tt1p05v25c
+simd_DW01_add_17       8000              saed32rvt_tt1p05v25c
+simd_DW02_mult_2       16000             saed32rvt_tt1p05v25c
+simd_DW01_add_18       8000              saed32rvt_tt1p05v25c
+simd_DW02_mult_3       16000             saed32rvt_tt1p05v25c
+simd_DW01_add_19       8000              saed32rvt_tt1p05v25c
+simd_DW02_mult_4       16000             saed32rvt_tt1p05v25c
+simd_DW01_add_20       8000              saed32rvt_tt1p05v25c
+simd_DW02_mult_5       16000             saed32rvt_tt1p05v25c
+simd_DW01_add_21       8000              saed32rvt_tt1p05v25c
+simd_DW02_mult_6       16000             saed32rvt_tt1p05v25c
+simd_DW01_add_22       8000              saed32rvt_tt1p05v25c
+simd_DW02_mult_7       16000             saed32rvt_tt1p05v25c
+simd_DW01_add_23       8000              saed32rvt_tt1p05v25c
+simd_DW02_mult_8       16000             saed32rvt_tt1p05v25c
+simd_DW01_add_24       8000              saed32rvt_tt1p05v25c
+simd_DW02_mult_9       16000             saed32rvt_tt1p05v25c
+simd_DW01_add_25       8000              saed32rvt_tt1p05v25c
+simd_DW02_mult_10      16000             saed32rvt_tt1p05v25c
+simd_DW01_add_26       8000              saed32rvt_tt1p05v25c
+simd_DW02_mult_11      16000             saed32rvt_tt1p05v25c
+simd_DW01_add_27       8000              saed32rvt_tt1p05v25c
+simd_DW02_mult_12      16000             saed32rvt_tt1p05v25c
+simd_DW01_add_28       8000              saed32rvt_tt1p05v25c
+simd_DW02_mult_13      16000             saed32rvt_tt1p05v25c
+simd_DW01_add_29       8000              saed32rvt_tt1p05v25c
+simd_DW02_mult_14      16000             saed32rvt_tt1p05v25c
+simd_DW01_add_30       8000              saed32rvt_tt1p05v25c
+simd_DW02_mult_15      16000             saed32rvt_tt1p05v25c
+simd_DW01_add_31       8000              saed32rvt_tt1p05v25c
+
+
+Global Operating Voltage = 1.05 
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ns
+    Dynamic Power Units = 1uW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+--------------------------------------------------------------------------------
+                                       Switch   Int      Leak     Total
+Hierarchy                              Power    Power    Power    Power    %
+--------------------------------------------------------------------------------
+simd                                    466.698 1.57e+04 3.70e+10 5.32e+04 100.0
+  alu/valu/genblk1.simd_alu[15]/mult_542 (simd_DW02_mult_2)
+                                          0.000    0.000 5.20e+08  520.153   1.0
+  alu/valu/genblk1.simd_alu[14]/mult_542 (simd_DW02_mult_3)
+                                          0.000    0.000 5.18e+08  517.551   1.0
+  alu/valu/genblk1.simd_alu[13]/mult_542 (simd_DW02_mult_4)
+                                          0.000    0.000 5.23e+08  523.485   1.0
+  alu/valu/genblk1.simd_alu[12]/mult_542 (simd_DW02_mult_5)
+                                          0.000    0.000 4.95e+08  495.455   0.9
+  alu/valu/genblk1.simd_alu[11]/mult_542 (simd_DW02_mult_6)
+                                          0.000    0.000 5.00e+08  499.708   0.9
+  alu/valu/genblk1.simd_alu[10]/mult_542 (simd_DW02_mult_8)
+                                          0.000    0.000 4.81e+08  480.998   0.9
+  alu/valu/genblk1.simd_alu[9]/mult_542 (simd_DW02_mult_9)
+                                          0.000    0.000 4.84e+08  484.410   0.9
+  alu/valu/genblk1.simd_alu[8]/mult_542 (simd_DW02_mult_10)
+                                          0.000    0.000 5.21e+08  520.691   1.0
+  alu/valu/genblk1.simd_alu[7]/mult_542 (simd_DW02_mult_11)
+                                          0.000    0.000 5.10e+08  510.020   1.0
+  alu/valu/genblk1.simd_alu[6]/mult_542 (simd_DW02_mult_12)
+                                          0.000    0.000 5.23e+08  522.529   1.0
+  alu/valu/genblk1.simd_alu[5]/mult_542 (simd_DW02_mult_13)
+                                          0.000    0.000 5.46e+08  546.232   1.0
+  alu/valu/genblk1.simd_alu[4]/mult_542 (simd_DW02_mult_14)
+                                          0.000    0.000 4.94e+08  493.940   0.9
+  alu/valu/genblk1.simd_alu[3]/mult_542 (simd_DW02_mult_0)
+                                          0.000    0.000 5.32e+08  532.089   1.0
+  alu/valu/genblk1.simd_alu[2]/mult_542 (simd_DW02_mult_1)
+                                          0.000    0.000 5.14e+08  513.837   1.0
+  alu/valu/genblk1.simd_alu[1]/mult_542 (simd_DW02_mult_7)
+                                          0.000    0.000 4.76e+08  475.678   0.9
+  alu/valu/genblk1.simd_alu[0]/mult_542 (simd_DW02_mult_15)
+                                          0.000    0.000 4.80e+08  479.904   0.9
+  r19621 (simd_DW01_cmp6_15)              0.580    1.311 2.45e+07   26.409   0.0
+  r19633 (simd_DW01_cmp6_14)              0.580    1.308 2.45e+07   26.402   0.0
+  r19645 (simd_DW01_cmp6_13)              0.580    1.309 2.45e+07   26.410   0.0
+  r19657 (simd_DW01_cmp6_12)              0.580    1.310 2.45e+07   26.411   0.0
+  r19669 (simd_DW01_cmp6_11)              0.580    1.311 2.45e+07   26.413   0.0
+  r19681 (simd_DW01_cmp6_10)              0.580    1.312 2.45e+07   26.409   0.0
+  r19693 (simd_DW01_cmp6_9)               0.581    1.312 2.45e+07   26.415   0.0
+  r19705 (simd_DW01_cmp6_8)               0.579    1.306 2.45e+07   26.403   0.0
+  r19717 (simd_DW01_cmp6_7)               0.581    1.310 2.45e+07   26.415   0.0
+  r19729 (simd_DW01_cmp6_6)               0.581    1.312 2.45e+07   26.411   0.0
+  r19741 (simd_DW01_cmp6_5)               0.579    1.309 2.45e+07   26.416   0.0
+  r19753 (simd_DW01_cmp6_4)               0.579    1.307 2.45e+07   26.407   0.0
+  r19765 (simd_DW01_cmp6_3)               0.582    1.313 2.45e+07   26.408   0.0
+  r19777 (simd_DW01_cmp6_2)               0.581    1.312 2.45e+07   26.400   0.0
+  r19789 (simd_DW01_cmp6_1)               0.578    1.305 2.45e+07   26.401   0.0
+  r19801 (simd_DW01_cmp6_0)               0.580    1.310 2.45e+07   26.400   0.0
+  alu/valu/genblk1.simd_alu[0]/sub_add_64_b0 (simd_DW01_sub_47)
+                                          0.461    1.811 1.64e+07   18.623   0.0
+  alu/valu/genblk1.simd_alu[0]/sub_add_65_b0 (simd_DW01_sub_46)
+                                          0.498    1.922 1.87e+07   21.132   0.0
+  alu/valu/genblk1.simd_alu[0]/add_131 (simd_DW01_add_15)
+                                          0.327    2.102 1.12e+07   13.582   0.0
+  alu/valu/genblk1.simd_alu[0]/sub_136 (simd_DW01_sub_45)
+                                          0.628    2.272 1.85e+07   21.406   0.0
+  alu/valu/genblk1.simd_alu[0]/sll_159 (simd_DW01_ash_31)
+                                          1.327    3.719 3.15e+07   36.590   0.1
+  alu/valu/genblk1.simd_alu[0]/srl_165 (simd_DW_rash_31)
+                                          0.962    2.033 2.89e+07   31.894   0.1
+  alu/valu/genblk1.simd_alu[0]/srl_425 (simd_DW_rash_30)
+                                          0.968    2.070 2.89e+07   31.912   0.1
+  alu/valu/genblk1.simd_alu[0]/sll_425 (simd_DW01_ash_30)
+                                          0.335    0.272 1.13e+07   11.900   0.0
+  alu/valu/genblk1.simd_alu[0]/sub_425 (simd_DW01_dec_15)
+                                          0.453    0.808 1.57e+07   16.974   0.0
+  alu/valu/genblk1.simd_alu[1]/sub_add_64_b0 (simd_DW01_sub_44)
+                                          0.462    1.810 1.63e+07   18.621   0.0
+  alu/valu/genblk1.simd_alu[1]/sub_add_65_b0 (simd_DW01_sub_43)
+                                          0.498    1.926 1.88e+07   21.178   0.0
+  alu/valu/genblk1.simd_alu[1]/add_131 (simd_DW01_add_14)
+                                          0.327    2.101 1.11e+07   13.574   0.0
+  alu/valu/genblk1.simd_alu[1]/sub_136 (simd_DW01_sub_42)
+                                          0.629    2.274 1.85e+07   21.407   0.0
+  alu/valu/genblk1.simd_alu[1]/sll_159 (simd_DW01_ash_29)
+                                          1.322    3.719 3.16e+07   36.607   0.1
+  alu/valu/genblk1.simd_alu[1]/srl_165 (simd_DW_rash_29)
+                                          0.964    2.043 2.89e+07   31.934   0.1
+  alu/valu/genblk1.simd_alu[1]/srl_425 (simd_DW_rash_28)
+                                          0.962    2.055 2.89e+07   31.890   0.1
+  alu/valu/genblk1.simd_alu[1]/sll_425 (simd_DW01_ash_28)
+                                          0.337    0.273 1.13e+07   11.906   0.0
+  alu/valu/genblk1.simd_alu[1]/sub_425 (simd_DW01_dec_14)
+                                          0.455    0.810 1.57e+07   16.981   0.0
+  alu/valu/genblk1.simd_alu[2]/sub_add_64_b0 (simd_DW01_sub_41)
+                                          0.462    1.811 1.63e+07   18.622   0.0
+  alu/valu/genblk1.simd_alu[2]/sub_add_65_b0 (simd_DW01_sub_40)
+                                          0.462    1.810 1.66e+07   18.882   0.0
+  alu/valu/genblk1.simd_alu[2]/add_131 (simd_DW01_add_13)
+                                          0.327    2.100 1.11e+07   13.574   0.0
+  alu/valu/genblk1.simd_alu[2]/sub_136 (simd_DW01_sub_39)
+                                          0.629    2.274 1.85e+07   21.407   0.0
+  alu/valu/genblk1.simd_alu[2]/sll_159 (simd_DW01_ash_27)
+                                          1.328    3.725 3.16e+07   36.611   0.1
+  alu/valu/genblk1.simd_alu[2]/srl_165 (simd_DW_rash_27)
+                                          0.968    2.052 2.89e+07   31.946   0.1
+  alu/valu/genblk1.simd_alu[2]/srl_425 (simd_DW_rash_26)
+                                          0.968    2.070 2.89e+07   31.921   0.1
+  alu/valu/genblk1.simd_alu[2]/sll_425 (simd_DW01_ash_26)
+                                          0.338    0.274 1.13e+07   11.907   0.0
+  alu/valu/genblk1.simd_alu[2]/sub_425 (simd_DW01_dec_13)
+                                          0.456    0.812 1.57e+07   16.983   0.0
+  alu/valu/genblk1.simd_alu[3]/sub_add_64_b0 (simd_DW01_sub_38)
+                                          0.462    1.813 1.64e+07   18.627   0.0
+  alu/valu/genblk1.simd_alu[3]/sub_add_65_b0 (simd_DW01_sub_37)
+                                          0.461    1.809 1.66e+07   18.879   0.0
+  alu/valu/genblk1.simd_alu[3]/add_131 (simd_DW01_add_12)
+                                          0.327    2.101 1.12e+07   13.588   0.0
+  alu/valu/genblk1.simd_alu[3]/sub_136 (simd_DW01_sub_36)
+                                          0.628    2.273 1.85e+07   21.407   0.0
+  alu/valu/genblk1.simd_alu[3]/sll_159 (simd_DW01_ash_25)
+                                          1.328    3.726 3.15e+07   36.584   0.1
+  alu/valu/genblk1.simd_alu[3]/srl_165 (simd_DW_rash_25)
+                                          0.967    2.048 2.89e+07   31.917   0.1
+  alu/valu/genblk1.simd_alu[3]/srl_425 (simd_DW_rash_24)
+                                          0.964    2.059 2.89e+07   31.905   0.1
+  alu/valu/genblk1.simd_alu[3]/sll_425 (simd_DW01_ash_24)
+                                          0.334    0.272 1.13e+07   11.902   0.0
+  alu/valu/genblk1.simd_alu[3]/sub_425 (simd_DW01_dec_12)
+                                          0.449    0.800 1.57e+07   16.964   0.0
+  alu/valu/genblk1.simd_alu[4]/sub_add_64_b0 (simd_DW01_sub_35)
+                                          0.462    1.811 1.63e+07   18.622   0.0
+  alu/valu/genblk1.simd_alu[4]/sub_add_65_b0 (simd_DW01_sub_34)
+                                          0.462    1.854 1.65e+07   18.838   0.0
+  alu/valu/genblk1.simd_alu[4]/add_131 (simd_DW01_add_11)
+                                          0.327    2.102 1.11e+07   13.574   0.0
+  alu/valu/genblk1.simd_alu[4]/sub_136 (simd_DW01_sub_33)
+                                          0.625    2.266 1.85e+07   21.398   0.0
+  alu/valu/genblk1.simd_alu[4]/sll_159 (simd_DW01_ash_23)
+                                          1.325    3.723 3.16e+07   36.598   0.1
+  alu/valu/genblk1.simd_alu[4]/srl_165 (simd_DW_rash_23)
+                                          0.966    2.045 2.89e+07   31.922   0.1
+  alu/valu/genblk1.simd_alu[4]/srl_425 (simd_DW_rash_22)
+                                          0.968    2.066 2.89e+07   31.924   0.1
+  alu/valu/genblk1.simd_alu[4]/sll_425 (simd_DW01_ash_22)
+                                          0.334    0.271 1.13e+07   11.907   0.0
+  alu/valu/genblk1.simd_alu[4]/sub_425 (simd_DW01_dec_11)
+                                          0.452    0.805 1.57e+07   16.975   0.0
+  alu/valu/genblk1.simd_alu[5]/sub_add_64_b0 (simd_DW01_sub_32)
+                                          0.462    1.811 1.63e+07   18.622   0.0
+  alu/valu/genblk1.simd_alu[5]/sub_add_65_b0 (simd_DW01_sub_31)
+                                          0.462    1.852 1.65e+07   18.835   0.0
+  alu/valu/genblk1.simd_alu[5]/add_131 (simd_DW01_add_10)
+                                          0.328    2.107 1.11e+07   13.582   0.0
+  alu/valu/genblk1.simd_alu[5]/sub_136 (simd_DW01_sub_30)
+                                          0.627    2.269 1.85e+07   21.401   0.0
+  alu/valu/genblk1.simd_alu[5]/sll_159 (simd_DW01_ash_21)
+                                          1.318    3.699 3.15e+07   36.567   0.1
+  alu/valu/genblk1.simd_alu[5]/srl_165 (simd_DW_rash_21)
+                                          0.961    2.033 2.89e+07   31.901   0.1
+  alu/valu/genblk1.simd_alu[5]/srl_425 (simd_DW_rash_20)
+                                          0.969    2.075 2.89e+07   31.948   0.1
+  alu/valu/genblk1.simd_alu[5]/sll_425 (simd_DW01_ash_20)
+                                          0.338    0.274 1.13e+07   11.920   0.0
+  alu/valu/genblk1.simd_alu[5]/sub_425 (simd_DW01_dec_10)
+                                          0.455    0.812 1.57e+07   16.989   0.0
+  alu/valu/genblk1.simd_alu[6]/sub_add_64_b0 (simd_DW01_sub_29)
+                                          0.463    1.812 1.63e+07   18.625   0.0
+  alu/valu/genblk1.simd_alu[6]/sub_add_65_b0 (simd_DW01_sub_28)
+                                          0.476    1.815 1.70e+07   19.320   0.0
+  alu/valu/genblk1.simd_alu[6]/add_131 (simd_DW01_add_9)
+                                          0.326    2.100 1.11e+07   13.567   0.0
+  alu/valu/genblk1.simd_alu[6]/sub_136 (simd_DW01_sub_27)
+                                          0.628    2.274 1.85e+07   21.409   0.0
+  alu/valu/genblk1.simd_alu[6]/sll_159 (simd_DW01_ash_19)
+                                          1.329    3.730 3.15e+07   36.608   0.1
+  alu/valu/genblk1.simd_alu[6]/srl_165 (simd_DW_rash_19)
+                                          0.968    2.052 2.89e+07   31.921   0.1
+  alu/valu/genblk1.simd_alu[6]/srl_425 (simd_DW_rash_18)
+                                          0.968    2.067 2.89e+07   31.919   0.1
+  alu/valu/genblk1.simd_alu[6]/sll_425 (simd_DW01_ash_18)
+                                          0.336    0.273 1.13e+07   11.902   0.0
+  alu/valu/genblk1.simd_alu[6]/sub_425 (simd_DW01_dec_9)
+                                          0.452    0.806 1.57e+07   16.973   0.0
+  alu/valu/genblk1.simd_alu[7]/sub_add_64_b0 (simd_DW01_sub_26)
+                                          0.462    1.811 1.64e+07   18.623   0.0
+  alu/valu/genblk1.simd_alu[7]/sub_add_65_b0 (simd_DW01_sub_25)
+                                          0.471    1.838 1.71e+07   19.458   0.0
+  alu/valu/genblk1.simd_alu[7]/add_131 (simd_DW01_add_8)
+                                          0.326    2.098 1.11e+07   13.566   0.0
+  alu/valu/genblk1.simd_alu[7]/sub_136 (simd_DW01_sub_24)
+                                          0.627    2.267 1.85e+07   21.402   0.0
+  alu/valu/genblk1.simd_alu[7]/sll_159 (simd_DW01_ash_17)
+                                          1.327    3.723 3.16e+07   36.613   0.1
+  alu/valu/genblk1.simd_alu[7]/srl_165 (simd_DW_rash_17)
+                                          0.964    2.039 2.89e+07   31.904   0.1
+  alu/valu/genblk1.simd_alu[7]/srl_425 (simd_DW_rash_16)
+                                          0.965    2.066 2.89e+07   31.939   0.1
+  alu/valu/genblk1.simd_alu[7]/sll_425 (simd_DW01_ash_16)
+                                          0.336    0.272 1.13e+07   11.903   0.0
+  alu/valu/genblk1.simd_alu[7]/sub_425 (simd_DW01_dec_8)
+                                          0.453    0.807 1.57e+07   16.976   0.0
+  alu/valu/genblk1.simd_alu[8]/sub_add_64_b0 (simd_DW01_sub_23)
+                                          0.462    1.811 1.63e+07   18.622   0.0
+  alu/valu/genblk1.simd_alu[8]/sub_add_65_b0 (simd_DW01_sub_22)
+                                          0.461    1.851 1.65e+07   18.859   0.0
+  alu/valu/genblk1.simd_alu[8]/add_131 (simd_DW01_add_7)
+                                          0.326    2.098 1.11e+07   13.567   0.0
+  alu/valu/genblk1.simd_alu[8]/sub_136 (simd_DW01_sub_21)
+                                          0.627    2.270 1.85e+07   21.405   0.0
+  alu/valu/genblk1.simd_alu[8]/sll_159 (simd_DW01_ash_15)
+                                          1.322    3.709 3.16e+07   36.586   0.1
+  alu/valu/genblk1.simd_alu[8]/srl_165 (simd_DW_rash_15)
+                                          0.963    2.040 2.89e+07   31.902   0.1
+  alu/valu/genblk1.simd_alu[8]/srl_425 (simd_DW_rash_14)
+                                          0.965    2.065 2.89e+07   31.917   0.1
+  alu/valu/genblk1.simd_alu[8]/sll_425 (simd_DW01_ash_14)
+                                          0.337    0.274 1.13e+07   11.910   0.0
+  alu/valu/genblk1.simd_alu[8]/sub_425 (simd_DW01_dec_7)
+                                          0.457    0.815 1.57e+07   16.989   0.0
+  alu/valu/genblk1.simd_alu[9]/sub_add_64_b0 (simd_DW01_sub_20)
+                                          0.462    1.812 1.64e+07   18.624   0.0
+  alu/valu/genblk1.simd_alu[9]/sub_add_65_b0 (simd_DW01_sub_19)
+                                          0.461    1.810 1.66e+07   18.854   0.0
+  alu/valu/genblk1.simd_alu[9]/add_131 (simd_DW01_add_6)
+                                          0.326    2.098 1.11e+07   13.565   0.0
+  alu/valu/genblk1.simd_alu[9]/sub_136 (simd_DW01_sub_18)
+                                          0.628    2.272 1.85e+07   21.410   0.0
+  alu/valu/genblk1.simd_alu[9]/sll_159 (simd_DW01_ash_13)
+                                          1.322    3.714 3.15e+07   36.584   0.1
+  alu/valu/genblk1.simd_alu[9]/srl_165 (simd_DW_rash_13)
+                                          0.961    2.035 2.89e+07   31.887   0.1
+  alu/valu/genblk1.simd_alu[9]/srl_425 (simd_DW_rash_12)
+                                          0.965    2.063 2.89e+07   31.936   0.1
+  alu/valu/genblk1.simd_alu[9]/sll_425 (simd_DW01_ash_12)
+                                          0.336    0.273 1.13e+07   11.910   0.0
+  alu/valu/genblk1.simd_alu[9]/sub_425 (simd_DW01_dec_6)
+                                          0.452    0.805 1.57e+07   16.975   0.0
+  alu/valu/genblk1.simd_alu[10]/sub_add_64_b0 (simd_DW01_sub_17)
+                                          0.461    1.809 1.63e+07   18.619   0.0
+  alu/valu/genblk1.simd_alu[10]/sub_add_65_b0 (simd_DW01_sub_16)
+                                          0.475    1.848 1.74e+07   19.717   0.0
+  alu/valu/genblk1.simd_alu[10]/add_131 (simd_DW01_add_5)
+                                          0.326    2.093 1.11e+07   13.552   0.0
+  alu/valu/genblk1.simd_alu[10]/sub_136 (simd_DW01_sub_15)
+                                          0.624    2.261 1.85e+07   21.420   0.0
+  alu/valu/genblk1.simd_alu[10]/sll_159 (simd_DW01_ash_11)
+                                          1.319    3.700 3.16e+07   36.576   0.1
+  alu/valu/genblk1.simd_alu[10]/srl_165 (simd_DW_rash_11)
+                                          0.960    2.035 2.89e+07   31.891   0.1
+  alu/valu/genblk1.simd_alu[10]/srl_425 (simd_DW_rash_10)
+                                          0.965    2.072 2.90e+07   32.048   0.1
+  alu/valu/genblk1.simd_alu[10]/sll_425 (simd_DW01_ash_10)
+                                          0.336    0.272 1.13e+07   11.900   0.0
+  alu/valu/genblk1.simd_alu[10]/sub_425 (simd_DW01_dec_5)
+                                          0.455    0.810 1.57e+07   16.978   0.0
+  alu/valu/genblk1.simd_alu[11]/sub_add_64_b0 (simd_DW01_sub_14)
+                                          0.461    1.809 1.64e+07   18.621   0.0
+  alu/valu/genblk1.simd_alu[11]/sub_add_65_b0 (simd_DW01_sub_13)
+                                          0.461    1.810 1.66e+07   18.882   0.0
+  alu/valu/genblk1.simd_alu[11]/add_131 (simd_DW01_add_4)
+                                          0.327    2.097 1.12e+07   13.576   0.0
+  alu/valu/genblk1.simd_alu[11]/sub_136 (simd_DW01_sub_12)
+                                          0.627    2.266 1.85e+07   21.401   0.0
+  alu/valu/genblk1.simd_alu[11]/sll_159 (simd_DW01_ash_9)
+                                          1.325    3.717 3.15e+07   36.588   0.1
+  alu/valu/genblk1.simd_alu[11]/srl_165 (simd_DW_rash_9)
+                                          0.961    2.037 2.89e+07   31.894   0.1
+  alu/valu/genblk1.simd_alu[11]/srl_425 (simd_DW_rash_8)
+                                          0.965    2.066 2.89e+07   31.949   0.1
+  alu/valu/genblk1.simd_alu[11]/sll_425 (simd_DW01_ash_8)
+                                          0.336    0.272 1.13e+07   11.913   0.0
+  alu/valu/genblk1.simd_alu[11]/sub_425 (simd_DW01_dec_4)
+                                          0.452    0.805 1.57e+07   16.977   0.0
+  alu/valu/genblk1.simd_alu[12]/sub_add_64_b0 (simd_DW01_sub_11)
+                                          0.463    1.813 1.64e+07   18.626   0.0
+  alu/valu/genblk1.simd_alu[12]/sub_add_65_b0 (simd_DW01_sub_10)
+                                          0.498    1.924 1.87e+07   21.109   0.0
+  alu/valu/genblk1.simd_alu[12]/add_131 (simd_DW01_add_3)
+                                          0.328    2.107 1.12e+07   13.592   0.0
+  alu/valu/genblk1.simd_alu[12]/sub_136 (simd_DW01_sub_9)
+                                          0.629    2.277 1.85e+07   21.412   0.0
+  alu/valu/genblk1.simd_alu[12]/sll_159 (simd_DW01_ash_7)
+                                          1.324    3.716 3.15e+07   36.585   0.1
+  alu/valu/genblk1.simd_alu[12]/srl_165 (simd_DW_rash_7)
+                                          0.965    2.043 2.89e+07   31.911   0.1
+  alu/valu/genblk1.simd_alu[12]/srl_425 (simd_DW_rash_6)
+                                          0.966    2.060 2.89e+07   31.917   0.1
+  alu/valu/genblk1.simd_alu[12]/sll_425 (simd_DW01_ash_6)
+                                          0.336    0.272 1.13e+07   11.910   0.0
+  alu/valu/genblk1.simd_alu[12]/sub_425 (simd_DW01_dec_3)
+                                          0.452    0.806 1.57e+07   16.978   0.0
+  alu/valu/genblk1.simd_alu[13]/sub_add_64_b0 (simd_DW01_sub_8)
+                                          0.462    1.812 1.64e+07   18.625   0.0
+  alu/valu/genblk1.simd_alu[13]/sub_add_65_b0 (simd_DW01_sub_7)
+                                          0.467    1.845 1.72e+07   19.542   0.0
+  alu/valu/genblk1.simd_alu[13]/add_131 (simd_DW01_add_2)
+                                          0.327    2.104 1.12e+07   13.596   0.0
+  alu/valu/genblk1.simd_alu[13]/sub_136 (simd_DW01_sub_6)
+                                          0.628    2.271 1.85e+07   21.404   0.0
+  alu/valu/genblk1.simd_alu[13]/sll_159 (simd_DW01_ash_5)
+                                          1.333    3.738 3.16e+07   36.622   0.1
+  alu/valu/genblk1.simd_alu[13]/srl_165 (simd_DW_rash_5)
+                                          0.971    2.053 2.89e+07   31.947   0.1
+  alu/valu/genblk1.simd_alu[13]/srl_425 (simd_DW_rash_4)
+                                          0.973    2.080 2.89e+07   31.952   0.1
+  alu/valu/genblk1.simd_alu[13]/sll_425 (simd_DW01_ash_4)
+                                          0.335    0.273 1.13e+07   11.900   0.0
+  alu/valu/genblk1.simd_alu[13]/sub_425 (simd_DW01_dec_2)
+                                          0.449    0.801 1.57e+07   16.964   0.0
+  alu/valu/genblk1.simd_alu[14]/sub_add_64_b0 (simd_DW01_sub_5)
+                                          0.461    1.808 1.64e+07   18.620   0.0
+  alu/valu/genblk1.simd_alu[14]/sub_add_65_b0 (simd_DW01_sub_4)
+                                          0.461    1.813 1.66e+07   18.910   0.0
+  alu/valu/genblk1.simd_alu[14]/add_131 (simd_DW01_add_1)
+                                          0.327    2.099 1.12e+07   13.577   0.0
+  alu/valu/genblk1.simd_alu[14]/sub_136 (simd_DW01_sub_3)
+                                          0.626    2.264 1.85e+07   21.397   0.0
+  alu/valu/genblk1.simd_alu[14]/sll_159 (simd_DW01_ash_3)
+                                          1.325    3.713 3.15e+07   36.581   0.1
+  alu/valu/genblk1.simd_alu[14]/srl_165 (simd_DW_rash_3)
+                                          0.962    2.037 2.89e+07   31.911   0.1
+  alu/valu/genblk1.simd_alu[14]/srl_425 (simd_DW_rash_2)
+                                          0.963    2.055 2.89e+07   31.908   0.1
+  alu/valu/genblk1.simd_alu[14]/sll_425 (simd_DW01_ash_2)
+                                          0.334    0.271 1.13e+07   11.902   0.0
+  alu/valu/genblk1.simd_alu[14]/sub_425 (simd_DW01_dec_1)
+                                          0.450    0.801 1.57e+07   16.967   0.0
+  alu/valu/genblk1.simd_alu[15]/sub_add_64_b0 (simd_DW01_sub_2)
+                                          0.463    1.815 1.64e+07   18.629   0.0
+  alu/valu/genblk1.simd_alu[15]/sub_add_65_b0 (simd_DW01_sub_1)
+                                          0.461    1.804 1.65e+07   18.797   0.0
+  alu/valu/genblk1.simd_alu[15]/add_131 (simd_DW01_add_0)
+                                          0.327    2.105 1.11e+07   13.576   0.0
+  alu/valu/genblk1.simd_alu[15]/sub_136 (simd_DW01_sub_0)
+                                          0.623    2.262 1.85e+07   21.395   0.0
+  alu/valu/genblk1.simd_alu[15]/sll_159 (simd_DW01_ash_1)
+                                          1.324    3.718 3.16e+07   36.601   0.1
+  alu/valu/genblk1.simd_alu[15]/srl_165 (simd_DW_rash_1)
+                                          0.965    2.043 2.89e+07   31.921   0.1
+  alu/valu/genblk1.simd_alu[15]/srl_425 (simd_DW_rash_0)
+                                          0.967    2.071 2.89e+07   31.924   0.1
+  alu/valu/genblk1.simd_alu[15]/sll_425 (simd_DW01_ash_0)
+                                          0.333    0.271 1.13e+07   11.903   0.0
+  alu/valu/genblk1.simd_alu[15]/sub_425 (simd_DW01_dec_0)
+                                          0.448    0.798 1.57e+07   16.963   0.0
+1

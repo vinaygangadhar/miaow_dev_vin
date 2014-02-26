@@ -1,0 +1,328 @@
+Warning: Ignoring -power_effort option since there is no power constraint. (PWR-59)
+Warning: Setting attribute 'fix_multiple_port_nets' on design 'decode'. (UIO-59)
+Information: Evaluating DesignWare library utilization. (UISN-27)
+
+============================================================================
+| DesignWare Building Block Library  |         Version         | Available |
+============================================================================
+| Basic DW Building Blocks           | G-2012.06-DWBB_201206.0 |     *     |
+| Licensed DW Building Blocks        |                         |     *     |
+============================================================================
+
+
+Information: There are 91 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
+
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'decode'
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+
+  Beginning Implementation Selection
+  ----------------------------------
+  Processing 'decode_DW01_cmp2_0'
+  Processing 'decode_DW01_add_0'
+  Processing 'decode_DW01_cmp2_1'
+  Processing 'decode_DW01_cmp2_2'
+  Processing 'decode_DW01_cmp2_3'
+  Processing 'decode_DW01_cmp2_4'
+  Processing 'decode_DW01_cmp2_5'
+  Processing 'decode_DW01_inc_0'
+  Processing 'decode_DW01_add_1'
+  Processing 'decode_DW01_add_2'
+  Processing 'decode_DW01_cmp2_6'
+  Processing 'decode_DW01_cmp2_7'
+  Processing 'decode_DW01_cmp2_8'
+  Processing 'decode_DW01_cmp2_9'
+  Processing 'decode_DW01_cmp2_10'
+  Processing 'decode_DW01_inc_1'
+  Processing 'decode_DW01_add_3'
+  Processing 'decode_DW01_add_4'
+  Processing 'decode_DW01_cmp2_11'
+  Processing 'decode_DW01_cmp2_12'
+  Processing 'decode_DW01_cmp2_13'
+  Processing 'decode_DW01_cmp2_14'
+  Processing 'decode_DW01_cmp2_15'
+  Processing 'decode_DW01_inc_2'
+  Processing 'decode_DW01_add_5'
+  Processing 'decode_DW01_add_6'
+  Processing 'decode_DW01_cmp2_16'
+  Processing 'decode_DW01_cmp2_17'
+  Processing 'decode_DW01_cmp2_18'
+  Processing 'decode_DW01_cmp2_19'
+  Processing 'decode_DW01_cmp2_20'
+  Processing 'decode_DW01_inc_3'
+  Processing 'decode_DW01_add_7'
+  Processing 'decode_DW01_add_8'
+  Processing 'decode_DW01_cmp2_21'
+  Processing 'decode_DW01_cmp2_22'
+  Processing 'decode_DW01_cmp2_23'
+  Processing 'decode_DW01_cmp2_24'
+  Processing 'decode_DW01_cmp2_25'
+  Processing 'decode_DW01_inc_4'
+  Processing 'decode_DW01_add_9'
+  Processing 'decode_DW01_add_10'
+  Processing 'decode_DW01_cmp2_26'
+  Processing 'decode_DW01_cmp2_27'
+
+  Beginning Mapping Optimizations  (High effort)
+  -------------------------------
+
+   ELAPSED            WORST NEG TOTAL NEG  DESIGN                             MIN DELAY
+    TIME      AREA      SLACK     SLACK   RULE COST         ENDPOINT            COST   
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:27   58325.9      7.71   19590.7      59.1                                0.00
+    0:00:27   58314.3      7.50   19040.7      59.1                                0.00
+    0:00:27   58314.3      7.50   19040.7      59.1                                0.00
+    0:00:27   58307.2      7.50   19040.7      59.1                                0.00
+    0:00:28   58307.2      7.50   19040.7      59.1                                0.00
+    0:00:28   58307.2      7.50   19040.7      59.1                                0.00
+    0:00:30   52254.5      3.75    9359.6      53.6                                0.00
+    0:00:32   52246.5      3.31    8211.6      53.6                                0.00
+    0:00:32   52298.0      3.03    7453.1      51.6                                0.00
+    0:00:33   52305.9      2.74    6696.9      49.9                                0.00
+    0:00:33   52309.6      2.70    6591.4      49.9                                0.00
+    0:00:33   52307.2      2.66    6501.7      49.9                                0.00
+    0:00:33   52312.1      2.52    6124.4      49.9                                0.00
+    0:00:34   52314.5      2.38    5764.8      49.9                                0.00
+    0:00:34   52314.5      2.38    5764.8      49.9                                0.00
+    0:00:34   52314.5      2.38    5764.8      49.9                                0.00
+    0:00:34   52314.5      2.38    5764.8      49.9                                0.00
+    0:00:34   52350.6      2.36    5720.9      18.5                                0.00
+    0:00:34   52356.4      2.36    5722.6      11.9                                0.00
+    0:00:34   52361.5      2.36    5721.6       3.0                                0.00
+    0:00:34   52367.4      2.36    5721.4       1.6                                0.00
+    0:00:34   52371.9      2.36    5719.9       0.8                                0.00
+    0:00:34   52374.0      2.36    5719.5       0.0                                0.00
+    0:00:34   52374.0      2.36    5719.5       0.0                                0.00
+    0:00:34   52374.0      2.36    5719.5       0.0                                0.00
+    0:00:34   52374.0      2.36    5719.5       0.0                                0.00
+    0:00:34   52374.0      2.36    5719.5       0.0                                0.00
+
+
+
+  Beginning Delay Optimization Phase
+  ----------------------------------
+
+   ELAPSED            WORST NEG TOTAL NEG  DESIGN                             MIN DELAY
+    TIME      AREA      SLACK     SLACK   RULE COST         ENDPOINT            COST   
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:34   52374.0      2.36    5719.5       0.0                                0.00
+    0:00:35   52547.8      2.14    5140.5       2.2 collater/reg_instr_pc/word[9]/bits[5]/dff_0/state_reg/D      0.00
+    0:00:36   52735.6      2.01    4991.4       2.2 collater/reg_instr_pc/word[16]/bits[5]/dff_0/state_reg/D      0.00
+    0:00:37   52876.1      1.97    4880.2       2.2 collater/reg_instr_pc/word[16]/bits[5]/dff_0/state_reg/D      0.00
+    0:00:37   52887.7      1.95    4839.0       2.2 collater/reg_instr_pc/word[16]/bits[5]/dff_0/state_reg/D      0.00
+    0:00:38   52902.9      1.94    4791.3       2.2 collater/reg_instr_pc/word[16]/bits[5]/dff_0/state_reg/D      0.00
+    0:00:38   52885.7      1.47    3571.6       2.2 collater/reg_instr_pc/word[16]/bits[5]/dff_0/state_reg/D      0.00
+    0:00:39   52912.1      1.33    3214.3       2.2 collater/reg_instr_pc/word[16]/bits[5]/dff_0/state_reg/D      0.00
+    0:00:39   52920.2      1.32    3207.6       5.5 collater/reg_instr_pc/word[16]/bits[59]/dff_0/state_reg/D      0.00
+    0:00:39   52935.2      1.32    3206.2       5.5 collater/reg_instr_pc/word[12]/bits[51]/dff_0/state_reg/D      0.00
+    0:00:39   52943.8      1.32    3205.8       5.5 collater/reg_instr_pc/word[12]/bits[0]/dff_0/state_reg/D      0.00
+    0:00:39   52949.7      1.32    3197.1       5.5 collater/reg_instr_pc/word[11]/bits[63]/dff_0/state_reg/D      0.00
+    0:00:39   52951.7      1.32    3194.9       5.5 collater/reg_instr_pc/word[11]/bits[36]/dff_0/state_reg/D      0.00
+    0:00:40   52961.7      1.32    3177.3       5.5 collater/reg_instr_pc/word[18]/bits[55]/dff_0/state_reg/D      0.00
+    0:00:40   52965.6      1.32    3167.5       5.5 collater/reg_instr_pc/word[17]/bits[52]/dff_0/state_reg/D      0.00
+    0:00:40   52971.8      1.32    3150.5       5.5 collater/reg_instr_pc/word[22]/bits[63]/dff_0/state_reg/D      0.00
+    0:00:40   52970.8      1.32    3141.4       5.5 collater/reg_instr_pc/word[11]/bits[24]/dff_0/state_reg/D      0.00
+    0:00:40   52980.4      1.32    3140.7       5.5 collater/reg_instr_pc/word[16]/bits[18]/dff_0/state_reg/D      0.00
+    0:00:40   52984.2      1.32    3140.4       5.5 collater/reg_instr_pc/word[17]/bits[24]/dff_0/state_reg/D      0.00
+    0:00:40   52993.8      1.32    3139.6       5.5 collater/reg_instr_pc/word[11]/bits[45]/dff_0/state_reg/D      0.00
+    0:00:41   53001.2      1.32    3138.1       5.5 collater/reg_instr_pc/word[12]/bits[12]/dff_0/state_reg/D      0.00
+    0:00:41   52995.1      1.32    3135.8       5.5 collater/reg_instr_pc/word[17]/bits[47]/dff_0/state_reg/D      0.00
+    0:00:41   52997.3      1.31    3128.2       5.5 collater/reg_instr_pc/word[12]/bits[5]/dff_0/state_reg/D      0.00
+    0:00:41   53006.8      1.31    3125.6       5.5 collater/reg_instr_pc/word[12]/bits[47]/dff_0/state_reg/D      0.00
+    0:00:41   53017.5      1.30    3125.1       5.5 collater/reg_instr_pc/word[13]/bits[36]/dff_0/state_reg/D      0.00
+    0:00:41   53026.7      1.30    3125.1       5.5 collater/reg_instr_pc/word[15]/bits[35]/dff_0/state_reg/D      0.00
+    0:00:41   53035.8      1.30    3125.1       5.5 collater/reg_instr_pc/word[21]/bits[33]/dff_0/state_reg/D      0.00
+    0:00:41   53047.7      1.30    3124.3       5.5 collater/reg_instr_pc/word[13]/bits[58]/dff_0/state_reg/D      0.00
+    0:00:42   53049.9      1.30    3123.5       5.5 collater/reg_instr_pc/word[13]/bits[10]/dff_0/state_reg/D      0.00
+    0:00:42   53059.1      1.30    3123.5       5.5 collater/reg_instr_pc/word[15]/bits[23]/dff_0/state_reg/D      0.00
+    0:00:42   53063.5      1.30    3122.2       5.5 collater/reg_instr_pc/word[21]/bits[41]/dff_0/state_reg/D      0.00
+    0:00:42   53070.1      1.30    3121.0       5.5 collater/reg_instr_pc/word[23]/bits[58]/dff_0/state_reg/D      0.00
+    0:00:42   53070.4      1.30    3120.3       5.5 collater/reg_instr_pc/word[23]/bits[30]/dff_0/state_reg/D      0.00
+    0:00:42   53080.1      1.30    3119.6       5.5 collater/reg_instr_pc/word[15]/bits[16]/dff_0/state_reg/D      0.00
+    0:00:42   53089.2      1.30    3119.6       5.5 collater/reg_instr_pc/word[23]/bits[45]/dff_0/state_reg/D      0.00
+    0:00:42   53088.9      1.30    3117.8       5.5 collater/reg_instr_pc/word[15]/bits[39]/dff_0/state_reg/D      0.00
+    0:00:42   53083.4      1.30    3110.6       5.5 collater/reg_instr_pc/word[15]/bits[36]/dff_0/state_reg/D      0.00
+    0:00:43   53091.7      1.30    3107.8       5.5 collater/reg_instr_pc/word[12]/bits[35]/dff_0/state_reg/D      0.00
+    0:00:43   53088.2      1.29    3060.3       5.5 collater/reg_instr_pc/word[11]/bits[23]/dff_0/state_reg/D      0.00
+    0:00:43   53086.4      1.29    3060.7       5.5 collater/reg_instr_pc/word[23]/bits[1]/dff_0/state_reg/D      0.00
+    0:00:43   53101.1      1.28    3058.3       5.5 collater/reg_instr_pc/word[12]/bits[42]/dff_0/state_reg/D      0.00
+    0:00:43   53103.9      1.27    3055.8       5.5 collater/reg_instr_pc/word[21]/bits[40]/dff_0/state_reg/D      0.00
+    0:00:43   53107.5      1.26    3055.6       5.5 collater/reg_instr_pc/word[10]/bits[9]/dff_0/state_reg/D      0.00
+    0:00:44   53107.7      1.26    3053.1       5.5 collater/reg_instr_pc/word[20]/bits[9]/dff_0/state_reg/D      0.00
+    0:00:44   53112.5      1.26    3049.5       5.5 collater/reg_instr_pc/word[13]/bits[11]/dff_0/state_reg/D      0.00
+    0:00:44   53119.2      1.25    3044.1       5.5 collater/reg_instr_pc/word[12]/bits[59]/dff_0/state_reg/D      0.00
+    0:00:44   53124.5      1.25    3042.6       5.5 collater/reg_instr_pc/word[17]/bits[19]/dff_0/state_reg/D      0.00
+    0:00:44   53131.2      1.25    3041.9       5.5 collater/reg_instr_pc/word[11]/bits[33]/dff_0/state_reg/D      0.00
+    0:00:44   53131.3      1.24    3039.1       5.5 collater/reg_instr_pc/word[21]/bits[58]/dff_0/state_reg/D      0.00
+    0:00:44   53141.8      1.24    3038.5       5.5 collater/reg_instr_pc/word[23]/bits[27]/dff_0/state_reg/D      0.00
+    0:00:45   53157.3      1.24    3036.4       5.5 collater/reg_instr_pc/word[11]/bits[33]/dff_0/state_reg/D      0.00
+    0:00:45   53163.7      1.23    3031.4       5.5 collater/reg_instr_pc/word[21]/bits[21]/dff_0/state_reg/D      0.00
+    0:00:45   53169.3      1.23    3029.9       5.5 collater/reg_instr_pc/word[21]/bits[29]/dff_0/state_reg/D      0.00
+    0:00:45   53175.6      1.22    3027.3       5.5 collater/reg_instr_pc/word[25]/bits[55]/dff_0/state_reg/D      0.00
+    0:00:45   53180.5      1.20    2913.8       5.5 collater/reg_instr_pc/word[28]/bits[52]/dff_0/state_reg/D      0.00
+    0:00:45   53187.1      1.20    2913.6       5.5 collater/reg_instr_pc/word[28]/bits[45]/dff_0/state_reg/D      0.00
+    0:00:45   53196.2      1.20    2913.6       5.5 collater/reg_instr_pc/word[28]/bits[1]/dff_0/state_reg/D      0.00
+    0:00:46   53201.2      1.20    2896.5       5.5 collater/reg_instr_pc/word[29]/bits[55]/dff_0/state_reg/D      0.00
+    0:00:46   53209.3      1.20    2896.2       5.5 collater/reg_instr_pc/word[28]/bits[39]/dff_0/state_reg/D      0.00
+    0:00:46   53228.1      1.20    2895.2       5.5 collater/reg_instr_pc/word[5]/bits[5]/dff_0/state_reg/D      0.00
+    0:00:46   53248.4      1.20    2882.8       5.5 collater/reg_instr_pc/word[0]/bits[5]/dff_0/state_reg/D      0.00
+    0:00:47   53265.8      1.19    2867.5       5.5 collater/reg_instr_pc/word[4]/bits[55]/dff_0/state_reg/D      0.00
+    0:00:47   53282.3      1.18    2859.9       5.5 collater/reg_instr_pc/word[32]/bits[5]/dff_0/state_reg/D      0.00
+    0:00:47   53312.8      1.18    2858.6       5.5 collater/reg_instr_pc/word[34]/bits[5]/dff_0/state_reg/D      0.00
+    0:00:47   53313.3      1.18    2858.2       5.5 collater/reg_instr_pc/word[28]/bits[1]/dff_0/state_reg/D      0.00
+    0:00:48   53328.0      1.18    2850.5       5.5 collater/reg_instr_pc/word[38]/bits[55]/dff_0/state_reg/D      0.00
+    0:00:48   53360.7      1.18    2845.7       5.5 collater/reg_instr_pc/word[33]/bits[55]/dff_0/state_reg/D      0.00
+    0:00:48   53396.2      1.18    2845.0       5.5 collater/reg_instr_pc/word[37]/bits[55]/dff_0/state_reg/D      0.00
+    0:00:48   53396.7      1.18    2839.2       5.5 collater/reg_instr_pc/word[34]/bits[55]/dff_0/state_reg/D      0.00
+    0:00:48   53394.4      1.17    2843.1       5.5 collater/reg_instr_pc/word[0]/bits[55]/dff_0/state_reg/D      0.00
+    0:00:48   53429.9      1.17    2842.3       5.5 collater/reg_instr_pc/word[2]/bits[55]/dff_0/state_reg/D      0.00
+    0:00:49   53439.7      1.17    2830.2       5.5 collater/reg_instr_pc/word[37]/bits[55]/dff_0/state_reg/D      0.00
+    0:00:49   53424.0      1.17    2806.9       5.5 collater/reg_instr_pc/word[36]/bits[55]/dff_0/state_reg/D      0.00
+    0:00:49   53467.2      1.16    2754.5       7.5 collater/reg_instr_pc/word[28]/bits[58]/dff_0/state_reg/D      0.00
+    0:00:50   53486.1      1.13    2597.1       7.5 collater/reg_instr_pc/word[7]/bits[32]/dff_0/state_reg/D      0.00
+    0:00:50   53460.0      1.13    2595.2       7.5 collater/reg_instr_pc/word[4]/bits[32]/dff_0/state_reg/D      0.00
+    0:00:50   53436.4      1.09    2593.2       7.5 collater/reg_instr_pc/word[0]/bits[32]/dff_0/state_reg/D      0.00
+    0:00:50   53444.4      1.07    2560.5       7.5 collater/reg_instr_pc/word[31]/bits[55]/dff_0/state_reg/D      0.00
+    0:00:50   53503.9      1.07    2549.0       7.5 collater/reg_instr_pc/word[0]/bits[36]/dff_0/state_reg/D      0.00
+    0:00:50   53512.1      1.07    2539.4       7.5 collater/reg_instr_pc/word[0]/bits[44]/dff_0/state_reg/D      0.00
+    0:00:51   53523.7      1.07    2538.3       7.5 collater/reg_instr_pc/word[1]/bits[49]/dff_0/state_reg/D      0.00
+    0:00:51   53532.9      1.07    2538.3       7.5 collater/reg_instr_pc/word[6]/bits[38]/dff_0/state_reg/D      0.00
+    0:00:51   53542.0      1.07    2538.3       7.5 collater/reg_instr_pc/word[5]/bits[34]/dff_0/state_reg/D      0.00
+    0:00:51   53551.6      1.07    2538.1       7.5 collater/reg_instr_pc/word[2]/bits[49]/dff_0/state_reg/D      0.00
+    0:00:51   53547.1      1.07    2532.6       7.5 collater/reg_instr_pc/word[4]/bits[44]/dff_0/state_reg/D      0.00
+    0:00:51   53558.3      1.07    2532.3       7.5 collater/reg_instr_pc/word[4]/bits[11]/dff_0/state_reg/D      0.00
+    0:00:51   53561.4      1.05    2515.3       7.5 collater/reg_instr_pc/word[32]/bits[52]/dff_0/state_reg/D      0.00
+    0:00:51   53563.9      1.05    2514.4       7.5 collater/reg_instr_pc/word[5]/bits[4]/dff_0/state_reg/D      0.00
+    0:00:51   53569.5      1.05    2513.9       7.5 collater/reg_instr_pc/word[2]/bits[50]/dff_0/state_reg/D      0.00
+    0:00:51   53576.9      1.05    2513.4       7.5 collater/reg_instr_pc/word[2]/bits[1]/dff_0/state_reg/D      0.00
+    0:00:52   53582.7      1.05    2512.8       7.5 collater/reg_instr_pc/word[1]/bits[2]/dff_0/state_reg/D      0.00
+    0:00:52   53589.7      1.05    2512.2       7.5 collater/reg_instr_pc/word[6]/bits[25]/dff_0/state_reg/D      0.00
+    0:00:52   53587.4      1.05    2511.5       7.5 collater/reg_instr_pc/word[5]/bits[46]/dff_0/state_reg/D      0.00
+    0:00:52   53594.6      1.05    2510.4       7.5 collater/reg_instr_pc/word[32]/bits[52]/dff_0/state_reg/D      0.00
+    0:00:52   53611.5      1.05    2501.3       7.5 collater/reg_instr_pc/word[23]/bits[63]/dff_0/state_reg/D      0.00
+    0:00:52   53609.5      1.04    2490.3       7.5 collater/reg_instr_pc/word[16]/bits[39]/dff_0/state_reg/D      0.00
+    0:00:52   53615.0      1.04    2486.3       7.5 collater/reg_instr_pc/word[5]/bits[22]/dff_0/state_reg/D      0.00
+    0:00:52   53636.1      1.04    2485.8       7.5 collater/reg_instr_pc/word[5]/bits[29]/dff_0/state_reg/D      0.00
+    0:00:53   53640.4      1.04    2482.2       7.5 collater/reg_instr_pc/word[32]/bits[52]/dff_0/state_reg/D      0.00
+    0:00:53   53639.8      1.04    2482.8       7.5 collater/reg_instr_pc/word[2]/bits[1]/dff_0/state_reg/D      0.00
+    0:00:53   53633.6      1.04    2481.9       7.5 collater/reg_instr_pc/word[7]/bits[25]/dff_0/state_reg/D      0.00
+    0:00:53   53633.6      1.04    2481.9       7.5 collater/reg_instr_pc/word[6]/bits[24]/dff_0/state_reg/D      0.00
+    0:00:53   53633.6      1.04    2481.7       7.5 collater/reg_instr_pc/word[7]/bits[44]/dff_0/state_reg/D      0.00
+    0:00:53   53633.6      1.04    2481.7       7.5 collater/reg_instr_pc/word[7]/bits[19]/dff_0/state_reg/D      0.00
+    0:00:53   53631.5      1.04    2481.6       7.5 collater/reg_instr_pc/word[2]/bits[50]/dff_0/state_reg/D      0.00
+    0:00:53   53627.6      1.04    2469.5       7.5 collater/reg_instr_pc/word[7]/bits[25]/dff_0/state_reg/D      0.00
+    0:00:53   53627.6      1.04    2469.4       7.5 collater/reg_instr_pc/word[6]/bits[24]/dff_0/state_reg/D      0.00
+    0:00:53   53627.6      1.04    2469.4       7.5 collater/reg_instr_pc/word[7]/bits[19]/dff_0/state_reg/D      0.00
+    0:00:53   53626.1      1.04    2470.1       7.5 collater/reg_instr_pc/word[7]/bits[25]/dff_0/state_reg/D      0.00
+    0:00:53   53622.1      1.04    2470.1       7.5 collater/reg_instr_pc/word[7]/bits[15]/dff_0/state_reg/D      0.00
+    0:00:54   53620.4      1.04    2469.6       7.5 collater/reg_instr_pc/word[7]/bits[10]/dff_0/state_reg/D      0.00
+    0:00:54   53619.9      1.04    2469.8       7.5 collater/reg_instr_pc/word[4]/bits[19]/dff_0/state_reg/D      0.00
+    0:00:54   53616.1      1.04    2469.2       7.5 collater/reg_instr_pc/word[6]/bits[51]/dff_0/state_reg/D      0.00
+    0:00:54   53618.1      1.04    2468.3       7.5 collater/reg_instr_pc/word[21]/bits[63]/dff_0/state_reg/D      0.00
+    0:00:54   53599.8      1.04    2468.0       7.5 collater/reg_instr_pc/word[21]/bits[63]/dff_0/state_reg/D      0.00
+    0:00:54   53580.4      1.03    2449.3       7.5 collater/reg_instr_pc/word[7]/bits[38]/dff_0/state_reg/D      0.00
+    0:00:54   53578.2      1.03    2428.2       7.5 collater/reg_instr_pc/word[13]/bits[14]/dff_0/state_reg/D      0.00
+    0:00:55   53578.8      1.03    2423.8       7.5 collater/reg_instr_pc/word[23]/bits[9]/dff_0/state_reg/D      0.00
+    0:00:55   53585.0      1.03    2418.3       7.5 collater/reg_instr_pc/word[24]/bits[52]/dff_0/state_reg/D      0.00
+    0:00:55   53576.3      1.02    2411.6       7.5 collater/reg_instr_pc/word[16]/bits[39]/dff_0/state_reg/D      0.00
+    0:00:55   53583.4      1.02    2408.8       7.5 collater/reg_instr_pc/word[6]/bits[41]/dff_0/state_reg/D      0.00
+    0:00:55   53583.2      1.02    2407.0       7.5 collater/reg_instr_pc/word[6]/bits[1]/dff_0/state_reg/D      0.00
+    0:00:55   53587.6      1.01    2405.0       7.5 collater/reg_instr_pc/word[32]/bits[9]/dff_0/state_reg/D      0.00
+    0:00:55   53580.6      1.01    2399.5       7.5 collater/reg_instr_pc/word[11]/bits[16]/dff_0/state_reg/D      0.00
+    0:00:56   53579.8      1.01    2397.4       7.5 collater/reg_instr_pc/word[6]/bits[60]/dff_0/state_reg/D      0.00
+    0:00:56   53583.9      1.00    2391.9       7.5 collater/reg_instr_pc/word[12]/bits[18]/dff_0/state_reg/D      0.00
+    0:00:56   53593.1      1.00    2390.8       7.5 collater/reg_instr_pc/word[29]/bits[61]/dff_0/state_reg/D      0.00
+    0:00:56   53602.3      1.00    2390.8       7.5 collater/reg_instr_pc/word[29]/bits[32]/dff_0/state_reg/D      0.00
+    0:00:56   53613.7      1.00    2389.5       7.5 collater/reg_instr_pc/word[20]/bits[52]/dff_0/state_reg/D      0.00
+    0:00:57   53625.1      1.00    2380.4       7.5 collater/reg_instr_pc/word[19]/bits[2]/dff_0/state_reg/D      0.00
+    0:00:57   53633.3      1.00    2380.4       7.5 collater/reg_instr_pc/word[20]/bits[1]/dff_0/state_reg/D      0.00
+    0:00:57   53630.1      0.99    2376.1       7.5 collater/reg_instr_pc/word[0]/bits[63]/dff_0/state_reg/D      0.00
+    0:00:57   53630.4      0.99    2375.4       7.5 collater/reg_instr_pc/word[10]/bits[2]/dff_0/state_reg/D      0.00
+    0:00:57   53641.6      0.95    2280.9       7.5 collater/reg_instr_pc/word[10]/bits[2]/dff_0/state_reg/D      0.00
+    0:00:58   53647.3      0.94    2242.8       7.5 collater/reg_instr_pc/word[10]/bits[2]/dff_0/state_reg/D      0.00
+    0:00:58   53646.3      0.77    1810.5       7.5 collater/reg_instr_pc/word[10]/bits[2]/dff_0/state_reg/D      0.00
+    0:00:59   53673.7      0.69    1610.4       7.5 collater/reg_instr_pc/word[10]/bits[54]/dff_0/state_reg/D      0.00
+    0:00:59   53691.3      0.69    1599.4       7.5 collater/reg_instr_pc/word[9]/bits[63]/dff_0/state_reg/D      0.00
+    0:00:59   53696.6      0.68    1594.4       7.5 collater/reg_instr_pc/word[19]/bits[39]/dff_0/state_reg/D      0.00
+    0:01:00   53705.6      0.53    1215.6       9.9 collater/reg_instr_pc/word[26]/bits[63]/dff_0/state_reg/D      0.00
+    0:01:00   53711.7      0.53    1214.7       9.9 collater/reg_instr_pc/word[9]/bits[63]/dff_0/state_reg/D      0.00
+    0:01:00   53718.8      0.53    1214.2       9.9 collater/reg_instr_pc/word[9]/bits[1]/dff_0/state_reg/D      0.00
+    0:01:00   53738.5      0.53    1213.6       9.9 collater/reg_instr_pc/word[11]/bits[33]/dff_0/state_reg/D      0.00
+    0:01:00   53738.9      0.53    1211.1       9.9 collater/reg_instr_pc/word[11]/bits[33]/dff_0/state_reg/D      0.00
+    0:01:00   53750.0      0.53    1210.1       9.9 collater/reg_instr_pc/word[19]/bits[29]/dff_0/state_reg/D      0.00
+    0:01:00   53753.4      0.53    1208.3       9.9 collater/reg_instr_pc/word[29]/bits[52]/dff_0/state_reg/D      0.00
+    0:01:00   53743.7      0.53    1208.2       9.9 collater/reg_instr_pc/word[29]/bits[28]/dff_0/state_reg/D      0.00
+    0:01:01   53738.7      0.53    1208.0       9.9 collater/reg_instr_pc/word[12]/bits[15]/dff_0/state_reg/D      0.00
+    0:01:01   53740.9      0.53    1205.7       9.9 collater/reg_instr_pc/word[10]/bits[52]/dff_0/state_reg/D      0.00
+    0:01:01   53750.6      0.52    1198.3       9.9 collater/reg_instr_pc/word[10]/bits[52]/dff_0/state_reg/D      0.00
+    0:01:02   53780.1      0.52    1189.1       9.9 collater/reg_instr_pc/word[10]/bits[52]/dff_0/state_reg/D      0.00
+    0:01:02   53795.8      0.49    1114.3       9.9 collater/reg_instr_pc/word[10]/bits[52]/dff_0/state_reg/D      0.00
+    0:01:02   53806.9      0.34     719.1       9.9 collater/reg_instr_pc/word[10]/bits[52]/dff_0/state_reg/D      0.00
+    0:01:03   53827.1      0.28     572.1       9.9 collater/reg_instr_pc/word[10]/bits[52]/dff_0/state_reg/D      0.00
+    0:01:03   53852.5      0.24     463.3       9.9 collater/reg_instr_pc/word[10]/bits[52]/dff_0/state_reg/D      0.00
+    0:01:04   53845.7      0.21     397.3       9.9 collater/reg_instr_pc/word[10]/bits[52]/dff_0/state_reg/D      0.00
+    0:01:04   53858.0      0.17     275.3       9.9 collater/reg_instr_pc/word[10]/bits[52]/dff_0/state_reg/D      0.00
+    0:01:04   53857.2      0.15     255.5       9.9 collater/reg_instr_pc/word[10]/bits[52]/dff_0/state_reg/D      0.00
+    0:01:05   53863.3      0.13     205.1       9.9 collater/reg_instr_pc/word[10]/bits[52]/dff_0/state_reg/D      0.00
+    0:01:05   53865.7      0.13     185.5       9.9 collater/reg_instr_pc/word[10]/bits[52]/dff_0/state_reg/D      0.00
+    0:01:05   53875.4      0.11     162.6       9.9 collater/reg_instr_pc/word[10]/bits[52]/dff_0/state_reg/D      0.00
+    0:01:06   53913.1      0.03      20.6       9.8 collater/reg_instr_pc/word[10]/bits[52]/dff_0/state_reg/D      0.00
+    0:01:06   53965.6      0.03      14.6       9.8 collater/reg_instr_pc/word[10]/bits[39]/dff_0/state_reg/D      0.00
+    0:01:07   53964.9      0.00       0.0       9.8                                0.00
+    0:01:07   53963.3      0.00       0.0       9.8                                0.00
+
+
+  Beginning Design Rule Fixing  (max_capacitance)
+  ----------------------------
+
+   ELAPSED            WORST NEG TOTAL NEG  DESIGN                             MIN DELAY
+    TIME      AREA      SLACK     SLACK   RULE COST         ENDPOINT            COST   
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:01:07   53963.3      0.00       0.0       9.8                                0.00
+    0:01:07   53987.0      0.00       0.0       0.0                                0.00
+
+
+  Beginning Area-Recovery Phase  (cleanup)
+  -----------------------------
+
+   ELAPSED            WORST NEG TOTAL NEG  DESIGN                             MIN DELAY
+    TIME      AREA      SLACK     SLACK   RULE COST         ENDPOINT            COST   
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:01:07   53987.0      0.00       0.0       0.0                                0.00
+    0:01:07   53987.0      0.00       0.0       0.0                                0.00
+    0:01:08   53987.0      0.00       0.0       0.0                                0.00
+    0:01:09   53578.3      0.00       0.0       0.0                                0.00
+    0:01:09   53373.3      0.00       0.0       0.0                                0.00
+    0:01:09   53236.7      0.00       0.0       0.0                                0.00
+    0:01:10   53154.7      0.00       0.0       0.0                                0.00
+    0:01:10   53108.9      0.00       0.0       0.0                                0.00
+    0:01:11   53081.0      0.00       0.0       0.0                                0.00
+    0:01:11   53067.0      0.00       0.0       0.0                                0.00
+    0:01:11   53061.1      0.00       0.0       0.0                                0.00
+    0:01:14   53058.9      0.00       0.0       0.0                                0.00
+    0:01:14   53058.9      0.00       0.0       0.0                                0.00
+    0:01:14   53059.4      0.00       0.0       0.0                                0.00
+    0:01:14   53059.4      0.00       0.0       0.0                                0.00
+    0:01:15   53059.4      0.00       0.0       0.0                                0.00
+    0:01:15   52551.1      0.04      19.8       0.0                                0.00
+    0:01:15   52541.5      0.04      20.4       0.0                                0.00
+    0:01:15   52534.3      0.04      19.6       0.0                                0.00
+    0:01:15   52534.3      0.04      19.6       0.0                                0.00
+    0:01:15   52534.3      0.04      19.6       0.0                                0.00
+    0:01:15   52534.3      0.04      19.6       0.0                                0.00
+    0:01:15   52534.3      0.04      19.6       0.0                                0.00
+    0:01:15   52534.3      0.04      19.6       0.0                                0.00
+    0:01:16   52538.7      0.00       0.0       0.0                                0.00
+    0:01:16   52537.7      0.00       0.0       0.0                                0.00
+Loading db file '/p/vertical/afs-huge0/synopsys/32nmlib/SAED32_EDK/lib/stdcell_rvt/db_nldm/saed32rvt_tt1p05v25c.db'
+
+  Optimization Complete
+  ---------------------
+Warning: Design 'decode' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+     Net 'clk': 2706 load(s), 1 driver(s)
+1

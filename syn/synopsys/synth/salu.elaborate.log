@@ -1,0 +1,84 @@
+Loading db file '/s/synopsys-2012_06_27/@sys/G-2012.06/libraries/syn/gtech.db'
+Loading db file '/s/synopsys-2012_06_27/@sys/G-2012.06/libraries/syn/standard.sldb'
+  Loading link library 'saed32rvt_tt1p05v25c'
+  Loading link library 'gtech'
+Running PRESTO HDLC
+Presto compilation completed successfully.
+Elaborated 1 design.
+Current design is now 'salu'.
+Information: Building the design 'regfile' instantiated from design 'salu' with
+	the parameters "155". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'regfile' instantiated from design 'salu' with
+	the parameters "97". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'regfile' instantiated from design 'salu' with
+	the parameters "256". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'salu_controller'. (HDL-193)
+
+Statistics for case statements in always block at line 43 in file
+	'../../../src/verilog/rtl/salu/build/salu_controller.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            59            |    auto/auto     |
+|            97            |    auto/auto     |
+|           149            |    auto/auto     |
+|           253            |    auto/auto     |
+|           277            |    auto/auto     |
+===============================================
+
+Statistics for case statements in always block at line 304 in file
+	'../../../src/verilog/rtl/salu/build/salu_controller.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           305            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'scalar_alu'. (HDL-193)
+
+Statistics for case statements in always block at line 36 in file
+	'../../../src/verilog/rtl/salu/build/scalar_alu.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            39            |    auto/auto     |
+|            46            |    auto/auto     |
+|            66            |    auto/auto     |
+|            91            |    auto/auto     |
+|           198            |    auto/auto     |
+|           243            |    auto/auto     |
+===============================================
+
+Statistics for case statements in always block at line 281 in file
+	'../../../src/verilog/rtl/salu/build/scalar_alu.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           286            |     no/auto      |
+|           292            |    auto/auto     |
+|           304            |    auto/auto     |
+|           338            |    auto/auto     |
+|           354            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'dff'. (HDL-193)
+
+Inferred memory devices in process
+	in routine dff line 12 in file
+		'../../../src/verilog/rtl/common/build/dff.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      state_reg      | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'mux2_1'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'not1'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'nand2'. (HDL-193)
+Presto compilation completed successfully.
+1

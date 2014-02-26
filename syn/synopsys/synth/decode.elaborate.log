@@ -1,0 +1,109 @@
+Loading db file '/s/synopsys-2012_06_27/@sys/G-2012.06/libraries/syn/gtech.db'
+Loading db file '/s/synopsys-2012_06_27/@sys/G-2012.06/libraries/syn/standard.sldb'
+  Loading link library 'saed32rvt_tt1p05v25c'
+  Loading link library 'gtech'
+Running PRESTO HDLC
+
+Statistics for case statements in always block at line 384 in file
+	'../../../src/verilog/rtl/decode/build/decode.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           386            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Elaborated 1 design.
+Current design is now 'decode'.
+Information: Building the design 'PS_flops_wavepool_decode'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'instr_collate'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'decode_core'. (HDL-193)
+Warning:  ../../../src/verilog/rtl/decode/build/decode_core.v:190: DEFAULT branch of CASE statement cannot be reached. (ELAB-311)
+Warning:  ../../../src/verilog/rtl/decode/build/decode_core.v:280: DEFAULT branch of CASE statement cannot be reached. (ELAB-311)
+Warning:  ../../../src/verilog/rtl/decode/build/decode_core.v:334: DEFAULT branch of CASE statement cannot be reached. (ELAB-311)
+
+Statistics for case statements in always block at line 55 in file
+	'../../../src/verilog/rtl/decode/build/decode_core.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            57            |     auto/no      |
+|           190            |    auto/auto     |
+|           280            |    auto/auto     |
+|           334            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'flag_generator'. (HDL-193)
+
+Statistics for case statements in always block at line 88 in file
+	'../../../src/verilog/rtl/decode/build/flag_generator.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            90            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'reg_field_encoder'. (HDL-193)
+Warning:  ../../../src/verilog/rtl/decode/build/reg_field_encoder.v:39: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../../../src/verilog/rtl/decode/build/reg_field_encoder.v:43: DEFAULT branch of CASE statement cannot be reached. (ELAB-311)
+
+Statistics for case statements in always block at line 41 in file
+	'../../../src/verilog/rtl/decode/build/reg_field_encoder.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            43            |    auto/auto     |
+|           255            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'dff'. (HDL-193)
+
+Inferred memory devices in process
+	in routine dff line 12 in file
+		'../../../src/verilog/rtl/common/build/dff.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      state_reg      | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'reg_40xX_1r_1w' instantiated from design 'instr_collate' with
+	the parameters "64". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'reg_40xX_1r_1w' instantiated from design 'instr_collate' with
+	the parameters "1". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'mux_40xX_to_1xX' instantiated from design 'reg_40xX_1r_1w_WIDTH64' with
+	the parameters "64". (HDL-193)
+
+Statistics for case statements in always block at line 10 in file
+	'../../../src/verilog/rtl/common/build/mux_40xX_to_1xX.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            11            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'decoder_6_to_40'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'register' instantiated from design 'reg_40xX_1r_1w_WIDTH64' with
+	the parameters "64". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'mux_40xX_to_1xX' instantiated from design 'reg_40xX_1r_1w_WIDTH1' with
+	the parameters "1". (HDL-193)
+
+Statistics for case statements in always block at line 10 in file
+	'../../../src/verilog/rtl/common/build/mux_40xX_to_1xX.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            11            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'register' instantiated from design 'reg_40xX_1r_1w_WIDTH1' with
+	the parameters "1". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'dff_en'. (HDL-193)
+Presto compilation completed successfully.
+1

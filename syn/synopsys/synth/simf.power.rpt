@@ -1,0 +1,1419 @@
+Loading db file '/p/vertical/afs-huge0/synopsys/32nmlib/SAED32_EDK/lib/stdcell_rvt/db_nldm/saed32rvt_tt1p05v25c.db'
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+ 
+****************************************
+Report : power
+        -hier
+        -analysis_effort low
+Design : simf
+Version: G-2012.06
+Date   : Thu May 16 12:01:42 2013
+****************************************
+
+
+Library(s) Used:
+
+    saed32rvt_tt1p05v25c (File: /p/vertical/afs-huge0/synopsys/32nmlib/SAED32_EDK/lib/stdcell_rvt/db_nldm/saed32rvt_tt1p05v25c.db)
+
+
+Operating Conditions: tt1p05v25c   Library: saed32rvt_tt1p05v25c
+Wire Load Model Mode: enclosed
+
+Design        Wire Load Model            Library
+------------------------------------------------
+simf                   540000            saed32rvt_tt1p05v25c
+simf_DW01_ash_16       8000              saed32rvt_tt1p05v25c
+simf_DW01_ash_17       8000              saed32rvt_tt1p05v25c
+simf_DW01_ash_18       8000              saed32rvt_tt1p05v25c
+simf_DW01_ash_19       8000              saed32rvt_tt1p05v25c
+simf_DW01_ash_20       8000              saed32rvt_tt1p05v25c
+simf_DW01_ash_21       8000              saed32rvt_tt1p05v25c
+simf_DW01_ash_22       8000              saed32rvt_tt1p05v25c
+simf_DW01_ash_23       8000              saed32rvt_tt1p05v25c
+simf_DW01_ash_24       8000              saed32rvt_tt1p05v25c
+simf_DW01_ash_25       8000              saed32rvt_tt1p05v25c
+simf_DW01_ash_26       8000              saed32rvt_tt1p05v25c
+simf_DW01_ash_27       8000              saed32rvt_tt1p05v25c
+simf_DW01_ash_28       8000              saed32rvt_tt1p05v25c
+simf_DW01_ash_29       8000              saed32rvt_tt1p05v25c
+simf_DW01_ash_30       8000              saed32rvt_tt1p05v25c
+simf_DW01_ash_31       8000              saed32rvt_tt1p05v25c
+simf_DW01_ash_32       8000              saed32rvt_tt1p05v25c
+simf_DW01_ash_33       8000              saed32rvt_tt1p05v25c
+simf_DW01_ash_34       8000              saed32rvt_tt1p05v25c
+simf_DW01_ash_35       8000              saed32rvt_tt1p05v25c
+simf_DW01_ash_36       8000              saed32rvt_tt1p05v25c
+simf_DW01_ash_37       8000              saed32rvt_tt1p05v25c
+simf_DW01_ash_38       8000              saed32rvt_tt1p05v25c
+simf_DW01_ash_39       8000              saed32rvt_tt1p05v25c
+simf_DW01_ash_40       8000              saed32rvt_tt1p05v25c
+simf_DW01_ash_41       8000              saed32rvt_tt1p05v25c
+simf_DW01_ash_42       8000              saed32rvt_tt1p05v25c
+simf_DW01_ash_43       8000              saed32rvt_tt1p05v25c
+simf_DW01_ash_44       8000              saed32rvt_tt1p05v25c
+simf_DW01_ash_45       8000              saed32rvt_tt1p05v25c
+simf_DW01_ash_46       8000              saed32rvt_tt1p05v25c
+simf_DW01_ash_47       8000              saed32rvt_tt1p05v25c
+simf_DW01_inc_16       ForQA             saed32rvt_tt1p05v25c
+simf_DW01_inc_17       ForQA             saed32rvt_tt1p05v25c
+simf_DW01_ash_48       8000              saed32rvt_tt1p05v25c
+simf_DW_rash_16        8000              saed32rvt_tt1p05v25c
+simf_DW01_sub_17       ForQA             saed32rvt_tt1p05v25c
+simf_DW01_sub_18       ForQA             saed32rvt_tt1p05v25c
+simf_DW01_inc_18       ForQA             saed32rvt_tt1p05v25c
+simf_DW01_inc_19       ForQA             saed32rvt_tt1p05v25c
+simf_DW01_ash_49       8000              saed32rvt_tt1p05v25c
+simf_DW_rash_17        8000              saed32rvt_tt1p05v25c
+simf_DW01_sub_20       ForQA             saed32rvt_tt1p05v25c
+simf_DW01_sub_21       ForQA             saed32rvt_tt1p05v25c
+simf_DW01_inc_20       ForQA             saed32rvt_tt1p05v25c
+simf_DW01_inc_21       ForQA             saed32rvt_tt1p05v25c
+simf_DW01_ash_50       8000              saed32rvt_tt1p05v25c
+simf_DW_rash_18        8000              saed32rvt_tt1p05v25c
+simf_DW01_sub_23       ForQA             saed32rvt_tt1p05v25c
+simf_DW01_sub_24       ForQA             saed32rvt_tt1p05v25c
+simf_DW01_inc_22       ForQA             saed32rvt_tt1p05v25c
+simf_DW01_inc_23       ForQA             saed32rvt_tt1p05v25c
+simf_DW01_ash_51       8000              saed32rvt_tt1p05v25c
+simf_DW_rash_19        8000              saed32rvt_tt1p05v25c
+simf_DW01_sub_26       ForQA             saed32rvt_tt1p05v25c
+simf_DW01_sub_27       ForQA             saed32rvt_tt1p05v25c
+simf_DW01_inc_24       ForQA             saed32rvt_tt1p05v25c
+simf_DW01_inc_25       ForQA             saed32rvt_tt1p05v25c
+simf_DW01_ash_52       8000              saed32rvt_tt1p05v25c
+simf_DW_rash_20        8000              saed32rvt_tt1p05v25c
+simf_DW01_sub_29       ForQA             saed32rvt_tt1p05v25c
+simf_DW01_sub_30       ForQA             saed32rvt_tt1p05v25c
+simf_DW01_inc_26       ForQA             saed32rvt_tt1p05v25c
+simf_DW01_inc_27       ForQA             saed32rvt_tt1p05v25c
+simf_DW01_ash_53       8000              saed32rvt_tt1p05v25c
+simf_DW_rash_21        8000              saed32rvt_tt1p05v25c
+simf_DW01_sub_32       ForQA             saed32rvt_tt1p05v25c
+simf_DW01_sub_33       ForQA             saed32rvt_tt1p05v25c
+simf_DW01_inc_28       ForQA             saed32rvt_tt1p05v25c
+simf_DW01_inc_29       ForQA             saed32rvt_tt1p05v25c
+simf_DW01_ash_54       8000              saed32rvt_tt1p05v25c
+simf_DW_rash_22        8000              saed32rvt_tt1p05v25c
+simf_DW01_sub_35       ForQA             saed32rvt_tt1p05v25c
+simf_DW01_sub_36       ForQA             saed32rvt_tt1p05v25c
+simf_DW01_inc_30       ForQA             saed32rvt_tt1p05v25c
+simf_DW01_inc_31       ForQA             saed32rvt_tt1p05v25c
+simf_DW01_ash_55       8000              saed32rvt_tt1p05v25c
+simf_DW_rash_23        8000              saed32rvt_tt1p05v25c
+simf_DW01_sub_38       ForQA             saed32rvt_tt1p05v25c
+simf_DW01_sub_39       ForQA             saed32rvt_tt1p05v25c
+simf_DW01_inc_32       ForQA             saed32rvt_tt1p05v25c
+simf_DW01_inc_33       ForQA             saed32rvt_tt1p05v25c
+simf_DW01_ash_56       8000              saed32rvt_tt1p05v25c
+simf_DW_rash_24        8000              saed32rvt_tt1p05v25c
+simf_DW01_sub_41       ForQA             saed32rvt_tt1p05v25c
+simf_DW01_sub_42       ForQA             saed32rvt_tt1p05v25c
+simf_DW01_inc_34       ForQA             saed32rvt_tt1p05v25c
+simf_DW01_inc_35       ForQA             saed32rvt_tt1p05v25c
+simf_DW01_ash_57       8000              saed32rvt_tt1p05v25c
+simf_DW_rash_25        8000              saed32rvt_tt1p05v25c
+simf_DW01_sub_44       ForQA             saed32rvt_tt1p05v25c
+simf_DW01_sub_45       ForQA             saed32rvt_tt1p05v25c
+simf_DW01_inc_36       ForQA             saed32rvt_tt1p05v25c
+simf_DW01_inc_37       ForQA             saed32rvt_tt1p05v25c
+simf_DW01_ash_58       8000              saed32rvt_tt1p05v25c
+simf_DW_rash_26        8000              saed32rvt_tt1p05v25c
+simf_DW01_sub_47       ForQA             saed32rvt_tt1p05v25c
+simf_DW01_sub_48       ForQA             saed32rvt_tt1p05v25c
+simf_DW01_inc_38       ForQA             saed32rvt_tt1p05v25c
+simf_DW01_inc_39       ForQA             saed32rvt_tt1p05v25c
+simf_DW01_ash_59       8000              saed32rvt_tt1p05v25c
+simf_DW_rash_27        8000              saed32rvt_tt1p05v25c
+simf_DW01_sub_50       ForQA             saed32rvt_tt1p05v25c
+simf_DW01_sub_51       ForQA             saed32rvt_tt1p05v25c
+simf_DW01_inc_40       ForQA             saed32rvt_tt1p05v25c
+simf_DW01_inc_41       ForQA             saed32rvt_tt1p05v25c
+simf_DW01_ash_60       8000              saed32rvt_tt1p05v25c
+simf_DW_rash_28        8000              saed32rvt_tt1p05v25c
+simf_DW01_sub_53       ForQA             saed32rvt_tt1p05v25c
+simf_DW01_sub_54       ForQA             saed32rvt_tt1p05v25c
+simf_DW01_inc_42       ForQA             saed32rvt_tt1p05v25c
+simf_DW01_inc_43       ForQA             saed32rvt_tt1p05v25c
+simf_DW01_ash_61       8000              saed32rvt_tt1p05v25c
+simf_DW_rash_29        8000              saed32rvt_tt1p05v25c
+simf_DW01_sub_56       ForQA             saed32rvt_tt1p05v25c
+simf_DW01_sub_57       ForQA             saed32rvt_tt1p05v25c
+simf_DW01_inc_44       ForQA             saed32rvt_tt1p05v25c
+simf_DW01_inc_45       ForQA             saed32rvt_tt1p05v25c
+simf_DW01_ash_62       8000              saed32rvt_tt1p05v25c
+simf_DW_rash_30        8000              saed32rvt_tt1p05v25c
+simf_DW01_sub_59       ForQA             saed32rvt_tt1p05v25c
+simf_DW01_sub_60       ForQA             saed32rvt_tt1p05v25c
+simf_DW01_inc_46       ForQA             saed32rvt_tt1p05v25c
+simf_DW01_inc_47       ForQA             saed32rvt_tt1p05v25c
+simf_DW01_ash_63       8000              saed32rvt_tt1p05v25c
+simf_DW_rash_31        8000              saed32rvt_tt1p05v25c
+simf_DW01_sub_62       ForQA             saed32rvt_tt1p05v25c
+simf_DW01_sub_63       ForQA             saed32rvt_tt1p05v25c
+simf_DW01_ash_64       8000              saed32rvt_tt1p05v25c
+simf_DW01_ash_65       8000              saed32rvt_tt1p05v25c
+simf_DW01_ash_66       8000              saed32rvt_tt1p05v25c
+simf_DW01_ash_67       8000              saed32rvt_tt1p05v25c
+simf_DW01_ash_68       8000              saed32rvt_tt1p05v25c
+simf_DW01_ash_69       8000              saed32rvt_tt1p05v25c
+simf_DW01_ash_70       8000              saed32rvt_tt1p05v25c
+simf_DW01_ash_71       8000              saed32rvt_tt1p05v25c
+simf_DW01_ash_72       8000              saed32rvt_tt1p05v25c
+simf_DW01_ash_73       8000              saed32rvt_tt1p05v25c
+simf_DW01_ash_74       8000              saed32rvt_tt1p05v25c
+simf_DW01_ash_75       8000              saed32rvt_tt1p05v25c
+simf_DW01_ash_76       8000              saed32rvt_tt1p05v25c
+simf_DW01_ash_77       8000              saed32rvt_tt1p05v25c
+simf_DW01_ash_78       8000              saed32rvt_tt1p05v25c
+simf_DW01_ash_79       8000              saed32rvt_tt1p05v25c
+simf_DW01_inc_64       ForQA             saed32rvt_tt1p05v25c
+simf_DW01_add_64       ForQA             saed32rvt_tt1p05v25c
+simf_DW01_ash_80       8000              saed32rvt_tt1p05v25c
+simf_DW01_inc_65       ForQA             saed32rvt_tt1p05v25c
+simf_DW01_add_65       ForQA             saed32rvt_tt1p05v25c
+simf_DW01_ash_81       8000              saed32rvt_tt1p05v25c
+simf_DW01_inc_66       ForQA             saed32rvt_tt1p05v25c
+simf_DW01_add_66       ForQA             saed32rvt_tt1p05v25c
+simf_DW01_ash_82       8000              saed32rvt_tt1p05v25c
+simf_DW01_inc_67       ForQA             saed32rvt_tt1p05v25c
+simf_DW01_add_67       ForQA             saed32rvt_tt1p05v25c
+simf_DW01_ash_83       8000              saed32rvt_tt1p05v25c
+simf_DW01_inc_68       ForQA             saed32rvt_tt1p05v25c
+simf_DW01_add_68       ForQA             saed32rvt_tt1p05v25c
+simf_DW01_ash_84       8000              saed32rvt_tt1p05v25c
+simf_DW01_inc_69       ForQA             saed32rvt_tt1p05v25c
+simf_DW01_add_69       ForQA             saed32rvt_tt1p05v25c
+simf_DW01_ash_85       8000              saed32rvt_tt1p05v25c
+simf_DW01_inc_70       ForQA             saed32rvt_tt1p05v25c
+simf_DW01_add_70       ForQA             saed32rvt_tt1p05v25c
+simf_DW01_ash_86       8000              saed32rvt_tt1p05v25c
+simf_DW01_inc_71       ForQA             saed32rvt_tt1p05v25c
+simf_DW01_add_71       ForQA             saed32rvt_tt1p05v25c
+simf_DW01_ash_87       8000              saed32rvt_tt1p05v25c
+simf_DW01_inc_72       ForQA             saed32rvt_tt1p05v25c
+simf_DW01_add_72       ForQA             saed32rvt_tt1p05v25c
+simf_DW01_ash_88       8000              saed32rvt_tt1p05v25c
+simf_DW01_inc_73       ForQA             saed32rvt_tt1p05v25c
+simf_DW01_add_73       ForQA             saed32rvt_tt1p05v25c
+simf_DW01_ash_89       8000              saed32rvt_tt1p05v25c
+simf_DW01_inc_74       ForQA             saed32rvt_tt1p05v25c
+simf_DW01_add_74       ForQA             saed32rvt_tt1p05v25c
+simf_DW01_ash_90       8000              saed32rvt_tt1p05v25c
+simf_DW01_inc_75       ForQA             saed32rvt_tt1p05v25c
+simf_DW01_add_75       ForQA             saed32rvt_tt1p05v25c
+simf_DW01_ash_91       8000              saed32rvt_tt1p05v25c
+simf_DW01_inc_76       ForQA             saed32rvt_tt1p05v25c
+simf_DW01_add_76       ForQA             saed32rvt_tt1p05v25c
+simf_DW01_ash_92       8000              saed32rvt_tt1p05v25c
+simf_DW01_inc_77       ForQA             saed32rvt_tt1p05v25c
+simf_DW01_add_77       ForQA             saed32rvt_tt1p05v25c
+simf_DW01_ash_93       8000              saed32rvt_tt1p05v25c
+simf_DW01_inc_78       ForQA             saed32rvt_tt1p05v25c
+simf_DW01_add_78       ForQA             saed32rvt_tt1p05v25c
+simf_DW01_ash_94       8000              saed32rvt_tt1p05v25c
+simf_DW01_inc_79       ForQA             saed32rvt_tt1p05v25c
+simf_DW01_add_79       ForQA             saed32rvt_tt1p05v25c
+simf_DW01_ash_95       8000              saed32rvt_tt1p05v25c
+simf_DW01_add_80       ForQA             saed32rvt_tt1p05v25c
+simf_DW01_sub_80       ForQA             saed32rvt_tt1p05v25c
+simf_DW01_sub_81       ForQA             saed32rvt_tt1p05v25c
+simf_DW01_add_81       ForQA             saed32rvt_tt1p05v25c
+simf_DW01_sub_82       ForQA             saed32rvt_tt1p05v25c
+simf_DW01_sub_83       ForQA             saed32rvt_tt1p05v25c
+simf_DW01_add_82       ForQA             saed32rvt_tt1p05v25c
+simf_DW01_sub_84       ForQA             saed32rvt_tt1p05v25c
+simf_DW01_sub_85       ForQA             saed32rvt_tt1p05v25c
+simf_DW01_add_83       ForQA             saed32rvt_tt1p05v25c
+simf_DW01_sub_86       ForQA             saed32rvt_tt1p05v25c
+simf_DW01_sub_87       ForQA             saed32rvt_tt1p05v25c
+simf_DW01_add_84       ForQA             saed32rvt_tt1p05v25c
+simf_DW01_sub_88       ForQA             saed32rvt_tt1p05v25c
+simf_DW01_sub_89       ForQA             saed32rvt_tt1p05v25c
+simf_DW01_add_85       ForQA             saed32rvt_tt1p05v25c
+simf_DW01_sub_90       ForQA             saed32rvt_tt1p05v25c
+simf_DW01_sub_91       ForQA             saed32rvt_tt1p05v25c
+simf_DW01_add_86       ForQA             saed32rvt_tt1p05v25c
+simf_DW01_sub_92       ForQA             saed32rvt_tt1p05v25c
+simf_DW01_sub_93       ForQA             saed32rvt_tt1p05v25c
+simf_DW01_add_87       ForQA             saed32rvt_tt1p05v25c
+simf_DW01_sub_94       ForQA             saed32rvt_tt1p05v25c
+simf_DW01_sub_95       ForQA             saed32rvt_tt1p05v25c
+simf_DW01_add_88       ForQA             saed32rvt_tt1p05v25c
+simf_DW01_sub_96       ForQA             saed32rvt_tt1p05v25c
+simf_DW01_sub_97       ForQA             saed32rvt_tt1p05v25c
+simf_DW01_add_89       ForQA             saed32rvt_tt1p05v25c
+simf_DW01_sub_98       ForQA             saed32rvt_tt1p05v25c
+simf_DW01_sub_99       ForQA             saed32rvt_tt1p05v25c
+simf_DW01_add_90       ForQA             saed32rvt_tt1p05v25c
+simf_DW01_sub_100      ForQA             saed32rvt_tt1p05v25c
+simf_DW01_sub_101      ForQA             saed32rvt_tt1p05v25c
+simf_DW01_add_91       ForQA             saed32rvt_tt1p05v25c
+simf_DW01_sub_102      ForQA             saed32rvt_tt1p05v25c
+simf_DW01_sub_103      ForQA             saed32rvt_tt1p05v25c
+simf_DW01_add_92       ForQA             saed32rvt_tt1p05v25c
+simf_DW01_sub_104      ForQA             saed32rvt_tt1p05v25c
+simf_DW01_sub_105      ForQA             saed32rvt_tt1p05v25c
+simf_DW01_add_93       ForQA             saed32rvt_tt1p05v25c
+simf_DW01_sub_106      ForQA             saed32rvt_tt1p05v25c
+simf_DW01_sub_107      ForQA             saed32rvt_tt1p05v25c
+simf_DW01_add_94       ForQA             saed32rvt_tt1p05v25c
+simf_DW01_sub_108      ForQA             saed32rvt_tt1p05v25c
+simf_DW01_sub_109      ForQA             saed32rvt_tt1p05v25c
+simf_DW01_add_95       ForQA             saed32rvt_tt1p05v25c
+simf_DW01_sub_110      ForQA             saed32rvt_tt1p05v25c
+simf_DW01_sub_111      ForQA             saed32rvt_tt1p05v25c
+simf_DW_rash_48        8000              saed32rvt_tt1p05v25c
+simf_DW01_sub_112      ForQA             saed32rvt_tt1p05v25c
+simf_DW01_sub_113      ForQA             saed32rvt_tt1p05v25c
+simf_DW_rash_49        8000              saed32rvt_tt1p05v25c
+simf_DW01_sub_114      ForQA             saed32rvt_tt1p05v25c
+simf_DW01_sub_115      ForQA             saed32rvt_tt1p05v25c
+simf_DW_rash_50        8000              saed32rvt_tt1p05v25c
+simf_DW01_sub_116      ForQA             saed32rvt_tt1p05v25c
+simf_DW01_sub_117      ForQA             saed32rvt_tt1p05v25c
+simf_DW_rash_51        8000              saed32rvt_tt1p05v25c
+simf_DW01_sub_118      ForQA             saed32rvt_tt1p05v25c
+simf_DW01_sub_119      ForQA             saed32rvt_tt1p05v25c
+simf_DW_rash_52        8000              saed32rvt_tt1p05v25c
+simf_DW01_sub_120      ForQA             saed32rvt_tt1p05v25c
+simf_DW01_sub_121      ForQA             saed32rvt_tt1p05v25c
+simf_DW_rash_53        8000              saed32rvt_tt1p05v25c
+simf_DW01_sub_122      ForQA             saed32rvt_tt1p05v25c
+simf_DW01_sub_123      ForQA             saed32rvt_tt1p05v25c
+simf_DW_rash_54        8000              saed32rvt_tt1p05v25c
+simf_DW01_sub_124      ForQA             saed32rvt_tt1p05v25c
+simf_DW01_sub_125      ForQA             saed32rvt_tt1p05v25c
+simf_DW_rash_55        8000              saed32rvt_tt1p05v25c
+simf_DW01_sub_126      ForQA             saed32rvt_tt1p05v25c
+simf_DW01_sub_127      ForQA             saed32rvt_tt1p05v25c
+simf_DW_rash_56        8000              saed32rvt_tt1p05v25c
+simf_DW01_sub_128      ForQA             saed32rvt_tt1p05v25c
+simf_DW01_sub_129      ForQA             saed32rvt_tt1p05v25c
+simf_DW_rash_57        8000              saed32rvt_tt1p05v25c
+simf_DW01_sub_130      ForQA             saed32rvt_tt1p05v25c
+simf_DW01_sub_131      ForQA             saed32rvt_tt1p05v25c
+simf_DW_rash_58        8000              saed32rvt_tt1p05v25c
+simf_DW01_sub_132      ForQA             saed32rvt_tt1p05v25c
+simf_DW01_sub_133      ForQA             saed32rvt_tt1p05v25c
+simf_DW_rash_59        8000              saed32rvt_tt1p05v25c
+simf_DW01_sub_134      ForQA             saed32rvt_tt1p05v25c
+simf_DW01_sub_135      ForQA             saed32rvt_tt1p05v25c
+simf_DW_rash_60        8000              saed32rvt_tt1p05v25c
+simf_DW01_sub_136      ForQA             saed32rvt_tt1p05v25c
+simf_DW01_sub_137      ForQA             saed32rvt_tt1p05v25c
+simf_DW_rash_61        8000              saed32rvt_tt1p05v25c
+simf_DW01_sub_138      ForQA             saed32rvt_tt1p05v25c
+simf_DW01_sub_139      ForQA             saed32rvt_tt1p05v25c
+simf_DW_rash_62        8000              saed32rvt_tt1p05v25c
+simf_DW01_sub_140      ForQA             saed32rvt_tt1p05v25c
+simf_DW01_sub_141      ForQA             saed32rvt_tt1p05v25c
+simf_DW_rash_63        8000              saed32rvt_tt1p05v25c
+simf_DW01_sub_142      ForQA             saed32rvt_tt1p05v25c
+simf_DW01_sub_143      ForQA             saed32rvt_tt1p05v25c
+simf_DW01_cmp6_0       8000              saed32rvt_tt1p05v25c
+simf_DW01_cmp6_1       8000              saed32rvt_tt1p05v25c
+simf_DW01_cmp6_2       8000              saed32rvt_tt1p05v25c
+simf_DW01_cmp6_3       8000              saed32rvt_tt1p05v25c
+simf_DW01_cmp6_4       8000              saed32rvt_tt1p05v25c
+simf_DW01_cmp6_5       8000              saed32rvt_tt1p05v25c
+simf_DW01_cmp6_6       8000              saed32rvt_tt1p05v25c
+simf_DW01_cmp6_7       8000              saed32rvt_tt1p05v25c
+simf_DW01_cmp6_8       8000              saed32rvt_tt1p05v25c
+simf_DW01_cmp6_9       8000              saed32rvt_tt1p05v25c
+simf_DW01_cmp6_10      8000              saed32rvt_tt1p05v25c
+simf_DW01_cmp6_11      8000              saed32rvt_tt1p05v25c
+simf_DW01_cmp6_12      8000              saed32rvt_tt1p05v25c
+simf_DW01_cmp6_13      8000              saed32rvt_tt1p05v25c
+simf_DW01_cmp6_14      8000              saed32rvt_tt1p05v25c
+simf_DW01_cmp6_15      8000              saed32rvt_tt1p05v25c
+simf_DW01_sub_144      ForQA             saed32rvt_tt1p05v25c
+simf_DW01_inc_96       ForQA             saed32rvt_tt1p05v25c
+simf_DW01_sub_145      ForQA             saed32rvt_tt1p05v25c
+simf_DW01_inc_97       ForQA             saed32rvt_tt1p05v25c
+simf_DW01_sub_146      ForQA             saed32rvt_tt1p05v25c
+simf_DW01_inc_98       ForQA             saed32rvt_tt1p05v25c
+simf_DW01_sub_147      ForQA             saed32rvt_tt1p05v25c
+simf_DW01_inc_99       ForQA             saed32rvt_tt1p05v25c
+simf_DW01_sub_148      ForQA             saed32rvt_tt1p05v25c
+simf_DW01_inc_100      ForQA             saed32rvt_tt1p05v25c
+simf_DW01_sub_149      ForQA             saed32rvt_tt1p05v25c
+simf_DW01_inc_101      ForQA             saed32rvt_tt1p05v25c
+simf_DW01_sub_150      ForQA             saed32rvt_tt1p05v25c
+simf_DW01_inc_102      ForQA             saed32rvt_tt1p05v25c
+simf_DW01_sub_151      ForQA             saed32rvt_tt1p05v25c
+simf_DW01_inc_103      ForQA             saed32rvt_tt1p05v25c
+simf_DW01_sub_152      ForQA             saed32rvt_tt1p05v25c
+simf_DW01_inc_104      ForQA             saed32rvt_tt1p05v25c
+simf_DW01_sub_153      ForQA             saed32rvt_tt1p05v25c
+simf_DW01_inc_105      ForQA             saed32rvt_tt1p05v25c
+simf_DW01_sub_154      ForQA             saed32rvt_tt1p05v25c
+simf_DW01_inc_106      ForQA             saed32rvt_tt1p05v25c
+simf_DW01_sub_155      ForQA             saed32rvt_tt1p05v25c
+simf_DW01_inc_107      ForQA             saed32rvt_tt1p05v25c
+simf_DW01_sub_156      ForQA             saed32rvt_tt1p05v25c
+simf_DW01_inc_108      ForQA             saed32rvt_tt1p05v25c
+simf_DW01_sub_157      ForQA             saed32rvt_tt1p05v25c
+simf_DW01_inc_109      ForQA             saed32rvt_tt1p05v25c
+simf_DW01_sub_158      ForQA             saed32rvt_tt1p05v25c
+simf_DW01_inc_110      ForQA             saed32rvt_tt1p05v25c
+simf_DW01_sub_159      ForQA             saed32rvt_tt1p05v25c
+simf_DW01_inc_111      ForQA             saed32rvt_tt1p05v25c
+simf_DW01_sub_160      ForQA             saed32rvt_tt1p05v25c
+simf_DW01_inc_112      ForQA             saed32rvt_tt1p05v25c
+simf_DW01_sub_161      ForQA             saed32rvt_tt1p05v25c
+simf_DW01_inc_113      ForQA             saed32rvt_tt1p05v25c
+simf_DW01_sub_162      ForQA             saed32rvt_tt1p05v25c
+simf_DW01_inc_114      ForQA             saed32rvt_tt1p05v25c
+simf_DW01_sub_163      ForQA             saed32rvt_tt1p05v25c
+simf_DW01_inc_115      ForQA             saed32rvt_tt1p05v25c
+simf_DW01_sub_164      ForQA             saed32rvt_tt1p05v25c
+simf_DW01_inc_116      ForQA             saed32rvt_tt1p05v25c
+simf_DW01_sub_165      ForQA             saed32rvt_tt1p05v25c
+simf_DW01_inc_117      ForQA             saed32rvt_tt1p05v25c
+simf_DW01_sub_166      ForQA             saed32rvt_tt1p05v25c
+simf_DW01_inc_118      ForQA             saed32rvt_tt1p05v25c
+simf_DW01_sub_167      ForQA             saed32rvt_tt1p05v25c
+simf_DW01_inc_119      ForQA             saed32rvt_tt1p05v25c
+simf_DW01_sub_168      ForQA             saed32rvt_tt1p05v25c
+simf_DW01_inc_120      ForQA             saed32rvt_tt1p05v25c
+simf_DW01_sub_169      ForQA             saed32rvt_tt1p05v25c
+simf_DW01_inc_121      ForQA             saed32rvt_tt1p05v25c
+simf_DW01_sub_170      ForQA             saed32rvt_tt1p05v25c
+simf_DW01_inc_122      ForQA             saed32rvt_tt1p05v25c
+simf_DW01_sub_171      ForQA             saed32rvt_tt1p05v25c
+simf_DW01_inc_123      ForQA             saed32rvt_tt1p05v25c
+simf_DW01_sub_172      ForQA             saed32rvt_tt1p05v25c
+simf_DW01_inc_124      ForQA             saed32rvt_tt1p05v25c
+simf_DW01_sub_173      ForQA             saed32rvt_tt1p05v25c
+simf_DW01_inc_125      ForQA             saed32rvt_tt1p05v25c
+simf_DW01_sub_174      ForQA             saed32rvt_tt1p05v25c
+simf_DW01_inc_126      ForQA             saed32rvt_tt1p05v25c
+simf_DW01_sub_175      ForQA             saed32rvt_tt1p05v25c
+simf_DW01_inc_127      ForQA             saed32rvt_tt1p05v25c
+simf_DW01_add_97       ForQA             saed32rvt_tt1p05v25c
+simf_DW01_add_99       ForQA             saed32rvt_tt1p05v25c
+simf_DW01_add_101      ForQA             saed32rvt_tt1p05v25c
+simf_DW01_add_103      ForQA             saed32rvt_tt1p05v25c
+simf_DW01_add_105      ForQA             saed32rvt_tt1p05v25c
+simf_DW01_add_107      ForQA             saed32rvt_tt1p05v25c
+simf_DW01_add_109      ForQA             saed32rvt_tt1p05v25c
+simf_DW01_add_111      ForQA             saed32rvt_tt1p05v25c
+simf_DW01_add_113      ForQA             saed32rvt_tt1p05v25c
+simf_DW01_add_115      ForQA             saed32rvt_tt1p05v25c
+simf_DW01_add_117      ForQA             saed32rvt_tt1p05v25c
+simf_DW01_add_119      ForQA             saed32rvt_tt1p05v25c
+simf_DW01_add_121      ForQA             saed32rvt_tt1p05v25c
+simf_DW01_add_123      ForQA             saed32rvt_tt1p05v25c
+simf_DW01_add_125      ForQA             saed32rvt_tt1p05v25c
+simf_DW01_add_127      ForQA             saed32rvt_tt1p05v25c
+simf_DW01_add_192      ForQA             saed32rvt_tt1p05v25c
+simf_DW01_add_193      ForQA             saed32rvt_tt1p05v25c
+simf_DW01_add_194      ForQA             saed32rvt_tt1p05v25c
+simf_DW01_add_195      ForQA             saed32rvt_tt1p05v25c
+simf_DW01_add_196      ForQA             saed32rvt_tt1p05v25c
+simf_DW01_add_197      ForQA             saed32rvt_tt1p05v25c
+simf_DW01_add_198      ForQA             saed32rvt_tt1p05v25c
+simf_DW01_add_199      ForQA             saed32rvt_tt1p05v25c
+simf_DW01_add_200      ForQA             saed32rvt_tt1p05v25c
+simf_DW01_add_201      ForQA             saed32rvt_tt1p05v25c
+simf_DW01_add_202      ForQA             saed32rvt_tt1p05v25c
+simf_DW01_add_203      ForQA             saed32rvt_tt1p05v25c
+simf_DW01_add_204      ForQA             saed32rvt_tt1p05v25c
+simf_DW01_add_205      ForQA             saed32rvt_tt1p05v25c
+simf_DW01_add_206      ForQA             saed32rvt_tt1p05v25c
+simf_DW01_add_207      ForQA             saed32rvt_tt1p05v25c
+simf_DW01_add_208      8000              saed32rvt_tt1p05v25c
+simf_DW02_mult_0       ForQA             saed32rvt_tt1p05v25c
+simf_DW01_add_209      8000              saed32rvt_tt1p05v25c
+simf_DW02_mult_1       ForQA             saed32rvt_tt1p05v25c
+simf_DW01_add_210      8000              saed32rvt_tt1p05v25c
+simf_DW02_mult_2       ForQA             saed32rvt_tt1p05v25c
+simf_DW01_add_211      8000              saed32rvt_tt1p05v25c
+simf_DW02_mult_3       ForQA             saed32rvt_tt1p05v25c
+simf_DW01_add_212      8000              saed32rvt_tt1p05v25c
+simf_DW02_mult_4       ForQA             saed32rvt_tt1p05v25c
+simf_DW01_add_213      8000              saed32rvt_tt1p05v25c
+simf_DW02_mult_5       ForQA             saed32rvt_tt1p05v25c
+simf_DW01_add_214      8000              saed32rvt_tt1p05v25c
+simf_DW02_mult_6       ForQA             saed32rvt_tt1p05v25c
+simf_DW01_add_215      8000              saed32rvt_tt1p05v25c
+simf_DW02_mult_7       ForQA             saed32rvt_tt1p05v25c
+simf_DW01_add_216      8000              saed32rvt_tt1p05v25c
+simf_DW02_mult_8       ForQA             saed32rvt_tt1p05v25c
+simf_DW01_add_217      8000              saed32rvt_tt1p05v25c
+simf_DW02_mult_9       ForQA             saed32rvt_tt1p05v25c
+simf_DW01_add_218      8000              saed32rvt_tt1p05v25c
+simf_DW02_mult_10      ForQA             saed32rvt_tt1p05v25c
+simf_DW01_add_219      8000              saed32rvt_tt1p05v25c
+simf_DW02_mult_11      ForQA             saed32rvt_tt1p05v25c
+simf_DW01_add_220      8000              saed32rvt_tt1p05v25c
+simf_DW02_mult_12      ForQA             saed32rvt_tt1p05v25c
+simf_DW01_add_221      8000              saed32rvt_tt1p05v25c
+simf_DW02_mult_13      ForQA             saed32rvt_tt1p05v25c
+simf_DW01_add_222      8000              saed32rvt_tt1p05v25c
+simf_DW02_mult_14      ForQA             saed32rvt_tt1p05v25c
+simf_DW01_add_223      8000              saed32rvt_tt1p05v25c
+simf_DW02_mult_15      ForQA             saed32rvt_tt1p05v25c
+simf_DW01_sub_288      ForQA             saed32rvt_tt1p05v25c
+simf_DW02_mult_16      ForQA             saed32rvt_tt1p05v25c
+simf_DW01_sub_289      ForQA             saed32rvt_tt1p05v25c
+simf_DW02_mult_17      ForQA             saed32rvt_tt1p05v25c
+simf_DW01_sub_290      ForQA             saed32rvt_tt1p05v25c
+simf_DW02_mult_18      ForQA             saed32rvt_tt1p05v25c
+simf_DW01_sub_291      ForQA             saed32rvt_tt1p05v25c
+simf_DW02_mult_19      ForQA             saed32rvt_tt1p05v25c
+simf_DW01_sub_292      ForQA             saed32rvt_tt1p05v25c
+simf_DW02_mult_20      ForQA             saed32rvt_tt1p05v25c
+simf_DW01_sub_293      ForQA             saed32rvt_tt1p05v25c
+simf_DW02_mult_21      ForQA             saed32rvt_tt1p05v25c
+simf_DW01_sub_294      ForQA             saed32rvt_tt1p05v25c
+simf_DW02_mult_22      ForQA             saed32rvt_tt1p05v25c
+simf_DW01_sub_295      ForQA             saed32rvt_tt1p05v25c
+simf_DW02_mult_23      ForQA             saed32rvt_tt1p05v25c
+simf_DW01_sub_296      ForQA             saed32rvt_tt1p05v25c
+simf_DW02_mult_24      ForQA             saed32rvt_tt1p05v25c
+simf_DW01_sub_297      ForQA             saed32rvt_tt1p05v25c
+simf_DW02_mult_25      ForQA             saed32rvt_tt1p05v25c
+simf_DW01_sub_298      ForQA             saed32rvt_tt1p05v25c
+simf_DW02_mult_26      ForQA             saed32rvt_tt1p05v25c
+simf_DW01_sub_299      ForQA             saed32rvt_tt1p05v25c
+simf_DW02_mult_27      ForQA             saed32rvt_tt1p05v25c
+simf_DW01_sub_300      ForQA             saed32rvt_tt1p05v25c
+simf_DW02_mult_28      ForQA             saed32rvt_tt1p05v25c
+simf_DW01_sub_301      ForQA             saed32rvt_tt1p05v25c
+simf_DW02_mult_29      ForQA             saed32rvt_tt1p05v25c
+simf_DW01_sub_302      ForQA             saed32rvt_tt1p05v25c
+simf_DW02_mult_30      ForQA             saed32rvt_tt1p05v25c
+simf_DW01_sub_303      ForQA             saed32rvt_tt1p05v25c
+simf_DW02_mult_31      ForQA             saed32rvt_tt1p05v25c
+
+
+Global Operating Voltage = 1.05 
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ns
+    Dynamic Power Units = 1uW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+--------------------------------------------------------------------------------
+                                       Switch   Int      Leak     Total
+Hierarchy                              Power    Power    Power    Power    %
+--------------------------------------------------------------------------------
+simf                                    562.417 2.51e+04 4.19e+10 6.76e+04 100.0
+  alu/valu/genblk1.simf_alu[15]/fpu/fpu_mul/add_192_aco (simf_DW01_add_223)
+                                       1.57e-02    0.139 1.12e+07   11.375   0.0
+  alu/valu/genblk1.simf_alu[15]/fpu/fpu_mul/mult_add_192_aco (simf_DW02_mult_15)
+                                       1.34e-03 7.78e-04 5.41e+06    5.416   0.0
+  alu/valu/genblk1.simf_alu[14]/fpu/fpu_mul/add_192_aco (simf_DW01_add_217)
+                                       1.53e-02    0.135 1.12e+07   11.371   0.0
+  alu/valu/genblk1.simf_alu[14]/fpu/fpu_mul/mult_add_192_aco (simf_DW02_mult_9)
+                                       1.34e-03 7.78e-04 5.41e+06    5.416   0.0
+  alu/valu/genblk1.simf_alu[13]/fpu/fpu_mul/add_192_aco (simf_DW01_add_218)
+                                       1.57e-02    0.139 1.12e+07   11.378   0.0
+  alu/valu/genblk1.simf_alu[13]/fpu/fpu_mul/mult_add_192_aco (simf_DW02_mult_10)
+                                       1.34e-03 7.78e-04 5.41e+06    5.416   0.0
+  alu/valu/genblk1.simf_alu[12]/fpu/fpu_mul/add_192_aco (simf_DW01_add_219)
+                                       1.57e-02    0.139 1.12e+07   11.376   0.0
+  alu/valu/genblk1.simf_alu[12]/fpu/fpu_mul/mult_add_192_aco (simf_DW02_mult_11)
+                                       1.34e-03 7.78e-04 5.41e+06    5.416   0.0
+  alu/valu/genblk1.simf_alu[11]/fpu/fpu_mul/add_192_aco (simf_DW01_add_220)
+                                       1.61e-02    0.142 1.12e+07   11.383   0.0
+  alu/valu/genblk1.simf_alu[11]/fpu/fpu_mul/mult_add_192_aco (simf_DW02_mult_12)
+                                       1.34e-03 7.78e-04 5.41e+06    5.416   0.0
+  alu/valu/genblk1.simf_alu[10]/fpu/fpu_mul/add_192_aco (simf_DW01_add_221)
+                                       1.55e-02    0.137 1.12e+07   11.372   0.0
+  alu/valu/genblk1.simf_alu[10]/fpu/fpu_mul/mult_add_192_aco (simf_DW02_mult_13)
+                                       1.34e-03 7.78e-04 5.41e+06    5.416   0.0
+  alu/valu/genblk1.simf_alu[9]/fpu/fpu_mul/add_192_aco (simf_DW01_add_208)
+                                       1.58e-02    0.139 1.12e+07   11.381   0.0
+  alu/valu/genblk1.simf_alu[9]/fpu/fpu_mul/mult_add_192_aco (simf_DW02_mult_0)
+                                       1.34e-03 7.78e-04 5.41e+06    5.416   0.0
+  alu/valu/genblk1.simf_alu[8]/fpu/fpu_mul/add_192_aco (simf_DW01_add_209)
+                                       1.51e-02    0.133 1.12e+07   11.368   0.0
+  alu/valu/genblk1.simf_alu[8]/fpu/fpu_mul/mult_add_192_aco (simf_DW02_mult_1)
+                                       1.34e-03 7.78e-04 5.41e+06    5.416   0.0
+  alu/valu/genblk1.simf_alu[7]/fpu/fpu_mul/add_192_aco (simf_DW01_add_210)
+                                       1.47e-02    0.130 1.12e+07   11.365   0.0
+  alu/valu/genblk1.simf_alu[7]/fpu/fpu_mul/mult_add_192_aco (simf_DW02_mult_2)
+                                       1.34e-03 7.78e-04 5.41e+06    5.416   0.0
+  alu/valu/genblk1.simf_alu[6]/fpu/fpu_mul/add_192_aco (simf_DW01_add_211)
+                                       1.52e-02    0.134 1.12e+07   11.372   0.0
+  alu/valu/genblk1.simf_alu[6]/fpu/fpu_mul/mult_add_192_aco (simf_DW02_mult_3)
+                                       1.34e-03 7.78e-04 5.41e+06    5.416   0.0
+  alu/valu/genblk1.simf_alu[5]/fpu/fpu_mul/add_192_aco (simf_DW01_add_212)
+                                       1.51e-02    0.134 1.12e+07   11.365   0.0
+  alu/valu/genblk1.simf_alu[5]/fpu/fpu_mul/mult_add_192_aco (simf_DW02_mult_4)
+                                       1.34e-03 7.78e-04 5.41e+06    5.416   0.0
+  alu/valu/genblk1.simf_alu[4]/fpu/fpu_mul/add_192_aco (simf_DW01_add_213)
+                                       1.56e-02    0.138 1.12e+07   11.380   0.0
+  alu/valu/genblk1.simf_alu[4]/fpu/fpu_mul/mult_add_192_aco (simf_DW02_mult_5)
+                                       1.34e-03 7.78e-04 5.41e+06    5.416   0.0
+  alu/valu/genblk1.simf_alu[3]/fpu/fpu_mul/add_192_aco (simf_DW01_add_214)
+                                       1.54e-02    0.136 1.12e+07   11.372   0.0
+  alu/valu/genblk1.simf_alu[3]/fpu/fpu_mul/mult_add_192_aco (simf_DW02_mult_6)
+                                       1.34e-03 7.78e-04 5.41e+06    5.416   0.0
+  alu/valu/genblk1.simf_alu[2]/fpu/fpu_mul/add_192_aco (simf_DW01_add_215)
+                                       1.54e-02    0.136 1.12e+07   11.373   0.0
+  alu/valu/genblk1.simf_alu[2]/fpu/fpu_mul/mult_add_192_aco (simf_DW02_mult_7)
+                                       1.34e-03 7.78e-04 5.41e+06    5.416   0.0
+  alu/valu/genblk1.simf_alu[1]/fpu/fpu_mul/add_192_aco (simf_DW01_add_216)
+                                       1.59e-02    0.140 1.12e+07   11.381   0.0
+  alu/valu/genblk1.simf_alu[1]/fpu/fpu_mul/mult_add_192_aco (simf_DW02_mult_8)
+                                       1.34e-03 7.78e-04 5.41e+06    5.416   0.0
+  alu/valu/genblk1.simf_alu[0]/fpu/fpu_mul/add_192_aco (simf_DW01_add_222)
+                                       1.52e-02    0.134 1.12e+07   11.368   0.0
+  alu/valu/genblk1.simf_alu[0]/fpu/fpu_mul/mult_add_192_aco (simf_DW02_mult_14)
+                                       1.34e-03 7.78e-04 5.41e+06    5.416   0.0
+  add_1_root_add_1_root_alu/valu/genblk1.simf_alu[15]/fpu/fpu_pre_norm_mul/sub_109 (simf_DW01_add_101)
+                                       6.49e-02    0.356 2.25e+06    2.668   0.0
+  add_1_root_add_1_root_alu/valu/genblk1.simf_alu[14]/fpu/fpu_pre_norm_mul/sub_109 (simf_DW01_add_103)
+                                       6.19e-02    0.340 2.24e+06    2.645   0.0
+  add_1_root_add_1_root_alu/valu/genblk1.simf_alu[13]/fpu/fpu_pre_norm_mul/sub_109 (simf_DW01_add_105)
+                                       6.31e-02    0.346 2.24e+06    2.654   0.0
+  add_1_root_add_1_root_alu/valu/genblk1.simf_alu[12]/fpu/fpu_pre_norm_mul/sub_109 (simf_DW01_add_107)
+                                       6.29e-02    0.346 2.24e+06    2.653   0.0
+  add_1_root_add_1_root_alu/valu/genblk1.simf_alu[11]/fpu/fpu_pre_norm_mul/sub_109 (simf_DW01_add_109)
+                                       6.56e-02    0.360 2.25e+06    2.679   0.0
+  add_1_root_add_1_root_alu/valu/genblk1.simf_alu[10]/fpu/fpu_pre_norm_mul/sub_109 (simf_DW01_add_111)
+                                       6.40e-02    0.350 2.24e+06    2.658   0.0
+  add_1_root_add_1_root_alu/valu/genblk1.simf_alu[9]/fpu/fpu_pre_norm_mul/sub_109 (simf_DW01_add_113)
+                                       6.43e-02    0.352 2.25e+06    2.666   0.0
+  add_1_root_add_1_root_alu/valu/genblk1.simf_alu[8]/fpu/fpu_pre_norm_mul/sub_109 (simf_DW01_add_115)
+                                       6.26e-02    0.345 2.25e+06    2.655   0.0
+  add_1_root_add_1_root_alu/valu/genblk1.simf_alu[7]/fpu/fpu_pre_norm_mul/sub_109 (simf_DW01_add_117)
+                                       6.20e-02    0.341 2.25e+06    2.650   0.0
+  add_1_root_add_1_root_alu/valu/genblk1.simf_alu[6]/fpu/fpu_pre_norm_mul/sub_109 (simf_DW01_add_121)
+                                       6.48e-02    0.356 2.25e+06    2.670   0.0
+  add_1_root_add_1_root_alu/valu/genblk1.simf_alu[5]/fpu/fpu_pre_norm_mul/sub_109 (simf_DW01_add_123)
+                                       6.39e-02    0.351 2.25e+06    2.660   0.0
+  add_1_root_add_1_root_alu/valu/genblk1.simf_alu[4]/fpu/fpu_pre_norm_mul/sub_109 (simf_DW01_add_125)
+                                       6.50e-02    0.356 2.25e+06    2.676   0.0
+  add_1_root_add_1_root_alu/valu/genblk1.simf_alu[3]/fpu/fpu_pre_norm_mul/sub_109 (simf_DW01_add_127)
+                                       6.37e-02    0.351 2.25e+06    2.663   0.0
+  add_1_root_add_1_root_alu/valu/genblk1.simf_alu[2]/fpu/fpu_pre_norm_mul/sub_109 (simf_DW01_add_97)
+                                       6.38e-02    0.349 2.25e+06    2.662   0.0
+  add_1_root_add_1_root_alu/valu/genblk1.simf_alu[1]/fpu/fpu_pre_norm_mul/sub_109 (simf_DW01_add_99)
+                                       6.46e-02    0.353 2.25e+06    2.666   0.0
+  add_1_root_add_1_root_alu/valu/genblk1.simf_alu[0]/fpu/fpu_pre_norm_mul/sub_109 (simf_DW01_add_119)
+                                       6.19e-02    0.339 2.24e+06    2.645   0.0
+  alu/valu/genblk1.simf_alu[15]/fpu/fpu_prenorm_addsub/sub_160 (simf_DW01_sub_148)
+                                       8.28e-02    0.323 4.71e+06    5.111   0.0
+  alu/valu/genblk1.simf_alu[15]/fpu/fpu_prenorm_addsub/add_160 (simf_DW01_inc_100)
+                                       1.92e-02    0.115 3.88e+06    4.010   0.0
+  alu/valu/genblk1.simf_alu[14]/fpu/fpu_prenorm_addsub/sub_160 (simf_DW01_sub_150)
+                                       7.84e-02    0.306 4.71e+06    5.090   0.0
+  alu/valu/genblk1.simf_alu[14]/fpu/fpu_prenorm_addsub/add_160 (simf_DW01_inc_102)
+                                       1.84e-02    0.110 3.88e+06    4.005   0.0
+  alu/valu/genblk1.simf_alu[13]/fpu/fpu_prenorm_addsub/sub_160 (simf_DW01_sub_152)
+                                       8.11e-02    0.315 4.71e+06    5.102   0.0
+  alu/valu/genblk1.simf_alu[13]/fpu/fpu_prenorm_addsub/add_160 (simf_DW01_inc_104)
+                                       1.90e-02    0.114 3.88e+06    4.009   0.0
+  alu/valu/genblk1.simf_alu[12]/fpu/fpu_prenorm_addsub/sub_160 (simf_DW01_sub_154)
+                                       8.12e-02    0.318 4.71e+06    5.106   0.0
+  alu/valu/genblk1.simf_alu[12]/fpu/fpu_prenorm_addsub/add_160 (simf_DW01_inc_106)
+                                       1.84e-02    0.110 3.88e+06    4.004   0.0
+  alu/valu/genblk1.simf_alu[11]/fpu/fpu_prenorm_addsub/sub_160 (simf_DW01_sub_156)
+                                       8.38e-02    0.327 4.70e+06    5.115   0.0
+  alu/valu/genblk1.simf_alu[11]/fpu/fpu_prenorm_addsub/add_160 (simf_DW01_inc_108)
+                                       1.93e-02    0.116 3.87e+06    4.009   0.0
+  alu/valu/genblk1.simf_alu[10]/fpu/fpu_prenorm_addsub/sub_160 (simf_DW01_sub_158)
+                                       8.12e-02    0.317 4.71e+06    5.105   0.0
+  alu/valu/genblk1.simf_alu[10]/fpu/fpu_prenorm_addsub/add_160 (simf_DW01_inc_110)
+                                       1.90e-02    0.114 3.88e+06    4.009   0.0
+  alu/valu/genblk1.simf_alu[9]/fpu/fpu_prenorm_addsub/sub_160 (simf_DW01_sub_160)
+                                       8.20e-02    0.320 4.70e+06    5.106   0.0
+  alu/valu/genblk1.simf_alu[9]/fpu/fpu_prenorm_addsub/add_160 (simf_DW01_inc_112)
+                                       1.90e-02    0.114 3.88e+06    4.009   0.0
+  alu/valu/genblk1.simf_alu[8]/fpu/fpu_prenorm_addsub/sub_160 (simf_DW01_sub_162)
+                                       7.99e-02    0.312 4.71e+06    5.096   0.0
+  alu/valu/genblk1.simf_alu[8]/fpu/fpu_prenorm_addsub/add_160 (simf_DW01_inc_114)
+                                       1.88e-02    0.113 3.88e+06    4.007   0.0
+  alu/valu/genblk1.simf_alu[7]/fpu/fpu_prenorm_addsub/sub_160 (simf_DW01_sub_164)
+                                       7.94e-02    0.311 4.71e+06    5.096   0.0
+  alu/valu/genblk1.simf_alu[7]/fpu/fpu_prenorm_addsub/add_160 (simf_DW01_inc_116)
+                                       1.85e-02    0.111 3.88e+06    4.005   0.0
+  alu/valu/genblk1.simf_alu[6]/fpu/fpu_prenorm_addsub/sub_160 (simf_DW01_sub_168)
+                                       8.33e-02    0.325 4.70e+06    5.113   0.0
+  alu/valu/genblk1.simf_alu[6]/fpu/fpu_prenorm_addsub/add_160 (simf_DW01_inc_120)
+                                       1.93e-02    0.116 3.88e+06    4.011   0.0
+  alu/valu/genblk1.simf_alu[5]/fpu/fpu_prenorm_addsub/sub_160 (simf_DW01_sub_170)
+                                       8.20e-02    0.320 4.71e+06    5.108   0.0
+  alu/valu/genblk1.simf_alu[5]/fpu/fpu_prenorm_addsub/add_160 (simf_DW01_inc_122)
+                                       1.91e-02    0.115 3.88e+06    4.009   0.0
+  alu/valu/genblk1.simf_alu[4]/fpu/fpu_prenorm_addsub/sub_160 (simf_DW01_sub_172)
+                                       8.27e-02    0.322 4.70e+06    5.110   0.0
+  alu/valu/genblk1.simf_alu[4]/fpu/fpu_prenorm_addsub/add_160 (simf_DW01_inc_124)
+                                       1.92e-02    0.115 3.88e+06    4.010   0.0
+  alu/valu/genblk1.simf_alu[3]/fpu/fpu_prenorm_addsub/sub_160 (simf_DW01_sub_174)
+                                       8.13e-02    0.318 4.71e+06    5.105   0.0
+  alu/valu/genblk1.simf_alu[3]/fpu/fpu_prenorm_addsub/add_160 (simf_DW01_inc_126)
+                                       1.90e-02    0.114 3.88e+06    4.008   0.0
+  alu/valu/genblk1.simf_alu[2]/fpu/fpu_prenorm_addsub/sub_160 (simf_DW01_sub_144)
+                                       8.02e-02    0.315 4.71e+06    5.101   0.0
+  alu/valu/genblk1.simf_alu[2]/fpu/fpu_prenorm_addsub/add_160 (simf_DW01_inc_96)
+                                       1.85e-02    0.111 3.88e+06    4.005   0.0
+  alu/valu/genblk1.simf_alu[1]/fpu/fpu_prenorm_addsub/sub_160 (simf_DW01_sub_146)
+                                       8.23e-02    0.321 4.70e+06    5.108   0.0
+  alu/valu/genblk1.simf_alu[1]/fpu/fpu_prenorm_addsub/add_160 (simf_DW01_inc_98)
+                                       1.89e-02    0.114 3.88e+06    4.009   0.0
+  alu/valu/genblk1.simf_alu[0]/fpu/fpu_prenorm_addsub/sub_160 (simf_DW01_sub_166)
+                                       7.92e-02    0.309 4.71e+06    5.096   0.0
+  alu/valu/genblk1.simf_alu[0]/fpu/fpu_prenorm_addsub/add_160 (simf_DW01_inc_118)
+                                       1.82e-02    0.109 3.88e+06    4.003   0.0
+  alu/valu/genblk1.simf_alu[15]/fpu/fpu_div/sub_159_aco (simf_DW01_sub_303)
+                                          0.000    0.000 1.53e+07   15.309   0.0
+  alu/valu/genblk1.simf_alu[15]/fpu/fpu_div/mult_sub_159_aco (simf_DW02_mult_31)
+                                       9.50e-02 6.46e-02 8.21e+06    8.365   0.0
+  alu/valu/genblk1.simf_alu[14]/fpu/fpu_div/sub_159_aco (simf_DW01_sub_297)
+                                          0.000    0.000 1.53e+07   15.283   0.0
+  alu/valu/genblk1.simf_alu[14]/fpu/fpu_div/mult_sub_159_aco (simf_DW02_mult_25)
+                                       8.62e-02 6.20e-02 8.21e+06    8.355   0.0
+  alu/valu/genblk1.simf_alu[13]/fpu/fpu_div/sub_159_aco (simf_DW01_sub_298)
+                                          0.000    0.000 1.58e+07   15.787   0.0
+  alu/valu/genblk1.simf_alu[13]/fpu/fpu_div/mult_sub_159_aco (simf_DW02_mult_26)
+                                          0.105 8.14e-02 8.72e+06    8.905   0.0
+  alu/valu/genblk1.simf_alu[12]/fpu/fpu_div/sub_159_aco (simf_DW01_sub_299)
+                                          0.000    0.000 1.53e+07   15.309   0.0
+  alu/valu/genblk1.simf_alu[12]/fpu/fpu_div/mult_sub_159_aco (simf_DW02_mult_27)
+                                       9.45e-02 6.41e-02 8.21e+06    8.364   0.0
+  alu/valu/genblk1.simf_alu[11]/fpu/fpu_div/sub_159_aco (simf_DW01_sub_300)
+                                          0.000    0.000 1.52e+07   15.181   0.0
+  alu/valu/genblk1.simf_alu[11]/fpu/fpu_div/mult_sub_159_aco (simf_DW02_mult_28)
+                                       9.65e-02 6.56e-02 8.19e+06    8.352   0.0
+  alu/valu/genblk1.simf_alu[10]/fpu/fpu_div/sub_159_aco (simf_DW01_sub_301)
+                                          0.000    0.000 1.53e+07   15.283   0.0
+  alu/valu/genblk1.simf_alu[10]/fpu/fpu_div/mult_sub_159_aco (simf_DW02_mult_29)
+                                       9.42e-02 6.44e-02 8.21e+06    8.368   0.0
+  alu/valu/genblk1.simf_alu[9]/fpu/fpu_div/sub_159_aco (simf_DW01_sub_288)
+                                          0.000    0.000 1.53e+07   15.283   0.0
+  alu/valu/genblk1.simf_alu[9]/fpu/fpu_div/mult_sub_159_aco (simf_DW02_mult_16)
+                                       9.43e-02 6.41e-02 8.20e+06    8.355   0.0
+  alu/valu/genblk1.simf_alu[8]/fpu/fpu_div/sub_159_aco (simf_DW01_sub_289)
+                                          0.000    0.000 1.52e+07   15.232   0.0
+  alu/valu/genblk1.simf_alu[8]/fpu/fpu_div/mult_sub_159_aco (simf_DW02_mult_17)
+                                       9.25e-02 6.73e-02 8.21e+06    8.366   0.0
+  alu/valu/genblk1.simf_alu[7]/fpu/fpu_div/sub_159_aco (simf_DW01_sub_290)
+                                       2.95e-05 2.67e-04 1.53e+07   15.283   0.0
+  alu/valu/genblk1.simf_alu[7]/fpu/fpu_div/mult_sub_159_aco (simf_DW02_mult_18)
+                                          0.102 6.01e-02 8.22e+06    8.380   0.0
+  alu/valu/genblk1.simf_alu[6]/fpu/fpu_div/sub_159_aco (simf_DW01_sub_291)
+                                          0.000    0.000 1.57e+07   15.663   0.0
+  alu/valu/genblk1.simf_alu[6]/fpu/fpu_div/mult_sub_159_aco (simf_DW02_mult_19)
+                                          0.103 6.35e-02 8.20e+06    8.364   0.0
+  alu/valu/genblk1.simf_alu[5]/fpu/fpu_div/sub_159_aco (simf_DW01_sub_292)
+                                          0.000    0.000 1.53e+07   15.309   0.0
+  alu/valu/genblk1.simf_alu[5]/fpu/fpu_div/mult_sub_159_aco (simf_DW02_mult_20)
+                                       9.37e-02 6.37e-02 8.21e+06    8.365   0.0
+  alu/valu/genblk1.simf_alu[4]/fpu/fpu_div/sub_159_aco (simf_DW01_sub_293)
+                                          0.000    0.000 1.53e+07   15.283   0.0
+  alu/valu/genblk1.simf_alu[4]/fpu/fpu_div/mult_sub_159_aco (simf_DW02_mult_21)
+                                       9.09e-02 6.52e-02 8.20e+06    8.352   0.0
+  alu/valu/genblk1.simf_alu[3]/fpu/fpu_div/sub_159_aco (simf_DW01_sub_294)
+                                          0.000    0.000 1.57e+07   15.663   0.0
+  alu/valu/genblk1.simf_alu[3]/fpu/fpu_div/mult_sub_159_aco (simf_DW02_mult_22)
+                                          0.100 7.90e-02 8.73e+06    8.910   0.0
+  alu/valu/genblk1.simf_alu[2]/fpu/fpu_div/sub_159_aco (simf_DW01_sub_295)
+                                          0.000    0.000 1.53e+07   15.334   0.0
+  alu/valu/genblk1.simf_alu[2]/fpu/fpu_div/mult_sub_159_aco (simf_DW02_mult_23)
+                                       9.29e-02 6.31e-02 8.20e+06    8.357   0.0
+  alu/valu/genblk1.simf_alu[1]/fpu/fpu_div/sub_159_aco (simf_DW01_sub_296)
+                                          0.000    0.000 1.53e+07   15.283   0.0
+  alu/valu/genblk1.simf_alu[1]/fpu/fpu_div/mult_sub_159_aco (simf_DW02_mult_24)
+                                       9.78e-02 6.39e-02 8.20e+06    8.365   0.0
+  alu/valu/genblk1.simf_alu[0]/fpu/fpu_div/sub_159_aco (simf_DW01_sub_302)
+                                       2.95e-05 2.67e-04 1.53e+07   15.283   0.0
+  alu/valu/genblk1.simf_alu[0]/fpu/fpu_div/mult_sub_159_aco (simf_DW02_mult_30)
+                                          0.103 6.06e-02 8.23e+06    8.389   0.0
+  alu/valu/genblk1.simf_alu[15]/fpu/fpu_prenorm_addsub/sub_158 (simf_DW01_sub_149)
+                                       8.24e-02    0.324 4.71e+06    5.112   0.0
+  alu/valu/genblk1.simf_alu[15]/fpu/fpu_prenorm_addsub/add_158 (simf_DW01_inc_101)
+                                       1.89e-02    0.114 3.88e+06    4.010   0.0
+  alu/valu/genblk1.simf_alu[14]/fpu/fpu_prenorm_addsub/sub_158 (simf_DW01_sub_151)
+                                       7.80e-02    0.307 4.71e+06    5.092   0.0
+  alu/valu/genblk1.simf_alu[14]/fpu/fpu_prenorm_addsub/add_158 (simf_DW01_inc_103)
+                                       1.77e-02    0.107 3.88e+06    4.001   0.0
+  alu/valu/genblk1.simf_alu[13]/fpu/fpu_prenorm_addsub/sub_158 (simf_DW01_sub_153)
+                                       8.00e-02    0.316 4.71e+06    5.103   0.0
+  alu/valu/genblk1.simf_alu[13]/fpu/fpu_prenorm_addsub/add_158 (simf_DW01_inc_105)
+                                       1.82e-02    0.110 3.88e+06    4.005   0.0
+  alu/valu/genblk1.simf_alu[12]/fpu/fpu_prenorm_addsub/sub_158 (simf_DW01_sub_155)
+                                       8.10e-02    0.315 4.71e+06    5.102   0.0
+  alu/valu/genblk1.simf_alu[12]/fpu/fpu_prenorm_addsub/add_158 (simf_DW01_inc_107)
+                                       1.86e-02    0.113 3.88e+06    4.008   0.0
+  alu/valu/genblk1.simf_alu[11]/fpu/fpu_prenorm_addsub/sub_158 (simf_DW01_sub_157)
+                                       8.30e-02    0.325 4.71e+06    5.114   0.0
+  alu/valu/genblk1.simf_alu[11]/fpu/fpu_prenorm_addsub/add_158 (simf_DW01_inc_109)
+                                       1.91e-02    0.116 3.88e+06    4.011   0.0
+  alu/valu/genblk1.simf_alu[10]/fpu/fpu_prenorm_addsub/sub_158 (simf_DW01_sub_159)
+                                       8.08e-02    0.318 4.71e+06    5.106   0.0
+  alu/valu/genblk1.simf_alu[10]/fpu/fpu_prenorm_addsub/add_158 (simf_DW01_inc_111)
+                                       1.85e-02    0.112 3.88e+06    4.007   0.0
+  alu/valu/genblk1.simf_alu[9]/fpu/fpu_prenorm_addsub/sub_158 (simf_DW01_sub_161)
+                                       8.10e-02    0.319 4.71e+06    5.106   0.0
+  alu/valu/genblk1.simf_alu[9]/fpu/fpu_prenorm_addsub/add_158 (simf_DW01_inc_113)
+                                       1.88e-02    0.114 3.88e+06    4.008   0.0
+  alu/valu/genblk1.simf_alu[8]/fpu/fpu_prenorm_addsub/sub_158 (simf_DW01_sub_163)
+                                       7.94e-02    0.314 4.71e+06    5.101   0.0
+  alu/valu/genblk1.simf_alu[8]/fpu/fpu_prenorm_addsub/add_158 (simf_DW01_inc_115)
+                                       1.80e-02    0.110 3.88e+06    4.004   0.0
+  alu/valu/genblk1.simf_alu[7]/fpu/fpu_prenorm_addsub/sub_158 (simf_DW01_sub_165)
+                                       7.83e-02    0.308 4.71e+06    5.093   0.0
+  alu/valu/genblk1.simf_alu[7]/fpu/fpu_prenorm_addsub/add_158 (simf_DW01_inc_117)
+                                       1.82e-02    0.111 3.88e+06    4.005   0.0
+  alu/valu/genblk1.simf_alu[6]/fpu/fpu_prenorm_addsub/sub_158 (simf_DW01_sub_169)
+                                       8.27e-02    0.324 4.71e+06    5.114   0.0
+  alu/valu/genblk1.simf_alu[6]/fpu/fpu_prenorm_addsub/add_158 (simf_DW01_inc_121)
+                                       1.91e-02    0.116 3.88e+06    4.011   0.0
+  alu/valu/genblk1.simf_alu[5]/fpu/fpu_prenorm_addsub/sub_158 (simf_DW01_sub_171)
+                                       8.06e-02    0.318 4.71e+06    5.104   0.0
+  alu/valu/genblk1.simf_alu[5]/fpu/fpu_prenorm_addsub/add_158 (simf_DW01_inc_123)
+                                       1.84e-02    0.112 3.88e+06    4.007   0.0
+  alu/valu/genblk1.simf_alu[4]/fpu/fpu_prenorm_addsub/sub_158 (simf_DW01_sub_173)
+                                       8.11e-02    0.320 4.71e+06    5.108   0.0
+  alu/valu/genblk1.simf_alu[4]/fpu/fpu_prenorm_addsub/add_158 (simf_DW01_inc_125)
+                                       1.87e-02    0.114 3.87e+06    4.007   0.0
+  alu/valu/genblk1.simf_alu[3]/fpu/fpu_prenorm_addsub/sub_158 (simf_DW01_sub_175)
+                                       8.09e-02    0.319 4.71e+06    5.106   0.0
+  alu/valu/genblk1.simf_alu[3]/fpu/fpu_prenorm_addsub/add_158 (simf_DW01_inc_127)
+                                       1.87e-02    0.114 3.88e+06    4.009   0.0
+  alu/valu/genblk1.simf_alu[2]/fpu/fpu_prenorm_addsub/sub_158 (simf_DW01_sub_145)
+                                       8.09e-02    0.316 4.71e+06    5.103   0.0
+  alu/valu/genblk1.simf_alu[2]/fpu/fpu_prenorm_addsub/add_158 (simf_DW01_inc_97)
+                                       1.87e-02    0.114 3.88e+06    4.009   0.0
+  alu/valu/genblk1.simf_alu[1]/fpu/fpu_prenorm_addsub/sub_158 (simf_DW01_sub_147)
+                                       8.12e-02    0.320 4.71e+06    5.108   0.0
+  alu/valu/genblk1.simf_alu[1]/fpu/fpu_prenorm_addsub/add_158 (simf_DW01_inc_99)
+                                       1.89e-02    0.115 3.88e+06    4.009   0.0
+  alu/valu/genblk1.simf_alu[0]/fpu/fpu_prenorm_addsub/sub_158 (simf_DW01_sub_167)
+                                       7.83e-02    0.307 4.71e+06    5.092   0.0
+  alu/valu/genblk1.simf_alu[0]/fpu/fpu_prenorm_addsub/add_158 (simf_DW01_inc_119)
+                                       1.81e-02    0.110 3.88e+06    4.004   0.0
+  add_0_root_add_0_root_alu/valu/genblk1.simf_alu[15]/fpu/fpu_postnorm_addsub/sub_178 (simf_DW01_add_196)
+                                       4.68e-02    0.343 4.17e+06    4.556   0.0
+  add_0_root_add_0_root_alu/valu/genblk1.simf_alu[14]/fpu/fpu_postnorm_addsub/sub_178 (simf_DW01_add_197)
+                                       4.50e-02    0.326 4.17e+06    4.537   0.0
+  add_0_root_add_0_root_alu/valu/genblk1.simf_alu[13]/fpu/fpu_postnorm_addsub/sub_178 (simf_DW01_add_198)
+                                       4.63e-02    0.336 4.17e+06    4.548   0.0
+  add_0_root_add_0_root_alu/valu/genblk1.simf_alu[12]/fpu/fpu_postnorm_addsub/sub_178 (simf_DW01_add_199)
+                                       4.68e-02    0.341 4.17e+06    4.553   0.0
+  add_0_root_add_0_root_alu/valu/genblk1.simf_alu[11]/fpu/fpu_postnorm_addsub/sub_178 (simf_DW01_add_200)
+                                       4.84e-02    0.352 4.16e+06    4.564   0.0
+  add_0_root_add_0_root_alu/valu/genblk1.simf_alu[10]/fpu/fpu_postnorm_addsub/sub_178 (simf_DW01_add_201)
+                                       4.76e-02    0.345 4.17e+06    4.560   0.0
+  add_0_root_add_0_root_alu/valu/genblk1.simf_alu[9]/fpu/fpu_postnorm_addsub/sub_178 (simf_DW01_add_202)
+                                       4.77e-02    0.342 4.17e+06    4.556   0.0
+  add_0_root_add_0_root_alu/valu/genblk1.simf_alu[8]/fpu/fpu_postnorm_addsub/sub_178 (simf_DW01_add_203)
+                                       4.54e-02    0.329 4.17e+06    4.541   0.0
+  add_0_root_add_0_root_alu/valu/genblk1.simf_alu[7]/fpu/fpu_postnorm_addsub/sub_178 (simf_DW01_add_204)
+                                       4.63e-02    0.336 4.17e+06    4.548   0.0
+  add_0_root_add_0_root_alu/valu/genblk1.simf_alu[6]/fpu/fpu_postnorm_addsub/sub_178 (simf_DW01_add_205)
+                                       4.78e-02    0.345 4.17e+06    4.559   0.0
+  add_0_root_add_0_root_alu/valu/genblk1.simf_alu[5]/fpu/fpu_postnorm_addsub/sub_178 (simf_DW01_add_206)
+                                       4.65e-02    0.339 4.17e+06    4.552   0.0
+  add_0_root_add_0_root_alu/valu/genblk1.simf_alu[4]/fpu/fpu_postnorm_addsub/sub_178 (simf_DW01_add_207)
+                                       4.75e-02    0.344 4.17e+06    4.558   0.0
+  add_0_root_add_0_root_alu/valu/genblk1.simf_alu[3]/fpu/fpu_postnorm_addsub/sub_178 (simf_DW01_add_193)
+                                       4.68e-02    0.339 4.17e+06    4.552   0.0
+  add_0_root_add_0_root_alu/valu/genblk1.simf_alu[2]/fpu/fpu_postnorm_addsub/sub_178 (simf_DW01_add_194)
+                                       4.66e-02    0.337 4.17e+06    4.549   0.0
+  add_0_root_add_0_root_alu/valu/genblk1.simf_alu[1]/fpu/fpu_postnorm_addsub/sub_178 (simf_DW01_add_195)
+                                       4.78e-02    0.346 4.17e+06    4.560   0.0
+  add_0_root_add_0_root_alu/valu/genblk1.simf_alu[0]/fpu/fpu_postnorm_addsub/sub_178 (simf_DW01_add_192)
+                                       4.56e-02    0.331 4.17e+06    4.543   0.0
+  r26571 (simf_DW01_cmp6_15)              0.386    0.842 2.63e+07   27.506   0.0
+  r26572 (simf_DW01_cmp6_14)              0.385    0.842 2.63e+07   27.509   0.0
+  r26573 (simf_DW01_cmp6_13)              0.386    0.843 2.63e+07   27.510   0.0
+  r26574 (simf_DW01_cmp6_12)              0.386    0.843 2.63e+07   27.509   0.0
+  r26575 (simf_DW01_cmp6_11)              0.386    0.843 2.63e+07   27.510   0.0
+  r26576 (simf_DW01_cmp6_10)              0.386    0.842 2.63e+07   27.506   0.0
+  r26577 (simf_DW01_cmp6_9)               0.387    0.845 2.63e+07   27.510   0.0
+  r26578 (simf_DW01_cmp6_8)               0.385    0.840 2.63e+07   27.505   0.0
+  r26579 (simf_DW01_cmp6_7)               0.386    0.843 2.63e+07   27.506   0.0
+  r26580 (simf_DW01_cmp6_6)               0.386    0.842 2.63e+07   27.508   0.0
+  r26581 (simf_DW01_cmp6_5)               0.384    0.840 2.63e+07   27.504   0.0
+  r26582 (simf_DW01_cmp6_4)               0.386    0.844 2.63e+07   27.510   0.0
+  r26583 (simf_DW01_cmp6_3)               0.385    0.840 2.63e+07   27.506   0.0
+  r26584 (simf_DW01_cmp6_2)               0.387    0.845 2.63e+07   27.510   0.0
+  r26585 (simf_DW01_cmp6_1)               0.386    0.842 2.63e+07   27.507   0.0
+  r26586 (simf_DW01_cmp6_0)               0.386    0.843 2.63e+07   27.507   0.0
+  alu/valu/genblk1.simf_alu[0]/fpu/fpu_prenorm_addsub/sub_157 (simf_DW01_sub_143)
+                                       7.54e-02    0.285 4.81e+06    5.173   0.0
+  alu/valu/genblk1.simf_alu[0]/fpu/fpu_prenorm_addsub/sub_159 (simf_DW01_sub_142)
+                                       7.49e-02    0.285 4.81e+06    5.173   0.0
+  alu/valu/genblk1.simf_alu[0]/fpu/fpu_prenorm_addsub/srl_167 (simf_DW_rash_63)
+                                          0.420    0.710 2.00e+07   21.093   0.0
+  alu/valu/genblk1.simf_alu[1]/fpu/fpu_prenorm_addsub/sub_157 (simf_DW01_sub_141)
+                                       7.81e-02    0.297 4.81e+06    5.187   0.0
+  alu/valu/genblk1.simf_alu[1]/fpu/fpu_prenorm_addsub/sub_159 (simf_DW01_sub_140)
+                                       7.84e-02    0.297 4.81e+06    5.187   0.0
+  alu/valu/genblk1.simf_alu[1]/fpu/fpu_prenorm_addsub/srl_167 (simf_DW_rash_62)
+                                          0.425    0.722 2.00e+07   21.110   0.0
+  alu/valu/genblk1.simf_alu[2]/fpu/fpu_prenorm_addsub/sub_157 (simf_DW01_sub_139)
+                                       7.74e-02    0.292 4.81e+06    5.182   0.0
+  alu/valu/genblk1.simf_alu[2]/fpu/fpu_prenorm_addsub/sub_159 (simf_DW01_sub_138)
+                                       7.68e-02    0.292 4.81e+06    5.181   0.0
+  alu/valu/genblk1.simf_alu[2]/fpu/fpu_prenorm_addsub/srl_167 (simf_DW_rash_61)
+                                          0.425    0.723 2.00e+07   21.116   0.0
+  alu/valu/genblk1.simf_alu[3]/fpu/fpu_prenorm_addsub/sub_157 (simf_DW01_sub_137)
+                                       7.73e-02    0.294 4.81e+06    5.184   0.0
+  alu/valu/genblk1.simf_alu[3]/fpu/fpu_prenorm_addsub/sub_159 (simf_DW01_sub_136)
+                                       7.84e-02    0.297 4.81e+06    5.187   0.0
+  alu/valu/genblk1.simf_alu[3]/fpu/fpu_prenorm_addsub/srl_167 (simf_DW_rash_60)
+                                          0.430    0.729 2.00e+07   21.131   0.0
+  alu/valu/genblk1.simf_alu[4]/fpu/fpu_prenorm_addsub/sub_157 (simf_DW01_sub_135)
+                                       7.79e-02    0.297 4.81e+06    5.187   0.0
+  alu/valu/genblk1.simf_alu[4]/fpu/fpu_prenorm_addsub/sub_159 (simf_DW01_sub_134)
+                                       7.88e-02    0.297 4.81e+06    5.188   0.0
+  alu/valu/genblk1.simf_alu[4]/fpu/fpu_prenorm_addsub/srl_167 (simf_DW_rash_59)
+                                          0.435    0.738 2.00e+07   21.149   0.0
+  alu/valu/genblk1.simf_alu[5]/fpu/fpu_prenorm_addsub/sub_157 (simf_DW01_sub_133)
+                                       7.73e-02    0.294 4.81e+06    5.185   0.0
+  alu/valu/genblk1.simf_alu[5]/fpu/fpu_prenorm_addsub/sub_159 (simf_DW01_sub_132)
+                                       7.82e-02    0.295 4.81e+06    5.186   0.0
+  alu/valu/genblk1.simf_alu[5]/fpu/fpu_prenorm_addsub/srl_167 (simf_DW_rash_58)
+                                          0.425    0.721 2.00e+07   21.113   0.0
+  alu/valu/genblk1.simf_alu[6]/fpu/fpu_prenorm_addsub/sub_157 (simf_DW01_sub_131)
+                                       7.90e-02    0.300 4.81e+06    5.191   0.0
+  alu/valu/genblk1.simf_alu[6]/fpu/fpu_prenorm_addsub/sub_159 (simf_DW01_sub_130)
+                                       7.98e-02    0.301 4.81e+06    5.193   0.0
+  alu/valu/genblk1.simf_alu[6]/fpu/fpu_prenorm_addsub/srl_167 (simf_DW_rash_57)
+                                          0.431    0.734 2.00e+07   21.142   0.0
+  alu/valu/genblk1.simf_alu[7]/fpu/fpu_prenorm_addsub/sub_157 (simf_DW01_sub_129)
+                                       7.50e-02    0.286 4.81e+06    5.173   0.0
+  alu/valu/genblk1.simf_alu[7]/fpu/fpu_prenorm_addsub/sub_159 (simf_DW01_sub_128)
+                                       7.58e-02    0.287 4.81e+06    5.176   0.0
+  alu/valu/genblk1.simf_alu[7]/fpu/fpu_prenorm_addsub/srl_167 (simf_DW_rash_56)
+                                          0.414    0.703 2.00e+07   21.082   0.0
+  alu/valu/genblk1.simf_alu[8]/fpu/fpu_prenorm_addsub/sub_157 (simf_DW01_sub_127)
+                                       7.50e-02    0.287 4.81e+06    5.174   0.0
+  alu/valu/genblk1.simf_alu[8]/fpu/fpu_prenorm_addsub/sub_159 (simf_DW01_sub_126)
+                                       7.77e-02    0.293 4.81e+06    5.183   0.0
+  alu/valu/genblk1.simf_alu[8]/fpu/fpu_prenorm_addsub/srl_167 (simf_DW_rash_55)
+                                          0.421    0.717 2.00e+07   21.103   0.0
+  alu/valu/genblk1.simf_alu[9]/fpu/fpu_prenorm_addsub/sub_157 (simf_DW01_sub_125)
+                                       7.76e-02    0.296 4.81e+06    5.186   0.0
+  alu/valu/genblk1.simf_alu[9]/fpu/fpu_prenorm_addsub/sub_159 (simf_DW01_sub_124)
+                                       7.82e-02    0.296 4.81e+06    5.187   0.0
+  alu/valu/genblk1.simf_alu[9]/fpu/fpu_prenorm_addsub/srl_167 (simf_DW_rash_54)
+                                          0.429    0.730 2.00e+07   21.136   0.0
+  alu/valu/genblk1.simf_alu[10]/fpu/fpu_prenorm_addsub/sub_157 (simf_DW01_sub_123)
+                                       7.71e-02    0.294 4.81e+06    5.183   0.0
+  alu/valu/genblk1.simf_alu[10]/fpu/fpu_prenorm_addsub/sub_159 (simf_DW01_sub_122)
+                                       7.82e-02    0.296 4.81e+06    5.187   0.0
+  alu/valu/genblk1.simf_alu[10]/fpu/fpu_prenorm_addsub/srl_167 (simf_DW_rash_53)
+                                          0.426    0.722 2.00e+07   21.113   0.0
+  alu/valu/genblk1.simf_alu[11]/fpu/fpu_prenorm_addsub/sub_157 (simf_DW01_sub_121)
+                                       7.99e-02    0.303 4.81e+06    5.195   0.0
+  alu/valu/genblk1.simf_alu[11]/fpu/fpu_prenorm_addsub/sub_159 (simf_DW01_sub_120)
+                                       7.99e-02    0.303 4.81e+06    5.194   0.0
+  alu/valu/genblk1.simf_alu[11]/fpu/fpu_prenorm_addsub/srl_167 (simf_DW_rash_52)
+                                          0.444    0.754 2.00e+07   21.181   0.0
+  alu/valu/genblk1.simf_alu[12]/fpu/fpu_prenorm_addsub/sub_157 (simf_DW01_sub_119)
+                                       7.80e-02    0.294 4.81e+06    5.184   0.0
+  alu/valu/genblk1.simf_alu[12]/fpu/fpu_prenorm_addsub/sub_159 (simf_DW01_sub_118)
+                                       7.66e-02    0.291 4.81e+06    5.180   0.0
+  alu/valu/genblk1.simf_alu[12]/fpu/fpu_prenorm_addsub/srl_167 (simf_DW_rash_51)
+                                          0.431    0.728 2.00e+07   21.123   0.0
+  alu/valu/genblk1.simf_alu[13]/fpu/fpu_prenorm_addsub/sub_157 (simf_DW01_sub_117)
+                                       7.57e-02    0.289 4.81e+06    5.178   0.0
+  alu/valu/genblk1.simf_alu[13]/fpu/fpu_prenorm_addsub/sub_159 (simf_DW01_sub_116)
+                                       7.78e-02    0.293 4.81e+06    5.184   0.0
+  alu/valu/genblk1.simf_alu[13]/fpu/fpu_prenorm_addsub/srl_167 (simf_DW_rash_50)
+                                          0.425    0.723 2.00e+07   21.116   0.0
+  alu/valu/genblk1.simf_alu[14]/fpu/fpu_prenorm_addsub/sub_157 (simf_DW01_sub_115)
+                                       7.36e-02    0.281 4.81e+06    5.168   0.0
+  alu/valu/genblk1.simf_alu[14]/fpu/fpu_prenorm_addsub/sub_159 (simf_DW01_sub_114)
+                                       7.56e-02    0.286 4.81e+06    5.174   0.0
+  alu/valu/genblk1.simf_alu[14]/fpu/fpu_prenorm_addsub/srl_167 (simf_DW_rash_49)
+                                          0.413    0.702 2.00e+07   21.079   0.0
+  alu/valu/genblk1.simf_alu[15]/fpu/fpu_prenorm_addsub/sub_157 (simf_DW01_sub_113)
+                                       7.82e-02    0.298 4.81e+06    5.188   0.0
+  alu/valu/genblk1.simf_alu[15]/fpu/fpu_prenorm_addsub/sub_159 (simf_DW01_sub_112)
+                                       7.95e-02    0.301 4.81e+06    5.193   0.0
+  alu/valu/genblk1.simf_alu[15]/fpu/fpu_prenorm_addsub/srl_167 (simf_DW_rash_48)
+                                          0.432    0.731 2.00e+07   21.127   0.0
+  alu/valu/genblk1.simf_alu[0]/fpu/fpu_addsub/sub_117 (simf_DW01_sub_111)
+                                          0.243    0.909 1.64e+07   17.529   0.0
+  alu/valu/genblk1.simf_alu[0]/fpu/fpu_addsub/sub_117_2 (simf_DW01_sub_110)
+                                          0.245    0.916 1.64e+07   17.536   0.0
+  alu/valu/genblk1.simf_alu[0]/fpu/fpu_addsub/add_117 (simf_DW01_add_95)
+                                          0.108    0.776 6.76e+06    7.640   0.0
+  alu/valu/genblk1.simf_alu[1]/fpu/fpu_addsub/sub_117 (simf_DW01_sub_109)
+                                          0.246    0.923 1.64e+07   17.544   0.0
+  alu/valu/genblk1.simf_alu[1]/fpu/fpu_addsub/sub_117_2 (simf_DW01_sub_108)
+                                          0.251    0.936 1.64e+07   17.560   0.0
+  alu/valu/genblk1.simf_alu[1]/fpu/fpu_addsub/add_117 (simf_DW01_add_94)
+                                          0.110    0.789 6.76e+06    7.663   0.0
+  alu/valu/genblk1.simf_alu[2]/fpu/fpu_addsub/sub_117 (simf_DW01_sub_107)
+                                          0.245    0.922 1.64e+07   17.542   0.0
+  alu/valu/genblk1.simf_alu[2]/fpu/fpu_addsub/sub_117_2 (simf_DW01_sub_106)
+                                          0.251    0.936 1.64e+07   17.561   0.0
+  alu/valu/genblk1.simf_alu[2]/fpu/fpu_addsub/add_117 (simf_DW01_add_93)
+                                          0.110    0.789 6.77e+06    7.664   0.0
+  alu/valu/genblk1.simf_alu[3]/fpu/fpu_addsub/sub_117 (simf_DW01_sub_105)
+                                          0.247    0.927 1.64e+07   17.550   0.0
+  alu/valu/genblk1.simf_alu[3]/fpu/fpu_addsub/sub_117_2 (simf_DW01_sub_104)
+                                          0.250    0.935 1.64e+07   17.559   0.0
+  alu/valu/genblk1.simf_alu[3]/fpu/fpu_addsub/add_117 (simf_DW01_add_92)
+                                          0.110    0.785 6.76e+06    7.654   0.0
+  alu/valu/genblk1.simf_alu[4]/fpu/fpu_addsub/sub_117 (simf_DW01_sub_103)
+                                          0.250    0.937 1.64e+07   17.561   0.0
+  alu/valu/genblk1.simf_alu[4]/fpu/fpu_addsub/sub_117_2 (simf_DW01_sub_102)
+                                          0.256    0.956 1.64e+07   17.583   0.0
+  alu/valu/genblk1.simf_alu[4]/fpu/fpu_addsub/add_117 (simf_DW01_add_91)
+                                          0.112    0.804 6.78e+06    7.693   0.0
+  alu/valu/genblk1.simf_alu[5]/fpu/fpu_addsub/sub_117 (simf_DW01_sub_101)
+                                          0.246    0.920 1.64e+07   17.541   0.0
+  alu/valu/genblk1.simf_alu[5]/fpu/fpu_addsub/sub_117_2 (simf_DW01_sub_100)
+                                          0.248    0.930 1.64e+07   17.553   0.0
+  alu/valu/genblk1.simf_alu[5]/fpu/fpu_addsub/add_117 (simf_DW01_add_90)
+                                          0.109    0.784 6.76e+06    7.650   0.0
+  alu/valu/genblk1.simf_alu[6]/fpu/fpu_addsub/sub_117 (simf_DW01_sub_99)
+                                          0.249    0.933 1.64e+07   17.555   0.0
+  alu/valu/genblk1.simf_alu[6]/fpu/fpu_addsub/sub_117_2 (simf_DW01_sub_98)
+                                          0.252    0.942 1.64e+07   17.568   0.0
+  alu/valu/genblk1.simf_alu[6]/fpu/fpu_addsub/add_117 (simf_DW01_add_89)
+                                          0.111    0.796 6.77e+06    7.677   0.0
+  alu/valu/genblk1.simf_alu[7]/fpu/fpu_addsub/sub_117 (simf_DW01_sub_97)
+                                          0.244    0.910 1.64e+07   17.529   0.0
+  alu/valu/genblk1.simf_alu[7]/fpu/fpu_addsub/sub_117_2 (simf_DW01_sub_96)
+                                          0.244    0.912 1.64e+07   17.530   0.0
+  alu/valu/genblk1.simf_alu[7]/fpu/fpu_addsub/add_117 (simf_DW01_add_88)
+                                          0.107    0.767 6.76e+06    7.630   0.0
+  alu/valu/genblk1.simf_alu[8]/fpu/fpu_addsub/sub_117 (simf_DW01_sub_95)
+                                          0.246    0.916 1.64e+07   17.536   0.0
+  alu/valu/genblk1.simf_alu[8]/fpu/fpu_addsub/sub_117_2 (simf_DW01_sub_94)
+                                          0.243    0.911 1.64e+07   17.529   0.0
+  alu/valu/genblk1.simf_alu[8]/fpu/fpu_addsub/add_117 (simf_DW01_add_87)
+                                          0.109    0.774 6.75e+06    7.638   0.0
+  alu/valu/genblk1.simf_alu[9]/fpu/fpu_addsub/sub_117 (simf_DW01_sub_93)
+                                          0.251    0.938 1.64e+07   17.563   0.0
+  alu/valu/genblk1.simf_alu[9]/fpu/fpu_addsub/sub_117_2 (simf_DW01_sub_92)
+                                          0.253    0.945 1.64e+07   17.570   0.0
+  alu/valu/genblk1.simf_alu[9]/fpu/fpu_addsub/add_117 (simf_DW01_add_86)
+                                          0.111    0.793 6.77e+06    7.671   0.0
+  alu/valu/genblk1.simf_alu[10]/fpu/fpu_addsub/sub_117 (simf_DW01_sub_91)
+                                          0.249    0.932 1.64e+07   17.558   0.0
+  alu/valu/genblk1.simf_alu[10]/fpu/fpu_addsub/sub_117_2 (simf_DW01_sub_90)
+                                          0.250    0.937 1.64e+07   17.563   0.0
+  alu/valu/genblk1.simf_alu[10]/fpu/fpu_addsub/add_117 (simf_DW01_add_85)
+                                          0.110    0.791 6.75e+06    7.655   0.0
+  alu/valu/genblk1.simf_alu[11]/fpu/fpu_addsub/sub_117 (simf_DW01_sub_89)
+                                          0.258    0.964 1.64e+07   17.592   0.0
+  alu/valu/genblk1.simf_alu[11]/fpu/fpu_addsub/sub_117_2 (simf_DW01_sub_88)
+                                          0.259    0.967 1.64e+07   17.598   0.0
+  alu/valu/genblk1.simf_alu[11]/fpu/fpu_addsub/add_117 (simf_DW01_add_84)
+                                          0.114    0.815 6.78e+06    7.709   0.0
+  alu/valu/genblk1.simf_alu[12]/fpu/fpu_addsub/sub_117 (simf_DW01_sub_87)
+                                          0.248    0.929 1.64e+07   17.552   0.0
+  alu/valu/genblk1.simf_alu[12]/fpu/fpu_addsub/sub_117_2 (simf_DW01_sub_86)
+                                          0.255    0.950 1.64e+07   17.579   0.0
+  alu/valu/genblk1.simf_alu[12]/fpu/fpu_addsub/add_117 (simf_DW01_add_83)
+                                          0.111    0.793 6.76e+06    7.666   0.0
+  alu/valu/genblk1.simf_alu[13]/fpu/fpu_addsub/sub_117 (simf_DW01_sub_85)
+                                          0.247    0.922 1.64e+07   17.544   0.0
+  alu/valu/genblk1.simf_alu[13]/fpu/fpu_addsub/sub_117_2 (simf_DW01_sub_84)
+                                          0.249    0.930 1.64e+07   17.554   0.0
+  alu/valu/genblk1.simf_alu[13]/fpu/fpu_addsub/add_117 (simf_DW01_add_82)
+                                          0.111    0.786 6.76e+06    7.655   0.0
+  alu/valu/genblk1.simf_alu[14]/fpu/fpu_addsub/sub_117 (simf_DW01_sub_83)
+                                          0.242    0.897 1.64e+07   17.515   0.0
+  alu/valu/genblk1.simf_alu[14]/fpu/fpu_addsub/sub_117_2 (simf_DW01_sub_82)
+                                          0.238    0.897 1.64e+07   17.510   0.0
+  alu/valu/genblk1.simf_alu[14]/fpu/fpu_addsub/add_117 (simf_DW01_add_81)
+                                          0.107    0.760 6.75e+06    7.619   0.0
+  alu/valu/genblk1.simf_alu[15]/fpu/fpu_addsub/sub_117 (simf_DW01_sub_81)
+                                          0.249    0.932 1.64e+07   17.556   0.0
+  alu/valu/genblk1.simf_alu[15]/fpu/fpu_addsub/sub_117_2 (simf_DW01_sub_80)
+                                          0.249    0.935 1.64e+07   17.559   0.0
+  alu/valu/genblk1.simf_alu[15]/fpu/fpu_addsub/add_117 (simf_DW01_add_80)
+                                          0.111    0.793 6.76e+06    7.665   0.0
+  alu/valu/genblk1.simf_alu[0]/fpu/fpu_postnorm_addsub/sll_225 (simf_DW01_ash_95)
+                                          0.275    1.282 3.32e+07   34.710   0.1
+  alu/valu/genblk1.simf_alu[0]/fpu/fpu_postnorm_addsub/add_247_aco (simf_DW01_add_79)
+                                       5.41e-02    0.291 8.70e+06    9.045   0.0
+  alu/valu/genblk1.simf_alu[0]/fpu/fpu_postnorm_addsub/add_255 (simf_DW01_inc_79)
+                                       8.01e-02    0.538 3.86e+06    4.480   0.0
+  alu/valu/genblk1.simf_alu[1]/fpu/fpu_postnorm_addsub/sll_225 (simf_DW01_ash_94)
+                                          0.285    1.327 3.32e+07   34.765   0.1
+  alu/valu/genblk1.simf_alu[1]/fpu/fpu_postnorm_addsub/add_247_aco (simf_DW01_add_78)
+                                       5.46e-02    0.295 8.70e+06    9.051   0.0
+  alu/valu/genblk1.simf_alu[1]/fpu/fpu_postnorm_addsub/add_255 (simf_DW01_inc_78)
+                                       8.14e-02    0.544 3.86e+06    4.487   0.0
+  alu/valu/genblk1.simf_alu[2]/fpu/fpu_postnorm_addsub/sll_225 (simf_DW01_ash_93)
+                                          0.284    1.321 3.32e+07   34.758   0.1
+  alu/valu/genblk1.simf_alu[2]/fpu/fpu_postnorm_addsub/add_247_aco (simf_DW01_add_77)
+                                       5.64e-02    0.304 8.70e+06    9.063   0.0
+  alu/valu/genblk1.simf_alu[2]/fpu/fpu_postnorm_addsub/add_255 (simf_DW01_inc_77)
+                                       8.13e-02    0.542 3.86e+06    4.485   0.0
+  alu/valu/genblk1.simf_alu[3]/fpu/fpu_postnorm_addsub/sll_225 (simf_DW01_ash_92)
+                                          0.280    1.307 3.32e+07   34.740   0.1
+  alu/valu/genblk1.simf_alu[3]/fpu/fpu_postnorm_addsub/add_247_aco (simf_DW01_add_76)
+                                       5.55e-02    0.299 8.70e+06    9.056   0.0
+  alu/valu/genblk1.simf_alu[3]/fpu/fpu_postnorm_addsub/add_255 (simf_DW01_inc_76)
+                                       8.15e-02    0.544 3.86e+06    4.487   0.0
+  alu/valu/genblk1.simf_alu[4]/fpu/fpu_postnorm_addsub/sll_225 (simf_DW01_ash_91)
+                                          0.287    1.337 3.32e+07   34.776   0.1
+  alu/valu/genblk1.simf_alu[4]/fpu/fpu_postnorm_addsub/add_247_aco (simf_DW01_add_75)
+                                       5.67e-02    0.305 8.70e+06    9.066   0.0
+  alu/valu/genblk1.simf_alu[4]/fpu/fpu_postnorm_addsub/add_255 (simf_DW01_inc_75)
+                                       8.14e-02    0.543 3.86e+06    4.485   0.0
+  alu/valu/genblk1.simf_alu[5]/fpu/fpu_postnorm_addsub/sll_225 (simf_DW01_ash_90)
+                                          0.283    1.317 3.32e+07   34.753   0.1
+  alu/valu/genblk1.simf_alu[5]/fpu/fpu_postnorm_addsub/add_247_aco (simf_DW01_add_74)
+                                       5.56e-02    0.301 8.70e+06    9.057   0.0
+  alu/valu/genblk1.simf_alu[5]/fpu/fpu_postnorm_addsub/add_255 (simf_DW01_inc_74)
+                                       8.12e-02    0.542 3.86e+06    4.486   0.0
+  alu/valu/genblk1.simf_alu[6]/fpu/fpu_postnorm_addsub/sll_225 (simf_DW01_ash_89)
+                                          0.285    1.326 3.32e+07   34.764   0.1
+  alu/valu/genblk1.simf_alu[6]/fpu/fpu_postnorm_addsub/add_247_aco (simf_DW01_add_73)
+                                       5.54e-02    0.299 8.70e+06    9.056   0.0
+  alu/valu/genblk1.simf_alu[6]/fpu/fpu_postnorm_addsub/add_255 (simf_DW01_inc_73)
+                                       8.08e-02    0.542 3.86e+06    4.485   0.0
+  alu/valu/genblk1.simf_alu[7]/fpu/fpu_postnorm_addsub/sll_225 (simf_DW01_ash_88)
+                                          0.282    1.305 3.32e+07   34.739   0.1
+  alu/valu/genblk1.simf_alu[7]/fpu/fpu_postnorm_addsub/add_247_aco (simf_DW01_add_72)
+                                       5.39e-02    0.290 8.70e+06    9.046   0.0
+  alu/valu/genblk1.simf_alu[7]/fpu/fpu_postnorm_addsub/add_255 (simf_DW01_inc_72)
+                                       8.01e-02    0.538 3.86e+06    4.480   0.0
+  alu/valu/genblk1.simf_alu[8]/fpu/fpu_postnorm_addsub/sll_225 (simf_DW01_ash_87)
+                                          0.280    1.301 3.32e+07   34.733   0.1
+  alu/valu/genblk1.simf_alu[8]/fpu/fpu_postnorm_addsub/add_247_aco (simf_DW01_add_71)
+                                       5.47e-02    0.295 8.70e+06    9.051   0.0
+  alu/valu/genblk1.simf_alu[8]/fpu/fpu_postnorm_addsub/add_255 (simf_DW01_inc_71)
+                                       8.05e-02    0.539 3.86e+06    4.481   0.0
+  alu/valu/genblk1.simf_alu[9]/fpu/fpu_postnorm_addsub/sll_225 (simf_DW01_ash_86)
+                                          0.285    1.324 3.32e+07   34.761   0.1
+  alu/valu/genblk1.simf_alu[9]/fpu/fpu_postnorm_addsub/add_247_aco (simf_DW01_add_70)
+                                       5.55e-02    0.299 8.70e+06    9.056   0.0
+  alu/valu/genblk1.simf_alu[9]/fpu/fpu_postnorm_addsub/add_255 (simf_DW01_inc_70)
+                                       8.10e-02    0.540 3.86e+06    4.483   0.0
+  alu/valu/genblk1.simf_alu[10]/fpu/fpu_postnorm_addsub/sll_225 (simf_DW01_ash_85)
+                                          0.286    1.327 3.32e+07   34.767   0.1
+  alu/valu/genblk1.simf_alu[10]/fpu/fpu_postnorm_addsub/add_247_aco (simf_DW01_add_69)
+                                       5.51e-02    0.298 8.70e+06    9.052   0.0
+  alu/valu/genblk1.simf_alu[10]/fpu/fpu_postnorm_addsub/add_255 (simf_DW01_inc_69)
+                                       8.17e-02    0.546 3.86e+06    4.490   0.0
+  alu/valu/genblk1.simf_alu[11]/fpu/fpu_postnorm_addsub/sll_225 (simf_DW01_ash_84)
+                                          0.297    1.377 3.32e+07   34.825   0.1
+  alu/valu/genblk1.simf_alu[11]/fpu/fpu_postnorm_addsub/add_247_aco (simf_DW01_add_68)
+                                       5.77e-02    0.311 8.70e+06    9.072   0.0
+  alu/valu/genblk1.simf_alu[11]/fpu/fpu_postnorm_addsub/add_255 (simf_DW01_inc_68)
+                                       8.15e-02    0.544 3.86e+06    4.487   0.0
+  alu/valu/genblk1.simf_alu[12]/fpu/fpu_postnorm_addsub/sll_225 (simf_DW01_ash_83)
+                                          0.284    1.333 3.32e+07   34.771   0.1
+  alu/valu/genblk1.simf_alu[12]/fpu/fpu_postnorm_addsub/add_247_aco (simf_DW01_add_67)
+                                       5.56e-02    0.299 8.70e+06    9.056   0.0
+  alu/valu/genblk1.simf_alu[12]/fpu/fpu_postnorm_addsub/add_255 (simf_DW01_inc_67)
+                                       8.07e-02    0.541 3.86e+06    4.484   0.0
+  alu/valu/genblk1.simf_alu[13]/fpu/fpu_postnorm_addsub/sll_225 (simf_DW01_ash_82)
+                                          0.281    1.316 3.32e+07   34.750   0.1
+  alu/valu/genblk1.simf_alu[13]/fpu/fpu_postnorm_addsub/add_247_aco (simf_DW01_add_66)
+                                       5.59e-02    0.301 8.70e+06    9.058   0.0
+  alu/valu/genblk1.simf_alu[13]/fpu/fpu_postnorm_addsub/add_255 (simf_DW01_inc_66)
+                                       8.05e-02    0.537 3.86e+06    4.480   0.0
+  alu/valu/genblk1.simf_alu[14]/fpu/fpu_postnorm_addsub/sll_225 (simf_DW01_ash_81)
+                                          0.275    1.281 3.32e+07   34.709   0.1
+  alu/valu/genblk1.simf_alu[14]/fpu/fpu_postnorm_addsub/add_247_aco (simf_DW01_add_65)
+                                       5.37e-02    0.289 8.70e+06    9.044   0.0
+  alu/valu/genblk1.simf_alu[14]/fpu/fpu_postnorm_addsub/add_255 (simf_DW01_inc_65)
+                                       7.99e-02    0.535 3.86e+06    4.477   0.0
+  alu/valu/genblk1.simf_alu[15]/fpu/fpu_postnorm_addsub/sll_225 (simf_DW01_ash_80)
+                                          0.283    1.321 3.32e+07   34.757   0.1
+  alu/valu/genblk1.simf_alu[15]/fpu/fpu_postnorm_addsub/add_247_aco (simf_DW01_add_64)
+                                       5.57e-02    0.300 8.70e+06    9.058   0.0
+  alu/valu/genblk1.simf_alu[15]/fpu/fpu_postnorm_addsub/add_255 (simf_DW01_inc_64)
+                                       8.15e-02    0.545 3.86e+06    4.488   0.0
+  alu/valu/genblk1.simf_alu[0]/fpu/fpu_mul/sll_183 (simf_DW01_ash_79)
+                                          0.182    0.559 3.16e+07   32.365   0.0
+  alu/valu/genblk1.simf_alu[1]/fpu/fpu_mul/sll_183 (simf_DW01_ash_78)
+                                          0.191    0.584 3.16e+07   32.399   0.0
+  alu/valu/genblk1.simf_alu[2]/fpu/fpu_mul/sll_183 (simf_DW01_ash_77)
+                                          0.185    0.568 3.16e+07   32.377   0.0
+  alu/valu/genblk1.simf_alu[3]/fpu/fpu_mul/sll_183 (simf_DW01_ash_76)
+                                          0.186    0.568 3.16e+07   32.378   0.0
+  alu/valu/genblk1.simf_alu[4]/fpu/fpu_mul/sll_183 (simf_DW01_ash_75)
+                                          0.188    0.576 3.16e+07   32.389   0.0
+  alu/valu/genblk1.simf_alu[5]/fpu/fpu_mul/sll_183 (simf_DW01_ash_74)
+                                          0.182    0.558 3.16e+07   32.363   0.0
+  alu/valu/genblk1.simf_alu[6]/fpu/fpu_mul/sll_183 (simf_DW01_ash_73)
+                                          0.183    0.560 3.16e+07   32.367   0.0
+  alu/valu/genblk1.simf_alu[7]/fpu/fpu_mul/sll_183 (simf_DW01_ash_72)
+                                          0.177    0.541 3.16e+07   32.342   0.0
+  alu/valu/genblk1.simf_alu[8]/fpu/fpu_mul/sll_183 (simf_DW01_ash_71)
+                                          0.181    0.556 3.16e+07   32.361   0.0
+  alu/valu/genblk1.simf_alu[9]/fpu/fpu_mul/sll_183 (simf_DW01_ash_70)
+                                          0.189    0.580 3.16e+07   32.395   0.0
+  alu/valu/genblk1.simf_alu[10]/fpu/fpu_mul/sll_183 (simf_DW01_ash_69)
+                                          0.187    0.572 3.16e+07   32.382   0.0
+  alu/valu/genblk1.simf_alu[11]/fpu/fpu_mul/sll_183 (simf_DW01_ash_68)
+                                          0.194    0.594 3.16e+07   32.412   0.0
+  alu/valu/genblk1.simf_alu[12]/fpu/fpu_mul/sll_183 (simf_DW01_ash_67)
+                                          0.189    0.579 3.16e+07   32.392   0.0
+  alu/valu/genblk1.simf_alu[13]/fpu/fpu_mul/sll_183 (simf_DW01_ash_66)
+                                          0.189    0.578 3.16e+07   32.391   0.0
+  alu/valu/genblk1.simf_alu[14]/fpu/fpu_mul/sll_183 (simf_DW01_ash_65)
+                                          0.184    0.563 3.16e+07   32.371   0.0
+  alu/valu/genblk1.simf_alu[15]/fpu/fpu_mul/sll_183 (simf_DW01_ash_64)
+                                          0.189    0.578 3.16e+07   32.391   0.0
+  alu/valu/genblk1.simf_alu[0]/fpu/fpu_post_norm_mul/sub_276 (simf_DW01_sub_63)
+                                          0.244    0.864 5.26e+06    6.371   0.0
+  alu/valu/genblk1.simf_alu[0]/fpu/fpu_post_norm_mul/sub_288 (simf_DW01_sub_62)
+                                          0.102    0.368 3.55e+06    4.023   0.0
+  alu/valu/genblk1.simf_alu[0]/fpu/fpu_post_norm_mul/srl_328 (simf_DW_rash_31)
+                                          1.003    0.853 4.48e+07   46.671   0.1
+  alu/valu/genblk1.simf_alu[0]/fpu/fpu_post_norm_mul/sll_330 (simf_DW01_ash_63)
+                                          0.465    0.621 6.09e+07   62.025   0.1
+  alu/valu/genblk1.simf_alu[0]/fpu/fpu_post_norm_mul/add_363 (simf_DW01_inc_47)
+                                       1.59e-05 2.44e-05 1.40e+07   14.016   0.0
+  alu/valu/genblk1.simf_alu[0]/fpu/fpu_post_norm_mul/add_370 (simf_DW01_inc_46)
+                                       6.75e-02    0.486 3.87e+06    4.428   0.0
+  alu/valu/genblk1.simf_alu[1]/fpu/fpu_post_norm_mul/sub_276 (simf_DW01_sub_60)
+                                          0.246    0.868 5.26e+06    6.376   0.0
+  alu/valu/genblk1.simf_alu[1]/fpu/fpu_post_norm_mul/sub_288 (simf_DW01_sub_59)
+                                          0.104    0.372 3.55e+06    4.028   0.0
+  alu/valu/genblk1.simf_alu[1]/fpu/fpu_post_norm_mul/srl_328 (simf_DW_rash_30)
+                                          1.010    0.859 4.48e+07   46.672   0.1
+  alu/valu/genblk1.simf_alu[1]/fpu/fpu_post_norm_mul/sll_330 (simf_DW01_ash_62)
+                                          0.479    0.640 6.09e+07   62.050   0.1
+  alu/valu/genblk1.simf_alu[1]/fpu/fpu_post_norm_mul/add_363 (simf_DW01_inc_45)
+                                       1.59e-05 2.44e-05 1.40e+07   14.016   0.0
+  alu/valu/genblk1.simf_alu[1]/fpu/fpu_post_norm_mul/add_370 (simf_DW01_inc_44)
+                                       6.79e-02    0.488 3.87e+06    4.430   0.0
+  alu/valu/genblk1.simf_alu[2]/fpu/fpu_post_norm_mul/sub_276 (simf_DW01_sub_57)
+                                          0.246    0.871 5.26e+06    6.380   0.0
+  alu/valu/genblk1.simf_alu[2]/fpu/fpu_post_norm_mul/sub_288 (simf_DW01_sub_56)
+                                          0.104    0.373 3.55e+06    4.029   0.0
+  alu/valu/genblk1.simf_alu[2]/fpu/fpu_post_norm_mul/srl_328 (simf_DW_rash_29)
+                                          1.008    0.857 4.48e+07   46.686   0.1
+  alu/valu/genblk1.simf_alu[2]/fpu/fpu_post_norm_mul/sll_330 (simf_DW01_ash_61)
+                                          0.492    0.658 6.09e+07   62.068   0.1
+  alu/valu/genblk1.simf_alu[2]/fpu/fpu_post_norm_mul/add_363 (simf_DW01_inc_43)
+                                       1.59e-05 2.44e-05 1.40e+07   14.016   0.0
+  alu/valu/genblk1.simf_alu[2]/fpu/fpu_post_norm_mul/add_370 (simf_DW01_inc_42)
+                                       6.80e-02    0.489 3.87e+06    4.430   0.0
+  alu/valu/genblk1.simf_alu[3]/fpu/fpu_post_norm_mul/sub_276 (simf_DW01_sub_54)
+                                          0.246    0.869 5.26e+06    6.378   0.0
+  alu/valu/genblk1.simf_alu[3]/fpu/fpu_post_norm_mul/sub_288 (simf_DW01_sub_53)
+                                          0.104    0.372 3.55e+06    4.029   0.0
+  alu/valu/genblk1.simf_alu[3]/fpu/fpu_post_norm_mul/srl_328 (simf_DW_rash_28)
+                                          1.010    0.859 4.48e+07   46.652   0.1
+  alu/valu/genblk1.simf_alu[3]/fpu/fpu_post_norm_mul/sll_330 (simf_DW01_ash_60)
+                                          0.471    0.629 6.10e+07   62.119   0.1
+  alu/valu/genblk1.simf_alu[3]/fpu/fpu_post_norm_mul/add_363 (simf_DW01_inc_41)
+                                       1.59e-05 2.44e-05 1.40e+07   14.016   0.0
+  alu/valu/genblk1.simf_alu[3]/fpu/fpu_post_norm_mul/add_370 (simf_DW01_inc_40)
+                                       6.82e-02    0.490 3.87e+06    4.432   0.0
+  alu/valu/genblk1.simf_alu[4]/fpu/fpu_post_norm_mul/sub_276 (simf_DW01_sub_51)
+                                          0.246    0.869 5.26e+06    6.378   0.0
+  alu/valu/genblk1.simf_alu[4]/fpu/fpu_post_norm_mul/sub_288 (simf_DW01_sub_50)
+                                          0.103    0.371 3.55e+06    4.026   0.0
+  alu/valu/genblk1.simf_alu[4]/fpu/fpu_post_norm_mul/srl_328 (simf_DW_rash_27)
+                                          1.006    0.855 4.48e+07   46.683   0.1
+  alu/valu/genblk1.simf_alu[4]/fpu/fpu_post_norm_mul/sll_330 (simf_DW01_ash_59)
+                                          0.488    0.652 6.09e+07   62.048   0.1
+  alu/valu/genblk1.simf_alu[4]/fpu/fpu_post_norm_mul/add_363 (simf_DW01_inc_39)
+                                       1.59e-05 2.44e-05 1.40e+07   14.016   0.0
+  alu/valu/genblk1.simf_alu[4]/fpu/fpu_post_norm_mul/add_370 (simf_DW01_inc_38)
+                                       6.78e-02    0.487 3.87e+06    4.429   0.0
+  alu/valu/genblk1.simf_alu[5]/fpu/fpu_post_norm_mul/sub_276 (simf_DW01_sub_48)
+                                          0.246    0.867 5.26e+06    6.375   0.0
+  alu/valu/genblk1.simf_alu[5]/fpu/fpu_post_norm_mul/sub_288 (simf_DW01_sub_47)
+                                          0.103    0.370 3.55e+06    4.025   0.0
+  alu/valu/genblk1.simf_alu[5]/fpu/fpu_post_norm_mul/srl_328 (simf_DW_rash_26)
+                                          1.011    0.860 4.48e+07   46.673   0.1
+  alu/valu/genblk1.simf_alu[5]/fpu/fpu_post_norm_mul/sll_330 (simf_DW01_ash_58)
+                                          0.487    0.651 6.09e+07   62.061   0.1
+  alu/valu/genblk1.simf_alu[5]/fpu/fpu_post_norm_mul/add_363 (simf_DW01_inc_37)
+                                       1.59e-05 2.44e-05 1.40e+07   14.016   0.0
+  alu/valu/genblk1.simf_alu[5]/fpu/fpu_post_norm_mul/add_370 (simf_DW01_inc_36)
+                                       6.79e-02    0.487 3.87e+06    4.429   0.0
+  alu/valu/genblk1.simf_alu[6]/fpu/fpu_post_norm_mul/sub_276 (simf_DW01_sub_45)
+                                          0.246    0.870 5.26e+06    6.379   0.0
+  alu/valu/genblk1.simf_alu[6]/fpu/fpu_post_norm_mul/sub_288 (simf_DW01_sub_44)
+                                          0.104    0.372 3.55e+06    4.028   0.0
+  alu/valu/genblk1.simf_alu[6]/fpu/fpu_post_norm_mul/srl_328 (simf_DW_rash_25)
+                                          1.009    0.857 4.48e+07   46.691   0.1
+  alu/valu/genblk1.simf_alu[6]/fpu/fpu_post_norm_mul/sll_330 (simf_DW01_ash_57)
+                                          0.464    0.620 6.09e+07   62.004   0.1
+  alu/valu/genblk1.simf_alu[6]/fpu/fpu_post_norm_mul/add_363 (simf_DW01_inc_35)
+                                       1.59e-05 2.44e-05 1.40e+07   14.016   0.0
+  alu/valu/genblk1.simf_alu[6]/fpu/fpu_post_norm_mul/add_370 (simf_DW01_inc_34)
+                                       6.78e-02    0.487 3.87e+06    4.429   0.0
+  alu/valu/genblk1.simf_alu[7]/fpu/fpu_post_norm_mul/sub_276 (simf_DW01_sub_42)
+                                          0.245    0.862 5.26e+06    6.370   0.0
+  alu/valu/genblk1.simf_alu[7]/fpu/fpu_post_norm_mul/sub_288 (simf_DW01_sub_41)
+                                          0.103    0.369 3.55e+06    4.024   0.0
+  alu/valu/genblk1.simf_alu[7]/fpu/fpu_post_norm_mul/srl_328 (simf_DW_rash_24)
+                                          0.995    0.846 4.48e+07   46.629   0.1
+  alu/valu/genblk1.simf_alu[7]/fpu/fpu_post_norm_mul/sll_330 (simf_DW01_ash_56)
+                                          0.460    0.615 6.10e+07   62.074   0.1
+  alu/valu/genblk1.simf_alu[7]/fpu/fpu_post_norm_mul/add_363 (simf_DW01_inc_33)
+                                       1.59e-05 2.44e-05 1.40e+07   14.016   0.0
+  alu/valu/genblk1.simf_alu[7]/fpu/fpu_post_norm_mul/add_370 (simf_DW01_inc_32)
+                                       6.78e-02    0.488 3.87e+06    4.430   0.0
+  alu/valu/genblk1.simf_alu[8]/fpu/fpu_post_norm_mul/sub_276 (simf_DW01_sub_39)
+                                          0.244    0.862 5.26e+06    6.368   0.0
+  alu/valu/genblk1.simf_alu[8]/fpu/fpu_post_norm_mul/sub_288 (simf_DW01_sub_38)
+                                          0.102    0.367 3.55e+06    4.022   0.0
+  alu/valu/genblk1.simf_alu[8]/fpu/fpu_post_norm_mul/srl_328 (simf_DW_rash_23)
+                                          0.996    0.847 4.48e+07   46.649   0.1
+  alu/valu/genblk1.simf_alu[8]/fpu/fpu_post_norm_mul/sll_330 (simf_DW01_ash_55)
+                                          0.472    0.631 6.10e+07   62.055   0.1
+  alu/valu/genblk1.simf_alu[8]/fpu/fpu_post_norm_mul/add_363 (simf_DW01_inc_31)
+                                       1.59e-05 2.44e-05 1.40e+07   14.016   0.0
+  alu/valu/genblk1.simf_alu[8]/fpu/fpu_post_norm_mul/add_370 (simf_DW01_inc_30)
+                                       6.78e-02    0.488 3.87e+06    4.429   0.0
+  alu/valu/genblk1.simf_alu[9]/fpu/fpu_post_norm_mul/sub_276 (simf_DW01_sub_36)
+                                          0.246    0.870 5.26e+06    6.379   0.0
+  alu/valu/genblk1.simf_alu[9]/fpu/fpu_post_norm_mul/sub_288 (simf_DW01_sub_35)
+                                          0.104    0.372 3.55e+06    4.028   0.0
+  alu/valu/genblk1.simf_alu[9]/fpu/fpu_post_norm_mul/srl_328 (simf_DW_rash_22)
+                                          0.999    0.849 4.48e+07   46.672   0.1
+  alu/valu/genblk1.simf_alu[9]/fpu/fpu_post_norm_mul/sll_330 (simf_DW01_ash_54)
+                                          0.473    0.633 6.09e+07   62.038   0.1
+  alu/valu/genblk1.simf_alu[9]/fpu/fpu_post_norm_mul/add_363 (simf_DW01_inc_29)
+                                       1.59e-05 2.44e-05 1.40e+07   14.016   0.0
+  alu/valu/genblk1.simf_alu[9]/fpu/fpu_post_norm_mul/add_370 (simf_DW01_inc_28)
+                                       6.79e-02    0.488 3.87e+06    4.430   0.0
+  alu/valu/genblk1.simf_alu[10]/fpu/fpu_post_norm_mul/sub_276 (simf_DW01_sub_33)
+                                          0.246    0.869 5.26e+06    6.378   0.0
+  alu/valu/genblk1.simf_alu[10]/fpu/fpu_post_norm_mul/sub_288 (simf_DW01_sub_32)
+                                          0.104    0.372 3.55e+06    4.028   0.0
+  alu/valu/genblk1.simf_alu[10]/fpu/fpu_post_norm_mul/srl_328 (simf_DW_rash_21)
+                                          1.013    0.861 4.48e+07   46.659   0.1
+  alu/valu/genblk1.simf_alu[10]/fpu/fpu_post_norm_mul/sll_330 (simf_DW01_ash_53)
+                                          0.472    0.631 6.10e+07   62.073   0.1
+  alu/valu/genblk1.simf_alu[10]/fpu/fpu_post_norm_mul/add_363 (simf_DW01_inc_27)
+                                       1.59e-05 2.44e-05 1.40e+07   14.016   0.0
+  alu/valu/genblk1.simf_alu[10]/fpu/fpu_post_norm_mul/add_370 (simf_DW01_inc_26)
+                                       6.79e-02    0.489 3.87e+06    4.430   0.0
+  alu/valu/genblk1.simf_alu[11]/fpu/fpu_post_norm_mul/sub_276 (simf_DW01_sub_30)
+                                          0.247    0.877 5.26e+06    6.387   0.0
+  alu/valu/genblk1.simf_alu[11]/fpu/fpu_post_norm_mul/sub_288 (simf_DW01_sub_29)
+                                          0.105    0.377 3.55e+06    4.034   0.0
+  alu/valu/genblk1.simf_alu[11]/fpu/fpu_post_norm_mul/srl_328 (simf_DW_rash_20)
+                                          1.016    0.864 4.48e+07   46.721   0.1
+  alu/valu/genblk1.simf_alu[11]/fpu/fpu_post_norm_mul/sll_330 (simf_DW01_ash_52)
+                                          0.490    0.655 6.09e+07   62.019   0.1
+  alu/valu/genblk1.simf_alu[11]/fpu/fpu_post_norm_mul/add_363 (simf_DW01_inc_25)
+                                       1.59e-05 2.44e-05 1.40e+07   14.016   0.0
+  alu/valu/genblk1.simf_alu[11]/fpu/fpu_post_norm_mul/add_370 (simf_DW01_inc_24)
+                                       6.85e-02    0.491 3.87e+06    4.433   0.0
+  alu/valu/genblk1.simf_alu[12]/fpu/fpu_post_norm_mul/sub_276 (simf_DW01_sub_27)
+                                          0.246    0.868 5.26e+06    6.377   0.0
+  alu/valu/genblk1.simf_alu[12]/fpu/fpu_post_norm_mul/sub_288 (simf_DW01_sub_26)
+                                          0.103    0.370 3.55e+06    4.026   0.0
+  alu/valu/genblk1.simf_alu[12]/fpu/fpu_post_norm_mul/srl_328 (simf_DW_rash_19)
+                                          1.009    0.858 4.48e+07   46.655   0.1
+  alu/valu/genblk1.simf_alu[12]/fpu/fpu_post_norm_mul/sll_330 (simf_DW01_ash_51)
+                                          0.482    0.644 6.10e+07   62.084   0.1
+  alu/valu/genblk1.simf_alu[12]/fpu/fpu_post_norm_mul/add_363 (simf_DW01_inc_23)
+                                       1.59e-05 2.44e-05 1.40e+07   14.016   0.0
+  alu/valu/genblk1.simf_alu[12]/fpu/fpu_post_norm_mul/add_370 (simf_DW01_inc_22)
+                                       6.77e-02    0.488 3.87e+06    4.429   0.0
+  alu/valu/genblk1.simf_alu[13]/fpu/fpu_post_norm_mul/sub_276 (simf_DW01_sub_24)
+                                          0.246    0.868 5.26e+06    6.377   0.0
+  alu/valu/genblk1.simf_alu[13]/fpu/fpu_post_norm_mul/sub_288 (simf_DW01_sub_23)
+                                          0.103    0.372 3.55e+06    4.027   0.0
+  alu/valu/genblk1.simf_alu[13]/fpu/fpu_post_norm_mul/srl_328 (simf_DW_rash_18)
+                                          1.004    0.853 4.48e+07   46.667   0.1
+  alu/valu/genblk1.simf_alu[13]/fpu/fpu_post_norm_mul/sll_330 (simf_DW01_ash_50)
+                                          0.480    0.641 6.09e+07   62.028   0.1
+  alu/valu/genblk1.simf_alu[13]/fpu/fpu_post_norm_mul/add_363 (simf_DW01_inc_21)
+                                       1.59e-05 2.44e-05 1.40e+07   14.016   0.0
+  alu/valu/genblk1.simf_alu[13]/fpu/fpu_post_norm_mul/add_370 (simf_DW01_inc_20)
+                                       6.77e-02    0.487 3.87e+06    4.428   0.0
+  alu/valu/genblk1.simf_alu[14]/fpu/fpu_post_norm_mul/sub_276 (simf_DW01_sub_21)
+                                          0.244    0.861 5.26e+06    6.368   0.0
+  alu/valu/genblk1.simf_alu[14]/fpu/fpu_post_norm_mul/sub_288 (simf_DW01_sub_20)
+                                          0.101    0.366 3.55e+06    4.019   0.0
+  alu/valu/genblk1.simf_alu[14]/fpu/fpu_post_norm_mul/srl_328 (simf_DW_rash_17)
+                                          0.987    0.839 4.48e+07   46.640   0.1
+  alu/valu/genblk1.simf_alu[14]/fpu/fpu_post_norm_mul/sll_330 (simf_DW01_ash_49)
+                                          0.460    0.615 6.10e+07   62.026   0.1
+  alu/valu/genblk1.simf_alu[14]/fpu/fpu_post_norm_mul/add_363 (simf_DW01_inc_19)
+                                       1.59e-05 2.44e-05 1.40e+07   14.016   0.0
+  alu/valu/genblk1.simf_alu[14]/fpu/fpu_post_norm_mul/add_370 (simf_DW01_inc_18)
+                                       6.74e-02    0.485 3.87e+06    4.426   0.0
+  alu/valu/genblk1.simf_alu[15]/fpu/fpu_post_norm_mul/sub_276 (simf_DW01_sub_18)
+                                          0.246    0.870 5.26e+06    6.379   0.0
+  alu/valu/genblk1.simf_alu[15]/fpu/fpu_post_norm_mul/sub_288 (simf_DW01_sub_17)
+                                          0.104    0.371 3.55e+06    4.027   0.0
+  alu/valu/genblk1.simf_alu[15]/fpu/fpu_post_norm_mul/srl_328 (simf_DW_rash_16)
+                                          1.022    0.869 4.48e+07   46.679   0.1
+  alu/valu/genblk1.simf_alu[15]/fpu/fpu_post_norm_mul/sll_330 (simf_DW01_ash_48)
+                                          0.482    0.645 6.10e+07   62.141   0.1
+  alu/valu/genblk1.simf_alu[15]/fpu/fpu_post_norm_mul/add_363 (simf_DW01_inc_17)
+                                       1.59e-05 2.44e-05 1.40e+07   14.016   0.0
+  alu/valu/genblk1.simf_alu[15]/fpu/fpu_post_norm_mul/add_370 (simf_DW01_inc_16)
+                                       6.82e-02    0.490 3.87e+06    4.432   0.0
+  alu/valu/genblk1.simf_alu[0]/fpu/fpu_pre_norm_div/sll_179 (simf_DW01_ash_47)
+                                          0.446    1.350 2.01e+07   21.944   0.0
+  alu/valu/genblk1.simf_alu[0]/fpu/fpu_pre_norm_div/sll_180 (simf_DW01_ash_46)
+                                          0.446    1.353 2.00e+07   21.813   0.0
+  alu/valu/genblk1.simf_alu[1]/fpu/fpu_pre_norm_div/sll_179 (simf_DW01_ash_45)
+                                          0.460    1.395 2.02e+07   22.008   0.0
+  alu/valu/genblk1.simf_alu[1]/fpu/fpu_pre_norm_div/sll_180 (simf_DW01_ash_44)
+                                          0.462    1.402 2.00e+07   21.888   0.0
+  alu/valu/genblk1.simf_alu[2]/fpu/fpu_pre_norm_div/sll_179 (simf_DW01_ash_43)
+                                          0.455    1.392 2.02e+07   22.004   0.0
+  alu/valu/genblk1.simf_alu[2]/fpu/fpu_pre_norm_div/sll_180 (simf_DW01_ash_42)
+                                          0.451    1.368 2.00e+07   21.842   0.0
+  alu/valu/genblk1.simf_alu[3]/fpu/fpu_pre_norm_div/sll_179 (simf_DW01_ash_41)
+                                          0.458    1.390 2.02e+07   22.002   0.0
+  alu/valu/genblk1.simf_alu[3]/fpu/fpu_pre_norm_div/sll_180 (simf_DW01_ash_40)
+                                          0.463    1.405 2.00e+07   21.891   0.0
+  alu/valu/genblk1.simf_alu[4]/fpu/fpu_pre_norm_div/sll_179 (simf_DW01_ash_39)
+                                          0.459    1.397 2.00e+07   21.886   0.0
+  alu/valu/genblk1.simf_alu[4]/fpu/fpu_pre_norm_div/sll_180 (simf_DW01_ash_38)
+                                          0.468    1.422 2.00e+07   21.920   0.0
+  alu/valu/genblk1.simf_alu[5]/fpu/fpu_pre_norm_div/sll_179 (simf_DW01_ash_37)
+                                          0.458    1.384 2.02e+07   21.992   0.0
+  alu/valu/genblk1.simf_alu[5]/fpu/fpu_pre_norm_div/sll_180 (simf_DW01_ash_36)
+                                          0.462    1.407 2.00e+07   21.890   0.0
+  alu/valu/genblk1.simf_alu[6]/fpu/fpu_pre_norm_div/sll_179 (simf_DW01_ash_35)
+                                          0.465    1.414 2.02e+07   22.038   0.0
+  alu/valu/genblk1.simf_alu[6]/fpu/fpu_pre_norm_div/sll_180 (simf_DW01_ash_34)
+                                          0.467    1.418 2.00e+07   21.916   0.0
+  alu/valu/genblk1.simf_alu[7]/fpu/fpu_pre_norm_div/sll_179 (simf_DW01_ash_33)
+                                          0.441    1.341 2.02e+07   21.933   0.0
+  alu/valu/genblk1.simf_alu[7]/fpu/fpu_pre_norm_div/sll_180 (simf_DW01_ash_32)
+                                          0.445    1.352 2.00e+07   21.818   0.0
+  alu/valu/genblk1.simf_alu[8]/fpu/fpu_pre_norm_div/sll_179 (simf_DW01_ash_31)
+                                          0.451    1.365 2.01e+07   21.966   0.0
+  alu/valu/genblk1.simf_alu[8]/fpu/fpu_pre_norm_div/sll_180 (simf_DW01_ash_30)
+                                          0.455    1.388 2.00e+07   21.869   0.0
+  alu/valu/genblk1.simf_alu[9]/fpu/fpu_pre_norm_div/sll_179 (simf_DW01_ash_29)
+                                          0.454    1.379 2.02e+07   21.995   0.0
+  alu/valu/genblk1.simf_alu[9]/fpu/fpu_pre_norm_div/sll_180 (simf_DW01_ash_28)
+                                          0.460    1.403 2.00e+07   21.893   0.0
+  alu/valu/genblk1.simf_alu[10]/fpu/fpu_pre_norm_div/sll_179 (simf_DW01_ash_27)
+                                          0.457    1.383 2.01e+07   21.988   0.0
+  alu/valu/genblk1.simf_alu[10]/fpu/fpu_pre_norm_div/sll_180 (simf_DW01_ash_26)
+                                          0.462    1.405 2.00e+07   21.884   0.0
+  alu/valu/genblk1.simf_alu[11]/fpu/fpu_pre_norm_div/sll_179 (simf_DW01_ash_25)
+                                          0.467    1.423 2.02e+07   22.058   0.0
+  alu/valu/genblk1.simf_alu[11]/fpu/fpu_pre_norm_div/sll_180 (simf_DW01_ash_24)
+                                          0.471    1.436 2.00e+07   21.948   0.0
+  alu/valu/genblk1.simf_alu[12]/fpu/fpu_pre_norm_div/sll_179 (simf_DW01_ash_23)
+                                          0.459    1.395 2.02e+07   22.008   0.0
+  alu/valu/genblk1.simf_alu[12]/fpu/fpu_pre_norm_div/sll_180 (simf_DW01_ash_22)
+                                          0.458    1.383 2.00e+07   21.862   0.0
+  alu/valu/genblk1.simf_alu[13]/fpu/fpu_pre_norm_div/sll_179 (simf_DW01_ash_21)
+                                          0.458    1.382 2.01e+07   21.989   0.0
+  alu/valu/genblk1.simf_alu[13]/fpu/fpu_pre_norm_div/sll_180 (simf_DW01_ash_20)
+                                          0.460    1.393 2.00e+07   21.874   0.0
+  alu/valu/genblk1.simf_alu[14]/fpu/fpu_pre_norm_div/sll_179 (simf_DW01_ash_19)
+                                          0.438    1.328 2.01e+07   21.914   0.0
+  alu/valu/genblk1.simf_alu[14]/fpu/fpu_pre_norm_div/sll_180 (simf_DW01_ash_18)
+                                          0.452    1.377 2.00e+07   21.850   0.0
+  alu/valu/genblk1.simf_alu[15]/fpu/fpu_pre_norm_div/sll_179 (simf_DW01_ash_17)
+                                          0.465    1.404 2.02e+07   22.021   0.0
+  alu/valu/genblk1.simf_alu[15]/fpu/fpu_pre_norm_div/sll_180 (simf_DW01_ash_16)
+                                          0.470    1.425 2.00e+07   21.919   0.0
+1

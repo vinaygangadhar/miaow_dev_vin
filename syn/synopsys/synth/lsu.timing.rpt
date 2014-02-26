@@ -1,0 +1,627 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 5
+Design : lsu
+Version: G-2012.06
+Date   : Thu May 16 12:46:50 2013
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: tt1p05v25c   Library: saed32rvt_tt1p05v25c
+Wire Load Model Mode: enclosed
+
+  Startpoint: flops_rd_ex/flop_scalar_source_a[51]/state_reg
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: flops_ex_mem/flop_ld_st_addr[191]/state_reg
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  lsu                1000000               saed32rvt_tt1p05v25c
+  lsu_DW02_mult_58   8000                  saed32rvt_tt1p05v25c
+  lsu_DW01_add_122   ForQA                 saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                               0.000000   0.000000
+  clock network delay (ideal)                         0.000000   0.000000
+  flops_rd_ex/flop_scalar_source_a[51]/state_reg/CLK (DFFARX1_RVT)
+                                                      0.000000 # 0.000000 r
+  flops_rd_ex/flop_scalar_source_a[51]/state_reg/QN (DFFARX1_RVT)
+                                                      0.087439   0.087439 r
+  U19093/Y (INVX0_RVT)                                0.400477   0.487916 f
+  U18851/Y (NBUFFX2_RVT)                              0.548207   1.036124 f
+  U18850/Y (INVX1_RVT)                                0.429754   1.465878 r
+  U13598/Y (INVX0_RVT)                                0.246670   1.712547 f
+  addr_calc/mtbuf_address_calc[5]/mult_25/A[3] (lsu_DW02_mult_58)
+                                                      0.000000   1.712547 f
+  addr_calc/mtbuf_address_calc[5]/mult_25/U34/Y (NBUFFX2_RVT)
+                                                      0.547624   2.260172 f
+  addr_calc/mtbuf_address_calc[5]/mult_25/U468/Y (AND2X1_RVT)
+                                                      0.056198   2.316370 f
+  addr_calc/mtbuf_address_calc[5]/mult_25/S2_3_10/S (FADDX1_RVT)
+                                                      0.125665   2.442035 r
+  addr_calc/mtbuf_address_calc[5]/mult_25/S2_4_9/S (FADDX1_RVT)
+                                                      0.113179   2.555215 f
+  addr_calc/mtbuf_address_calc[5]/mult_25/S2_5_8/S (FADDX1_RVT)
+                                                      0.114016   2.669231 r
+  addr_calc/mtbuf_address_calc[5]/mult_25/S2_6_7/S (FADDX1_RVT)
+                                                      0.113179   2.782410 f
+  addr_calc/mtbuf_address_calc[5]/mult_25/S2_7_6/S (FADDX1_RVT)
+                                                      0.114016   2.896427 r
+  addr_calc/mtbuf_address_calc[5]/mult_25/S2_8_5/CO (FADDX1_RVT)
+                                                      0.086327   2.982753 r
+  addr_calc/mtbuf_address_calc[5]/mult_25/S2_9_5/S (FADDX1_RVT)
+                                                      0.125986   3.108739 f
+  addr_calc/mtbuf_address_calc[5]/mult_25/S2_10_4/S (FADDX1_RVT)
+                                                      0.114016   3.222756 r
+  addr_calc/mtbuf_address_calc[5]/mult_25/S2_11_3/S (FADDX1_RVT)
+                                                      0.113180   3.335935 f
+  addr_calc/mtbuf_address_calc[5]/mult_25/S2_12_2/S (FADDX1_RVT)
+                                                      0.114016   3.449952 r
+  addr_calc/mtbuf_address_calc[5]/mult_25/S4_1/S (FADDX1_RVT)
+                                                      0.113802   3.563754 f
+  addr_calc/mtbuf_address_calc[5]/mult_25/U2/Y (XOR2X1_RVT)
+                                                      0.093013   3.656767 r
+  addr_calc/mtbuf_address_calc[5]/mult_25/FS_1/A[12] (lsu_DW01_add_245)
+                                                      0.000000   3.656767 r
+  addr_calc/mtbuf_address_calc[5]/mult_25/FS_1/U8/Y (NBUFFX2_RVT)
+                                                      0.037902   3.694669 r
+  addr_calc/mtbuf_address_calc[5]/mult_25/FS_1/SUM[12] (lsu_DW01_add_245)
+                                                      0.000000   3.694669 r
+  addr_calc/mtbuf_address_calc[5]/mult_25/PRODUCT[14] (lsu_DW02_mult_58)
+                                                      0.000000   3.694669 r
+  U7788/Y (AND2X1_RVT)                                0.165125   3.859794 r
+  addr_calc/mtbuf_address_calc[5]/add_25_2/B[14] (lsu_DW01_add_122)
+                                                      0.000000   3.859794 r
+  addr_calc/mtbuf_address_calc[5]/add_25_2/U1_14/CO (FADDX1_RVT)
+                                                      0.542765   4.402559 r
+  addr_calc/mtbuf_address_calc[5]/add_25_2/U1_15/CO (FADDX1_RVT)
+                                                      0.082786   4.485345 r
+  addr_calc/mtbuf_address_calc[5]/add_25_2/U1_16/CO (FADDX1_RVT)
+                                                      0.082786   4.568131 r
+  addr_calc/mtbuf_address_calc[5]/add_25_2/U1_17/CO (FADDX1_RVT)
+                                                      0.082781   4.650913 r
+  addr_calc/mtbuf_address_calc[5]/add_25_2/U1_18/CO (FADDX1_RVT)
+                                                      0.082781   4.733694 r
+  addr_calc/mtbuf_address_calc[5]/add_25_2/U1_19/CO (FADDX1_RVT)
+                                                      0.082781   4.816475 r
+  addr_calc/mtbuf_address_calc[5]/add_25_2/U1_20/CO (FADDX1_RVT)
+                                                      0.082781   4.899257 r
+  addr_calc/mtbuf_address_calc[5]/add_25_2/U1_21/CO (FADDX1_RVT)
+                                                      0.082781   4.982038 r
+  addr_calc/mtbuf_address_calc[5]/add_25_2/U1_22/CO (FADDX1_RVT)
+                                                      0.082781   5.064819 r
+  addr_calc/mtbuf_address_calc[5]/add_25_2/U1_23/CO (FADDX1_RVT)
+                                                      0.082781   5.147601 r
+  addr_calc/mtbuf_address_calc[5]/add_25_2/U1_24/CO (FADDX1_RVT)
+                                                      0.082781   5.230382 r
+  addr_calc/mtbuf_address_calc[5]/add_25_2/U1_25/CO (FADDX1_RVT)
+                                                      0.082781   5.313163 r
+  addr_calc/mtbuf_address_calc[5]/add_25_2/U1_26/CO (FADDX1_RVT)
+                                                      0.082781   5.395945 r
+  addr_calc/mtbuf_address_calc[5]/add_25_2/U1_27/CO (FADDX1_RVT)
+                                                      0.082781   5.478726 r
+  addr_calc/mtbuf_address_calc[5]/add_25_2/U1_28/CO (FADDX1_RVT)
+                                                      0.082781   5.561507 r
+  addr_calc/mtbuf_address_calc[5]/add_25_2/U1_29/CO (FADDX1_RVT)
+                                                      0.082781   5.644289 r
+  addr_calc/mtbuf_address_calc[5]/add_25_2/U1_30/CO (FADDX1_RVT)
+                                                      0.082781   5.727070 r
+  addr_calc/mtbuf_address_calc[5]/add_25_2/U1_31/S (FADDX1_RVT)
+                                                      0.105522   5.832592 f
+  addr_calc/mtbuf_address_calc[5]/add_25_2/SUM[31] (lsu_DW01_add_122)
+                                                      0.000000   5.832592 f
+  U13260/Y (AO22X1_RVT)                               0.155257   5.987849 f
+  flops_ex_mem/flop_ld_st_addr[191]/state_reg/D (DFFARX1_RVT)
+                                                      0.140614   6.128463 f
+  data arrival time                                              6.128463
+
+  clock clk (rise edge)                               8.000000   8.000000
+  clock network delay (ideal)                         0.000000   8.000000
+  flops_ex_mem/flop_ld_st_addr[191]/state_reg/CLK (DFFARX1_RVT)
+                                                      0.000000   8.000000 r
+  library setup time                                  -0.027677  7.972323
+  data required time                                             7.972323
+  --------------------------------------------------------------------------
+  data required time                                             7.972323
+  data arrival time                                              -6.128463
+  --------------------------------------------------------------------------
+  slack (MET)                                                    1.843860
+
+
+  Startpoint: flops_rd_ex/flop_scalar_source_a[51]/state_reg
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: flops_ex_mem/flop_ld_st_addr[543]/state_reg
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  lsu                1000000               saed32rvt_tt1p05v25c
+  lsu_DW02_mult_47   8000                  saed32rvt_tt1p05v25c
+  lsu_DW01_add_111   ForQA                 saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                               0.000000   0.000000
+  clock network delay (ideal)                         0.000000   0.000000
+  flops_rd_ex/flop_scalar_source_a[51]/state_reg/CLK (DFFARX1_RVT)
+                                                      0.000000 # 0.000000 r
+  flops_rd_ex/flop_scalar_source_a[51]/state_reg/QN (DFFARX1_RVT)
+                                                      0.087439   0.087439 r
+  U19093/Y (INVX0_RVT)                                0.400477   0.487916 f
+  U18849/Y (NBUFFX2_RVT)                              0.548207   1.036124 f
+  U18848/Y (INVX1_RVT)                                0.429754   1.465878 r
+  U13596/Y (INVX0_RVT)                                0.246670   1.712547 f
+  addr_calc/mtbuf_address_calc[16]/mult_25/A[3] (lsu_DW02_mult_47)
+                                                      0.000000   1.712547 f
+  addr_calc/mtbuf_address_calc[16]/mult_25/U34/Y (NBUFFX2_RVT)
+                                                      0.547624   2.260172 f
+  addr_calc/mtbuf_address_calc[16]/mult_25/U465/Y (AND2X1_RVT)
+                                                      0.056198   2.316370 f
+  addr_calc/mtbuf_address_calc[16]/mult_25/S2_3_10/S (FADDX1_RVT)
+                                                      0.125665   2.442035 r
+  addr_calc/mtbuf_address_calc[16]/mult_25/S2_4_9/S (FADDX1_RVT)
+                                                      0.113179   2.555215 f
+  addr_calc/mtbuf_address_calc[16]/mult_25/S2_5_8/S (FADDX1_RVT)
+                                                      0.114016   2.669231 r
+  addr_calc/mtbuf_address_calc[16]/mult_25/S2_6_7/S (FADDX1_RVT)
+                                                      0.113179   2.782410 f
+  addr_calc/mtbuf_address_calc[16]/mult_25/S2_7_6/S (FADDX1_RVT)
+                                                      0.114016   2.896427 r
+  addr_calc/mtbuf_address_calc[16]/mult_25/S2_8_5/S (FADDX1_RVT)
+                                                      0.113179   3.009606 f
+  addr_calc/mtbuf_address_calc[16]/mult_25/S2_9_4/S (FADDX1_RVT)
+                                                      0.114016   3.123622 r
+  addr_calc/mtbuf_address_calc[16]/mult_25/S2_10_3/CO (FADDX1_RVT)
+                                                      0.086327   3.209949 r
+  addr_calc/mtbuf_address_calc[16]/mult_25/S2_11_3/S (FADDX1_RVT)
+                                                      0.125986   3.335935 f
+  addr_calc/mtbuf_address_calc[16]/mult_25/S2_12_2/S (FADDX1_RVT)
+                                                      0.114016   3.449952 r
+  addr_calc/mtbuf_address_calc[16]/mult_25/S4_1/S (FADDX1_RVT)
+                                                      0.113803   3.563754 f
+  addr_calc/mtbuf_address_calc[16]/mult_25/U2/Y (XOR2X1_RVT)
+                                                      0.093013   3.656768 r
+  addr_calc/mtbuf_address_calc[16]/mult_25/FS_1/A[12] (lsu_DW01_add_223)
+                                                      0.000000   3.656768 r
+  addr_calc/mtbuf_address_calc[16]/mult_25/FS_1/U8/Y (NBUFFX2_RVT)
+                                                      0.037902   3.694669 r
+  addr_calc/mtbuf_address_calc[16]/mult_25/FS_1/SUM[12] (lsu_DW01_add_223)
+                                                      0.000000   3.694669 r
+  addr_calc/mtbuf_address_calc[16]/mult_25/PRODUCT[14] (lsu_DW02_mult_47)
+                                                      0.000000   3.694669 r
+  U10860/Y (AND2X1_RVT)                               0.165125   3.859795 r
+  addr_calc/mtbuf_address_calc[16]/add_25_2/B[14] (lsu_DW01_add_111)
+                                                      0.000000   3.859795 r
+  addr_calc/mtbuf_address_calc[16]/add_25_2/U1_14/CO (FADDX1_RVT)
+                                                      0.542765   4.402560 r
+  addr_calc/mtbuf_address_calc[16]/add_25_2/U1_15/CO (FADDX1_RVT)
+                                                      0.082786   4.485346 r
+  addr_calc/mtbuf_address_calc[16]/add_25_2/U1_16/CO (FADDX1_RVT)
+                                                      0.082786   4.568132 r
+  addr_calc/mtbuf_address_calc[16]/add_25_2/U1_17/CO (FADDX1_RVT)
+                                                      0.082781   4.650913 r
+  addr_calc/mtbuf_address_calc[16]/add_25_2/U1_18/CO (FADDX1_RVT)
+                                                      0.082781   4.733695 r
+  addr_calc/mtbuf_address_calc[16]/add_25_2/U1_19/CO (FADDX1_RVT)
+                                                      0.082781   4.816476 r
+  addr_calc/mtbuf_address_calc[16]/add_25_2/U1_20/CO (FADDX1_RVT)
+                                                      0.082781   4.899257 r
+  addr_calc/mtbuf_address_calc[16]/add_25_2/U1_21/CO (FADDX1_RVT)
+                                                      0.082781   4.982038 r
+  addr_calc/mtbuf_address_calc[16]/add_25_2/U1_22/CO (FADDX1_RVT)
+                                                      0.082781   5.064820 r
+  addr_calc/mtbuf_address_calc[16]/add_25_2/U1_23/CO (FADDX1_RVT)
+                                                      0.082781   5.147601 r
+  addr_calc/mtbuf_address_calc[16]/add_25_2/U1_24/CO (FADDX1_RVT)
+                                                      0.082781   5.230382 r
+  addr_calc/mtbuf_address_calc[16]/add_25_2/U1_25/CO (FADDX1_RVT)
+                                                      0.082781   5.313164 r
+  addr_calc/mtbuf_address_calc[16]/add_25_2/U1_26/CO (FADDX1_RVT)
+                                                      0.082781   5.395945 r
+  addr_calc/mtbuf_address_calc[16]/add_25_2/U1_27/CO (FADDX1_RVT)
+                                                      0.082781   5.478726 r
+  addr_calc/mtbuf_address_calc[16]/add_25_2/U1_28/CO (FADDX1_RVT)
+                                                      0.082781   5.561508 r
+  addr_calc/mtbuf_address_calc[16]/add_25_2/U1_29/CO (FADDX1_RVT)
+                                                      0.082781   5.644289 r
+  addr_calc/mtbuf_address_calc[16]/add_25_2/U1_30/CO (FADDX1_RVT)
+                                                      0.082781   5.727070 r
+  addr_calc/mtbuf_address_calc[16]/add_25_2/U1_31/S (FADDX1_RVT)
+                                                      0.105522   5.832592 f
+  addr_calc/mtbuf_address_calc[16]/add_25_2/SUM[31] (lsu_DW01_add_111)
+                                                      0.000000   5.832592 f
+  U12908/Y (AO22X1_RVT)                               0.155257   5.987850 f
+  flops_ex_mem/flop_ld_st_addr[543]/state_reg/D (DFFARX1_RVT)
+                                                      0.140613   6.128463 f
+  data arrival time                                              6.128463
+
+  clock clk (rise edge)                               8.000000   8.000000
+  clock network delay (ideal)                         0.000000   8.000000
+  flops_ex_mem/flop_ld_st_addr[543]/state_reg/CLK (DFFARX1_RVT)
+                                                      0.000000   8.000000 r
+  library setup time                                  -0.027662  7.972338
+  data required time                                             7.972338
+  --------------------------------------------------------------------------
+  data required time                                             7.972338
+  data arrival time                                              -6.128463
+  --------------------------------------------------------------------------
+  slack (MET)                                                    1.843875
+
+
+  Startpoint: flops_rd_ex/flop_scalar_source_a[51]/state_reg
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: flops_ex_mem/flop_ld_st_addr[255]/state_reg
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  lsu                1000000               saed32rvt_tt1p05v25c
+  lsu_DW02_mult_56   8000                  saed32rvt_tt1p05v25c
+  lsu_DW01_add_120   ForQA                 saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                               0.000000   0.000000
+  clock network delay (ideal)                         0.000000   0.000000
+  flops_rd_ex/flop_scalar_source_a[51]/state_reg/CLK (DFFARX1_RVT)
+                                                      0.000000 # 0.000000 r
+  flops_rd_ex/flop_scalar_source_a[51]/state_reg/QN (DFFARX1_RVT)
+                                                      0.087439   0.087439 r
+  U19093/Y (INVX0_RVT)                                0.400477   0.487916 f
+  U18851/Y (NBUFFX2_RVT)                              0.548207   1.036124 f
+  U18850/Y (INVX1_RVT)                                0.429754   1.465878 r
+  U13599/Y (INVX0_RVT)                                0.246670   1.712547 f
+  addr_calc/mtbuf_address_calc[7]/mult_25/A[3] (lsu_DW02_mult_56)
+                                                      0.000000   1.712547 f
+  addr_calc/mtbuf_address_calc[7]/mult_25/U34/Y (NBUFFX2_RVT)
+                                                      0.547624   2.260172 f
+  addr_calc/mtbuf_address_calc[7]/mult_25/U467/Y (AND2X1_RVT)
+                                                      0.056198   2.316370 f
+  addr_calc/mtbuf_address_calc[7]/mult_25/S2_3_10/S (FADDX1_RVT)
+                                                      0.125665   2.442035 r
+  addr_calc/mtbuf_address_calc[7]/mult_25/S2_4_9/S (FADDX1_RVT)
+                                                      0.113179   2.555215 f
+  addr_calc/mtbuf_address_calc[7]/mult_25/S2_5_8/S (FADDX1_RVT)
+                                                      0.114016   2.669231 r
+  addr_calc/mtbuf_address_calc[7]/mult_25/S2_6_7/S (FADDX1_RVT)
+                                                      0.113179   2.782410 f
+  addr_calc/mtbuf_address_calc[7]/mult_25/S2_7_6/S (FADDX1_RVT)
+                                                      0.114016   2.896427 r
+  addr_calc/mtbuf_address_calc[7]/mult_25/S2_8_5/S (FADDX1_RVT)
+                                                      0.113180   3.009606 f
+  addr_calc/mtbuf_address_calc[7]/mult_25/S2_9_4/S (FADDX1_RVT)
+                                                      0.114016   3.123623 r
+  addr_calc/mtbuf_address_calc[7]/mult_25/S2_10_3/S (FADDX1_RVT)
+                                                      0.113179   3.236802 f
+  addr_calc/mtbuf_address_calc[7]/mult_25/S2_11_2/S (FADDX1_RVT)
+                                                      0.114016   3.350818 r
+  addr_calc/mtbuf_address_calc[7]/mult_25/S2_12_1/CO (FADDX1_RVT)
+                                                      0.086327   3.437145 r
+  addr_calc/mtbuf_address_calc[7]/mult_25/S4_1/S (FADDX1_RVT)
+                                                      0.126609   3.563754 f
+  addr_calc/mtbuf_address_calc[7]/mult_25/U2/Y (XOR2X1_RVT)
+                                                      0.093013   3.656767 r
+  addr_calc/mtbuf_address_calc[7]/mult_25/FS_1/A[12] (lsu_DW01_add_241)
+                                                      0.000000   3.656767 r
+  addr_calc/mtbuf_address_calc[7]/mult_25/FS_1/U8/Y (NBUFFX2_RVT)
+                                                      0.037902   3.694669 r
+  addr_calc/mtbuf_address_calc[7]/mult_25/FS_1/SUM[12] (lsu_DW01_add_241)
+                                                      0.000000   3.694669 r
+  addr_calc/mtbuf_address_calc[7]/mult_25/PRODUCT[14] (lsu_DW02_mult_56)
+                                                      0.000000   3.694669 r
+  U7404/Y (AND2X1_RVT)                                0.165125   3.859794 r
+  addr_calc/mtbuf_address_calc[7]/add_25_2/B[14] (lsu_DW01_add_120)
+                                                      0.000000   3.859794 r
+  addr_calc/mtbuf_address_calc[7]/add_25_2/U1_14/CO (FADDX1_RVT)
+                                                      0.543029   4.402823 r
+  addr_calc/mtbuf_address_calc[7]/add_25_2/U1_15/CO (FADDX1_RVT)
+                                                      0.082786   4.485609 r
+  addr_calc/mtbuf_address_calc[7]/add_25_2/U1_16/CO (FADDX1_RVT)
+                                                      0.082786   4.568395 r
+  addr_calc/mtbuf_address_calc[7]/add_25_2/U1_17/CO (FADDX1_RVT)
+                                                      0.082781   4.651176 r
+  addr_calc/mtbuf_address_calc[7]/add_25_2/U1_18/CO (FADDX1_RVT)
+                                                      0.082781   4.733958 r
+  addr_calc/mtbuf_address_calc[7]/add_25_2/U1_19/CO (FADDX1_RVT)
+                                                      0.082781   4.816739 r
+  addr_calc/mtbuf_address_calc[7]/add_25_2/U1_20/CO (FADDX1_RVT)
+                                                      0.082781   4.899520 r
+  addr_calc/mtbuf_address_calc[7]/add_25_2/U1_21/CO (FADDX1_RVT)
+                                                      0.082781   4.982302 r
+  addr_calc/mtbuf_address_calc[7]/add_25_2/U1_22/CO (FADDX1_RVT)
+                                                      0.082781   5.065083 r
+  addr_calc/mtbuf_address_calc[7]/add_25_2/U1_23/CO (FADDX1_RVT)
+                                                      0.082781   5.147864 r
+  addr_calc/mtbuf_address_calc[7]/add_25_2/U1_24/CO (FADDX1_RVT)
+                                                      0.082781   5.230646 r
+  addr_calc/mtbuf_address_calc[7]/add_25_2/U1_25/CO (FADDX1_RVT)
+                                                      0.082781   5.313427 r
+  addr_calc/mtbuf_address_calc[7]/add_25_2/U1_26/CO (FADDX1_RVT)
+                                                      0.082781   5.396208 r
+  addr_calc/mtbuf_address_calc[7]/add_25_2/U1_27/CO (FADDX1_RVT)
+                                                      0.082781   5.478990 r
+  addr_calc/mtbuf_address_calc[7]/add_25_2/U1_28/CO (FADDX1_RVT)
+                                                      0.082781   5.561771 r
+  addr_calc/mtbuf_address_calc[7]/add_25_2/U1_29/CO (FADDX1_RVT)
+                                                      0.082781   5.644552 r
+  addr_calc/mtbuf_address_calc[7]/add_25_2/U1_30/CO (FADDX1_RVT)
+                                                      0.082781   5.727334 r
+  addr_calc/mtbuf_address_calc[7]/add_25_2/U1_31/S (FADDX1_RVT)
+                                                      0.105522   5.832856 f
+  addr_calc/mtbuf_address_calc[7]/add_25_2/SUM[31] (lsu_DW01_add_120)
+                                                      0.000000   5.832856 f
+  U13196/Y (AO22X1_RVT)                               0.155257   5.988113 f
+  flops_ex_mem/flop_ld_st_addr[255]/state_reg/D (DFFARX1_RVT)
+                                                      0.140613   6.128726 f
+  data arrival time                                              6.128726
+
+  clock clk (rise edge)                               8.000000   8.000000
+  clock network delay (ideal)                         0.000000   8.000000
+  flops_ex_mem/flop_ld_st_addr[255]/state_reg/CLK (DFFARX1_RVT)
+                                                      0.000000   8.000000 r
+  library setup time                                  -0.027045  7.972955
+  data required time                                             7.972955
+  --------------------------------------------------------------------------
+  data required time                                             7.972955
+  data arrival time                                              -6.128726
+  --------------------------------------------------------------------------
+  slack (MET)                                                    1.844229
+
+
+  Startpoint: flops_rd_ex/flop_scalar_source_a[51]/state_reg
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: flops_ex_mem/flop_ld_st_addr[703]/state_reg
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  lsu                1000000               saed32rvt_tt1p05v25c
+  lsu_DW02_mult_42   8000                  saed32rvt_tt1p05v25c
+  lsu_DW01_add_106   ForQA                 saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                               0.000000   0.000000
+  clock network delay (ideal)                         0.000000   0.000000
+  flops_rd_ex/flop_scalar_source_a[51]/state_reg/CLK (DFFARX1_RVT)
+                                                      0.000000 # 0.000000 r
+  flops_rd_ex/flop_scalar_source_a[51]/state_reg/QN (DFFARX1_RVT)
+                                                      0.087439   0.087439 r
+  U19093/Y (INVX0_RVT)                                0.400477   0.487916 f
+  U18849/Y (NBUFFX2_RVT)                              0.548207   1.036124 f
+  U18848/Y (INVX1_RVT)                                0.429754   1.465878 r
+  U13594/Y (INVX0_RVT)                                0.246670   1.712547 f
+  addr_calc/mtbuf_address_calc[21]/mult_25/A[3] (lsu_DW02_mult_42)
+                                                      0.000000   1.712547 f
+  addr_calc/mtbuf_address_calc[21]/mult_25/U34/Y (NBUFFX2_RVT)
+                                                      0.547624   2.260172 f
+  addr_calc/mtbuf_address_calc[21]/mult_25/U467/Y (AND2X1_RVT)
+                                                      0.056198   2.316370 f
+  addr_calc/mtbuf_address_calc[21]/mult_25/S2_3_10/S (FADDX1_RVT)
+                                                      0.125665   2.442035 r
+  addr_calc/mtbuf_address_calc[21]/mult_25/S2_4_9/S (FADDX1_RVT)
+                                                      0.113179   2.555215 f
+  addr_calc/mtbuf_address_calc[21]/mult_25/S2_5_8/S (FADDX1_RVT)
+                                                      0.114016   2.669231 r
+  addr_calc/mtbuf_address_calc[21]/mult_25/S2_6_7/S (FADDX1_RVT)
+                                                      0.113179   2.782410 f
+  addr_calc/mtbuf_address_calc[21]/mult_25/S2_7_6/S (FADDX1_RVT)
+                                                      0.114016   2.896427 r
+  addr_calc/mtbuf_address_calc[21]/mult_25/S2_8_5/S (FADDX1_RVT)
+                                                      0.113180   3.009606 f
+  addr_calc/mtbuf_address_calc[21]/mult_25/S2_9_4/S (FADDX1_RVT)
+                                                      0.114016   3.123623 r
+  addr_calc/mtbuf_address_calc[21]/mult_25/S2_10_3/CO (FADDX1_RVT)
+                                                      0.086327   3.209949 r
+  addr_calc/mtbuf_address_calc[21]/mult_25/S2_11_3/S (FADDX1_RVT)
+                                                      0.125986   3.335936 f
+  addr_calc/mtbuf_address_calc[21]/mult_25/S2_12_2/S (FADDX1_RVT)
+                                                      0.114016   3.449952 r
+  addr_calc/mtbuf_address_calc[21]/mult_25/S4_1/S (FADDX1_RVT)
+                                                      0.113802   3.563754 f
+  addr_calc/mtbuf_address_calc[21]/mult_25/U2/Y (XOR2X1_RVT)
+                                                      0.093013   3.656768 r
+  addr_calc/mtbuf_address_calc[21]/mult_25/FS_1/A[12] (lsu_DW01_add_213)
+                                                      0.000000   3.656768 r
+  addr_calc/mtbuf_address_calc[21]/mult_25/FS_1/U8/Y (NBUFFX2_RVT)
+                                                      0.037902   3.694669 r
+  addr_calc/mtbuf_address_calc[21]/mult_25/FS_1/SUM[12] (lsu_DW01_add_213)
+                                                      0.000000   3.694669 r
+  addr_calc/mtbuf_address_calc[21]/mult_25/PRODUCT[14] (lsu_DW02_mult_42)
+                                                      0.000000   3.694669 r
+  U10476/Y (AND2X1_RVT)                               0.165125   3.859795 r
+  addr_calc/mtbuf_address_calc[21]/add_25_2/B[14] (lsu_DW01_add_106)
+                                                      0.000000   3.859795 r
+  addr_calc/mtbuf_address_calc[21]/add_25_2/U1_14/CO (FADDX1_RVT)
+                                                      0.542765   4.402560 r
+  addr_calc/mtbuf_address_calc[21]/add_25_2/U1_15/CO (FADDX1_RVT)
+                                                      0.082786   4.485346 r
+  addr_calc/mtbuf_address_calc[21]/add_25_2/U1_16/CO (FADDX1_RVT)
+                                                      0.082786   4.568132 r
+  addr_calc/mtbuf_address_calc[21]/add_25_2/U1_17/CO (FADDX1_RVT)
+                                                      0.082781   4.650913 r
+  addr_calc/mtbuf_address_calc[21]/add_25_2/U1_18/CO (FADDX1_RVT)
+                                                      0.082781   4.733695 r
+  addr_calc/mtbuf_address_calc[21]/add_25_2/U1_19/CO (FADDX1_RVT)
+                                                      0.082781   4.816476 r
+  addr_calc/mtbuf_address_calc[21]/add_25_2/U1_20/CO (FADDX1_RVT)
+                                                      0.082781   4.899257 r
+  addr_calc/mtbuf_address_calc[21]/add_25_2/U1_21/CO (FADDX1_RVT)
+                                                      0.082781   4.982038 r
+  addr_calc/mtbuf_address_calc[21]/add_25_2/U1_22/CO (FADDX1_RVT)
+                                                      0.082781   5.064820 r
+  addr_calc/mtbuf_address_calc[21]/add_25_2/U1_23/CO (FADDX1_RVT)
+                                                      0.082781   5.147601 r
+  addr_calc/mtbuf_address_calc[21]/add_25_2/U1_24/CO (FADDX1_RVT)
+                                                      0.082781   5.230382 r
+  addr_calc/mtbuf_address_calc[21]/add_25_2/U1_25/CO (FADDX1_RVT)
+                                                      0.082781   5.313164 r
+  addr_calc/mtbuf_address_calc[21]/add_25_2/U1_26/CO (FADDX1_RVT)
+                                                      0.082781   5.395945 r
+  addr_calc/mtbuf_address_calc[21]/add_25_2/U1_27/CO (FADDX1_RVT)
+                                                      0.082781   5.478726 r
+  addr_calc/mtbuf_address_calc[21]/add_25_2/U1_28/CO (FADDX1_RVT)
+                                                      0.082781   5.561508 r
+  addr_calc/mtbuf_address_calc[21]/add_25_2/U1_29/CO (FADDX1_RVT)
+                                                      0.082781   5.644289 r
+  addr_calc/mtbuf_address_calc[21]/add_25_2/U1_30/CO (FADDX1_RVT)
+                                                      0.082781   5.727070 r
+  addr_calc/mtbuf_address_calc[21]/add_25_2/U1_31/S (FADDX1_RVT)
+                                                      0.105522   5.832592 f
+  addr_calc/mtbuf_address_calc[21]/add_25_2/SUM[31] (lsu_DW01_add_106)
+                                                      0.000000   5.832592 f
+  U12748/Y (AO22X1_RVT)                               0.155257   5.987850 f
+  flops_ex_mem/flop_ld_st_addr[703]/state_reg/D (DFFARX1_RVT)
+                                                      0.140613   6.128463 f
+  data arrival time                                              6.128463
+
+  clock clk (rise edge)                               8.000000   8.000000
+  clock network delay (ideal)                         0.000000   8.000000
+  flops_ex_mem/flop_ld_st_addr[703]/state_reg/CLK (DFFARX1_RVT)
+                                                      0.000000   8.000000 r
+  library setup time                                  -0.027055  7.972945
+  data required time                                             7.972945
+  --------------------------------------------------------------------------
+  data required time                                             7.972945
+  data arrival time                                              -6.128463
+  --------------------------------------------------------------------------
+  slack (MET)                                                    1.844482
+
+
+  Startpoint: flops_rd_ex/flop_scalar_source_a[51]/state_reg
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: flops_ex_mem/flop_ld_st_addr[159]/state_reg
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  lsu                1000000               saed32rvt_tt1p05v25c
+  lsu_DW02_mult_59   8000                  saed32rvt_tt1p05v25c
+  lsu_DW01_add_123   ForQA                 saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                               0.000000   0.000000
+  clock network delay (ideal)                         0.000000   0.000000
+  flops_rd_ex/flop_scalar_source_a[51]/state_reg/CLK (DFFARX1_RVT)
+                                                      0.000000 # 0.000000 r
+  flops_rd_ex/flop_scalar_source_a[51]/state_reg/QN (DFFARX1_RVT)
+                                                      0.087439   0.087439 r
+  U19093/Y (INVX0_RVT)                                0.400477   0.487916 f
+  U18851/Y (NBUFFX2_RVT)                              0.548207   1.036124 f
+  U18850/Y (INVX1_RVT)                                0.429754   1.465878 r
+  U13599/Y (INVX0_RVT)                                0.246670   1.712547 f
+  addr_calc/mtbuf_address_calc[4]/mult_25/A[3] (lsu_DW02_mult_59)
+                                                      0.000000   1.712547 f
+  addr_calc/mtbuf_address_calc[4]/mult_25/U34/Y (NBUFFX2_RVT)
+                                                      0.547624   2.260172 f
+  addr_calc/mtbuf_address_calc[4]/mult_25/U467/Y (AND2X1_RVT)
+                                                      0.056198   2.316370 f
+  addr_calc/mtbuf_address_calc[4]/mult_25/S2_3_10/S (FADDX1_RVT)
+                                                      0.125665   2.442035 r
+  addr_calc/mtbuf_address_calc[4]/mult_25/S2_4_9/S (FADDX1_RVT)
+                                                      0.113179   2.555215 f
+  addr_calc/mtbuf_address_calc[4]/mult_25/S2_5_8/S (FADDX1_RVT)
+                                                      0.114016   2.669231 r
+  addr_calc/mtbuf_address_calc[4]/mult_25/S2_6_7/S (FADDX1_RVT)
+                                                      0.113179   2.782410 f
+  addr_calc/mtbuf_address_calc[4]/mult_25/S2_7_6/S (FADDX1_RVT)
+                                                      0.114016   2.896427 r
+  addr_calc/mtbuf_address_calc[4]/mult_25/S2_8_5/S (FADDX1_RVT)
+                                                      0.113179   3.009606 f
+  addr_calc/mtbuf_address_calc[4]/mult_25/S2_9_4/S (FADDX1_RVT)
+                                                      0.114016   3.123622 r
+  addr_calc/mtbuf_address_calc[4]/mult_25/S2_10_3/CO (FADDX1_RVT)
+                                                      0.086327   3.209949 r
+  addr_calc/mtbuf_address_calc[4]/mult_25/S2_11_3/S (FADDX1_RVT)
+                                                      0.125986   3.335935 f
+  addr_calc/mtbuf_address_calc[4]/mult_25/S2_12_2/S (FADDX1_RVT)
+                                                      0.114016   3.449952 r
+  addr_calc/mtbuf_address_calc[4]/mult_25/S4_1/S (FADDX1_RVT)
+                                                      0.113803   3.563754 f
+  addr_calc/mtbuf_address_calc[4]/mult_25/U2/Y (XOR2X1_RVT)
+                                                      0.093013   3.656768 r
+  addr_calc/mtbuf_address_calc[4]/mult_25/FS_1/A[12] (lsu_DW01_add_247)
+                                                      0.000000   3.656768 r
+  addr_calc/mtbuf_address_calc[4]/mult_25/FS_1/U8/Y (NBUFFX2_RVT)
+                                                      0.037902   3.694669 r
+  addr_calc/mtbuf_address_calc[4]/mult_25/FS_1/SUM[12] (lsu_DW01_add_247)
+                                                      0.000000   3.694669 r
+  addr_calc/mtbuf_address_calc[4]/mult_25/PRODUCT[14] (lsu_DW02_mult_59)
+                                                      0.000000   3.694669 r
+  U8492/Y (AND2X1_RVT)                                0.165125   3.859795 r
+  addr_calc/mtbuf_address_calc[4]/add_25_2/B[14] (lsu_DW01_add_123)
+                                                      0.000000   3.859795 r
+  addr_calc/mtbuf_address_calc[4]/add_25_2/U1_14/CO (FADDX1_RVT)
+                                                      0.542771   4.402566 r
+  addr_calc/mtbuf_address_calc[4]/add_25_2/U1_15/CO (FADDX1_RVT)
+                                                      0.082786   4.485352 r
+  addr_calc/mtbuf_address_calc[4]/add_25_2/U1_16/CO (FADDX1_RVT)
+                                                      0.082786   4.568138 r
+  addr_calc/mtbuf_address_calc[4]/add_25_2/U1_17/CO (FADDX1_RVT)
+                                                      0.082781   4.650919 r
+  addr_calc/mtbuf_address_calc[4]/add_25_2/U1_18/CO (FADDX1_RVT)
+                                                      0.082781   4.733701 r
+  addr_calc/mtbuf_address_calc[4]/add_25_2/U1_19/CO (FADDX1_RVT)
+                                                      0.082781   4.816482 r
+  addr_calc/mtbuf_address_calc[4]/add_25_2/U1_20/CO (FADDX1_RVT)
+                                                      0.082781   4.899263 r
+  addr_calc/mtbuf_address_calc[4]/add_25_2/U1_21/CO (FADDX1_RVT)
+                                                      0.082781   4.982045 r
+  addr_calc/mtbuf_address_calc[4]/add_25_2/U1_22/CO (FADDX1_RVT)
+                                                      0.082781   5.064826 r
+  addr_calc/mtbuf_address_calc[4]/add_25_2/U1_23/CO (FADDX1_RVT)
+                                                      0.082781   5.147607 r
+  addr_calc/mtbuf_address_calc[4]/add_25_2/U1_24/CO (FADDX1_RVT)
+                                                      0.082781   5.230389 r
+  addr_calc/mtbuf_address_calc[4]/add_25_2/U1_25/CO (FADDX1_RVT)
+                                                      0.082781   5.313170 r
+  addr_calc/mtbuf_address_calc[4]/add_25_2/U1_26/CO (FADDX1_RVT)
+                                                      0.082781   5.395951 r
+  addr_calc/mtbuf_address_calc[4]/add_25_2/U1_27/CO (FADDX1_RVT)
+                                                      0.082781   5.478733 r
+  addr_calc/mtbuf_address_calc[4]/add_25_2/U1_28/CO (FADDX1_RVT)
+                                                      0.082781   5.561514 r
+  addr_calc/mtbuf_address_calc[4]/add_25_2/U1_29/CO (FADDX1_RVT)
+                                                      0.082781   5.644295 r
+  addr_calc/mtbuf_address_calc[4]/add_25_2/U1_30/CO (FADDX1_RVT)
+                                                      0.082781   5.727077 r
+  addr_calc/mtbuf_address_calc[4]/add_25_2/U1_31/S (FADDX1_RVT)
+                                                      0.105522   5.832599 f
+  addr_calc/mtbuf_address_calc[4]/add_25_2/SUM[31] (lsu_DW01_add_123)
+                                                      0.000000   5.832599 f
+  U13292/Y (AO22X1_RVT)                               0.155257   5.987856 f
+  flops_ex_mem/flop_ld_st_addr[159]/state_reg/D (DFFARX1_RVT)
+                                                      0.140614   6.128469 f
+  data arrival time                                              6.128469
+
+  clock clk (rise edge)                               8.000000   8.000000
+  clock network delay (ideal)                         0.000000   8.000000
+  flops_ex_mem/flop_ld_st_addr[159]/state_reg/CLK (DFFARX1_RVT)
+                                                      0.000000   8.000000 r
+  library setup time                                  -0.027045  7.972955
+  data required time                                             7.972955
+  --------------------------------------------------------------------------
+  data required time                                             7.972955
+  data arrival time                                              -6.128469
+  --------------------------------------------------------------------------
+  slack (MET)                                                    1.844486
+
+
+1

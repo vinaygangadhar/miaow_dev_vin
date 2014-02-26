@@ -1,0 +1,312 @@
+Warning: Ignoring -power_effort option since there is no power constraint. (PWR-59)
+Warning: Setting attribute 'fix_multiple_port_nets' on design 'fetch'. (UIO-59)
+Information: Evaluating DesignWare library utilization. (UISN-27)
+
+============================================================================
+| DesignWare Building Block Library  |         Version         | Available |
+============================================================================
+| Basic DW Building Blocks           | G-2012.06-DWBB_201206.0 |     *     |
+| Licensed DW Building Blocks        |                         |     *     |
+============================================================================
+
+
+Information: There are 58 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
+
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'fetch'
+Information: The register 'wginfo/wg_cnt_store[39]/d1[4]/state_reg' is a constant and will be removed. (OPT-1206)
+Information: The register 'wginfo/wg_cnt_store[39]/d1[5]/state_reg' is a constant and will be removed. (OPT-1206)
+Information: The register 'wginfo/wg_cnt_store[39]/d1[6]/state_reg' is a constant and will be removed. (OPT-1206)
+Information: The register 'wginfo/wg_cnt_store[39]/d1[9]/state_reg' is a constant and will be removed. (OPT-1206)
+Information: The register 'wfgen/wf_tag_store/r_file39/d1[0]/state_reg' is a constant and will be removed. (OPT-1206)
+Information: The register 'wfgen/wf_tag_store/r_file39/d1[1]/state_reg' is a constant and will be removed. (OPT-1206)
+Information: The register 'wfgen/wf_tag_store/r_file39/d1[2]/state_reg' is a constant and will be removed. (OPT-1206)
+Information: The register 'wfgen/wf_tag_store/r_file39/d1[3]/state_reg' is a constant and will be removed. (OPT-1206)
+Information: The register 'wfgen/wf_tag_store/r_file39/d1[4]/state_reg' is a constant and will be removed. (OPT-1206)
+Information: The register 'wfgen/wf_tag_store/r_file39/d1[5]/state_reg' is a constant and will be removed. (OPT-1206)
+Information: The register 'wfgen/wf_tag_store/r_file39/d1[6]/state_reg' is a constant and will be removed. (OPT-1206)
+Information: The register 'wfgen/wf_tag_store/r_file39/d1[7]/state_reg' is a constant and will be removed. (OPT-1206)
+Information: The register 'wfgen/wf_tag_store/r_file39/d1[8]/state_reg' is a constant and will be removed. (OPT-1206)
+Information: The register 'wfgen/wf_tag_store/r_file39/d1[9]/state_reg' is a constant and will be removed. (OPT-1206)
+Information: The register 'wfgen/wf_tag_store/r_file39/d1[10]/state_reg' is a constant and will be removed. (OPT-1206)
+Information: The register 'wfgen/wf_tag_store/r_file39/d1[11]/state_reg' is a constant and will be removed. (OPT-1206)
+Information: The register 'wfgen/wf_tag_store/r_file39/d1[12]/state_reg' is a constant and will be removed. (OPT-1206)
+Information: The register 'wfgen/wf_tag_store/r_file39/d1[13]/state_reg' is a constant and will be removed. (OPT-1206)
+Information: The register 'wfgen/wf_tag_store/r_file39/d1[14]/state_reg' is a constant and will be removed. (OPT-1206)
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+
+  Beginning Implementation Selection
+  ----------------------------------
+  Processing 'fetch_DW01_add_0'
+  Processing 'fetch_DW01_dec_0'
+  Processing 'fetch_DW01_inc_0'
+  Processing 'fetch_DW01_cmp6_0'
+  Processing 'fetch_DW01_cmp6_1'
+  Processing 'fetch_DW01_cmp6_2'
+  Processing 'fetch_DW01_cmp6_3'
+  Processing 'fetch_DW01_cmp6_4'
+  Processing 'fetch_DW01_cmp6_5'
+  Processing 'fetch_DW01_cmp6_6'
+  Processing 'fetch_DW01_cmp6_7'
+  Processing 'fetch_DW01_cmp6_8'
+  Processing 'fetch_DW01_cmp6_9'
+  Processing 'fetch_DW01_cmp6_10'
+  Processing 'fetch_DW01_cmp6_11'
+  Processing 'fetch_DW01_cmp6_12'
+  Processing 'fetch_DW01_cmp6_13'
+  Processing 'fetch_DW01_cmp6_14'
+  Processing 'fetch_DW01_cmp6_15'
+  Processing 'fetch_DW01_cmp6_16'
+  Processing 'fetch_DW01_cmp6_17'
+  Processing 'fetch_DW01_cmp6_18'
+  Processing 'fetch_DW01_cmp6_19'
+  Processing 'fetch_DW01_cmp6_20'
+  Processing 'fetch_DW01_cmp6_21'
+  Processing 'fetch_DW01_cmp6_22'
+  Processing 'fetch_DW01_cmp6_23'
+  Processing 'fetch_DW01_cmp6_24'
+  Processing 'fetch_DW01_cmp6_25'
+  Processing 'fetch_DW01_cmp6_26'
+  Processing 'fetch_DW01_cmp6_27'
+  Processing 'fetch_DW01_cmp6_28'
+  Processing 'fetch_DW01_cmp6_29'
+  Processing 'fetch_DW01_cmp6_30'
+  Processing 'fetch_DW01_cmp6_31'
+  Processing 'fetch_DW01_cmp6_32'
+  Processing 'fetch_DW01_cmp6_33'
+  Processing 'fetch_DW01_cmp6_34'
+  Processing 'fetch_DW01_cmp6_35'
+  Processing 'fetch_DW01_cmp6_36'
+  Processing 'fetch_DW01_cmp6_37'
+  Processing 'fetch_DW01_cmp6_38'
+  Processing 'fetch_DW01_cmp6_39'
+
+  Beginning Mapping Optimizations  (High effort)
+  -------------------------------
+
+   ELAPSED            WORST NEG TOTAL NEG  DESIGN                             MIN DELAY
+    TIME      AREA      SLACK     SLACK   RULE COST         ENDPOINT            COST   
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:24   63358.7      3.97    3439.3     860.2                                0.00
+    0:00:24   63358.7      3.97    3439.3     860.2                                0.00
+    0:00:34   63190.6      1.90    1511.1      30.7                                0.00
+    0:00:34   63190.6      1.90    1511.1      30.7                                0.00
+    0:00:34   63190.6      1.90    1511.1      30.7                                0.00
+    0:00:34   63190.6      1.90    1511.1      30.7                                0.00
+    0:00:34   63190.6      1.90    1511.1      30.7                                0.00
+    0:00:34   63190.6      1.90    1511.1      30.7                                0.00
+    0:00:36   60892.8      1.81    1361.4      29.9                                0.00
+    0:00:36   60874.7      1.81    1357.7      29.9                                0.00
+    0:00:37   60874.7      1.81    1357.7      29.9                                0.00
+    0:00:37   60874.7      1.81    1357.7      29.9                                0.00
+    0:00:37   60874.7      1.81    1357.7      29.9                                0.00
+    0:00:37   60874.7      1.81    1357.7      29.9                                0.00
+    0:00:37   60886.4      1.81    1357.7      19.4                                0.00
+    0:00:37   60893.5      1.81    1357.7      15.8                                0.00
+    0:00:37   60900.7      1.81    1357.7      13.6                                0.00
+    0:00:37   60907.3      1.81    1357.7      11.4                                0.00
+    0:00:37   60913.4      1.81    1357.7       9.5                                0.00
+    0:00:37   60920.0      1.81    1357.7       7.5                                0.00
+    0:00:38   60925.6      1.81    1357.7       5.5                                0.00
+    0:00:38   60930.6      1.81    1357.7       3.5                                0.00
+    0:00:38   60936.7      1.81    1357.7       1.5                                0.00
+    0:00:38   60936.7      1.81    1357.7       1.5                                0.00
+    0:00:38   60936.7      1.81    1357.7       1.5                                0.00
+
+
+
+  Beginning Delay Optimization Phase
+  ----------------------------------
+
+   ELAPSED            WORST NEG TOTAL NEG  DESIGN                             MIN DELAY
+    TIME      AREA      SLACK     SLACK   RULE COST         ENDPOINT            COST   
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:38   60936.7      1.81    1357.7       1.5                                0.00
+    0:00:38   60961.6      1.60    1188.2       1.5 pcb1/rfile5/d1[30]/state_reg/D      0.00
+    0:00:39   61013.3      1.56    1168.4       1.5 pcb1/rfile5/d1[30]/state_reg/D      0.00
+    0:00:39   61031.7      1.38    1061.5       1.5 pcb1/rfile5/d1[30]/state_reg/D      0.00
+    0:00:39   61048.2      1.18     947.1       1.5 pcb1/rfile5/d1[30]/state_reg/D      0.00
+    0:00:39   61051.0      1.10     858.3       1.5 pcb1/rfile5/d1[30]/state_reg/D      0.00
+    0:00:40   61085.4      1.08     832.4       1.5 pcb1/rfile5/d1[30]/state_reg/D      0.00
+    0:00:40   61112.3      0.94     795.9       1.5 pcb1/rfile5/d1[30]/state_reg/D      0.00
+    0:00:40   61116.6      0.89     785.7       1.5 pcb1/rfile5/d1[30]/state_reg/D      0.00
+    0:00:40   61129.6      0.82     735.5       1.5 pcb1/rfile5/d1[30]/state_reg/D      0.00
+    0:00:41   61137.5      0.81     723.4       1.5 pcb1/rfile5/d1[30]/state_reg/D      0.00
+    0:00:41   61144.4      0.80     716.3       1.5 pcb1/rfile5/d1[30]/state_reg/D      0.00
+    0:00:41   61172.6      0.71     678.7       1.5 pcb1/rfile5/d1[30]/state_reg/D      0.00
+    0:00:41   61173.3      0.69     671.3       1.5 pcb1/rfile5/d1[26]/state_reg/D      0.00
+    0:00:42   61185.9      0.69     667.9       1.5 pcb1/rfile5/d1[30]/state_reg/D      0.00
+    0:00:42   61194.2      0.65     617.5       1.5 pcb1/rfile5/d1[30]/state_reg/D      0.00
+    0:00:42   61202.3      0.62     597.7       1.5 pcb1/rfile8/d1[25]/state_reg/D      0.00
+    0:00:42   61202.6      0.58     560.4       1.5 pcb1/rfile5/d1[30]/state_reg/D      0.00
+    0:00:43   61208.8      0.57     556.8       1.5 pcb1/rfile5/d1[27]/state_reg/D      0.00
+    0:00:43   61225.9      0.56     552.3       1.5 pcb1/rfile5/d1[30]/state_reg/D      0.00
+    0:00:43   61235.6      0.55     545.1       1.5 pcb1/rfile5/d1[30]/state_reg/D      0.00
+    0:00:43   61241.5      0.53     531.1       1.5 pcb1/rfile5/d1[30]/state_reg/D      0.00
+    0:00:43   61254.3      0.52     516.9       1.5 pcb1/rfile5/d1[30]/state_reg/D      0.00
+    0:00:43   61284.7      0.49     471.4       1.5 pcb1/rfile5/d1[30]/state_reg/D      0.00
+    0:00:44   61298.4      0.47     461.9       1.5 pcb1/rfile5/d1[30]/state_reg/D      0.00
+    0:00:44   61331.8      0.46     448.6       1.5 pcb1/rfile8/d1[19]/state_reg/D      0.00
+    0:00:44   61337.0      0.45     442.0       1.5 pcb1/rfile5/d1[30]/state_reg/D      0.00
+    0:00:45   61359.6      0.44     413.2       1.5 pcb1/rfile37/d1[31]/state_reg/D      0.00
+    0:00:45   61384.5      0.43     405.9       1.5 pcb1/rfile5/d1[30]/state_reg/D      0.00
+    0:00:45   61391.5      0.43     401.3       1.5 pcb1/rfile5/d1[30]/state_reg/D      0.00
+    0:00:45   61409.1      0.40     371.9       1.5 pcb1/rfile8/d1[19]/state_reg/D      0.00
+    0:00:46   61410.0      0.40     369.0       1.5 pcb1/rfile5/d1[30]/state_reg/D      0.00
+    0:00:46   61404.0      0.39     357.6       1.5 pcb1/rfile37/d1[31]/state_reg/D      0.00
+    0:00:46   61407.0      0.39     353.8       1.5 pcb1/rfile5/d1[31]/state_reg/D      0.00
+    0:00:46   61409.9      0.38     349.2       1.5 pcb1/rfile8/d1[26]/state_reg/D      0.00
+    0:00:46   61415.8      0.38     353.0       1.5 pcb1/rfile5/d1[30]/state_reg/D      0.00
+    0:00:47   61448.1      0.35     319.9       1.5 pcb1/rfile5/d1[30]/state_reg/D      0.00
+    0:00:47   61447.5      0.32     286.1       1.5 pcb1/rfile5/d1[30]/state_reg/D      0.00
+    0:00:47   61459.4      0.31     281.0       1.5 pcb1/rfile5/d1[30]/state_reg/D      0.00
+    0:00:47   61444.3      0.29     260.1       1.5 pcb1/rfile8/d1[19]/state_reg/D      0.00
+    0:00:48   61459.1      0.28     251.4       1.5 pcb1/rfile7/d1[26]/state_reg/D      0.00
+    0:00:48   61458.0      0.28     251.5       1.5 pcb1/rfile5/d1[26]/state_reg/D      0.00
+    0:00:48   61460.2      0.28     249.8       1.5 pcb1/rfile7/d1[26]/state_reg/D      0.00
+    0:00:48   61458.0      0.28     250.1       1.5 pcb1/rfile37/d1[19]/state_reg/D      0.00
+    0:00:48   61471.1      0.28     246.0       1.5 pcb1/rfile8/d1[19]/state_reg/D      0.00
+    0:00:48   61473.0      0.28     247.1       1.5 pcb1/rfile1/d1[27]/state_reg/D      0.00
+    0:00:48   61478.6      0.27     244.4       1.5 pcb1/rfile5/d1[17]/state_reg/D      0.00
+    0:00:48   61477.0      0.27     244.8       1.5 pcb1/rfile37/d1[31]/state_reg/D      0.00
+    0:00:49   61480.1      0.27     243.1       1.5 pcb1/rfile37/d1[31]/state_reg/D      0.00
+    0:00:49   61491.2      0.26     241.6       1.5 pcb1/rfile37/d1[31]/state_reg/D      0.00
+    0:00:49   61511.6      0.26     234.2       1.5 pcb1/rfile37/d1[31]/state_reg/D      0.00
+    0:00:49   61539.5      0.25     232.1       1.5 pcb1/rfile37/d1[31]/state_reg/D      0.00
+    0:00:49   61543.9      0.25     228.9       1.5 pcb1/rfile1/d1[27]/state_reg/D      0.00
+    0:00:50   61554.5      0.24     222.7       1.5 pcb1/rfile37/d1[31]/state_reg/D      0.00
+    0:00:50   61560.5      0.24     219.3       1.5 pcb1/rfile37/d1[31]/state_reg/D      0.00
+    0:00:50   61588.1      0.24     216.8       1.5 pcb1/rfile37/d1[31]/state_reg/D      0.00
+    0:00:50   61610.3      0.24     214.6       1.5 pcb1/rfile1/d1[27]/state_reg/D      0.00
+    0:00:51   61639.8      0.23     214.1       1.5 pcb1/rfile37/d1[31]/state_reg/D      0.00
+    0:00:51   61644.5      0.23     210.3       1.5 pcb1/rfile1/d1[27]/state_reg/D      0.00
+    0:00:51   61644.2      0.23     209.6       1.5 pcb1/rfile1/d1[27]/state_reg/D      0.00
+    0:00:51   61647.7      0.22     204.9       1.5 pcb1/rfile1/d1[27]/state_reg/D      0.00
+    0:00:51   61656.2      0.22     201.1       1.5 pcb1/rfile1/d1[27]/state_reg/D      0.00
+    0:00:51   61667.9      0.21     193.7       1.5 pcb1/rfile1/d1[27]/state_reg/D      0.00
+    0:00:51   61672.4      0.21     192.6       1.5 pcb1/rfile5/d1[15]/state_reg/D      0.00
+    0:00:52   61683.2      0.21     191.9       1.5 pcb1/rfile1/d1[27]/state_reg/D      0.00
+    0:00:52   61692.4      0.21     190.2       1.5 pcb1/rfile8/d1[25]/state_reg/D      0.00
+    0:00:52   61705.5      0.20     185.9       1.5 pcb1/rfile6/d1[19]/state_reg/D      0.00
+    0:00:52   61717.4      0.20     175.9       1.5 pcb1/rfile8/d1[16]/state_reg/D      0.00
+    0:00:52   61725.2      0.19     173.8       1.5 pcb1/rfile5/d1[17]/state_reg/D      0.00
+    0:00:53   61748.4      0.19     173.1       1.5 pcb1/rfile1/d1[27]/state_reg/D      0.00
+    0:00:53   61744.2      0.18     156.5       1.5 pcb1/rfile1/d1[27]/state_reg/D      0.00
+    0:00:53   61751.9      0.17     144.6       1.5 pcb1/rfile8/d1[16]/state_reg/D      0.00
+    0:00:53   61754.5      0.16     135.6       1.5 pcb1/rfile8/d1[30]/state_reg/D      0.00
+    0:00:53   61750.3      0.16     129.5       1.5 pcb1/rfile8/d1[30]/state_reg/D      0.00
+    0:00:54   61751.7      0.15     123.5       1.5 pcb1/rfile5/d1[17]/state_reg/D      0.00
+    0:00:54   61770.3      0.14     117.1       1.5 pcb1/rfile5/d1[17]/state_reg/D      0.00
+    0:00:54   61780.5      0.14     115.7       1.5 pcb1/rfile8/d1[25]/state_reg/D      0.00
+    0:00:54   61783.7      0.14     114.0       1.5 pcb1/rfile5/d1[23]/state_reg/D      0.00
+    0:00:54   61782.2      0.14     111.0       1.5 pcb1/rfile8/d1[30]/state_reg/D      0.00
+    0:00:54   61777.3      0.13     109.5       1.5 pcb1/rfile7/d1[30]/state_reg/D      0.00
+    0:00:55   61778.4      0.13     109.4       1.5 pcb1/rfile5/d1[23]/state_reg/D      0.00
+    0:00:55   61787.8      0.13     108.8       1.5 pcb1/rfile5/d1[23]/state_reg/D      0.00
+    0:00:55   61788.9      0.10      75.8       1.5 pcb1/rfile8/d1[24]/state_reg/D      0.00
+    0:00:55   61788.0      0.09      73.9       1.5 pcb1/rfile8/d1[24]/state_reg/D      0.00
+    0:00:55   61792.9      0.09      72.6       1.5 pcb1/rfile5/d1[22]/state_reg/D      0.00
+    0:00:55   61807.4      0.09      70.7       1.5 pcb1/rfile5/d1[22]/state_reg/D      0.00
+    0:00:56   61807.4      0.09      70.7       1.5 pcb1/rfile7/d1[24]/state_reg/D      0.00
+    0:00:56   61808.7      0.09      68.5       1.5 pcb1/rfile5/d1[22]/state_reg/D      0.00
+    0:00:56   61812.7      0.08      63.0       1.5 pcb1/rfile8/d1[29]/state_reg/D      0.00
+    0:00:56   61815.0      0.08      62.1       1.5 pcb1/rfile5/d1[28]/state_reg/D      0.00
+    0:00:56   61825.4      0.08      58.3       1.5 pcb1/rfile5/d1[22]/state_reg/D      0.00
+    0:00:56   61828.3      0.07      56.6       1.5 pcb1/rfile5/d1[23]/state_reg/D      0.00
+    0:00:56   61837.1      0.07      56.4       1.5 pcb1/rfile5/d1[28]/state_reg/D      0.00
+    0:00:57   61841.2      0.07      56.0       1.5 pcb1/rfile5/d1[23]/state_reg/D      0.00
+    0:00:57   61848.1      0.07      53.6       1.5 pcb1/rfile5/d1[23]/state_reg/D      0.00
+    0:00:57   61869.7      0.06      49.0       1.5 pcb1/rfile5/d1[22]/state_reg/D      0.00
+    0:00:57   61875.0      0.06      47.6       1.5 pcb1/rfile5/d1[23]/state_reg/D      0.00
+    0:00:57   61876.7      0.06      44.8       1.5 pcb1/rfile5/d1[28]/state_reg/D      0.00
+    0:00:58   61878.3      0.05      42.9       1.5 pcb1/rfile5/d1[23]/state_reg/D      0.00
+    0:00:58   61879.2      0.05      40.4       1.5 pcb1/rfile5/d1[23]/state_reg/D      0.00
+    0:00:58   61884.7      0.05      38.1       1.5 pcb1/rfile7/d1[20]/state_reg/D      0.00
+    0:00:58   61888.1      0.05      34.9       1.5 pcb1/rfile8/d1[29]/state_reg/D      0.00
+    0:00:58   61897.3      0.04      31.0       1.5 pcb1/rfile5/d1[13]/state_reg/D      0.00
+    0:00:59   61895.3      0.04      29.1       1.5 pcb1/rfile7/d1[21]/state_reg/D      0.00
+    0:00:59   61899.7      0.04      29.4       1.5 pcb1/rfile7/d1[26]/state_reg/D      0.00
+    0:00:59   61899.7      0.04      29.3       1.5 pcb1/rfile7/d1[26]/state_reg/D      0.00
+    0:00:59   61899.7      0.04      28.7       1.5 pcb1/rfile5/d1[26]/state_reg/D      0.00
+    0:00:59   61903.4      0.04      27.8       1.5 pcb1/rfile5/d1[23]/state_reg/D      0.00
+    0:00:59   61909.7      0.04      25.3       1.5 pcb1/rfile5/d1[28]/state_reg/D      0.00
+    0:00:59   61904.7      0.04      23.9       1.5 pcb1/rfile38/d1[24]/state_reg/D      0.00
+    0:00:59   61904.6      0.04      25.0       1.5 pcb1/rfile37/d1[19]/state_reg/D      0.00
+    0:01:00   61904.6      0.04      24.9       1.5 pcb1/rfile7/d1[25]/state_reg/D      0.00
+    0:01:00   61907.4      0.04      24.8       1.5 pcb1/rfile7/d1[25]/state_reg/D      0.00
+    0:01:00   61911.2      0.04      24.0       1.5 pcb1/rfile7/d1[24]/state_reg/D      0.00
+    0:01:00   61917.7      0.03      21.4       1.5 pcb1/rfile5/d1[28]/state_reg/D      0.00
+    0:01:00   61924.8      0.03      18.9       1.5 pcb1/rfile5/d1[28]/state_reg/D      0.00
+    0:01:00   61939.8      0.03      18.6       1.5 pcb1/rfile5/d1[28]/state_reg/D      0.00
+    0:01:00   61941.8      0.03      18.3       1.5 pcb1/rfile5/d1[28]/state_reg/D      0.00
+    0:01:01   61940.0      0.03      18.2       1.5 pcb1/rfile5/d1[28]/state_reg/D      0.00
+    0:01:01   61934.8      0.03      16.9       1.5 pcb1/rfile5/d1[28]/state_reg/D      0.00
+    0:01:01   61950.6      0.03      16.5       1.5 pcb1/rfile5/d1[28]/state_reg/D      0.00
+    0:01:01   61951.8      0.03      16.0       1.5 pcb1/rfile5/d1[28]/state_reg/D      0.00
+    0:01:01   61952.8      0.03      15.7       1.5 pcb1/rfile5/d1[28]/state_reg/D      0.00
+    0:01:01   61949.2      0.03      14.4       1.5 pcb1/rfile5/d1[28]/state_reg/D      0.00
+    0:01:02   61967.0      0.02      11.3       1.5 pcb1/rfile5/d1[28]/state_reg/D      0.00
+    0:01:02   61962.5      0.00       0.0       1.5                                0.00
+    0:01:03   61960.0      0.00       0.0       1.5                                0.00
+
+
+  Beginning Design Rule Fixing  (max_capacitance)
+  ----------------------------
+
+   ELAPSED            WORST NEG TOTAL NEG  DESIGN                             MIN DELAY
+    TIME      AREA      SLACK     SLACK   RULE COST         ENDPOINT            COST   
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:01:03   61973.5      0.00       0.0       1.5                                0.00
+    0:01:03   61974.8      0.00       0.0       0.0                                0.00
+
+
+  Beginning Area-Recovery Phase  (cleanup)
+  -----------------------------
+
+   ELAPSED            WORST NEG TOTAL NEG  DESIGN                             MIN DELAY
+    TIME      AREA      SLACK     SLACK   RULE COST         ENDPOINT            COST   
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:01:03   61974.8      0.00       0.0       0.0                                0.00
+    0:01:03   61974.8      0.00       0.0       0.0                                0.00
+    0:01:03   61974.8      0.00       0.0       0.0                                0.00
+    0:01:05   61556.3      0.03      12.8       0.0                                0.00
+    0:01:05   61523.1      0.03      12.7       0.0                                0.00
+    0:01:05   61515.9      0.03      12.8       0.0                                0.00
+    0:01:05   61514.4      0.03      12.8       0.0                                0.00
+    0:01:05   61513.8      0.03      12.8       0.0                                0.00
+    0:01:05   61512.3      0.03      12.8       0.0                                0.00
+    0:01:05   61510.9      0.03      12.8       0.0                                0.00
+    0:01:06   61509.8      0.03      12.8       0.0                                0.00
+    0:01:06   61509.0      0.03      12.8       0.0                                0.00
+    0:01:06   61508.3      0.03      12.8       0.0                                0.00
+    0:01:06   61507.9      0.03      12.8       0.0                                0.00
+    0:01:09   61507.9      0.03      12.8       0.0                                0.00
+    0:01:09   61507.9      0.03      12.8       0.0                                0.00
+    0:01:10   61506.5      0.03      11.3       0.0 pcb1/rfile5/d1[23]/state_reg/D      0.00
+    0:01:10   61509.5      0.03      10.2       0.0 pcb1/rfile5/d1[28]/state_reg/D      0.00
+    0:01:10   61514.1      0.02       5.7       0.0 pcb1/rfile5/d1[23]/state_reg/D      0.00
+    0:01:10   61526.0      0.00       0.0       0.0                                0.00
+    0:01:10   61526.0      0.00       0.0       0.0                                0.00
+    0:01:10   61526.0      0.00       0.0       0.0                                0.00
+    0:01:11   61237.8      0.00       0.0       0.0                                0.00
+    0:01:11   61146.3      0.00       0.3       0.0                                0.00
+    0:01:11   61145.0      0.00       0.3       0.0                                0.00
+    0:01:11   61145.0      0.00       0.3       0.0                                0.00
+    0:01:11   61145.0      0.00       0.3       0.0                                0.00
+    0:01:11   61145.0      0.00       0.3       0.0                                0.00
+    0:01:11   61145.0      0.00       0.3       0.0                                0.00
+    0:01:11   61145.0      0.00       0.3       0.0                                0.00
+    0:01:11   61150.0      0.00       0.0       0.0                                0.00
+    0:01:11   61150.0      0.00       0.0       0.0                                0.00
+Loading db file '/p/vertical/afs-huge0/synopsys/32nmlib/SAED32_EDK/lib/stdcell_rvt/db_nldm/saed32rvt_tt1p05v25c.db'
+
+  Optimization Complete
+  ---------------------
+Warning: Design 'fetch' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+     Net 'clk': 2926 load(s), 1 driver(s)
+1

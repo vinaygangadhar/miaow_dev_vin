@@ -1,0 +1,5 @@
+fetch d
+Unit that fetches instructions from a wavefront chosen by the wavepool
+dispatch2cu_wf_dispatch 1, dispatch2cu_wf_tag_dispatch 15, dispatch2cu_start_pc_dispatch 32, dispatch2cu_vgpr_base_dispatch 10, dispatch2cu_sgpr_base_dispatch 9, dispatch2cu_lds_base_dispatch 16, dispatch2cu_wf_size_dispatch 6, dispatch2cu_wg_wf_count 4, buff_ack 1, wave_stop_fetch 40, issue_wf_done_en 1, issue_wf_done_wf_id 6, issue_wg_wfid 6, salu_branch_wfid 6, salu_branch_en 1, salu_branch_taken 1, salu_branch_pc_value 32
+cu2dispatch_wf_tag_done 15, cu2dispatch_wf_done 1, buff_addr 32, buff_tag 39, buff_rd_en 1, wave_reserve_slotid 6, wave_reserve_valid 1, wave_basereg_wr 1, wave_basereg_wfid 6, wave_vgpr_base 10, wave_sgpr_base 9, wave_lds_base 16, exec_init_wf_en 1, exec_init_wf_id 6, exec_init_value 64, issue_wg_wgid 6, issue_wg_wf_count 4, tracemon_dispatch 1, tracemon_wf_tag_dispatch 15, tracemon_new_wfid 6
+

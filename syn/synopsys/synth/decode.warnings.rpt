@@ -1,0 +1,157 @@
+ 
+****************************************
+check_design summary:
+Version:     G-2012.06
+Date:        Thu May 16 12:48:20 2013
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Inputs/Outputs                                                     50
+    Unconnected ports (LINT-28)                                    44
+    Constant outputs (LINT-52)                                      6
+
+Cells                                                              44
+    Connected to power or ground (LINT-32)                         33
+    Nets connected to multiple pins on same cell (LINT-33)         11
+--------------------------------------------------------------------------------
+
+Warning: In design 'decode_DW01_add_0', port 'B[8]' is not connected to any nets. (LINT-28)
+Warning: In design 'decode_DW01_add_0', port 'B[7]' is not connected to any nets. (LINT-28)
+Warning: In design 'decode_DW01_add_0', port 'CI' is not connected to any nets. (LINT-28)
+Warning: In design 'decode_DW01_add_0', port 'CO' is not connected to any nets. (LINT-28)
+Warning: In design 'decode_DW01_add_1', port 'B[9]' is not connected to any nets. (LINT-28)
+Warning: In design 'decode_DW01_add_1', port 'B[8]' is not connected to any nets. (LINT-28)
+Warning: In design 'decode_DW01_add_1', port 'CI' is not connected to any nets. (LINT-28)
+Warning: In design 'decode_DW01_add_1', port 'CO' is not connected to any nets. (LINT-28)
+Warning: In design 'decode_DW01_add_2', port 'B[8]' is not connected to any nets. (LINT-28)
+Warning: In design 'decode_DW01_add_2', port 'B[7]' is not connected to any nets. (LINT-28)
+Warning: In design 'decode_DW01_add_2', port 'CI' is not connected to any nets. (LINT-28)
+Warning: In design 'decode_DW01_add_2', port 'CO' is not connected to any nets. (LINT-28)
+Warning: In design 'decode_DW01_add_3', port 'B[9]' is not connected to any nets. (LINT-28)
+Warning: In design 'decode_DW01_add_3', port 'B[8]' is not connected to any nets. (LINT-28)
+Warning: In design 'decode_DW01_add_3', port 'CI' is not connected to any nets. (LINT-28)
+Warning: In design 'decode_DW01_add_3', port 'CO' is not connected to any nets. (LINT-28)
+Warning: In design 'decode_DW01_add_4', port 'B[8]' is not connected to any nets. (LINT-28)
+Warning: In design 'decode_DW01_add_4', port 'B[7]' is not connected to any nets. (LINT-28)
+Warning: In design 'decode_DW01_add_4', port 'CI' is not connected to any nets. (LINT-28)
+Warning: In design 'decode_DW01_add_4', port 'CO' is not connected to any nets. (LINT-28)
+Warning: In design 'decode_DW01_add_5', port 'B[9]' is not connected to any nets. (LINT-28)
+Warning: In design 'decode_DW01_add_5', port 'B[8]' is not connected to any nets. (LINT-28)
+Warning: In design 'decode_DW01_add_5', port 'CI' is not connected to any nets. (LINT-28)
+Warning: In design 'decode_DW01_add_5', port 'CO' is not connected to any nets. (LINT-28)
+Warning: In design 'decode_DW01_add_6', port 'B[8]' is not connected to any nets. (LINT-28)
+Warning: In design 'decode_DW01_add_6', port 'B[7]' is not connected to any nets. (LINT-28)
+Warning: In design 'decode_DW01_add_6', port 'CI' is not connected to any nets. (LINT-28)
+Warning: In design 'decode_DW01_add_6', port 'CO' is not connected to any nets. (LINT-28)
+Warning: In design 'decode_DW01_add_7', port 'B[9]' is not connected to any nets. (LINT-28)
+Warning: In design 'decode_DW01_add_7', port 'B[8]' is not connected to any nets. (LINT-28)
+Warning: In design 'decode_DW01_add_7', port 'CI' is not connected to any nets. (LINT-28)
+Warning: In design 'decode_DW01_add_7', port 'CO' is not connected to any nets. (LINT-28)
+Warning: In design 'decode_DW01_add_8', port 'B[8]' is not connected to any nets. (LINT-28)
+Warning: In design 'decode_DW01_add_8', port 'B[7]' is not connected to any nets. (LINT-28)
+Warning: In design 'decode_DW01_add_8', port 'CI' is not connected to any nets. (LINT-28)
+Warning: In design 'decode_DW01_add_8', port 'CO' is not connected to any nets. (LINT-28)
+Warning: In design 'decode_DW01_add_9', port 'B[9]' is not connected to any nets. (LINT-28)
+Warning: In design 'decode_DW01_add_9', port 'B[8]' is not connected to any nets. (LINT-28)
+Warning: In design 'decode_DW01_add_9', port 'CI' is not connected to any nets. (LINT-28)
+Warning: In design 'decode_DW01_add_9', port 'CO' is not connected to any nets. (LINT-28)
+Warning: In design 'decode_DW01_add_10', port 'B[8]' is not connected to any nets. (LINT-28)
+Warning: In design 'decode_DW01_add_10', port 'B[7]' is not connected to any nets. (LINT-28)
+Warning: In design 'decode_DW01_add_10', port 'CI' is not connected to any nets. (LINT-28)
+Warning: In design 'decode_DW01_add_10', port 'CO' is not connected to any nets. (LINT-28)
+Warning: In design 'decode', a pin on submodule 'dest2_encoder/add_37' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'B[8]' is connected to logic 0. 
+Warning: In design 'decode', a pin on submodule 'dest2_encoder/add_37' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'B[7]' is connected to logic 0. 
+Warning: In design 'decode', a pin on submodule 'dest2_encoder/add_37' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'CI' is connected to logic 0. 
+Warning: In design 'decode', a pin on submodule 'dest1_encoder/add_38' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'B[9]' is connected to logic 0. 
+Warning: In design 'decode', a pin on submodule 'dest1_encoder/add_38' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'B[8]' is connected to logic 0. 
+Warning: In design 'decode', a pin on submodule 'dest1_encoder/add_38' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'CI' is connected to logic 0. 
+Warning: In design 'decode', a pin on submodule 'dest1_encoder/add_37' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'B[8]' is connected to logic 0. 
+Warning: In design 'decode', a pin on submodule 'dest1_encoder/add_37' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'B[7]' is connected to logic 0. 
+Warning: In design 'decode', a pin on submodule 'dest1_encoder/add_37' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'CI' is connected to logic 0. 
+Warning: In design 'decode', a pin on submodule 's4_encoder/add_38' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'B[9]' is connected to logic 0. 
+Warning: In design 'decode', a pin on submodule 's4_encoder/add_38' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'B[8]' is connected to logic 0. 
+Warning: In design 'decode', a pin on submodule 's4_encoder/add_38' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'CI' is connected to logic 0. 
+Warning: In design 'decode', a pin on submodule 's4_encoder/add_37' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'B[8]' is connected to logic 0. 
+Warning: In design 'decode', a pin on submodule 's4_encoder/add_37' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'B[7]' is connected to logic 0. 
+Warning: In design 'decode', a pin on submodule 's4_encoder/add_37' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'CI' is connected to logic 0. 
+Warning: In design 'decode', a pin on submodule 's3_encoder/add_38' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'B[9]' is connected to logic 0. 
+Warning: In design 'decode', a pin on submodule 's3_encoder/add_38' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'B[8]' is connected to logic 0. 
+Warning: In design 'decode', a pin on submodule 's3_encoder/add_38' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'CI' is connected to logic 0. 
+Warning: In design 'decode', a pin on submodule 's3_encoder/add_37' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'B[8]' is connected to logic 0. 
+Warning: In design 'decode', a pin on submodule 's3_encoder/add_37' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'B[7]' is connected to logic 0. 
+Warning: In design 'decode', a pin on submodule 's3_encoder/add_37' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'CI' is connected to logic 0. 
+Warning: In design 'decode', a pin on submodule 's2_encoder/add_38' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'B[9]' is connected to logic 0. 
+Warning: In design 'decode', a pin on submodule 's2_encoder/add_38' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'B[8]' is connected to logic 0. 
+Warning: In design 'decode', a pin on submodule 's2_encoder/add_38' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'CI' is connected to logic 0. 
+Warning: In design 'decode', a pin on submodule 's2_encoder/add_37' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'B[8]' is connected to logic 0. 
+Warning: In design 'decode', a pin on submodule 's2_encoder/add_37' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'B[7]' is connected to logic 0. 
+Warning: In design 'decode', a pin on submodule 's2_encoder/add_37' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'CI' is connected to logic 0. 
+Warning: In design 'decode', a pin on submodule 's1_encoder/add_38' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'B[9]' is connected to logic 0. 
+Warning: In design 'decode', a pin on submodule 's1_encoder/add_38' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'B[8]' is connected to logic 0. 
+Warning: In design 'decode', a pin on submodule 's1_encoder/add_38' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'CI' is connected to logic 0. 
+Warning: In design 'decode', a pin on submodule 's1_encoder/add_37' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'B[8]' is connected to logic 0. 
+Warning: In design 'decode', a pin on submodule 's1_encoder/add_37' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'B[7]' is connected to logic 0. 
+Warning: In design 'decode', a pin on submodule 's1_encoder/add_37' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'CI' is connected to logic 0. 
+Warning: In design 'decode', the same net is connected to more than one pin on submodule 'dest2_encoder/add_37'. (LINT-33)
+   Net 'n12' is connected to pins 'B[8]', 'B[7]'', 'CI'.
+Warning: In design 'decode', the same net is connected to more than one pin on submodule 'dest1_encoder/add_38'. (LINT-33)
+   Net 'n23' is connected to pins 'B[9]', 'B[8]'', 'CI'.
+Warning: In design 'decode', the same net is connected to more than one pin on submodule 'dest1_encoder/add_37'. (LINT-33)
+   Net 'n24' is connected to pins 'B[8]', 'B[7]'', 'CI'.
+Warning: In design 'decode', the same net is connected to more than one pin on submodule 's4_encoder/add_38'. (LINT-33)
+   Net 'n35' is connected to pins 'B[9]', 'B[8]'', 'CI'.
+Warning: In design 'decode', the same net is connected to more than one pin on submodule 's4_encoder/add_37'. (LINT-33)
+   Net 'n36' is connected to pins 'B[8]', 'B[7]'', 'CI'.
+Warning: In design 'decode', the same net is connected to more than one pin on submodule 's3_encoder/add_38'. (LINT-33)
+   Net 'n47' is connected to pins 'B[9]', 'B[8]'', 'CI'.
+Warning: In design 'decode', the same net is connected to more than one pin on submodule 's3_encoder/add_37'. (LINT-33)
+   Net 'n48' is connected to pins 'B[8]', 'B[7]'', 'CI'.
+Warning: In design 'decode', the same net is connected to more than one pin on submodule 's2_encoder/add_38'. (LINT-33)
+   Net 'n59' is connected to pins 'B[9]', 'B[8]'', 'CI'.
+Warning: In design 'decode', the same net is connected to more than one pin on submodule 's2_encoder/add_37'. (LINT-33)
+   Net 'n60' is connected to pins 'B[8]', 'B[7]'', 'CI'.
+Warning: In design 'decode', the same net is connected to more than one pin on submodule 's1_encoder/add_38'. (LINT-33)
+   Net 'n71' is connected to pins 'B[9]', 'B[8]'', 'CI'.
+Warning: In design 'decode', the same net is connected to more than one pin on submodule 's1_encoder/add_37'. (LINT-33)
+   Net 'n72' is connected to pins 'B[8]', 'B[7]'', 'CI'.
+Warning: In design 'decode', output port 'issue_opcode[31]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'decode', output port 'issue_opcode[30]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'decode', output port 'issue_opcode[29]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'decode', output port 'issue_opcode[10]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'decode', output port 'issue_opcode[9]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'decode', output port 'issue_dest_reg2[10]' is connected directly to 'logic 1'. (LINT-52)
+1

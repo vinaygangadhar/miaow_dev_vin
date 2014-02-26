@@ -1,0 +1,5 @@
+instr_buffer d
+Instruction buffer - modeled by the testbench.
+fetch_rd_en 1, fetch_addr 32, fetch_tag 39
+fetchwave_ack 1, wave_instr 32, wave_tag 39
+

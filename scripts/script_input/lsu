@@ -1,0 +1,5 @@
+lsu d
+unit to handle loads and stores
+issue_lsu_select 1, issue_source_reg1 12, issue_source_reg2 12, issue_source_reg3 12, issue_dest_reg 12, issue_imm_value0 16, issue_imm_value1 32, issue_opcode 32, issue_mem_sgpr 12, issue_wfid 6, issue_lds_base 16, vgpr_source1_data 8192, vgpr_source2_data 2048, mem_rd_data 8192, mem_tag_resp 7, mem_ack 1, sgpr_source1_data 128, sgpr_source2_data 32, exec_exec_value 64, exec_rd_m0_value 32, issue_instr_pc 32 
+issue_ready 1, vgpr_source1_addr 10, vgpr_source2_addr 10, vgpr_dest_addr 10, vgpr_dest_data 8192, vgpr_dest_wr_en 4, vgpr_dest_wr_mask 64, vgpr_instr_done_wfid 6 ,vgpr_instr_done 1, vgpr_source1_rd_en 1, vgpr_source2_rd_en 1, exec_rd_wfid 6, mem_rd_en 4, mem_wr_en 4, mem_addr 2048, mem_wr_data 8192, mem_tag_req 7, mem_wr_mask 64, sgpr_source1_addr 9, sgpr_source2_addr 9, sgpr_dest_addr 9, sgpr_dest_data 128, sgpr_dest_wr_en 4, sgpr_instr_done_wfid 6, sgpr_instr_done 1, sgpr_source1_rd_en 1, sgpr_source2_rd_en 1, tracemon_retire_pc 32, mem_gm_or_lds 1, tracemon_gm_or_lds 1
+/* lsu_controller 1, address_calculator 1, ld_st_buffer 1*/

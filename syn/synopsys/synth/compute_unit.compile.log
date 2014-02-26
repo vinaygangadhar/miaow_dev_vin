@@ -1,0 +1,80 @@
+Warning: Ignoring -power_effort option since there is no power constraint. (PWR-59)
+Warning: Setting attribute 'fix_multiple_port_nets' on design 'compute_unit'. (UIO-59)
+Information: Evaluating DesignWare library utilization. (UISN-27)
+
+============================================================================
+| DesignWare Building Block Library  |         Version         | Available |
+============================================================================
+| Basic DW Building Blocks           | G-2012.06-DWBB_201206.0 |     *     |
+| Licensed DW Building Blocks        |                         |     *     |
+============================================================================
+
+
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'compute_unit'
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+
+  Beginning Mapping Optimizations  (High effort)
+  -------------------------------
+
+   ELAPSED            WORST NEG TOTAL NEG  DESIGN                             MIN DELAY
+    TIME      AREA      SLACK     SLACK   RULE COST         ENDPOINT            COST   
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:37   13021.6      0.00       0.0       0.0                                0.00
+    0:00:37   13021.6      0.00       0.0       0.0                                0.00
+    0:00:37   13021.6      0.00       0.0       0.0                                0.00
+    0:00:37   13021.6      0.00       0.0       0.0                                0.00
+    0:00:37   13021.6      0.00       0.0       0.0                                0.00
+    0:00:37   13021.6      0.00       0.0       0.0                                0.00
+    0:00:37   13021.6      0.00       0.0       0.0                                0.00
+    0:00:37   13021.6      0.00       0.0       0.0                                0.00
+    0:00:37   13021.6      0.00       0.0       0.0                                0.00
+    0:00:37   13021.6      0.00       0.0       0.0                                0.00
+    0:00:37   13021.6      0.00       0.0       0.0                                0.00
+    0:00:37   13021.6      0.00       0.0       0.0                                0.00
+    0:00:37   13021.6      0.00       0.0       0.0                                0.00
+    0:00:37   13021.6      0.00       0.0       0.0                                0.00
+
+
+
+  Beginning Delay Optimization Phase
+  ----------------------------------
+
+   ELAPSED            WORST NEG TOTAL NEG  DESIGN                             MIN DELAY
+    TIME      AREA      SLACK     SLACK   RULE COST         ENDPOINT            COST   
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:37   13021.6      0.00       0.0       0.0                                0.00
+    0:00:37   13021.6      0.00       0.0       0.0                                0.00
+    0:00:37   13021.6      0.00       0.0       0.0                                0.00
+
+
+  Beginning Area-Recovery Phase  (cleanup)
+  -----------------------------
+
+   ELAPSED            WORST NEG TOTAL NEG  DESIGN                             MIN DELAY
+    TIME      AREA      SLACK     SLACK   RULE COST         ENDPOINT            COST   
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:38   13021.6      0.00       0.0       0.0                                0.00
+    0:00:38   13021.6      0.00       0.0       0.0                                0.00
+    0:00:38   13021.6      0.00       0.0       0.0                                0.00
+    0:00:38   13021.6      0.00       0.0       0.0                                0.00
+    0:00:38   13021.6      0.00       0.0       0.0                                0.00
+    0:00:38   13021.6      0.00       0.0       0.0                                0.00
+    0:00:38   13021.6      0.00       0.0       0.0                                0.00
+    0:00:38   13021.6      0.00       0.0       0.0                                0.00
+    0:00:38   13021.6      0.00       0.0       0.0                                0.00
+    0:00:38   13021.6      0.00       0.0       0.0                                0.00
+    0:00:38   13021.6      0.00       0.0       0.0                                0.00
+    0:00:38   13021.6      0.00       0.0       0.0                                0.00
+    0:00:38   13021.6      0.00       0.0       0.0                                0.00
+    0:00:38   13021.6      0.00       0.0       0.0                                0.00
+    0:00:38   13021.6      0.00       0.0       0.0                                0.00
+Loading db file '/p/vertical/afs-huge0/synopsys/32nmlib/SAED32_EDK/lib/stdcell_rvt/db_nldm/saed32rvt_tt1p05v25c.db'
+
+  Optimization Complete
+  ---------------------
+1

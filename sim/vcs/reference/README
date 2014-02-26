@@ -1,0 +1,5 @@
+Reference files from openrisc
+
+allvcs : vcs compile script, check how to compile c files
+memory....c 
+tb.v 

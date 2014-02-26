@@ -1,0 +1,5 @@
+decode d
+Unit that decodes instructions and passes them to issue.
+wave_instr_pc 32, wave_instr_valid 1, wave_instr 32, wave_wfid 6, wave_vgpr_base 10, wave_sgpr_base 9, wave_lds_base 16
+issue_wf_halt 1, issue_fu 2, issue_wfid 6, issue_opcode 32, issue_source_reg1 14, issue_source_reg2 13, issue_source_reg3 13, issue_source_reg4 14, issue_dest_reg1 14, issue_dest_reg2 13, issue_imm_value0 16, issue_imm_value1 32, issue_valid 1, issue_instr_pc 32, issue_vcc_wr 1, issue_vcc_rd 1, issue_scc_wr 1, issue_scc_rd 1, issue_exec_rd 1, issue_exec_wr 1, issue_m0_rd 1, issue_m0_wr 1, issue_barrier 1, issue_branch 1, issue_lds_base 16, issue_waitcnt 1, wave_ins_half_rqd 1, wave_ins_half_wfid 6, tracemon_collinstr 64, tracemon_colldone 1
+

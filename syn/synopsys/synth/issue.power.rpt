@@ -1,0 +1,145 @@
+Loading db file '/p/vertical/afs-huge0/synopsys/32nmlib/SAED32_EDK/lib/stdcell_rvt/db_nldm/saed32rvt_tt1p05v25c.db'
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+ 
+****************************************
+Report : power
+        -hier
+        -analysis_effort low
+Design : issue
+Version: G-2012.06
+Date   : Thu May 16 12:30:31 2013
+****************************************
+
+
+Library(s) Used:
+
+    saed32rvt_tt1p05v25c (File: /p/vertical/afs-huge0/synopsys/32nmlib/SAED32_EDK/lib/stdcell_rvt/db_nldm/saed32rvt_tt1p05v25c.db)
+
+
+Operating Conditions: tt1p05v25c   Library: saed32rvt_tt1p05v25c
+Wire Load Model Mode: enclosed
+
+Design        Wire Load Model            Library
+------------------------------------------------
+issue                  280000            saed32rvt_tt1p05v25c
+issue_DW01_inc_0       ForQA             saed32rvt_tt1p05v25c
+issue_DW01_inc_1       ForQA             saed32rvt_tt1p05v25c
+issue_DW01_inc_2       ForQA             saed32rvt_tt1p05v25c
+issue_DW01_inc_3       ForQA             saed32rvt_tt1p05v25c
+issue_DW01_inc_4       ForQA             saed32rvt_tt1p05v25c
+issue_DW01_inc_5       ForQA             saed32rvt_tt1p05v25c
+issue_DW01_inc_6       ForQA             saed32rvt_tt1p05v25c
+issue_DW01_inc_7       ForQA             saed32rvt_tt1p05v25c
+issue_DW01_inc_8       ForQA             saed32rvt_tt1p05v25c
+issue_DW01_inc_9       ForQA             saed32rvt_tt1p05v25c
+issue_DW01_inc_10      ForQA             saed32rvt_tt1p05v25c
+issue_DW01_inc_11      ForQA             saed32rvt_tt1p05v25c
+issue_DW01_inc_12      ForQA             saed32rvt_tt1p05v25c
+issue_DW01_inc_13      ForQA             saed32rvt_tt1p05v25c
+issue_DW01_inc_14      ForQA             saed32rvt_tt1p05v25c
+issue_DW01_inc_15      ForQA             saed32rvt_tt1p05v25c
+issue_DW01_inc_16      ForQA             saed32rvt_tt1p05v25c
+issue_DW01_inc_17      ForQA             saed32rvt_tt1p05v25c
+issue_DW01_inc_18      ForQA             saed32rvt_tt1p05v25c
+issue_DW01_inc_19      ForQA             saed32rvt_tt1p05v25c
+issue_DW01_inc_20      ForQA             saed32rvt_tt1p05v25c
+issue_DW01_inc_21      ForQA             saed32rvt_tt1p05v25c
+issue_DW01_inc_22      ForQA             saed32rvt_tt1p05v25c
+issue_DW01_inc_23      ForQA             saed32rvt_tt1p05v25c
+issue_DW01_inc_24      ForQA             saed32rvt_tt1p05v25c
+issue_DW01_inc_25      ForQA             saed32rvt_tt1p05v25c
+issue_DW01_inc_26      ForQA             saed32rvt_tt1p05v25c
+issue_DW01_inc_27      ForQA             saed32rvt_tt1p05v25c
+issue_DW01_inc_28      ForQA             saed32rvt_tt1p05v25c
+issue_DW01_inc_29      ForQA             saed32rvt_tt1p05v25c
+issue_DW01_inc_30      ForQA             saed32rvt_tt1p05v25c
+issue_DW01_inc_31      ForQA             saed32rvt_tt1p05v25c
+issue_DW01_inc_32      ForQA             saed32rvt_tt1p05v25c
+issue_DW01_inc_33      ForQA             saed32rvt_tt1p05v25c
+
+
+Global Operating Voltage = 1.05 
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ns
+    Dynamic Power Units = 1uW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+--------------------------------------------------------------------------------
+                                       Switch   Int      Leak     Total
+Hierarchy                              Power    Power    Power    Power    %
+--------------------------------------------------------------------------------
+issue                                   281.156 1.24e+04 2.67e+10 3.93e+04 100.0
+  scoreboard/vgpr_alu_cmp/add_114_3_C46 (issue_DW01_inc_33)
+                                       8.98e-03 4.35e-02 5.38e+06    5.431   0.0
+  scoreboard/vgpr_alu_cmp/add_133_C50 (issue_DW01_inc_32)
+                                       8.54e-03 4.05e-02 5.38e+06    5.427   0.0
+  scoreboard/vgpr_alu_cmp/add_133_C54 (issue_DW01_inc_31)
+                                       8.48e-03 4.05e-02 5.38e+06    5.427   0.0
+  scoreboard/vgpr_alu_cmp/add_114_3_C58 (issue_DW01_inc_30)
+                                       8.79e-03 4.32e-02 5.38e+06    5.430   0.0
+  scoreboard/vgpr_alu_cmp/add_114_3_C62 (issue_DW01_inc_29)
+                                       8.57e-03 4.16e-02 5.38e+06    5.429   0.0
+  scoreboard/vgpr_alu_cmp/add_133_C66 (issue_DW01_inc_28)
+                                       8.67e-03 4.11e-02 5.38e+06    5.429   0.0
+  scoreboard/vgpr_lsu_cmp/add_114_3_C46 (issue_DW01_inc_27)
+                                       9.06e-03 4.40e-02 5.38e+06    5.430   0.0
+  scoreboard/vgpr_lsu_cmp/add_114_4_C46 (issue_DW01_inc_26)
+                                          0.418    0.547 5.30e+06    6.267   0.0
+  scoreboard/vgpr_lsu_cmp/add_133_C50 (issue_DW01_inc_25)
+                                       8.62e-03 4.08e-02 5.38e+06    5.427   0.0
+  scoreboard/vgpr_lsu_cmp/add_133_C54 (issue_DW01_inc_24)
+                                       8.54e-03 4.09e-02 5.38e+06    5.427   0.0
+  scoreboard/vgpr_lsu_cmp/add_114_3_C58 (issue_DW01_inc_23)
+                                       8.90e-03 4.37e-02 5.38e+06    5.429   0.0
+  scoreboard/vgpr_lsu_cmp/add_114_3_C62 (issue_DW01_inc_22)
+                                       9.16e-03 4.48e-02 5.38e+06    5.430   0.0
+  scoreboard/vgpr_lsu_cmp/add_133_C66 (issue_DW01_inc_21)
+                                       8.60e-03 4.04e-02 5.38e+06    5.427   0.0
+  scoreboard/sgpr_alu_cmp/add_115_3_C46 (issue_DW01_inc_20)
+                                       8.42e-03 3.84e-02 4.78e+06    4.829   0.0
+  scoreboard/sgpr_alu_cmp/add_115_4_C46 (issue_DW01_inc_19)
+                                          0.382    0.496 4.71e+06    5.588   0.0
+  scoreboard/sgpr_alu_cmp/add_134_C50 (issue_DW01_inc_18)
+                                       8.22e-03 3.63e-02 4.78e+06    4.827   0.0
+  scoreboard/sgpr_alu_cmp/add_134_C54 (issue_DW01_inc_17)
+                                       8.18e-03 3.67e-02 4.78e+06    4.827   0.0
+  scoreboard/sgpr_alu_cmp/add_115_3_C58 (issue_DW01_inc_16)
+                                       7.98e-03 3.65e-02 4.78e+06    4.827   0.0
+  scoreboard/sgpr_alu_cmp/add_115_3_C62 (issue_DW01_inc_15)
+                                       8.15e-03 3.70e-02 4.78e+06    4.828   0.0
+  scoreboard/sgpr_alu_cmp/add_134_C66 (issue_DW01_inc_14)
+                                       8.14e-03 3.61e-02 4.78e+06    4.827   0.0
+  scoreboard/sgpr_valu_cmp/add_115_3_C46 (issue_DW01_inc_13)
+                                       8.60e-03 3.98e-02 4.78e+06    4.831   0.0
+  scoreboard/sgpr_valu_cmp/add_115_4_C46 (issue_DW01_inc_12)
+                                          0.382    0.498 4.71e+06    5.589   0.0
+  scoreboard/sgpr_valu_cmp/add_134_C50 (issue_DW01_inc_11)
+                                       8.12e-03 3.68e-02 4.78e+06    4.828   0.0
+  scoreboard/sgpr_valu_cmp/add_134_C54 (issue_DW01_inc_10)
+                                       8.00e-03 3.65e-02 4.78e+06    4.827   0.0
+  scoreboard/sgpr_valu_cmp/add_115_3_C58 (issue_DW01_inc_9)
+                                       8.44e-03 3.96e-02 4.78e+06    4.830   0.0
+  scoreboard/sgpr_valu_cmp/add_115_3_C62 (issue_DW01_inc_8)
+                                       8.15e-03 3.79e-02 4.78e+06    4.829   0.0
+  scoreboard/sgpr_valu_cmp/add_134_C66 (issue_DW01_inc_7)
+                                       8.27e-03 3.74e-02 4.78e+06    4.829   0.0
+  scoreboard/sgpr_lsu_cmp/add_115_3_C46 (issue_DW01_inc_6)
+                                       8.02e-03 3.70e-02 4.78e+06    4.828   0.0
+  scoreboard/sgpr_lsu_cmp/add_115_4_C46 (issue_DW01_inc_5)
+                                          0.380    0.498 4.71e+06    5.587   0.0
+  scoreboard/sgpr_lsu_cmp/add_134_C50 (issue_DW01_inc_4)
+                                       8.10e-03 3.66e-02 4.78e+06    4.827   0.0
+  scoreboard/sgpr_lsu_cmp/add_134_C54 (issue_DW01_inc_3)
+                                       7.95e-03 3.63e-02 4.78e+06    4.826   0.0
+  scoreboard/sgpr_lsu_cmp/add_115_3_C58 (issue_DW01_inc_2)
+                                       7.94e-03 3.71e-02 4.78e+06    4.827   0.0
+  scoreboard/sgpr_lsu_cmp/add_115_3_C62 (issue_DW01_inc_1)
+                                       7.87e-03 3.63e-02 4.78e+06    4.827   0.0
+  scoreboard/sgpr_lsu_cmp/add_134_C66 (issue_DW01_inc_0)
+                                       7.83e-03 3.47e-02 4.78e+06    4.825   0.0
+1

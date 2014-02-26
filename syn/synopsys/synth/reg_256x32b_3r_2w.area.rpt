@@ -1,0 +1,41 @@
+ 
+****************************************
+Report : area
+Design : reg_256x32b_3r_2w
+Version: G-2012.06
+Date   : Thu May 16 12:32:54 2013
+****************************************
+
+Library(s) Used:
+
+    saed32rvt_tt1p05v25c (File: /p/vertical/afs-huge0/synopsys/32nmlib/SAED32_EDK/lib/stdcell_rvt/db_nldm/saed32rvt_tt1p05v25c.db)
+
+Number of ports:                          203
+Number of nets:                         47343
+Number of cells:                        39044
+Number of combinational cells:          30852
+Number of sequential cells:              8192
+Number of macros:                           0
+Number of buf/inv:                       6344
+Number of references:                      15
+
+Combinational area:       83091.873672
+Noncombinational area:    54130.640625
+Net Interconnect area:    69283.631495 
+
+Total cell area:          137222.514297
+Total area:               206506.145792
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area             Local cell area
+                                  --------------------  ------------------------------ 
+Hierarchical cell                 Absolute     Percent  Combi-      Noncombi-   Black
+                                  Total        Total    national    national    boxes   Design
+--------------------------------  -----------  -------  ----------  ----------  ------  ---------
+reg_256x32b_3r_2w                 137222.5143    100.0  83091.8737  54130.6406  0.0000  reg_256x32b_3r_2w
+--------------------------------  -----------  -------  ----------  ----------  ------  ---------
+Total                                                   83091.8737  54130.6406  0.0000
+
+1

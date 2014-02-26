@@ -1,0 +1,33 @@
+Loading db file '/s/synopsys-2012_06_27/@sys/G-2012.06/libraries/syn/gtech.db'
+Loading db file '/s/synopsys-2012_06_27/@sys/G-2012.06/libraries/syn/standard.sldb'
+  Loading link library 'saed32rvt_tt1p05v25c'
+  Loading link library 'gtech'
+Running PRESTO HDLC
+Presto compilation completed successfully.
+Elaborated 1 design.
+Current design is now 'compute_unit'.
+Information: Building the design 'decode'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'exec'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'fetch'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'issue'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'lsu'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'rfa'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'salu'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'sgpr'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'simd'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'simf'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'vgpr'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'wavepool'. (HDL-193)
+Presto compilation completed successfully.
+1

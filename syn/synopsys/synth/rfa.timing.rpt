@@ -1,0 +1,270 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 5
+Design : rfa
+Version: G-2012.06
+Date   : Thu May 16 11:42:42 2013
+****************************************
+
+Operating Conditions: tt1p05v25c   Library: saed32rvt_tt1p05v25c
+Wire Load Model Mode: enclosed
+
+  Startpoint: high_pr_flop[0]/dff_0/state_reg
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: execvgprsgpr_select_fu[5]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  rfa                8000                  saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                               0.000000   0.000000
+  clock network delay (ideal)                         0.000000   0.000000
+  high_pr_flop[0]/dff_0/state_reg/CLK (DFFARX1_RVT)   0.000000   0.000000 r
+  high_pr_flop[0]/dff_0/state_reg/Q (DFFARX1_RVT)     0.116200   0.116200 f
+  U117/Y (AO22X1_RVT)                                 0.074052   0.190252 f
+  U115/Y (AO21X1_RVT)                                 0.052271   0.242523 f
+  U112/Y (AO21X1_RVT)                                 0.052653   0.295176 f
+  U110/Y (NOR2X0_RVT)                                 0.058922   0.354098 r
+  U102/Y (AND2X1_RVT)                                 0.038737   0.392835 r
+  U93/Y (OA21X1_RVT)                                  0.049646   0.442481 r
+  U88/Y (OA21X1_RVT)                                  0.050266   0.492747 r
+  U84/Y (OA21X1_RVT)                                  0.050281   0.543027 r
+  U81/Y (OA21X1_RVT)                                  0.050281   0.593308 r
+  U77/Y (OA21X1_RVT)                                  0.050281   0.643589 r
+  U74/Y (OA21X1_RVT)                                  0.050281   0.693870 r
+  U71/Y (OA21X1_RVT)                                  0.057359   0.751229 r
+  add_72/U1_0/CO (FADDX1_RVT)                         0.100743   0.851973 r
+  add_72/U1_1/CO (FADDX1_RVT)                         0.084143   0.936115 r
+  add_72/U1_2/CO (FADDX1_RVT)                         0.084146   1.020261 r
+  add_72/U1_3/S (FADDX1_RVT)                          0.117845   1.138106 f
+  U51/Y (NOR2X0_RVT)                                  0.061207   1.199313 r
+  U35/Y (AND2X1_RVT)                                  0.045426   1.244738 r
+  U30/Y (AND2X1_RVT)                                  0.043023   1.287762 r
+  U123/Y (NBUFFX2_RVT)                                0.036274   1.324036 r
+  execvgprsgpr_select_fu[5] (out)                     0.000095   1.324131 r
+  data arrival time                                              1.324131
+
+  clock clk (rise edge)                               8.000000   8.000000
+  clock network delay (ideal)                         0.000000   8.000000
+  output external delay                               0.000000   8.000000
+  data required time                                             8.000000
+  --------------------------------------------------------------------------
+  data required time                                             8.000000
+  data arrival time                                              -1.324131
+  --------------------------------------------------------------------------
+  slack (MET)                                                    6.675869
+
+
+  Startpoint: high_pr_flop[0]/dff_0/state_reg
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: execvgprsgpr_select_fu[3]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  rfa                8000                  saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                               0.000000   0.000000
+  clock network delay (ideal)                         0.000000   0.000000
+  high_pr_flop[0]/dff_0/state_reg/CLK (DFFARX1_RVT)   0.000000   0.000000 r
+  high_pr_flop[0]/dff_0/state_reg/Q (DFFARX1_RVT)     0.116200   0.116200 f
+  U117/Y (AO22X1_RVT)                                 0.074052   0.190252 f
+  U115/Y (AO21X1_RVT)                                 0.052271   0.242523 f
+  U112/Y (AO21X1_RVT)                                 0.052653   0.295176 f
+  U110/Y (NOR2X0_RVT)                                 0.058922   0.354098 r
+  U102/Y (AND2X1_RVT)                                 0.038737   0.392835 r
+  U93/Y (OA21X1_RVT)                                  0.049646   0.442481 r
+  U88/Y (OA21X1_RVT)                                  0.050266   0.492747 r
+  U84/Y (OA21X1_RVT)                                  0.050281   0.543027 r
+  U81/Y (OA21X1_RVT)                                  0.050281   0.593308 r
+  U77/Y (OA21X1_RVT)                                  0.050281   0.643589 r
+  U74/Y (OA21X1_RVT)                                  0.050281   0.693870 r
+  U71/Y (OA21X1_RVT)                                  0.057359   0.751229 r
+  add_72/U1_0/CO (FADDX1_RVT)                         0.100743   0.851973 r
+  add_72/U1_1/CO (FADDX1_RVT)                         0.084143   0.936115 r
+  add_72/U1_2/CO (FADDX1_RVT)                         0.084146   1.020261 r
+  add_72/U1_3/S (FADDX1_RVT)                          0.117845   1.138106 f
+  U51/Y (NOR2X0_RVT)                                  0.061207   1.199313 r
+  U35/Y (AND2X1_RVT)                                  0.045426   1.244738 r
+  U32/Y (AND2X1_RVT)                                  0.043023   1.287762 r
+  U125/Y (NBUFFX2_RVT)                                0.036274   1.324035 r
+  execvgprsgpr_select_fu[3] (out)                     0.000095   1.324131 r
+  data arrival time                                              1.324131
+
+  clock clk (rise edge)                               8.000000   8.000000
+  clock network delay (ideal)                         0.000000   8.000000
+  output external delay                               0.000000   8.000000
+  data required time                                             8.000000
+  --------------------------------------------------------------------------
+  data required time                                             8.000000
+  data arrival time                                              -1.324131
+  --------------------------------------------------------------------------
+  slack (MET)                                                    6.675869
+
+
+  Startpoint: high_pr_flop[0]/dff_0/state_reg
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: execvgprsgpr_select_fu[7]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  rfa                8000                  saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                               0.000000   0.000000
+  clock network delay (ideal)                         0.000000   0.000000
+  high_pr_flop[0]/dff_0/state_reg/CLK (DFFARX1_RVT)   0.000000   0.000000 r
+  high_pr_flop[0]/dff_0/state_reg/Q (DFFARX1_RVT)     0.116200   0.116200 f
+  U117/Y (AO22X1_RVT)                                 0.074052   0.190252 f
+  U115/Y (AO21X1_RVT)                                 0.052271   0.242523 f
+  U112/Y (AO21X1_RVT)                                 0.052653   0.295176 f
+  U110/Y (NOR2X0_RVT)                                 0.058922   0.354098 r
+  U102/Y (AND2X1_RVT)                                 0.038737   0.392835 r
+  U93/Y (OA21X1_RVT)                                  0.049646   0.442481 r
+  U88/Y (OA21X1_RVT)                                  0.050266   0.492747 r
+  U84/Y (OA21X1_RVT)                                  0.050281   0.543027 r
+  U81/Y (OA21X1_RVT)                                  0.050281   0.593308 r
+  U77/Y (OA21X1_RVT)                                  0.050281   0.643589 r
+  U74/Y (OA21X1_RVT)                                  0.050281   0.693870 r
+  U71/Y (OA21X1_RVT)                                  0.057359   0.751229 r
+  add_72/U1_0/CO (FADDX1_RVT)                         0.100743   0.851973 r
+  add_72/U1_1/CO (FADDX1_RVT)                         0.084143   0.936115 r
+  add_72/U1_2/CO (FADDX1_RVT)                         0.084146   1.020261 r
+  add_72/U1_3/S (FADDX1_RVT)                          0.117845   1.138106 f
+  U51/Y (NOR2X0_RVT)                                  0.061207   1.199313 r
+  U35/Y (AND2X1_RVT)                                  0.045426   1.244738 r
+  U28/Y (AND2X1_RVT)                                  0.043023   1.287762 r
+  U121/Y (NBUFFX2_RVT)                                0.036272   1.324034 r
+  execvgprsgpr_select_fu[7] (out)                     0.000095   1.324129 r
+  data arrival time                                              1.324129
+
+  clock clk (rise edge)                               8.000000   8.000000
+  clock network delay (ideal)                         0.000000   8.000000
+  output external delay                               0.000000   8.000000
+  data required time                                             8.000000
+  --------------------------------------------------------------------------
+  data required time                                             8.000000
+  data arrival time                                              -1.324129
+  --------------------------------------------------------------------------
+  slack (MET)                                                    6.675871
+
+
+  Startpoint: high_pr_flop[0]/dff_0/state_reg
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: execvgprsgpr_select_fu[4]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  rfa                8000                  saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                               0.000000   0.000000
+  clock network delay (ideal)                         0.000000   0.000000
+  high_pr_flop[0]/dff_0/state_reg/CLK (DFFARX1_RVT)   0.000000   0.000000 r
+  high_pr_flop[0]/dff_0/state_reg/Q (DFFARX1_RVT)     0.116200   0.116200 f
+  U117/Y (AO22X1_RVT)                                 0.074052   0.190252 f
+  U115/Y (AO21X1_RVT)                                 0.052271   0.242523 f
+  U112/Y (AO21X1_RVT)                                 0.052653   0.295176 f
+  U110/Y (NOR2X0_RVT)                                 0.058922   0.354098 r
+  U102/Y (AND2X1_RVT)                                 0.038737   0.392835 r
+  U93/Y (OA21X1_RVT)                                  0.049646   0.442481 r
+  U88/Y (OA21X1_RVT)                                  0.050266   0.492747 r
+  U84/Y (OA21X1_RVT)                                  0.050281   0.543027 r
+  U81/Y (OA21X1_RVT)                                  0.050281   0.593308 r
+  U77/Y (OA21X1_RVT)                                  0.050281   0.643589 r
+  U74/Y (OA21X1_RVT)                                  0.050281   0.693870 r
+  U71/Y (OA21X1_RVT)                                  0.057359   0.751229 r
+  add_72/U1_0/CO (FADDX1_RVT)                         0.100743   0.851973 r
+  add_72/U1_1/CO (FADDX1_RVT)                         0.084143   0.936115 r
+  add_72/U1_2/CO (FADDX1_RVT)                         0.084146   1.020261 r
+  add_72/U1_3/S (FADDX1_RVT)                          0.117845   1.138106 f
+  U51/Y (NOR2X0_RVT)                                  0.061207   1.199313 r
+  U50/Y (AND2X1_RVT)                                  0.045486   1.244799 r
+  U31/Y (AND2X1_RVT)                                  0.042952   1.287751 r
+  U124/Y (NBUFFX2_RVT)                                0.036274   1.324025 r
+  execvgprsgpr_select_fu[4] (out)                     0.000095   1.324120 r
+  data arrival time                                              1.324120
+
+  clock clk (rise edge)                               8.000000   8.000000
+  clock network delay (ideal)                         0.000000   8.000000
+  output external delay                               0.000000   8.000000
+  data required time                                             8.000000
+  --------------------------------------------------------------------------
+  data required time                                             8.000000
+  data arrival time                                              -1.324120
+  --------------------------------------------------------------------------
+  slack (MET)                                                    6.675879
+
+
+  Startpoint: high_pr_flop[0]/dff_0/state_reg
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: execvgprsgpr_select_fu[2]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  rfa                8000                  saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                               0.000000   0.000000
+  clock network delay (ideal)                         0.000000   0.000000
+  high_pr_flop[0]/dff_0/state_reg/CLK (DFFARX1_RVT)   0.000000   0.000000 r
+  high_pr_flop[0]/dff_0/state_reg/Q (DFFARX1_RVT)     0.116200   0.116200 f
+  U117/Y (AO22X1_RVT)                                 0.074052   0.190252 f
+  U115/Y (AO21X1_RVT)                                 0.052271   0.242523 f
+  U112/Y (AO21X1_RVT)                                 0.052653   0.295176 f
+  U110/Y (NOR2X0_RVT)                                 0.058922   0.354098 r
+  U102/Y (AND2X1_RVT)                                 0.038737   0.392835 r
+  U93/Y (OA21X1_RVT)                                  0.049646   0.442481 r
+  U88/Y (OA21X1_RVT)                                  0.050266   0.492747 r
+  U84/Y (OA21X1_RVT)                                  0.050281   0.543027 r
+  U81/Y (OA21X1_RVT)                                  0.050281   0.593308 r
+  U77/Y (OA21X1_RVT)                                  0.050281   0.643589 r
+  U74/Y (OA21X1_RVT)                                  0.050281   0.693870 r
+  U71/Y (OA21X1_RVT)                                  0.057359   0.751229 r
+  add_72/U1_0/CO (FADDX1_RVT)                         0.100743   0.851973 r
+  add_72/U1_1/CO (FADDX1_RVT)                         0.084143   0.936115 r
+  add_72/U1_2/CO (FADDX1_RVT)                         0.084146   1.020261 r
+  add_72/U1_3/S (FADDX1_RVT)                          0.117845   1.138106 f
+  U51/Y (NOR2X0_RVT)                                  0.061207   1.199313 r
+  U50/Y (AND2X1_RVT)                                  0.045486   1.244799 r
+  U33/Y (AND2X1_RVT)                                  0.042952   1.287751 r
+  U126/Y (NBUFFX2_RVT)                                0.036274   1.324025 r
+  execvgprsgpr_select_fu[2] (out)                     0.000095   1.324120 r
+  data arrival time                                              1.324120
+
+  clock clk (rise edge)                               8.000000   8.000000
+  clock network delay (ideal)                         0.000000   8.000000
+  output external delay                               0.000000   8.000000
+  data required time                                             8.000000
+  --------------------------------------------------------------------------
+  data required time                                             8.000000
+  data arrival time                                              -1.324120
+  --------------------------------------------------------------------------
+  slack (MET)                                                    6.675880
+
+
+1

@@ -1,0 +1,300 @@
+ 
+****************************************
+check_design summary:
+Version:     G-2012.06
+Date:        Thu May 16 12:48:48 2013
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Inputs/Outputs                                                    155
+    Unconnected ports (LINT-28)                                   154
+    Constant outputs (LINT-52)                                      1
+
+Cells                                                              63
+    Connected to power or ground (LINT-32)                         54
+    Nets connected to multiple pins on same cell (LINT-33)          9
+--------------------------------------------------------------------------------
+
+Warning: In design 'salu_DW01_ash_0', port 'DATA_TC' is not connected to any nets. (LINT-28)
+Warning: In design 'salu_DW01_ash_0', port 'SH_TC' is not connected to any nets. (LINT-28)
+Warning: In design 'salu_DW01_add_0', port 'A[31]' is not connected to any nets. (LINT-28)
+Warning: In design 'salu_DW01_add_0', port 'B[31]' is not connected to any nets. (LINT-28)
+Warning: In design 'salu_DW01_add_0', port 'CI' is not connected to any nets. (LINT-28)
+Warning: In design 'salu_DW01_add_0', port 'SUM[30]' is not connected to any nets. (LINT-28)
+Warning: In design 'salu_DW01_add_0', port 'SUM[29]' is not connected to any nets. (LINT-28)
+Warning: In design 'salu_DW01_add_0', port 'SUM[28]' is not connected to any nets. (LINT-28)
+Warning: In design 'salu_DW01_add_0', port 'SUM[27]' is not connected to any nets. (LINT-28)
+Warning: In design 'salu_DW01_add_0', port 'SUM[26]' is not connected to any nets. (LINT-28)
+Warning: In design 'salu_DW01_add_0', port 'SUM[25]' is not connected to any nets. (LINT-28)
+Warning: In design 'salu_DW01_add_0', port 'SUM[24]' is not connected to any nets. (LINT-28)
+Warning: In design 'salu_DW01_add_0', port 'SUM[23]' is not connected to any nets. (LINT-28)
+Warning: In design 'salu_DW01_add_0', port 'SUM[22]' is not connected to any nets. (LINT-28)
+Warning: In design 'salu_DW01_add_0', port 'SUM[21]' is not connected to any nets. (LINT-28)
+Warning: In design 'salu_DW01_add_0', port 'SUM[20]' is not connected to any nets. (LINT-28)
+Warning: In design 'salu_DW01_add_0', port 'SUM[19]' is not connected to any nets. (LINT-28)
+Warning: In design 'salu_DW01_add_0', port 'SUM[18]' is not connected to any nets. (LINT-28)
+Warning: In design 'salu_DW01_add_0', port 'SUM[17]' is not connected to any nets. (LINT-28)
+Warning: In design 'salu_DW01_add_0', port 'SUM[16]' is not connected to any nets. (LINT-28)
+Warning: In design 'salu_DW01_add_0', port 'SUM[15]' is not connected to any nets. (LINT-28)
+Warning: In design 'salu_DW01_add_0', port 'SUM[14]' is not connected to any nets. (LINT-28)
+Warning: In design 'salu_DW01_add_0', port 'SUM[13]' is not connected to any nets. (LINT-28)
+Warning: In design 'salu_DW01_add_0', port 'SUM[12]' is not connected to any nets. (LINT-28)
+Warning: In design 'salu_DW01_add_0', port 'SUM[11]' is not connected to any nets. (LINT-28)
+Warning: In design 'salu_DW01_add_0', port 'SUM[10]' is not connected to any nets. (LINT-28)
+Warning: In design 'salu_DW01_add_0', port 'SUM[9]' is not connected to any nets. (LINT-28)
+Warning: In design 'salu_DW01_add_0', port 'SUM[8]' is not connected to any nets. (LINT-28)
+Warning: In design 'salu_DW01_add_0', port 'SUM[7]' is not connected to any nets. (LINT-28)
+Warning: In design 'salu_DW01_add_0', port 'SUM[6]' is not connected to any nets. (LINT-28)
+Warning: In design 'salu_DW01_add_0', port 'SUM[5]' is not connected to any nets. (LINT-28)
+Warning: In design 'salu_DW01_add_0', port 'SUM[4]' is not connected to any nets. (LINT-28)
+Warning: In design 'salu_DW01_add_0', port 'SUM[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'salu_DW01_add_0', port 'SUM[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'salu_DW01_add_0', port 'SUM[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'salu_DW01_add_0', port 'SUM[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'salu_DW01_add_0', port 'CO' is not connected to any nets. (LINT-28)
+Warning: In design 'salu_DW_rash_0', port 'DATA_TC' is not connected to any nets. (LINT-28)
+Warning: In design 'salu_DW_rash_0', port 'SH_TC' is not connected to any nets. (LINT-28)
+Warning: In design 'salu_DW01_cmp6_0', port 'TC' is not connected to any nets. (LINT-28)
+Warning: In design 'salu_DW01_cmp6_0', port 'NE' is not connected to any nets. (LINT-28)
+Warning: In design 'salu_DW01_add_1', port 'A[31]' is not connected to any nets. (LINT-28)
+Warning: In design 'salu_DW01_add_1', port 'B[31]' is not connected to any nets. (LINT-28)
+Warning: In design 'salu_DW01_add_1', port 'CI' is not connected to any nets. (LINT-28)
+Warning: In design 'salu_DW01_add_1', port 'SUM[30]' is not connected to any nets. (LINT-28)
+Warning: In design 'salu_DW01_add_1', port 'SUM[29]' is not connected to any nets. (LINT-28)
+Warning: In design 'salu_DW01_add_1', port 'SUM[28]' is not connected to any nets. (LINT-28)
+Warning: In design 'salu_DW01_add_1', port 'SUM[27]' is not connected to any nets. (LINT-28)
+Warning: In design 'salu_DW01_add_1', port 'SUM[26]' is not connected to any nets. (LINT-28)
+Warning: In design 'salu_DW01_add_1', port 'SUM[25]' is not connected to any nets. (LINT-28)
+Warning: In design 'salu_DW01_add_1', port 'SUM[24]' is not connected to any nets. (LINT-28)
+Warning: In design 'salu_DW01_add_1', port 'SUM[23]' is not connected to any nets. (LINT-28)
+Warning: In design 'salu_DW01_add_1', port 'SUM[22]' is not connected to any nets. (LINT-28)
+Warning: In design 'salu_DW01_add_1', port 'SUM[21]' is not connected to any nets. (LINT-28)
+Warning: In design 'salu_DW01_add_1', port 'SUM[20]' is not connected to any nets. (LINT-28)
+Warning: In design 'salu_DW01_add_1', port 'SUM[19]' is not connected to any nets. (LINT-28)
+Warning: In design 'salu_DW01_add_1', port 'SUM[18]' is not connected to any nets. (LINT-28)
+Warning: In design 'salu_DW01_add_1', port 'SUM[17]' is not connected to any nets. (LINT-28)
+Warning: In design 'salu_DW01_add_1', port 'SUM[16]' is not connected to any nets. (LINT-28)
+Warning: In design 'salu_DW01_add_1', port 'SUM[15]' is not connected to any nets. (LINT-28)
+Warning: In design 'salu_DW01_add_1', port 'SUM[14]' is not connected to any nets. (LINT-28)
+Warning: In design 'salu_DW01_add_1', port 'SUM[13]' is not connected to any nets. (LINT-28)
+Warning: In design 'salu_DW01_add_1', port 'SUM[12]' is not connected to any nets. (LINT-28)
+Warning: In design 'salu_DW01_add_1', port 'SUM[11]' is not connected to any nets. (LINT-28)
+Warning: In design 'salu_DW01_add_1', port 'SUM[10]' is not connected to any nets. (LINT-28)
+Warning: In design 'salu_DW01_add_1', port 'SUM[9]' is not connected to any nets. (LINT-28)
+Warning: In design 'salu_DW01_add_1', port 'SUM[8]' is not connected to any nets. (LINT-28)
+Warning: In design 'salu_DW01_add_1', port 'SUM[7]' is not connected to any nets. (LINT-28)
+Warning: In design 'salu_DW01_add_1', port 'SUM[6]' is not connected to any nets. (LINT-28)
+Warning: In design 'salu_DW01_add_1', port 'SUM[5]' is not connected to any nets. (LINT-28)
+Warning: In design 'salu_DW01_add_1', port 'SUM[4]' is not connected to any nets. (LINT-28)
+Warning: In design 'salu_DW01_add_1', port 'SUM[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'salu_DW01_add_1', port 'SUM[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'salu_DW01_add_1', port 'SUM[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'salu_DW01_add_1', port 'SUM[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'salu_DW01_add_1', port 'CO' is not connected to any nets. (LINT-28)
+Warning: In design 'salu_DW01_sub_0', port 'A[32]' is not connected to any nets. (LINT-28)
+Warning: In design 'salu_DW01_sub_0', port 'B[32]' is not connected to any nets. (LINT-28)
+Warning: In design 'salu_DW01_sub_0', port 'CI' is not connected to any nets. (LINT-28)
+Warning: In design 'salu_DW01_sub_0', port 'CO' is not connected to any nets. (LINT-28)
+Warning: In design 'salu_DW01_add_2', port 'A[32]' is not connected to any nets. (LINT-28)
+Warning: In design 'salu_DW01_add_2', port 'B[32]' is not connected to any nets. (LINT-28)
+Warning: In design 'salu_DW01_add_2', port 'CI' is not connected to any nets. (LINT-28)
+Warning: In design 'salu_DW01_add_2', port 'CO' is not connected to any nets. (LINT-28)
+Warning: In design 'salu_DW02_mult_0', port 'TC' is not connected to any nets. (LINT-28)
+Warning: In design 'salu_DW02_mult_0', port 'PRODUCT[63]' is not connected to any nets. (LINT-28)
+Warning: In design 'salu_DW02_mult_0', port 'PRODUCT[62]' is not connected to any nets. (LINT-28)
+Warning: In design 'salu_DW02_mult_0', port 'PRODUCT[61]' is not connected to any nets. (LINT-28)
+Warning: In design 'salu_DW02_mult_0', port 'PRODUCT[60]' is not connected to any nets. (LINT-28)
+Warning: In design 'salu_DW02_mult_0', port 'PRODUCT[59]' is not connected to any nets. (LINT-28)
+Warning: In design 'salu_DW02_mult_0', port 'PRODUCT[58]' is not connected to any nets. (LINT-28)
+Warning: In design 'salu_DW02_mult_0', port 'PRODUCT[57]' is not connected to any nets. (LINT-28)
+Warning: In design 'salu_DW02_mult_0', port 'PRODUCT[56]' is not connected to any nets. (LINT-28)
+Warning: In design 'salu_DW02_mult_0', port 'PRODUCT[55]' is not connected to any nets. (LINT-28)
+Warning: In design 'salu_DW02_mult_0', port 'PRODUCT[54]' is not connected to any nets. (LINT-28)
+Warning: In design 'salu_DW02_mult_0', port 'PRODUCT[53]' is not connected to any nets. (LINT-28)
+Warning: In design 'salu_DW02_mult_0', port 'PRODUCT[52]' is not connected to any nets. (LINT-28)
+Warning: In design 'salu_DW02_mult_0', port 'PRODUCT[51]' is not connected to any nets. (LINT-28)
+Warning: In design 'salu_DW02_mult_0', port 'PRODUCT[50]' is not connected to any nets. (LINT-28)
+Warning: In design 'salu_DW02_mult_0', port 'PRODUCT[49]' is not connected to any nets. (LINT-28)
+Warning: In design 'salu_DW02_mult_0', port 'PRODUCT[48]' is not connected to any nets. (LINT-28)
+Warning: In design 'salu_DW02_mult_0', port 'PRODUCT[47]' is not connected to any nets. (LINT-28)
+Warning: In design 'salu_DW02_mult_0', port 'PRODUCT[46]' is not connected to any nets. (LINT-28)
+Warning: In design 'salu_DW02_mult_0', port 'PRODUCT[45]' is not connected to any nets. (LINT-28)
+Warning: In design 'salu_DW02_mult_0', port 'PRODUCT[44]' is not connected to any nets. (LINT-28)
+Warning: In design 'salu_DW02_mult_0', port 'PRODUCT[43]' is not connected to any nets. (LINT-28)
+Warning: In design 'salu_DW02_mult_0', port 'PRODUCT[42]' is not connected to any nets. (LINT-28)
+Warning: In design 'salu_DW02_mult_0', port 'PRODUCT[41]' is not connected to any nets. (LINT-28)
+Warning: In design 'salu_DW02_mult_0', port 'PRODUCT[40]' is not connected to any nets. (LINT-28)
+Warning: In design 'salu_DW02_mult_0', port 'PRODUCT[39]' is not connected to any nets. (LINT-28)
+Warning: In design 'salu_DW02_mult_0', port 'PRODUCT[38]' is not connected to any nets. (LINT-28)
+Warning: In design 'salu_DW02_mult_0', port 'PRODUCT[37]' is not connected to any nets. (LINT-28)
+Warning: In design 'salu_DW02_mult_0', port 'PRODUCT[36]' is not connected to any nets. (LINT-28)
+Warning: In design 'salu_DW02_mult_0', port 'PRODUCT[35]' is not connected to any nets. (LINT-28)
+Warning: In design 'salu_DW02_mult_0', port 'PRODUCT[34]' is not connected to any nets. (LINT-28)
+Warning: In design 'salu_DW02_mult_0', port 'PRODUCT[33]' is not connected to any nets. (LINT-28)
+Warning: In design 'salu_DW01_add_4', port 'A[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'salu_DW01_add_4', port 'A[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'salu_DW01_add_4', port 'CI' is not connected to any nets. (LINT-28)
+Warning: In design 'salu_DW01_add_4', port 'CO' is not connected to any nets. (LINT-28)
+Warning: In design 'salu_DW01_add_5', port 'A[31]' is not connected to any nets. (LINT-28)
+Warning: In design 'salu_DW01_add_5', port 'A[30]' is not connected to any nets. (LINT-28)
+Warning: In design 'salu_DW01_add_5', port 'A[29]' is not connected to any nets. (LINT-28)
+Warning: In design 'salu_DW01_add_5', port 'A[28]' is not connected to any nets. (LINT-28)
+Warning: In design 'salu_DW01_add_5', port 'A[27]' is not connected to any nets. (LINT-28)
+Warning: In design 'salu_DW01_add_5', port 'A[26]' is not connected to any nets. (LINT-28)
+Warning: In design 'salu_DW01_add_5', port 'A[25]' is not connected to any nets. (LINT-28)
+Warning: In design 'salu_DW01_add_5', port 'A[24]' is not connected to any nets. (LINT-28)
+Warning: In design 'salu_DW01_add_5', port 'A[23]' is not connected to any nets. (LINT-28)
+Warning: In design 'salu_DW01_add_5', port 'A[22]' is not connected to any nets. (LINT-28)
+Warning: In design 'salu_DW01_add_5', port 'A[21]' is not connected to any nets. (LINT-28)
+Warning: In design 'salu_DW01_add_5', port 'A[20]' is not connected to any nets. (LINT-28)
+Warning: In design 'salu_DW01_add_5', port 'A[19]' is not connected to any nets. (LINT-28)
+Warning: In design 'salu_DW01_add_5', port 'A[18]' is not connected to any nets. (LINT-28)
+Warning: In design 'salu_DW01_add_5', port 'A[17]' is not connected to any nets. (LINT-28)
+Warning: In design 'salu_DW01_add_5', port 'A[16]' is not connected to any nets. (LINT-28)
+Warning: In design 'salu_DW01_add_5', port 'A[15]' is not connected to any nets. (LINT-28)
+Warning: In design 'salu_DW01_add_5', port 'A[14]' is not connected to any nets. (LINT-28)
+Warning: In design 'salu_DW01_add_5', port 'A[13]' is not connected to any nets. (LINT-28)
+Warning: In design 'salu_DW01_add_5', port 'A[12]' is not connected to any nets. (LINT-28)
+Warning: In design 'salu_DW01_add_5', port 'A[11]' is not connected to any nets. (LINT-28)
+Warning: In design 'salu_DW01_add_5', port 'A[10]' is not connected to any nets. (LINT-28)
+Warning: In design 'salu_DW01_add_5', port 'A[9]' is not connected to any nets. (LINT-28)
+Warning: In design 'salu_DW01_add_5', port 'A[8]' is not connected to any nets. (LINT-28)
+Warning: In design 'salu_DW01_add_5', port 'A[7]' is not connected to any nets. (LINT-28)
+Warning: In design 'salu_DW01_add_5', port 'A[6]' is not connected to any nets. (LINT-28)
+Warning: In design 'salu_DW01_add_5', port 'A[5]' is not connected to any nets. (LINT-28)
+Warning: In design 'salu_DW01_add_5', port 'A[4]' is not connected to any nets. (LINT-28)
+Warning: In design 'salu_DW01_add_5', port 'A[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'salu_DW01_add_5', port 'A[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'salu_DW01_add_5', port 'A[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'salu_DW01_add_5', port 'A[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'salu_DW01_add_5', port 'CI' is not connected to any nets. (LINT-28)
+Warning: In design 'salu_DW01_add_5', port 'CO' is not connected to any nets. (LINT-28)
+Warning: In design 'salu', a pin on submodule 'salu_gpu/sll_158' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'DATA_TC' is connected to logic 0. 
+Warning: In design 'salu', a pin on submodule 'salu_gpu/sll_158' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'SH_TC' is connected to logic 0. 
+Warning: In design 'salu', a pin on submodule 'add_1_root_salu_gpu/add_113_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'A[31]' is connected to logic 0. 
+Warning: In design 'salu', a pin on submodule 'add_1_root_salu_gpu/add_113_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'B[31]' is connected to logic 1. 
+Warning: In design 'salu', a pin on submodule 'add_1_root_salu_gpu/add_113_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'CI' is connected to logic 1. 
+Warning: In design 'salu', a pin on submodule 'r241' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'DATA_TC' is connected to logic 0. 
+Warning: In design 'salu', a pin on submodule 'r241' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'SH_TC' is connected to logic 0. 
+Warning: In design 'salu', a pin on submodule 'r239' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'TC' is connected to logic 0. 
+Warning: In design 'salu', a pin on submodule 'r237' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'A[31]' is connected to logic 0. 
+Warning: In design 'salu', a pin on submodule 'r237' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'B[31]' is connected to logic 0. 
+Warning: In design 'salu', a pin on submodule 'r237' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'CI' is connected to logic 0. 
+Warning: In design 'salu', a pin on submodule 'r236' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'A[32]' is connected to logic 0. 
+Warning: In design 'salu', a pin on submodule 'r236' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'B[32]' is connected to logic 0. 
+Warning: In design 'salu', a pin on submodule 'r236' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'CI' is connected to logic 0. 
+Warning: In design 'salu', a pin on submodule 'r235' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'A[32]' is connected to logic 0. 
+Warning: In design 'salu', a pin on submodule 'r235' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'B[32]' is connected to logic 0. 
+Warning: In design 'salu', a pin on submodule 'r235' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'CI' is connected to logic 0. 
+Warning: In design 'salu', a pin on submodule 'add_1_root_r234' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'A[31]' is connected to logic 0. 
+Warning: In design 'salu', a pin on submodule 'add_1_root_r234' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'A[30]' is connected to logic 0. 
+Warning: In design 'salu', a pin on submodule 'add_1_root_r234' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'A[29]' is connected to logic 0. 
+Warning: In design 'salu', a pin on submodule 'add_1_root_r234' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'A[28]' is connected to logic 0. 
+Warning: In design 'salu', a pin on submodule 'add_1_root_r234' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'A[27]' is connected to logic 0. 
+Warning: In design 'salu', a pin on submodule 'add_1_root_r234' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'A[26]' is connected to logic 0. 
+Warning: In design 'salu', a pin on submodule 'add_1_root_r234' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'A[25]' is connected to logic 0. 
+Warning: In design 'salu', a pin on submodule 'add_1_root_r234' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'A[24]' is connected to logic 0. 
+Warning: In design 'salu', a pin on submodule 'add_1_root_r234' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'A[23]' is connected to logic 0. 
+Warning: In design 'salu', a pin on submodule 'add_1_root_r234' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'A[22]' is connected to logic 0. 
+Warning: In design 'salu', a pin on submodule 'add_1_root_r234' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'A[21]' is connected to logic 0. 
+Warning: In design 'salu', a pin on submodule 'add_1_root_r234' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'A[20]' is connected to logic 0. 
+Warning: In design 'salu', a pin on submodule 'add_1_root_r234' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'A[19]' is connected to logic 0. 
+Warning: In design 'salu', a pin on submodule 'add_1_root_r234' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'A[18]' is connected to logic 0. 
+Warning: In design 'salu', a pin on submodule 'add_1_root_r234' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'A[17]' is connected to logic 0. 
+Warning: In design 'salu', a pin on submodule 'add_1_root_r234' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'A[16]' is connected to logic 0. 
+Warning: In design 'salu', a pin on submodule 'add_1_root_r234' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'A[15]' is connected to logic 0. 
+Warning: In design 'salu', a pin on submodule 'add_1_root_r234' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'A[14]' is connected to logic 0. 
+Warning: In design 'salu', a pin on submodule 'add_1_root_r234' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'A[13]' is connected to logic 0. 
+Warning: In design 'salu', a pin on submodule 'add_1_root_r234' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'A[12]' is connected to logic 0. 
+Warning: In design 'salu', a pin on submodule 'add_1_root_r234' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'A[11]' is connected to logic 0. 
+Warning: In design 'salu', a pin on submodule 'add_1_root_r234' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'A[10]' is connected to logic 0. 
+Warning: In design 'salu', a pin on submodule 'add_1_root_r234' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'A[9]' is connected to logic 0. 
+Warning: In design 'salu', a pin on submodule 'add_1_root_r234' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'A[8]' is connected to logic 0. 
+Warning: In design 'salu', a pin on submodule 'add_1_root_r234' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'A[7]' is connected to logic 0. 
+Warning: In design 'salu', a pin on submodule 'add_1_root_r234' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'A[6]' is connected to logic 0. 
+Warning: In design 'salu', a pin on submodule 'add_1_root_r234' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'A[5]' is connected to logic 0. 
+Warning: In design 'salu', a pin on submodule 'add_1_root_r234' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'A[4]' is connected to logic 0. 
+Warning: In design 'salu', a pin on submodule 'add_1_root_r234' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'A[3]' is connected to logic 0. 
+Warning: In design 'salu', a pin on submodule 'add_1_root_r234' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'A[2]' is connected to logic 1. 
+Warning: In design 'salu', a pin on submodule 'add_1_root_r234' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'A[1]' is connected to logic 0. 
+Warning: In design 'salu', a pin on submodule 'add_1_root_r234' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'A[0]' is connected to logic 0. 
+Warning: In design 'salu', a pin on submodule 'add_1_root_r234' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'CI' is connected to logic 0. 
+Warning: In design 'salu', a pin on submodule 'add_0_root_r234' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'A[1]' is connected to logic 0. 
+Warning: In design 'salu', a pin on submodule 'add_0_root_r234' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'A[0]' is connected to logic 0. 
+Warning: In design 'salu', a pin on submodule 'add_0_root_r234' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'CI' is connected to logic 0. 
+Warning: In design 'salu', a pin on submodule 'r242' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'TC' is connected to logic 0. 
+Warning: In design 'salu', the same net is connected to more than one pin on submodule 'salu_gpu/sll_158'. (LINT-33)
+   Net 'n1' is connected to pins 'DATA_TC', 'SH_TC''.
+Warning: In design 'salu', the same net is connected to more than one pin on submodule 'add_1_root_salu_gpu/add_113_2'. (LINT-33)
+   Net 'n1931' is connected to pins 'B[31]', 'CI''.
+Warning: In design 'salu', the same net is connected to more than one pin on submodule 'r241'. (LINT-33)
+   Net 'n3' is connected to pins 'DATA_TC', 'SH_TC''.
+Warning: In design 'salu', the same net is connected to more than one pin on submodule 'r237'. (LINT-33)
+   Net 'n36' is connected to pins 'A[31]', 'B[31]'', 'CI'.
+Warning: In design 'salu', the same net is connected to more than one pin on submodule 'r236'. (LINT-33)
+   Net 'n37' is connected to pins 'A[32]', 'B[32]'', 'CI'.
+Warning: In design 'salu', the same net is connected to more than one pin on submodule 'r235'. (LINT-33)
+   Net 'n38' is connected to pins 'A[32]', 'B[32]'', 'CI'.
+Warning: In design 'salu', the same net is connected to more than one pin on submodule 'add_1_root_r234'. (LINT-33)
+   Net 'n1929' is connected to pins 'A[31]', 'A[30]'', 'A[29]', 'A[28]', 'A[27]', 'A[26]', 'A[25]', 'A[24]', 'A[23]', 'A[22]', 'A[21]', 'A[20]', 'A[19]', 'A[18]', 'A[17]', 'A[16]', 'A[15]', 'A[14]', 'A[13]', 'A[12]', 'A[11]', 'A[10]', 'A[9]', 'A[8]', 'A[7]', 'A[6]', 'A[5]', 'A[4]', 'CI'.
+Warning: In design 'salu', the same net is connected to more than one pin on submodule 'add_1_root_r234'. (LINT-33)
+   Net 'n1927' is connected to pins 'A[3]', 'A[1]'', 'A[0]'.
+Warning: In design 'salu', the same net is connected to more than one pin on submodule 'add_0_root_r234'. (LINT-33)
+   Net 'n1927' is connected to pins 'A[1]', 'A[0]''.
+Warning: In design 'salu', output port 'issue_alu_ready' is connected directly to 'logic 1'. (LINT-52)
+1

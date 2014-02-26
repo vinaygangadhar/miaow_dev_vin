@@ -1,0 +1,9 @@
+Netlist version NET06
+
+8ns, -map_effort high -area_effort high -power_effort high
+
+commit 123eb412d37fb9fbbe859f4b0f8b18796e56818e
+Author: Mario Drumond Lages de Oliveira <mdrumond@mumble-15.cs.wisc.edu>
+Date:   Wed May 15 01:31:07 2013 -0500
+
+    Some igpu changes and issue repipeline, issue should meet 8.5ns

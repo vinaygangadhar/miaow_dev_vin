@@ -1,0 +1,5 @@
+simf d
+Contains a 16 wide floating point vector alu for vector operations
+issue_source_reg1 12, issue_source_reg2 12, issue_source_reg3 12, issue_dest_reg1 12, issue_dest_reg2 12, issue_imm_value0 16, issue_imm_value1 32, issue_opcode 32, issue_wfid 6, issue_alu_select 1, vgpr_source1_data 2048, vgpr_source2_data 2048, vgpr_source3_data 2048, sgpr_rd_data 32, exec_rd_exec_value 64, exec_rd_vcc_value 64, exec_rd_m0_value 32, exec_rd_scc_value 1, issue_instr_pc 32, rfa_queue_entry_serviced 1
+vgpr_source1_rd_en 1, vgpr_source2_rd_en 1, vgpr_source3_rd_en 1, vgpr_source1_addr 10, vgpr_source2_addr 10, vgpr_source3_addr 10, vgpr_dest_addr 10, vgpr_dest_data 2048, vgpr_wr_en 1, vgpr_wr_mask 64, exec_rd_wfid 6, exec_rd_en 1, exec_wr_vcc_wfid 6, exec_wr_vcc_en 1, exec_wr_vcc_value 64, sgpr_rd_en 1, sgpr_rd_addr 9, sgpr_wr_addr 9, sgpr_wr_en 1, sgpr_wr_data 64, sgpr_wr_mask 64, issue_alu_ready 1, vgpr_instr_done_wfid 6, vgpr_instr_done 1, rfa_queue_entry_valid 1, tracemon_retire_pc 32
+

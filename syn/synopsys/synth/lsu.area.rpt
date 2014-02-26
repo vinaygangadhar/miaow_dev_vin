@@ -1,0 +1,680 @@
+ 
+****************************************
+Report : area
+Design : lsu
+Version: G-2012.06
+Date   : Thu May 16 12:46:29 2013
+****************************************
+
+Library(s) Used:
+
+    saed32rvt_tt1p05v25c (File: /p/vertical/afs-huge0/synopsys/32nmlib/SAED32_EDK/lib/stdcell_rvt/db_nldm/saed32rvt_tt1p05v25c.db)
+
+Number of ports:                        37720
+Number of nets:                         84883
+Number of cells:                        53238
+Number of combinational cells:          19296
+Number of sequential cells:             33686
+Number of macros:                           0
+Number of buf/inv:                       5996
+Number of references:                     286
+
+Combinational area:       302906.100803
+Noncombinational area:    239711.166402
+Net Interconnect area:    263228.974565
+
+Total cell area:          542617.267205
+Total area:               805846.241770
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area              Local cell area
+                                  --------------------  -------------------------------- 
+Hierarchical cell                 Absolute     Percent  Combi-       Noncombi-    Black
+                                  Total        Total    national     national     boxes   Design
+--------------------------------  -----------  -------  -----------  -----------  ------  ----------------
+lsu                               542617.2672    100.0   44145.8303  239711.1664  0.0000  lsu
+addr_calc/add_40                     257.7020      0.0     257.7020       0.0000  0.0000  lsu_DW01_add_128
+addr_calc/ds_address_calc[0]/add_11
+                                     177.9008      0.0     177.9008       0.0000  0.0000  lsu_DW01_add_63
+addr_calc/ds_address_calc[10]/add_11
+                                     177.9008      0.0     177.9008       0.0000  0.0000  lsu_DW01_add_53
+addr_calc/ds_address_calc[11]/add_11
+                                     177.9008      0.0     177.9008       0.0000  0.0000  lsu_DW01_add_52
+addr_calc/ds_address_calc[12]/add_11
+                                     177.9008      0.0     177.9008       0.0000  0.0000  lsu_DW01_add_51
+addr_calc/ds_address_calc[13]/add_11
+                                     177.9008      0.0     177.9008       0.0000  0.0000  lsu_DW01_add_50
+addr_calc/ds_address_calc[14]/add_11
+                                     177.9008      0.0     177.9008       0.0000  0.0000  lsu_DW01_add_49
+addr_calc/ds_address_calc[15]/add_11
+                                     177.9008      0.0     177.9008       0.0000  0.0000  lsu_DW01_add_48
+addr_calc/ds_address_calc[16]/add_11
+                                     177.9008      0.0     177.9008       0.0000  0.0000  lsu_DW01_add_47
+addr_calc/ds_address_calc[17]/add_11
+                                     177.9008      0.0     177.9008       0.0000  0.0000  lsu_DW01_add_46
+addr_calc/ds_address_calc[18]/add_11
+                                     177.9008      0.0     177.9008       0.0000  0.0000  lsu_DW01_add_45
+addr_calc/ds_address_calc[19]/add_11
+                                     177.9008      0.0     177.9008       0.0000  0.0000  lsu_DW01_add_44
+addr_calc/ds_address_calc[1]/add_11
+                                     177.9008      0.0     177.9008       0.0000  0.0000  lsu_DW01_add_62
+addr_calc/ds_address_calc[20]/add_11
+                                     177.9008      0.0     177.9008       0.0000  0.0000  lsu_DW01_add_43
+addr_calc/ds_address_calc[21]/add_11
+                                     177.9008      0.0     177.9008       0.0000  0.0000  lsu_DW01_add_42
+addr_calc/ds_address_calc[22]/add_11
+                                     177.9008      0.0     177.9008       0.0000  0.0000  lsu_DW01_add_41
+addr_calc/ds_address_calc[23]/add_11
+                                     177.9008      0.0     177.9008       0.0000  0.0000  lsu_DW01_add_40
+addr_calc/ds_address_calc[24]/add_11
+                                     177.9008      0.0     177.9008       0.0000  0.0000  lsu_DW01_add_39
+addr_calc/ds_address_calc[25]/add_11
+                                     177.9008      0.0     177.9008       0.0000  0.0000  lsu_DW01_add_38
+addr_calc/ds_address_calc[26]/add_11
+                                     177.9008      0.0     177.9008       0.0000  0.0000  lsu_DW01_add_37
+addr_calc/ds_address_calc[27]/add_11
+                                     177.9008      0.0     177.9008       0.0000  0.0000  lsu_DW01_add_36
+addr_calc/ds_address_calc[28]/add_11
+                                     177.9008      0.0     177.9008       0.0000  0.0000  lsu_DW01_add_35
+addr_calc/ds_address_calc[29]/add_11
+                                     177.9008      0.0     177.9008       0.0000  0.0000  lsu_DW01_add_34
+addr_calc/ds_address_calc[2]/add_11
+                                     177.9008      0.0     177.9008       0.0000  0.0000  lsu_DW01_add_61
+addr_calc/ds_address_calc[30]/add_11
+                                     177.9008      0.0     177.9008       0.0000  0.0000  lsu_DW01_add_33
+addr_calc/ds_address_calc[31]/add_11
+                                     177.9008      0.0     177.9008       0.0000  0.0000  lsu_DW01_add_32
+addr_calc/ds_address_calc[32]/add_11
+                                     177.9008      0.0     177.9008       0.0000  0.0000  lsu_DW01_add_31
+addr_calc/ds_address_calc[33]/add_11
+                                     177.9008      0.0     177.9008       0.0000  0.0000  lsu_DW01_add_30
+addr_calc/ds_address_calc[34]/add_11
+                                     177.9008      0.0     177.9008       0.0000  0.0000  lsu_DW01_add_29
+addr_calc/ds_address_calc[35]/add_11
+                                     177.9008      0.0     177.9008       0.0000  0.0000  lsu_DW01_add_28
+addr_calc/ds_address_calc[36]/add_11
+                                     177.9008      0.0     177.9008       0.0000  0.0000  lsu_DW01_add_27
+addr_calc/ds_address_calc[37]/add_11
+                                     177.9008      0.0     177.9008       0.0000  0.0000  lsu_DW01_add_26
+addr_calc/ds_address_calc[38]/add_11
+                                     177.9008      0.0     177.9008       0.0000  0.0000  lsu_DW01_add_25
+addr_calc/ds_address_calc[39]/add_11
+                                     177.9008      0.0     177.9008       0.0000  0.0000  lsu_DW01_add_24
+addr_calc/ds_address_calc[3]/add_11
+                                     177.9008      0.0     177.9008       0.0000  0.0000  lsu_DW01_add_60
+addr_calc/ds_address_calc[40]/add_11
+                                     177.9008      0.0     177.9008       0.0000  0.0000  lsu_DW01_add_23
+addr_calc/ds_address_calc[41]/add_11
+                                     177.9008      0.0     177.9008       0.0000  0.0000  lsu_DW01_add_22
+addr_calc/ds_address_calc[42]/add_11
+                                     177.9008      0.0     177.9008       0.0000  0.0000  lsu_DW01_add_21
+addr_calc/ds_address_calc[43]/add_11
+                                     177.9008      0.0     177.9008       0.0000  0.0000  lsu_DW01_add_20
+addr_calc/ds_address_calc[44]/add_11
+                                     177.9008      0.0     177.9008       0.0000  0.0000  lsu_DW01_add_19
+addr_calc/ds_address_calc[45]/add_11
+                                     177.9008      0.0     177.9008       0.0000  0.0000  lsu_DW01_add_18
+addr_calc/ds_address_calc[46]/add_11
+                                     177.9008      0.0     177.9008       0.0000  0.0000  lsu_DW01_add_17
+addr_calc/ds_address_calc[47]/add_11
+                                     177.9008      0.0     177.9008       0.0000  0.0000  lsu_DW01_add_16
+addr_calc/ds_address_calc[48]/add_11
+                                     177.9008      0.0     177.9008       0.0000  0.0000  lsu_DW01_add_15
+addr_calc/ds_address_calc[49]/add_11
+                                     177.9008      0.0     177.9008       0.0000  0.0000  lsu_DW01_add_14
+addr_calc/ds_address_calc[4]/add_11
+                                     177.9008      0.0     177.9008       0.0000  0.0000  lsu_DW01_add_59
+addr_calc/ds_address_calc[50]/add_11
+                                     177.9008      0.0     177.9008       0.0000  0.0000  lsu_DW01_add_13
+addr_calc/ds_address_calc[51]/add_11
+                                     177.9008      0.0     177.9008       0.0000  0.0000  lsu_DW01_add_12
+addr_calc/ds_address_calc[52]/add_11
+                                     177.9008      0.0     177.9008       0.0000  0.0000  lsu_DW01_add_11
+addr_calc/ds_address_calc[53]/add_11
+                                     177.9008      0.0     177.9008       0.0000  0.0000  lsu_DW01_add_10
+addr_calc/ds_address_calc[54]/add_11
+                                     177.9008      0.0     177.9008       0.0000  0.0000  lsu_DW01_add_9
+addr_calc/ds_address_calc[55]/add_11
+                                     177.9008      0.0     177.9008       0.0000  0.0000  lsu_DW01_add_8
+addr_calc/ds_address_calc[56]/add_11
+                                     177.9008      0.0     177.9008       0.0000  0.0000  lsu_DW01_add_7
+addr_calc/ds_address_calc[57]/add_11
+                                     177.9008      0.0     177.9008       0.0000  0.0000  lsu_DW01_add_6
+addr_calc/ds_address_calc[58]/add_11
+                                     177.9008      0.0     177.9008       0.0000  0.0000  lsu_DW01_add_5
+addr_calc/ds_address_calc[59]/add_11
+                                     177.9008      0.0     177.9008       0.0000  0.0000  lsu_DW01_add_4
+addr_calc/ds_address_calc[5]/add_11
+                                     177.9008      0.0     177.9008       0.0000  0.0000  lsu_DW01_add_58
+addr_calc/ds_address_calc[60]/add_11
+                                     177.9008      0.0     177.9008       0.0000  0.0000  lsu_DW01_add_3
+addr_calc/ds_address_calc[61]/add_11
+                                     177.9008      0.0     177.9008       0.0000  0.0000  lsu_DW01_add_2
+addr_calc/ds_address_calc[62]/add_11
+                                     177.9008      0.0     177.9008       0.0000  0.0000  lsu_DW01_add_1
+addr_calc/ds_address_calc[63]/add_11
+                                     177.9008      0.0     177.9008       0.0000  0.0000  lsu_DW01_add_0
+addr_calc/ds_address_calc[6]/add_11
+                                     177.9008      0.0     177.9008       0.0000  0.0000  lsu_DW01_add_57
+addr_calc/ds_address_calc[7]/add_11
+                                     177.9008      0.0     177.9008       0.0000  0.0000  lsu_DW01_add_56
+addr_calc/ds_address_calc[8]/add_11
+                                     177.9008      0.0     177.9008       0.0000  0.0000  lsu_DW01_add_55
+addr_calc/ds_address_calc[9]/add_11
+                                     177.9008      0.0     177.9008       0.0000  0.0000  lsu_DW01_add_54
+addr_calc/mtbuf_address_calc[0]/add_25_2
+                                     156.0444      0.0     156.0444       0.0000  0.0000  lsu_DW01_add_127
+addr_calc/mtbuf_address_calc[0]/mult_25
+                                    3544.8005      0.7    3308.4466       0.0000  0.0000  lsu_DW02_mult_63
+addr_calc/mtbuf_address_calc[0]/mult_25/FS_1
+                                     236.3539      0.0     236.3539       0.0000  0.0000  lsu_DW01_add_254
+addr_calc/mtbuf_address_calc[10]/add_25
+                                     191.8787      0.0     191.8787       0.0000  0.0000  lsu_DW01_add_236
+addr_calc/mtbuf_address_calc[10]/add_25_2
+                                     156.0444      0.0     156.0444       0.0000  0.0000  lsu_DW01_add_117
+addr_calc/mtbuf_address_calc[10]/mult_25
+                                    3519.3861      0.6    3283.0322       0.0000  0.0000  lsu_DW02_mult_53
+addr_calc/mtbuf_address_calc[10]/mult_25/FS_1
+                                     236.3539      0.0     236.3539       0.0000  0.0000  lsu_DW01_add_235
+addr_calc/mtbuf_address_calc[11]/add_25
+                                     196.1992      0.0     196.1992       0.0000  0.0000  lsu_DW01_add_234
+addr_calc/mtbuf_address_calc[11]/add_25_2
+                                     156.0444      0.0     156.0444       0.0000  0.0000  lsu_DW01_add_116
+addr_calc/mtbuf_address_calc[11]/mult_25
+                                    3516.8447      0.6    3280.4907       0.0000  0.0000  lsu_DW02_mult_52
+addr_calc/mtbuf_address_calc[11]/mult_25/FS_1
+                                     236.3539      0.0     236.3539       0.0000  0.0000  lsu_DW01_add_233
+addr_calc/mtbuf_address_calc[12]/add_25
+                                     187.5583      0.0     187.5583       0.0000  0.0000  lsu_DW01_add_232
+addr_calc/mtbuf_address_calc[12]/add_25_2
+                                     156.0444      0.0     156.0444       0.0000  0.0000  lsu_DW01_add_115
+addr_calc/mtbuf_address_calc[12]/mult_25
+                                    3515.5739      0.6    3279.2200       0.0000  0.0000  lsu_DW02_mult_51
+addr_calc/mtbuf_address_calc[12]/mult_25/FS_1
+                                     236.3539      0.0     236.3539       0.0000  0.0000  lsu_DW01_add_231
+addr_calc/mtbuf_address_calc[13]/add_25
+                                     196.1992      0.0     196.1992       0.0000  0.0000  lsu_DW01_add_230
+addr_calc/mtbuf_address_calc[13]/add_25_2
+                                     156.0444      0.0     156.0444       0.0000  0.0000  lsu_DW01_add_114
+addr_calc/mtbuf_address_calc[13]/mult_25
+                                    3519.3861      0.6    3283.0322       0.0000  0.0000  lsu_DW02_mult_50
+addr_calc/mtbuf_address_calc[13]/mult_25/FS_1
+                                     236.3539      0.0     236.3539       0.0000  0.0000  lsu_DW01_add_229
+addr_calc/mtbuf_address_calc[14]/add_25
+                                     191.8787      0.0     191.8787       0.0000  0.0000  lsu_DW01_add_228
+addr_calc/mtbuf_address_calc[14]/add_25_2
+                                     156.0444      0.0     156.0444       0.0000  0.0000  lsu_DW01_add_113
+addr_calc/mtbuf_address_calc[14]/mult_25
+                                    3515.5739      0.6    3279.2200       0.0000  0.0000  lsu_DW02_mult_49
+addr_calc/mtbuf_address_calc[14]/mult_25/FS_1
+                                     236.3539      0.0     236.3539       0.0000  0.0000  lsu_DW01_add_227
+addr_calc/mtbuf_address_calc[15]/add_25
+                                     196.1992      0.0     196.1992       0.0000  0.0000  lsu_DW01_add_226
+addr_calc/mtbuf_address_calc[15]/add_25_2
+                                     156.0444      0.0     156.0444       0.0000  0.0000  lsu_DW01_add_112
+addr_calc/mtbuf_address_calc[15]/mult_25
+                                    3516.8447      0.6    3280.4907       0.0000  0.0000  lsu_DW02_mult_48
+addr_calc/mtbuf_address_calc[15]/mult_25/FS_1
+                                     236.3539      0.0     236.3539       0.0000  0.0000  lsu_DW01_add_225
+addr_calc/mtbuf_address_calc[16]/add_25
+                                     178.9174      0.0     178.9174       0.0000  0.0000  lsu_DW01_add_224
+addr_calc/mtbuf_address_calc[16]/add_25_2
+                                     156.0444      0.0     156.0444       0.0000  0.0000  lsu_DW01_add_111
+addr_calc/mtbuf_address_calc[16]/mult_25
+                                    3516.8447      0.6    3280.4907       0.0000  0.0000  lsu_DW02_mult_47
+addr_calc/mtbuf_address_calc[16]/mult_25/FS_1
+                                     236.3539      0.0     236.3539       0.0000  0.0000  lsu_DW01_add_223
+addr_calc/mtbuf_address_calc[17]/add_25
+                                     196.1992      0.0     196.1992       0.0000  0.0000  lsu_DW01_add_222
+addr_calc/mtbuf_address_calc[17]/add_25_2
+                                     156.0444      0.0     156.0444       0.0000  0.0000  lsu_DW01_add_110
+addr_calc/mtbuf_address_calc[17]/mult_25
+                                    3519.3861      0.6    3283.0322       0.0000  0.0000  lsu_DW02_mult_46
+addr_calc/mtbuf_address_calc[17]/mult_25/FS_1
+                                     236.3539      0.0     236.3539       0.0000  0.0000  lsu_DW01_add_221
+addr_calc/mtbuf_address_calc[18]/add_25
+                                     191.8787      0.0     191.8787       0.0000  0.0000  lsu_DW01_add_220
+addr_calc/mtbuf_address_calc[18]/add_25_2
+                                     156.0444      0.0     156.0444       0.0000  0.0000  lsu_DW01_add_109
+addr_calc/mtbuf_address_calc[18]/mult_25
+                                    3519.3861      0.6    3283.0322       0.0000  0.0000  lsu_DW02_mult_45
+addr_calc/mtbuf_address_calc[18]/mult_25/FS_1
+                                     236.3539      0.0     236.3539       0.0000  0.0000  lsu_DW01_add_219
+addr_calc/mtbuf_address_calc[19]/add_25
+                                     196.1992      0.0     196.1992       0.0000  0.0000  lsu_DW01_add_218
+addr_calc/mtbuf_address_calc[19]/add_25_2
+                                     156.0444      0.0     156.0444       0.0000  0.0000  lsu_DW01_add_108
+addr_calc/mtbuf_address_calc[19]/mult_25
+                                    3516.8447      0.6    3280.4907       0.0000  0.0000  lsu_DW02_mult_44
+addr_calc/mtbuf_address_calc[19]/mult_25/FS_1
+                                     236.3539      0.0     236.3539       0.0000  0.0000  lsu_DW01_add_217
+addr_calc/mtbuf_address_calc[1]/add_25
+                                     104.7073      0.0     104.7073       0.0000  0.0000  lsu_DW01_inc_0
+addr_calc/mtbuf_address_calc[1]/add_25_2
+                                     156.0444      0.0     156.0444       0.0000  0.0000  lsu_DW01_add_126
+addr_calc/mtbuf_address_calc[1]/mult_25
+                                    3515.5739      0.6    3279.2200       0.0000  0.0000  lsu_DW02_mult_62
+addr_calc/mtbuf_address_calc[1]/mult_25/FS_1
+                                     236.3539      0.0     236.3539       0.0000  0.0000  lsu_DW01_add_253
+addr_calc/mtbuf_address_calc[20]/add_25
+                                     187.5583      0.0     187.5583       0.0000  0.0000  lsu_DW01_add_216
+addr_calc/mtbuf_address_calc[20]/add_25_2
+                                     156.0444      0.0     156.0444       0.0000  0.0000  lsu_DW01_add_107
+addr_calc/mtbuf_address_calc[20]/mult_25
+                                    3516.8447      0.6    3280.4907       0.0000  0.0000  lsu_DW02_mult_43
+addr_calc/mtbuf_address_calc[20]/mult_25/FS_1
+                                     236.3539      0.0     236.3539       0.0000  0.0000  lsu_DW01_add_215
+addr_calc/mtbuf_address_calc[21]/add_25
+                                     196.1992      0.0     196.1992       0.0000  0.0000  lsu_DW01_add_214
+addr_calc/mtbuf_address_calc[21]/add_25_2
+                                     156.0444      0.0     156.0444       0.0000  0.0000  lsu_DW01_add_106
+addr_calc/mtbuf_address_calc[21]/mult_25
+                                    3519.3861      0.6    3283.0322       0.0000  0.0000  lsu_DW02_mult_42
+addr_calc/mtbuf_address_calc[21]/mult_25/FS_1
+                                     236.3539      0.0     236.3539       0.0000  0.0000  lsu_DW01_add_213
+addr_calc/mtbuf_address_calc[22]/add_25
+                                     191.8787      0.0     191.8787       0.0000  0.0000  lsu_DW01_add_212
+addr_calc/mtbuf_address_calc[22]/add_25_2
+                                     156.0444      0.0     156.0444       0.0000  0.0000  lsu_DW01_add_105
+addr_calc/mtbuf_address_calc[22]/mult_25
+                                    3516.8447      0.6    3280.4907       0.0000  0.0000  lsu_DW02_mult_41
+addr_calc/mtbuf_address_calc[22]/mult_25/FS_1
+                                     236.3539      0.0     236.3539       0.0000  0.0000  lsu_DW01_add_211
+addr_calc/mtbuf_address_calc[23]/add_25
+                                     196.1992      0.0     196.1992       0.0000  0.0000  lsu_DW01_add_210
+addr_calc/mtbuf_address_calc[23]/add_25_2
+                                     156.0444      0.0     156.0444       0.0000  0.0000  lsu_DW01_add_104
+addr_calc/mtbuf_address_calc[23]/mult_25
+                                    3518.1154      0.6    3281.7615       0.0000  0.0000  lsu_DW02_mult_40
+addr_calc/mtbuf_address_calc[23]/mult_25/FS_1
+                                     236.3539      0.0     236.3539       0.0000  0.0000  lsu_DW01_add_209
+addr_calc/mtbuf_address_calc[24]/add_25
+                                     183.2378      0.0     183.2378       0.0000  0.0000  lsu_DW01_add_208
+addr_calc/mtbuf_address_calc[24]/add_25_2
+                                     156.0444      0.0     156.0444       0.0000  0.0000  lsu_DW01_add_103
+addr_calc/mtbuf_address_calc[24]/mult_25
+                                    3514.3032      0.6    3277.9493       0.0000  0.0000  lsu_DW02_mult_39
+addr_calc/mtbuf_address_calc[24]/mult_25/FS_1
+                                     236.3539      0.0     236.3539       0.0000  0.0000  lsu_DW01_add_207
+addr_calc/mtbuf_address_calc[25]/add_25
+                                     196.1992      0.0     196.1992       0.0000  0.0000  lsu_DW01_add_206
+addr_calc/mtbuf_address_calc[25]/add_25_2
+                                     156.0444      0.0     156.0444       0.0000  0.0000  lsu_DW01_add_102
+addr_calc/mtbuf_address_calc[25]/mult_25
+                                    3518.1154      0.6    3281.7615       0.0000  0.0000  lsu_DW02_mult_38
+addr_calc/mtbuf_address_calc[25]/mult_25/FS_1
+                                     236.3539      0.0     236.3539       0.0000  0.0000  lsu_DW01_add_205
+addr_calc/mtbuf_address_calc[26]/add_25
+                                     191.8787      0.0     191.8787       0.0000  0.0000  lsu_DW01_add_204
+addr_calc/mtbuf_address_calc[26]/add_25_2
+                                     156.0444      0.0     156.0444       0.0000  0.0000  lsu_DW01_add_101
+addr_calc/mtbuf_address_calc[26]/mult_25
+                                    3516.8447      0.6    3280.4907       0.0000  0.0000  lsu_DW02_mult_37
+addr_calc/mtbuf_address_calc[26]/mult_25/FS_1
+                                     236.3539      0.0     236.3539       0.0000  0.0000  lsu_DW01_add_203
+addr_calc/mtbuf_address_calc[27]/add_25
+                                     196.1992      0.0     196.1992       0.0000  0.0000  lsu_DW01_add_202
+addr_calc/mtbuf_address_calc[27]/add_25_2
+                                     156.0444      0.0     156.0444       0.0000  0.0000  lsu_DW01_add_100
+addr_calc/mtbuf_address_calc[27]/mult_25
+                                    3515.5739      0.6    3279.2200       0.0000  0.0000  lsu_DW02_mult_36
+addr_calc/mtbuf_address_calc[27]/mult_25/FS_1
+                                     236.3539      0.0     236.3539       0.0000  0.0000  lsu_DW01_add_201
+addr_calc/mtbuf_address_calc[28]/add_25
+                                     187.5583      0.0     187.5583       0.0000  0.0000  lsu_DW01_add_200
+addr_calc/mtbuf_address_calc[28]/add_25_2
+                                     156.0444      0.0     156.0444       0.0000  0.0000  lsu_DW01_add_99
+addr_calc/mtbuf_address_calc[28]/mult_25
+                                    3511.7618      0.6    3275.4079       0.0000  0.0000  lsu_DW02_mult_35
+addr_calc/mtbuf_address_calc[28]/mult_25/FS_1
+                                     236.3539      0.0     236.3539       0.0000  0.0000  lsu_DW01_add_199
+addr_calc/mtbuf_address_calc[29]/add_25
+                                     196.1992      0.0     196.1992       0.0000  0.0000  lsu_DW01_add_198
+addr_calc/mtbuf_address_calc[29]/add_25_2
+                                     156.0444      0.0     156.0444       0.0000  0.0000  lsu_DW01_add_98
+addr_calc/mtbuf_address_calc[29]/mult_25
+                                    3518.1154      0.6    3281.7615       0.0000  0.0000  lsu_DW02_mult_34
+addr_calc/mtbuf_address_calc[29]/mult_25/FS_1
+                                     236.3539      0.0     236.3539       0.0000  0.0000  lsu_DW01_add_197
+addr_calc/mtbuf_address_calc[2]/add_25
+                                     191.8787      0.0     191.8787       0.0000  0.0000  lsu_DW01_add_252
+addr_calc/mtbuf_address_calc[2]/add_25_2
+                                     156.0444      0.0     156.0444       0.0000  0.0000  lsu_DW01_add_125
+addr_calc/mtbuf_address_calc[2]/mult_25
+                                    3521.9275      0.6    3285.5736       0.0000  0.0000  lsu_DW02_mult_61
+addr_calc/mtbuf_address_calc[2]/mult_25/FS_1
+                                     236.3539      0.0     236.3539       0.0000  0.0000  lsu_DW01_add_251
+addr_calc/mtbuf_address_calc[30]/add_25
+                                     191.8787      0.0     191.8787       0.0000  0.0000  lsu_DW01_add_196
+addr_calc/mtbuf_address_calc[30]/add_25_2
+                                     156.0444      0.0     156.0444       0.0000  0.0000  lsu_DW01_add_97
+addr_calc/mtbuf_address_calc[30]/mult_25
+                                    3514.3032      0.6    3277.9493       0.0000  0.0000  lsu_DW02_mult_33
+addr_calc/mtbuf_address_calc[30]/mult_25/FS_1
+                                     236.3539      0.0     236.3539       0.0000  0.0000  lsu_DW01_add_195
+addr_calc/mtbuf_address_calc[31]/add_25
+                                     196.1992      0.0     196.1992       0.0000  0.0000  lsu_DW01_add_194
+addr_calc/mtbuf_address_calc[31]/add_25_2
+                                     156.0444      0.0     156.0444       0.0000  0.0000  lsu_DW01_add_96
+addr_calc/mtbuf_address_calc[31]/mult_25
+                                    3516.8447      0.6    3280.4907       0.0000  0.0000  lsu_DW02_mult_32
+addr_calc/mtbuf_address_calc[31]/mult_25/FS_1
+                                     236.3539      0.0     236.3539       0.0000  0.0000  lsu_DW01_add_193
+addr_calc/mtbuf_address_calc[32]/add_25
+                                     174.5969      0.0     174.5969       0.0000  0.0000  lsu_DW01_add_192
+addr_calc/mtbuf_address_calc[32]/add_25_2
+                                     156.0444      0.0     156.0444       0.0000  0.0000  lsu_DW01_add_95
+addr_calc/mtbuf_address_calc[32]/mult_25
+                                    3516.8447      0.6    3280.4907       0.0000  0.0000  lsu_DW02_mult_31
+addr_calc/mtbuf_address_calc[32]/mult_25/FS_1
+                                     236.3539      0.0     236.3539       0.0000  0.0000  lsu_DW01_add_191
+addr_calc/mtbuf_address_calc[33]/add_25
+                                     196.1992      0.0     196.1992       0.0000  0.0000  lsu_DW01_add_190
+addr_calc/mtbuf_address_calc[33]/add_25_2
+                                     156.0444      0.0     156.0444       0.0000  0.0000  lsu_DW01_add_94
+addr_calc/mtbuf_address_calc[33]/mult_25
+                                    3520.6568      0.6    3284.3029       0.0000  0.0000  lsu_DW02_mult_30
+addr_calc/mtbuf_address_calc[33]/mult_25/FS_1
+                                     236.3539      0.0     236.3539       0.0000  0.0000  lsu_DW01_add_189
+addr_calc/mtbuf_address_calc[34]/add_25
+                                     191.8787      0.0     191.8787       0.0000  0.0000  lsu_DW01_add_188
+addr_calc/mtbuf_address_calc[34]/add_25_2
+                                     156.0444      0.0     156.0444       0.0000  0.0000  lsu_DW01_add_93
+addr_calc/mtbuf_address_calc[34]/mult_25
+                                    3520.6568      0.6    3284.3029       0.0000  0.0000  lsu_DW02_mult_29
+addr_calc/mtbuf_address_calc[34]/mult_25/FS_1
+                                     236.3539      0.0     236.3539       0.0000  0.0000  lsu_DW01_add_187
+addr_calc/mtbuf_address_calc[35]/add_25
+                                     196.1992      0.0     196.1992       0.0000  0.0000  lsu_DW01_add_186
+addr_calc/mtbuf_address_calc[35]/add_25_2
+                                     156.0444      0.0     156.0444       0.0000  0.0000  lsu_DW01_add_92
+addr_calc/mtbuf_address_calc[35]/mult_25
+                                    3516.8447      0.6    3280.4907       0.0000  0.0000  lsu_DW02_mult_28
+addr_calc/mtbuf_address_calc[35]/mult_25/FS_1
+                                     236.3539      0.0     236.3539       0.0000  0.0000  lsu_DW01_add_185
+addr_calc/mtbuf_address_calc[36]/add_25
+                                     187.5583      0.0     187.5583       0.0000  0.0000  lsu_DW01_add_184
+addr_calc/mtbuf_address_calc[36]/add_25_2
+                                     156.0444      0.0     156.0444       0.0000  0.0000  lsu_DW01_add_91
+addr_calc/mtbuf_address_calc[36]/mult_25
+                                    3516.8447      0.6    3280.4907       0.0000  0.0000  lsu_DW02_mult_27
+addr_calc/mtbuf_address_calc[36]/mult_25/FS_1
+                                     236.3539      0.0     236.3539       0.0000  0.0000  lsu_DW01_add_183
+addr_calc/mtbuf_address_calc[37]/add_25
+                                     196.1992      0.0     196.1992       0.0000  0.0000  lsu_DW01_add_182
+addr_calc/mtbuf_address_calc[37]/add_25_2
+                                     156.0444      0.0     156.0444       0.0000  0.0000  lsu_DW01_add_90
+addr_calc/mtbuf_address_calc[37]/mult_25
+                                    3519.3861      0.6    3283.0322       0.0000  0.0000  lsu_DW02_mult_26
+addr_calc/mtbuf_address_calc[37]/mult_25/FS_1
+                                     236.3539      0.0     236.3539       0.0000  0.0000  lsu_DW01_add_181
+addr_calc/mtbuf_address_calc[38]/add_25
+                                     191.8787      0.0     191.8787       0.0000  0.0000  lsu_DW01_add_180
+addr_calc/mtbuf_address_calc[38]/add_25_2
+                                     156.0444      0.0     156.0444       0.0000  0.0000  lsu_DW01_add_89
+addr_calc/mtbuf_address_calc[38]/mult_25
+                                    3516.8447      0.6    3280.4907       0.0000  0.0000  lsu_DW02_mult_25
+addr_calc/mtbuf_address_calc[38]/mult_25/FS_1
+                                     236.3539      0.0     236.3539       0.0000  0.0000  lsu_DW01_add_179
+addr_calc/mtbuf_address_calc[39]/add_25
+                                     196.1992      0.0     196.1992       0.0000  0.0000  lsu_DW01_add_178
+addr_calc/mtbuf_address_calc[39]/add_25_2
+                                     156.0444      0.0     156.0444       0.0000  0.0000  lsu_DW01_add_88
+addr_calc/mtbuf_address_calc[39]/mult_25
+                                    3518.1154      0.6    3281.7615       0.0000  0.0000  lsu_DW02_mult_24
+addr_calc/mtbuf_address_calc[39]/mult_25/FS_1
+                                     236.3539      0.0     236.3539       0.0000  0.0000  lsu_DW01_add_177
+addr_calc/mtbuf_address_calc[3]/add_25
+                                     196.1992      0.0     196.1992       0.0000  0.0000  lsu_DW01_add_250
+addr_calc/mtbuf_address_calc[3]/add_25_2
+                                     156.0444      0.0     156.0444       0.0000  0.0000  lsu_DW01_add_124
+addr_calc/mtbuf_address_calc[3]/mult_25
+                                    3519.3861      0.6    3283.0322       0.0000  0.0000  lsu_DW02_mult_60
+addr_calc/mtbuf_address_calc[3]/mult_25/FS_1
+                                     236.3539      0.0     236.3539       0.0000  0.0000  lsu_DW01_add_249
+addr_calc/mtbuf_address_calc[40]/add_25
+                                     183.2378      0.0     183.2378       0.0000  0.0000  lsu_DW01_add_176
+addr_calc/mtbuf_address_calc[40]/add_25_2
+                                     156.0444      0.0     156.0444       0.0000  0.0000  lsu_DW01_add_87
+addr_calc/mtbuf_address_calc[40]/mult_25
+                                    3515.5739      0.6    3279.2200       0.0000  0.0000  lsu_DW02_mult_23
+addr_calc/mtbuf_address_calc[40]/mult_25/FS_1
+                                     236.3539      0.0     236.3539       0.0000  0.0000  lsu_DW01_add_175
+addr_calc/mtbuf_address_calc[41]/add_25
+                                     196.1992      0.0     196.1992       0.0000  0.0000  lsu_DW01_add_174
+addr_calc/mtbuf_address_calc[41]/add_25_2
+                                     156.0444      0.0     156.0444       0.0000  0.0000  lsu_DW01_add_86
+addr_calc/mtbuf_address_calc[41]/mult_25
+                                    3518.1154      0.6    3281.7615       0.0000  0.0000  lsu_DW02_mult_22
+addr_calc/mtbuf_address_calc[41]/mult_25/FS_1
+                                     236.3539      0.0     236.3539       0.0000  0.0000  lsu_DW01_add_173
+addr_calc/mtbuf_address_calc[42]/add_25
+                                     191.8787      0.0     191.8787       0.0000  0.0000  lsu_DW01_add_172
+addr_calc/mtbuf_address_calc[42]/add_25_2
+                                     156.0444      0.0     156.0444       0.0000  0.0000  lsu_DW01_add_85
+addr_calc/mtbuf_address_calc[42]/mult_25
+                                    3518.1154      0.6    3281.7615       0.0000  0.0000  lsu_DW02_mult_21
+addr_calc/mtbuf_address_calc[42]/mult_25/FS_1
+                                     236.3539      0.0     236.3539       0.0000  0.0000  lsu_DW01_add_171
+addr_calc/mtbuf_address_calc[43]/add_25
+                                     196.1992      0.0     196.1992       0.0000  0.0000  lsu_DW01_add_170
+addr_calc/mtbuf_address_calc[43]/add_25_2
+                                     156.0444      0.0     156.0444       0.0000  0.0000  lsu_DW01_add_84
+addr_calc/mtbuf_address_calc[43]/mult_25
+                                    3515.5739      0.6    3279.2200       0.0000  0.0000  lsu_DW02_mult_20
+addr_calc/mtbuf_address_calc[43]/mult_25/FS_1
+                                     236.3539      0.0     236.3539       0.0000  0.0000  lsu_DW01_add_169
+addr_calc/mtbuf_address_calc[44]/add_25
+                                     187.5583      0.0     187.5583       0.0000  0.0000  lsu_DW01_add_168
+addr_calc/mtbuf_address_calc[44]/add_25_2
+                                     156.0444      0.0     156.0444       0.0000  0.0000  lsu_DW01_add_83
+addr_calc/mtbuf_address_calc[44]/mult_25
+                                    3514.3032      0.6    3277.9493       0.0000  0.0000  lsu_DW02_mult_19
+addr_calc/mtbuf_address_calc[44]/mult_25/FS_1
+                                     236.3539      0.0     236.3539       0.0000  0.0000  lsu_DW01_add_167
+addr_calc/mtbuf_address_calc[45]/add_25
+                                     196.1992      0.0     196.1992       0.0000  0.0000  lsu_DW01_add_166
+addr_calc/mtbuf_address_calc[45]/add_25_2
+                                     156.0444      0.0     156.0444       0.0000  0.0000  lsu_DW01_add_82
+addr_calc/mtbuf_address_calc[45]/mult_25
+                                    3518.1154      0.6    3281.7615       0.0000  0.0000  lsu_DW02_mult_18
+addr_calc/mtbuf_address_calc[45]/mult_25/FS_1
+                                     236.3539      0.0     236.3539       0.0000  0.0000  lsu_DW01_add_165
+addr_calc/mtbuf_address_calc[46]/add_25
+                                     191.8787      0.0     191.8787       0.0000  0.0000  lsu_DW01_add_164
+addr_calc/mtbuf_address_calc[46]/add_25_2
+                                     156.0444      0.0     156.0444       0.0000  0.0000  lsu_DW01_add_81
+addr_calc/mtbuf_address_calc[46]/mult_25
+                                    3513.0325      0.6    3276.6786       0.0000  0.0000  lsu_DW02_mult_17
+addr_calc/mtbuf_address_calc[46]/mult_25/FS_1
+                                     236.3539      0.0     236.3539       0.0000  0.0000  lsu_DW01_add_163
+addr_calc/mtbuf_address_calc[47]/add_25
+                                     196.1992      0.0     196.1992       0.0000  0.0000  lsu_DW01_add_162
+addr_calc/mtbuf_address_calc[47]/add_25_2
+                                     156.0444      0.0     156.0444       0.0000  0.0000  lsu_DW01_add_80
+addr_calc/mtbuf_address_calc[47]/mult_25
+                                    3515.5739      0.6    3279.2200       0.0000  0.0000  lsu_DW02_mult_16
+addr_calc/mtbuf_address_calc[47]/mult_25/FS_1
+                                     236.3539      0.0     236.3539       0.0000  0.0000  lsu_DW01_add_161
+addr_calc/mtbuf_address_calc[48]/add_25
+                                     178.9174      0.0     178.9174       0.0000  0.0000  lsu_DW01_add_160
+addr_calc/mtbuf_address_calc[48]/add_25_2
+                                     156.0444      0.0     156.0444       0.0000  0.0000  lsu_DW01_add_79
+addr_calc/mtbuf_address_calc[48]/mult_25
+                                    3513.0325      0.6    3276.6786       0.0000  0.0000  lsu_DW02_mult_15
+addr_calc/mtbuf_address_calc[48]/mult_25/FS_1
+                                     236.3539      0.0     236.3539       0.0000  0.0000  lsu_DW01_add_159
+addr_calc/mtbuf_address_calc[49]/add_25
+                                     196.1992      0.0     196.1992       0.0000  0.0000  lsu_DW01_add_158
+addr_calc/mtbuf_address_calc[49]/add_25_2
+                                     156.0444      0.0     156.0444       0.0000  0.0000  lsu_DW01_add_78
+addr_calc/mtbuf_address_calc[49]/mult_25
+                                    3518.1154      0.6    3281.7615       0.0000  0.0000  lsu_DW02_mult_14
+addr_calc/mtbuf_address_calc[49]/mult_25/FS_1
+                                     236.3539      0.0     236.3539       0.0000  0.0000  lsu_DW01_add_157
+addr_calc/mtbuf_address_calc[4]/add_25
+                                     187.5583      0.0     187.5583       0.0000  0.0000  lsu_DW01_add_248
+addr_calc/mtbuf_address_calc[4]/add_25_2
+                                     156.0444      0.0     156.0444       0.0000  0.0000  lsu_DW01_add_123
+addr_calc/mtbuf_address_calc[4]/mult_25
+                                    3519.3861      0.6    3283.0322       0.0000  0.0000  lsu_DW02_mult_59
+addr_calc/mtbuf_address_calc[4]/mult_25/FS_1
+                                     236.3539      0.0     236.3539       0.0000  0.0000  lsu_DW01_add_247
+addr_calc/mtbuf_address_calc[50]/add_25
+                                     191.8787      0.0     191.8787       0.0000  0.0000  lsu_DW01_add_156
+addr_calc/mtbuf_address_calc[50]/add_25_2
+                                     156.0444      0.0     156.0444       0.0000  0.0000  lsu_DW01_add_77
+addr_calc/mtbuf_address_calc[50]/mult_25
+                                    3518.1154      0.6    3281.7615       0.0000  0.0000  lsu_DW02_mult_13
+addr_calc/mtbuf_address_calc[50]/mult_25/FS_1
+                                     236.3539      0.0     236.3539       0.0000  0.0000  lsu_DW01_add_155
+addr_calc/mtbuf_address_calc[51]/add_25
+                                     196.1992      0.0     196.1992       0.0000  0.0000  lsu_DW01_add_154
+addr_calc/mtbuf_address_calc[51]/add_25_2
+                                     156.0444      0.0     156.0444       0.0000  0.0000  lsu_DW01_add_76
+addr_calc/mtbuf_address_calc[51]/mult_25
+                                    3515.5739      0.6    3279.2200       0.0000  0.0000  lsu_DW02_mult_12
+addr_calc/mtbuf_address_calc[51]/mult_25/FS_1
+                                     236.3539      0.0     236.3539       0.0000  0.0000  lsu_DW01_add_153
+addr_calc/mtbuf_address_calc[52]/add_25
+                                     187.5583      0.0     187.5583       0.0000  0.0000  lsu_DW01_add_152
+addr_calc/mtbuf_address_calc[52]/add_25_2
+                                     156.0444      0.0     156.0444       0.0000  0.0000  lsu_DW01_add_75
+addr_calc/mtbuf_address_calc[52]/mult_25
+                                    3514.3032      0.6    3277.9493       0.0000  0.0000  lsu_DW02_mult_11
+addr_calc/mtbuf_address_calc[52]/mult_25/FS_1
+                                     236.3539      0.0     236.3539       0.0000  0.0000  lsu_DW01_add_151
+addr_calc/mtbuf_address_calc[53]/add_25
+                                     196.1992      0.0     196.1992       0.0000  0.0000  lsu_DW01_add_150
+addr_calc/mtbuf_address_calc[53]/add_25_2
+                                     156.0444      0.0     156.0444       0.0000  0.0000  lsu_DW01_add_74
+addr_calc/mtbuf_address_calc[53]/mult_25
+                                    3518.1154      0.6    3281.7615       0.0000  0.0000  lsu_DW02_mult_10
+addr_calc/mtbuf_address_calc[53]/mult_25/FS_1
+                                     236.3539      0.0     236.3539       0.0000  0.0000  lsu_DW01_add_149
+addr_calc/mtbuf_address_calc[54]/add_25
+                                     191.8787      0.0     191.8787       0.0000  0.0000  lsu_DW01_add_148
+addr_calc/mtbuf_address_calc[54]/add_25_2
+                                     156.0444      0.0     156.0444       0.0000  0.0000  lsu_DW01_add_73
+addr_calc/mtbuf_address_calc[54]/mult_25
+                                    3514.3032      0.6    3277.9493       0.0000  0.0000  lsu_DW02_mult_9
+addr_calc/mtbuf_address_calc[54]/mult_25/FS_1
+                                     236.3539      0.0     236.3539       0.0000  0.0000  lsu_DW01_add_147
+addr_calc/mtbuf_address_calc[55]/add_25
+                                     196.1992      0.0     196.1992       0.0000  0.0000  lsu_DW01_add_146
+addr_calc/mtbuf_address_calc[55]/add_25_2
+                                     156.0444      0.0     156.0444       0.0000  0.0000  lsu_DW01_add_72
+addr_calc/mtbuf_address_calc[55]/mult_25
+                                    3516.8447      0.6    3280.4907       0.0000  0.0000  lsu_DW02_mult_8
+addr_calc/mtbuf_address_calc[55]/mult_25/FS_1
+                                     236.3539      0.0     236.3539       0.0000  0.0000  lsu_DW01_add_145
+addr_calc/mtbuf_address_calc[56]/add_25
+                                     183.2378      0.0     183.2378       0.0000  0.0000  lsu_DW01_add_144
+addr_calc/mtbuf_address_calc[56]/add_25_2
+                                     156.0444      0.0     156.0444       0.0000  0.0000  lsu_DW01_add_71
+addr_calc/mtbuf_address_calc[56]/mult_25
+                                    3511.7618      0.6    3275.4079       0.0000  0.0000  lsu_DW02_mult_7
+addr_calc/mtbuf_address_calc[56]/mult_25/FS_1
+                                     236.3539      0.0     236.3539       0.0000  0.0000  lsu_DW01_add_143
+addr_calc/mtbuf_address_calc[57]/add_25
+                                     196.1992      0.0     196.1992       0.0000  0.0000  lsu_DW01_add_142
+addr_calc/mtbuf_address_calc[57]/add_25_2
+                                     156.0444      0.0     156.0444       0.0000  0.0000  lsu_DW01_add_70
+addr_calc/mtbuf_address_calc[57]/mult_25
+                                    3516.8447      0.6    3280.4907       0.0000  0.0000  lsu_DW02_mult_6
+addr_calc/mtbuf_address_calc[57]/mult_25/FS_1
+                                     236.3539      0.0     236.3539       0.0000  0.0000  lsu_DW01_add_141
+addr_calc/mtbuf_address_calc[58]/add_25
+                                     191.8787      0.0     191.8787       0.0000  0.0000  lsu_DW01_add_140
+addr_calc/mtbuf_address_calc[58]/add_25_2
+                                     156.0444      0.0     156.0444       0.0000  0.0000  lsu_DW01_add_69
+addr_calc/mtbuf_address_calc[58]/mult_25
+                                    3515.5739      0.6    3279.2200       0.0000  0.0000  lsu_DW02_mult_5
+addr_calc/mtbuf_address_calc[58]/mult_25/FS_1
+                                     236.3539      0.0     236.3539       0.0000  0.0000  lsu_DW01_add_139
+addr_calc/mtbuf_address_calc[59]/add_25
+                                     196.1992      0.0     196.1992       0.0000  0.0000  lsu_DW01_add_138
+addr_calc/mtbuf_address_calc[59]/add_25_2
+                                     156.0444      0.0     156.0444       0.0000  0.0000  lsu_DW01_add_68
+addr_calc/mtbuf_address_calc[59]/mult_25
+                                    3514.3032      0.6    3277.9493       0.0000  0.0000  lsu_DW02_mult_4
+addr_calc/mtbuf_address_calc[59]/mult_25/FS_1
+                                     236.3539      0.0     236.3539       0.0000  0.0000  lsu_DW01_add_137
+addr_calc/mtbuf_address_calc[5]/add_25
+                                     196.1992      0.0     196.1992       0.0000  0.0000  lsu_DW01_add_246
+addr_calc/mtbuf_address_calc[5]/add_25_2
+                                     156.0444      0.0     156.0444       0.0000  0.0000  lsu_DW01_add_122
+addr_calc/mtbuf_address_calc[5]/mult_25
+                                    3520.6568      0.6    3284.3029       0.0000  0.0000  lsu_DW02_mult_58
+addr_calc/mtbuf_address_calc[5]/mult_25/FS_1
+                                     236.3539      0.0     236.3539       0.0000  0.0000  lsu_DW01_add_245
+addr_calc/mtbuf_address_calc[60]/add_25
+                                     187.5583      0.0     187.5583       0.0000  0.0000  lsu_DW01_add_136
+addr_calc/mtbuf_address_calc[60]/add_25_2
+                                     156.0444      0.0     156.0444       0.0000  0.0000  lsu_DW01_add_67
+addr_calc/mtbuf_address_calc[60]/mult_25
+                                    3511.7618      0.6    3275.4079       0.0000  0.0000  lsu_DW02_mult_3
+addr_calc/mtbuf_address_calc[60]/mult_25/FS_1
+                                     236.3539      0.0     236.3539       0.0000  0.0000  lsu_DW01_add_135
+addr_calc/mtbuf_address_calc[61]/add_25
+                                     196.1992      0.0     196.1992       0.0000  0.0000  lsu_DW01_add_134
+addr_calc/mtbuf_address_calc[61]/add_25_2
+                                     156.0444      0.0     156.0444       0.0000  0.0000  lsu_DW01_add_66
+addr_calc/mtbuf_address_calc[61]/mult_25
+                                    3516.8447      0.6    3280.4907       0.0000  0.0000  lsu_DW02_mult_2
+addr_calc/mtbuf_address_calc[61]/mult_25/FS_1
+                                     236.3539      0.0     236.3539       0.0000  0.0000  lsu_DW01_add_133
+addr_calc/mtbuf_address_calc[62]/add_25
+                                     191.8787      0.0     191.8787       0.0000  0.0000  lsu_DW01_add_132
+addr_calc/mtbuf_address_calc[62]/add_25_2
+                                     156.0444      0.0     156.0444       0.0000  0.0000  lsu_DW01_add_65
+addr_calc/mtbuf_address_calc[62]/mult_25
+                                    3511.7618      0.6    3275.4079       0.0000  0.0000  lsu_DW02_mult_1
+addr_calc/mtbuf_address_calc[62]/mult_25/FS_1
+                                     236.3539      0.0     236.3539       0.0000  0.0000  lsu_DW01_add_131
+addr_calc/mtbuf_address_calc[63]/add_25
+                                     196.1992      0.0     196.1992       0.0000  0.0000  lsu_DW01_add_130
+addr_calc/mtbuf_address_calc[63]/add_25_2
+                                     156.0444      0.0     156.0444       0.0000  0.0000  lsu_DW01_add_64
+addr_calc/mtbuf_address_calc[63]/mult_25
+                                    3515.5739      0.6    3279.2200       0.0000  0.0000  lsu_DW02_mult_0
+addr_calc/mtbuf_address_calc[63]/mult_25/FS_1
+                                     236.3539      0.0     236.3539       0.0000  0.0000  lsu_DW01_add_129
+addr_calc/mtbuf_address_calc[6]/add_25
+                                     191.8787      0.0     191.8787       0.0000  0.0000  lsu_DW01_add_244
+addr_calc/mtbuf_address_calc[6]/add_25_2
+                                     156.0444      0.0     156.0444       0.0000  0.0000  lsu_DW01_add_121
+addr_calc/mtbuf_address_calc[6]/mult_25
+                                    3518.1154      0.6    3281.7615       0.0000  0.0000  lsu_DW02_mult_57
+addr_calc/mtbuf_address_calc[6]/mult_25/FS_1
+                                     236.3539      0.0     236.3539       0.0000  0.0000  lsu_DW01_add_243
+addr_calc/mtbuf_address_calc[7]/add_25
+                                     196.1992      0.0     196.1992       0.0000  0.0000  lsu_DW01_add_242
+addr_calc/mtbuf_address_calc[7]/add_25_2
+                                     156.0444      0.0     156.0444       0.0000  0.0000  lsu_DW01_add_120
+addr_calc/mtbuf_address_calc[7]/mult_25
+                                    3519.3861      0.6    3283.0322       0.0000  0.0000  lsu_DW02_mult_56
+addr_calc/mtbuf_address_calc[7]/mult_25/FS_1
+                                     236.3539      0.0     236.3539       0.0000  0.0000  lsu_DW01_add_241
+addr_calc/mtbuf_address_calc[8]/add_25
+                                     183.2378      0.0     183.2378       0.0000  0.0000  lsu_DW01_add_240
+addr_calc/mtbuf_address_calc[8]/add_25_2
+                                     156.0444      0.0     156.0444       0.0000  0.0000  lsu_DW01_add_119
+addr_calc/mtbuf_address_calc[8]/mult_25
+                                    3518.1154      0.6    3281.7615       0.0000  0.0000  lsu_DW02_mult_55
+addr_calc/mtbuf_address_calc[8]/mult_25/FS_1
+                                     236.3539      0.0     236.3539       0.0000  0.0000  lsu_DW01_add_239
+addr_calc/mtbuf_address_calc[9]/add_25
+                                     196.1992      0.0     196.1992       0.0000  0.0000  lsu_DW01_add_238
+addr_calc/mtbuf_address_calc[9]/add_25_2
+                                     156.0444      0.0     156.0444       0.0000  0.0000  lsu_DW01_add_118
+addr_calc/mtbuf_address_calc[9]/mult_25
+                                    3519.3861      0.6    3283.0322       0.0000  0.0000  lsu_DW02_mult_54
+addr_calc/mtbuf_address_calc[9]/mult_25/FS_1
+                                     236.3539      0.0     236.3539       0.0000  0.0000  lsu_DW01_add_237
+--------------------------------  -----------  -------  -----------  -----------  ------  ----------------
+Total                                                   302906.1008  239711.1664  0.0000
+
+1

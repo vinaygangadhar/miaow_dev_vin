@@ -1,0 +1,5 @@
+wavepool d
+Unit that choses wavefronts fetched and keeps control of a instruction queue.
+fetch_reserve_slotid 6, fetch_reserve_valid 1, fetch_basereg_wr 1, fetch_basereg_wfid 6, fetch_vgpr_base 10, fetch_sgpr_base 9, fetch_lds_base 16, issue_valid_entries 40, buff_tag 39, buff_instr 32, buff2fetchwave_ack 1, issue_wf_done_en 1, issue_wf_done_wf_id 6, salu_branch_wfid 6, salu_branch_en 1, salu_branch_taken 1, decode_ins_half_rqd 1, decode_ins_half_wfid 6
+fetch_stop_fetch 40, decode_instr_valid 1, decode_instr 32, decode_wfid 6, decode_vgpr_base 10, decode_sgpr_base 9, decode_lds_base 16, decode_instr_pc 32
+

@@ -1,0 +1,65 @@
+Loading db file '/s/synopsys-2012_06_27/@sys/G-2012.06/libraries/syn/gtech.db'
+Loading db file '/s/synopsys-2012_06_27/@sys/G-2012.06/libraries/syn/standard.sldb'
+  Loading link library 'saed32rvt_tt1p05v25c'
+  Loading link library 'gtech'
+Running PRESTO HDLC
+Presto compilation completed successfully.
+Elaborated 1 design.
+Current design is now 'vgpr'.
+Information: Building the design 'rd_port_mux_8to1'. (HDL-193)
+
+Statistics for case statements in always block at line 69 in file
+	'../../../src/verilog/rtl/vgpr/build/rd_port_mux_8to1.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            87            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'vgpr_2to1_rd_port_mux' instantiated from design 'vgpr' with
+	the parameters "8192". (HDL-193)
+
+Statistics for case statements in always block at line 30 in file
+	'../../../src/verilog/rtl/vgpr/build/vgpr_2to1_rd_port_mux.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            36            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'vgpr_2to1_rd_port_mux' instantiated from design 'vgpr' with
+	the parameters "2048". (HDL-193)
+
+Statistics for case statements in always block at line 30 in file
+	'../../../src/verilog/rtl/vgpr/build/vgpr_2to1_rd_port_mux.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            36            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'wr_port_mux_8to1'. (HDL-193)
+
+Statistics for case statements in always block at line 102 in file
+	'../../../src/verilog/rtl/vgpr/build/wr_port_mux_8to1.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           137            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'reg_64page_1024x32b_3r_2w'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'wfid_mux_8to1'. (HDL-193)
+
+Statistics for case statements in always block at line 49 in file
+	'../../../src/verilog/rtl/vgpr/build/wfid_mux_8to1.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            68            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'reg_1024x32b_3r_2w'. (HDL-193)
+Presto compilation completed successfully.
+1

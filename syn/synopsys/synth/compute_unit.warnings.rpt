@@ -1,0 +1,26 @@
+ 
+****************************************
+check_design summary:
+Version:     G-2012.06
+Date:        Thu May 16 11:42:35 2013
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Designs                                                            12
+    Black box (LINT-55)                                            12
+--------------------------------------------------------------------------------
+
+Information: Design 'wavepool' does not contain any cells or nets. (LINT-55)
+Information: Design 'vgpr' does not contain any cells or nets. (LINT-55)
+Information: Design 'simf' does not contain any cells or nets. (LINT-55)
+Information: Design 'simd' does not contain any cells or nets. (LINT-55)
+Information: Design 'sgpr' does not contain any cells or nets. (LINT-55)
+Information: Design 'salu' does not contain any cells or nets. (LINT-55)
+Information: Design 'rfa' does not contain any cells or nets. (LINT-55)
+Information: Design 'lsu' does not contain any cells or nets. (LINT-55)
+Information: Design 'issue' does not contain any cells or nets. (LINT-55)
+Information: Design 'fetch' does not contain any cells or nets. (LINT-55)
+Information: Design 'exec' does not contain any cells or nets. (LINT-55)
+Information: Design 'decode' does not contain any cells or nets. (LINT-55)
+1

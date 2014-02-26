@@ -1,0 +1,409 @@
+ 
+****************************************
+Report : area
+Design : simd
+Version: G-2012.06
+Date   : Thu May 16 13:13:45 2013
+****************************************
+
+Library(s) Used:
+
+    saed32rvt_tt1p05v25c (File: /p/vertical/afs-huge0/synopsys/32nmlib/SAED32_EDK/lib/stdcell_rvt/db_nldm/saed32rvt_tt1p05v25c.db)
+
+Number of ports:                         8942
+Number of nets:                         75306
+Number of cells:                        61889
+Number of combinational cells:          43733
+Number of sequential cells:             17980
+Number of macros:                           0
+Number of buf/inv:                       8467
+Number of references:                     231
+
+Combinational area:       295461.716165
+Noncombinational area:    128304.600556
+Net Interconnect area:    207676.579813
+
+Total cell area:          423766.316721
+Total area:               631442.896534
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area              Local cell area
+                                  --------------------  -------------------------------- 
+Hierarchical cell                 Absolute     Percent  Combi-       Noncombi-    Black
+                                  Total        Total    national     national     boxes   Design
+--------------------------------  -----------  -------  -----------  -----------  ------  -----------------
+simd                              423766.3167    100.0  109728.1980  128304.6006  0.0000  simd
+alu/valu/genblk1.simd_alu[0]/add_131
+                                     156.0444      0.0     156.0444       0.0000  0.0000  simd_DW01_add_15
+alu/valu/genblk1.simd_alu[0]/mult_542
+                                    8475.9565      2.0    7909.4695       0.0000  0.0000  simd_DW02_mult_15
+alu/valu/genblk1.simd_alu[0]/mult_542/FS_1
+                                     566.4870      0.1     566.4870       0.0000  0.0000  simd_DW01_add_31
+alu/valu/genblk1.simd_alu[0]/sll_159
+                                     519.7245      0.1     519.7245       0.0000  0.0000  simd_DW01_ash_31
+alu/valu/genblk1.simd_alu[0]/sll_425
+                                     133.6798      0.0     133.6798       0.0000  0.0000  simd_DW01_ash_30
+alu/valu/genblk1.simd_alu[0]/srl_165
+                                     418.8293      0.1     418.8293       0.0000  0.0000  simd_DW_rash_31
+alu/valu/genblk1.simd_alu[0]/srl_425
+                                     417.5586      0.1     417.5586       0.0000  0.0000  simd_DW_rash_30
+alu/valu/genblk1.simd_alu[0]/sub_136
+                                     197.9782      0.0     197.9782       0.0000  0.0000  simd_DW01_sub_45
+alu/valu/genblk1.simd_alu[0]/sub_425
+                                     181.4588      0.0     181.4588       0.0000  0.0000  simd_DW01_dec_15
+alu/valu/genblk1.simd_alu[0]/sub_add_64_b0
+                                     235.0832      0.1     235.0832       0.0000  0.0000  simd_DW01_sub_47
+alu/valu/genblk1.simd_alu[0]/sub_add_65_b0
+                                     252.1108      0.1     252.1108       0.0000  0.0000  simd_DW01_sub_46
+alu/valu/genblk1.simd_alu[10]/add_131
+                                     156.0444      0.0     156.0444       0.0000  0.0000  simd_DW01_add_5
+alu/valu/genblk1.simd_alu[10]/mult_542
+                                    8453.3377      2.0    7883.0386       0.0000  0.0000  simd_DW02_mult_8
+alu/valu/genblk1.simd_alu[10]/mult_542/FS_1
+                                     570.2991      0.1     570.2991       0.0000  0.0000  simd_DW01_add_24
+alu/valu/genblk1.simd_alu[10]/sll_159
+                                     519.7245      0.1     519.7245       0.0000  0.0000  simd_DW01_ash_11
+alu/valu/genblk1.simd_alu[10]/sll_425
+                                     133.6798      0.0     133.6798       0.0000  0.0000  simd_DW01_ash_10
+alu/valu/genblk1.simd_alu[10]/srl_165
+                                     418.8293      0.1     418.8293       0.0000  0.0000  simd_DW_rash_11
+alu/valu/genblk1.simd_alu[10]/srl_425
+                                     417.8127      0.1     417.8127       0.0000  0.0000  simd_DW_rash_10
+alu/valu/genblk1.simd_alu[10]/sub_136
+                                     197.9782      0.0     197.9782       0.0000  0.0000  simd_DW01_sub_15
+alu/valu/genblk1.simd_alu[10]/sub_425
+                                     181.4588      0.0     181.4588       0.0000  0.0000  simd_DW01_dec_5
+alu/valu/genblk1.simd_alu[10]/sub_add_64_b0
+                                     235.0832      0.1     235.0832       0.0000  0.0000  simd_DW01_sub_17
+alu/valu/genblk1.simd_alu[10]/sub_add_65_b0
+                                     241.9451      0.1     241.9451       0.0000  0.0000  simd_DW01_sub_16
+alu/valu/genblk1.simd_alu[11]/add_131
+                                     156.0444      0.0     156.0444       0.0000  0.0000  simd_DW01_add_4
+alu/valu/genblk1.simd_alu[11]/mult_542
+                                    8687.6585      2.1    8128.0334       0.0000  0.0000  simd_DW02_mult_6
+alu/valu/genblk1.simd_alu[11]/mult_542/FS_1
+                                     559.6251      0.1     559.6251       0.0000  0.0000  simd_DW01_add_22
+alu/valu/genblk1.simd_alu[11]/sll_159
+                                     519.7245      0.1     519.7245       0.0000  0.0000  simd_DW01_ash_9
+alu/valu/genblk1.simd_alu[11]/sll_425
+                                     133.6798      0.0     133.6798       0.0000  0.0000  simd_DW01_ash_8
+alu/valu/genblk1.simd_alu[11]/srl_165
+                                     418.8293      0.1     418.8293       0.0000  0.0000  simd_DW_rash_9
+alu/valu/genblk1.simd_alu[11]/srl_425
+                                     417.5586      0.1     417.5586       0.0000  0.0000  simd_DW_rash_8
+alu/valu/genblk1.simd_alu[11]/sub_136
+                                     197.9782      0.0     197.9782       0.0000  0.0000  simd_DW01_sub_12
+alu/valu/genblk1.simd_alu[11]/sub_425
+                                     181.4588      0.0     181.4588       0.0000  0.0000  simd_DW01_dec_4
+alu/valu/genblk1.simd_alu[11]/sub_add_64_b0
+                                     235.0832      0.1     235.0832       0.0000  0.0000  simd_DW01_sub_14
+alu/valu/genblk1.simd_alu[11]/sub_add_65_b0
+                                     235.8456      0.1     235.8456       0.0000  0.0000  simd_DW01_sub_13
+alu/valu/genblk1.simd_alu[12]/add_131
+                                     156.0444      0.0     156.0444       0.0000  0.0000  simd_DW01_add_3
+alu/valu/genblk1.simd_alu[12]/mult_542
+                                    8637.5921      2.0    8074.6631       0.0000  0.0000  simd_DW02_mult_5
+alu/valu/genblk1.simd_alu[12]/mult_542/FS_1
+                                     562.9290      0.1     562.9290       0.0000  0.0000  simd_DW01_add_21
+alu/valu/genblk1.simd_alu[12]/sll_159
+                                     519.7245      0.1     519.7245       0.0000  0.0000  simd_DW01_ash_7
+alu/valu/genblk1.simd_alu[12]/sll_425
+                                     133.6798      0.0     133.6798       0.0000  0.0000  simd_DW01_ash_6
+alu/valu/genblk1.simd_alu[12]/srl_165
+                                     418.8293      0.1     418.8293       0.0000  0.0000  simd_DW_rash_7
+alu/valu/genblk1.simd_alu[12]/srl_425
+                                     417.5586      0.1     417.5586       0.0000  0.0000  simd_DW_rash_6
+alu/valu/genblk1.simd_alu[12]/sub_136
+                                     197.9782      0.0     197.9782       0.0000  0.0000  simd_DW01_sub_9
+alu/valu/genblk1.simd_alu[12]/sub_425
+                                     181.4588      0.0     181.4588       0.0000  0.0000  simd_DW01_dec_3
+alu/valu/genblk1.simd_alu[12]/sub_add_64_b0
+                                     235.0832      0.1     235.0832       0.0000  0.0000  simd_DW01_sub_11
+alu/valu/genblk1.simd_alu[12]/sub_add_65_b0
+                                     252.1108      0.1     252.1108       0.0000  0.0000  simd_DW01_sub_10
+alu/valu/genblk1.simd_alu[13]/add_131
+                                     156.0444      0.0     156.0444       0.0000  0.0000  simd_DW01_add_2
+alu/valu/genblk1.simd_alu[13]/mult_542
+                                    8997.9683      2.1    8422.3321       0.0000  0.0000  simd_DW02_mult_4
+alu/valu/genblk1.simd_alu[13]/mult_542/FS_1
+                                     575.6362      0.1     575.6362       0.0000  0.0000  simd_DW01_add_20
+alu/valu/genblk1.simd_alu[13]/sll_159
+                                     519.7245      0.1     519.7245       0.0000  0.0000  simd_DW01_ash_5
+alu/valu/genblk1.simd_alu[13]/sll_425
+                                     133.6798      0.0     133.6798       0.0000  0.0000  simd_DW01_ash_4
+alu/valu/genblk1.simd_alu[13]/srl_165
+                                     418.8293      0.1     418.8293       0.0000  0.0000  simd_DW_rash_5
+alu/valu/genblk1.simd_alu[13]/srl_425
+                                     417.5586      0.1     417.5586       0.0000  0.0000  simd_DW_rash_4
+alu/valu/genblk1.simd_alu[13]/sub_136
+                                     197.9782      0.0     197.9782       0.0000  0.0000  simd_DW01_sub_6
+alu/valu/genblk1.simd_alu[13]/sub_425
+                                     181.4588      0.0     181.4588       0.0000  0.0000  simd_DW01_dec_2
+alu/valu/genblk1.simd_alu[13]/sub_add_64_b0
+                                     235.0832      0.1     235.0832       0.0000  0.0000  simd_DW01_sub_8
+alu/valu/genblk1.simd_alu[13]/sub_add_65_b0
+                                     239.9119      0.1     239.9119       0.0000  0.0000  simd_DW01_sub_7
+alu/valu/genblk1.simd_alu[14]/add_131
+                                     156.0444      0.0     156.0444       0.0000  0.0000  simd_DW01_add_1
+alu/valu/genblk1.simd_alu[14]/mult_542
+                                    8912.3218      2.1    8344.8182       0.0000  0.0000  simd_DW02_mult_3
+alu/valu/genblk1.simd_alu[14]/mult_542/FS_1
+                                     567.5036      0.1     567.5036       0.0000  0.0000  simd_DW01_add_19
+alu/valu/genblk1.simd_alu[14]/sll_159
+                                     519.7245      0.1     519.7245       0.0000  0.0000  simd_DW01_ash_3
+alu/valu/genblk1.simd_alu[14]/sll_425
+                                     133.6798      0.0     133.6798       0.0000  0.0000  simd_DW01_ash_2
+alu/valu/genblk1.simd_alu[14]/srl_165
+                                     418.8293      0.1     418.8293       0.0000  0.0000  simd_DW_rash_3
+alu/valu/genblk1.simd_alu[14]/srl_425
+                                     417.5586      0.1     417.5586       0.0000  0.0000  simd_DW_rash_2
+alu/valu/genblk1.simd_alu[14]/sub_136
+                                     197.9782      0.0     197.9782       0.0000  0.0000  simd_DW01_sub_3
+alu/valu/genblk1.simd_alu[14]/sub_425
+                                     181.4588      0.0     181.4588       0.0000  0.0000  simd_DW01_dec_1
+alu/valu/genblk1.simd_alu[14]/sub_add_64_b0
+                                     235.0832      0.1     235.0832       0.0000  0.0000  simd_DW01_sub_5
+alu/valu/genblk1.simd_alu[14]/sub_add_65_b0
+                                     235.8456      0.1     235.8456       0.0000  0.0000  simd_DW01_sub_4
+alu/valu/genblk1.simd_alu[15]/add_131
+                                     156.0444      0.0     156.0444       0.0000  0.0000  simd_DW01_add_0
+alu/valu/genblk1.simd_alu[15]/mult_542
+                                    8933.4157      2.1    8343.5475       0.0000  0.0000  simd_DW02_mult_2
+alu/valu/genblk1.simd_alu[15]/mult_542/FS_1
+                                     589.8682      0.1     589.8682       0.0000  0.0000  simd_DW01_add_18
+alu/valu/genblk1.simd_alu[15]/sll_159
+                                     519.7245      0.1     519.7245       0.0000  0.0000  simd_DW01_ash_1
+alu/valu/genblk1.simd_alu[15]/sll_425
+                                     133.6798      0.0     133.6798       0.0000  0.0000  simd_DW01_ash_0
+alu/valu/genblk1.simd_alu[15]/srl_165
+                                     418.8293      0.1     418.8293       0.0000  0.0000  simd_DW_rash_1
+alu/valu/genblk1.simd_alu[15]/srl_425
+                                     417.5586      0.1     417.5586       0.0000  0.0000  simd_DW_rash_0
+alu/valu/genblk1.simd_alu[15]/sub_136
+                                     197.9782      0.0     197.9782       0.0000  0.0000  simd_DW01_sub_0
+alu/valu/genblk1.simd_alu[15]/sub_425
+                                     181.4588      0.0     181.4588       0.0000  0.0000  simd_DW01_dec_0
+alu/valu/genblk1.simd_alu[15]/sub_add_64_b0
+                                     235.0832      0.1     235.0832       0.0000  0.0000  simd_DW01_sub_2
+alu/valu/genblk1.simd_alu[15]/sub_add_65_b0
+                                     235.8456      0.1     235.8456       0.0000  0.0000  simd_DW01_sub_1
+alu/valu/genblk1.simd_alu[1]/add_131
+                                     156.0444      0.0     156.0444       0.0000  0.0000  simd_DW01_add_14
+alu/valu/genblk1.simd_alu[1]/mult_542
+                                    8363.1166      2.0    7806.7954       0.0000  0.0000  simd_DW02_mult_7
+alu/valu/genblk1.simd_alu[1]/mult_542/FS_1
+                                     556.3212      0.1     556.3212       0.0000  0.0000  simd_DW01_add_23
+alu/valu/genblk1.simd_alu[1]/sll_159
+                                     519.7245      0.1     519.7245       0.0000  0.0000  simd_DW01_ash_29
+alu/valu/genblk1.simd_alu[1]/sll_425
+                                     133.6798      0.0     133.6798       0.0000  0.0000  simd_DW01_ash_28
+alu/valu/genblk1.simd_alu[1]/srl_165
+                                     418.8293      0.1     418.8293       0.0000  0.0000  simd_DW_rash_29
+alu/valu/genblk1.simd_alu[1]/srl_425
+                                     417.5586      0.1     417.5586       0.0000  0.0000  simd_DW_rash_28
+alu/valu/genblk1.simd_alu[1]/sub_136
+                                     197.9782      0.0     197.9782       0.0000  0.0000  simd_DW01_sub_42
+alu/valu/genblk1.simd_alu[1]/sub_425
+                                     181.4588      0.0     181.4588       0.0000  0.0000  simd_DW01_dec_14
+alu/valu/genblk1.simd_alu[1]/sub_add_64_b0
+                                     235.0832      0.1     235.0832       0.0000  0.0000  simd_DW01_sub_44
+alu/valu/genblk1.simd_alu[1]/sub_add_65_b0
+                                     252.1108      0.1     252.1108       0.0000  0.0000  simd_DW01_sub_43
+alu/valu/genblk1.simd_alu[2]/add_131
+                                     156.0444      0.0     156.0444       0.0000  0.0000  simd_DW01_add_13
+alu/valu/genblk1.simd_alu[2]/mult_542
+                                    8899.6146      2.1    8343.2934       0.0000  0.0000  simd_DW02_mult_1
+alu/valu/genblk1.simd_alu[2]/mult_542/FS_1
+                                     556.3212      0.1     556.3212       0.0000  0.0000  simd_DW01_add_17
+alu/valu/genblk1.simd_alu[2]/sll_159
+                                     519.7245      0.1     519.7245       0.0000  0.0000  simd_DW01_ash_27
+alu/valu/genblk1.simd_alu[2]/sll_425
+                                     133.6798      0.0     133.6798       0.0000  0.0000  simd_DW01_ash_26
+alu/valu/genblk1.simd_alu[2]/srl_165
+                                     418.8293      0.1     418.8293       0.0000  0.0000  simd_DW_rash_27
+alu/valu/genblk1.simd_alu[2]/srl_425
+                                     417.5586      0.1     417.5586       0.0000  0.0000  simd_DW_rash_26
+alu/valu/genblk1.simd_alu[2]/sub_136
+                                     197.9782      0.0     197.9782       0.0000  0.0000  simd_DW01_sub_39
+alu/valu/genblk1.simd_alu[2]/sub_425
+                                     181.4588      0.0     181.4588       0.0000  0.0000  simd_DW01_dec_13
+alu/valu/genblk1.simd_alu[2]/sub_add_64_b0
+                                     235.0832      0.1     235.0832       0.0000  0.0000  simd_DW01_sub_41
+alu/valu/genblk1.simd_alu[2]/sub_add_65_b0
+                                     235.8456      0.1     235.8456       0.0000  0.0000  simd_DW01_sub_40
+alu/valu/genblk1.simd_alu[3]/add_131
+                                     156.0444      0.0     156.0444       0.0000  0.0000  simd_DW01_add_12
+alu/valu/genblk1.simd_alu[3]/mult_542
+                                    9107.2502      2.1    8533.3931       0.0000  0.0000  simd_DW02_mult_0
+alu/valu/genblk1.simd_alu[3]/mult_542/FS_1
+                                     573.8572      0.1     573.8572       0.0000  0.0000  simd_DW01_add_16
+alu/valu/genblk1.simd_alu[3]/sll_159
+                                     519.7245      0.1     519.7245       0.0000  0.0000  simd_DW01_ash_25
+alu/valu/genblk1.simd_alu[3]/sll_425
+                                     133.6798      0.0     133.6798       0.0000  0.0000  simd_DW01_ash_24
+alu/valu/genblk1.simd_alu[3]/srl_165
+                                     418.8293      0.1     418.8293       0.0000  0.0000  simd_DW_rash_25
+alu/valu/genblk1.simd_alu[3]/srl_425
+                                     417.5586      0.1     417.5586       0.0000  0.0000  simd_DW_rash_24
+alu/valu/genblk1.simd_alu[3]/sub_136
+                                     197.9782      0.0     197.9782       0.0000  0.0000  simd_DW01_sub_36
+alu/valu/genblk1.simd_alu[3]/sub_425
+                                     181.4588      0.0     181.4588       0.0000  0.0000  simd_DW01_dec_12
+alu/valu/genblk1.simd_alu[3]/sub_add_64_b0
+                                     235.0832      0.1     235.0832       0.0000  0.0000  simd_DW01_sub_38
+alu/valu/genblk1.simd_alu[3]/sub_add_65_b0
+                                     235.8456      0.1     235.8456       0.0000  0.0000  simd_DW01_sub_37
+alu/valu/genblk1.simd_alu[4]/add_131
+                                     156.0444      0.0     156.0444       0.0000  0.0000  simd_DW01_add_11
+alu/valu/genblk1.simd_alu[4]/mult_542
+                                    8613.1943      2.0    8041.6244       0.0000  0.0000  simd_DW02_mult_14
+alu/valu/genblk1.simd_alu[4]/mult_542/FS_1
+                                     571.5699      0.1     571.5699       0.0000  0.0000  simd_DW01_add_30
+alu/valu/genblk1.simd_alu[4]/sll_159
+                                     519.7245      0.1     519.7245       0.0000  0.0000  simd_DW01_ash_23
+alu/valu/genblk1.simd_alu[4]/sll_425
+                                     133.6798      0.0     133.6798       0.0000  0.0000  simd_DW01_ash_22
+alu/valu/genblk1.simd_alu[4]/srl_165
+                                     418.8293      0.1     418.8293       0.0000  0.0000  simd_DW_rash_23
+alu/valu/genblk1.simd_alu[4]/srl_425
+                                     417.5586      0.1     417.5586       0.0000  0.0000  simd_DW_rash_22
+alu/valu/genblk1.simd_alu[4]/sub_136
+                                     197.9782      0.0     197.9782       0.0000  0.0000  simd_DW01_sub_33
+alu/valu/genblk1.simd_alu[4]/sub_425
+                                     181.4588      0.0     181.4588       0.0000  0.0000  simd_DW01_dec_11
+alu/valu/genblk1.simd_alu[4]/sub_add_64_b0
+                                     235.0832      0.1     235.0832       0.0000  0.0000  simd_DW01_sub_35
+alu/valu/genblk1.simd_alu[4]/sub_add_65_b0
+                                     243.4700      0.1     243.4700       0.0000  0.0000  simd_DW01_sub_34
+alu/valu/genblk1.simd_alu[5]/add_131
+                                     156.0444      0.0     156.0444       0.0000  0.0000  simd_DW01_add_10
+alu/valu/genblk1.simd_alu[5]/mult_542
+                                    9353.5157      2.2    8785.5039       0.0000  0.0000  simd_DW02_mult_13
+alu/valu/genblk1.simd_alu[5]/mult_542/FS_1
+                                     568.0118      0.1     568.0118       0.0000  0.0000  simd_DW01_add_29
+alu/valu/genblk1.simd_alu[5]/sll_159
+                                     519.7245      0.1     519.7245       0.0000  0.0000  simd_DW01_ash_21
+alu/valu/genblk1.simd_alu[5]/sll_425
+                                     133.6798      0.0     133.6798       0.0000  0.0000  simd_DW01_ash_20
+alu/valu/genblk1.simd_alu[5]/srl_165
+                                     418.8293      0.1     418.8293       0.0000  0.0000  simd_DW_rash_21
+alu/valu/genblk1.simd_alu[5]/srl_425
+                                     417.5586      0.1     417.5586       0.0000  0.0000  simd_DW_rash_20
+alu/valu/genblk1.simd_alu[5]/sub_136
+                                     197.9782      0.0     197.9782       0.0000  0.0000  simd_DW01_sub_30
+alu/valu/genblk1.simd_alu[5]/sub_425
+                                     181.4588      0.0     181.4588       0.0000  0.0000  simd_DW01_dec_10
+alu/valu/genblk1.simd_alu[5]/sub_add_64_b0
+                                     235.0832      0.1     235.0832       0.0000  0.0000  simd_DW01_sub_32
+alu/valu/genblk1.simd_alu[5]/sub_add_65_b0
+                                     243.4700      0.1     243.4700       0.0000  0.0000  simd_DW01_sub_31
+alu/valu/genblk1.simd_alu[6]/add_131
+                                     156.0444      0.0     156.0444       0.0000  0.0000  simd_DW01_add_9
+alu/valu/genblk1.simd_alu[6]/mult_542
+                                    9038.6313      2.1    8470.8736       0.0000  0.0000  simd_DW02_mult_12
+alu/valu/genblk1.simd_alu[6]/mult_542/FS_1
+                                     567.7577      0.1     567.7577       0.0000  0.0000  simd_DW01_add_28
+alu/valu/genblk1.simd_alu[6]/sll_159
+                                     519.7245      0.1     519.7245       0.0000  0.0000  simd_DW01_ash_19
+alu/valu/genblk1.simd_alu[6]/sll_425
+                                     133.6798      0.0     133.6798       0.0000  0.0000  simd_DW01_ash_18
+alu/valu/genblk1.simd_alu[6]/srl_165
+                                     418.8293      0.1     418.8293       0.0000  0.0000  simd_DW_rash_19
+alu/valu/genblk1.simd_alu[6]/srl_425
+                                     417.5586      0.1     417.5586       0.0000  0.0000  simd_DW_rash_18
+alu/valu/genblk1.simd_alu[6]/sub_136
+                                     197.9782      0.0     197.9782       0.0000  0.0000  simd_DW01_sub_27
+alu/valu/genblk1.simd_alu[6]/sub_425
+                                     181.4588      0.0     181.4588       0.0000  0.0000  simd_DW01_dec_9
+alu/valu/genblk1.simd_alu[6]/sub_add_64_b0
+                                     235.0832      0.1     235.0832       0.0000  0.0000  simd_DW01_sub_29
+alu/valu/genblk1.simd_alu[6]/sub_add_65_b0
+                                     242.7075      0.1     242.7075       0.0000  0.0000  simd_DW01_sub_28
+alu/valu/genblk1.simd_alu[7]/add_131
+                                     156.0444      0.0     156.0444       0.0000  0.0000  simd_DW01_add_8
+alu/valu/genblk1.simd_alu[7]/mult_542
+                                    8793.8907      2.1    8220.2877       0.0000  0.0000  simd_DW02_mult_11
+alu/valu/genblk1.simd_alu[7]/mult_542/FS_1
+                                     573.6030      0.1     573.6030       0.0000  0.0000  simd_DW01_add_27
+alu/valu/genblk1.simd_alu[7]/sll_159
+                                     519.7245      0.1     519.7245       0.0000  0.0000  simd_DW01_ash_17
+alu/valu/genblk1.simd_alu[7]/sll_425
+                                     133.6798      0.0     133.6798       0.0000  0.0000  simd_DW01_ash_16
+alu/valu/genblk1.simd_alu[7]/srl_165
+                                     418.8293      0.1     418.8293       0.0000  0.0000  simd_DW_rash_17
+alu/valu/genblk1.simd_alu[7]/srl_425
+                                     417.5586      0.1     417.5586       0.0000  0.0000  simd_DW_rash_16
+alu/valu/genblk1.simd_alu[7]/sub_136
+                                     197.9782      0.0     197.9782       0.0000  0.0000  simd_DW01_sub_24
+alu/valu/genblk1.simd_alu[7]/sub_425
+                                     181.4588      0.0     181.4588       0.0000  0.0000  simd_DW01_dec_8
+alu/valu/genblk1.simd_alu[7]/sub_add_64_b0
+                                     235.0832      0.1     235.0832       0.0000  0.0000  simd_DW01_sub_26
+alu/valu/genblk1.simd_alu[7]/sub_add_65_b0
+                                     239.9119      0.1     239.9119       0.0000  0.0000  simd_DW01_sub_25
+alu/valu/genblk1.simd_alu[8]/add_131
+                                     156.0444      0.0     156.0444       0.0000  0.0000  simd_DW01_add_7
+alu/valu/genblk1.simd_alu[8]/mult_542
+                                    8967.7252      2.1    8382.1774       0.0000  0.0000  simd_DW02_mult_10
+alu/valu/genblk1.simd_alu[8]/mult_542/FS_1
+                                     585.5478      0.1     585.5478       0.0000  0.0000  simd_DW01_add_26
+alu/valu/genblk1.simd_alu[8]/sll_159
+                                     519.7245      0.1     519.7245       0.0000  0.0000  simd_DW01_ash_15
+alu/valu/genblk1.simd_alu[8]/sll_425
+                                     133.6798      0.0     133.6798       0.0000  0.0000  simd_DW01_ash_14
+alu/valu/genblk1.simd_alu[8]/srl_165
+                                     418.8293      0.1     418.8293       0.0000  0.0000  simd_DW_rash_15
+alu/valu/genblk1.simd_alu[8]/srl_425
+                                     417.5586      0.1     417.5586       0.0000  0.0000  simd_DW_rash_14
+alu/valu/genblk1.simd_alu[8]/sub_136
+                                     197.9782      0.0     197.9782       0.0000  0.0000  simd_DW01_sub_21
+alu/valu/genblk1.simd_alu[8]/sub_425
+                                     181.4588      0.0     181.4588       0.0000  0.0000  simd_DW01_dec_7
+alu/valu/genblk1.simd_alu[8]/sub_add_64_b0
+                                     235.0832      0.1     235.0832       0.0000  0.0000  simd_DW01_sub_23
+alu/valu/genblk1.simd_alu[8]/sub_add_65_b0
+                                     243.4700      0.1     243.4700       0.0000  0.0000  simd_DW01_sub_22
+alu/valu/genblk1.simd_alu[9]/add_131
+                                     156.0444      0.0     156.0444       0.0000  0.0000  simd_DW01_add_6
+alu/valu/genblk1.simd_alu[9]/mult_542
+                                    8521.4483      2.0    7945.5580       0.0000  0.0000  simd_DW02_mult_9
+alu/valu/genblk1.simd_alu[9]/mult_542/FS_1
+                                     575.8903      0.1     575.8903       0.0000  0.0000  simd_DW01_add_25
+alu/valu/genblk1.simd_alu[9]/sll_159
+                                     519.7245      0.1     519.7245       0.0000  0.0000  simd_DW01_ash_13
+alu/valu/genblk1.simd_alu[9]/sll_425
+                                     133.6798      0.0     133.6798       0.0000  0.0000  simd_DW01_ash_12
+alu/valu/genblk1.simd_alu[9]/srl_165
+                                     418.8293      0.1     418.8293       0.0000  0.0000  simd_DW_rash_13
+alu/valu/genblk1.simd_alu[9]/srl_425
+                                     417.5586      0.1     417.5586       0.0000  0.0000  simd_DW_rash_12
+alu/valu/genblk1.simd_alu[9]/sub_136
+                                     197.9782      0.0     197.9782       0.0000  0.0000  simd_DW01_sub_18
+alu/valu/genblk1.simd_alu[9]/sub_425
+                                     181.4588      0.0     181.4588       0.0000  0.0000  simd_DW01_dec_6
+alu/valu/genblk1.simd_alu[9]/sub_add_64_b0
+                                     235.0832      0.1     235.0832       0.0000  0.0000  simd_DW01_sub_20
+alu/valu/genblk1.simd_alu[9]/sub_add_65_b0
+                                     235.8456      0.1     235.8456       0.0000  0.0000  simd_DW01_sub_19
+r19621                               309.0391      0.1     309.0391       0.0000  0.0000  simd_DW01_cmp6_15
+r19633                               309.0391      0.1     309.0391       0.0000  0.0000  simd_DW01_cmp6_14
+r19645                               309.0391      0.1     309.0391       0.0000  0.0000  simd_DW01_cmp6_13
+r19657                               309.0391      0.1     309.0391       0.0000  0.0000  simd_DW01_cmp6_12
+r19669                               309.0391      0.1     309.0391       0.0000  0.0000  simd_DW01_cmp6_11
+r19681                               309.0391      0.1     309.0391       0.0000  0.0000  simd_DW01_cmp6_10
+r19693                               309.0391      0.1     309.0391       0.0000  0.0000  simd_DW01_cmp6_9
+r19705                               309.0391      0.1     309.0391       0.0000  0.0000  simd_DW01_cmp6_8
+r19717                               309.0391      0.1     309.0391       0.0000  0.0000  simd_DW01_cmp6_7
+r19729                               309.0391      0.1     309.0391       0.0000  0.0000  simd_DW01_cmp6_6
+r19741                               309.0391      0.1     309.0391       0.0000  0.0000  simd_DW01_cmp6_5
+r19753                               309.0391      0.1     309.0391       0.0000  0.0000  simd_DW01_cmp6_4
+r19765                               309.0391      0.1     309.0391       0.0000  0.0000  simd_DW01_cmp6_3
+r19777                               309.0391      0.1     309.0391       0.0000  0.0000  simd_DW01_cmp6_2
+r19789                               309.0391      0.1     309.0391       0.0000  0.0000  simd_DW01_cmp6_1
+r19801                               309.0391      0.1     309.0391       0.0000  0.0000  simd_DW01_cmp6_0
+--------------------------------  -----------  -------  -----------  -----------  ------  -----------------
+Total                                                   295461.7162  128304.6006  0.0000
+
+1

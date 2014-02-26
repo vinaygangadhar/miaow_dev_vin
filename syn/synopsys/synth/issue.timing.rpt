@@ -1,0 +1,446 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 5
+Design : issue
+Version: G-2012.06
+Date   : Thu May 16 12:30:32 2013
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: tt1p05v25c   Library: saed32rvt_tt1p05v25c
+Wire Load Model Mode: enclosed
+
+  Startpoint: instruction_arbiter/simf_arbiter/last_wf_id_issued_reg/bits[1]/dff_0/state_reg
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: instruction_arbiter/input_flops[65]/state_reg
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  issue              280000                saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                               0.000000   0.000000
+  clock network delay (ideal)                         0.000000   0.000000
+  instruction_arbiter/simf_arbiter/last_wf_id_issued_reg/bits[1]/dff_0/state_reg/CLK (DFFARX1_RVT)
+                                                      0.000000 # 0.000000 r
+  instruction_arbiter/simf_arbiter/last_wf_id_issued_reg/bits[1]/dff_0/state_reg/Q (DFFARX1_RVT)
+                                                      0.101463   0.101463 r
+  U62636/Y (AND2X1_RVT)                               0.224100   0.325563 r
+  U39629/Y (AO22X1_RVT)                               0.355890   0.681453 r
+  U39628/Y (AO221X1_RVT)                              0.164166   0.845619 r
+  U39486/Y (AO22X1_RVT)                               0.175112   1.020731 r
+  U39485/Y (AO221X1_RVT)                              0.161700   1.182431 r
+  U39430/Y (AO22X1_RVT)                               0.159765   1.342196 r
+  U64553/Y (AOI221X1_RVT)                             0.170592   1.512789 f
+  U64466/Y (INVX0_RVT)                                0.193001   1.705789 r
+  U37452/Y (AO21X1_RVT)                               0.138621   1.844411 r
+  U37451/Y (AO21X1_RVT)                               0.142041   1.986452 r
+  U64193/Y (NAND2X0_RVT)                              0.109480   2.095931 f
+  U64194/Y (NAND2X0_RVT)                              0.114100   2.210031 r
+  U64195/Y (NAND3X0_RVT)                              0.130580   2.340611 f
+  U63177/Y (NAND4X0_RVT)                              0.135165   2.475776 r
+  U64196/Y (NAND2X0_RVT)                              0.110407   2.586183 f
+  U64212/Y (NAND2X0_RVT)                              0.113798   2.699981 r
+  U64211/Y (NAND2X0_RVT)                              0.113953   2.813934 f
+  U61815/Y (NAND2X0_RVT)                              0.135917   2.949851 r
+  U64076/Y (NAND2X0_RVT)                              0.127505   3.077355 f
+  U62536/Y (NAND3X0_RVT)                              0.128932   3.206288 r
+  U62533/Y (AND2X1_RVT)                               0.160819   3.367106 r
+  U61499/Y (AO22X1_RVT)                               0.181552   3.548659 r
+  U62688/Y (AND2X1_RVT)                               0.212708   3.761367 r
+  U61508/Y (NBUFFX2_RVT)                              0.185078   3.946445 r
+  U37300/Y (AO221X1_RVT)                              0.189982   4.136427 r
+  U61759/Y (AO22X1_RVT)                               0.163754   4.300181 r
+  U61494/Y (AO221X1_RVT)                              0.179923   4.480104 r
+  U37212/Y (AOI22X1_RVT)                              0.154256   4.634361 f
+  U37208/Y (AND2X1_RVT)                               0.139711   4.774072 f
+  U62088/Y (AND3X1_RVT)                               0.147802   4.921874 f
+  U62456/Y (AND2X1_RVT)                               0.140608   5.062481 f
+  U62464/Y (AND3X1_RVT)                               0.147781   5.210263 f
+  U63033/Y (AND2X1_RVT)                               0.142910   5.353173 f
+  U64296/Y (AND3X1_RVT)                               0.177999   5.531172 f
+  U62875/Y (AND3X1_RVT)                               0.149141   5.680313 f
+  U62902/Y (AND3X1_RVT)                               0.131479   5.811792 f
+  U62092/Y (AND3X1_RVT)                               0.133986   5.945778 f
+  U37147/Y (NAND2X0_RVT)                              0.129571   6.075349 r
+  U37146/Y (AND3X1_RVT)                               0.130808   6.206157 r
+  U62887/Y (AND3X1_RVT)                               0.132785   6.338942 r
+  U62915/Y (AND3X1_RVT)                               0.149811   6.488753 r
+  U62150/Y (AND3X1_RVT)                               0.147696   6.636449 r
+  U62149/Y (OA22X1_RVT)                               0.137358   6.773808 r
+  U59957/Y (OAI221X2_RVT)                             0.165025   6.938833 f
+  U62143/Y (AND2X1_RVT)                               0.178141   7.116973 f
+  U36893/Y (NAND2X0_RVT)                              0.163627   7.280600 r
+  U62134/Y (AND3X1_RVT)                               0.131192   7.411792 r
+  U62133/Y (AND2X1_RVT)                               0.138235   7.550027 r
+  U62130/Y (AND3X1_RVT)                               0.149900   7.699927 r
+  U36374/Y (AND2X1_RVT)                               0.156320   7.856247 r
+  instruction_arbiter/input_flops[65]/state_reg/D (DFFARX1_RVT)
+                                                      0.118121   7.974368 r
+  data arrival time                                              7.974368
+
+  clock clk (rise edge)                               8.000000   8.000000
+  clock network delay (ideal)                         0.000000   8.000000
+  instruction_arbiter/input_flops[65]/state_reg/CLK (DFFARX1_RVT)
+                                                      0.000000   8.000000 r
+  library setup time                                  -0.025353  7.974647
+  data required time                                             7.974647
+  --------------------------------------------------------------------------
+  data required time                                             7.974647
+  data arrival time                                              -7.974368
+  --------------------------------------------------------------------------
+  slack (MET)                                                    0.000278
+
+
+  Startpoint: instruction_arbiter/simf_arbiter/last_wf_id_issued_reg/bits[1]/dff_0/state_reg
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: instruction_arbiter/input_flops[105]/state_reg
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  issue              280000                saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                               0.000000   0.000000
+  clock network delay (ideal)                         0.000000   0.000000
+  instruction_arbiter/simf_arbiter/last_wf_id_issued_reg/bits[1]/dff_0/state_reg/CLK (DFFARX1_RVT)
+                                                      0.000000 # 0.000000 r
+  instruction_arbiter/simf_arbiter/last_wf_id_issued_reg/bits[1]/dff_0/state_reg/Q (DFFARX1_RVT)
+                                                      0.101463   0.101463 r
+  U62636/Y (AND2X1_RVT)                               0.224100   0.325563 r
+  U39629/Y (AO22X1_RVT)                               0.355890   0.681453 r
+  U39628/Y (AO221X1_RVT)                              0.164166   0.845619 r
+  U39486/Y (AO22X1_RVT)                               0.175112   1.020731 r
+  U39485/Y (AO221X1_RVT)                              0.161700   1.182431 r
+  U39430/Y (AO22X1_RVT)                               0.159765   1.342196 r
+  U64553/Y (AOI221X1_RVT)                             0.170592   1.512789 f
+  U64466/Y (INVX0_RVT)                                0.193001   1.705789 r
+  U37452/Y (AO21X1_RVT)                               0.138621   1.844411 r
+  U37451/Y (AO21X1_RVT)                               0.142041   1.986452 r
+  U64193/Y (NAND2X0_RVT)                              0.109480   2.095931 f
+  U64194/Y (NAND2X0_RVT)                              0.114100   2.210031 r
+  U64195/Y (NAND3X0_RVT)                              0.130580   2.340611 f
+  U63177/Y (NAND4X0_RVT)                              0.135165   2.475776 r
+  U64196/Y (NAND2X0_RVT)                              0.110407   2.586183 f
+  U64212/Y (NAND2X0_RVT)                              0.113798   2.699981 r
+  U64211/Y (NAND2X0_RVT)                              0.113953   2.813934 f
+  U61815/Y (NAND2X0_RVT)                              0.135917   2.949851 r
+  U64076/Y (NAND2X0_RVT)                              0.127505   3.077355 f
+  U62536/Y (NAND3X0_RVT)                              0.128932   3.206288 r
+  U62533/Y (AND2X1_RVT)                               0.160819   3.367106 r
+  U61499/Y (AO22X1_RVT)                               0.181552   3.548659 r
+  U62688/Y (AND2X1_RVT)                               0.212708   3.761367 r
+  U61508/Y (NBUFFX2_RVT)                              0.185078   3.946445 r
+  U37300/Y (AO221X1_RVT)                              0.189982   4.136427 r
+  U61759/Y (AO22X1_RVT)                               0.163754   4.300181 r
+  U61494/Y (AO221X1_RVT)                              0.179923   4.480104 r
+  U37212/Y (AOI22X1_RVT)                              0.154256   4.634361 f
+  U37208/Y (AND2X1_RVT)                               0.139711   4.774072 f
+  U62088/Y (AND3X1_RVT)                               0.147802   4.921874 f
+  U62456/Y (AND2X1_RVT)                               0.140608   5.062481 f
+  U62464/Y (AND3X1_RVT)                               0.147781   5.210263 f
+  U63033/Y (AND2X1_RVT)                               0.142910   5.353173 f
+  U64296/Y (AND3X1_RVT)                               0.177999   5.531172 f
+  U62875/Y (AND3X1_RVT)                               0.149141   5.680313 f
+  U62902/Y (AND3X1_RVT)                               0.131479   5.811792 f
+  U62092/Y (AND3X1_RVT)                               0.133986   5.945778 f
+  U37147/Y (NAND2X0_RVT)                              0.129571   6.075349 r
+  U37146/Y (AND3X1_RVT)                               0.130808   6.206157 r
+  U62887/Y (AND3X1_RVT)                               0.132785   6.338942 r
+  U62915/Y (AND3X1_RVT)                               0.149811   6.488753 r
+  U62150/Y (AND3X1_RVT)                               0.147696   6.636449 r
+  U62149/Y (OA22X1_RVT)                               0.137358   6.773808 r
+  U59957/Y (OAI221X2_RVT)                             0.165025   6.938833 f
+  U62143/Y (AND2X1_RVT)                               0.178141   7.116973 f
+  U36893/Y (NAND2X0_RVT)                              0.163627   7.280600 r
+  U62134/Y (AND3X1_RVT)                               0.131192   7.411792 r
+  U62133/Y (AND2X1_RVT)                               0.138235   7.550027 r
+  U62130/Y (AND3X1_RVT)                               0.149900   7.699927 r
+  U36887/Y (AND2X1_RVT)                               0.156320   7.856247 r
+  instruction_arbiter/input_flops[105]/state_reg/D (DFFARX1_RVT)
+                                                      0.118121   7.974368 r
+  data arrival time                                              7.974368
+
+  clock clk (rise edge)                               8.000000   8.000000
+  clock network delay (ideal)                         0.000000   8.000000
+  instruction_arbiter/input_flops[105]/state_reg/CLK (DFFARX1_RVT)
+                                                      0.000000   8.000000 r
+  library setup time                                  -0.025353  7.974647
+  data required time                                             7.974647
+  --------------------------------------------------------------------------
+  data required time                                             7.974647
+  data arrival time                                              -7.974368
+  --------------------------------------------------------------------------
+  slack (MET)                                                    0.000278
+
+
+  Startpoint: instruction_arbiter/simf_arbiter/last_wf_id_issued_reg/bits[1]/dff_0/state_reg
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: instruction_arbiter/input_flops[57]/state_reg
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  issue              280000                saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                               0.000000   0.000000
+  clock network delay (ideal)                         0.000000   0.000000
+  instruction_arbiter/simf_arbiter/last_wf_id_issued_reg/bits[1]/dff_0/state_reg/CLK (DFFARX1_RVT)
+                                                      0.000000 # 0.000000 r
+  instruction_arbiter/simf_arbiter/last_wf_id_issued_reg/bits[1]/dff_0/state_reg/Q (DFFARX1_RVT)
+                                                      0.101463   0.101463 r
+  U62636/Y (AND2X1_RVT)                               0.224100   0.325563 r
+  U39629/Y (AO22X1_RVT)                               0.355890   0.681453 r
+  U39628/Y (AO221X1_RVT)                              0.164166   0.845619 r
+  U39486/Y (AO22X1_RVT)                               0.175112   1.020731 r
+  U39485/Y (AO221X1_RVT)                              0.161700   1.182431 r
+  U39430/Y (AO22X1_RVT)                               0.159765   1.342196 r
+  U64553/Y (AOI221X1_RVT)                             0.170592   1.512789 f
+  U64466/Y (INVX0_RVT)                                0.193001   1.705789 r
+  U37452/Y (AO21X1_RVT)                               0.138621   1.844411 r
+  U37451/Y (AO21X1_RVT)                               0.142041   1.986452 r
+  U64193/Y (NAND2X0_RVT)                              0.109480   2.095931 f
+  U64194/Y (NAND2X0_RVT)                              0.114100   2.210031 r
+  U64195/Y (NAND3X0_RVT)                              0.130580   2.340611 f
+  U63177/Y (NAND4X0_RVT)                              0.135165   2.475776 r
+  U64196/Y (NAND2X0_RVT)                              0.110407   2.586183 f
+  U64212/Y (NAND2X0_RVT)                              0.113798   2.699981 r
+  U64211/Y (NAND2X0_RVT)                              0.113953   2.813934 f
+  U61815/Y (NAND2X0_RVT)                              0.135917   2.949851 r
+  U64076/Y (NAND2X0_RVT)                              0.127505   3.077355 f
+  U62536/Y (NAND3X0_RVT)                              0.128932   3.206288 r
+  U62533/Y (AND2X1_RVT)                               0.160819   3.367106 r
+  U61499/Y (AO22X1_RVT)                               0.181552   3.548659 r
+  U62688/Y (AND2X1_RVT)                               0.212708   3.761367 r
+  U61508/Y (NBUFFX2_RVT)                              0.185078   3.946445 r
+  U37300/Y (AO221X1_RVT)                              0.189982   4.136427 r
+  U61759/Y (AO22X1_RVT)                               0.163754   4.300181 r
+  U61494/Y (AO221X1_RVT)                              0.179923   4.480104 r
+  U37212/Y (AOI22X1_RVT)                              0.154256   4.634361 f
+  U37208/Y (AND2X1_RVT)                               0.139711   4.774072 f
+  U62088/Y (AND3X1_RVT)                               0.147802   4.921874 f
+  U62456/Y (AND2X1_RVT)                               0.140608   5.062481 f
+  U62464/Y (AND3X1_RVT)                               0.147781   5.210263 f
+  U63033/Y (AND2X1_RVT)                               0.142910   5.353173 f
+  U64296/Y (AND3X1_RVT)                               0.177999   5.531172 f
+  U62875/Y (AND3X1_RVT)                               0.149141   5.680313 f
+  U62902/Y (AND3X1_RVT)                               0.131479   5.811792 f
+  U62092/Y (AND3X1_RVT)                               0.133986   5.945778 f
+  U37147/Y (NAND2X0_RVT)                              0.129571   6.075349 r
+  U37146/Y (AND3X1_RVT)                               0.130808   6.206157 r
+  U62887/Y (AND3X1_RVT)                               0.132785   6.338942 r
+  U62915/Y (AND3X1_RVT)                               0.149811   6.488753 r
+  U62150/Y (AND3X1_RVT)                               0.147696   6.636449 r
+  U62149/Y (OA22X1_RVT)                               0.137358   6.773808 r
+  U59957/Y (OAI221X2_RVT)                             0.165025   6.938833 f
+  U62143/Y (AND2X1_RVT)                               0.178141   7.116973 f
+  U36497/Y (NAND2X0_RVT)                              0.163627   7.280600 r
+  U64151/Y (AND3X1_RVT)                               0.130995   7.411595 r
+  U64412/Y (AND2X1_RVT)                               0.138235   7.549830 r
+  U63657/Y (AND3X1_RVT)                               0.149900   7.699730 r
+  U36384/Y (AND2X1_RVT)                               0.156322   7.856052 r
+  instruction_arbiter/input_flops[57]/state_reg/D (DFFARX1_RVT)
+                                                      0.118121   7.974173 r
+  data arrival time                                              7.974173
+
+  clock clk (rise edge)                               8.000000   8.000000
+  clock network delay (ideal)                         0.000000   8.000000
+  instruction_arbiter/input_flops[57]/state_reg/CLK (DFFARX1_RVT)
+                                                      0.000000   8.000000 r
+  library setup time                                  -0.025353  7.974647
+  data required time                                             7.974647
+  --------------------------------------------------------------------------
+  data required time                                             7.974647
+  data arrival time                                              -7.974173
+  --------------------------------------------------------------------------
+  slack (MET)                                                    0.000474
+
+
+  Startpoint: instruction_arbiter/simf_arbiter/last_wf_id_issued_reg/bits[1]/dff_0/state_reg
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: instruction_arbiter/input_flops[137]/state_reg
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  issue              280000                saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                               0.000000   0.000000
+  clock network delay (ideal)                         0.000000   0.000000
+  instruction_arbiter/simf_arbiter/last_wf_id_issued_reg/bits[1]/dff_0/state_reg/CLK (DFFARX1_RVT)
+                                                      0.000000 # 0.000000 r
+  instruction_arbiter/simf_arbiter/last_wf_id_issued_reg/bits[1]/dff_0/state_reg/Q (DFFARX1_RVT)
+                                                      0.101463   0.101463 r
+  U62636/Y (AND2X1_RVT)                               0.224100   0.325563 r
+  U39629/Y (AO22X1_RVT)                               0.355890   0.681453 r
+  U39628/Y (AO221X1_RVT)                              0.164166   0.845619 r
+  U39486/Y (AO22X1_RVT)                               0.175112   1.020731 r
+  U39485/Y (AO221X1_RVT)                              0.161700   1.182431 r
+  U39430/Y (AO22X1_RVT)                               0.159765   1.342196 r
+  U64553/Y (AOI221X1_RVT)                             0.170592   1.512789 f
+  U64466/Y (INVX0_RVT)                                0.193001   1.705789 r
+  U37452/Y (AO21X1_RVT)                               0.138621   1.844411 r
+  U37451/Y (AO21X1_RVT)                               0.142041   1.986452 r
+  U64193/Y (NAND2X0_RVT)                              0.109480   2.095931 f
+  U64194/Y (NAND2X0_RVT)                              0.114100   2.210031 r
+  U64195/Y (NAND3X0_RVT)                              0.130580   2.340611 f
+  U63177/Y (NAND4X0_RVT)                              0.135165   2.475776 r
+  U64196/Y (NAND2X0_RVT)                              0.110407   2.586183 f
+  U64212/Y (NAND2X0_RVT)                              0.113798   2.699981 r
+  U64211/Y (NAND2X0_RVT)                              0.113953   2.813934 f
+  U61815/Y (NAND2X0_RVT)                              0.135917   2.949851 r
+  U64076/Y (NAND2X0_RVT)                              0.127505   3.077355 f
+  U62536/Y (NAND3X0_RVT)                              0.128932   3.206288 r
+  U62533/Y (AND2X1_RVT)                               0.160819   3.367106 r
+  U61499/Y (AO22X1_RVT)                               0.181552   3.548659 r
+  U62688/Y (AND2X1_RVT)                               0.212708   3.761367 r
+  U61508/Y (NBUFFX2_RVT)                              0.185078   3.946445 r
+  U37300/Y (AO221X1_RVT)                              0.189982   4.136427 r
+  U61759/Y (AO22X1_RVT)                               0.163754   4.300181 r
+  U61494/Y (AO221X1_RVT)                              0.179923   4.480104 r
+  U37212/Y (AOI22X1_RVT)                              0.154256   4.634361 f
+  U37208/Y (AND2X1_RVT)                               0.139711   4.774072 f
+  U62088/Y (AND3X1_RVT)                               0.147802   4.921874 f
+  U62456/Y (AND2X1_RVT)                               0.140608   5.062481 f
+  U62464/Y (AND3X1_RVT)                               0.147781   5.210263 f
+  U63033/Y (AND2X1_RVT)                               0.142910   5.353173 f
+  U64296/Y (AND3X1_RVT)                               0.177999   5.531172 f
+  U62875/Y (AND3X1_RVT)                               0.149141   5.680313 f
+  U62902/Y (AND3X1_RVT)                               0.131479   5.811792 f
+  U62092/Y (AND3X1_RVT)                               0.133986   5.945778 f
+  U37147/Y (NAND2X0_RVT)                              0.129571   6.075349 r
+  U37146/Y (AND3X1_RVT)                               0.130808   6.206157 r
+  U62887/Y (AND3X1_RVT)                               0.132785   6.338942 r
+  U62915/Y (AND3X1_RVT)                               0.149811   6.488753 r
+  U62150/Y (AND3X1_RVT)                               0.147696   6.636449 r
+  U62149/Y (OA22X1_RVT)                               0.137358   6.773808 r
+  U59957/Y (OAI221X2_RVT)                             0.165025   6.938833 f
+  U62143/Y (AND2X1_RVT)                               0.178141   7.116973 f
+  U36497/Y (NAND2X0_RVT)                              0.163627   7.280600 r
+  U64151/Y (AND3X1_RVT)                               0.130995   7.411595 r
+  U64412/Y (AND2X1_RVT)                               0.138235   7.549830 r
+  U63657/Y (AND3X1_RVT)                               0.149900   7.699730 r
+  U36491/Y (AND2X1_RVT)                               0.156322   7.856052 r
+  instruction_arbiter/input_flops[137]/state_reg/D (DFFARX1_RVT)
+                                                      0.118121   7.974173 r
+  data arrival time                                              7.974173
+
+  clock clk (rise edge)                               8.000000   8.000000
+  clock network delay (ideal)                         0.000000   8.000000
+  instruction_arbiter/input_flops[137]/state_reg/CLK (DFFARX1_RVT)
+                                                      0.000000   8.000000 r
+  library setup time                                  -0.025353  7.974647
+  data required time                                             7.974647
+  --------------------------------------------------------------------------
+  data required time                                             7.974647
+  data arrival time                                              -7.974173
+  --------------------------------------------------------------------------
+  slack (MET)                                                    0.000474
+
+
+  Startpoint: instruction_arbiter/salu_arbiter/last_wf_id_issued_reg/bits[1]/dff_0/state_reg
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: instruction_arbiter/input_flops[54]/state_reg
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  issue              280000                saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                               0.000000   0.000000
+  clock network delay (ideal)                         0.000000   0.000000
+  instruction_arbiter/salu_arbiter/last_wf_id_issued_reg/bits[1]/dff_0/state_reg/CLK (DFFARX1_RVT)
+                                                      0.000000 # 0.000000 r
+  instruction_arbiter/salu_arbiter/last_wf_id_issued_reg/bits[1]/dff_0/state_reg/Q (DFFARX1_RVT)
+                                                      0.099417   0.099417 r
+  U61404/Y (AND2X1_RVT)                               0.196924   0.296341 r
+  U64477/Y (NBUFFX2_RVT)                              0.224145   0.520485 r
+  U38851/Y (AO22X1_RVT)                               0.220145   0.740630 r
+  U38850/Y (AO221X1_RVT)                              0.165769   0.906399 r
+  U38699/Y (AO22X1_RVT)                               0.190217   1.096616 r
+  U38698/Y (AO221X1_RVT)                              0.161709   1.258325 r
+  U38697/Y (AO22X1_RVT)                               0.159774   1.418099 r
+  U69719/Y (AOI221X1_RVT)                             0.168780   1.586879 f
+  U38696/Y (AND4X1_RVT)                               0.167331   1.754210 f
+  U63302/Y (AND4X1_RVT)                               0.137031   1.891241 f
+  U61471/Y (AND4X1_RVT)                               0.151127   2.042369 f
+  U61470/Y (AND3X1_RVT)                               0.134801   2.177170 f
+  U61467/Y (NAND3X0_RVT)                              0.124069   2.301239 r
+  U61468/Y (AND2X1_RVT)                               0.136595   2.437835 r
+  U61722/Y (AND3X1_RVT)                               0.129957   2.567792 r
+  U61721/Y (AND3X1_RVT)                               0.130433   2.698225 r
+  U61720/Y (AND3X1_RVT)                               0.130389   2.828614 r
+  U61433/Y (AND3X1_RVT)                               0.132687   2.961301 r
+  U61441/Y (NAND2X0_RVT)                              0.145824   3.107125 f
+  U61436/Y (AND2X1_RVT)                               0.218493   3.325617 f
+  U61680/Y (AND3X1_RVT)                               0.173394   3.499011 f
+  U38509/Y (AND2X1_RVT)                               0.213805   3.712816 f
+  U61634/Y (AO22X1_RVT)                               0.180930   3.893746 f
+  U38386/Y (AO221X1_RVT)                              0.151252   4.044998 f
+  U38361/Y (AO22X1_RVT)                               0.167532   4.212530 f
+  U38360/Y (AO221X1_RVT)                              0.149725   4.362255 f
+  U38336/Y (AOI22X1_RVT)                              0.166371   4.528626 r
+  U64585/Y (AND2X1_RVT)                               0.137520   4.666146 r
+  U38331/Y (AND3X1_RVT)                               0.131989   4.798135 r
+  U38327/Y (AND2X1_RVT)                               0.138134   4.936269 r
+  U61315/Y (AND3X1_RVT)                               0.146843   5.083112 r
+  U61312/Y (AND3X1_RVT)                               0.134862   5.217974 r
+  U61313/Y (AND3X1_RVT)                               0.161497   5.379471 r
+  U62393/Y (NBUFFX2_RVT)                              0.146694   5.526165 r
+  U62742/Y (AND3X1_RVT)                               0.159855   5.686021 r
+  U62010/Y (NAND2X0_RVT)                              0.115741   5.801762 f
+  U61491/Y (NOR3X0_RVT)                               0.198699   6.000460 r
+  U61287/Y (NAND2X0_RVT)                              0.129591   6.130052 f
+  U38277/Y (AND3X1_RVT)                               0.152748   6.282799 f
+  U38276/Y (AND3X1_RVT)                               0.133844   6.416644 f
+  U38275/Y (AND4X1_RVT)                               0.148049   6.564692 f
+  U59960/Y (NAND4X1_RVT)                              0.158143   6.722836 r
+  U61349/Y (AOI221X1_RVT)                             0.211870   6.934706 f
+  U61688/Y (AND3X1_RVT)                               0.159475   7.094181 f
+  U36533/Y (NAND2X0_RVT)                              0.181918   7.276099 r
+  U63768/Y (AND3X1_RVT)                               0.131378   7.407477 r
+  U63778/Y (AND2X1_RVT)                               0.138235   7.545712 r
+  U63454/Y (AND3X1_RVT)                               0.149900   7.695612 r
+  U36387/Y (AND2X1_RVT)                               0.156320   7.851932 r
+  instruction_arbiter/input_flops[54]/state_reg/D (DFFARX2_RVT)
+                                                      0.118053   7.969985 r
+  data arrival time                                              7.969985
+
+  clock clk (rise edge)                               8.000000   8.000000
+  clock network delay (ideal)                         0.000000   8.000000
+  instruction_arbiter/input_flops[54]/state_reg/CLK (DFFARX2_RVT)
+                                                      0.000000   8.000000 r
+  library setup time                                  -0.029428  7.970572
+  data required time                                             7.970572
+  --------------------------------------------------------------------------
+  data required time                                             7.970572
+  data arrival time                                              -7.969985
+  --------------------------------------------------------------------------
+  slack (MET)                                                    0.000586
+
+
+1

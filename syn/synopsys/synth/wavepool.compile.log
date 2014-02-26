@@ -1,0 +1,99 @@
+Warning: Ignoring -power_effort option since there is no power constraint. (PWR-59)
+Warning: Setting attribute 'fix_multiple_port_nets' on design 'wavepool'. (UIO-59)
+Information: Evaluating DesignWare library utilization. (UISN-27)
+
+============================================================================
+| DesignWare Building Block Library  |         Version         | Available |
+============================================================================
+| Basic DW Building Blocks           | G-2012.06-DWBB_201206.0 |     *     |
+| Licensed DW Building Blocks        |                         |     *     |
+============================================================================
+
+
+Information: There are 160 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
+
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'wavepool'
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+
+  Beginning Mapping Optimizations  (High effort)
+  -------------------------------
+
+   ELAPSED            WORST NEG TOTAL NEG  DESIGN                             MIN DELAY
+    TIME      AREA      SLACK     SLACK   RULE COST         ENDPOINT            COST   
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:03:29  524368.1      0.00       0.0   21704.8                                0.00
+    0:03:29  524368.1      0.00       0.0   21704.8                                0.00
+    0:03:29  503747.6      0.00       0.0   16250.4                                0.00
+    0:03:31  487042.7      0.00       0.0    9794.4                                0.00
+    0:03:32  468091.7      0.00       0.0    3694.3                                0.00
+    0:03:49  490071.3      0.00       0.0       0.0                                0.00
+    0:03:50  490071.3      0.00       0.0       0.0                                0.00
+    0:03:50  490071.3      0.00       0.0       0.0                                0.00
+    0:03:50  490071.3      0.00       0.0       0.0                                0.00
+    0:03:50  490071.3      0.00       0.0       0.0                                0.00
+    0:03:51  490071.3      0.00       0.0       0.0                                0.00
+    0:03:57  473120.4      0.00       0.0       0.0                                0.00
+    0:03:58  473119.9      0.00       0.0       0.0                                0.00
+    0:04:06  473119.9      0.00       0.0       0.0                                0.00
+    0:04:06  473119.9      0.00       0.0       0.0                                0.00
+    0:04:07  473119.9      0.00       0.0       0.0                                0.00
+    0:04:07  473119.9      0.00       0.0       0.0                                0.00
+    0:04:07  473119.9      0.00       0.0       0.0                                0.00
+    0:04:07  473119.9      0.00       0.0       0.0                                0.00
+    0:04:07  473119.9      0.00       0.0       0.0                                0.00
+    0:04:09  441129.3      0.00       0.0       0.0                                0.00
+
+
+
+  Beginning Delay Optimization Phase
+  ----------------------------------
+
+   ELAPSED            WORST NEG TOTAL NEG  DESIGN                             MIN DELAY
+    TIME      AREA      SLACK     SLACK   RULE COST         ENDPOINT            COST   
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:04:09  441129.3      0.00       0.0       0.0                                0.00
+    0:04:10  441129.3      0.00       0.0       0.0                                0.00
+    0:04:12  441127.0      0.00       0.0       0.0                                0.00
+
+
+  Beginning Area-Recovery Phase  (cleanup)
+  -----------------------------
+
+   ELAPSED            WORST NEG TOTAL NEG  DESIGN                             MIN DELAY
+    TIME      AREA      SLACK     SLACK   RULE COST         ENDPOINT            COST   
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:04:15  441127.0      0.00       0.0       0.0                                0.00
+    0:04:15  441127.0      0.00       0.0       0.0                                0.00
+    0:04:16  441127.0      0.00       0.0       0.0                                0.00
+    0:04:25  440557.7      0.00       0.0       0.0                                0.00
+    0:04:39  440453.9      0.00       0.0       0.0                                0.00
+    0:04:43  440452.8      0.00       0.0       0.0                                0.00
+    0:04:46  440452.2      0.00       0.0       0.0                                0.00
+    0:04:50  440451.3      0.00       0.0       0.0                                0.00
+    0:04:56  440450.5      0.00       0.0       0.0                                0.00
+    0:04:59  440447.8      0.00       0.0       0.0                                0.00
+    0:05:43  440446.7      0.00       0.0       0.0                                0.00
+    0:05:43  440446.7      0.00       0.0       0.0                                0.00
+    0:05:43  440446.7      0.00       0.0       0.0                                0.00
+    0:05:43  440446.7      0.00       0.0       0.0                                0.00
+    0:05:43  440446.7      0.00       0.0       0.0                                0.00
+    0:05:44  440446.7      0.00       0.0       0.0                                0.00
+    0:05:44  440446.7      0.00       0.0       0.0                                0.00
+    0:05:44  440446.7      0.00       0.0       0.0                                0.00
+    0:05:44  440446.7      0.00       0.0       0.0                                0.00
+    0:05:44  440446.7      0.00       0.0       0.0                                0.00
+    0:05:44  440446.7      0.00       0.0       0.0                                0.00
+    0:05:44  440446.7      0.00       0.0       0.0                                0.00
+Loading db file '/p/vertical/afs-huge0/synopsys/32nmlib/SAED32_EDK/lib/stdcell_rvt/db_nldm/saed32rvt_tt1p05v25c.db'
+
+  Optimization Complete
+  ---------------------
+Warning: Design 'wavepool' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+     Net 'clk': 22392 load(s), 1 driver(s)
+1

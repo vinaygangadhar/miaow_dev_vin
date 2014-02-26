@@ -1,0 +1,948 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 5
+Design : simd
+Version: G-2012.06
+Date   : Thu May 16 13:14:00 2013
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: tt1p05v25c   Library: saed32rvt_tt1p05v25c
+Wire Load Model Mode: enclosed
+
+  Startpoint: alu/alu_controller/alu_fsm/EX_flop/state_reg
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[191]/dff_0/state_reg
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  simd               540000                saed32rvt_tt1p05v25c
+  simd_DW02_mult_13  16000                 saed32rvt_tt1p05v25c
+  simd_DW01_add_29   8000                  saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                               0.000000   0.000000
+  clock network delay (ideal)                         0.000000   0.000000
+  alu/alu_controller/alu_fsm/EX_flop/state_reg/CLK (DFFARX2_RVT)
+                                                      0.000000 # 0.000000 r
+  alu/alu_controller/alu_fsm/EX_flop/state_reg/Q (DFFARX2_RVT)
+                                                      0.111297   0.111297 r
+  U35616/Y (NAND2X0_RVT)                              0.266923   0.378220 f
+  U35992/Y (NOR2X1_RVT)                               0.311237   0.689456 r
+  U36172/Y (AND2X1_RVT)                               0.148823   0.838279 r
+  U36247/Y (AND2X1_RVT)                               0.178425   1.016704 r
+  U36154/Y (IBUFFX4_RVT)                              0.250393   1.267097 f
+  U36052/Y (AOI21X2_RVT)                              0.579462   1.846559 r
+  U43379/Y (NBUFFX2_RVT)                              0.191954   2.038513 r
+  U15220/Y (AO222X1_RVT)                              0.468153   2.506666 r
+  alu/valu/genblk1.simd_alu[5]/mult_542/B[20] (simd_DW02_mult_13)
+                                                      0.000000   2.506666 r
+  alu/valu/genblk1.simd_alu[5]/mult_542/U1035/Y (NBUFFX2_RVT)
+                                                      0.186411   2.693077 r
+  alu/valu/genblk1.simd_alu[5]/mult_542/U1801/Y (AND2X1_RVT)
+                                                      0.045028   2.738105 r
+  alu/valu/genblk1.simd_alu[5]/mult_542/U730/Y (XOR2X2_RVT)
+                                                      0.082083   2.820188 f
+  alu/valu/genblk1.simd_alu[5]/mult_542/U86/Y (XOR3X1_RVT)
+                                                      0.117192   2.937380 r
+  alu/valu/genblk1.simd_alu[5]/mult_542/S2_3_18/S (FADDX1_RVT)
+                                                      0.113995   3.051374 f
+  alu/valu/genblk1.simd_alu[5]/mult_542/U607/Y (NAND2X0_RVT)
+                                                      0.035229   3.086603 r
+  alu/valu/genblk1.simd_alu[5]/mult_542/U610/Y (NAND3X0_RVT)
+                                                      0.052480   3.139083 f
+  alu/valu/genblk1.simd_alu[5]/mult_542/S2_5_17/CO (FADDX1_RVT)
+                                                      0.092518   3.231601 f
+  alu/valu/genblk1.simd_alu[5]/mult_542/U10/Y (XOR3X2_RVT)
+                                                      0.110546   3.342147 r
+  alu/valu/genblk1.simd_alu[5]/mult_542/S2_7_16/S (FADDX1_RVT)
+                                                      0.123489   3.465636 f
+  alu/valu/genblk1.simd_alu[5]/mult_542/U592/Y (NAND2X0_RVT)
+                                                      0.034890   3.500526 r
+  alu/valu/genblk1.simd_alu[5]/mult_542/U595/Y (NAND3X0_RVT)
+                                                      0.052395   3.552921 f
+  alu/valu/genblk1.simd_alu[5]/mult_542/S2_9_15/S (FADDX1_RVT)
+                                                      0.125381   3.678302 r
+  alu/valu/genblk1.simd_alu[5]/mult_542/S2_10_14/CO (FADDX1_RVT)
+                                                      0.083048   3.761350 r
+  alu/valu/genblk1.simd_alu[5]/mult_542/S2_11_14/CO (FADDX1_RVT)
+                                                      0.094380   3.855730 r
+  alu/valu/genblk1.simd_alu[5]/mult_542/S2_12_14/CO (FADDX1_RVT)
+                                                      0.094381   3.950111 r
+  alu/valu/genblk1.simd_alu[5]/mult_542/S2_13_14/CO (FADDX1_RVT)
+                                                      0.094381   4.044492 r
+  alu/valu/genblk1.simd_alu[5]/mult_542/S2_14_14/S (FADDX1_RVT)
+                                                      0.121387   4.165879 f
+  alu/valu/genblk1.simd_alu[5]/mult_542/S2_15_13/CO (FADDX1_RVT)
+                                                      0.076530   4.242409 f
+  alu/valu/genblk1.simd_alu[5]/mult_542/U107/Y (XOR3X1_RVT)
+                                                      0.130340   4.372749 f
+  alu/valu/genblk1.simd_alu[5]/mult_542/S2_17_12/S (FADDX1_RVT)
+                                                      0.111425   4.484174 r
+  alu/valu/genblk1.simd_alu[5]/mult_542/S2_18_11/S (FADDX1_RVT)
+                                                      0.109818   4.593993 f
+  alu/valu/genblk1.simd_alu[5]/mult_542/S2_19_10/S (FADDX1_RVT)
+                                                      0.110636   4.704629 r
+  alu/valu/genblk1.simd_alu[5]/mult_542/S2_20_9/S (FADDX1_RVT)
+                                                      0.109818   4.814447 f
+  alu/valu/genblk1.simd_alu[5]/mult_542/S2_21_8/S (FADDX1_RVT)
+                                                      0.110959   4.925406 r
+  alu/valu/genblk1.simd_alu[5]/mult_542/S2_22_7/S (FADDX1_RVT)
+                                                      0.109818   5.035225 f
+  alu/valu/genblk1.simd_alu[5]/mult_542/S2_23_6/S (FADDX1_RVT)
+                                                      0.110959   5.146184 r
+  alu/valu/genblk1.simd_alu[5]/mult_542/S2_24_5/CO (FADDX1_RVT)
+                                                      0.082968   5.229152 r
+  alu/valu/genblk1.simd_alu[5]/mult_542/S2_25_5/S (FADDX1_RVT)
+                                                      0.121386   5.350538 f
+  alu/valu/genblk1.simd_alu[5]/mult_542/S2_26_4/S (FADDX1_RVT)
+                                                      0.110655   5.461193 r
+  alu/valu/genblk1.simd_alu[5]/mult_542/S2_27_3/CO (FADDX1_RVT)
+                                                      0.082968   5.544161 r
+  alu/valu/genblk1.simd_alu[5]/mult_542/S2_28_3/CO (FADDX1_RVT)
+                                                      0.094380   5.638541 r
+  alu/valu/genblk1.simd_alu[5]/mult_542/S2_29_3/S (FADDX1_RVT)
+                                                      0.123150   5.761691 f
+  alu/valu/genblk1.simd_alu[5]/mult_542/U821/Y (NAND2X0_RVT)
+                                                      0.035742   5.797433 r
+  alu/valu/genblk1.simd_alu[5]/mult_542/U823/Y (NAND3X0_RVT)
+                                                      0.053735   5.851168 f
+  alu/valu/genblk1.simd_alu[5]/mult_542/S4_2/S (FADDX1_RVT)
+                                                      0.127882   5.979050 r
+  alu/valu/genblk1.simd_alu[5]/mult_542/U1121/Y (AND2X1_RVT)
+                                                      0.045944   6.024994 r
+  alu/valu/genblk1.simd_alu[5]/mult_542/FS_1/B[32] (simd_DW01_add_29)
+                                                      0.000000   6.024994 r
+  alu/valu/genblk1.simd_alu[5]/mult_542/FS_1/U34/Y (AND2X1_RVT)
+                                                      0.040196   6.065190 r
+  alu/valu/genblk1.simd_alu[5]/mult_542/FS_1/U240/Y (AO21X1_RVT)
+                                                      0.049748   6.114938 r
+  alu/valu/genblk1.simd_alu[5]/mult_542/FS_1/U239/Y (AO21X1_RVT)
+                                                      0.050723   6.165661 r
+  alu/valu/genblk1.simd_alu[5]/mult_542/FS_1/U238/Y (AO21X1_RVT)
+                                                      0.053903   6.219564 r
+  alu/valu/genblk1.simd_alu[5]/mult_542/FS_1/U172/Y (AO221X1_RVT)
+                                                      0.065875   6.285439 r
+  alu/valu/genblk1.simd_alu[5]/mult_542/FS_1/U171/Y (AO21X1_RVT)
+                                                      0.052037   6.337476 r
+  alu/valu/genblk1.simd_alu[5]/mult_542/FS_1/U170/Y (AO21X1_RVT)
+                                                      0.050757   6.388233 r
+  alu/valu/genblk1.simd_alu[5]/mult_542/FS_1/U169/Y (AO21X1_RVT)
+                                                      0.050733   6.438966 r
+  alu/valu/genblk1.simd_alu[5]/mult_542/FS_1/U168/Y (AO21X1_RVT)
+                                                      0.053323   6.492289 r
+  alu/valu/genblk1.simd_alu[5]/mult_542/FS_1/U167/Y (AO21X1_RVT)
+                                                      0.052831   6.545120 r
+  alu/valu/genblk1.simd_alu[5]/mult_542/FS_1/U162/Y (AOI21X1_RVT)
+                                                      0.062913   6.608033 f
+  alu/valu/genblk1.simd_alu[5]/mult_542/FS_1/U157/Y (OA21X1_RVT)
+                                                      0.045235   6.653268 f
+  alu/valu/genblk1.simd_alu[5]/mult_542/FS_1/U152/Y (OA21X1_RVT)
+                                                      0.043907   6.697175 f
+  alu/valu/genblk1.simd_alu[5]/mult_542/FS_1/U147/Y (OA21X1_RVT)
+                                                      0.043907   6.741082 f
+  alu/valu/genblk1.simd_alu[5]/mult_542/FS_1/U142/Y (OA21X1_RVT)
+                                                      0.043817   6.784898 f
+  alu/valu/genblk1.simd_alu[5]/mult_542/FS_1/U137/Y (OA21X1_RVT)
+                                                      0.043817   6.828715 f
+  alu/valu/genblk1.simd_alu[5]/mult_542/FS_1/U132/Y (OA21X1_RVT)
+                                                      0.046610   6.875325 f
+  alu/valu/genblk1.simd_alu[5]/mult_542/FS_1/U127/Y (OA21X1_RVT)
+                                                      0.046169   6.921494 f
+  alu/valu/genblk1.simd_alu[5]/mult_542/FS_1/U122/Y (OA21X1_RVT)
+                                                      0.046754   6.968248 f
+  alu/valu/genblk1.simd_alu[5]/mult_542/FS_1/U117/Y (OA21X1_RVT)
+                                                      0.046203   7.014451 f
+  alu/valu/genblk1.simd_alu[5]/mult_542/FS_1/U112/Y (OA21X1_RVT)
+                                                      0.043857   7.058308 f
+  alu/valu/genblk1.simd_alu[5]/mult_542/FS_1/U110/Y (OA21X1_RVT)
+                                                      0.043895   7.102203 f
+  alu/valu/genblk1.simd_alu[5]/mult_542/FS_1/U108/Y (AND2X1_RVT)
+                                                      0.037650   7.139853 f
+  alu/valu/genblk1.simd_alu[5]/mult_542/FS_1/U46/Y (OAI22X1_RVT)
+                                                      0.058185   7.198038 r
+  alu/valu/genblk1.simd_alu[5]/mult_542/FS_1/U40/Y (XOR2X1_RVT)
+                                                      0.052925   7.250963 r
+  alu/valu/genblk1.simd_alu[5]/mult_542/FS_1/SUM[61] (simd_DW01_add_29)
+                                                      0.000000   7.250963 r
+  alu/valu/genblk1.simd_alu[5]/mult_542/PRODUCT[63] (simd_DW02_mult_13)
+                                                      0.000000   7.250963 r
+  U44428/Y (AOI222X1_RVT)                             0.176959   7.427922 f
+  U44418/Y (AND3X1_RVT)                               0.140358   7.568280 f
+  U36378/Y (NAND2X0_RVT)                              0.121736   7.690016 r
+  U32770/Y (AO22X1_RVT)                               0.149849   7.839865 r
+  alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[191]/dff_0/state_reg/D (DFFARX1_RVT)
+                                                      0.129578   7.969443 r
+  data arrival time                                              7.969443
+
+  clock clk (rise edge)                               8.000000   8.000000
+  clock network delay (ideal)                         0.000000   8.000000
+  alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[191]/dff_0/state_reg/CLK (DFFARX1_RVT)
+                                                      0.000000   8.000000 r
+  library setup time                                  -0.030334  7.969666
+  data required time                                             7.969666
+  --------------------------------------------------------------------------
+  data required time                                             7.969666
+  data arrival time                                              -7.969443
+  --------------------------------------------------------------------------
+  slack (MET)                                                    0.000223
+
+
+  Startpoint: alu/alu_controller/alu_fsm/EX_flop/state_reg
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[127]/dff_0/state_reg
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  simd               540000                saed32rvt_tt1p05v25c
+  simd_DW02_mult_0   16000                 saed32rvt_tt1p05v25c
+  simd_DW01_add_16   8000                  saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                               0.000000   0.000000
+  clock network delay (ideal)                         0.000000   0.000000
+  alu/alu_controller/alu_fsm/EX_flop/state_reg/CLK (DFFARX2_RVT)
+                                                      0.000000 # 0.000000 r
+  alu/alu_controller/alu_fsm/EX_flop/state_reg/QN (DFFARX2_RVT)
+                                                      0.076501   0.076501 r
+  U35870/Y (NOR2X2_RVT)                               0.289259   0.365760 f
+  U36003/Y (INVX0_RVT)                                0.290170   0.655930 r
+  U36198/Y (AND3X1_RVT)                               0.162336   0.818265 r
+  U35873/Y (NAND3X1_RVT)                              0.150690   0.968955 f
+  U36364/Y (AND2X1_RVT)                               0.146072   1.115028 f
+  U36323/Y (NAND2X0_RVT)                              0.134341   1.249369 r
+  U36282/Y (IBUFFX2_RVT)                              0.221675   1.471044 f
+  U35872/Y (NOR2X2_RVT)                               0.257436   1.728480 r
+  U15404/Y (AND2X1_RVT)                               0.194389   1.922869 r
+  U44423/Y (NBUFFX2_RVT)                              0.227862   2.150731 r
+  U15391/Y (AO222X1_RVT)                              0.297374   2.448105 r
+  alu/valu/genblk1.simd_alu[3]/mult_542/B[18] (simd_DW02_mult_0)
+                                                      0.000000   2.448105 r
+  alu/valu/genblk1.simd_alu[3]/mult_542/U819/Y (NBUFFX2_RVT)
+                                                      0.216610   2.664715 r
+  alu/valu/genblk1.simd_alu[3]/mult_542/U1664/Y (AND2X1_RVT)
+                                                      0.057734   2.722449 r
+  alu/valu/genblk1.simd_alu[3]/mult_542/U771/Y (XOR2X1_RVT)
+                                                      0.090871   2.813320 f
+  alu/valu/genblk1.simd_alu[3]/mult_542/S2_2_17/S (FADDX1_RVT)
+                                                      0.110854   2.924174 r
+  alu/valu/genblk1.simd_alu[3]/mult_542/S2_3_16/S (FADDX1_RVT)
+                                                      0.109818   3.033991 f
+  alu/valu/genblk1.simd_alu[3]/mult_542/S2_4_15/S (FADDX1_RVT)
+                                                      0.110655   3.144646 r
+  alu/valu/genblk1.simd_alu[3]/mult_542/S2_5_14/S (FADDX1_RVT)
+                                                      0.109818   3.254464 f
+  alu/valu/genblk1.simd_alu[3]/mult_542/S2_6_13/S (FADDX1_RVT)
+                                                      0.110655   3.365119 r
+  alu/valu/genblk1.simd_alu[3]/mult_542/S2_7_12/S (FADDX1_RVT)
+                                                      0.109819   3.474938 f
+  alu/valu/genblk1.simd_alu[3]/mult_542/S2_8_11/S (FADDX1_RVT)
+                                                      0.110960   3.585898 r
+  alu/valu/genblk1.simd_alu[3]/mult_542/S2_9_10/S (FADDX1_RVT)
+                                                      0.109818   3.695717 f
+  alu/valu/genblk1.simd_alu[3]/mult_542/S2_10_9/S (FADDX1_RVT)
+                                                      0.114088   3.809805 r
+  alu/valu/genblk1.simd_alu[3]/mult_542/U40/Y (XOR3X1_RVT)
+                                                      0.131257   3.941061 f
+  alu/valu/genblk1.simd_alu[3]/mult_542/S2_12_7/S (FADDX1_RVT)
+                                                      0.111421   4.052482 r
+  alu/valu/genblk1.simd_alu[3]/mult_542/S2_13_6/CO (FADDX1_RVT)
+                                                      0.083738   4.136220 r
+  alu/valu/genblk1.simd_alu[3]/mult_542/U114/Y (XOR3X1_RVT)
+                                                      0.135967   4.272187 f
+  alu/valu/genblk1.simd_alu[3]/mult_542/U539/Y (NAND2X0_RVT)
+                                                      0.036424   4.308610 r
+  alu/valu/genblk1.simd_alu[3]/mult_542/U542/Y (NAND3X0_RVT)
+                                                      0.055089   4.363699 f
+  alu/valu/genblk1.simd_alu[3]/mult_542/U355/Y (NAND2X0_RVT)
+                                                      0.043828   4.407526 r
+  alu/valu/genblk1.simd_alu[3]/mult_542/U17/Y (NAND3X0_RVT)
+                                                      0.056614   4.464141 f
+  alu/valu/genblk1.simd_alu[3]/mult_542/U302/Y (NAND2X0_RVT)
+                                                      0.043559   4.507700 r
+  alu/valu/genblk1.simd_alu[3]/mult_542/U13/Y (NAND3X2_RVT)
+                                                      0.064576   4.572276 f
+  alu/valu/genblk1.simd_alu[3]/mult_542/U305/Y (NAND2X0_RVT)
+                                                      0.030872   4.603148 r
+  alu/valu/genblk1.simd_alu[3]/mult_542/U308/Y (NAND3X0_RVT)
+                                                      0.052683   4.655832 f
+  alu/valu/genblk1.simd_alu[3]/mult_542/S2_19_5/S (FADDX1_RVT)
+                                                      0.125247   4.781079 r
+  alu/valu/genblk1.simd_alu[3]/mult_542/S2_20_4/CO (FADDX1_RVT)
+                                                      0.083046   4.864126 r
+  alu/valu/genblk1.simd_alu[3]/mult_542/S2_21_4/CO (FADDX1_RVT)
+                                                      0.094380   4.958506 r
+  alu/valu/genblk1.simd_alu[3]/mult_542/S2_22_4/CO (FADDX1_RVT)
+                                                      0.095153   5.053659 r
+  alu/valu/genblk1.simd_alu[3]/mult_542/U46/Y (XOR3X1_RVT)
+                                                      0.132098   5.185758 f
+  alu/valu/genblk1.simd_alu[3]/mult_542/S2_24_3/S (FADDX1_RVT)
+                                                      0.111425   5.297183 r
+  alu/valu/genblk1.simd_alu[3]/mult_542/S2_25_2/CO (FADDX1_RVT)
+                                                      0.082968   5.380151 r
+  alu/valu/genblk1.simd_alu[3]/mult_542/S2_26_2/CO (FADDX1_RVT)
+                                                      0.094380   5.474531 r
+  alu/valu/genblk1.simd_alu[3]/mult_542/S2_27_2/CO (FADDX1_RVT)
+                                                      0.094380   5.568912 r
+  alu/valu/genblk1.simd_alu[3]/mult_542/S2_28_2/CO (FADDX1_RVT)
+                                                      0.094409   5.663321 r
+  alu/valu/genblk1.simd_alu[3]/mult_542/S2_29_2/S (FADDX1_RVT)
+                                                      0.125200   5.788521 f
+  alu/valu/genblk1.simd_alu[3]/mult_542/U338/Y (NAND2X0_RVT)
+                                                      0.035564   5.824085 r
+  alu/valu/genblk1.simd_alu[3]/mult_542/U341/Y (NAND3X0_RVT)
+                                                      0.052500   5.876585 f
+  alu/valu/genblk1.simd_alu[3]/mult_542/S4_1/CO (FADDX1_RVT)
+                                                      0.090729   5.967314 f
+  alu/valu/genblk1.simd_alu[3]/mult_542/U954/Y (AND2X1_RVT)
+                                                      0.044766   6.012081 f
+  alu/valu/genblk1.simd_alu[3]/mult_542/FS_1/B[32] (simd_DW01_add_16)
+                                                      0.000000   6.012081 f
+  alu/valu/genblk1.simd_alu[3]/mult_542/FS_1/U43/Y (AND2X1_RVT)
+                                                      0.041757   6.053837 f
+  alu/valu/genblk1.simd_alu[3]/mult_542/FS_1/U241/Y (AO21X1_RVT)
+                                                      0.047073   6.100910 f
+  alu/valu/genblk1.simd_alu[3]/mult_542/FS_1/U240/Y (AO21X1_RVT)
+                                                      0.047825   6.148736 f
+  alu/valu/genblk1.simd_alu[3]/mult_542/FS_1/U239/Y (AO21X1_RVT)
+                                                      0.047760   6.196496 f
+  alu/valu/genblk1.simd_alu[3]/mult_542/FS_1/U174/Y (AO221X1_RVT)
+                                                      0.059830   6.256326 f
+  alu/valu/genblk1.simd_alu[3]/mult_542/FS_1/U173/Y (AO21X1_RVT)
+                                                      0.046749   6.303075 f
+  alu/valu/genblk1.simd_alu[3]/mult_542/FS_1/U172/Y (AO21X1_RVT)
+                                                      0.045464   6.348539 f
+  alu/valu/genblk1.simd_alu[3]/mult_542/FS_1/U171/Y (AO21X1_RVT)
+                                                      0.045387   6.393926 f
+  alu/valu/genblk1.simd_alu[3]/mult_542/FS_1/U170/Y (AO21X1_RVT)
+                                                      0.045387   6.439313 f
+  alu/valu/genblk1.simd_alu[3]/mult_542/FS_1/U169/Y (AO21X1_RVT)
+                                                      0.048398   6.487711 f
+  alu/valu/genblk1.simd_alu[3]/mult_542/FS_1/U164/Y (AOI21X1_RVT)
+                                                      0.062403   6.550114 r
+  alu/valu/genblk1.simd_alu[3]/mult_542/FS_1/U159/Y (OA21X1_RVT)
+                                                      0.046031   6.596146 r
+  alu/valu/genblk1.simd_alu[3]/mult_542/FS_1/U154/Y (OA21X1_RVT)
+                                                      0.049504   6.645650 r
+  alu/valu/genblk1.simd_alu[3]/mult_542/FS_1/U149/Y (OA21X1_RVT)
+                                                      0.048658   6.694308 r
+  alu/valu/genblk1.simd_alu[3]/mult_542/FS_1/U144/Y (OA21X1_RVT)
+                                                      0.046693   6.741001 r
+  alu/valu/genblk1.simd_alu[3]/mult_542/FS_1/U139/Y (OA21X1_RVT)
+                                                      0.051607   6.792607 r
+  alu/valu/genblk1.simd_alu[3]/mult_542/FS_1/U134/Y (OA21X1_RVT)
+                                                      0.050025   6.842632 r
+  alu/valu/genblk1.simd_alu[3]/mult_542/FS_1/U129/Y (OA21X1_RVT)
+                                                      0.049299   6.891931 r
+  alu/valu/genblk1.simd_alu[3]/mult_542/FS_1/U124/Y (OA21X1_RVT)
+                                                      0.048617   6.940547 r
+  alu/valu/genblk1.simd_alu[3]/mult_542/FS_1/U119/Y (OA21X1_RVT)
+                                                      0.049344   6.989891 r
+  alu/valu/genblk1.simd_alu[3]/mult_542/FS_1/U114/Y (OA21X1_RVT)
+                                                      0.048633   7.038524 r
+  alu/valu/genblk1.simd_alu[3]/mult_542/FS_1/U112/Y (OA21X1_RVT)
+                                                      0.046682   7.085206 r
+  alu/valu/genblk1.simd_alu[3]/mult_542/FS_1/U110/Y (AND2X1_RVT)
+                                                      0.037815   7.123021 r
+  alu/valu/genblk1.simd_alu[3]/mult_542/FS_1/U47/Y (OAI22X1_RVT)
+                                                      0.058046   7.181067 f
+  alu/valu/genblk1.simd_alu[3]/mult_542/FS_1/U44/Y (OR2X1_RVT)
+                                                      0.043368   7.224435 f
+  alu/valu/genblk1.simd_alu[3]/mult_542/FS_1/U46/Y (NAND2X0_RVT)
+                                                      0.027499   7.251934 r
+  alu/valu/genblk1.simd_alu[3]/mult_542/FS_1/SUM[61] (simd_DW01_add_16)
+                                                      0.000000   7.251934 r
+  alu/valu/genblk1.simd_alu[3]/mult_542/PRODUCT[63] (simd_DW02_mult_0)
+                                                      0.000000   7.251934 r
+  U36415/Y (AOI222X1_RVT)                             0.175911   7.427845 f
+  U36206/Y (AND3X1_RVT)                               0.140358   7.568203 f
+  U36207/Y (NAND2X0_RVT)                              0.121736   7.689939 r
+  U33344/Y (AO22X1_RVT)                               0.149849   7.839788 r
+  alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[127]/dff_0/state_reg/D (DFFARX1_RVT)
+                                                      0.129578   7.969366 r
+  data arrival time                                              7.969366
+
+  clock clk (rise edge)                               8.000000   8.000000
+  clock network delay (ideal)                         0.000000   8.000000
+  alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[127]/dff_0/state_reg/CLK (DFFARX1_RVT)
+                                                      0.000000   8.000000 r
+  library setup time                                  -0.030273  7.969727
+  data required time                                             7.969727
+  --------------------------------------------------------------------------
+  data required time                                             7.969727
+  data arrival time                                              -7.969366
+  --------------------------------------------------------------------------
+  slack (MET)                                                    0.000361
+
+
+  Startpoint: alu/alu_controller/alu_fsm/EX_flop/state_reg
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[383]/dff_0/state_reg
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  simd               540000                saed32rvt_tt1p05v25c
+  simd_DW02_mult_6   16000                 saed32rvt_tt1p05v25c
+  simd_DW01_add_22   8000                  saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                               0.000000   0.000000
+  clock network delay (ideal)                         0.000000   0.000000
+  alu/alu_controller/alu_fsm/EX_flop/state_reg/CLK (DFFARX2_RVT)
+                                                      0.000000 # 0.000000 r
+  alu/alu_controller/alu_fsm/EX_flop/state_reg/QN (DFFARX2_RVT)
+                                                      0.076501   0.076501 r
+  U35870/Y (NOR2X2_RVT)                               0.289259   0.365760 f
+  U36003/Y (INVX0_RVT)                                0.290170   0.655930 r
+  U36198/Y (AND3X1_RVT)                               0.162336   0.818265 r
+  U35873/Y (NAND3X1_RVT)                              0.150690   0.968955 f
+  U36364/Y (AND2X1_RVT)                               0.146072   1.115028 f
+  U36323/Y (NAND2X0_RVT)                              0.134341   1.249369 r
+  U36246/Y (NBUFFX2_RVT)                              0.230097   1.479466 r
+  U36414/Y (AND2X1_RVT)                               0.238151   1.717617 r
+  U16031/Y (AND2X1_RVT)                               0.215355   1.932972 r
+  U44429/Y (NBUFFX2_RVT)                              0.248030   2.181002 r
+  U16027/Y (AO22X1_RVT)                               0.216341   2.397343 r
+  alu/valu/genblk1.simd_alu[11]/mult_542/A[0] (simd_DW02_mult_6)
+                                                      0.000000   2.397343 r
+  alu/valu/genblk1.simd_alu[11]/mult_542/U807/Y (NBUFFX2_RVT)
+                                                      0.189579   2.586922 r
+  alu/valu/genblk1.simd_alu[11]/mult_542/U1748/Y (AND2X1_RVT)
+                                                      0.049963   2.636884 r
+  alu/valu/genblk1.simd_alu[11]/mult_542/U378/Y (XOR2X2_RVT)
+                                                      0.079649   2.716534 f
+  alu/valu/genblk1.simd_alu[11]/mult_542/S2_2_28/S (FADDX1_RVT)
+                                                      0.109396   2.825930 r
+  alu/valu/genblk1.simd_alu[11]/mult_542/S2_3_27/S (FADDX1_RVT)
+                                                      0.109818   2.935747 f
+  alu/valu/genblk1.simd_alu[11]/mult_542/S2_4_26/S (FADDX1_RVT)
+                                                      0.110655   3.046402 r
+  alu/valu/genblk1.simd_alu[11]/mult_542/S2_5_25/S (FADDX1_RVT)
+                                                      0.109819   3.156221 f
+  alu/valu/genblk1.simd_alu[11]/mult_542/S2_6_24/S (FADDX1_RVT)
+                                                      0.110960   3.267181 r
+  alu/valu/genblk1.simd_alu[11]/mult_542/S2_7_23/CO (FADDX1_RVT)
+                                                      0.083048   3.350229 r
+  alu/valu/genblk1.simd_alu[11]/mult_542/S2_8_23/S (FADDX1_RVT)
+                                                      0.121387   3.471616 f
+  alu/valu/genblk1.simd_alu[11]/mult_542/S2_9_22/S (FADDX1_RVT)
+                                                      0.110655   3.582271 r
+  alu/valu/genblk1.simd_alu[11]/mult_542/S2_10_21/CO (FADDX1_RVT)
+                                                      0.082968   3.665239 r
+  alu/valu/genblk1.simd_alu[11]/mult_542/S2_11_21/CO (FADDX1_RVT)
+                                                      0.095325   3.760564 r
+  alu/valu/genblk1.simd_alu[11]/mult_542/U72/Y (XOR3X1_RVT)
+                                                      0.134861   3.895424 f
+  alu/valu/genblk1.simd_alu[11]/mult_542/S2_13_20/S (FADDX1_RVT)
+                                                      0.118416   4.013841 r
+  alu/valu/genblk1.simd_alu[11]/mult_542/S2_14_19/CO (FADDX1_RVT)
+                                                      0.082969   4.096810 r
+  alu/valu/genblk1.simd_alu[11]/mult_542/S2_15_19/CO (FADDX1_RVT)
+                                                      0.094380   4.191190 r
+  alu/valu/genblk1.simd_alu[11]/mult_542/S2_16_19/S (FADDX1_RVT)
+                                                      0.121386   4.312576 f
+  alu/valu/genblk1.simd_alu[11]/mult_542/S2_17_18/S (FADDX1_RVT)
+                                                      0.110655   4.423232 r
+  alu/valu/genblk1.simd_alu[11]/mult_542/S2_18_17/S (FADDX1_RVT)
+                                                      0.109818   4.533050 f
+  alu/valu/genblk1.simd_alu[11]/mult_542/S2_19_16/S (FADDX1_RVT)
+                                                      0.110964   4.644014 r
+  alu/valu/genblk1.simd_alu[11]/mult_542/S2_20_15/S (FADDX1_RVT)
+                                                      0.113633   4.757647 f
+  alu/valu/genblk1.simd_alu[11]/mult_542/U406/Y (NAND2X0_RVT)
+                                                      0.035884   4.793531 r
+  alu/valu/genblk1.simd_alu[11]/mult_542/U409/Y (NAND3X0_RVT)
+                                                      0.053165   4.846697 f
+  alu/valu/genblk1.simd_alu[11]/mult_542/S2_22_14/S (FADDX1_RVT)
+                                                      0.125416   4.972113 r
+  alu/valu/genblk1.simd_alu[11]/mult_542/S2_23_13/CO (FADDX1_RVT)
+                                                      0.083049   5.055162 r
+  alu/valu/genblk1.simd_alu[11]/mult_542/S2_24_13/S (FADDX1_RVT)
+                                                      0.121386   5.176548 f
+  alu/valu/genblk1.simd_alu[11]/mult_542/S2_25_12/S (FADDX1_RVT)
+                                                      0.110655   5.287203 r
+  alu/valu/genblk1.simd_alu[11]/mult_542/S2_26_11/S (FADDX1_RVT)
+                                                      0.109818   5.397021 f
+  alu/valu/genblk1.simd_alu[11]/mult_542/S2_27_10/S (FADDX1_RVT)
+                                                      0.110655   5.507677 r
+  alu/valu/genblk1.simd_alu[11]/mult_542/S2_28_9/S (FADDX1_RVT)
+                                                      0.109818   5.617495 f
+  alu/valu/genblk1.simd_alu[11]/mult_542/S2_29_8/S (FADDX1_RVT)
+                                                      0.110655   5.728150 r
+  alu/valu/genblk1.simd_alu[11]/mult_542/S2_30_7/CO (FADDX1_RVT)
+                                                      0.082968   5.811118 r
+  alu/valu/genblk1.simd_alu[11]/mult_542/S4_7/S (FADDX1_RVT)
+                                                      0.122040   5.933158 f
+  alu/valu/genblk1.simd_alu[11]/mult_542/U120/Y (XOR2X1_RVT)
+                                                      0.094061   6.027219 r
+  alu/valu/genblk1.simd_alu[11]/mult_542/FS_1/A[36] (simd_DW01_add_22)
+                                                      0.000000   6.027219 r
+  alu/valu/genblk1.simd_alu[11]/mult_542/FS_1/U30/Y (AND2X1_RVT)
+                                                      0.044893   6.072112 r
+  alu/valu/genblk1.simd_alu[11]/mult_542/FS_1/U215/Y (AO21X1_RVT)
+                                                      0.053503   6.125615 r
+  alu/valu/genblk1.simd_alu[11]/mult_542/FS_1/U214/Y (AO21X1_RVT)
+                                                      0.050739   6.176354 r
+  alu/valu/genblk1.simd_alu[11]/mult_542/FS_1/U213/Y (AO21X1_RVT)
+                                                      0.053882   6.230236 r
+  alu/valu/genblk1.simd_alu[11]/mult_542/FS_1/U169/Y (AO221X1_RVT)
+                                                      0.055336   6.285572 r
+  alu/valu/genblk1.simd_alu[11]/mult_542/FS_1/U168/Y (AO21X1_RVT)
+                                                      0.052037   6.337609 r
+  alu/valu/genblk1.simd_alu[11]/mult_542/FS_1/U167/Y (AO21X1_RVT)
+                                                      0.050757   6.388366 r
+  alu/valu/genblk1.simd_alu[11]/mult_542/FS_1/U166/Y (AO21X1_RVT)
+                                                      0.050733   6.439099 r
+  alu/valu/genblk1.simd_alu[11]/mult_542/FS_1/U165/Y (AO21X1_RVT)
+                                                      0.053251   6.492350 r
+  alu/valu/genblk1.simd_alu[11]/mult_542/FS_1/U164/Y (AO21X1_RVT)
+                                                      0.052816   6.545166 r
+  alu/valu/genblk1.simd_alu[11]/mult_542/FS_1/U159/Y (AOI21X1_RVT)
+                                                      0.062912   6.608078 f
+  alu/valu/genblk1.simd_alu[11]/mult_542/FS_1/U154/Y (OA21X1_RVT)
+                                                      0.045235   6.653313 f
+  alu/valu/genblk1.simd_alu[11]/mult_542/FS_1/U149/Y (OA21X1_RVT)
+                                                      0.043817   6.697130 f
+  alu/valu/genblk1.simd_alu[11]/mult_542/FS_1/U144/Y (OA21X1_RVT)
+                                                      0.046595   6.743725 f
+  alu/valu/genblk1.simd_alu[11]/mult_542/FS_1/U139/Y (OA21X1_RVT)
+                                                      0.046165   6.789890 f
+  alu/valu/genblk1.simd_alu[11]/mult_542/FS_1/U134/Y (OA21X1_RVT)
+                                                      0.043855   6.833745 f
+  alu/valu/genblk1.simd_alu[11]/mult_542/FS_1/U129/Y (OA21X1_RVT)
+                                                      0.043907   6.877651 f
+  alu/valu/genblk1.simd_alu[11]/mult_542/FS_1/U38/Y (OA21X1_RVT)
+                                                      0.043817   6.921468 f
+  alu/valu/genblk1.simd_alu[11]/mult_542/FS_1/U120/Y (OA21X1_RVT)
+                                                      0.043817   6.965284 f
+  alu/valu/genblk1.simd_alu[11]/mult_542/FS_1/U115/Y (OA21X1_RVT)
+                                                      0.046716   7.012001 f
+  alu/valu/genblk1.simd_alu[11]/mult_542/FS_1/U110/Y (OA21X1_RVT)
+                                                      0.046201   7.058201 f
+  alu/valu/genblk1.simd_alu[11]/mult_542/FS_1/U108/Y (OA21X1_RVT)
+                                                      0.043845   7.102046 f
+  alu/valu/genblk1.simd_alu[11]/mult_542/FS_1/U106/Y (AND2X1_RVT)
+                                                      0.037650   7.139697 f
+  alu/valu/genblk1.simd_alu[11]/mult_542/FS_1/U44/Y (OAI22X1_RVT)
+                                                      0.058185   7.197882 r
+  alu/valu/genblk1.simd_alu[11]/mult_542/FS_1/U32/Y (XOR2X1_RVT)
+                                                      0.052925   7.250806 r
+  alu/valu/genblk1.simd_alu[11]/mult_542/FS_1/SUM[61] (simd_DW01_add_22)
+                                                      0.000000   7.250806 r
+  alu/valu/genblk1.simd_alu[11]/mult_542/PRODUCT[63] (simd_DW02_mult_6)
+                                                      0.000000   7.250806 r
+  U36354/Y (AOI222X1_RVT)                             0.176960   7.427766 f
+  U36343/Y (AND3X1_RVT)                               0.140358   7.568124 f
+  U36263/Y (NAND2X0_RVT)                              0.121736   7.689860 r
+  U31045/Y (AO22X1_RVT)                               0.149849   7.839709 r
+  alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[383]/dff_0/state_reg/D (DFFARX1_RVT)
+                                                      0.129578   7.969287 r
+  data arrival time                                              7.969287
+
+  clock clk (rise edge)                               8.000000   8.000000
+  clock network delay (ideal)                         0.000000   8.000000
+  alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[383]/dff_0/state_reg/CLK (DFFARX1_RVT)
+                                                      0.000000   8.000000 r
+  library setup time                                  -0.030307  7.969693
+  data required time                                             7.969693
+  --------------------------------------------------------------------------
+  data required time                                             7.969693
+  data arrival time                                              -7.969287
+  --------------------------------------------------------------------------
+  slack (MET)                                                    0.000406
+
+
+  Startpoint: alu/alu_controller/alu_fsm/EX_flop/state_reg
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[95]/dff_0/state_reg
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  simd               540000                saed32rvt_tt1p05v25c
+  simd_DW02_mult_1   16000                 saed32rvt_tt1p05v25c
+  simd_DW01_add_17   8000                  saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                               0.000000   0.000000
+  clock network delay (ideal)                         0.000000   0.000000
+  alu/alu_controller/alu_fsm/EX_flop/state_reg/CLK (DFFARX2_RVT)
+                                                      0.000000 # 0.000000 r
+  alu/alu_controller/alu_fsm/EX_flop/state_reg/QN (DFFARX2_RVT)
+                                                      0.076501   0.076501 r
+  U35870/Y (NOR2X2_RVT)                               0.289259   0.365760 f
+  U36003/Y (INVX0_RVT)                                0.290170   0.655930 r
+  U36198/Y (AND3X1_RVT)                               0.162336   0.818265 r
+  U35873/Y (NAND3X1_RVT)                              0.150690   0.968955 f
+  U36364/Y (AND2X1_RVT)                               0.146072   1.115028 f
+  U36323/Y (NAND2X0_RVT)                              0.134341   1.249369 r
+  U36246/Y (NBUFFX2_RVT)                              0.230097   1.479466 r
+  U35995/Y (AND2X1_RVT)                               0.231613   1.711079 r
+  U15488/Y (AND2X1_RVT)                               0.195071   1.906150 r
+  U44424/Y (NBUFFX2_RVT)                              0.227808   2.133957 r
+  U15471/Y (AO222X1_RVT)                              0.297369   2.431326 r
+  alu/valu/genblk1.simd_alu[2]/mult_542/B[21] (simd_DW02_mult_1)
+                                                      0.000000   2.431326 r
+  alu/valu/genblk1.simd_alu[2]/mult_542/U250/Y (NBUFFX2_RVT)
+                                                      0.205599   2.636925 r
+  alu/valu/genblk1.simd_alu[2]/mult_542/U1530/Y (AND2X1_RVT)
+                                                      0.043267   2.680192 r
+  alu/valu/genblk1.simd_alu[2]/mult_542/U70/Y (XOR2X1_RVT)
+                                                      0.091193   2.771386 f
+  alu/valu/genblk1.simd_alu[2]/mult_542/S2_2_20/S (FADDX1_RVT)
+                                                      0.110856   2.882241 r
+  alu/valu/genblk1.simd_alu[2]/mult_542/S2_3_19/CO (FADDX1_RVT)
+                                                      0.082967   2.965208 r
+  alu/valu/genblk1.simd_alu[2]/mult_542/S2_4_19/CO (FADDX1_RVT)
+                                                      0.095154   3.060362 r
+  alu/valu/genblk1.simd_alu[2]/mult_542/U78/Y (XOR3X1_RVT)
+                                                      0.132057   3.192419 f
+  alu/valu/genblk1.simd_alu[2]/mult_542/S2_6_18/S (FADDX1_RVT)
+                                                      0.111425   3.303843 r
+  alu/valu/genblk1.simd_alu[2]/mult_542/S2_7_17/S (FADDX1_RVT)
+                                                      0.109818   3.413662 f
+  alu/valu/genblk1.simd_alu[2]/mult_542/S2_8_16/S (FADDX1_RVT)
+                                                      0.110655   3.524317 r
+  alu/valu/genblk1.simd_alu[2]/mult_542/S2_9_15/S (FADDX1_RVT)
+                                                      0.109818   3.634135 f
+  alu/valu/genblk1.simd_alu[2]/mult_542/S2_10_14/S (FADDX1_RVT)
+                                                      0.110655   3.744790 r
+  alu/valu/genblk1.simd_alu[2]/mult_542/S2_11_13/S (FADDX1_RVT)
+                                                      0.109818   3.854608 f
+  alu/valu/genblk1.simd_alu[2]/mult_542/S2_12_12/S (FADDX1_RVT)
+                                                      0.110655   3.965263 r
+  alu/valu/genblk1.simd_alu[2]/mult_542/S2_13_11/CO (FADDX1_RVT)
+                                                      0.083738   4.049000 r
+  alu/valu/genblk1.simd_alu[2]/mult_542/U91/Y (XOR3X1_RVT)
+                                                      0.132057   4.181057 f
+  alu/valu/genblk1.simd_alu[2]/mult_542/S2_15_10/S (FADDX1_RVT)
+                                                      0.113292   4.294349 r
+  alu/valu/genblk1.simd_alu[2]/mult_542/U530/Y (NAND2X0_RVT)
+                                                      0.029230   4.323579 f
+  alu/valu/genblk1.simd_alu[2]/mult_542/U533/Y (NAND3X0_RVT)
+                                                      0.041193   4.364772 r
+  alu/valu/genblk1.simd_alu[2]/mult_542/S2_17_9/S (FADDX1_RVT)
+                                                      0.121940   4.486712 f
+  alu/valu/genblk1.simd_alu[2]/mult_542/S2_18_8/S (FADDX1_RVT)
+                                                      0.110959   4.597671 r
+  alu/valu/genblk1.simd_alu[2]/mult_542/S2_19_7/S (FADDX1_RVT)
+                                                      0.113228   4.710899 f
+  alu/valu/genblk1.simd_alu[2]/mult_542/U327/Y (NAND2X0_RVT)
+                                                      0.036818   4.747717 r
+  alu/valu/genblk1.simd_alu[2]/mult_542/U329/Y (NAND3X0_RVT)
+                                                      0.052730   4.800447 f
+  alu/valu/genblk1.simd_alu[2]/mult_542/S2_21_6/S (FADDX1_RVT)
+                                                      0.125411   4.925858 r
+  alu/valu/genblk1.simd_alu[2]/mult_542/S2_22_5/CO (FADDX1_RVT)
+                                                      0.083048   5.008907 r
+  alu/valu/genblk1.simd_alu[2]/mult_542/S2_23_5/CO (FADDX1_RVT)
+                                                      0.094380   5.103287 r
+  alu/valu/genblk1.simd_alu[2]/mult_542/S2_24_5/CO (FADDX1_RVT)
+                                                      0.093391   5.196678 r
+  alu/valu/genblk1.simd_alu[2]/mult_542/U432/Y (XOR3X2_RVT)
+                                                      0.112326   5.309004 f
+  alu/valu/genblk1.simd_alu[2]/mult_542/U127/Y (XOR3X1_RVT)
+                                                      0.133301   5.442305 f
+  alu/valu/genblk1.simd_alu[2]/mult_542/U276/Y (NAND2X0_RVT)
+                                                      0.035858   5.478163 r
+  alu/valu/genblk1.simd_alu[2]/mult_542/U279/Y (NAND3X0_RVT)
+                                                      0.052374   5.530537 f
+  alu/valu/genblk1.simd_alu[2]/mult_542/S2_28_3/CO (FADDX1_RVT)
+                                                      0.092535   5.623073 f
+  alu/valu/genblk1.simd_alu[2]/mult_542/U466/Y (NAND2X0_RVT)
+                                                      0.035777   5.658849 r
+  alu/valu/genblk1.simd_alu[2]/mult_542/U469/Y (NAND3X0_RVT)
+                                                      0.052572   5.711421 f
+  alu/valu/genblk1.simd_alu[2]/mult_542/S2_30_3/CO (FADDX1_RVT)
+                                                      0.092519   5.803940 f
+  alu/valu/genblk1.simd_alu[2]/mult_542/U321/Y (XOR3X2_RVT)
+                                                      0.110301   5.914241 r
+  alu/valu/genblk1.simd_alu[2]/mult_542/U18/Y (XOR2X2_RVT)
+                                                      0.088121   6.002362 f
+  alu/valu/genblk1.simd_alu[2]/mult_542/FS_1/A[32] (simd_DW01_add_17)
+                                                      0.000000   6.002362 f
+  alu/valu/genblk1.simd_alu[2]/mult_542/FS_1/U43/Y (AND2X1_RVT)
+                                                      0.045868   6.048230 f
+  alu/valu/genblk1.simd_alu[2]/mult_542/FS_1/U238/Y (AO21X1_RVT)
+                                                      0.049728   6.097959 f
+  alu/valu/genblk1.simd_alu[2]/mult_542/FS_1/U237/Y (AO21X1_RVT)
+                                                      0.045353   6.143312 f
+  alu/valu/genblk1.simd_alu[2]/mult_542/FS_1/U236/Y (AO21X1_RVT)
+                                                      0.048424   6.191736 f
+  alu/valu/genblk1.simd_alu[2]/mult_542/FS_1/U39/Y (NAND2X0_RVT)
+                                                      0.031113   6.222848 r
+  alu/valu/genblk1.simd_alu[2]/mult_542/FS_1/U41/Y (NAND3X0_RVT)
+                                                      0.034140   6.256989 f
+  alu/valu/genblk1.simd_alu[2]/mult_542/FS_1/U170/Y (AO21X1_RVT)
+                                                      0.052039   6.309027 f
+  alu/valu/genblk1.simd_alu[2]/mult_542/FS_1/U169/Y (AO21X1_RVT)
+                                                      0.045464   6.354491 f
+  alu/valu/genblk1.simd_alu[2]/mult_542/FS_1/U168/Y (AO21X1_RVT)
+                                                      0.045387   6.399878 f
+  alu/valu/genblk1.simd_alu[2]/mult_542/FS_1/U167/Y (AO21X1_RVT)
+                                                      0.045387   6.445265 f
+  alu/valu/genblk1.simd_alu[2]/mult_542/FS_1/U166/Y (AO21X1_RVT)
+                                                      0.048398   6.493663 f
+  alu/valu/genblk1.simd_alu[2]/mult_542/FS_1/U161/Y (AOI21X1_RVT)
+                                                      0.062403   6.556067 r
+  alu/valu/genblk1.simd_alu[2]/mult_542/FS_1/U156/Y (OA21X1_RVT)
+                                                      0.046031   6.602098 r
+  alu/valu/genblk1.simd_alu[2]/mult_542/FS_1/U151/Y (OA21X1_RVT)
+                                                      0.049344   6.651442 r
+  alu/valu/genblk1.simd_alu[2]/mult_542/FS_1/U146/Y (OA21X1_RVT)
+                                                      0.048633   6.700075 r
+  alu/valu/genblk1.simd_alu[2]/mult_542/FS_1/U141/Y (OA21X1_RVT)
+                                                      0.046693   6.746768 r
+  alu/valu/genblk1.simd_alu[2]/mult_542/FS_1/U136/Y (OA21X1_RVT)
+                                                      0.046693   6.793460 r
+  alu/valu/genblk1.simd_alu[2]/mult_542/FS_1/U131/Y (OA21X1_RVT)
+                                                      0.049232   6.842692 r
+  alu/valu/genblk1.simd_alu[2]/mult_542/FS_1/U126/Y (OA21X1_RVT)
+                                                      0.048617   6.891309 r
+  alu/valu/genblk1.simd_alu[2]/mult_542/FS_1/U121/Y (OA21X1_RVT)
+                                                      0.049317   6.940626 r
+  alu/valu/genblk1.simd_alu[2]/mult_542/FS_1/U116/Y (OA21X1_RVT)
+                                                      0.048629   6.989255 r
+  alu/valu/genblk1.simd_alu[2]/mult_542/FS_1/U111/Y (OA21X1_RVT)
+                                                      0.049245   7.038501 r
+  alu/valu/genblk1.simd_alu[2]/mult_542/FS_1/U109/Y (OA21X1_RVT)
+                                                      0.048608   7.087109 r
+  alu/valu/genblk1.simd_alu[2]/mult_542/FS_1/U107/Y (AND2X1_RVT)
+                                                      0.037815   7.124924 r
+  alu/valu/genblk1.simd_alu[2]/mult_542/FS_1/U46/Y (OAI22X1_RVT)
+                                                      0.058298   7.183222 f
+  alu/valu/genblk1.simd_alu[2]/mult_542/FS_1/U38/Y (OR2X1_RVT)
+                                                      0.040943   7.224164 f
+  alu/valu/genblk1.simd_alu[2]/mult_542/FS_1/U45/Y (NAND2X0_RVT)
+                                                      0.027531   7.251695 r
+  alu/valu/genblk1.simd_alu[2]/mult_542/FS_1/SUM[61] (simd_DW01_add_17)
+                                                      0.000000   7.251695 r
+  alu/valu/genblk1.simd_alu[2]/mult_542/PRODUCT[63] (simd_DW02_mult_1)
+                                                      0.000000   7.251695 r
+  U36368/Y (AOI222X1_RVT)                             0.175917   7.427612 f
+  U36348/Y (AND3X1_RVT)                               0.140360   7.567972 f
+  U36180/Y (NAND2X0_RVT)                              0.121736   7.689708 r
+  U29494/Y (AO22X1_RVT)                               0.149849   7.839557 r
+  alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[95]/dff_0/state_reg/D (DFFARX1_RVT)
+                                                      0.129578   7.969135 r
+  data arrival time                                              7.969135
+
+  clock clk (rise edge)                               8.000000   8.000000
+  clock network delay (ideal)                         0.000000   8.000000
+  alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[95]/dff_0/state_reg/CLK (DFFARX1_RVT)
+                                                      0.000000   8.000000 r
+  library setup time                                  -0.030324  7.969676
+  data required time                                             7.969676
+  --------------------------------------------------------------------------
+  data required time                                             7.969676
+  data arrival time                                              -7.969135
+  --------------------------------------------------------------------------
+  slack (MET)                                                    0.000542
+
+
+  Startpoint: alu/alu_controller/alu_fsm/EX_flop/state_reg
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[287]/dff_0/state_reg
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  simd               540000                saed32rvt_tt1p05v25c
+  simd_DW02_mult_10  16000                 saed32rvt_tt1p05v25c
+  simd_DW01_add_26   8000                  saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                               0.000000   0.000000
+  clock network delay (ideal)                         0.000000   0.000000
+  alu/alu_controller/alu_fsm/EX_flop/state_reg/CLK (DFFARX2_RVT)
+                                                      0.000000 # 0.000000 r
+  alu/alu_controller/alu_fsm/EX_flop/state_reg/QN (DFFARX2_RVT)
+                                                      0.076501   0.076501 r
+  U35870/Y (NOR2X2_RVT)                               0.289259   0.365760 f
+  U36003/Y (INVX0_RVT)                                0.290170   0.655930 r
+  U36198/Y (AND3X1_RVT)                               0.162336   0.818265 r
+  U35873/Y (NAND3X1_RVT)                              0.150690   0.968955 f
+  U36364/Y (AND2X1_RVT)                               0.146072   1.115028 f
+  U36323/Y (NAND2X0_RVT)                              0.134341   1.249369 r
+  U36246/Y (NBUFFX2_RVT)                              0.230097   1.479466 r
+  U36434/Y (AND2X1_RVT)                               0.238151   1.717617 r
+  U36166/Y (AND2X1_RVT)                               0.226344   1.943961 r
+  U36089/Y (AO22X1_RVT)                               0.421097   2.365058 r
+  alu/valu/genblk1.simd_alu[8]/mult_542/A[1] (simd_DW02_mult_10)
+                                                      0.000000   2.365058 r
+  alu/valu/genblk1.simd_alu[8]/mult_542/U936/Y (NBUFFX2_RVT)
+                                                      0.187605   2.552663 r
+  alu/valu/genblk1.simd_alu[8]/mult_542/U459/Y (AND2X1_RVT)
+                                                      0.048019   2.600682 r
+  alu/valu/genblk1.simd_alu[8]/mult_542/U522/Y (XOR2X2_RVT)
+                                                      0.089066   2.689748 f
+  alu/valu/genblk1.simd_alu[8]/mult_542/U64/Y (XOR3X1_RVT)
+                                                      0.117191   2.806939 r
+  alu/valu/genblk1.simd_alu[8]/mult_542/S2_3_27/S (FADDX1_RVT)
+                                                      0.113829   2.920768 f
+  alu/valu/genblk1.simd_alu[8]/mult_542/U265/Y (NAND2X0_RVT)
+                                                      0.035906   2.956674 r
+  alu/valu/genblk1.simd_alu[8]/mult_542/U267/Y (NAND3X0_RVT)
+                                                      0.052592   3.009266 f
+  alu/valu/genblk1.simd_alu[8]/mult_542/S2_5_26/S (FADDX1_RVT)
+                                                      0.125378   3.134644 r
+  alu/valu/genblk1.simd_alu[8]/mult_542/S2_6_25/CO (FADDX1_RVT)
+                                                      0.083048   3.217691 r
+  alu/valu/genblk1.simd_alu[8]/mult_542/S2_7_25/CO (FADDX1_RVT)
+                                                      0.095325   3.313016 r
+  alu/valu/genblk1.simd_alu[8]/mult_542/U23/Y (XOR3X1_RVT)
+                                                      0.132107   3.445124 f
+  alu/valu/genblk1.simd_alu[8]/mult_542/S2_9_24/S (FADDX1_RVT)
+                                                      0.111425   3.556549 r
+  alu/valu/genblk1.simd_alu[8]/mult_542/S2_10_23/CO (FADDX1_RVT)
+                                                      0.082155   3.638704 r
+  alu/valu/genblk1.simd_alu[8]/mult_542/U375/Y (XOR3X2_RVT)
+                                                      0.105996   3.744700 r
+  alu/valu/genblk1.simd_alu[8]/mult_542/S2_12_22/CO (FADDX1_RVT)
+                                                      0.094451   3.839151 r
+  alu/valu/genblk1.simd_alu[8]/mult_542/S2_13_22/S (FADDX1_RVT)
+                                                      0.124796   3.963946 f
+  alu/valu/genblk1.simd_alu[8]/mult_542/U75/Y (XOR3X1_RVT)
+                                                      0.131186   4.095132 f
+  alu/valu/genblk1.simd_alu[8]/mult_542/S2_15_20/S (FADDX1_RVT)
+                                                      0.111421   4.206553 r
+  alu/valu/genblk1.simd_alu[8]/mult_542/S2_16_19/S (FADDX1_RVT)
+                                                      0.111856   4.318408 f
+  alu/valu/genblk1.simd_alu[8]/mult_542/U217/Y (NAND2X0_RVT)
+                                                      0.034293   4.352701 r
+  alu/valu/genblk1.simd_alu[8]/mult_542/U11/Y (NAND3X2_RVT)
+                                                      0.062529   4.415229 f
+  alu/valu/genblk1.simd_alu[8]/mult_542/S2_18_18/S (FADDX1_RVT)
+                                                      0.114289   4.529519 r
+  alu/valu/genblk1.simd_alu[8]/mult_542/S2_19_17/S (FADDX1_RVT)
+                                                      0.109819   4.639338 f
+  alu/valu/genblk1.simd_alu[8]/mult_542/S2_20_16/S (FADDX1_RVT)
+                                                      0.110968   4.750305 r
+  alu/valu/genblk1.simd_alu[8]/mult_542/S2_21_15/S (FADDX1_RVT)
+                                                      0.109818   4.860124 f
+  alu/valu/genblk1.simd_alu[8]/mult_542/S2_22_14/S (FADDX1_RVT)
+                                                      0.110655   4.970779 r
+  alu/valu/genblk1.simd_alu[8]/mult_542/S2_23_13/CO (FADDX1_RVT)
+                                                      0.082968   5.053747 r
+  alu/valu/genblk1.simd_alu[8]/mult_542/S2_24_13/S (FADDX1_RVT)
+                                                      0.121387   5.175134 f
+  alu/valu/genblk1.simd_alu[8]/mult_542/S2_25_12/S (FADDX1_RVT)
+                                                      0.110655   5.285789 r
+  alu/valu/genblk1.simd_alu[8]/mult_542/S2_26_11/S (FADDX1_RVT)
+                                                      0.109818   5.395607 f
+  alu/valu/genblk1.simd_alu[8]/mult_542/S2_27_10/S (FADDX1_RVT)
+                                                      0.110655   5.506263 r
+  alu/valu/genblk1.simd_alu[8]/mult_542/S2_28_9/S (FADDX1_RVT)
+                                                      0.109818   5.616081 f
+  alu/valu/genblk1.simd_alu[8]/mult_542/S2_29_8/S (FADDX1_RVT)
+                                                      0.112523   5.728604 r
+  alu/valu/genblk1.simd_alu[8]/mult_542/U212/Y (NAND2X0_RVT)
+                                                      0.028620   5.757224 f
+  alu/valu/genblk1.simd_alu[8]/mult_542/U4/Y (NAND3X2_RVT)
+                                                      0.071377   5.828601 r
+  alu/valu/genblk1.simd_alu[8]/mult_542/U220/Y (XOR3X2_RVT)
+                                                      0.101905   5.930506 r
+  alu/valu/genblk1.simd_alu[8]/mult_542/U49/Y (XOR2X1_RVT)
+                                                      0.085510   6.016016 f
+  alu/valu/genblk1.simd_alu[8]/mult_542/FS_1/A[36] (simd_DW01_add_26)
+                                                      0.000000   6.016016 f
+  alu/valu/genblk1.simd_alu[8]/mult_542/FS_1/U36/Y (AND2X1_RVT)
+                                                      0.044161   6.060178 f
+  alu/valu/genblk1.simd_alu[8]/mult_542/FS_1/U227/Y (AO21X1_RVT)
+                                                      0.047388   6.107565 f
+  alu/valu/genblk1.simd_alu[8]/mult_542/FS_1/U226/Y (AO21X1_RVT)
+                                                      0.045481   6.153046 f
+  alu/valu/genblk1.simd_alu[8]/mult_542/FS_1/U39/Y (AOI21X1_RVT)
+                                                      0.062790   6.215836 r
+  alu/valu/genblk1.simd_alu[8]/mult_542/FS_1/U47/Y (NAND3X0_RVT)
+                                                      0.037642   6.253479 f
+  alu/valu/genblk1.simd_alu[8]/mult_542/FS_1/U181/Y (AO21X1_RVT)
+                                                      0.052039   6.305517 f
+  alu/valu/genblk1.simd_alu[8]/mult_542/FS_1/U180/Y (AO21X1_RVT)
+                                                      0.045464   6.350981 f
+  alu/valu/genblk1.simd_alu[8]/mult_542/FS_1/U179/Y (AO21X1_RVT)
+                                                      0.045387   6.396368 f
+  alu/valu/genblk1.simd_alu[8]/mult_542/FS_1/U178/Y (AO21X1_RVT)
+                                                      0.047914   6.444282 f
+  alu/valu/genblk1.simd_alu[8]/mult_542/FS_1/U177/Y (AO21X1_RVT)
+                                                      0.047941   6.492222 f
+  alu/valu/genblk1.simd_alu[8]/mult_542/FS_1/U172/Y (AOI21X1_RVT)
+                                                      0.062159   6.554381 r
+  alu/valu/genblk1.simd_alu[8]/mult_542/FS_1/U167/Y (OA21X1_RVT)
+                                                      0.047952   6.602333 r
+  alu/valu/genblk1.simd_alu[8]/mult_542/FS_1/U162/Y (OA21X1_RVT)
+                                                      0.046693   6.649025 r
+  alu/valu/genblk1.simd_alu[8]/mult_542/FS_1/U157/Y (OA21X1_RVT)
+                                                      0.049232   6.698257 r
+  alu/valu/genblk1.simd_alu[8]/mult_542/FS_1/U152/Y (OA21X1_RVT)
+                                                      0.048617   6.746874 r
+  alu/valu/genblk1.simd_alu[8]/mult_542/FS_1/U147/Y (OA21X1_RVT)
+                                                      0.049232   6.796106 r
+  alu/valu/genblk1.simd_alu[8]/mult_542/FS_1/U142/Y (OA21X1_RVT)
+                                                      0.048617   6.844723 r
+  alu/valu/genblk1.simd_alu[8]/mult_542/FS_1/U137/Y (OA21X1_RVT)
+                                                      0.049232   6.893955 r
+  alu/valu/genblk1.simd_alu[8]/mult_542/FS_1/U132/Y (OA21X1_RVT)
+                                                      0.048617   6.942572 r
+  alu/valu/genblk1.simd_alu[8]/mult_542/FS_1/U127/Y (OA21X1_RVT)
+                                                      0.049245   6.991817 r
+  alu/valu/genblk1.simd_alu[8]/mult_542/FS_1/U122/Y (OA21X1_RVT)
+                                                      0.048619   7.040436 r
+  alu/valu/genblk1.simd_alu[8]/mult_542/FS_1/U120/Y (OA21X1_RVT)
+                                                      0.046682   7.087118 r
+  alu/valu/genblk1.simd_alu[8]/mult_542/FS_1/U118/Y (AND2X1_RVT)
+                                                      0.037815   7.124933 r
+  alu/valu/genblk1.simd_alu[8]/mult_542/FS_1/U55/Y (OAI22X1_RVT)
+                                                      0.058298   7.183231 f
+  alu/valu/genblk1.simd_alu[8]/mult_542/FS_1/U44/Y (OR2X1_RVT)
+                                                      0.040942   7.224174 f
+  alu/valu/genblk1.simd_alu[8]/mult_542/FS_1/U53/Y (NAND2X0_RVT)
+                                                      0.027531   7.251704 r
+  alu/valu/genblk1.simd_alu[8]/mult_542/FS_1/SUM[61] (simd_DW01_add_26)
+                                                      0.000000   7.251704 r
+  alu/valu/genblk1.simd_alu[8]/mult_542/PRODUCT[63] (simd_DW02_mult_10)
+                                                      0.000000   7.251704 r
+  U36393/Y (AOI222X1_RVT)                             0.175917   7.427621 f
+  U36084/Y (AND3X1_RVT)                               0.140358   7.567980 f
+  U36299/Y (NAND2X0_RVT)                              0.121736   7.689715 r
+  U31913/Y (AO22X1_RVT)                               0.149849   7.839565 r
+  alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[287]/dff_0/state_reg/D (DFFARX1_RVT)
+                                                      0.129578   7.969142 r
+  data arrival time                                              7.969142
+
+  clock clk (rise edge)                               8.000000   8.000000
+  clock network delay (ideal)                         0.000000   8.000000
+  alu/dest_shift_reg/vgpr_dest_shift/reg_line[3]/bits[287]/dff_0/state_reg/CLK (DFFARX1_RVT)
+                                                      0.000000   8.000000 r
+  library setup time                                  -0.030308  7.969692
+  data required time                                             7.969692
+  --------------------------------------------------------------------------
+  data required time                                             7.969692
+  data arrival time                                              -7.969142
+  --------------------------------------------------------------------------
+  slack (MET)                                                    0.000550
+
+
+1

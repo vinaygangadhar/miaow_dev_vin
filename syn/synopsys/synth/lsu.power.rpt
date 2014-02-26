@@ -1,0 +1,874 @@
+Loading db file '/p/vertical/afs-huge0/synopsys/32nmlib/SAED32_EDK/lib/stdcell_rvt/db_nldm/saed32rvt_tt1p05v25c.db'
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+ 
+****************************************
+Report : power
+        -hier
+        -analysis_effort low
+Design : lsu
+Version: G-2012.06
+Date   : Thu May 16 12:46:49 2013
+****************************************
+
+
+Library(s) Used:
+
+    saed32rvt_tt1p05v25c (File: /p/vertical/afs-huge0/synopsys/32nmlib/SAED32_EDK/lib/stdcell_rvt/db_nldm/saed32rvt_tt1p05v25c.db)
+
+
+Operating Conditions: tt1p05v25c   Library: saed32rvt_tt1p05v25c
+Wire Load Model Mode: enclosed
+
+Design        Wire Load Model            Library
+------------------------------------------------
+lsu                    1000000           saed32rvt_tt1p05v25c
+lsu_DW01_add_0         ForQA             saed32rvt_tt1p05v25c
+lsu_DW01_add_1         ForQA             saed32rvt_tt1p05v25c
+lsu_DW01_add_2         ForQA             saed32rvt_tt1p05v25c
+lsu_DW01_add_3         ForQA             saed32rvt_tt1p05v25c
+lsu_DW01_add_4         ForQA             saed32rvt_tt1p05v25c
+lsu_DW01_add_5         ForQA             saed32rvt_tt1p05v25c
+lsu_DW01_add_6         ForQA             saed32rvt_tt1p05v25c
+lsu_DW01_add_7         ForQA             saed32rvt_tt1p05v25c
+lsu_DW01_add_8         ForQA             saed32rvt_tt1p05v25c
+lsu_DW01_add_9         ForQA             saed32rvt_tt1p05v25c
+lsu_DW01_add_10        ForQA             saed32rvt_tt1p05v25c
+lsu_DW01_add_11        ForQA             saed32rvt_tt1p05v25c
+lsu_DW01_add_12        ForQA             saed32rvt_tt1p05v25c
+lsu_DW01_add_13        ForQA             saed32rvt_tt1p05v25c
+lsu_DW01_add_14        ForQA             saed32rvt_tt1p05v25c
+lsu_DW01_add_15        ForQA             saed32rvt_tt1p05v25c
+lsu_DW01_add_16        ForQA             saed32rvt_tt1p05v25c
+lsu_DW01_add_17        ForQA             saed32rvt_tt1p05v25c
+lsu_DW01_add_18        ForQA             saed32rvt_tt1p05v25c
+lsu_DW01_add_19        ForQA             saed32rvt_tt1p05v25c
+lsu_DW01_add_20        ForQA             saed32rvt_tt1p05v25c
+lsu_DW01_add_21        ForQA             saed32rvt_tt1p05v25c
+lsu_DW01_add_22        ForQA             saed32rvt_tt1p05v25c
+lsu_DW01_add_23        ForQA             saed32rvt_tt1p05v25c
+lsu_DW01_add_24        ForQA             saed32rvt_tt1p05v25c
+lsu_DW01_add_25        ForQA             saed32rvt_tt1p05v25c
+lsu_DW01_add_26        ForQA             saed32rvt_tt1p05v25c
+lsu_DW01_add_27        ForQA             saed32rvt_tt1p05v25c
+lsu_DW01_add_28        ForQA             saed32rvt_tt1p05v25c
+lsu_DW01_add_29        ForQA             saed32rvt_tt1p05v25c
+lsu_DW01_add_30        ForQA             saed32rvt_tt1p05v25c
+lsu_DW01_add_31        ForQA             saed32rvt_tt1p05v25c
+lsu_DW01_add_32        ForQA             saed32rvt_tt1p05v25c
+lsu_DW01_add_33        ForQA             saed32rvt_tt1p05v25c
+lsu_DW01_add_34        ForQA             saed32rvt_tt1p05v25c
+lsu_DW01_add_35        ForQA             saed32rvt_tt1p05v25c
+lsu_DW01_add_36        ForQA             saed32rvt_tt1p05v25c
+lsu_DW01_add_37        ForQA             saed32rvt_tt1p05v25c
+lsu_DW01_add_38        ForQA             saed32rvt_tt1p05v25c
+lsu_DW01_add_39        ForQA             saed32rvt_tt1p05v25c
+lsu_DW01_add_40        ForQA             saed32rvt_tt1p05v25c
+lsu_DW01_add_41        ForQA             saed32rvt_tt1p05v25c
+lsu_DW01_add_42        ForQA             saed32rvt_tt1p05v25c
+lsu_DW01_add_43        ForQA             saed32rvt_tt1p05v25c
+lsu_DW01_add_44        ForQA             saed32rvt_tt1p05v25c
+lsu_DW01_add_45        ForQA             saed32rvt_tt1p05v25c
+lsu_DW01_add_46        ForQA             saed32rvt_tt1p05v25c
+lsu_DW01_add_47        ForQA             saed32rvt_tt1p05v25c
+lsu_DW01_add_48        ForQA             saed32rvt_tt1p05v25c
+lsu_DW01_add_49        ForQA             saed32rvt_tt1p05v25c
+lsu_DW01_add_50        ForQA             saed32rvt_tt1p05v25c
+lsu_DW01_add_51        ForQA             saed32rvt_tt1p05v25c
+lsu_DW01_add_52        ForQA             saed32rvt_tt1p05v25c
+lsu_DW01_add_53        ForQA             saed32rvt_tt1p05v25c
+lsu_DW01_add_54        ForQA             saed32rvt_tt1p05v25c
+lsu_DW01_add_55        ForQA             saed32rvt_tt1p05v25c
+lsu_DW01_add_56        ForQA             saed32rvt_tt1p05v25c
+lsu_DW01_add_57        ForQA             saed32rvt_tt1p05v25c
+lsu_DW01_add_58        ForQA             saed32rvt_tt1p05v25c
+lsu_DW01_add_59        ForQA             saed32rvt_tt1p05v25c
+lsu_DW01_add_60        ForQA             saed32rvt_tt1p05v25c
+lsu_DW01_add_61        ForQA             saed32rvt_tt1p05v25c
+lsu_DW01_add_62        ForQA             saed32rvt_tt1p05v25c
+lsu_DW01_add_63        ForQA             saed32rvt_tt1p05v25c
+lsu_DW01_add_64        ForQA             saed32rvt_tt1p05v25c
+lsu_DW01_add_65        ForQA             saed32rvt_tt1p05v25c
+lsu_DW01_add_66        ForQA             saed32rvt_tt1p05v25c
+lsu_DW01_add_67        ForQA             saed32rvt_tt1p05v25c
+lsu_DW01_add_68        ForQA             saed32rvt_tt1p05v25c
+lsu_DW01_add_69        ForQA             saed32rvt_tt1p05v25c
+lsu_DW01_add_70        ForQA             saed32rvt_tt1p05v25c
+lsu_DW01_add_71        ForQA             saed32rvt_tt1p05v25c
+lsu_DW01_add_72        ForQA             saed32rvt_tt1p05v25c
+lsu_DW01_add_73        ForQA             saed32rvt_tt1p05v25c
+lsu_DW01_add_74        ForQA             saed32rvt_tt1p05v25c
+lsu_DW01_add_75        ForQA             saed32rvt_tt1p05v25c
+lsu_DW01_add_76        ForQA             saed32rvt_tt1p05v25c
+lsu_DW01_add_77        ForQA             saed32rvt_tt1p05v25c
+lsu_DW01_add_78        ForQA             saed32rvt_tt1p05v25c
+lsu_DW01_add_79        ForQA             saed32rvt_tt1p05v25c
+lsu_DW01_add_80        ForQA             saed32rvt_tt1p05v25c
+lsu_DW01_add_81        ForQA             saed32rvt_tt1p05v25c
+lsu_DW01_add_82        ForQA             saed32rvt_tt1p05v25c
+lsu_DW01_add_83        ForQA             saed32rvt_tt1p05v25c
+lsu_DW01_add_84        ForQA             saed32rvt_tt1p05v25c
+lsu_DW01_add_85        ForQA             saed32rvt_tt1p05v25c
+lsu_DW01_add_86        ForQA             saed32rvt_tt1p05v25c
+lsu_DW01_add_87        ForQA             saed32rvt_tt1p05v25c
+lsu_DW01_add_88        ForQA             saed32rvt_tt1p05v25c
+lsu_DW01_add_89        ForQA             saed32rvt_tt1p05v25c
+lsu_DW01_add_90        ForQA             saed32rvt_tt1p05v25c
+lsu_DW01_add_91        ForQA             saed32rvt_tt1p05v25c
+lsu_DW01_add_92        ForQA             saed32rvt_tt1p05v25c
+lsu_DW01_add_93        ForQA             saed32rvt_tt1p05v25c
+lsu_DW01_add_94        ForQA             saed32rvt_tt1p05v25c
+lsu_DW01_add_95        ForQA             saed32rvt_tt1p05v25c
+lsu_DW01_add_96        ForQA             saed32rvt_tt1p05v25c
+lsu_DW01_add_97        ForQA             saed32rvt_tt1p05v25c
+lsu_DW01_add_98        ForQA             saed32rvt_tt1p05v25c
+lsu_DW01_add_99        ForQA             saed32rvt_tt1p05v25c
+lsu_DW01_add_100       ForQA             saed32rvt_tt1p05v25c
+lsu_DW01_add_101       ForQA             saed32rvt_tt1p05v25c
+lsu_DW01_add_102       ForQA             saed32rvt_tt1p05v25c
+lsu_DW01_add_103       ForQA             saed32rvt_tt1p05v25c
+lsu_DW01_add_104       ForQA             saed32rvt_tt1p05v25c
+lsu_DW01_add_105       ForQA             saed32rvt_tt1p05v25c
+lsu_DW01_add_106       ForQA             saed32rvt_tt1p05v25c
+lsu_DW01_add_107       ForQA             saed32rvt_tt1p05v25c
+lsu_DW01_add_108       ForQA             saed32rvt_tt1p05v25c
+lsu_DW01_add_109       ForQA             saed32rvt_tt1p05v25c
+lsu_DW01_add_110       ForQA             saed32rvt_tt1p05v25c
+lsu_DW01_add_111       ForQA             saed32rvt_tt1p05v25c
+lsu_DW01_add_112       ForQA             saed32rvt_tt1p05v25c
+lsu_DW01_add_113       ForQA             saed32rvt_tt1p05v25c
+lsu_DW01_add_114       ForQA             saed32rvt_tt1p05v25c
+lsu_DW01_add_115       ForQA             saed32rvt_tt1p05v25c
+lsu_DW01_add_116       ForQA             saed32rvt_tt1p05v25c
+lsu_DW01_add_117       ForQA             saed32rvt_tt1p05v25c
+lsu_DW01_add_118       ForQA             saed32rvt_tt1p05v25c
+lsu_DW01_add_119       ForQA             saed32rvt_tt1p05v25c
+lsu_DW01_add_120       ForQA             saed32rvt_tt1p05v25c
+lsu_DW01_add_121       ForQA             saed32rvt_tt1p05v25c
+lsu_DW01_add_122       ForQA             saed32rvt_tt1p05v25c
+lsu_DW01_add_123       ForQA             saed32rvt_tt1p05v25c
+lsu_DW01_add_124       ForQA             saed32rvt_tt1p05v25c
+lsu_DW01_add_125       ForQA             saed32rvt_tt1p05v25c
+lsu_DW01_add_126       ForQA             saed32rvt_tt1p05v25c
+lsu_DW01_add_127       ForQA             saed32rvt_tt1p05v25c
+lsu_DW01_add_128       8000              saed32rvt_tt1p05v25c
+lsu_DW02_mult_0        8000              saed32rvt_tt1p05v25c
+lsu_DW01_add_129       8000              saed32rvt_tt1p05v25c
+lsu_DW01_add_130       ForQA             saed32rvt_tt1p05v25c
+lsu_DW02_mult_1        8000              saed32rvt_tt1p05v25c
+lsu_DW01_add_131       8000              saed32rvt_tt1p05v25c
+lsu_DW01_add_132       ForQA             saed32rvt_tt1p05v25c
+lsu_DW02_mult_2        8000              saed32rvt_tt1p05v25c
+lsu_DW01_add_133       8000              saed32rvt_tt1p05v25c
+lsu_DW01_add_134       ForQA             saed32rvt_tt1p05v25c
+lsu_DW02_mult_3        8000              saed32rvt_tt1p05v25c
+lsu_DW01_add_135       8000              saed32rvt_tt1p05v25c
+lsu_DW01_add_136       ForQA             saed32rvt_tt1p05v25c
+lsu_DW02_mult_4        8000              saed32rvt_tt1p05v25c
+lsu_DW01_add_137       8000              saed32rvt_tt1p05v25c
+lsu_DW01_add_138       ForQA             saed32rvt_tt1p05v25c
+lsu_DW02_mult_5        8000              saed32rvt_tt1p05v25c
+lsu_DW01_add_139       8000              saed32rvt_tt1p05v25c
+lsu_DW01_add_140       ForQA             saed32rvt_tt1p05v25c
+lsu_DW02_mult_6        8000              saed32rvt_tt1p05v25c
+lsu_DW01_add_141       8000              saed32rvt_tt1p05v25c
+lsu_DW01_add_142       ForQA             saed32rvt_tt1p05v25c
+lsu_DW02_mult_7        8000              saed32rvt_tt1p05v25c
+lsu_DW01_add_143       8000              saed32rvt_tt1p05v25c
+lsu_DW01_add_144       ForQA             saed32rvt_tt1p05v25c
+lsu_DW02_mult_8        8000              saed32rvt_tt1p05v25c
+lsu_DW01_add_145       8000              saed32rvt_tt1p05v25c
+lsu_DW01_add_146       ForQA             saed32rvt_tt1p05v25c
+lsu_DW02_mult_9        8000              saed32rvt_tt1p05v25c
+lsu_DW01_add_147       8000              saed32rvt_tt1p05v25c
+lsu_DW01_add_148       ForQA             saed32rvt_tt1p05v25c
+lsu_DW02_mult_10       8000              saed32rvt_tt1p05v25c
+lsu_DW01_add_149       8000              saed32rvt_tt1p05v25c
+lsu_DW01_add_150       ForQA             saed32rvt_tt1p05v25c
+lsu_DW02_mult_11       8000              saed32rvt_tt1p05v25c
+lsu_DW01_add_151       8000              saed32rvt_tt1p05v25c
+lsu_DW01_add_152       ForQA             saed32rvt_tt1p05v25c
+lsu_DW02_mult_12       8000              saed32rvt_tt1p05v25c
+lsu_DW01_add_153       8000              saed32rvt_tt1p05v25c
+lsu_DW01_add_154       ForQA             saed32rvt_tt1p05v25c
+lsu_DW02_mult_13       8000              saed32rvt_tt1p05v25c
+lsu_DW01_add_155       8000              saed32rvt_tt1p05v25c
+lsu_DW01_add_156       ForQA             saed32rvt_tt1p05v25c
+lsu_DW02_mult_14       8000              saed32rvt_tt1p05v25c
+lsu_DW01_add_157       8000              saed32rvt_tt1p05v25c
+lsu_DW01_add_158       ForQA             saed32rvt_tt1p05v25c
+lsu_DW02_mult_15       8000              saed32rvt_tt1p05v25c
+lsu_DW01_add_159       8000              saed32rvt_tt1p05v25c
+lsu_DW01_add_160       ForQA             saed32rvt_tt1p05v25c
+lsu_DW02_mult_16       8000              saed32rvt_tt1p05v25c
+lsu_DW01_add_161       8000              saed32rvt_tt1p05v25c
+lsu_DW01_add_162       ForQA             saed32rvt_tt1p05v25c
+lsu_DW02_mult_17       8000              saed32rvt_tt1p05v25c
+lsu_DW01_add_163       8000              saed32rvt_tt1p05v25c
+lsu_DW01_add_164       ForQA             saed32rvt_tt1p05v25c
+lsu_DW02_mult_18       8000              saed32rvt_tt1p05v25c
+lsu_DW01_add_165       8000              saed32rvt_tt1p05v25c
+lsu_DW01_add_166       ForQA             saed32rvt_tt1p05v25c
+lsu_DW02_mult_19       8000              saed32rvt_tt1p05v25c
+lsu_DW01_add_167       8000              saed32rvt_tt1p05v25c
+lsu_DW01_add_168       ForQA             saed32rvt_tt1p05v25c
+lsu_DW02_mult_20       8000              saed32rvt_tt1p05v25c
+lsu_DW01_add_169       8000              saed32rvt_tt1p05v25c
+lsu_DW01_add_170       ForQA             saed32rvt_tt1p05v25c
+lsu_DW02_mult_21       8000              saed32rvt_tt1p05v25c
+lsu_DW01_add_171       8000              saed32rvt_tt1p05v25c
+lsu_DW01_add_172       ForQA             saed32rvt_tt1p05v25c
+lsu_DW02_mult_22       8000              saed32rvt_tt1p05v25c
+lsu_DW01_add_173       8000              saed32rvt_tt1p05v25c
+lsu_DW01_add_174       ForQA             saed32rvt_tt1p05v25c
+lsu_DW02_mult_23       8000              saed32rvt_tt1p05v25c
+lsu_DW01_add_175       8000              saed32rvt_tt1p05v25c
+lsu_DW01_add_176       ForQA             saed32rvt_tt1p05v25c
+lsu_DW02_mult_24       8000              saed32rvt_tt1p05v25c
+lsu_DW01_add_177       8000              saed32rvt_tt1p05v25c
+lsu_DW01_add_178       ForQA             saed32rvt_tt1p05v25c
+lsu_DW02_mult_25       8000              saed32rvt_tt1p05v25c
+lsu_DW01_add_179       8000              saed32rvt_tt1p05v25c
+lsu_DW01_add_180       ForQA             saed32rvt_tt1p05v25c
+lsu_DW02_mult_26       8000              saed32rvt_tt1p05v25c
+lsu_DW01_add_181       8000              saed32rvt_tt1p05v25c
+lsu_DW01_add_182       ForQA             saed32rvt_tt1p05v25c
+lsu_DW02_mult_27       8000              saed32rvt_tt1p05v25c
+lsu_DW01_add_183       8000              saed32rvt_tt1p05v25c
+lsu_DW01_add_184       ForQA             saed32rvt_tt1p05v25c
+lsu_DW02_mult_28       8000              saed32rvt_tt1p05v25c
+lsu_DW01_add_185       8000              saed32rvt_tt1p05v25c
+lsu_DW01_add_186       ForQA             saed32rvt_tt1p05v25c
+lsu_DW02_mult_29       8000              saed32rvt_tt1p05v25c
+lsu_DW01_add_187       8000              saed32rvt_tt1p05v25c
+lsu_DW01_add_188       ForQA             saed32rvt_tt1p05v25c
+lsu_DW02_mult_30       8000              saed32rvt_tt1p05v25c
+lsu_DW01_add_189       8000              saed32rvt_tt1p05v25c
+lsu_DW01_add_190       ForQA             saed32rvt_tt1p05v25c
+lsu_DW02_mult_31       8000              saed32rvt_tt1p05v25c
+lsu_DW01_add_191       8000              saed32rvt_tt1p05v25c
+lsu_DW01_add_192       ForQA             saed32rvt_tt1p05v25c
+lsu_DW02_mult_32       8000              saed32rvt_tt1p05v25c
+lsu_DW01_add_193       8000              saed32rvt_tt1p05v25c
+lsu_DW01_add_194       ForQA             saed32rvt_tt1p05v25c
+lsu_DW02_mult_33       8000              saed32rvt_tt1p05v25c
+lsu_DW01_add_195       8000              saed32rvt_tt1p05v25c
+lsu_DW01_add_196       ForQA             saed32rvt_tt1p05v25c
+lsu_DW02_mult_34       8000              saed32rvt_tt1p05v25c
+lsu_DW01_add_197       8000              saed32rvt_tt1p05v25c
+lsu_DW01_add_198       ForQA             saed32rvt_tt1p05v25c
+lsu_DW02_mult_35       8000              saed32rvt_tt1p05v25c
+lsu_DW01_add_199       8000              saed32rvt_tt1p05v25c
+lsu_DW01_add_200       ForQA             saed32rvt_tt1p05v25c
+lsu_DW02_mult_36       8000              saed32rvt_tt1p05v25c
+lsu_DW01_add_201       8000              saed32rvt_tt1p05v25c
+lsu_DW01_add_202       ForQA             saed32rvt_tt1p05v25c
+lsu_DW02_mult_37       8000              saed32rvt_tt1p05v25c
+lsu_DW01_add_203       8000              saed32rvt_tt1p05v25c
+lsu_DW01_add_204       ForQA             saed32rvt_tt1p05v25c
+lsu_DW02_mult_38       8000              saed32rvt_tt1p05v25c
+lsu_DW01_add_205       8000              saed32rvt_tt1p05v25c
+lsu_DW01_add_206       ForQA             saed32rvt_tt1p05v25c
+lsu_DW02_mult_39       8000              saed32rvt_tt1p05v25c
+lsu_DW01_add_207       8000              saed32rvt_tt1p05v25c
+lsu_DW01_add_208       ForQA             saed32rvt_tt1p05v25c
+lsu_DW02_mult_40       8000              saed32rvt_tt1p05v25c
+lsu_DW01_add_209       8000              saed32rvt_tt1p05v25c
+lsu_DW01_add_210       ForQA             saed32rvt_tt1p05v25c
+lsu_DW02_mult_41       8000              saed32rvt_tt1p05v25c
+lsu_DW01_add_211       8000              saed32rvt_tt1p05v25c
+lsu_DW01_add_212       ForQA             saed32rvt_tt1p05v25c
+lsu_DW02_mult_42       8000              saed32rvt_tt1p05v25c
+lsu_DW01_add_213       8000              saed32rvt_tt1p05v25c
+lsu_DW01_add_214       ForQA             saed32rvt_tt1p05v25c
+lsu_DW02_mult_43       8000              saed32rvt_tt1p05v25c
+lsu_DW01_add_215       8000              saed32rvt_tt1p05v25c
+lsu_DW01_add_216       ForQA             saed32rvt_tt1p05v25c
+lsu_DW02_mult_44       8000              saed32rvt_tt1p05v25c
+lsu_DW01_add_217       8000              saed32rvt_tt1p05v25c
+lsu_DW01_add_218       ForQA             saed32rvt_tt1p05v25c
+lsu_DW02_mult_45       8000              saed32rvt_tt1p05v25c
+lsu_DW01_add_219       8000              saed32rvt_tt1p05v25c
+lsu_DW01_add_220       ForQA             saed32rvt_tt1p05v25c
+lsu_DW02_mult_46       8000              saed32rvt_tt1p05v25c
+lsu_DW01_add_221       8000              saed32rvt_tt1p05v25c
+lsu_DW01_add_222       ForQA             saed32rvt_tt1p05v25c
+lsu_DW02_mult_47       8000              saed32rvt_tt1p05v25c
+lsu_DW01_add_223       8000              saed32rvt_tt1p05v25c
+lsu_DW01_add_224       ForQA             saed32rvt_tt1p05v25c
+lsu_DW02_mult_48       8000              saed32rvt_tt1p05v25c
+lsu_DW01_add_225       8000              saed32rvt_tt1p05v25c
+lsu_DW01_add_226       ForQA             saed32rvt_tt1p05v25c
+lsu_DW02_mult_49       8000              saed32rvt_tt1p05v25c
+lsu_DW01_add_227       8000              saed32rvt_tt1p05v25c
+lsu_DW01_add_228       ForQA             saed32rvt_tt1p05v25c
+lsu_DW02_mult_50       8000              saed32rvt_tt1p05v25c
+lsu_DW01_add_229       8000              saed32rvt_tt1p05v25c
+lsu_DW01_add_230       ForQA             saed32rvt_tt1p05v25c
+lsu_DW02_mult_51       8000              saed32rvt_tt1p05v25c
+lsu_DW01_add_231       8000              saed32rvt_tt1p05v25c
+lsu_DW01_add_232       ForQA             saed32rvt_tt1p05v25c
+lsu_DW02_mult_52       8000              saed32rvt_tt1p05v25c
+lsu_DW01_add_233       8000              saed32rvt_tt1p05v25c
+lsu_DW01_add_234       ForQA             saed32rvt_tt1p05v25c
+lsu_DW02_mult_53       8000              saed32rvt_tt1p05v25c
+lsu_DW01_add_235       8000              saed32rvt_tt1p05v25c
+lsu_DW01_add_236       ForQA             saed32rvt_tt1p05v25c
+lsu_DW02_mult_54       8000              saed32rvt_tt1p05v25c
+lsu_DW01_add_237       8000              saed32rvt_tt1p05v25c
+lsu_DW01_add_238       ForQA             saed32rvt_tt1p05v25c
+lsu_DW02_mult_55       8000              saed32rvt_tt1p05v25c
+lsu_DW01_add_239       8000              saed32rvt_tt1p05v25c
+lsu_DW01_add_240       ForQA             saed32rvt_tt1p05v25c
+lsu_DW02_mult_56       8000              saed32rvt_tt1p05v25c
+lsu_DW01_add_241       8000              saed32rvt_tt1p05v25c
+lsu_DW01_add_242       ForQA             saed32rvt_tt1p05v25c
+lsu_DW02_mult_57       8000              saed32rvt_tt1p05v25c
+lsu_DW01_add_243       8000              saed32rvt_tt1p05v25c
+lsu_DW01_add_244       ForQA             saed32rvt_tt1p05v25c
+lsu_DW02_mult_58       8000              saed32rvt_tt1p05v25c
+lsu_DW01_add_245       8000              saed32rvt_tt1p05v25c
+lsu_DW01_add_246       ForQA             saed32rvt_tt1p05v25c
+lsu_DW02_mult_59       8000              saed32rvt_tt1p05v25c
+lsu_DW01_add_247       8000              saed32rvt_tt1p05v25c
+lsu_DW01_add_248       ForQA             saed32rvt_tt1p05v25c
+lsu_DW02_mult_60       8000              saed32rvt_tt1p05v25c
+lsu_DW01_add_249       8000              saed32rvt_tt1p05v25c
+lsu_DW01_add_250       ForQA             saed32rvt_tt1p05v25c
+lsu_DW02_mult_61       8000              saed32rvt_tt1p05v25c
+lsu_DW01_add_251       8000              saed32rvt_tt1p05v25c
+lsu_DW01_add_252       ForQA             saed32rvt_tt1p05v25c
+lsu_DW02_mult_62       8000              saed32rvt_tt1p05v25c
+lsu_DW01_add_253       8000              saed32rvt_tt1p05v25c
+lsu_DW01_inc_0         ForQA             saed32rvt_tt1p05v25c
+lsu_DW02_mult_63       8000              saed32rvt_tt1p05v25c
+lsu_DW01_add_254       8000              saed32rvt_tt1p05v25c
+
+
+Global Operating Voltage = 1.05 
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ns
+    Dynamic Power Units = 1uW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+--------------------------------------------------------------------------------
+                                       Switch   Int      Leak     Total
+Hierarchy                              Power    Power    Power    Power    %
+--------------------------------------------------------------------------------
+lsu                                    1.77e+03 3.24e+04 5.75e+10 9.16e+04 100.0
+  addr_calc/mtbuf_address_calc[63]/mult_25 (lsu_DW02_mult_0)
+                                         20.375   69.885 2.68e+08  357.829   0.4
+  addr_calc/mtbuf_address_calc[63]/add_25 (lsu_DW01_add_130)
+                                          0.365    1.397 1.28e+07   14.591   0.0
+  addr_calc/mtbuf_address_calc[62]/mult_25 (lsu_DW02_mult_1)
+                                         20.349   69.942 2.66e+08  356.180   0.4
+  addr_calc/mtbuf_address_calc[62]/add_25 (lsu_DW01_add_132)
+                                          0.380    1.343 1.28e+07   14.543   0.0
+  addr_calc/mtbuf_address_calc[61]/mult_25 (lsu_DW02_mult_2)
+                                         20.527   70.395 2.66e+08  356.891   0.4
+  addr_calc/mtbuf_address_calc[61]/add_25 (lsu_DW01_add_134)
+                                          0.368    1.379 1.27e+07   14.457   0.0
+  addr_calc/mtbuf_address_calc[60]/mult_25 (lsu_DW02_mult_3)
+                                         20.425   70.187 2.65e+08  355.237   0.4
+  addr_calc/mtbuf_address_calc[60]/add_25 (lsu_DW01_add_136)
+                                          0.357    1.284 1.28e+07   14.419   0.0
+  addr_calc/mtbuf_address_calc[59]/mult_25 (lsu_DW02_mult_4)
+                                         20.490   70.282 2.66e+08  356.401   0.4
+  addr_calc/mtbuf_address_calc[59]/add_25 (lsu_DW01_add_138)
+                                          0.390    1.390 1.27e+07   14.512   0.0
+  addr_calc/mtbuf_address_calc[58]/mult_25 (lsu_DW02_mult_5)
+                                         20.436   70.141 2.65e+08  355.131   0.4
+  addr_calc/mtbuf_address_calc[58]/add_25 (lsu_DW01_add_140)
+                                          0.355    1.314 1.27e+07   14.360   0.0
+  addr_calc/mtbuf_address_calc[57]/mult_25 (lsu_DW02_mult_6)
+                                         20.555   70.463 2.65e+08  355.536   0.4
+  addr_calc/mtbuf_address_calc[57]/add_25 (lsu_DW01_add_142)
+                                          0.358    1.334 1.26e+07   14.257   0.0
+  addr_calc/mtbuf_address_calc[56]/mult_25 (lsu_DW02_mult_7)
+                                         20.304   69.844 2.63e+08  353.298   0.4
+  addr_calc/mtbuf_address_calc[56]/add_25 (lsu_DW01_add_144)
+                                          0.339    1.207 1.27e+07   14.259   0.0
+  addr_calc/mtbuf_address_calc[55]/mult_25 (lsu_DW02_mult_8)
+                                         20.508   70.338 2.66e+08  356.730   0.4
+  addr_calc/mtbuf_address_calc[55]/add_25 (lsu_DW01_add_146)
+                                          0.376    1.392 1.27e+07   14.505   0.0
+  addr_calc/mtbuf_address_calc[54]/mult_25 (lsu_DW02_mult_9)
+                                         20.495   70.325 2.65e+08  355.361   0.4
+  addr_calc/mtbuf_address_calc[54]/add_25 (lsu_DW01_add_148)
+                                          0.367    1.322 1.27e+07   14.392   0.0
+  addr_calc/mtbuf_address_calc[53]/mult_25 (lsu_DW02_mult_10)
+                                         20.649   70.716 2.65e+08  355.982   0.4
+  addr_calc/mtbuf_address_calc[53]/add_25 (lsu_DW01_add_150)
+                                          0.363    1.369 1.26e+07   14.321   0.0
+  addr_calc/mtbuf_address_calc[52]/mult_25 (lsu_DW02_mult_11)
+                                         20.378   69.969 2.63e+08  353.294   0.4
+  addr_calc/mtbuf_address_calc[52]/add_25 (lsu_DW01_add_152)
+                                          0.335    1.244 1.26e+07   14.211   0.0
+  addr_calc/mtbuf_address_calc[51]/mult_25 (lsu_DW02_mult_12)
+                                         20.503   70.240 2.64e+08  355.158   0.4
+  addr_calc/mtbuf_address_calc[51]/add_25 (lsu_DW01_add_154)
+                                          0.358    1.344 1.26e+07   14.283   0.0
+  addr_calc/mtbuf_address_calc[50]/mult_25 (lsu_DW02_mult_13)
+                                         20.452   69.974 2.63e+08  353.153   0.4
+  addr_calc/mtbuf_address_calc[50]/add_25 (lsu_DW01_add_156)
+                                          0.317    1.285 1.25e+07   14.136   0.0
+  addr_calc/mtbuf_address_calc[49]/mult_25 (lsu_DW02_mult_14)
+                                         20.537   70.383 2.63e+08  353.802   0.4
+  addr_calc/mtbuf_address_calc[49]/add_25 (lsu_DW01_add_158)
+                                          0.328    1.282 1.24e+07   13.983   0.0
+  addr_calc/mtbuf_address_calc[48]/mult_25 (lsu_DW02_mult_15)
+                                         20.250   69.563 2.61e+08  351.054   0.4
+  addr_calc/mtbuf_address_calc[48]/add_25 (lsu_DW01_add_160)
+                                          0.304    1.144 1.27e+07   14.100   0.0
+  addr_calc/mtbuf_address_calc[47]/mult_25 (lsu_DW02_mult_16)
+                                         20.462   70.179 2.66e+08  356.420   0.4
+  addr_calc/mtbuf_address_calc[47]/add_25 (lsu_DW01_add_162)
+                                          0.385    1.382 1.27e+07   14.483   0.0
+  addr_calc/mtbuf_address_calc[46]/mult_25 (lsu_DW02_mult_17)
+                                         20.347   69.939 2.64e+08  354.547   0.4
+  addr_calc/mtbuf_address_calc[46]/add_25 (lsu_DW01_add_164)
+                                          0.377    1.303 1.27e+07   14.366   0.0
+  addr_calc/mtbuf_address_calc[45]/mult_25 (lsu_DW02_mult_18)
+                                         20.616   70.590 2.64e+08  355.620   0.4
+  addr_calc/mtbuf_address_calc[45]/add_25 (lsu_DW01_add_166)
+                                          0.363    1.352 1.26e+07   14.296   0.0
+  addr_calc/mtbuf_address_calc[44]/mult_25 (lsu_DW02_mult_19)
+                                         20.521   70.383 2.63e+08  354.167   0.4
+  addr_calc/mtbuf_address_calc[44]/add_25 (lsu_DW01_add_168)
+                                          0.336    1.259 1.26e+07   14.236   0.0
+  addr_calc/mtbuf_address_calc[43]/mult_25 (lsu_DW02_mult_20)
+                                         20.543   70.447 2.65e+08  355.611   0.4
+  addr_calc/mtbuf_address_calc[43]/add_25 (lsu_DW01_add_170)
+                                          0.373    1.358 1.26e+07   14.329   0.0
+  addr_calc/mtbuf_address_calc[42]/mult_25 (lsu_DW02_mult_21)
+                                         20.605   70.542 2.63e+08  354.388   0.4
+  addr_calc/mtbuf_address_calc[42]/add_25 (lsu_DW01_add_172)
+                                          0.329    1.291 1.25e+07   14.170   0.0
+  addr_calc/mtbuf_address_calc[41]/mult_25 (lsu_DW02_mult_22)
+                                         20.575   70.485 2.63e+08  354.177   0.4
+  addr_calc/mtbuf_address_calc[41]/add_25 (lsu_DW01_add_174)
+                                          0.328    1.290 1.24e+07   14.013   0.0
+  addr_calc/mtbuf_address_calc[40]/mult_25 (lsu_DW02_mult_23)
+                                         20.338   69.848 2.61e+08  351.637   0.4
+  addr_calc/mtbuf_address_calc[40]/add_25 (lsu_DW01_add_176)
+                                          0.312    1.170 1.26e+07   14.038   0.0
+  addr_calc/mtbuf_address_calc[39]/mult_25 (lsu_DW02_mult_24)
+                                         20.537   70.383 2.64e+08  355.301   0.4
+  addr_calc/mtbuf_address_calc[39]/add_25 (lsu_DW01_add_178)
+                                          0.352    1.340 1.26e+07   14.252   0.0
+  addr_calc/mtbuf_address_calc[38]/mult_25 (lsu_DW02_mult_25)
+                                         20.426   70.087 2.63e+08  353.626   0.4
+  addr_calc/mtbuf_address_calc[38]/add_25 (lsu_DW01_add_180)
+                                          0.335    1.269 1.25e+07   14.127   0.0
+  addr_calc/mtbuf_address_calc[37]/mult_25 (lsu_DW02_mult_26)
+                                         20.557   70.388 2.63e+08  353.994   0.4
+  addr_calc/mtbuf_address_calc[37]/add_25 (lsu_DW01_add_182)
+                                          0.322    1.293 1.24e+07   14.012   0.0
+  addr_calc/mtbuf_address_calc[36]/mult_25 (lsu_DW02_mult_27)
+                                         20.404   69.988 2.62e+08  352.083   0.4
+  addr_calc/mtbuf_address_calc[36]/add_25 (lsu_DW01_add_184)
+                                          0.294    1.186 1.24e+07   13.917   0.0
+  addr_calc/mtbuf_address_calc[35]/mult_25 (lsu_DW02_mult_28)
+                                         20.509   70.314 2.63e+08  353.749   0.4
+  addr_calc/mtbuf_address_calc[35]/add_25 (lsu_DW01_add_186)
+                                          0.332    1.276 1.24e+07   13.981   0.0
+  addr_calc/mtbuf_address_calc[34]/mult_25 (lsu_DW02_mult_29)
+                                         20.429   69.970 2.62e+08  352.235   0.4
+  addr_calc/mtbuf_address_calc[34]/add_25 (lsu_DW01_add_188)
+                                          0.279    1.193 1.23e+07   13.781   0.0
+  addr_calc/mtbuf_address_calc[33]/mult_25 (lsu_DW02_mult_30)
+                                         20.417   69.959 2.62e+08  352.055   0.4
+  addr_calc/mtbuf_address_calc[33]/add_25 (lsu_DW01_add_190)
+                                          0.290    1.204 1.22e+07   13.655   0.0
+  addr_calc/mtbuf_address_calc[32]/mult_25 (lsu_DW02_mult_31)
+                                         20.233   69.536 2.60e+08  350.008   0.4
+  addr_calc/mtbuf_address_calc[32]/add_25 (lsu_DW01_add_192)
+                                          0.255    1.055 1.26e+07   13.870   0.0
+  addr_calc/mtbuf_address_calc[31]/mult_25 (lsu_DW02_mult_32)
+                                         20.353   69.877 2.66e+08  356.218   0.4
+  addr_calc/mtbuf_address_calc[31]/add_25 (lsu_DW01_add_194)
+                                          0.356    1.343 1.27e+07   14.350   0.0
+  addr_calc/mtbuf_address_calc[30]/mult_25 (lsu_DW02_mult_33)
+                                         20.325   69.872 2.65e+08  354.841   0.4
+  addr_calc/mtbuf_address_calc[30]/add_25 (lsu_DW01_add_196)
+                                          0.352    1.277 1.26e+07   14.259   0.0
+  addr_calc/mtbuf_address_calc[29]/mult_25 (lsu_DW02_mult_34)
+                                         20.494   70.266 2.65e+08  355.456   0.4
+  addr_calc/mtbuf_address_calc[29]/add_25 (lsu_DW01_add_198)
+                                          0.350    1.328 1.25e+07   14.218   0.0
+  addr_calc/mtbuf_address_calc[28]/mult_25 (lsu_DW02_mult_35)
+                                         20.397   70.115 2.63e+08  353.654   0.4
+  addr_calc/mtbuf_address_calc[28]/add_25 (lsu_DW01_add_200)
+                                          0.335    1.233 1.26e+07   14.163   0.0
+  addr_calc/mtbuf_address_calc[27]/mult_25 (lsu_DW02_mult_36)
+                                         20.497   70.270 2.65e+08  355.319   0.4
+  addr_calc/mtbuf_address_calc[27]/add_25 (lsu_DW01_add_202)
+                                          0.352    1.326 1.26e+07   14.231   0.0
+  addr_calc/mtbuf_address_calc[26]/mult_25 (lsu_DW02_mult_37)
+                                         20.477   70.205 2.63e+08  353.879   0.4
+  addr_calc/mtbuf_address_calc[26]/add_25 (lsu_DW01_add_204)
+                                          0.323    1.265 1.25e+07   14.100   0.0
+  addr_calc/mtbuf_address_calc[25]/mult_25 (lsu_DW02_mult_38)
+                                         20.515   70.347 2.63e+08  354.005   0.4
+  addr_calc/mtbuf_address_calc[25]/add_25 (lsu_DW01_add_206)
+                                          0.330    1.272 1.24e+07   13.968   0.0
+  addr_calc/mtbuf_address_calc[24]/mult_25 (lsu_DW02_mult_39)
+                                         20.371   69.976 2.62e+08  351.912   0.4
+  addr_calc/mtbuf_address_calc[24]/add_25 (lsu_DW01_add_208)
+                                          0.297    1.158 1.25e+07   13.977   0.0
+  addr_calc/mtbuf_address_calc[23]/mult_25 (lsu_DW02_mult_40)
+                                         20.408   69.919 2.64e+08  354.594   0.4
+  addr_calc/mtbuf_address_calc[23]/add_25 (lsu_DW01_add_210)
+                                          0.335    1.319 1.25e+07   14.184   0.0
+  addr_calc/mtbuf_address_calc[22]/mult_25 (lsu_DW02_mult_41)
+                                         20.384   69.907 2.63e+08  352.953   0.4
+  addr_calc/mtbuf_address_calc[22]/add_25 (lsu_DW01_add_212)
+                                          0.325    1.253 1.25e+07   14.071   0.0
+  addr_calc/mtbuf_address_calc[21]/mult_25 (lsu_DW02_mult_42)
+                                         20.464   70.088 2.63e+08  353.529   0.4
+  addr_calc/mtbuf_address_calc[21]/add_25 (lsu_DW01_add_214)
+                                          0.327    1.280 1.24e+07   13.990   0.0
+  addr_calc/mtbuf_address_calc[20]/mult_25 (lsu_DW02_mult_43)
+                                         20.286   69.557 2.61e+08  351.104   0.4
+  addr_calc/mtbuf_address_calc[20]/add_25 (lsu_DW01_add_216)
+                                          0.281    1.170 1.24e+07   13.864   0.0
+  addr_calc/mtbuf_address_calc[19]/mult_25 (lsu_DW02_mult_44)
+                                         20.530   70.399 2.63e+08  354.158   0.4
+  addr_calc/mtbuf_address_calc[19]/add_25 (lsu_DW01_add_218)
+                                          0.330    1.270 1.24e+07   13.965   0.0
+  addr_calc/mtbuf_address_calc[18]/mult_25 (lsu_DW02_mult_45)
+                                         20.411   69.965 2.62e+08  352.069   0.4
+  addr_calc/mtbuf_address_calc[18]/add_25 (lsu_DW01_add_220)
+                                          0.288    1.192 1.23e+07   13.782   0.0
+  addr_calc/mtbuf_address_calc[17]/mult_25 (lsu_DW02_mult_46)
+                                         20.425   70.055 2.62e+08  352.378   0.4
+  addr_calc/mtbuf_address_calc[17]/add_25 (lsu_DW01_add_222)
+                                          0.302    1.201 1.22e+07   13.667   0.0
+  addr_calc/mtbuf_address_calc[16]/mult_25 (lsu_DW02_mult_47)
+                                         20.151   69.239 2.60e+08  349.730   0.4
+  addr_calc/mtbuf_address_calc[16]/add_25 (lsu_DW01_add_224)
+                                          0.246    1.050 1.24e+07   13.719   0.0
+  addr_calc/mtbuf_address_calc[15]/mult_25 (lsu_DW02_mult_48)
+                                         20.367   69.875 2.64e+08  354.727   0.4
+  addr_calc/mtbuf_address_calc[15]/add_25 (lsu_DW01_add_226)
+                                          0.335    1.296 1.25e+07   14.112   0.0
+  addr_calc/mtbuf_address_calc[14]/mult_25 (lsu_DW02_mult_49)
+                                         20.376   70.000 2.63e+08  353.642   0.4
+  addr_calc/mtbuf_address_calc[14]/add_25 (lsu_DW01_add_228)
+                                          0.328    1.224 1.24e+07   14.001   0.0
+  addr_calc/mtbuf_address_calc[13]/mult_25 (lsu_DW02_mult_50)
+                                         20.415   69.980 2.63e+08  353.353   0.4
+  addr_calc/mtbuf_address_calc[13]/add_25 (lsu_DW01_add_230)
+                                          0.324    1.263 1.23e+07   13.933   0.0
+  addr_calc/mtbuf_address_calc[12]/mult_25 (lsu_DW02_mult_51)
+                                         20.324   69.799 2.62e+08  351.950   0.4
+  addr_calc/mtbuf_address_calc[12]/add_25 (lsu_DW01_add_232)
+                                          0.296    1.160 1.24e+07   13.851   0.0
+  addr_calc/mtbuf_address_calc[11]/mult_25 (lsu_DW02_mult_52)
+                                         20.404   69.999 2.63e+08  353.306   0.4
+  addr_calc/mtbuf_address_calc[11]/add_25 (lsu_DW01_add_234)
+                                          0.335    1.265 1.23e+07   13.946   0.0
+  addr_calc/mtbuf_address_calc[10]/mult_25 (lsu_DW02_mult_53)
+                                         20.398   69.975 2.62e+08  352.356   0.4
+  addr_calc/mtbuf_address_calc[10]/add_25 (lsu_DW01_add_236)
+                                          0.293    1.180 1.23e+07   13.767   0.0
+  addr_calc/mtbuf_address_calc[9]/mult_25 (lsu_DW02_mult_54)
+                                         20.438   70.084 2.62e+08  352.315   0.4
+  addr_calc/mtbuf_address_calc[9]/add_25 (lsu_DW01_add_238)
+                                          0.300    1.202 1.21e+07   13.649   0.0
+  addr_calc/mtbuf_address_calc[8]/mult_25 (lsu_DW02_mult_55)
+                                         20.170   69.254 2.60e+08  349.635   0.4
+  addr_calc/mtbuf_address_calc[8]/add_25 (lsu_DW01_add_240)
+                                          0.252    1.067 1.23e+07   13.614   0.0
+  addr_calc/mtbuf_address_calc[7]/mult_25 (lsu_DW02_mult_56)
+                                         20.355   69.813 2.63e+08  353.261   0.4
+  addr_calc/mtbuf_address_calc[7]/add_25 (lsu_DW01_add_242)
+                                          0.309    1.231 1.23e+07   13.835   0.0
+  addr_calc/mtbuf_address_calc[6]/mult_25 (lsu_DW02_mult_57)
+                                         20.311   69.681 2.62e+08  351.585   0.4
+  addr_calc/mtbuf_address_calc[6]/add_25 (lsu_DW01_add_244)
+                                          0.282    1.168 1.23e+07   13.705   0.0
+  addr_calc/mtbuf_address_calc[5]/mult_25 (lsu_DW02_mult_58)
+                                         20.432   70.044 2.62e+08  352.514   0.4
+  addr_calc/mtbuf_address_calc[5]/add_25 (lsu_DW01_add_246)
+                                          0.287    1.191 1.21e+07   13.611   0.0
+  addr_calc/mtbuf_address_calc[4]/mult_25 (lsu_DW02_mult_59)
+                                         20.216   69.361 2.60e+08  349.888   0.4
+  addr_calc/mtbuf_address_calc[4]/add_25 (lsu_DW01_add_248)
+                                          0.241    1.078 1.22e+07   13.483   0.0
+  addr_calc/mtbuf_address_calc[3]/mult_25 (lsu_DW02_mult_60)
+                                         20.261   69.425 2.62e+08  351.468   0.4
+  addr_calc/mtbuf_address_calc[3]/add_25 (lsu_DW01_add_250)
+                                          0.279    1.159 1.21e+07   13.533   0.0
+  addr_calc/mtbuf_address_calc[2]/mult_25 (lsu_DW02_mult_61)
+                                         20.173   69.088 2.60e+08  349.484   0.4
+  addr_calc/mtbuf_address_calc[2]/add_25 (lsu_DW01_add_252)
+                                          0.234    1.085 1.20e+07   13.349   0.0
+  addr_calc/mtbuf_address_calc[1]/mult_25 (lsu_DW02_mult_62)
+                                         20.115   69.011 2.60e+08  349.336   0.4
+  addr_calc/mtbuf_address_calc[1]/add_25 (lsu_DW01_inc_0)
+                                          0.243    1.001 1.80e+07   19.280   0.0
+  addr_calc/mtbuf_address_calc[0]/mult_25 (lsu_DW02_mult_63)
+                                         20.057   68.459 2.59e+08  347.941   0.4
+  addr_calc/add_40 (lsu_DW01_add_128)     0.561    3.672 1.89e+07   23.088   0.0
+  addr_calc/mtbuf_address_calc[0]/add_25_2 (lsu_DW01_add_127)
+                                          0.302    1.948 9.91e+06   12.157   0.0
+  addr_calc/mtbuf_address_calc[1]/add_25_2 (lsu_DW01_add_126)
+                                          0.289    1.889 9.88e+06   12.061   0.0
+  addr_calc/mtbuf_address_calc[2]/add_25_2 (lsu_DW01_add_125)
+                                          0.289    1.896 9.90e+06   12.087   0.0
+  addr_calc/mtbuf_address_calc[3]/add_25_2 (lsu_DW01_add_124)
+                                          0.288    1.896 9.90e+06   12.088   0.0
+  addr_calc/mtbuf_address_calc[4]/add_25_2 (lsu_DW01_add_123)
+                                          0.289    1.893 9.91e+06   12.091   0.0
+  addr_calc/mtbuf_address_calc[5]/add_25_2 (lsu_DW01_add_122)
+                                          0.287    1.892 9.90e+06   12.078   0.0
+  addr_calc/mtbuf_address_calc[6]/add_25_2 (lsu_DW01_add_121)
+                                          0.289    1.895 9.90e+06   12.084   0.0
+  addr_calc/mtbuf_address_calc[7]/add_25_2 (lsu_DW01_add_120)
+                                          0.289    1.898 9.91e+06   12.099   0.0
+  addr_calc/mtbuf_address_calc[8]/add_25_2 (lsu_DW01_add_119)
+                                          0.290    1.898 9.90e+06   12.091   0.0
+  addr_calc/mtbuf_address_calc[9]/add_25_2 (lsu_DW01_add_118)
+                                          0.287    1.886 9.90e+06   12.073   0.0
+  addr_calc/mtbuf_address_calc[10]/add_25_2 (lsu_DW01_add_117)
+                                          0.290    1.901 9.92e+06   12.108   0.0
+  addr_calc/mtbuf_address_calc[11]/add_25_2 (lsu_DW01_add_116)
+                                          0.285    1.878 9.90e+06   12.060   0.0
+  addr_calc/mtbuf_address_calc[12]/add_25_2 (lsu_DW01_add_115)
+                                          0.293    1.911 9.93e+06   12.131   0.0
+  addr_calc/mtbuf_address_calc[13]/add_25_2 (lsu_DW01_add_114)
+                                          0.286    1.885 9.89e+06   12.058   0.0
+  addr_calc/mtbuf_address_calc[14]/add_25_2 (lsu_DW01_add_113)
+                                          0.291    1.903 9.90e+06   12.098   0.0
+  addr_calc/mtbuf_address_calc[15]/add_25_2 (lsu_DW01_add_112)
+                                          0.289    1.897 9.91e+06   12.094   0.0
+  addr_calc/mtbuf_address_calc[16]/add_25_2 (lsu_DW01_add_111)
+                                          0.291    1.901 9.92e+06   12.109   0.0
+  addr_calc/mtbuf_address_calc[17]/add_25_2 (lsu_DW01_add_110)
+                                          0.284    1.872 9.90e+06   12.052   0.0
+  addr_calc/mtbuf_address_calc[18]/add_25_2 (lsu_DW01_add_109)
+                                          0.290    1.896 9.90e+06   12.090   0.0
+  addr_calc/mtbuf_address_calc[19]/add_25_2 (lsu_DW01_add_108)
+                                          0.289    1.894 9.90e+06   12.083   0.0
+  addr_calc/mtbuf_address_calc[20]/add_25_2 (lsu_DW01_add_107)
+                                          0.289    1.895 9.91e+06   12.092   0.0
+  addr_calc/mtbuf_address_calc[21]/add_25_2 (lsu_DW01_add_106)
+                                          0.286    1.882 9.89e+06   12.058   0.0
+  addr_calc/mtbuf_address_calc[22]/add_25_2 (lsu_DW01_add_105)
+                                          0.289    1.894 9.89e+06   12.075   0.0
+  addr_calc/mtbuf_address_calc[23]/add_25_2 (lsu_DW01_add_104)
+                                          0.288    1.887 9.90e+06   12.076   0.0
+  addr_calc/mtbuf_address_calc[24]/add_25_2 (lsu_DW01_add_103)
+                                          0.291    1.909 9.91e+06   12.113   0.0
+  addr_calc/mtbuf_address_calc[25]/add_25_2 (lsu_DW01_add_102)
+                                          0.285    1.876 9.90e+06   12.059   0.0
+  addr_calc/mtbuf_address_calc[26]/add_25_2 (lsu_DW01_add_101)
+                                          0.288    1.889 9.91e+06   12.087   0.0
+  addr_calc/mtbuf_address_calc[27]/add_25_2 (lsu_DW01_add_100)
+                                          0.287    1.888 9.90e+06   12.074   0.0
+  addr_calc/mtbuf_address_calc[28]/add_25_2 (lsu_DW01_add_99)
+                                          0.290    1.902 9.91e+06   12.105   0.0
+  addr_calc/mtbuf_address_calc[29]/add_25_2 (lsu_DW01_add_98)
+                                          0.286    1.882 9.89e+06   12.061   0.0
+  addr_calc/mtbuf_address_calc[30]/add_25_2 (lsu_DW01_add_97)
+                                          0.289    1.894 9.91e+06   12.088   0.0
+  addr_calc/mtbuf_address_calc[31]/add_25_2 (lsu_DW01_add_96)
+                                          0.288    1.888 9.91e+06   12.082   0.0
+  addr_calc/mtbuf_address_calc[32]/add_25_2 (lsu_DW01_add_95)
+                                          0.290    1.897 9.91e+06   12.099   0.0
+  addr_calc/mtbuf_address_calc[33]/add_25_2 (lsu_DW01_add_94)
+                                          0.288    1.893 9.90e+06   12.077   0.0
+  addr_calc/mtbuf_address_calc[34]/add_25_2 (lsu_DW01_add_93)
+                                          0.290    1.900 9.90e+06   12.092   0.0
+  addr_calc/mtbuf_address_calc[35]/add_25_2 (lsu_DW01_add_92)
+                                          0.286    1.884 9.90e+06   12.069   0.0
+  addr_calc/mtbuf_address_calc[36]/add_25_2 (lsu_DW01_add_91)
+                                          0.289    1.894 9.90e+06   12.086   0.0
+  addr_calc/mtbuf_address_calc[37]/add_25_2 (lsu_DW01_add_90)
+                                          0.288    1.890 9.90e+06   12.074   0.0
+  addr_calc/mtbuf_address_calc[38]/add_25_2 (lsu_DW01_add_89)
+                                          0.289    1.892 9.90e+06   12.080   0.0
+  addr_calc/mtbuf_address_calc[39]/add_25_2 (lsu_DW01_add_88)
+                                          0.287    1.886 9.90e+06   12.071   0.0
+  addr_calc/mtbuf_address_calc[40]/add_25_2 (lsu_DW01_add_87)
+                                          0.288    1.892 9.90e+06   12.083   0.0
+  addr_calc/mtbuf_address_calc[41]/add_25_2 (lsu_DW01_add_86)
+                                          0.287    1.888 9.89e+06   12.061   0.0
+  addr_calc/mtbuf_address_calc[42]/add_25_2 (lsu_DW01_add_85)
+                                          0.288    1.892 9.91e+06   12.086   0.0
+  addr_calc/mtbuf_address_calc[43]/add_25_2 (lsu_DW01_add_84)
+                                          0.286    1.879 9.90e+06   12.069   0.0
+  addr_calc/mtbuf_address_calc[44]/add_25_2 (lsu_DW01_add_83)
+                                          0.289    1.897 9.92e+06   12.108   0.0
+  addr_calc/mtbuf_address_calc[45]/add_25_2 (lsu_DW01_add_82)
+                                          0.285    1.878 9.89e+06   12.052   0.0
+  addr_calc/mtbuf_address_calc[46]/add_25_2 (lsu_DW01_add_81)
+                                          0.289    1.896 9.90e+06   12.085   0.0
+  addr_calc/mtbuf_address_calc[47]/add_25_2 (lsu_DW01_add_80)
+                                          0.287    1.886 9.89e+06   12.068   0.0
+  addr_calc/mtbuf_address_calc[48]/add_25_2 (lsu_DW01_add_79)
+                                          0.290    1.898 9.90e+06   12.091   0.0
+  addr_calc/mtbuf_address_calc[49]/add_25_2 (lsu_DW01_add_78)
+                                          0.285    1.878 9.88e+06   12.043   0.0
+  addr_calc/mtbuf_address_calc[50]/add_25_2 (lsu_DW01_add_77)
+                                          0.289    1.894 9.91e+06   12.092   0.0
+  addr_calc/mtbuf_address_calc[51]/add_25_2 (lsu_DW01_add_76)
+                                          0.283    1.867 9.89e+06   12.042   0.0
+  addr_calc/mtbuf_address_calc[52]/add_25_2 (lsu_DW01_add_75)
+                                          0.290    1.903 9.90e+06   12.097   0.0
+  addr_calc/mtbuf_address_calc[53]/add_25_2 (lsu_DW01_add_74)
+                                          0.287    1.889 9.89e+06   12.066   0.0
+  addr_calc/mtbuf_address_calc[54]/add_25_2 (lsu_DW01_add_73)
+                                          0.289    1.898 9.92e+06   12.107   0.0
+  addr_calc/mtbuf_address_calc[55]/add_25_2 (lsu_DW01_add_72)
+                                          0.286    1.881 9.90e+06   12.064   0.0
+  addr_calc/mtbuf_address_calc[56]/add_25_2 (lsu_DW01_add_71)
+                                          0.289    1.897 9.91e+06   12.094   0.0
+  addr_calc/mtbuf_address_calc[57]/add_25_2 (lsu_DW01_add_70)
+                                          0.287    1.888 9.90e+06   12.076   0.0
+  addr_calc/mtbuf_address_calc[58]/add_25_2 (lsu_DW01_add_69)
+                                          0.290    1.899 9.90e+06   12.086   0.0
+  addr_calc/mtbuf_address_calc[59]/add_25_2 (lsu_DW01_add_68)
+                                          0.289    1.896 9.90e+06   12.085   0.0
+  addr_calc/mtbuf_address_calc[60]/add_25_2 (lsu_DW01_add_67)
+                                          0.290    1.900 9.92e+06   12.105   0.0
+  addr_calc/mtbuf_address_calc[61]/add_25_2 (lsu_DW01_add_66)
+                                          0.286    1.885 9.89e+06   12.058   0.0
+  addr_calc/mtbuf_address_calc[62]/add_25_2 (lsu_DW01_add_65)
+                                          0.288    1.890 9.92e+06   12.094   0.0
+  addr_calc/mtbuf_address_calc[63]/add_25_2 (lsu_DW01_add_64)
+                                          0.287    1.890 9.91e+06   12.089   0.0
+  addr_calc/ds_address_calc[0]/add_11 (lsu_DW01_add_63)
+                                          0.260    1.681 1.20e+07   13.986   0.0
+  addr_calc/ds_address_calc[1]/add_11 (lsu_DW01_add_62)
+                                          0.261    1.678 1.21e+07   14.001   0.0
+  addr_calc/ds_address_calc[2]/add_11 (lsu_DW01_add_61)
+                                          0.266    1.697 1.21e+07   14.022   0.0
+  addr_calc/ds_address_calc[3]/add_11 (lsu_DW01_add_60)
+                                          0.267    1.698 1.21e+07   14.021   0.0
+  addr_calc/ds_address_calc[4]/add_11 (lsu_DW01_add_59)
+                                          0.266    1.700 1.21e+07   14.033   0.0
+  addr_calc/ds_address_calc[5]/add_11 (lsu_DW01_add_58)
+                                          0.267    1.703 1.21e+07   14.034   0.0
+  addr_calc/ds_address_calc[6]/add_11 (lsu_DW01_add_57)
+                                          0.268    1.703 1.21e+07   14.023   0.0
+  addr_calc/ds_address_calc[7]/add_11 (lsu_DW01_add_56)
+                                          0.265    1.694 1.21e+07   14.020   0.0
+  addr_calc/ds_address_calc[8]/add_11 (lsu_DW01_add_55)
+                                          0.263    1.689 1.21e+07   14.019   0.0
+  addr_calc/ds_address_calc[9]/add_11 (lsu_DW01_add_54)
+                                          0.265    1.697 1.21e+07   14.024   0.0
+  addr_calc/ds_address_calc[10]/add_11 (lsu_DW01_add_53)
+                                          0.266    1.698 1.21e+07   14.035   0.0
+  addr_calc/ds_address_calc[11]/add_11 (lsu_DW01_add_52)
+                                          0.266    1.700 1.21e+07   14.032   0.0
+  addr_calc/ds_address_calc[12]/add_11 (lsu_DW01_add_51)
+                                          0.265    1.696 1.21e+07   14.031   0.0
+  addr_calc/ds_address_calc[13]/add_11 (lsu_DW01_add_50)
+                                          0.264    1.692 1.21e+07   14.019   0.0
+  addr_calc/ds_address_calc[14]/add_11 (lsu_DW01_add_49)
+                                          0.266    1.697 1.21e+07   14.023   0.0
+  addr_calc/ds_address_calc[15]/add_11 (lsu_DW01_add_48)
+                                          0.265    1.694 1.21e+07   14.021   0.0
+  addr_calc/ds_address_calc[16]/add_11 (lsu_DW01_add_47)
+                                          0.263    1.685 1.21e+07   14.009   0.0
+  addr_calc/ds_address_calc[17]/add_11 (lsu_DW01_add_46)
+                                          0.266    1.701 1.21e+07   14.031   0.0
+  addr_calc/ds_address_calc[18]/add_11 (lsu_DW01_add_45)
+                                          0.267    1.703 1.21e+07   14.026   0.0
+  addr_calc/ds_address_calc[19]/add_11 (lsu_DW01_add_44)
+                                          0.266    1.699 1.21e+07   14.023   0.0
+  addr_calc/ds_address_calc[20]/add_11 (lsu_DW01_add_43)
+                                          0.264    1.689 1.20e+07   13.999   0.0
+  addr_calc/ds_address_calc[21]/add_11 (lsu_DW01_add_42)
+                                          0.264    1.689 1.21e+07   14.013   0.0
+  addr_calc/ds_address_calc[22]/add_11 (lsu_DW01_add_41)
+                                          0.262    1.682 1.20e+07   13.984   0.0
+  addr_calc/ds_address_calc[23]/add_11 (lsu_DW01_add_40)
+                                          0.265    1.694 1.21e+07   14.013   0.0
+  addr_calc/ds_address_calc[24]/add_11 (lsu_DW01_add_39)
+                                          0.265    1.702 1.21e+07   14.031   0.0
+  addr_calc/ds_address_calc[25]/add_11 (lsu_DW01_add_38)
+                                          0.265    1.697 1.20e+07   14.012   0.0
+  addr_calc/ds_address_calc[26]/add_11 (lsu_DW01_add_37)
+                                          0.265    1.699 1.21e+07   14.033   0.0
+  addr_calc/ds_address_calc[27]/add_11 (lsu_DW01_add_36)
+                                          0.264    1.689 1.21e+07   14.008   0.0
+  addr_calc/ds_address_calc[28]/add_11 (lsu_DW01_add_35)
+                                          0.267    1.705 1.21e+07   14.038   0.0
+  addr_calc/ds_address_calc[29]/add_11 (lsu_DW01_add_34)
+                                          0.266    1.698 1.21e+07   14.026   0.0
+  addr_calc/ds_address_calc[30]/add_11 (lsu_DW01_add_33)
+                                          0.263    1.685 1.20e+07   13.996   0.0
+  addr_calc/ds_address_calc[31]/add_11 (lsu_DW01_add_32)
+                                          0.264    1.690 1.21e+07   14.016   0.0
+  addr_calc/ds_address_calc[32]/add_11 (lsu_DW01_add_31)
+                                          0.265    1.697 1.21e+07   14.027   0.0
+  addr_calc/ds_address_calc[33]/add_11 (lsu_DW01_add_30)
+                                          0.265    1.696 1.21e+07   14.017   0.0
+  addr_calc/ds_address_calc[34]/add_11 (lsu_DW01_add_29)
+                                          0.264    1.690 1.21e+07   14.009   0.0
+  addr_calc/ds_address_calc[35]/add_11 (lsu_DW01_add_28)
+                                          0.265    1.694 1.21e+07   14.010   0.0
+  addr_calc/ds_address_calc[36]/add_11 (lsu_DW01_add_27)
+                                          0.267    1.702 1.21e+07   14.042   0.0
+  addr_calc/ds_address_calc[37]/add_11 (lsu_DW01_add_26)
+                                          0.264    1.688 1.20e+07   14.000   0.0
+  addr_calc/ds_address_calc[38]/add_11 (lsu_DW01_add_25)
+                                          0.264    1.689 1.20e+07   14.002   0.0
+  addr_calc/ds_address_calc[39]/add_11 (lsu_DW01_add_24)
+                                          0.265    1.696 1.20e+07   14.009   0.0
+  addr_calc/ds_address_calc[40]/add_11 (lsu_DW01_add_23)
+                                          0.267    1.701 1.21e+07   14.025   0.0
+  addr_calc/ds_address_calc[41]/add_11 (lsu_DW01_add_22)
+                                          0.265    1.694 1.20e+07   14.005   0.0
+  addr_calc/ds_address_calc[42]/add_11 (lsu_DW01_add_21)
+                                          0.266    1.701 1.21e+07   14.042   0.0
+  addr_calc/ds_address_calc[43]/add_11 (lsu_DW01_add_20)
+                                          0.264    1.691 1.21e+07   14.021   0.0
+  addr_calc/ds_address_calc[44]/add_11 (lsu_DW01_add_19)
+                                          0.267    1.703 1.21e+07   14.039   0.0
+  addr_calc/ds_address_calc[45]/add_11 (lsu_DW01_add_18)
+                                          0.265    1.695 1.21e+07   14.014   0.0
+  addr_calc/ds_address_calc[46]/add_11 (lsu_DW01_add_17)
+                                          0.263    1.684 1.21e+07   13.998   0.0
+  addr_calc/ds_address_calc[47]/add_11 (lsu_DW01_add_16)
+                                          0.266    1.697 1.21e+07   14.017   0.0
+  addr_calc/ds_address_calc[48]/add_11 (lsu_DW01_add_15)
+                                          0.265    1.697 1.21e+07   14.014   0.0
+  addr_calc/ds_address_calc[49]/add_11 (lsu_DW01_add_14)
+                                          0.265    1.696 1.21e+07   14.017   0.0
+  addr_calc/ds_address_calc[50]/add_11 (lsu_DW01_add_13)
+                                          0.266    1.698 1.21e+07   14.033   0.0
+  addr_calc/ds_address_calc[51]/add_11 (lsu_DW01_add_12)
+                                          0.265    1.692 1.21e+07   14.013   0.0
+  addr_calc/ds_address_calc[52]/add_11 (lsu_DW01_add_11)
+                                          0.265    1.693 1.21e+07   14.016   0.0
+  addr_calc/ds_address_calc[53]/add_11 (lsu_DW01_add_10)
+                                          0.265    1.696 1.20e+07   14.011   0.0
+  addr_calc/ds_address_calc[54]/add_11 (lsu_DW01_add_9)
+                                          0.265    1.695 1.21e+07   14.017   0.0
+  addr_calc/ds_address_calc[55]/add_11 (lsu_DW01_add_8)
+                                          0.267    1.701 1.21e+07   14.034   0.0
+  addr_calc/ds_address_calc[56]/add_11 (lsu_DW01_add_7)
+                                          0.265    1.697 1.21e+07   14.017   0.0
+  addr_calc/ds_address_calc[57]/add_11 (lsu_DW01_add_6)
+                                          0.266    1.697 1.21e+07   14.027   0.0
+  addr_calc/ds_address_calc[58]/add_11 (lsu_DW01_add_5)
+                                          0.264    1.690 1.21e+07   14.014   0.0
+  addr_calc/ds_address_calc[59]/add_11 (lsu_DW01_add_4)
+                                          0.265    1.691 1.21e+07   14.011   0.0
+  addr_calc/ds_address_calc[60]/add_11 (lsu_DW01_add_3)
+                                          0.267    1.700 1.21e+07   14.034   0.0
+  addr_calc/ds_address_calc[61]/add_11 (lsu_DW01_add_2)
+                                          0.264    1.689 1.21e+07   14.004   0.0
+  addr_calc/ds_address_calc[62]/add_11 (lsu_DW01_add_1)
+                                          0.265    1.694 1.21e+07   14.027   0.0
+  addr_calc/ds_address_calc[63]/add_11 (lsu_DW01_add_0)
+                                          0.264    1.687 1.21e+07   14.016   0.0
+1
