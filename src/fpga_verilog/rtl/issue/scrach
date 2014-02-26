@@ -1,0 +1,49 @@
+decode_barrier, decode_branch, decode_dest_reg1, decode_dest_reg2, decode_exec_rd, decode_exec_wr, decode_fu, decode_imm_value0, decode_imm_value1, decode_instr_pc, decode_lds_base, decode_m0_rd, decode_m0_wr, decode_opcode, decode_scc_rd, decode_scc_wr, decode_source_reg1, decode_source_reg2, decode_source_reg3, decode_source_reg4, decode_valid, decode_vcc_rd, decode_vcc_wr, decode_waitcnt, decode_wf_halt, decode_wfid, exec_salu_wr_exec_en, exec_salu_wr_m0_en, exec_salu_wr_scc_en, exec_salu_wr_vcc_en, exec_salu_wr_wfid, exec_valu_wr_vcc_en, exec_valu_wr_vcc_wfid, salu_branch_en, salu_branch_taken, salu_branch_wfid, sgpr_alu_dest_reg_addr, sgpr_alu_dest_reg_valid, sgpr_alu_wr_done, sgpr_alu_wr_done_wfid, sgpr_lsu_dest_reg_addr, sgpr_lsu_dest_reg_valid, sgpr_lsu_instr_done, sgpr_lsu_instr_done_wfid, sgpr_valu_dest_addr, sgpr_valu_dest_reg_valid, vgpr_alu_dest_reg_addr, vgpr_alu_dest_reg_valid, vgpr_alu_wr_done, vgpr_alu_wr_done_wfid, vgpr_lsu_dest_reg_addr, vgpr_lsu_dest_reg_valid, vgpr_lsu_wr_done, vgpr_lsu_wr_done_wfid
+
+   input clk;
+
+   input rst;
+
+   input decode_branch, decode_barrier, decode_vcc_wr, decode_vcc_rd, decode_scc_wr,
+         decode_scc_rd, decode_exec_rd, decode_exec_wr, decode_m0_rd, decode_m0_wr,
+         decode_wf_halt, decode_valid, decode_waitcnt, 
+	 vgpr_alu_wr_done, vgpr_alu_dest_reg_valid,
+         vgpr_lsu_wr_done, sgpr_alu_wr_done, sgpr_lsu_instr_done, sgpr_valu_dest_reg_valid,
+	 simd0_alu_ready, simd1_alu_ready, simd2_alu_ready, simd3_alu_ready, 
+	 simf0_alu_ready, simf1_alu_ready, simf2_alu_ready, simf3_alu_ready, 
+	 salu_alu_ready, lsu_ready,
+	 exec_salu_wr_vcc_en, exec_salu_wr_exec_en, exec_salu_wr_scc_en, exec_salu_wr_m0_en,
+         exec_valu_wr_vcc_en, salu_branch_en, salu_branch_taken;
+   input [1:0] decode_fu, sgpr_alu_dest_reg_valid;
+   input [3:0] vgpr_lsu_dest_reg_valid, sgpr_lsu_dest_reg_valid, fetch_wg_wf_count;
+   input [5:0] decode_wfid, vgpr_alu_wr_done_wfid, vgpr_lsu_wr_done_wfid,
+               sgpr_alu_wr_done_wfid, sgpr_lsu_instr_done_wfid, exec_salu_wr_wfid,
+               exec_valu_wr_vcc_wfid, fetch_wg_wgid, salu_branch_wfid;
+   input [8:0] sgpr_alu_dest_reg_addr, sgpr_lsu_dest_reg_addr, sgpr_valu_dest_addr;
+   input [9:0] vgpr_alu_dest_reg_addr, vgpr_lsu_dest_reg_addr;
+   input [12:0] decode_source_reg2, decode_source_reg3, decode_dest_reg2;
+   input [13:0] decode_source_reg1, decode_source_reg4, decode_dest_reg1;
+   input [15:0] decode_imm_value0, decode_lds_base;
+   input [31:0] decode_instr_pc, decode_opcode, decode_imm_value1;
+
+   input f_decode_branch, f_decode_barrier, f_decode_vcc_wr, f_decode_vcc_rd, f_decode_scc_wr,
+         f_decode_scc_rd, f_decode_exec_rd, f_decode_exec_wr, f_decode_m0_rd, f_decode_m0_wr,
+         f_decode_wf_halt, f_decode_valid, f_decode_waitcnt, 
+	 f_vgpr_alu_wr_done, f_vgpr_alu_dest_reg_valid,
+         f_vgpr_lsu_wr_done, f_sgpr_alu_wr_done, f_sgpr_lsu_instr_done, f_sgpr_valu_dest_reg_valid,
+	 simd0_alu_ready, simd1_alu_ready, simd2_alu_ready, simd3_alu_ready, 
+	 simf0_alu_ready, simf1_alu_ready, simf2_alu_ready, simf3_alu_ready, 
+	 salu_alu_ready, lsu_ready,
+	 f_exec_salu_wr_vcc_en, f_exec_salu_wr_exec_en, f_exec_salu_wr_scc_en, f_exec_salu_wr_m0_en,
+         f_exec_valu_wr_vcc_en, f_salu_branch_en, f_salu_branch_taken;
+   input [1:0] f_decode_fu, f_sgpr_alu_dest_reg_valid;
+   input [3:0] f_vgpr_lsu_dest_reg_valid, f_sgpr_lsu_dest_reg_valid, fetch_wg_wf_count;
+   input [5:0] f_decode_wfid, f_vgpr_alu_wr_done_wfid, f_vgpr_lsu_wr_done_wfid,
+               f_sgpr_alu_wr_done_wfid, f_sgpr_lsu_instr_done_wfid, f_exec_salu_wr_wfid,
+               f_exec_valu_wr_vcc_wfid, fetch_wg_wgid, f_salu_branch_wfid;
+   input [8:0] f_sgpr_alu_dest_reg_addr, f_sgpr_lsu_dest_reg_addr, f_sgpr_valu_dest_addr;
+   input [9:0] f_vgpr_alu_dest_reg_addr, f_vgpr_lsu_dest_reg_addr;
+   input [12:0] f_decode_source_reg2, f_decode_source_reg3, f_decode_dest_reg2;
+   input [13:0] f_decode_source_reg1, f_decode_source_reg4, f_decode_dest_reg1;
+   input [15:0] f_decode_imm_value0, f_decode_lds_base;
+   input [31:0] f_decode_instr_pc, f_decode_opcode, f_decode_imm_value1;

@@ -1,0 +1,53 @@
+module compute_unit_temp(
+      dispatch2cu_wf_dispatch,
+      dispatch2cu_wf_tag_dispatch,
+      dispatch2cu_start_pc_dispatch,
+      dispatch2cu_vgpr_base_dispatch,
+      dispatch2cu_sgpr_base_dispatch,
+      dispatch2cu_lds_base_dispatch,
+      dispatch2cu_wf_size_dispatch,
+      cu2dispatch_wf_tag_done,
+      cu2dispatch_wf_done,
+      clk,
+      rst
+ );
+
+input clk;
+
+input rst;
+
+input dispatch2cu_wf_dispatch;
+input[5:0] dispatch2cu_wf_size_dispatch;
+input[8:0] dispatch2cu_sgpr_base_dispatch;
+input[9:0] dispatch2cu_vgpr_base_dispatch;
+input[10:0] dispatch2cu_wf_tag_dispatch;
+input[15:0] dispatch2cu_lds_base_dispatch;
+input[31:0] dispatch2cu_start_pc_dispatch;
+
+output reg cu2dispatch_wf_done;
+output reg[10:0] cu2dispatch_wf_tag_done;
+
+reg [10:0]wf_tag_buff;
+
+initial begin
+	cu2dispatch_wf_done = 1'b0;
+end
+
+always @ (posedge clk) begin
+	if (dispatch2cu_wf_dispatch) begin
+		wf_tag_buff = dispatch2cu_wf_tag_dispatch;
+		cu2dispatch_wf_done = 1'b0;
+		#50;
+		cu2dispatch_wf_tag_done = wf_tag_buff;
+		cu2dispatch_wf_done = 1'b1;
+	end
+end
+
+always @ (posedge clk) begin
+	if (cu2dispatch_wf_done) begin
+		#1
+		cu2dispatch_wf_done = 1'b0;
+	end
+end
+
+endmodule

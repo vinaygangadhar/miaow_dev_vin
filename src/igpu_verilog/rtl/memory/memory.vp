@@ -1,0 +1,120 @@
+module memory(
+      gm_or_lds,
+      rd_en,
+      wr_en,
+      addresses,
+      wr_data,
+      input_tag,
+      wr_mask,
+      rd_data,
+      output_tag,
+      ack,
+      tracemon_addr,
+      tracemon_store_data,
+      tracemon_store_en,
+      clk,
+      rst
+ );
+
+parameter NUMOFCU = 1;
+
+input clk;
+input rst;
+
+input [(NUMOFCU - 1):0] gm_or_lds;
+input [(NUMOFCU*4 - 1):0] rd_en, wr_en;
+input [(NUMOFCU*7 - 1):0] input_tag;
+input [(NUMOFCU*64 - 1):0] wr_mask;
+input [(NUMOFCU*2048 - 1):0] addresses;
+input [(NUMOFCU*8192 - 1):0] wr_data;
+
+output [(NUMOFCU - 1):0] ack;
+output [(NUMOFCU*4 - 1):0] tracemon_store_en;
+output [(NUMOFCU*7 - 1):0] output_tag;
+output [(NUMOFCU*2048 - 1):0] tracemon_addr;
+output [(NUMOFCU*8192 - 1):0] rd_data, tracemon_store_data;
+
+reg [(NUMOFCU - 1):0] ack;
+reg [(NUMOFCU*4 - 1):0] tracemon_store_en, tracemon_store_en_buff;
+reg [(NUMOFCU*7 - 1):0] output_tag;
+reg [(NUMOFCU*2048 - 1):0] tracemon_addr, tracemon_addr_buff;
+reg [(NUMOFCU*8192 - 1):0] rd_data, tracemon_store_data, tracemon_store_data_buff;
+
+reg[7:0] data_memory[50000:0];
+reg[7:0] lds_memory[(NUMOFCU*65536 -1):0];
+
+///////////////////////////////
+//Your code goes here - beware: script does not recognize changes
+// into files. It ovewrites everithing without mercy. Save your work before running the script
+///////////////////////////////
+
+integer i, j, k, m;
+integer locrd = 16; // num of loc to read
+integer addr_index, data_index;
+
+always @ (posedge clk)
+    if (~rst) begin
+        tracemon_addr = tracemon_addr_buff;
+        tracemon_store_en = tracemon_store_en_buff;
+        tracemon_store_data = tracemon_store_data_buff;
+
+        for(i = 0; i < NUMOFCU; i++) begin
+            if (rd_en[(4*i+3)-:4]) begin
+
+                for(k=0; k<64; k=k+1) begin
+                    addr_index = i*2048 + k*32 +31;
+
+                    for(j=0; j<locrd; j=j+1) begin
+                        data_index = i*8192 + k*locrd*8 + j*8 + 7; // 8 bits per location
+                        if(gm_or_lds[i])
+                            rd_data[data_index-:8] =
+                                lds_memory[i*65536 + (addresses[addr_index-:32]) + j];
+                        else
+                            rd_data[data_index-:8] =
+                                data_memory[(addresses[addr_index-:32]) + j];
+                    end
+                end
+
+                output_tag[(i*7 + 6)-:7] = input_tag[(i*7 + 6)-:7];
+                tracemon_addr_buff[(i*2048 + 2047)-:2048] = addresses[(i*2048 + 2047)-:2048];
+                ack[i] = 1'b1;
+            end
+
+            if (|wr_en[(i*4+3)-:4]) begin
+                for(k=0; k<64; k=k+1) begin
+                    if(wr_mask[i*64 + k]) begin
+                        addr_index = i*2048 + k*32 + 31;
+
+                        for(j=0; j<locrd; j=j+1) begin
+                            data_index = i*8192 + k*locrd*8 + j*8 + 7; // 8 bits per location
+                            m = int(j / 4);
+                            if (wr_en[4*i + m]) begin
+                                if(gm_or_lds[i])
+                                    lds_memory[i*65536 + (addresses[addr_index-:32]) + j] =
+                                        wr_data[data_index-:8];
+                                else
+                                    data_memory[(addresses[addr_index-:32]) + j] =
+                                        wr_data[data_index-:8];
+                            end
+                        end
+                    end
+                end
+
+                output_tag[(i*7 + 6)-:7] = input_tag[(i*7 + 6)-:7];
+                tracemon_addr_buff[(i*2048 + 2047)-:2048] = addresses[(i*2048 + 2047)-:2048];
+                tracemon_store_en_buff[(i*4 + 3)-:4] = wr_en[(i*4 + 3)-:4];
+                tracemon_store_data_buff[(i*8192 + 8191)-:8192] = wr_data[(i*8192 + 8191)-:8192];
+                ack[i] = 1'b1;
+            end
+        end
+    end
+
+always @ (posedge clk)
+	for(i = 0; i < NUMOFCU; i++) begin
+		if (rst | (~(|rd_en[(i*4+3)-:4]) & ~(|wr_en[(i*4+3)-:4]))) begin
+			output_tag[(i*7 + 6)-:7] = 7'bx;
+			ack[i] = 1'b0;
+		end
+	end
+
+endmodule

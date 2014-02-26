@@ -1,0 +1,2298 @@
+diff -r ./compute_unit/compute_unit.interface ../../verilog/rtl/compute_unit/compute_unit.interface
+16,17d15
+<       mem2cu_page_fault_en,
+<       mem2cu_page_fault_tag,
+190c188
+< input dispatch2cu_wf_dispatch, mem2lsu_ack, buff2fetchwave_ack, mem2cu_page_fault_en;
+---
+> input dispatch2cu_wf_dispatch, mem2lsu_ack, buff2fetchwave_ack;
+193c191
+< input[6:0] mem2lsu_tag_resp, mem2cu_page_fault_tag;
+---
+> input[6:0] mem2lsu_tag_resp;
+264,288c262,285
+<          decode2issue_branch, decode2issue_exec_rd, decode2issue_exec_wr, decode2issue_idemp_barrier,
+<          decode2issue_m0_rd, decode2issue_m0_wr, decode2issue_scc_rd, decode2issue_scc_wr,
+<          decode2issue_valid, decode2issue_vcc_rd, decode2issue_vcc_wr, decode2issue_waitcnt,
+<          decode2issue_wf_halt, decode2tracemon_colldone, decode2wave_ins_half_rqd,
+<          dispatch2cu_wf_dispatch, exec2issue_salu_wr_exec_en, exec2issue_salu_wr_m0_en,
+<          exec2issue_salu_wr_scc_en, exec2issue_salu_wr_vcc_en, exec2issue_valu_wr_vcc_en,
+<          exec2salu_rd_scc_value, exec2simd_rd_scc_value, exec2simf_rd_scc_value,
+<          fetch2buff_rd_en, fetch2exec_init_wf_en, fetch2tracemon_dispatch, fetch2wave_basereg_wr,
+<          fetch2wave_reserve_valid, issue2fetchwave_wf_done_en, issue2fetchwavedecode_recover_en,
+<          issue2lsu_lsu_select, issue2salu_alu_select, issue2simd0_alu_select,
+<          issue2simd1_alu_select, issue2simd2_alu_select, issue2simd3_alu_select,
+<          issue2simf0_alu_select, issue2simf1_alu_select, issue2simf2_alu_select,
+<          issue2simf3_alu_select, issue2tracemon_barrier_retire_en, issue2tracemon_waitcnt_retire_en,
+<          lsu2issue_ready, lsu2mem_gm_or_lds, lsu2sgpr_instr_done, lsu2sgpr_source1_rd_en,
+<          lsu2sgpr_source2_rd_en, lsu2tracemon_gm_or_lds, lsu2vgpr_instr_done,
+<          lsu2vgpr_source1_rd_en, lsu2vgpr_source2_rd_en, mem2cu_page_fault_en,
+<          mem2lsu_ack, rfa2simd0_queue_entry_serviced, rfa2simd1_queue_entry_serviced,
+<          rfa2simd2_queue_entry_serviced, rfa2simd3_queue_entry_serviced, rfa2simf0_queue_entry_serviced,
+<          rfa2simf1_queue_entry_serviced, rfa2simf2_queue_entry_serviced, rfa2simf3_queue_entry_serviced,
+<          salu2exec_rd_en, salu2exec_wr_exec_en, salu2exec_wr_m0_en, salu2exec_wr_scc_en,
+<          salu2exec_wr_scc_value, salu2exec_wr_vcc_en, salu2fetchwaveissue_branch_en,
+<          salu2fetchwaveissue_branch_taken, salu2issue_alu_ready, salu2sgpr_instr_done,
+<          salu2sgpr_source1_rd_en, salu2sgpr_source2_rd_en, sgpr2issue_alu_wr_done,
+<          sgpr2issue_lsu_instr_done, sgpr2issue_valu_dest_reg_valid, simd0_2exec_rd_en,
+<          simd0_2exec_wr_vcc_en, simd0_2issue_alu_ready, simd0_2rfa_queue_entry_valid,
+---
+>          decode2issue_branch, decode2issue_exec_rd, decode2issue_exec_wr, decode2issue_m0_rd,
+>          decode2issue_m0_wr, decode2issue_scc_rd, decode2issue_scc_wr, decode2issue_valid,
+>          decode2issue_vcc_rd, decode2issue_vcc_wr, decode2issue_waitcnt, decode2issue_wf_halt,
+>          decode2tracemon_colldone, decode2wave_ins_half_rqd, dispatch2cu_wf_dispatch,
+>          exec2issue_salu_wr_exec_en, exec2issue_salu_wr_m0_en, exec2issue_salu_wr_scc_en,
+>          exec2issue_salu_wr_vcc_en, exec2issue_valu_wr_vcc_en, exec2salu_rd_scc_value,
+>          exec2simd_rd_scc_value, exec2simf_rd_scc_value, fetch2buff_rd_en, fetch2exec_init_wf_en,
+>          fetch2tracemon_dispatch, fetch2wave_basereg_wr, fetch2wave_reserve_valid,
+>          issue2fetchwave_wf_done_en, issue2lsu_lsu_select, issue2salu_alu_select,
+>          issue2simd0_alu_select, issue2simd1_alu_select, issue2simd2_alu_select,
+>          issue2simd3_alu_select, issue2simf0_alu_select, issue2simf1_alu_select,
+>          issue2simf2_alu_select, issue2simf3_alu_select, issue2tracemon_barrier_retire_en,
+>          issue2tracemon_waitcnt_retire_en, lsu2issue_ready, lsu2mem_gm_or_lds,
+>          lsu2sgpr_instr_done, lsu2sgpr_source1_rd_en, lsu2sgpr_source2_rd_en,
+>          lsu2tracemon_gm_or_lds, lsu2vgpr_instr_done, lsu2vgpr_source1_rd_en,
+>          lsu2vgpr_source2_rd_en, mem2lsu_ack, rfa2simd0_queue_entry_serviced,
+>          rfa2simd1_queue_entry_serviced, rfa2simd2_queue_entry_serviced, rfa2simd3_queue_entry_serviced,
+>          rfa2simf0_queue_entry_serviced, rfa2simf1_queue_entry_serviced, rfa2simf2_queue_entry_serviced,
+>          rfa2simf3_queue_entry_serviced, salu2exec_rd_en, salu2exec_wr_exec_en,
+>          salu2exec_wr_m0_en, salu2exec_wr_scc_en, salu2exec_wr_scc_value, salu2exec_wr_vcc_en,
+>          salu2fetchwaveissue_branch_en, salu2fetchwaveissue_branch_taken, salu2issue_alu_ready,
+>          salu2sgpr_instr_done, salu2sgpr_source1_rd_en, salu2sgpr_source2_rd_en,
+>          sgpr2issue_alu_wr_done, sgpr2issue_lsu_instr_done, sgpr2issue_valu_dest_reg_valid,
+>          simd0_2exec_rd_en, simd0_2exec_wr_vcc_en, simd0_2issue_alu_ready, simd0_2rfa_queue_entry_valid,
+323,336c320,333
+<          issue2fetchwavedecode_recover_wfid, issue2lsu_wfid, issue2tracemon_waitcnt_retire_wfid,
+<          lsu2exec_rd_wfid, lsu2sgpr_instr_done_wfid, lsu2vgpr_instr_done_wfid,
+<          salu2exec_rd_wfid, salu2exec_wr_wfid, salu2fetchwaveissue_branch_wfid,
+<          salu2sgpr_instr_done_wfid, sgpr2issue_alu_wr_done_wfid, sgpr2issue_lsu_instr_done_wfid,
+<          simd0_2exec_rd_wfid, simd0_2exec_wr_vcc_wfid, simd0_2vgpr_instr_done_wfid,
+<          simd1_2exec_rd_wfid, simd1_2exec_wr_vcc_wfid, simd1_2vgpr_instr_done_wfid,
+<          simd2_2exec_rd_wfid, simd2_2exec_wr_vcc_wfid, simd2_2vgpr_instr_done_wfid,
+<          simd3_2exec_rd_wfid, simd3_2exec_wr_vcc_wfid, simd3_2vgpr_instr_done_wfid,
+<          simf0_2exec_rd_wfid, simf0_2exec_wr_vcc_wfid, simf0_2vgpr_instr_done_wfid,
+<          simf1_2exec_rd_wfid, simf1_2exec_wr_vcc_wfid, simf1_2vgpr_instr_done_wfid,
+<          simf2_2exec_rd_wfid, simf2_2exec_wr_vcc_wfid, simf2_2vgpr_instr_done_wfid,
+<          simf3_2exec_rd_wfid, simf3_2exec_wr_vcc_wfid, simf3_2vgpr_instr_done_wfid,
+<          vgpr2issue_alu_wr_done_wfid, vgpr2issue_lsu_wr_done_wfid, wave2decode_wfid;
+< wire[6:0] lsu2mem_tag_req, mem2cu_page_fault_tag, mem2lsu_tag_resp;
+---
+>          issue2lsu_wfid, issue2tracemon_waitcnt_retire_wfid, lsu2exec_rd_wfid,
+>          lsu2sgpr_instr_done_wfid, lsu2vgpr_instr_done_wfid, salu2exec_rd_wfid,
+>          salu2exec_wr_wfid, salu2fetchwaveissue_branch_wfid, salu2sgpr_instr_done_wfid,
+>          sgpr2issue_alu_wr_done_wfid, sgpr2issue_lsu_instr_done_wfid, simd0_2exec_rd_wfid,
+>          simd0_2exec_wr_vcc_wfid, simd0_2vgpr_instr_done_wfid, simd1_2exec_rd_wfid,
+>          simd1_2exec_wr_vcc_wfid, simd1_2vgpr_instr_done_wfid, simd2_2exec_rd_wfid,
+>          simd2_2exec_wr_vcc_wfid, simd2_2vgpr_instr_done_wfid, simd3_2exec_rd_wfid,
+>          simd3_2exec_wr_vcc_wfid, simd3_2vgpr_instr_done_wfid, simf0_2exec_rd_wfid,
+>          simf0_2exec_wr_vcc_wfid, simf0_2vgpr_instr_done_wfid, simf1_2exec_rd_wfid,
+>          simf1_2exec_wr_vcc_wfid, simf1_2vgpr_instr_done_wfid, simf2_2exec_rd_wfid,
+>          simf2_2exec_wr_vcc_wfid, simf2_2vgpr_instr_done_wfid, simf3_2exec_rd_wfid,
+>          simf3_2exec_wr_vcc_wfid, simf3_2vgpr_instr_done_wfid, vgpr2issue_alu_wr_done_wfid,
+>          vgpr2issue_lsu_wr_done_wfid, wave2decode_wfid;
+> wire[6:0] lsu2mem_tag_req, mem2lsu_tag_resp;
+372,379c369,375
+<          issue2fetch_recover_pc, issue2lsu_imm_value1, issue2lsu_instr_pc, issue2lsu_opcode,
+<          issue2tracemon_barrier_retire_pc, issue2tracemon_waitcnt_retire_pc,
+<          lsu2tracemon_retire_pc, salu2exec_wr_m0_value, salu2fetch_branch_pc_value,
+<          salu2tracemon_retire_pc, sgpr2lsu_source2_data, sgpr2simd_rd_data, sgpr2simf_rd_data,
+<          simd0_2tracemon_retire_pc, simd1_2tracemon_retire_pc, simd2_2tracemon_retire_pc,
+<          simd3_2tracemon_retire_pc, simf0_2tracemon_retire_pc, simf1_2tracemon_retire_pc,
+<          simf2_2tracemon_retire_pc, simf3_2tracemon_retire_pc, wave2decode_instr,
+<          wave2decode_instr_pc;
+---
+>          issue2lsu_imm_value1, issue2lsu_instr_pc, issue2lsu_opcode, issue2tracemon_barrier_retire_pc,
+>          issue2tracemon_waitcnt_retire_pc, lsu2tracemon_retire_pc, salu2exec_wr_m0_value,
+>          salu2fetch_branch_pc_value, salu2tracemon_retire_pc, sgpr2lsu_source2_data,
+>          sgpr2simd_rd_data, sgpr2simf_rd_data, simd0_2tracemon_retire_pc, simd1_2tracemon_retire_pc,
+>          simd2_2tracemon_retire_pc, simd3_2tracemon_retire_pc, simf0_2tracemon_retire_pc,
+>          simf1_2tracemon_retire_pc, simf2_2tracemon_retire_pc, simf3_2tracemon_retire_pc,
+>          wave2decode_instr, wave2decode_instr_pc;
+422,423d417
+<     .issue_recover_en(issue2fetchwavedecode_recover_en),
+<     .issue_recover_wfid(issue2fetchwavedecode_recover_wfid),
+454,455c448
+<     .tracemon_colldone(decode2tracemon_colldone),
+<     .issue_idemp_barrier(decode2issue_idemp_barrier)
+---
+>     .tracemon_colldone(decode2tracemon_colldone)
+565,567d557
+<     .issue_recover_pc(issue2fetch_recover_pc),
+<     .issue_recover_en(issue2fetchwavedecode_recover_en),
+<     .issue_recover_wfid(issue2fetchwavedecode_recover_wfid),
+662,664d651
+<     .mem2cu_page_fault_en(mem2cu_page_fault_en),
+<     .mem2cu_page_fault_tag(mem2cu_page_fault_tag),
+<     .decode_idemp_barrier(decode2issue_idemp_barrier),
+706,709c693
+<     .tracemon_waitcnt_retire_pc(issue2tracemon_waitcnt_retire_pc),
+<     .fetch_recover_pc(issue2fetch_recover_pc),
+<     .fetchwavedecode_recover_en(issue2fetchwavedecode_recover_en),
+<     .fetchwavedecode_recover_wfid(issue2fetchwavedecode_recover_wfid)
+---
+>     .tracemon_waitcnt_retire_pc(issue2tracemon_waitcnt_retire_pc)
+1524,1525d1507
+<     .issue_recover_en(issue2fetchwavedecode_recover_en),
+<     .issue_recover_wfid(issue2fetchwavedecode_recover_wfid),
+diff -r ./compute_unit/compute_unit.vp ../../verilog/rtl/compute_unit/compute_unit.vp
+16,17d15
+<       mem2cu_page_fault_en,
+<       mem2cu_page_fault_tag,
+190c188
+< input dispatch2cu_wf_dispatch, mem2lsu_ack, buff2fetchwave_ack, mem2cu_page_fault_en;
+---
+> input dispatch2cu_wf_dispatch, mem2lsu_ack, buff2fetchwave_ack;
+193c191
+< input[6:0] mem2lsu_tag_resp, mem2cu_page_fault_tag;
+---
+> input[6:0] mem2lsu_tag_resp;
+264,288c262,285
+<          decode2issue_branch, decode2issue_exec_rd, decode2issue_exec_wr, decode2issue_idemp_barrier,
+<          decode2issue_m0_rd, decode2issue_m0_wr, decode2issue_scc_rd, decode2issue_scc_wr,
+<          decode2issue_valid, decode2issue_vcc_rd, decode2issue_vcc_wr, decode2issue_waitcnt,
+<          decode2issue_wf_halt, decode2tracemon_colldone, decode2wave_ins_half_rqd,
+<          dispatch2cu_wf_dispatch, exec2issue_salu_wr_exec_en, exec2issue_salu_wr_m0_en,
+<          exec2issue_salu_wr_scc_en, exec2issue_salu_wr_vcc_en, exec2issue_valu_wr_vcc_en,
+<          exec2salu_rd_scc_value, exec2simd_rd_scc_value, exec2simf_rd_scc_value,
+<          fetch2buff_rd_en, fetch2exec_init_wf_en, fetch2tracemon_dispatch, fetch2wave_basereg_wr,
+<          fetch2wave_reserve_valid, issue2fetchwave_wf_done_en, issue2fetchwavedecode_recover_en,
+<          issue2lsu_lsu_select, issue2salu_alu_select, issue2simd0_alu_select,
+<          issue2simd1_alu_select, issue2simd2_alu_select, issue2simd3_alu_select,
+<          issue2simf0_alu_select, issue2simf1_alu_select, issue2simf2_alu_select,
+<          issue2simf3_alu_select, issue2tracemon_barrier_retire_en, issue2tracemon_waitcnt_retire_en,
+<          lsu2issue_ready, lsu2mem_gm_or_lds, lsu2sgpr_instr_done, lsu2sgpr_source1_rd_en,
+<          lsu2sgpr_source2_rd_en, lsu2tracemon_gm_or_lds, lsu2vgpr_instr_done,
+<          lsu2vgpr_source1_rd_en, lsu2vgpr_source2_rd_en, mem2cu_page_fault_en,
+<          mem2lsu_ack, rfa2simd0_queue_entry_serviced, rfa2simd1_queue_entry_serviced,
+<          rfa2simd2_queue_entry_serviced, rfa2simd3_queue_entry_serviced, rfa2simf0_queue_entry_serviced,
+<          rfa2simf1_queue_entry_serviced, rfa2simf2_queue_entry_serviced, rfa2simf3_queue_entry_serviced,
+<          salu2exec_rd_en, salu2exec_wr_exec_en, salu2exec_wr_m0_en, salu2exec_wr_scc_en,
+<          salu2exec_wr_scc_value, salu2exec_wr_vcc_en, salu2fetchwaveissue_branch_en,
+<          salu2fetchwaveissue_branch_taken, salu2issue_alu_ready, salu2sgpr_instr_done,
+<          salu2sgpr_source1_rd_en, salu2sgpr_source2_rd_en, sgpr2issue_alu_wr_done,
+<          sgpr2issue_lsu_instr_done, sgpr2issue_valu_dest_reg_valid, simd0_2exec_rd_en,
+<          simd0_2exec_wr_vcc_en, simd0_2issue_alu_ready, simd0_2rfa_queue_entry_valid,
+---
+>          decode2issue_branch, decode2issue_exec_rd, decode2issue_exec_wr, decode2issue_m0_rd,
+>          decode2issue_m0_wr, decode2issue_scc_rd, decode2issue_scc_wr, decode2issue_valid,
+>          decode2issue_vcc_rd, decode2issue_vcc_wr, decode2issue_waitcnt, decode2issue_wf_halt,
+>          decode2tracemon_colldone, decode2wave_ins_half_rqd, dispatch2cu_wf_dispatch,
+>          exec2issue_salu_wr_exec_en, exec2issue_salu_wr_m0_en, exec2issue_salu_wr_scc_en,
+>          exec2issue_salu_wr_vcc_en, exec2issue_valu_wr_vcc_en, exec2salu_rd_scc_value,
+>          exec2simd_rd_scc_value, exec2simf_rd_scc_value, fetch2buff_rd_en, fetch2exec_init_wf_en,
+>          fetch2tracemon_dispatch, fetch2wave_basereg_wr, fetch2wave_reserve_valid,
+>          issue2fetchwave_wf_done_en, issue2lsu_lsu_select, issue2salu_alu_select,
+>          issue2simd0_alu_select, issue2simd1_alu_select, issue2simd2_alu_select,
+>          issue2simd3_alu_select, issue2simf0_alu_select, issue2simf1_alu_select,
+>          issue2simf2_alu_select, issue2simf3_alu_select, issue2tracemon_barrier_retire_en,
+>          issue2tracemon_waitcnt_retire_en, lsu2issue_ready, lsu2mem_gm_or_lds,
+>          lsu2sgpr_instr_done, lsu2sgpr_source1_rd_en, lsu2sgpr_source2_rd_en,
+>          lsu2tracemon_gm_or_lds, lsu2vgpr_instr_done, lsu2vgpr_source1_rd_en,
+>          lsu2vgpr_source2_rd_en, mem2lsu_ack, rfa2simd0_queue_entry_serviced,
+>          rfa2simd1_queue_entry_serviced, rfa2simd2_queue_entry_serviced, rfa2simd3_queue_entry_serviced,
+>          rfa2simf0_queue_entry_serviced, rfa2simf1_queue_entry_serviced, rfa2simf2_queue_entry_serviced,
+>          rfa2simf3_queue_entry_serviced, salu2exec_rd_en, salu2exec_wr_exec_en,
+>          salu2exec_wr_m0_en, salu2exec_wr_scc_en, salu2exec_wr_scc_value, salu2exec_wr_vcc_en,
+>          salu2fetchwaveissue_branch_en, salu2fetchwaveissue_branch_taken, salu2issue_alu_ready,
+>          salu2sgpr_instr_done, salu2sgpr_source1_rd_en, salu2sgpr_source2_rd_en,
+>          sgpr2issue_alu_wr_done, sgpr2issue_lsu_instr_done, sgpr2issue_valu_dest_reg_valid,
+>          simd0_2exec_rd_en, simd0_2exec_wr_vcc_en, simd0_2issue_alu_ready, simd0_2rfa_queue_entry_valid,
+323,336c320,333
+<          issue2fetchwavedecode_recover_wfid, issue2lsu_wfid, issue2tracemon_waitcnt_retire_wfid,
+<          lsu2exec_rd_wfid, lsu2sgpr_instr_done_wfid, lsu2vgpr_instr_done_wfid,
+<          salu2exec_rd_wfid, salu2exec_wr_wfid, salu2fetchwaveissue_branch_wfid,
+<          salu2sgpr_instr_done_wfid, sgpr2issue_alu_wr_done_wfid, sgpr2issue_lsu_instr_done_wfid,
+<          simd0_2exec_rd_wfid, simd0_2exec_wr_vcc_wfid, simd0_2vgpr_instr_done_wfid,
+<          simd1_2exec_rd_wfid, simd1_2exec_wr_vcc_wfid, simd1_2vgpr_instr_done_wfid,
+<          simd2_2exec_rd_wfid, simd2_2exec_wr_vcc_wfid, simd2_2vgpr_instr_done_wfid,
+<          simd3_2exec_rd_wfid, simd3_2exec_wr_vcc_wfid, simd3_2vgpr_instr_done_wfid,
+<          simf0_2exec_rd_wfid, simf0_2exec_wr_vcc_wfid, simf0_2vgpr_instr_done_wfid,
+<          simf1_2exec_rd_wfid, simf1_2exec_wr_vcc_wfid, simf1_2vgpr_instr_done_wfid,
+<          simf2_2exec_rd_wfid, simf2_2exec_wr_vcc_wfid, simf2_2vgpr_instr_done_wfid,
+<          simf3_2exec_rd_wfid, simf3_2exec_wr_vcc_wfid, simf3_2vgpr_instr_done_wfid,
+<          vgpr2issue_alu_wr_done_wfid, vgpr2issue_lsu_wr_done_wfid, wave2decode_wfid;
+< wire[6:0] lsu2mem_tag_req, mem2cu_page_fault_tag, mem2lsu_tag_resp;
+---
+>          issue2lsu_wfid, issue2tracemon_waitcnt_retire_wfid, lsu2exec_rd_wfid,
+>          lsu2sgpr_instr_done_wfid, lsu2vgpr_instr_done_wfid, salu2exec_rd_wfid,
+>          salu2exec_wr_wfid, salu2fetchwaveissue_branch_wfid, salu2sgpr_instr_done_wfid,
+>          sgpr2issue_alu_wr_done_wfid, sgpr2issue_lsu_instr_done_wfid, simd0_2exec_rd_wfid,
+>          simd0_2exec_wr_vcc_wfid, simd0_2vgpr_instr_done_wfid, simd1_2exec_rd_wfid,
+>          simd1_2exec_wr_vcc_wfid, simd1_2vgpr_instr_done_wfid, simd2_2exec_rd_wfid,
+>          simd2_2exec_wr_vcc_wfid, simd2_2vgpr_instr_done_wfid, simd3_2exec_rd_wfid,
+>          simd3_2exec_wr_vcc_wfid, simd3_2vgpr_instr_done_wfid, simf0_2exec_rd_wfid,
+>          simf0_2exec_wr_vcc_wfid, simf0_2vgpr_instr_done_wfid, simf1_2exec_rd_wfid,
+>          simf1_2exec_wr_vcc_wfid, simf1_2vgpr_instr_done_wfid, simf2_2exec_rd_wfid,
+>          simf2_2exec_wr_vcc_wfid, simf2_2vgpr_instr_done_wfid, simf3_2exec_rd_wfid,
+>          simf3_2exec_wr_vcc_wfid, simf3_2vgpr_instr_done_wfid, vgpr2issue_alu_wr_done_wfid,
+>          vgpr2issue_lsu_wr_done_wfid, wave2decode_wfid;
+> wire[6:0] lsu2mem_tag_req, mem2lsu_tag_resp;
+372,379c369,375
+<          issue2fetch_recover_pc, issue2lsu_imm_value1, issue2lsu_instr_pc, issue2lsu_opcode,
+<          issue2tracemon_barrier_retire_pc, issue2tracemon_waitcnt_retire_pc,
+<          lsu2tracemon_retire_pc, salu2exec_wr_m0_value, salu2fetch_branch_pc_value,
+<          salu2tracemon_retire_pc, sgpr2lsu_source2_data, sgpr2simd_rd_data, sgpr2simf_rd_data,
+<          simd0_2tracemon_retire_pc, simd1_2tracemon_retire_pc, simd2_2tracemon_retire_pc,
+<          simd3_2tracemon_retire_pc, simf0_2tracemon_retire_pc, simf1_2tracemon_retire_pc,
+<          simf2_2tracemon_retire_pc, simf3_2tracemon_retire_pc, wave2decode_instr,
+<          wave2decode_instr_pc;
+---
+>          issue2lsu_imm_value1, issue2lsu_instr_pc, issue2lsu_opcode, issue2tracemon_barrier_retire_pc,
+>          issue2tracemon_waitcnt_retire_pc, lsu2tracemon_retire_pc, salu2exec_wr_m0_value,
+>          salu2fetch_branch_pc_value, salu2tracemon_retire_pc, sgpr2lsu_source2_data,
+>          sgpr2simd_rd_data, sgpr2simf_rd_data, simd0_2tracemon_retire_pc, simd1_2tracemon_retire_pc,
+>          simd2_2tracemon_retire_pc, simd3_2tracemon_retire_pc, simf0_2tracemon_retire_pc,
+>          simf1_2tracemon_retire_pc, simf2_2tracemon_retire_pc, simf3_2tracemon_retire_pc,
+>          wave2decode_instr, wave2decode_instr_pc;
+422,423d417
+<     .issue_recover_en(issue2fetchwavedecode_recover_en),
+<     .issue_recover_wfid(issue2fetchwavedecode_recover_wfid),
+454,455c448
+<     .tracemon_colldone(decode2tracemon_colldone),
+<     .issue_idemp_barrier(decode2issue_idemp_barrier)
+---
+>     .tracemon_colldone(decode2tracemon_colldone)
+565,567d557
+<     .issue_recover_pc(issue2fetch_recover_pc),
+<     .issue_recover_en(issue2fetchwavedecode_recover_en),
+<     .issue_recover_wfid(issue2fetchwavedecode_recover_wfid),
+662,664d651
+<     .mem2cu_page_fault_en(mem2cu_page_fault_en),
+<     .mem2cu_page_fault_tag(mem2cu_page_fault_tag),
+<     .decode_idemp_barrier(decode2issue_idemp_barrier),
+706,709c693
+<     .tracemon_waitcnt_retire_pc(issue2tracemon_waitcnt_retire_pc),
+<     .fetch_recover_pc(issue2fetch_recover_pc),
+<     .fetchwavedecode_recover_en(issue2fetchwavedecode_recover_en),
+<     .fetchwavedecode_recover_wfid(issue2fetchwavedecode_recover_wfid)
+---
+>     .tracemon_waitcnt_retire_pc(issue2tracemon_waitcnt_retire_pc)
+1524,1525d1507
+<     .issue_recover_en(issue2fetchwavedecode_recover_en),
+<     .issue_recover_wfid(issue2fetchwavedecode_recover_wfid),
+Only in ../../verilog/rtl/decode: build
+diff -r ./decode/decode.interface ../../verilog/rtl/decode/decode.interface
+9,10d8
+<       issue_recover_en,
+<       issue_recover_wfid,
+41d38
+<       issue_idemp_barrier,
+50,51c47,48
+< input wave_instr_valid, issue_recover_en;
+< input[5:0] wave_wfid, issue_recover_wfid;
+---
+> input wave_instr_valid;
+> input[5:0] wave_wfid;
+59,60c56
+<          issue_barrier, issue_branch, issue_waitcnt, wave_ins_half_rqd, tracemon_colldone,
+<          issue_idemp_barrier;
+---
+>          issue_barrier, issue_branch, issue_waitcnt, wave_ins_half_rqd, tracemon_colldone;
+diff -r ./decode/decode.v ../../verilog/rtl/decode/decode.v
+1,408c1,412
+< module decode(/*AUTOARG*/
+< 	      // Outputs
+< 	      issue_wf_halt, issue_valid, issue_vcc_wr, issue_vcc_rd,
+< 	      issue_scc_wr, issue_scc_rd, issue_exec_rd, issue_exec_wr,
+< 	      issue_m0_rd, issue_m0_wr, issue_barrier, issue_branch,
+< 	      issue_waitcnt, wave_ins_half_rqd, tracemon_colldone,
+< 	      issue_idemp_barrier, issue_fu, issue_wfid, wave_ins_half_wfid,
+< 	      issue_source_reg2, issue_source_reg3, issue_dest_reg2,
+< 	      issue_source_reg1, issue_source_reg4, issue_dest_reg1,
+< 	      issue_imm_value0, issue_lds_base, issue_opcode, issue_imm_value1,
+< 	      issue_instr_pc, tracemon_collinstr,
+< 	      // Inputs
+< 	      clk, rst, wave_instr_valid, issue_recover_en, wave_wfid,
+< 	      issue_recover_wfid, wave_sgpr_base, wave_vgpr_base, wave_lds_base,
+< 	      wave_instr_pc, wave_instr
+< 	      );
+< 
+<    input clk;
+< 
+<    input rst;
+< 
+<    input wave_instr_valid, issue_recover_en;
+<    input [5:0] wave_wfid, issue_recover_wfid;
+<    input [8:0] wave_sgpr_base;
+<    input [9:0] wave_vgpr_base;
+<    input [15:0] wave_lds_base;
+<    input [31:0] wave_instr_pc, wave_instr;
+< 
+<    output 	issue_wf_halt, issue_valid, issue_vcc_wr, issue_vcc_rd, issue_scc_wr,
+< 		issue_scc_rd, issue_exec_rd, issue_exec_wr, issue_m0_rd, issue_m0_wr,
+< 		issue_barrier, issue_branch, issue_waitcnt, wave_ins_half_rqd, tracemon_colldone,
+< 		issue_idemp_barrier;
+<    output [1:0] issue_fu;
+<    output [5:0] issue_wfid, wave_ins_half_wfid;
+<    output [12:0] issue_source_reg2, issue_source_reg3, issue_dest_reg2;
+<    output [13:0] issue_source_reg1, issue_source_reg4, issue_dest_reg1;
+<    output [15:0] issue_imm_value0, issue_lds_base;
+<    output [31:0] issue_opcode, issue_imm_value1, issue_instr_pc;
+<    output [63:0] tracemon_collinstr;
+< 
+<    ///////////////////////////////
+< 		 //Your code goes here - beware: script does not recognize changes
+<    // into files. It ovewrites everithing without mercy. Save your work before running the script
+<    ///////////////////////////////
+< 
+<    wire [31:0] 	 flopped_instr_pc;
+<    wire 	 flopped_instr_valid;
+<    wire [31:0] 	 flopped_instr;
+<    wire [5:0] 	 flopped_wfid;
+<    wire [9:0] 	 flopped_vgpr_base;
+<    wire [8:0] 	 flopped_sgpr_base;
+<    wire [15:0] 	 flopped_lds_base;
+<    wire 	 flopped_issue_recover_en;
+<    wire [5:0]  flopped_issue_recover_wfid;
+< 
+<    //////////////////////////////
+<    wire [63:0] 	 collated_instr;
+<    wire 	 collate_required;
+<    wire 	 collate_done;
+< 
+<    wire [9:0] 	 s1_field;
+<    wire [9:0] 	 s2_field;
+<    wire [9:0] 	 s3_field;
+<    wire [9:0] 	 s4_field;
+<    wire [9:0] 	 dest1_field;
+<    wire [9:0] 	 dest2_field;
+<    wire [9:0] 	 dest1_field_converted;
+<    wire [9:0] 	 s4_field_converted;
+<    wire [9:0] 	 s1_field_converted;
+< 
+<    wire [1:0] 	 raw_fu;
+< 
+<    wire 	 implicit_scc_write;
+<    wire 	 implicit_scc_read;
+<    wire 	 implicit_vcc_write;
+<    wire 	 implicit_vcc_read;
+<    wire 	 implicit_exec_write;
+<    wire 	 implicit_exec_read;
+<    wire 	 implicit_M0_write;
+<    wire 	 implicit_M0_read;
+< 
+<    wire [2:0] 	 s1_width;
+<    wire [2:0] 	 s2_width;
+<    wire [2:0] 	 s3_width;
+<    wire [2:0] 	 s4_width;
+<    wire [2:0] 	 dest1_width;
+<    wire [2:0] 	 dest2_width;
+<    wire 	 fp_instr;
+<    wire 	 copy_d1_to_s4;
+<    wire 	 copy_d1_to_s1;
+<    wire 	 d1_vdst_to_sdst;
+< 
+<    wire [11:0] 	 encoded_s1_reg;
+<    wire [11:0] 	 encoded_s2_reg;
+<    wire [11:0] 	 encoded_s3_reg;
+<    wire [11:0] 	 encoded_s4_reg;
+<    wire [11:0] 	 encoded_dest1_reg;
+<    wire [11:0] 	 encoded_dest2_reg;
+< 
+<    assign issue_lds_base = flopped_lds_base;
+<    assign issue_wfid = flopped_wfid;
+< 
+<    wire 	 s1_literal_req;
+<    wire 	 s2_literal_req;
+<    wire 	 s3_literal_req;
+<    wire 	 s4_literal_req;
+<    //Following two wires are dummies
+<    wire 	 dest1_literal_req;
+<    wire 	 dest2_literal_req;
+< 
+<    wire 	 s1_explicit_vcc;
+<    wire 	 s2_explicit_vcc;
+<    wire 	 s3_explicit_vcc;
+<    wire 	 s4_explicit_vcc;
+<    wire 	 dest1_explicit_vcc;
+<    wire 	 dest2_explicit_vcc;
+< 
+<    wire 	 s1_explicit_exec;
+<    wire 	 s2_explicit_exec;
+<    wire 	 s3_explicit_exec;
+<    wire 	 s4_explicit_exec;
+<    wire 	 dest1_explicit_exec;
+<    wire 	 dest2_explicit_exec;
+< 
+<    wire 	 s1_explicit_scc;
+<    wire 	 s2_explicit_scc;
+<    wire 	 s3_explicit_scc;
+<    wire 	 s4_explicit_scc;
+<    wire 	 dest1_explicit_scc;
+<    wire 	 dest2_explicit_scc;
+< 
+<    wire 	 s1_explicit_M0;
+<    wire 	 s2_explicit_M0;
+<    wire 	 s3_explicit_M0;
+<    wire 	 s4_explicit_M0;
+<    wire 	 dest1_explicit_M0;
+<    wire 	 dest2_explicit_M0;
+< 
+<    wire 	 long_instr_or_literal_required;
+<    wire [31:0] 	 imm1_frominstr_fromliteral;
+<    reg [31:0] 	 issue_imm_value1;
+< 
+<    wire [32:0] 	 s1_fp_constant;
+<    wire [32:0] 	 s2_fp_constant;
+<    wire [32:0] 	 s3_fp_constant;
+<    wire [32:0] 	 s4_fp_constant;
+<    wire [32:0] 	 dest1_fp_constant;
+<    wire [32:0] 	 dest2_fp_constant;
+< 
+<    wire 	 width_qualified_s1_valid;
+<    wire 	 width_qualified_s2_valid;
+<    wire 	 width_qualified_s3_valid;
+<    wire 	 width_qualified_s4_valid;
+<    wire 	 width_qualified_dest1_valid;
+<    wire 	 width_qualified_dest2_valid;
+< 
+< 
+<    // implement flush on decode
+<    PS_flops_wavepool_decode stage_flops 
+<      (
+<       .wave_instr_pc(wave_instr_pc),
+<       .wave_instr_valid(wave_instr_valid),
+<       .wave_instr(wave_instr),
+<       .wave_wfid(wave_wfid),
+<       .wave_vgpr_base(wave_vgpr_base),
+<       .wave_sgpr_base(wave_sgpr_base),
+<       .wave_lds_base(wave_lds_base),
+<       .issue_recover_en(issue_recover_en),
+<       .issue_recover_wfid(issue_recover_wfid),
+<       .flopped_instr_pc(flopped_instr_pc),
+<       .flopped_instr_valid(flopped_instr_valid),
+<       .flopped_instr(flopped_instr),
+<       .flopped_wfid(flopped_wfid),
+<       .flopped_vgpr_base(flopped_vgpr_base),
+<       .flopped_sgpr_base(flopped_sgpr_base),
+<       .flopped_lds_base(flopped_lds_base),
+<       .flopped_issue_recover_en(flopped_issue_recover_en),
+<       .flopped_issue_recover_wfid(flopped_issue_recover_wfid),
+<       .clk(clk),
+<       .rst(rst)
+<       );
+< 
+<    assign long_instr_or_literal_required 
+<      = collate_required | ((~collate_done) & (s1_literal_req|s2_literal_req|s3_literal_req|s4_literal_req));
+< 
+<    instr_collate collater
+<      (
+<       .in_wfid(flopped_wfid),
+<       .in_instr(flopped_instr),
+<       .in_valid(flopped_instr_valid),
+<       .in_pc(flopped_instr_pc),
+<       .flush_valid(flopped_issue_recover_en), 
+<       .flush_wfid(flopped_issue_recover_wfid),
+<       .out_instr(collated_instr),
+<       .out_valid(issue_valid),
+<       .out_pc(issue_instr_pc),
+<       .in_long(long_instr_or_literal_required),
+<       .out_long(collate_done),
+<       .clk(clk),
+<       .rst(rst)
+<       );
+< 
+<    decode_core core
+<      (
+<       .collated_instr(collated_instr),
+<       .collate_done(collate_done),
+<       .collate_required(collate_required),
+<       .fu(raw_fu),
+<       .opcode(issue_opcode),
+<       .imm_value0(issue_imm_value0),
+<       .imm_value1(imm1_frominstr_fromliteral),
+<       .s1_field(s1_field),
+<       .s2_field(s2_field),
+<       .s3_field(s3_field),
+<       .s4_field(s4_field),
+<       .dest1_field(dest1_field),
+<       .dest2_field(dest2_field)
+<       );
+< 
+<    flag_generator flaggen
+<      (
+<       .opcode(issue_opcode),
+<       .fu(raw_fu),
+<       .wf_halt(issue_wf_halt),
+<       .wf_barrier(issue_barrier),
+<       .wf_branch(issue_branch),
+<       .wf_waitcnt(issue_waitcnt),
+<       .wf_idemp_barrier(issue_idemp_barrier),
+<       .scc_write(implicit_scc_write),
+<       .scc_read(implicit_scc_read),
+<       .vcc_write(implicit_vcc_write),
+<       .vcc_read(implicit_vcc_read),
+<       .exec_write(implicit_exec_write),
+<       .exec_read(implicit_exec_read),
+<       .M0_write(implicit_M0_write),
+<       .M0_read(implicit_M0_read),
+<       .s1_width(s1_width),
+<       .s2_width(s2_width),
+<       .s3_width(s3_width),
+<       .s4_width(s4_width),
+<       .dest1_width(dest1_width),
+<       .dest2_width(dest2_width),
+<       .fp_instr(fp_instr),
+<       .copy_d1_to_s4(copy_d1_to_s4),
+<       .copy_d1_to_s1(copy_d1_to_s1),
+<       .d1_vdst_to_sdst(d1_vdst_to_sdst)
+<       );
+<    reg_field_encoder s1_encoder 
+<      (
+<       .in(s1_field_converted),
+<       .sgpr_base(flopped_sgpr_base),
+<       .vgpr_base(flopped_vgpr_base),
+<       .out(encoded_s1_reg),
+<       .literal_required(s1_literal_req),
+<       .explicit_vcc(s1_explicit_vcc),
+<       .explicit_exec(s1_explicit_exec),
+<       .explicit_scc(s1_explicit_scc),
+<       .explicit_M0(s1_explicit_M0),
+<       .fp_constant(s1_fp_constant)
+<       );
+<    reg_field_encoder s2_encoder 
+<      (
+<       .in(s2_field),
+<       .sgpr_base(flopped_sgpr_base),
+<       .vgpr_base(flopped_vgpr_base),
+<       .out(encoded_s2_reg),
+<       .literal_required(s2_literal_req),
+<       .explicit_vcc(s2_explicit_vcc),
+<       .explicit_exec(s2_explicit_exec),
+<       .explicit_scc(s2_explicit_scc),
+<       .explicit_M0(s2_explicit_M0),
+<       .fp_constant(s2_fp_constant)
+<       );
+<    reg_field_encoder s3_encoder 
+<      (
+<       .in(s3_field),
+<       .sgpr_base(flopped_sgpr_base),
+<       .vgpr_base(flopped_vgpr_base),
+<       .out(encoded_s3_reg),
+<       .literal_required(s3_literal_req),
+<       .explicit_vcc(s3_explicit_vcc),
+<       .explicit_exec(s3_explicit_exec),
+<       .explicit_scc(s3_explicit_scc),
+<       .explicit_M0(s3_explicit_M0),
+<       .fp_constant(s3_fp_constant)
+<       );
+<    reg_field_encoder s4_encoder 
+<      (
+<       .in(s4_field_converted),
+<       .sgpr_base(flopped_sgpr_base),
+<       .vgpr_base(flopped_vgpr_base),
+<       .out(encoded_s4_reg),
+<       .literal_required(s4_literal_req),
+<       .explicit_vcc(s4_explicit_vcc),
+<       .explicit_exec(s4_explicit_exec),
+<       .explicit_scc(s4_explicit_scc),
+<       .explicit_M0(s4_explicit_M0),
+<       .fp_constant(s4_fp_constant)
+<       );
+<    reg_field_encoder dest1_encoder 
+<      (
+<       .in(dest1_field_converted),
+<       .sgpr_base(flopped_sgpr_base),
+<       .vgpr_base(flopped_vgpr_base),
+<       .out(encoded_dest1_reg),
+<       .literal_required(dest1_literal_req),
+<       .explicit_vcc(dest1_explicit_vcc),
+<       .explicit_exec(dest1_explicit_exec),
+<       .explicit_scc(dest1_explicit_scc),
+<       .explicit_M0(dest1_explicit_M0),
+<       .fp_constant(dest1_fp_constant)
+<       );
+<    reg_field_encoder dest2_encoder 
+<      (
+<       .in(dest2_field),
+<       .sgpr_base(flopped_sgpr_base),
+<       .vgpr_base(flopped_vgpr_base),
+<       .out(encoded_dest2_reg),
+<       .literal_required(dest2_literal_req),
+<       .explicit_vcc(dest2_explicit_vcc),
+<       .explicit_exec(dest2_explicit_exec),
+<       .explicit_scc(dest2_explicit_scc),
+<       .explicit_M0(dest2_explicit_M0),
+<       .fp_constant(dest2_fp_constant)
+<       );
+< 
+<    assign issue_vcc_wr = implicit_vcc_write | dest1_explicit_vcc | dest2_explicit_vcc;
+<    assign issue_vcc_rd = implicit_vcc_read | s1_explicit_vcc | s2_explicit_vcc | s3_explicit_vcc | s4_explicit_vcc;
+<    assign issue_scc_wr = implicit_scc_write | dest1_explicit_scc | dest2_explicit_scc;
+<    assign issue_scc_rd = implicit_scc_read | s1_explicit_scc | s2_explicit_scc | s3_explicit_scc | s4_explicit_scc;
+<    assign issue_exec_wr = implicit_exec_write | dest1_explicit_exec | dest2_explicit_exec;
+<    assign issue_exec_rd = implicit_exec_read | s1_explicit_exec | s2_explicit_exec | s3_explicit_exec | s4_explicit_exec;
+<    assign issue_m0_wr = implicit_M0_write | dest1_explicit_M0 | dest2_explicit_M0;
+<    assign issue_m0_rd = implicit_M0_read | s1_explicit_M0 | s2_explicit_M0 | s3_explicit_M0 | s4_explicit_M0;
+< 
+<    assign dest1_field_converted = d1_vdst_to_sdst ? {dest1_field[9],2'b0,dest1_field[6:0]} : dest1_field;
+<    assign s4_field_converted = copy_d1_to_s4 ? dest1_field : s4_field;
+<    assign s1_field_converted = copy_d1_to_s1 ? dest1_field : s1_field;
+<    assign issue_fu = fp_instr ? 2'b0 : raw_fu;
+< 
+<    assign width_qualified_s1_valid = (s1_width == `DECODE_BIT0) ? 1'b0 : encoded_s1_reg[11];
+<    assign width_qualified_s2_valid = (s2_width == `DECODE_BIT0) ? 1'b0 : encoded_s2_reg[11];
+<    assign width_qualified_s3_valid = (s3_width == `DECODE_BIT0) ? 1'b0 : encoded_s3_reg[11];
+<    assign width_qualified_s4_valid = (s4_width == `DECODE_BIT0) ? 1'b0 : encoded_s4_reg[11];
+<    assign width_qualified_dest1_valid = (dest1_width == `DECODE_BIT0) ? 1'b0 : encoded_dest1_reg[11];
+<    assign width_qualified_dest2_valid = (dest2_width == `DECODE_BIT0) ? 1'b0 : encoded_dest2_reg[11];
+< 
+<    assign issue_source_reg1 = {s1_width[1:0],width_qualified_s1_valid,encoded_s1_reg[10:0]};
+<    assign issue_source_reg2 = {s2_width[0],width_qualified_s2_valid,encoded_s2_reg[10:0]};
+<    assign issue_source_reg3 = {s3_width[0],width_qualified_s3_valid,encoded_s3_reg[10:0]};
+<    assign issue_source_reg4 = {s4_width[1:0],width_qualified_s4_valid,encoded_s4_reg[10:0]};
+<    assign issue_dest_reg1 = {dest1_width[1:0],width_qualified_dest1_valid,encoded_dest1_reg[10:0]};
+<    assign issue_dest_reg2 = {dest2_width[0],width_qualified_dest2_valid,encoded_dest2_reg[10:0]};
+< 
+<    //wire [2:0] qualified_width_s1;
+<    //wire [2:0] qualified_width_s2;
+<    //wire [2:0] qualified_width_s3;
+<    //wire [2:0] qualified_width_s4;
+<    //wire [2:0] qualified_width_dest1;
+<    //wire [2:0] qualified_width_dest2;
+<    //assign qualified_width_s1 = width_qualified_s1_valid ? s1_width : 3'b000;
+<    //assign qualified_width_s2 = width_qualified_s2_valid ? s2_width : 3'b000;
+<    //assign qualified_width_s3 = width_qualified_s3_valid ? s3_width : 3'b000;
+<    //assign qualified_width_s4 = width_qualified_s4_valid ? s4_width : 3'b000;
+<    //assign qualified_width_dest1 = width_qualified_dest1_valid ? dest1_width : 3'b000;
+<    //assign qualified_width_dest2 = width_qualified_dest2_valid ? dest2_width : 3'b000;
+<    //assign issue_source_reg1 = {qualified_width_s1[1:0],width_qualified_s1_valid,encoded_s1_reg[10:0]};
+<    //assign issue_source_reg2 = {qualified_width_s2[0],width_qualified_s2_valid,encoded_s2_reg[10:0]};
+<    //assign issue_source_reg3 = {qualified_width_s3[0],width_qualified_s3_valid,encoded_s3_reg[10:0]};
+<    //assign issue_source_reg4 = {qualified_width_s4[1:0],width_qualified_s4_valid,encoded_s4_reg[10:0]};
+<    //assign issue_dest_reg1 = {qualified_width_dest1[1:0],width_qualified_dest1_valid,encoded_dest1_reg[10:0]};
+<    //assign issue_dest_reg2 = {qualified_width_dest2[0],width_qualified_dest2_valid,encoded_dest2_reg[10:0]};
+< 
+<    assign wave_ins_half_wfid = flopped_wfid;
+<    assign wave_ins_half_rqd = long_instr_or_literal_required & flopped_instr_valid;
+< 
+<    assign tracemon_collinstr =  collated_instr;
+<    assign tracemon_colldone = collate_done;
+< 
+<    always @(s1_fp_constant or s2_fp_constant or s3_fp_constant or s4_fp_constant or imm1_frominstr_fromliteral)
+<      begin
+< 	casex({s1_fp_constant,s2_fp_constant,s3_fp_constant,s4_fp_constant})
+< 	  4'b0000:
+< 	    begin
+<                issue_imm_value1 <= imm1_frominstr_fromliteral;
+< 	    end
+< 	  4'b0001:
+< 	    begin
+<                issue_imm_value1 <= s4_fp_constant[31:0];
+< 	    end
+< 	  4'b0010:
+< 	    begin
+<                issue_imm_value1 <= s3_fp_constant[31:0];
+< 	    end
+< 	  4'b0100:
+< 	    begin
+<                issue_imm_value1 <= s2_fp_constant[31:0];
+< 	    end
+< 	  4'b1000:
+< 	    begin
+<                issue_imm_value1 <= s1_fp_constant[31:0];
+< 	    end
+< 	  default:
+< 	    begin
+<                issue_imm_value1 <= {32{1'bx}};
+< 	    end
+< 	endcase
+<      end
+---
+> module decode( 
+>       wave_instr_pc,
+>       wave_instr_valid,
+>       wave_instr,
+>       wave_wfid,
+>       wave_vgpr_base,
+>       wave_sgpr_base,
+>       wave_lds_base,
+>       issue_wf_halt,
+>       issue_fu,
+>       issue_wfid,
+>       issue_opcode,
+>       issue_source_reg1,
+>       issue_source_reg2,
+>       issue_source_reg3,
+>       issue_source_reg4,
+>       issue_dest_reg1,
+>       issue_dest_reg2,
+>       issue_imm_value0,
+>       issue_imm_value1,
+>       issue_valid,
+>       issue_instr_pc,
+>       issue_vcc_wr,
+>       issue_vcc_rd,
+>       issue_scc_wr,
+>       issue_scc_rd,
+>       issue_exec_rd,
+>       issue_exec_wr,
+>       issue_m0_rd,
+>       issue_m0_wr,
+>       issue_barrier,
+>       issue_branch,
+>       issue_lds_base,
+>       issue_waitcnt,
+>       wave_ins_half_rqd,
+>       wave_ins_half_wfid,
+>       tracemon_collinstr,
+>       tracemon_colldone,
+>       clk,
+>       rst
+>  );
+> 
+> input clk;
+> 
+> input rst;
+> 
+> input wave_instr_valid;
+> input[5:0] wave_wfid;
+> input[8:0] wave_sgpr_base;
+> input[9:0] wave_vgpr_base;
+> input[15:0] wave_lds_base;
+> input[31:0] wave_instr_pc, wave_instr;
+> 
+> output issue_wf_halt, issue_valid, issue_vcc_wr, issue_vcc_rd, issue_scc_wr,
+>          issue_scc_rd, issue_exec_rd, issue_exec_wr, issue_m0_rd, issue_m0_wr,
+>          issue_barrier, issue_branch, issue_waitcnt, wave_ins_half_rqd, tracemon_colldone;
+> output[1:0] issue_fu;
+> output[5:0] issue_wfid, wave_ins_half_wfid;
+> output[15:0] issue_lds_base;
+> output[12:0] issue_source_reg2, issue_source_reg3, issue_dest_reg2;
+> output[13:0] issue_source_reg1, issue_source_reg4, issue_dest_reg1;
+> output[15:0] issue_imm_value0;
+> output[31:0] issue_opcode, issue_imm_value1, issue_instr_pc;
+> output[63:0] tracemon_collinstr;
+> 
+> ///////////////////////////////
+> //Your code goes here - beware: script does not recognize changes
+> // into files. It ovewrites everithing without mercy. Save your work before running the script
+> ///////////////////////////////
+> 
+> 
+> wire [31:0] flopped_instr_pc;
+> wire flopped_instr_valid;
+> wire [31:0] flopped_instr;
+> wire [5:0] flopped_wfid;
+> wire [9:0] flopped_vgpr_base;
+> wire [8:0] flopped_sgpr_base;
+> wire [15:0] flopped_lds_base;
+> 
+> //////////////////////////////
+> wire [63:0] collated_instr;
+> wire collate_required;
+> wire collate_done;
+> 
+> wire [9:0] s1_field;
+> wire [9:0] s2_field;
+> wire [9:0] s3_field;
+> wire [9:0] s4_field;
+> wire [9:0] dest1_field;
+> wire [9:0] dest2_field;
+> wire [9:0] dest1_field_converted;
+> wire [9:0] s4_field_converted;
+> wire [9:0] s1_field_converted;
+> 
+> wire [1:0] raw_fu;
+> 
+> wire implicit_scc_write;
+> wire implicit_scc_read;
+> wire implicit_vcc_write;
+> wire implicit_vcc_read;
+> wire implicit_exec_write;
+> wire implicit_exec_read;
+> wire implicit_M0_write;
+> wire implicit_M0_read;
+> 
+> wire [2:0] s1_width;
+> wire [2:0] s2_width;
+> wire [2:0] s3_width;
+> wire [2:0] s4_width;
+> wire [2:0] dest1_width;
+> wire [2:0] dest2_width;
+> wire fp_instr;
+> wire copy_d1_to_s4;
+> wire copy_d1_to_s1;
+> wire d1_vdst_to_sdst;
+> 
+> wire [11:0] encoded_s1_reg;
+> wire [11:0] encoded_s2_reg;
+> wire [11:0] encoded_s3_reg;
+> wire [11:0] encoded_s4_reg;
+> wire [11:0] encoded_dest1_reg;
+> wire [11:0] encoded_dest2_reg;
+> 
+> assign issue_lds_base = flopped_lds_base;
+> assign issue_wfid = flopped_wfid;
+> 
+> wire s1_literal_req;
+> wire s2_literal_req;
+> wire s3_literal_req;
+> wire s4_literal_req;
+> //Following two wires are dummies
+> wire dest1_literal_req;
+> wire dest2_literal_req;
+> 
+> wire s1_explicit_vcc;
+> wire s2_explicit_vcc;
+> wire s3_explicit_vcc;
+> wire s4_explicit_vcc;
+> wire dest1_explicit_vcc;
+> wire dest2_explicit_vcc;
+> 
+> wire s1_explicit_exec;
+> wire s2_explicit_exec;
+> wire s3_explicit_exec;
+> wire s4_explicit_exec;
+> wire dest1_explicit_exec;
+> wire dest2_explicit_exec;
+> 
+> wire s1_explicit_scc;
+> wire s2_explicit_scc;
+> wire s3_explicit_scc;
+> wire s4_explicit_scc;
+> wire dest1_explicit_scc;
+> wire dest2_explicit_scc;
+> 
+> wire s1_explicit_M0;
+> wire s2_explicit_M0;
+> wire s3_explicit_M0;
+> wire s4_explicit_M0;
+> wire dest1_explicit_M0;
+> wire dest2_explicit_M0;
+> 
+> wire long_instr_or_literal_required;
+> wire [31:0] imm1_frominstr_fromliteral;
+> reg [31:0] issue_imm_value1;
+> 
+> wire [32:0] s1_fp_constant;
+> wire [32:0] s2_fp_constant;
+> wire [32:0] s3_fp_constant;
+> wire [32:0] s4_fp_constant;
+> wire [32:0] dest1_fp_constant;
+> wire [32:0] dest2_fp_constant;
+> 
+> wire width_qualified_s1_valid;
+> wire width_qualified_s2_valid;
+> wire width_qualified_s3_valid;
+> wire width_qualified_s4_valid;
+> wire width_qualified_dest1_valid;
+> wire width_qualified_dest2_valid;
+> 
+> PS_flops_wavepool_decode stage_flops (
+>   .wave_instr_pc(wave_instr_pc),
+>   .wave_instr_valid(wave_instr_valid),
+>   .wave_instr(wave_instr),
+>   .wave_wfid(wave_wfid),
+>   .wave_vgpr_base(wave_vgpr_base),
+>   .wave_sgpr_base(wave_sgpr_base),
+>   .wave_lds_base(wave_lds_base),
+>   .flopped_instr_pc(flopped_instr_pc),
+>   .flopped_instr_valid(flopped_instr_valid),
+>   .flopped_instr(flopped_instr),
+>   .flopped_wfid(flopped_wfid),
+>   .flopped_vgpr_base(flopped_vgpr_base),
+>   .flopped_sgpr_base(flopped_sgpr_base),
+>   .flopped_lds_base(flopped_lds_base),
+>   .clk(clk),
+>   .rst(rst)
+> );
+> 
+> assign long_instr_or_literal_required = collate_required | ((~collate_done) & (s1_literal_req|s2_literal_req|s3_literal_req|s4_literal_req));
+> 
+> instr_collate collater(
+>   .in_wfid(flopped_wfid),
+>   .in_instr(flopped_instr),
+>   .in_valid(flopped_instr_valid),
+>   .in_pc(flopped_instr_pc),
+>   .out_instr(collated_instr),
+>   .out_valid(issue_valid),
+>   .out_pc(issue_instr_pc),
+>   .in_long(long_instr_or_literal_required),
+>   .out_long(collate_done),
+>   .clk(clk),
+>   .rst(rst)
+> );
+> 
+> decode_core core(
+>   .collated_instr(collated_instr),
+>   .collate_done(collate_done),
+>   .collate_required(collate_required),
+>   .fu(raw_fu),
+>   .opcode(issue_opcode),
+>   .imm_value0(issue_imm_value0),
+>   .imm_value1(imm1_frominstr_fromliteral),
+>   .s1_field(s1_field),
+>   .s2_field(s2_field),
+>   .s3_field(s3_field),
+>   .s4_field(s4_field),
+>   .dest1_field(dest1_field),
+>   .dest2_field(dest2_field)
+> );
+> 
+> flag_generator flaggen(
+>   .opcode(issue_opcode),
+>   .fu(raw_fu),
+>   .wf_halt(issue_wf_halt),
+>   .wf_barrier(issue_barrier),
+>   .wf_branch(issue_branch),
+>   .wf_waitcnt(issue_waitcnt),
+>   .scc_write(implicit_scc_write),
+>   .scc_read(implicit_scc_read),
+>   .vcc_write(implicit_vcc_write),
+>   .vcc_read(implicit_vcc_read),
+>   .exec_write(implicit_exec_write),
+>   .exec_read(implicit_exec_read),
+>   .M0_write(implicit_M0_write),
+>   .M0_read(implicit_M0_read),
+>   .s1_width(s1_width),
+>   .s2_width(s2_width),
+>   .s3_width(s3_width),
+>   .s4_width(s4_width),
+>   .dest1_width(dest1_width),
+>   .dest2_width(dest2_width),
+>   .fp_instr(fp_instr),
+>   .copy_d1_to_s4(copy_d1_to_s4),
+>   .copy_d1_to_s1(copy_d1_to_s1),
+>   .d1_vdst_to_sdst(d1_vdst_to_sdst)
+> );
+> reg_field_encoder s1_encoder (
+>   .in(s1_field_converted),
+>   .sgpr_base(flopped_sgpr_base),
+>   .vgpr_base(flopped_vgpr_base),
+>   .out(encoded_s1_reg),
+>   .literal_required(s1_literal_req),
+>   .explicit_vcc(s1_explicit_vcc),
+>   .explicit_exec(s1_explicit_exec),
+>   .explicit_scc(s1_explicit_scc),
+>   .explicit_M0(s1_explicit_M0),
+>   .fp_constant(s1_fp_constant)
+> );
+> reg_field_encoder s2_encoder (
+>   .in(s2_field),
+>   .sgpr_base(flopped_sgpr_base),
+>   .vgpr_base(flopped_vgpr_base),
+>   .out(encoded_s2_reg),
+>   .literal_required(s2_literal_req),
+>   .explicit_vcc(s2_explicit_vcc),
+>   .explicit_exec(s2_explicit_exec),
+>   .explicit_scc(s2_explicit_scc),
+>   .explicit_M0(s2_explicit_M0),
+>   .fp_constant(s2_fp_constant)
+> );
+> reg_field_encoder s3_encoder (
+>   .in(s3_field),
+>   .sgpr_base(flopped_sgpr_base),
+>   .vgpr_base(flopped_vgpr_base),
+>   .out(encoded_s3_reg),
+>   .literal_required(s3_literal_req),
+>   .explicit_vcc(s3_explicit_vcc),
+>   .explicit_exec(s3_explicit_exec),
+>   .explicit_scc(s3_explicit_scc),
+>   .explicit_M0(s3_explicit_M0),
+>   .fp_constant(s3_fp_constant)
+> );
+> reg_field_encoder s4_encoder (
+>   .in(s4_field_converted),
+>   .sgpr_base(flopped_sgpr_base),
+>   .vgpr_base(flopped_vgpr_base),
+>   .out(encoded_s4_reg),
+>   .literal_required(s4_literal_req),
+>   .explicit_vcc(s4_explicit_vcc),
+>   .explicit_exec(s4_explicit_exec),
+>   .explicit_scc(s4_explicit_scc),
+>   .explicit_M0(s4_explicit_M0),
+>   .fp_constant(s4_fp_constant)
+> );
+> reg_field_encoder dest1_encoder (
+>   .in(dest1_field_converted),
+>   .sgpr_base(flopped_sgpr_base),
+>   .vgpr_base(flopped_vgpr_base),
+>   .out(encoded_dest1_reg),
+>   .literal_required(dest1_literal_req),
+>   .explicit_vcc(dest1_explicit_vcc),
+>   .explicit_exec(dest1_explicit_exec),
+>   .explicit_scc(dest1_explicit_scc),
+>   .explicit_M0(dest1_explicit_M0),
+>   .fp_constant(dest1_fp_constant)
+> );
+> reg_field_encoder dest2_encoder (
+>   .in(dest2_field),
+>   .sgpr_base(flopped_sgpr_base),
+>   .vgpr_base(flopped_vgpr_base),
+>   .out(encoded_dest2_reg),
+>   .literal_required(dest2_literal_req),
+>   .explicit_vcc(dest2_explicit_vcc),
+>   .explicit_exec(dest2_explicit_exec),
+>   .explicit_scc(dest2_explicit_scc),
+>   .explicit_M0(dest2_explicit_M0),
+>   .fp_constant(dest2_fp_constant)
+> );
+> 
+> assign issue_vcc_wr = implicit_vcc_write | dest1_explicit_vcc | dest2_explicit_vcc;
+> assign issue_vcc_rd = implicit_vcc_read | s1_explicit_vcc | s2_explicit_vcc | s3_explicit_vcc | s4_explicit_vcc;
+> assign issue_scc_wr = implicit_scc_write | dest1_explicit_scc | dest2_explicit_scc;
+> assign issue_scc_rd = implicit_scc_read | s1_explicit_scc | s2_explicit_scc | s3_explicit_scc | s4_explicit_scc;
+> assign issue_exec_wr = implicit_exec_write | dest1_explicit_exec | dest2_explicit_exec;
+> assign issue_exec_rd = implicit_exec_read | s1_explicit_exec | s2_explicit_exec | s3_explicit_exec | s4_explicit_exec;
+> assign issue_m0_wr = implicit_M0_write | dest1_explicit_M0 | dest2_explicit_M0;
+> assign issue_m0_rd = implicit_M0_read | s1_explicit_M0 | s2_explicit_M0 | s3_explicit_M0 | s4_explicit_M0;
+> 
+> assign dest1_field_converted = d1_vdst_to_sdst ? {dest1_field[9],2'b0,dest1_field[6:0]} : dest1_field;
+> assign s4_field_converted = copy_d1_to_s4 ? dest1_field : s4_field;
+> assign s1_field_converted = copy_d1_to_s1 ? dest1_field : s1_field;
+> assign issue_fu = fp_instr ? 2'b0 : raw_fu;
+> 
+> assign width_qualified_s1_valid = (s1_width == `DECODE_BIT0) ? 1'b0 : encoded_s1_reg[11];
+> assign width_qualified_s2_valid = (s2_width == `DECODE_BIT0) ? 1'b0 : encoded_s2_reg[11];
+> assign width_qualified_s3_valid = (s3_width == `DECODE_BIT0) ? 1'b0 : encoded_s3_reg[11];
+> assign width_qualified_s4_valid = (s4_width == `DECODE_BIT0) ? 1'b0 : encoded_s4_reg[11];
+> assign width_qualified_dest1_valid = (dest1_width == `DECODE_BIT0) ? 1'b0 : encoded_dest1_reg[11];
+> assign width_qualified_dest2_valid = (dest2_width == `DECODE_BIT0) ? 1'b0 : encoded_dest2_reg[11];
+> 
+> assign issue_source_reg1 = {s1_width[1:0],width_qualified_s1_valid,encoded_s1_reg[10:0]};
+> assign issue_source_reg2 = {s2_width[0],width_qualified_s2_valid,encoded_s2_reg[10:0]};
+> assign issue_source_reg3 = {s3_width[0],width_qualified_s3_valid,encoded_s3_reg[10:0]};
+> assign issue_source_reg4 = {s4_width[1:0],width_qualified_s4_valid,encoded_s4_reg[10:0]};
+> assign issue_dest_reg1 = {dest1_width[1:0],width_qualified_dest1_valid,encoded_dest1_reg[10:0]};
+> assign issue_dest_reg2 = {dest2_width[0],width_qualified_dest2_valid,encoded_dest2_reg[10:0]};
+> 
+> //wire [2:0] qualified_width_s1;
+> //wire [2:0] qualified_width_s2;
+> //wire [2:0] qualified_width_s3;
+> //wire [2:0] qualified_width_s4;
+> //wire [2:0] qualified_width_dest1;
+> //wire [2:0] qualified_width_dest2;
+> //assign qualified_width_s1 = width_qualified_s1_valid ? s1_width : 3'b000;
+> //assign qualified_width_s2 = width_qualified_s2_valid ? s2_width : 3'b000;
+> //assign qualified_width_s3 = width_qualified_s3_valid ? s3_width : 3'b000;
+> //assign qualified_width_s4 = width_qualified_s4_valid ? s4_width : 3'b000;
+> //assign qualified_width_dest1 = width_qualified_dest1_valid ? dest1_width : 3'b000;
+> //assign qualified_width_dest2 = width_qualified_dest2_valid ? dest2_width : 3'b000;
+> //assign issue_source_reg1 = {qualified_width_s1[1:0],width_qualified_s1_valid,encoded_s1_reg[10:0]};
+> //assign issue_source_reg2 = {qualified_width_s2[0],width_qualified_s2_valid,encoded_s2_reg[10:0]};
+> //assign issue_source_reg3 = {qualified_width_s3[0],width_qualified_s3_valid,encoded_s3_reg[10:0]};
+> //assign issue_source_reg4 = {qualified_width_s4[1:0],width_qualified_s4_valid,encoded_s4_reg[10:0]};
+> //assign issue_dest_reg1 = {qualified_width_dest1[1:0],width_qualified_dest1_valid,encoded_dest1_reg[10:0]};
+> //assign issue_dest_reg2 = {qualified_width_dest2[0],width_qualified_dest2_valid,encoded_dest2_reg[10:0]};
+> 
+> assign wave_ins_half_wfid = flopped_wfid;
+> assign wave_ins_half_rqd = long_instr_or_literal_required & flopped_instr_valid;
+> 
+> assign tracemon_collinstr =  collated_instr;
+> assign tracemon_colldone = collate_done;
+> 
+> always @(s1_fp_constant or s2_fp_constant or s3_fp_constant or s4_fp_constant or imm1_frominstr_fromliteral)
+> begin
+>   casex({s1_fp_constant,s2_fp_constant,s3_fp_constant,s4_fp_constant})
+>     4'b0000:
+>       begin
+>         issue_imm_value1 <= imm1_frominstr_fromliteral;
+>       end
+>     4'b0001:
+>       begin
+>         issue_imm_value1 <= s4_fp_constant[31:0];
+>       end
+>     4'b0010:
+>       begin
+>         issue_imm_value1 <= s3_fp_constant[31:0];
+>       end
+>     4'b0100:
+>       begin
+>         issue_imm_value1 <= s2_fp_constant[31:0];
+>       end
+>     4'b1000:
+>       begin
+>         issue_imm_value1 <= s1_fp_constant[31:0];
+>       end
+>     default:
+>       begin
+>         issue_imm_value1 <= {32{1'bx}};
+>       end
+>   endcase
+> end
+diff -r ./decode/flag_generator.v ../../verilog/rtl/decode/flag_generator.v
+1,10c1,26
+< module flag_generator(/*AUTOARG*/
+<    // Outputs
+<    wf_halt, wf_barrier, wf_branch, wf_waitcnt, wf_idemp_barrier,
+<    scc_write, scc_read, vcc_write, vcc_read, exec_write, exec_read,
+<    M0_write, M0_read, s1_width, s2_width, s3_width, s4_width,
+<    dest1_width, dest2_width, fp_instr, copy_d1_to_s4, copy_d1_to_s1,
+<    d1_vdst_to_sdst,
+<    // Inputs
+<    opcode, fu
+<    );
+---
+> module flag_generator(
+>  opcode,
+>  fu,
+>  wf_halt,
+>  wf_barrier,
+>  wf_branch,
+>  wf_waitcnt,
+>  scc_write,
+>  scc_read,
+>  vcc_write,
+>  vcc_read,
+>  exec_write,
+>  exec_read,
+>  M0_write,
+>  M0_read,
+>  s1_width,
+>  s2_width,
+>  s3_width,
+>  s4_width,
+>  dest1_width,
+>  dest2_width,
+>  fp_instr,
+>  copy_d1_to_s4,
+>  copy_d1_to_s1,
+>  d1_vdst_to_sdst
+> );
+19d34
+< output wf_idemp_barrier;
+38,40c53
+<  
+<       
+< reg wf_idemp_barrier;
+---
+> 
+75,78c88,89
+< always @(instruction_id)begin
+<    
+<    wf_idemp_barrier <= 1'b0;
+<    
+---
+> always @(instruction_id)
+> begin
+368,394d378
+<     //SOPP: S_IDEMP_BARRIER
+<     {2'b10,8'd1,24'h16}:
+<       begin
+< 	 wf_idemp_barrier <= 1'b1;
+<         wf_halt <= 1'b0;
+<         wf_barrier <= 1'b0;
+<         wf_branch <= 1'b0;
+<         wf_waitcnt <= 1'b1;
+<         scc_write <= 1'b0;
+<         scc_read <= 1'b0;
+<         vcc_write <= 1'b0;
+<         vcc_read <= 1'b0;
+<         exec_write <= 1'b0;
+<         exec_read <= 1'b0;
+<         M0_write <= 1'b0;
+<         M0_read <= 1'b0;
+<         s1_width <= `DECODE_BIT0;
+<         s2_width <= `DECODE_BIT0;
+<         s3_width <= `DECODE_BIT0;
+<         s4_width <= `DECODE_BIT0;
+<         dest1_width <= `DECODE_BIT0;
+<         dest2_width <= `DECODE_BIT0;
+<         fp_instr <= 1'b0;
+<         copy_d1_to_s4 <= 1'b0;
+<         copy_d1_to_s1 <= 1'b0;
+<         d1_vdst_to_sdst <= 1'b0;
+<       end
+diff -r ./decode/instr_collate.v ../../verilog/rtl/decode/instr_collate.v
+1,79c1,55
+< module instr_collate 
+<   (/*AUTOARG*/
+<    // Outputs
+<    out_instr, out_valid, out_pc, out_long,
+<    // Inputs
+<    in_wfid, in_instr, in_valid, in_pc, flush_valid, flush_wfid,
+<    in_long, clk, rst
+<    );
+< 
+<    input [5:0] in_wfid;
+<    input [31:0] in_instr;
+<    input 	in_valid;
+<    input [31:0] in_pc;
+< 
+<    input 	flush_valid;
+<    input[5:0] 	flush_wfid;
+< 	
+<    
+<    output [63:0] out_instr;
+<    output 	 out_valid;
+<    output [31:0] out_pc;
+< 
+<    input 	 in_long;
+<    output 	 out_long;
+< 
+<    input 	 clk;
+<    input 	 rst;
+< 
+<    wire [`WF_PER_CU-1:0] valid_reg_in, valid_reg_out;
+<    
+<    wire [`WF_PER_CU-1:0] decoded_in_wfid, decoded_in_long, decoded_flush_valid;
+<    
+<    wire [31:0] 	 stored_instr;
+<    wire [31:0] 	 stored_pc;
+<    
+<    reg_40xX_1r_1w #(64) reg_instr_pc (
+< 				      .rd_addr(in_wfid),
+< 				      .rd_data({stored_instr,stored_pc}),
+< 				      .wr_en(in_long&in_valid),
+< 				      .wr_addr(in_wfid),
+< 				      .wr_data({in_instr,in_pc}),
+< 				      .clk(clk),
+< 				      .rst(rst)
+< 				      );
+< 
+<    // Valid state reg
+<    decoder_6b_40b_en in_wfid_decoder(
+<     .addr_in(in_wfid),
+<     .en(1'b1),
+<     .out(decoded_in_wfid));
+< 
+<    decoder_6b_40b_en in_long_decoder(
+<     .addr_in(in_wfid),
+<     .en(in_long),
+<     .out(decoded_in_long));
+< 
+<    decoder_6b_40b_en flush_valid_decoder(
+<     .addr_in(flush_wfid),
+<     .en(flush_valid),
+<     .out(decoded_flush_valid));
+< 
+<    assign valid_reg_in = ( (valid_reg_out & ~decoded_in_wfid) | decoded_in_long ) &  
+< 		  ~decoded_flush_valid;
+<    
+<    dff reg_valid[`WF_PER_CU-1:0]
+<      (.q(valid_reg_out),
+<       .d(valid_reg_in),
+<       .clk(clk),
+<       .rst(rst)
+<       );
+< 
+<    mux_40xX_to_1xX valid_read_mux 
+<      (.out(out_long), 
+<       .in(valid_reg_out), 
+<       .select(in_wfid));
+<    
+<    assign out_instr = out_long ? {in_instr,stored_instr} : {32'b0,in_instr};
+<    assign out_pc = out_long ? stored_pc : in_pc;
+<    assign out_valid = in_valid & (~in_long);
+---
+> module instr_collate (
+>   in_wfid,
+>   in_instr,
+>   in_valid,
+>   in_pc,
+>   out_instr,
+>   out_valid,
+>   out_pc,
+>   in_long,
+>   out_long,
+>   clk,
+>   rst
+> );
+> 
+> input [5:0] in_wfid;
+> input [31:0] in_instr;
+> input in_valid;
+> input [31:0] in_pc;
+> 
+> output [63:0] out_instr;
+> output out_valid;
+> output [31:0] out_pc;
+> 
+> input in_long;
+> output out_long;
+> 
+> input clk;
+> input rst;
+> 
+> wire [31:0] stored_instr;
+> wire [31:0] stored_pc;
+> 
+> reg_40xX_1r_1w #(64) reg_instr_pc (
+>  .rd_addr(in_wfid),
+>  .rd_data({stored_instr,stored_pc}),
+>  .wr_en(in_long&in_valid),
+>  .wr_addr(in_wfid),
+>  .wr_data({in_instr,in_pc}),
+>  .clk(clk),
+>  .rst(rst)
+> );
+> 
+> reg_40xX_1r_1w #(1) reg_valid (
+>  .rd_addr(in_wfid),
+>  .rd_data(out_long),
+>  .wr_en(in_valid),
+>  .wr_addr(in_wfid),
+>  .wr_data(in_long),
+>  .clk(clk),
+>  .rst(rst)
+> );
+> 
+> assign out_instr = out_long ? {in_instr,stored_instr} : {32'b0,in_instr};
+> assign out_pc = out_long ? stored_pc : in_pc;
+> assign out_valid = in_valid & (~in_long);
+diff -r ./decode/PS_flops_wavepool_decode.v ../../verilog/rtl/decode/PS_flops_wavepool_decode.v
+1,11c1,18
+< module PS_flops_wavepool_decode 
+<   (/*AUTOARG*/
+<    // Outputs
+<    flopped_instr_pc, flopped_instr_valid, flopped_instr, flopped_wfid,
+<    flopped_vgpr_base, flopped_sgpr_base, flopped_lds_base,
+<    flopped_issue_recover_en, flopped_issue_recover_wfid,
+<    // Inputs
+<    clk, rst, wave_instr_pc, wave_instr_valid, wave_instr, wave_wfid,
+<    wave_vgpr_base, wave_sgpr_base, wave_lds_base, issue_recover_en,
+<    issue_recover_wfid
+<    );
+---
+> module PS_flops_wavepool_decode (
+>  wave_instr_pc,
+>  wave_instr_valid,
+>  wave_instr,
+>  wave_wfid,
+>  wave_vgpr_base,
+>  wave_sgpr_base,
+>  wave_lds_base,
+>  flopped_instr_pc,
+>  flopped_instr_valid,
+>  flopped_instr,
+>  flopped_wfid,
+>  flopped_vgpr_base,
+>  flopped_sgpr_base,
+>  flopped_lds_base,
+>  clk,
+>  rst
+> );
+13,14c20,21
+<    input clk;
+<    input rst;
+---
+> input clk;
+> input rst;
+16,33c23,45
+<    input [31:0] wave_instr_pc;
+<    input 	wave_instr_valid;
+<    input [31:0] wave_instr;
+<    input [5:0] 	wave_wfid;
+<    input [9:0] 	wave_vgpr_base;
+<    input [8:0] 	wave_sgpr_base;
+<    input [15:0] wave_lds_base;
+<    input 	issue_recover_en;
+<    input [5:0] 	issue_recover_wfid;
+<    output [31:0] flopped_instr_pc;
+<    output 	 flopped_instr_valid;
+<    output [31:0] flopped_instr;
+<    output [5:0]  flopped_wfid;
+<    output [9:0]  flopped_vgpr_base;
+<    output [8:0]  flopped_sgpr_base;
+<    output [15:0] flopped_lds_base;
+<    output 	 flopped_issue_recover_en;
+<    output [5:0]  flopped_issue_recover_wfid;
+---
+> input [31:0] wave_instr_pc;
+> input wave_instr_valid;
+> input [31:0] wave_instr;
+> input [5:0] wave_wfid;
+> input [9:0] wave_vgpr_base;
+> input [8:0] wave_sgpr_base;
+> input [15:0] wave_lds_base;
+> 
+> output [31:0] flopped_instr_pc;
+> output flopped_instr_valid;
+> output [31:0] flopped_instr;
+> output [5:0] flopped_wfid;
+> output [9:0] flopped_vgpr_base;
+> output [8:0] flopped_sgpr_base;
+> output [15:0] flopped_lds_base;
+> 
+> dff flop_instr_pc [31:0] (.q(flopped_instr_pc), .d(wave_instr_pc), .clk(clk), .rst(rst));
+> dff flop_instr_valid (.q(flopped_instr_valid), .d(wave_instr_valid), .clk(clk), .rst(rst));
+> dff flop_instr [31:0] (.q(flopped_instr), .d(wave_instr), .clk(clk), .rst(rst));
+> dff flop_wfid [5:0] (.q(flopped_wfid), .d(wave_wfid), .clk(clk), .rst(rst));
+> dff flop_vgpr_base [9:0] (.q(flopped_vgpr_base), .d(wave_vgpr_base), .clk(clk), .rst(rst));
+> dff flop_sgpr_base [8:0] (.q(flopped_sgpr_base), .d(wave_sgpr_base), .clk(clk), .rst(rst));
+> dff flop_lds_base [15:0] (.q(flopped_lds_base), .d(wave_lds_base), .clk(clk), .rst(rst));
+35,44d46
+<    dff flop_instr_pc [31:0] (.q(flopped_instr_pc), .d(wave_instr_pc), .clk(clk), .rst(rst));
+<    dff flop_instr_valid (.q(flopped_instr_valid), .d(wave_instr_valid), .clk(clk), .rst(rst));
+<    dff flop_instr [31:0] (.q(flopped_instr), .d(wave_instr), .clk(clk), .rst(rst));
+<    dff flop_wfid [5:0] (.q(flopped_wfid), .d(wave_wfid), .clk(clk), .rst(rst));
+<    dff flop_vgpr_base [9:0] (.q(flopped_vgpr_base), .d(wave_vgpr_base), .clk(clk), .rst(rst));
+<    dff flop_sgpr_base [8:0] (.q(flopped_sgpr_base), .d(wave_sgpr_base), .clk(clk), .rst(rst));
+<    dff flop_lds_base [15:0] (.q(flopped_lds_base), .d(wave_lds_base), .clk(clk), .rst(rst));
+<    dff flop_recover_en(.q(flopped_issue_recover_en), .d(issue_recover_en), .clk(clk), .rst(rst));
+<    dff flop_recover_wfid[5:0](.q(flopped_issue_recover_wfid), .d(issue_recover_wfid), .clk(clk), .rst(rst));
+<    
+Only in ../../verilog/rtl/exec: build
+Only in ../../verilog/rtl/fetch: build
+diff -r ./fetch/fetch.interface ../../verilog/rtl/fetch/fetch.interface
+19,21d18
+<       issue_recover_pc,
+<       issue_recover_en,
+<       issue_recover_wfid,
+51c48
+<          salu_branch_taken, issue_recover_en;
+---
+>          salu_branch_taken;
+54c51
+<          salu_branch_wfid, issue_recover_wfid;
+---
+>          salu_branch_wfid;
+57c54
+< input[14:0] dispatch2cu_wf_tag_dispatch;
+---
+> input[10:0] dispatch2cu_wf_tag_dispatch;
+59c56
+< input[31:0] dispatch2cu_start_pc_dispatch, salu_branch_pc_value, issue_recover_pc;
+---
+> input[31:0] dispatch2cu_start_pc_dispatch, salu_branch_pc_value;
+69c66,67
+< output[14:0] cu2dispatch_wf_tag_done, tracemon_wf_tag_dispatch;
+---
+> output[10:0] cu2dispatch_wf_tag_done;
+> output[14:0] tracemon_wf_tag_dispatch;
+diff -r ./fetch/fetch.v ../../verilog/rtl/fetch/fetch.v
+1,97c1,120
+<  module fetch
+<    (/*AUTOARG*/
+<     // Outputs
+<     cu2dispatch_wf_done, buff_rd_en, wave_reserve_valid,
+<     wave_basereg_wr, exec_init_wf_en, tracemon_dispatch,
+<     issue_wg_wf_count, wave_reserve_slotid, wave_basereg_wfid,
+<     exec_init_wf_id, issue_wg_wgid, tracemon_new_wfid, wave_sgpr_base,
+<     wave_vgpr_base, cu2dispatch_wf_tag_done, tracemon_wf_tag_dispatch,
+<     wave_lds_base, buff_addr, buff_tag, exec_init_value,
+<     // Inputs
+<     clk, rst, dispatch2cu_wf_dispatch, buff_ack, issue_wf_done_en,
+<     salu_branch_en, salu_branch_taken, issue_recover_en,
+<     dispatch2cu_wg_wf_count, dispatch2cu_wf_size_dispatch,
+<     issue_wf_done_wf_id, issue_wg_wfid, salu_branch_wfid,
+<     issue_recover_wfid, dispatch2cu_sgpr_base_dispatch,
+<     dispatch2cu_vgpr_base_dispatch, dispatch2cu_wf_tag_dispatch,
+<     dispatch2cu_lds_base_dispatch, dispatch2cu_start_pc_dispatch,
+<     salu_branch_pc_value, issue_recover_pc, wave_stop_fetch
+<     );
+< 
+<  input clk;
+< 
+<  input rst;
+< 
+<  input dispatch2cu_wf_dispatch, buff_ack, issue_wf_done_en, salu_branch_en,
+< 	  salu_branch_taken, issue_recover_en;
+<  input[3:0] dispatch2cu_wg_wf_count;
+<  input[5:0] dispatch2cu_wf_size_dispatch, issue_wf_done_wf_id, issue_wg_wfid,
+< 	  salu_branch_wfid, issue_recover_wfid;
+<  input[8:0] dispatch2cu_sgpr_base_dispatch;
+<  input[9:0] dispatch2cu_vgpr_base_dispatch;
+<  input[14:0] dispatch2cu_wf_tag_dispatch;
+<  input[15:0] dispatch2cu_lds_base_dispatch;
+<  input[31:0] dispatch2cu_start_pc_dispatch, salu_branch_pc_value, issue_recover_pc;
+<  input[39:0] wave_stop_fetch;
+< 
+<  output cu2dispatch_wf_done, buff_rd_en, wave_reserve_valid, wave_basereg_wr,
+< 	  exec_init_wf_en, tracemon_dispatch;
+<  output[3:0] issue_wg_wf_count;
+<  output[5:0] wave_reserve_slotid, wave_basereg_wfid, exec_init_wf_id,
+< 	  issue_wg_wgid, tracemon_new_wfid;
+<  output[8:0] wave_sgpr_base;
+<  output[9:0] wave_vgpr_base;
+<  output[14:0] cu2dispatch_wf_tag_done, tracemon_wf_tag_dispatch;
+<  output[15:0] wave_lds_base;
+<  output[31:0] buff_addr;
+<  output[38:0] buff_tag;
+<  output[63:0] exec_init_value;
+< 
+<  ///////////////////////////////
+<  //Your code goes here - beware: script does not recognize changes
+<  // into files. It ovewrites everithing without mercy. Save your work before running the script
+<  ///////////////////////////////
+< 
+<  wire fetch_instr_en;
+<  wire [39:0] vacant_next;
+<  wire wf_dispatch;
+<  wire wr;
+<  wire [3:0]  wg_wf_count;
+<  wire [14:0] wf_tag_dispatch;
+<  wire fetch_valid;
+<  wire [31:0] start_pc_dispatch;
+<  wire [5:0] wf_size_dispatch;
+<  wire [39:0] vacant;
+<  wire vacant_reg_wr;
+<  wire [5:0] buff_tag_sch;
+<  wire [32:0] buff_addr_init;
+<  wire [5:0] new_wfid;
+< 
+<  wire branch_wr, pcblk_wr;
+<  wire [31:0] pcblk_pc;
+<  wire [5:0] pcblk_wfid;
+< 
+<  assign buff_rd_en = fetch_instr_en;
+<  assign wave_basereg_wfid = new_wfid;
+<  assign exec_init_wf_en = wr;
+<  assign exec_init_wf_id = wave_basereg_wfid;
+<  assign buff_tag = {buff_addr_init[32], buff_tag_sch, buff_addr_init[31:0]};
+<  assign wave_basereg_wr = wr;
+<  assign cu2dispatch_wf_done = issue_wf_done_en;
+<  assign wave_reserve_slotid = buff_tag_sch;
+<  assign vacant_reg_wr = (wr | issue_wf_done_en);
+<  assign buff_addr = buff_addr_init[31:0];
+< 
+<  assign branch_wr = salu_branch_en & salu_branch_taken;
+<  assign pcblk_pc = branch_wr ? salu_branch_pc_value : start_pc_dispatch;
+<  assign pcblk_wfid = branch_wr ? salu_branch_wfid : new_wfid;
+<  assign pcblk_wr = branch_wr | wr;
+< 
+<  // tracemon signals
+<  assign tracemon_dispatch = wf_dispatch;
+<  assign tracemon_wf_tag_dispatch = wf_tag_dispatch;
+<  assign tracemon_new_wfid = new_wfid;
+< 
+<  regfile #(93) dispatch_info_latch (
+<        { dispatch2cu_wf_dispatch, dispatch2cu_wf_tag_dispatch,
+< 	 dispatch2cu_start_pc_dispatch, dispatch2cu_vgpr_base_dispatch,
+---
+> module fetch(
+>       dispatch2cu_wf_dispatch,
+>       dispatch2cu_wf_tag_dispatch,
+>       dispatch2cu_start_pc_dispatch,
+>       dispatch2cu_vgpr_base_dispatch,
+>       dispatch2cu_sgpr_base_dispatch,
+>       dispatch2cu_lds_base_dispatch,
+>       dispatch2cu_wf_size_dispatch,
+>       dispatch2cu_wg_wf_count,
+>       buff_ack,
+>       wave_stop_fetch,
+>       issue_wf_done_en,
+>       issue_wf_done_wf_id,
+>       issue_wg_wfid,
+>       salu_branch_wfid,
+>       salu_branch_en,
+>       salu_branch_taken,
+>       salu_branch_pc_value,
+>       cu2dispatch_wf_tag_done,
+>       cu2dispatch_wf_done,
+>       buff_addr,
+>       buff_tag,
+>       buff_rd_en,
+>       wave_reserve_slotid,
+>       wave_reserve_valid,
+>       wave_basereg_wr,
+>       wave_basereg_wfid,
+>       wave_vgpr_base,
+>       wave_sgpr_base,
+>       wave_lds_base,
+>       exec_init_wf_en,
+>       exec_init_wf_id,
+>       exec_init_value,
+>       issue_wg_wgid,
+>       issue_wg_wf_count,
+>       tracemon_dispatch,
+>       tracemon_wf_tag_dispatch,
+>       tracemon_new_wfid,
+>       clk,
+>       rst
+>  );
+> 
+> input clk;
+> 
+> input rst;
+> 
+> input dispatch2cu_wf_dispatch, buff_ack, issue_wf_done_en, salu_branch_en,
+>          salu_branch_taken;
+> input[3:0] dispatch2cu_wg_wf_count;
+> input[5:0] dispatch2cu_wf_size_dispatch, issue_wf_done_wf_id, issue_wg_wfid,
+>          salu_branch_wfid;
+> input[8:0] dispatch2cu_sgpr_base_dispatch;
+> input[9:0] dispatch2cu_vgpr_base_dispatch;
+> input[14:0] dispatch2cu_wf_tag_dispatch;
+> input[15:0] dispatch2cu_lds_base_dispatch;
+> input[31:0] dispatch2cu_start_pc_dispatch, salu_branch_pc_value;
+> input[39:0] wave_stop_fetch;
+> 
+> output cu2dispatch_wf_done, buff_rd_en, wave_reserve_valid, wave_basereg_wr,
+>          exec_init_wf_en, tracemon_dispatch;
+> output[3:0] issue_wg_wf_count;
+> output[5:0] wave_reserve_slotid, wave_basereg_wfid, exec_init_wf_id,
+>          issue_wg_wgid, tracemon_new_wfid;
+> output[8:0] wave_sgpr_base;
+> output[9:0] wave_vgpr_base;
+> output[14:0] cu2dispatch_wf_tag_done;
+> output[14:0] tracemon_wf_tag_dispatch;
+> output[15:0] wave_lds_base;
+> output[31:0] buff_addr;
+> output[38:0] buff_tag;
+> output[63:0] exec_init_value;
+> 
+> ///////////////////////////////
+> //Your code goes here - beware: script does not recognize changes
+> // into files. It ovewrites everithing without mercy. Save your work before running the script
+> ///////////////////////////////
+> 
+> wire fetch_instr_en;
+> wire [39:0] vacant_next;
+> wire wf_dispatch;
+> wire wr;
+> wire [3:0]  wg_wf_count;
+> wire [14:0] wf_tag_dispatch;
+> wire fetch_valid;
+> wire [31:0] start_pc_dispatch;
+> wire [5:0] wf_size_dispatch;
+> wire [39:0] vacant;
+> wire vacant_reg_wr;
+> wire [5:0] buff_tag_sch;
+> wire [32:0] buff_addr_init;
+> wire [5:0] new_wfid;
+> 
+> wire branch_wr, pcblk_wr;
+> wire [31:0] pcblk_pc;
+> wire [5:0] pcblk_wfid;
+> 
+> assign buff_rd_en = fetch_instr_en;
+> assign wave_basereg_wfid = new_wfid;
+> assign exec_init_wf_en = wr;
+> assign exec_init_wf_id = wave_basereg_wfid;
+> assign buff_tag = {buff_addr_init[32], buff_tag_sch, buff_addr_init[31:0]};
+> assign wave_basereg_wr = wr;
+> assign cu2dispatch_wf_done = issue_wf_done_en;
+> assign wave_reserve_slotid = buff_tag_sch;
+> assign vacant_reg_wr = (wr | issue_wf_done_en);
+> assign buff_addr = buff_addr_init[31:0];
+> 
+> assign branch_wr = salu_branch_en & salu_branch_taken;
+> assign pcblk_pc = branch_wr ? salu_branch_pc_value : start_pc_dispatch;
+> assign pcblk_wfid = branch_wr ? salu_branch_wfid : new_wfid;
+> assign pcblk_wr = branch_wr | wr;
+> 
+> // tracemon signals
+> assign tracemon_dispatch = wf_dispatch;
+> assign tracemon_wf_tag_dispatch = wf_tag_dispatch;
+> assign tracemon_new_wfid = new_wfid;
+> 
+> regfile #(93) dispatch_info_latch (
+>       { dispatch2cu_wf_dispatch, dispatch2cu_wf_tag_dispatch,
+>         dispatch2cu_start_pc_dispatch, dispatch2cu_vgpr_base_dispatch,
+136,151c159,163
+<    pc_block pcb1
+<      (/*AUTOINST*/
+<       // Outputs
+<       .pc_read2ibuff			(buff_addr_init),
+<       // Inputs
+<       .new_pc_init			(pcblk_pc),
+<       .wf_id				(pcblk_wfid),
+<       .recover_wr_wfid			(issue_recover_wfid),
+<       .recover_wr_pc			(issue_recover_pc),
+<       .wr				(pcblk_wr),
+<       .recover_wr			(issue_recover_en),
+<       .clk				(clk),
+<       .rst				(rst),
+<       .rd_en				(fetch_instr_en),
+<       .wf_id_rd				(buff_tag_sch));
+<    
+---
+> pc_block pcb1 (
+>       pcblk_pc, pcblk_wfid, pcblk_wr,
+>       fetch_instr_en, buff_tag_sch,
+>       buff_addr_init, clk, rst
+> );
+diff -r ./fetch/pc_block.v ../../verilog/rtl/fetch/pc_block.v
+1,67c1,64
+< module pc_block 
+<   (/*AUTOARG*/
+<    // Outputs
+<    pc_read2ibuff,
+<    // Inputs
+<    new_pc_init, wf_id, recover_wr_wfid, recover_wr_pc, wr, recover_wr,
+<    clk, rst, rd_en, wf_id_rd
+<    );
+< 
+<    parameter BITWIDTH = 32;
+< 
+<    input [31:0] new_pc_init;
+<    input [5:0] 	wf_id;
+<    input [5:0] 	recover_wr_wfid;
+<    input [31:0] recover_wr_pc;
+<    
+<    input 	wr;
+<    input 	recover_wr;
+<    
+<    input 	clk, rst;
+<    input 	rd_en;
+<    input [5:0] 	wf_id_rd;
+< 
+<    output [32:0] pc_read2ibuff;
+< 
+<    wire 	 write;
+<    wire [31:0] 	 pc_read;
+<    wire [32:0] 	 data0, data_flop0;
+<    wire [32:0] 	 data1, data_flop1;
+<    wire [32:0] 	 data2, data_flop2;
+<    wire [32:0] 	 data3, data_flop3;
+<    wire [32:0] 	 data4, data_flop4;
+<    wire [32:0] 	 data5, data_flop5;
+<    wire [32:0] 	 data6, data_flop6;
+<    wire [32:0] 	 data7, data_flop7;
+<    wire [32:0] 	 data8, data_flop8;
+<    wire [32:0] 	 data9, data_flop9;
+<    wire [32:0] 	 data10, data_flop10;
+<    wire [32:0] 	 data11, data_flop11;
+<    wire [32:0] 	 data12, data_flop12;
+<    wire [32:0] 	 data13, data_flop13;
+<    wire [32:0] 	 data14, data_flop14;
+<    wire [32:0] 	 data15, data_flop15;
+<    wire [32:0] 	 data16, data_flop16;
+<    wire [32:0] 	 data17, data_flop17;
+<    wire [32:0] 	 data18, data_flop18;
+<    wire [32:0] 	 data19, data_flop19;
+<    wire [32:0] 	 data20, data_flop20;
+<    wire [32:0] 	 data21, data_flop21;
+<    wire [32:0] 	 data22, data_flop22;
+<    wire [32:0] 	 data23, data_flop23;
+<    wire [32:0] 	 data24, data_flop24;
+<    wire [32:0] 	 data25, data_flop25;
+<    wire [32:0] 	 data26, data_flop26;
+<    wire [32:0] 	 data27, data_flop27;
+<    wire [32:0] 	 data28, data_flop28;
+<    wire [32:0] 	 data29, data_flop29;
+<    wire [32:0] 	 data30, data_flop30;
+<    wire [32:0] 	 data31, data_flop31;
+<    wire [32:0] 	 data32, data_flop32;
+<    wire [32:0] 	 data33, data_flop33;
+<    wire [32:0] 	 data34, data_flop34;
+<    wire [32:0] 	 data35, data_flop35;
+<    wire [32:0] 	 data36, data_flop36;
+<    wire [32:0] 	 data37, data_flop37;
+<    wire [32:0] 	 data38, data_flop38;
+<    wire [32:0] 	 data39, data_flop39;
+---
+> module pc_block (
+> 	new_pc_init, 
+> 	wf_id, 
+> 	wr, 
+> 	rd_en, 
+> 	wf_id_rd, 
+> 	pc_read2ibuff, 
+> 	clk, 
+> 	rst
+> );
+> 
+> parameter BITWIDTH = 32;
+> 
+> input [31:0] new_pc_init;
+> input [5:0] wf_id;
+> input wr;
+> input clk, rst;
+> input rd_en;
+> input [5:0] wf_id_rd;
+> 
+> output [32:0]pc_read2ibuff;
+> 
+> wire write;
+> wire [31:0] pc_read;
+> wire [32:0] data0, data_flop0;
+> wire [32:0] data1, data_flop1;
+> wire [32:0] data2, data_flop2;
+> wire [32:0] data3, data_flop3;
+> wire [32:0] data4, data_flop4;
+> wire [32:0] data5, data_flop5;
+> wire [32:0] data6, data_flop6;
+> wire [32:0] data7, data_flop7;
+> wire [32:0] data8, data_flop8;
+> wire [32:0] data9, data_flop9;
+> wire [32:0] data10, data_flop10;
+> wire [32:0] data11, data_flop11;
+> wire [32:0] data12, data_flop12;
+> wire [32:0] data13, data_flop13;
+> wire [32:0] data14, data_flop14;
+> wire [32:0] data15, data_flop15;
+> wire [32:0] data16, data_flop16;
+> wire [32:0] data17, data_flop17;
+> wire [32:0] data18, data_flop18;
+> wire [32:0] data19, data_flop19;
+> wire [32:0] data20, data_flop20;
+> wire [32:0] data21, data_flop21;
+> wire [32:0] data22, data_flop22;
+> wire [32:0] data23, data_flop23;
+> wire [32:0] data24, data_flop24;
+> wire [32:0] data25, data_flop25;
+> wire [32:0] data26, data_flop26;
+> wire [32:0] data27, data_flop27;
+> wire [32:0] data28, data_flop28;
+> wire [32:0] data29, data_flop29;
+> wire [32:0] data30, data_flop30;
+> wire [32:0] data31, data_flop31;
+> wire [32:0] data32, data_flop32;
+> wire [32:0] data33, data_flop33;
+> wire [32:0] data34, data_flop34;
+> wire [32:0] data35, data_flop35;
+> wire [32:0] data36, data_flop36;
+> wire [32:0] data37, data_flop37;
+> wire [32:0] data38, data_flop38;
+> wire [32:0] data39, data_flop39;
+71,111c68,108
+<    regfile #(33) rfile0 (data0, write, data_flop0, clk, rst);
+<    regfile #(33) rfile1 (data1, write, data_flop1, clk, rst);
+<    regfile #(33) rfile2 (data2, write, data_flop2, clk, rst);
+<    regfile #(33) rfile3 (data3, write, data_flop3, clk, rst);
+<    regfile #(33) rfile4 (data4, write, data_flop4, clk, rst);
+<    regfile #(33) rfile5 (data5, write, data_flop5, clk, rst);
+<    regfile #(33) rfile6 (data6, write, data_flop6, clk, rst);
+<    regfile #(33) rfile7 (data7, write, data_flop7, clk, rst);
+<    regfile #(33) rfile8 (data8, write, data_flop8, clk, rst);
+<    regfile #(33) rfile9 (data9, write, data_flop9, clk, rst);
+<    regfile #(33) rfile10 (data10, write, data_flop10, clk, rst);
+<    regfile #(33) rfile11 (data11, write, data_flop11, clk, rst);
+<    regfile #(33) rfile12 (data12, write, data_flop12, clk, rst);
+<    regfile #(33) rfile13 (data13, write, data_flop13, clk, rst);
+<    regfile #(33) rfile14 (data14, write, data_flop14, clk, rst);
+<    regfile #(33) rfile15 (data15, write, data_flop15, clk, rst);
+<    regfile #(33) rfile16 (data16, write, data_flop16, clk, rst);
+<    regfile #(33) rfile17 (data17, write, data_flop17, clk, rst);
+<    regfile #(33) rfile18 (data18, write, data_flop18, clk, rst);
+<    regfile #(33) rfile19 (data19, write, data_flop19, clk, rst);
+<    regfile #(33) rfile20 (data20, write, data_flop20, clk, rst);
+<    regfile #(33) rfile21 (data21, write, data_flop21, clk, rst);
+<    regfile #(33) rfile22 (data22, write, data_flop22, clk, rst);
+<    regfile #(33) rfile23 (data23, write, data_flop23, clk, rst);
+<    regfile #(33) rfile24 (data24, write, data_flop24, clk, rst);
+<    regfile #(33) rfile25 (data25, write, data_flop25, clk, rst);
+<    regfile #(33) rfile26 (data26, write, data_flop26, clk, rst);
+<    regfile #(33) rfile27 (data27, write, data_flop27, clk, rst);
+<    regfile #(33) rfile28 (data28, write, data_flop28, clk, rst);
+<    regfile #(33) rfile29 (data29, write, data_flop29, clk, rst);
+<    regfile #(33) rfile30 (data30, write, data_flop30, clk, rst);
+<    regfile #(33) rfile31 (data31, write, data_flop31, clk, rst);
+<    regfile #(33) rfile32 (data32, write, data_flop32, clk, rst);
+<    regfile #(33) rfile33 (data33, write, data_flop33, clk, rst);
+<    regfile #(33) rfile34 (data34, write, data_flop34, clk, rst);
+<    regfile #(33) rfile35 (data35, write, data_flop35, clk, rst);
+<    regfile #(33) rfile36 (data36, write, data_flop36, clk, rst);
+<    regfile #(33) rfile37 (data37, write, data_flop37, clk, rst);
+<    regfile #(33) rfile38 (data38, write, data_flop38, clk, rst);
+<    regfile #(33) rfile39 (data39, write, data_flop39, clk, rst);
+<    
+---
+>      regfile #(33) rfile0 (data0, write, data_flop0, clk, rst);
+> 	 regfile #(33) rfile1 (data1, write, data_flop1, clk, rst);
+> 	 regfile #(33) rfile2 (data2, write, data_flop2, clk, rst);
+> 	 regfile #(33) rfile3 (data3, write, data_flop3, clk, rst);
+> 	 regfile #(33) rfile4 (data4, write, data_flop4, clk, rst);
+> 	 regfile #(33) rfile5 (data5, write, data_flop5, clk, rst);
+> 	 regfile #(33) rfile6 (data6, write, data_flop6, clk, rst);
+> 	 regfile #(33) rfile7 (data7, write, data_flop7, clk, rst);
+> 	 regfile #(33) rfile8 (data8, write, data_flop8, clk, rst);
+> 	 regfile #(33) rfile9 (data9, write, data_flop9, clk, rst);
+> 	 regfile #(33) rfile10 (data10, write, data_flop10, clk, rst);
+> 	 regfile #(33) rfile11 (data11, write, data_flop11, clk, rst);
+> 	 regfile #(33) rfile12 (data12, write, data_flop12, clk, rst);
+> 	 regfile #(33) rfile13 (data13, write, data_flop13, clk, rst);
+> 	 regfile #(33) rfile14 (data14, write, data_flop14, clk, rst);
+> 	 regfile #(33) rfile15 (data15, write, data_flop15, clk, rst);
+> 	 regfile #(33) rfile16 (data16, write, data_flop16, clk, rst);
+> 	 regfile #(33) rfile17 (data17, write, data_flop17, clk, rst);
+> 	 regfile #(33) rfile18 (data18, write, data_flop18, clk, rst);
+> 	 regfile #(33) rfile19 (data19, write, data_flop19, clk, rst);
+> 	 regfile #(33) rfile20 (data20, write, data_flop20, clk, rst);
+> 	 regfile #(33) rfile21 (data21, write, data_flop21, clk, rst);
+> 	 regfile #(33) rfile22 (data22, write, data_flop22, clk, rst);
+> 	 regfile #(33) rfile23 (data23, write, data_flop23, clk, rst);
+> 	 regfile #(33) rfile24 (data24, write, data_flop24, clk, rst);
+> 	 regfile #(33) rfile25 (data25, write, data_flop25, clk, rst);
+> 	 regfile #(33) rfile26 (data26, write, data_flop26, clk, rst);
+> 	 regfile #(33) rfile27 (data27, write, data_flop27, clk, rst);
+> 	 regfile #(33) rfile28 (data28, write, data_flop28, clk, rst);
+> 	 regfile #(33) rfile29 (data29, write, data_flop29, clk, rst);
+> 	 regfile #(33) rfile30 (data30, write, data_flop30, clk, rst);
+> 	 regfile #(33) rfile31 (data31, write, data_flop31, clk, rst);
+> 	 regfile #(33) rfile32 (data32, write, data_flop32, clk, rst);
+> 	 regfile #(33) rfile33 (data33, write, data_flop33, clk, rst);
+> 	 regfile #(33) rfile34 (data34, write, data_flop34, clk, rst);
+> 	 regfile #(33) rfile35 (data35, write, data_flop35, clk, rst);
+> 	 regfile #(33) rfile36 (data36, write, data_flop36, clk, rst);
+> 	 regfile #(33) rfile37 (data37, write, data_flop37, clk, rst);
+> 	 regfile #(33) rfile38 (data38, write, data_flop38, clk, rst);
+> 	 regfile #(33) rfile39 (data39, write, data_flop39, clk, rst);
+> 	 
+114,153c111,151
+< 			  (wf_id_rd==6'd1)?data_flop1:
+< 			  (wf_id_rd==6'd2)?data_flop2:
+< 			  (wf_id_rd==6'd3)?data_flop3:
+< 			  (wf_id_rd==6'd4)?data_flop4:
+< 			  (wf_id_rd==6'd5)?data_flop5:
+< 			  (wf_id_rd==6'd6)?data_flop6:
+< 			  (wf_id_rd==6'd7)?data_flop7:
+< 			  (wf_id_rd==6'd8)?data_flop8:
+< 			  (wf_id_rd==6'd9)?data_flop9:
+< 			  (wf_id_rd==6'd10)?data_flop10:
+< 			  (wf_id_rd==6'd11)?data_flop11:
+< 			  (wf_id_rd==6'd12)?data_flop12:
+< 			  (wf_id_rd==6'd13)?data_flop13:
+< 			  (wf_id_rd==6'd14)?data_flop14:
+< 			  (wf_id_rd==6'd15)?data_flop15:
+< 			  (wf_id_rd==6'd16)?data_flop16:
+< 			  (wf_id_rd==6'd17)?data_flop17:
+< 			  (wf_id_rd==6'd18)?data_flop18:
+< 			  (wf_id_rd==6'd19)?data_flop19:
+< 			  (wf_id_rd==6'd20)?data_flop20:
+< 			  (wf_id_rd==6'd21)?data_flop21:
+< 			  (wf_id_rd==6'd22)?data_flop22:
+< 			  (wf_id_rd==6'd23)?data_flop23:
+< 			  (wf_id_rd==6'd24)?data_flop24:
+< 			  (wf_id_rd==6'd25)?data_flop25:
+< 			  (wf_id_rd==6'd26)?data_flop26:
+< 			  (wf_id_rd==6'd27)?data_flop27:
+< 			  (wf_id_rd==6'd28)?data_flop28:
+< 			  (wf_id_rd==6'd29)?data_flop29:
+< 			  (wf_id_rd==6'd30)?data_flop30:
+< 			  (wf_id_rd==6'd31)?data_flop31:
+< 			  (wf_id_rd==6'd32)?data_flop32:
+< 			  (wf_id_rd==6'd33)?data_flop33:
+< 			  (wf_id_rd==6'd34)?data_flop34:
+< 			  (wf_id_rd==6'd35)?data_flop35:
+< 			  (wf_id_rd==6'd36)?data_flop36:
+< 			  (wf_id_rd==6'd37)?data_flop37:
+< 			  (wf_id_rd==6'd38)?data_flop38:
+< 			  (wf_id_rd==6'd39)?data_flop39:
+< 			  33'd0;
+---
+>                    (wf_id_rd==6'd1)?data_flop1:
+> 				   (wf_id_rd==6'd2)?data_flop2:
+> 				   (wf_id_rd==6'd3)?data_flop3:
+> 				   (wf_id_rd==6'd4)?data_flop4:
+> 				   (wf_id_rd==6'd5)?data_flop5:
+> 				   (wf_id_rd==6'd6)?data_flop6:
+> 				   (wf_id_rd==6'd7)?data_flop7:
+> 				   (wf_id_rd==6'd8)?data_flop8:
+> 				   (wf_id_rd==6'd9)?data_flop9:
+> 				   (wf_id_rd==6'd10)?data_flop10:
+> 				   (wf_id_rd==6'd11)?data_flop11:
+> 				   (wf_id_rd==6'd12)?data_flop12:
+> 				   (wf_id_rd==6'd13)?data_flop13:
+> 				   (wf_id_rd==6'd14)?data_flop14:
+> 				   (wf_id_rd==6'd15)?data_flop15:
+> 				   (wf_id_rd==6'd16)?data_flop16:
+> 				   (wf_id_rd==6'd17)?data_flop17:
+> 				   (wf_id_rd==6'd18)?data_flop18:
+> 				   (wf_id_rd==6'd19)?data_flop19:
+> 				   (wf_id_rd==6'd20)?data_flop20:
+> 				   (wf_id_rd==6'd21)?data_flop21:
+> 				   (wf_id_rd==6'd22)?data_flop22:
+> 				   (wf_id_rd==6'd23)?data_flop23:
+> 				   (wf_id_rd==6'd24)?data_flop24:
+> 				   (wf_id_rd==6'd25)?data_flop25:
+> 				   (wf_id_rd==6'd26)?data_flop26:
+> 				   (wf_id_rd==6'd27)?data_flop27:
+> 				   (wf_id_rd==6'd28)?data_flop28:
+> 				   (wf_id_rd==6'd29)?data_flop29:
+> 				   (wf_id_rd==6'd30)?data_flop30:
+> 				   (wf_id_rd==6'd31)?data_flop31:
+> 				   (wf_id_rd==6'd32)?data_flop32:
+> 				   (wf_id_rd==6'd33)?data_flop33:
+> 				   (wf_id_rd==6'd34)?data_flop34:
+> 				   (wf_id_rd==6'd35)?data_flop35:
+> 				   (wf_id_rd==6'd36)?data_flop36:
+> 				   (wf_id_rd==6'd37)?data_flop37:
+> 				   (wf_id_rd==6'd38)?data_flop38:
+> 				   (wf_id_rd==6'd39)?data_flop39:
+>                     33'd0;
+>   
+155,236c153,192
+< 
+<    assign data0= (recover_wr & (recover_wr_wfid==6'd0))? recover_wr_pc : 
+< 		 (wr & (wf_id==6'd0))? {1'b1,new_pc_init} :(rd_en & (wf_id_rd==6'd0))?{1'b0,pc_read}:data_flop0; 
+<    //   assign data0=(wr & (wf_id==6'd0))? {1'b1,new_pc_init} :(rd_en & (wf_id_rd==6'd0))?{1'b0,pc_read}:data_flop0;
+<    assign data1=(recover_wr & (recover_wr_wfid==6'd1))? recover_wr_pc : 
+< 		(wr & (wf_id==6'd1))? {1'b1,new_pc_init} :(rd_en & (wf_id_rd==6'd1))?{1'b0,pc_read}:data_flop1;
+<    assign data2=(recover_wr & (recover_wr_wfid==6'd2))? recover_wr_pc : 
+< 		(wr & (wf_id==6'd2))? {1'b1,new_pc_init} :(rd_en & (wf_id_rd==6'd2))?{1'b0,pc_read}:data_flop2;
+<    assign data3=(recover_wr & (recover_wr_wfid==6'd3))? recover_wr_pc : 
+< 		(wr & (wf_id==6'd3))? {1'b1,new_pc_init} :(rd_en & (wf_id_rd==6'd3))?{1'b0,pc_read}:data_flop3;
+<    assign data4=(recover_wr & (recover_wr_wfid==6'd4))? recover_wr_pc : 
+< 		(wr & (wf_id==6'd4))? {1'b1,new_pc_init} :(rd_en & (wf_id_rd==6'd4))?{1'b0,pc_read}:data_flop4;
+<    assign data5=(recover_wr & (recover_wr_wfid==6'd5))? recover_wr_pc : 
+< 		(wr & (wf_id==6'd5))? {1'b1,new_pc_init} :(rd_en & (wf_id_rd==6'd5))?{1'b0,pc_read}:data_flop5;
+<    assign data6=(recover_wr & (recover_wr_wfid==6'd6))? recover_wr_pc : 
+< 		(wr & (wf_id==6'd6))? {1'b1,new_pc_init} :(rd_en & (wf_id_rd==6'd6))?{1'b0,pc_read}:data_flop6;
+<    assign data7=(recover_wr & (recover_wr_wfid==6'd7))? recover_wr_pc : 
+< 		(wr & (wf_id==6'd7))? {1'b1,new_pc_init} :(rd_en & (wf_id_rd==6'd7))?{1'b0,pc_read}:data_flop7;
+<    assign data8=(recover_wr & (recover_wr_wfid==6'd8))? recover_wr_pc : 
+< 		(wr & (wf_id==6'd8))? {1'b1,new_pc_init} :(rd_en & (wf_id_rd==6'd8))?{1'b0,pc_read}:data_flop8;
+<    assign data9=(recover_wr & (recover_wr_wfid==6'd9))? recover_wr_pc : 
+< 		(wr & (wf_id==6'd9))? {1'b1,new_pc_init} :(rd_en & (wf_id_rd==6'd9))?{1'b0,pc_read}:data_flop9;
+<    assign data10=(recover_wr & (recover_wr_wfid==6'd10))? recover_wr_pc : 
+< 		 (wr & (wf_id==6'd10))? {1'b1,new_pc_init} :(rd_en & (wf_id_rd==6'd10))?{1'b0,pc_read}:data_flop10;
+<    assign data11=(recover_wr & (recover_wr_wfid==6'd11))? recover_wr_pc : 
+< 		 (wr & (wf_id==6'd11))? {1'b1,new_pc_init} :(rd_en & (wf_id_rd==6'd11))?{1'b0,pc_read}:data_flop11;
+<    assign data12=(recover_wr & (recover_wr_wfid==6'd12))? recover_wr_pc : 
+< 		 (wr & (wf_id==6'd12))? {1'b1,new_pc_init} :(rd_en & (wf_id_rd==6'd12))?{1'b0,pc_read}:data_flop12;
+<    assign data13=(recover_wr & (recover_wr_wfid==6'd13))? recover_wr_pc : 
+< 		 (wr & (wf_id==6'd13))? {1'b1,new_pc_init} :(rd_en & (wf_id_rd==6'd13))?{1'b0,pc_read}:data_flop13;
+<    assign data14=(recover_wr & (recover_wr_wfid==6'd14))? recover_wr_pc : 
+< 		 (wr & (wf_id==6'd14))? {1'b1,new_pc_init} :(rd_en & (wf_id_rd==6'd14))?{1'b0,pc_read}:data_flop14;
+<    assign data15=(recover_wr & (recover_wr_wfid==6'd15))? recover_wr_pc : 
+< 		 (wr & (wf_id==6'd15))? {1'b1,new_pc_init} :(rd_en & (wf_id_rd==6'd15))?{1'b0,pc_read}:data_flop15;
+<    assign data16=(recover_wr & (recover_wr_wfid==6'd16))? recover_wr_pc : 
+< 		 (wr & (wf_id==6'd16))? {1'b1,new_pc_init} :(rd_en & (wf_id_rd==6'd16))?{1'b0,pc_read}:data_flop16;
+<    assign data17=(recover_wr & (recover_wr_wfid==6'd17))? recover_wr_pc : 
+< 		 (wr & (wf_id==6'd17))? {1'b1,new_pc_init} :(rd_en & (wf_id_rd==6'd17))?{1'b0,pc_read}:data_flop17;
+<    assign data18=(recover_wr & (recover_wr_wfid==6'd18))? recover_wr_pc : 
+< 		 (wr & (wf_id==6'd18))? {1'b1,new_pc_init} :(rd_en & (wf_id_rd==6'd18))?{1'b0,pc_read}:data_flop18;
+<    assign data19=(recover_wr & (recover_wr_wfid==6'd19))? recover_wr_pc : 
+< 		 (wr & (wf_id==6'd19))? {1'b1,new_pc_init} :(rd_en & (wf_id_rd==6'd19))?{1'b0,pc_read}:data_flop19;
+<    assign data20=(recover_wr & (recover_wr_wfid==6'd20))? recover_wr_pc : 
+< 		 (wr & (wf_id==6'd20))? {1'b1,new_pc_init} :(rd_en & (wf_id_rd==6'd20))?{1'b0,pc_read}:data_flop20;
+<    assign data21=(recover_wr & (recover_wr_wfid==6'd21))? recover_wr_pc : 
+< 		 (wr & (wf_id==6'd21))? {1'b1,new_pc_init} :(rd_en & (wf_id_rd==6'd21))?{1'b0,pc_read}:data_flop21;
+<    assign data22=(recover_wr & (recover_wr_wfid==6'd22))? recover_wr_pc : 
+< 		 (wr & (wf_id==6'd22))? {1'b1,new_pc_init} :(rd_en & (wf_id_rd==6'd22))?{1'b0,pc_read}:data_flop22;
+<    assign data23=(recover_wr & (recover_wr_wfid==6'd23))? recover_wr_pc : 
+< 		 (wr & (wf_id==6'd23))? {1'b1,new_pc_init} :(rd_en & (wf_id_rd==6'd23))?{1'b0,pc_read}:data_flop23;
+<    assign data24=(recover_wr & (recover_wr_wfid==6'd24))? recover_wr_pc : 
+< 		 (wr & (wf_id==6'd24))? {1'b1,new_pc_init} :(rd_en & (wf_id_rd==6'd24))?{1'b0,pc_read}:data_flop24;
+<    assign data25=(recover_wr & (recover_wr_wfid==6'd25))? recover_wr_pc : 
+< 		 (wr & (wf_id==6'd25))? {1'b1,new_pc_init} :(rd_en & (wf_id_rd==6'd25))?{1'b0,pc_read}:data_flop25;
+<    assign data26=(recover_wr & (recover_wr_wfid==6'd26))? recover_wr_pc : 
+< 		 (wr & (wf_id==6'd26))? {1'b1,new_pc_init} :(rd_en & (wf_id_rd==6'd26))?{1'b0,pc_read}:data_flop26;
+<    assign data27=(recover_wr & (recover_wr_wfid==6'd27))? recover_wr_pc : 
+< 		 (wr & (wf_id==6'd27))? {1'b1,new_pc_init} :(rd_en & (wf_id_rd==6'd27))?{1'b0,pc_read}:data_flop27;
+<    assign data28=(recover_wr & (recover_wr_wfid==6'd28))? recover_wr_pc : 
+< 		 (wr & (wf_id==6'd28))? {1'b1,new_pc_init} :(rd_en & (wf_id_rd==6'd28))?{1'b0,pc_read}:data_flop28;
+<    assign data29=(recover_wr & (recover_wr_wfid==6'd29))? recover_wr_pc : 
+< 		 (wr & (wf_id==6'd29))? {1'b1,new_pc_init} :(rd_en & (wf_id_rd==6'd29))?{1'b0,pc_read}:data_flop29;
+<    assign data30=(recover_wr & (recover_wr_wfid==6'd30))? recover_wr_pc : 
+< 		 (wr & (wf_id==6'd30))? {1'b1,new_pc_init} :(rd_en & (wf_id_rd==6'd30))?{1'b0,pc_read}:data_flop30;
+<    assign data31=(recover_wr & (recover_wr_wfid==6'd31))? recover_wr_pc : 
+< 		 (wr & (wf_id==6'd31))? {1'b1,new_pc_init} :(rd_en & (wf_id_rd==6'd31))?{1'b0,pc_read}:data_flop31;
+<    assign data32=(recover_wr & (recover_wr_wfid==6'd32))? recover_wr_pc : 
+< 		 (wr & (wf_id==6'd32))? {1'b1,new_pc_init} :(rd_en & (wf_id_rd==6'd32))?{1'b0,pc_read}:data_flop32;
+<    assign data33=(recover_wr & (recover_wr_wfid==6'd33))? recover_wr_pc : 
+< 		 (wr & (wf_id==6'd33))? {1'b1,new_pc_init} :(rd_en & (wf_id_rd==6'd33))?{1'b0,pc_read}:data_flop33;
+<    assign data34=(recover_wr & (recover_wr_wfid==6'd34))? recover_wr_pc : 
+< 		 (wr & (wf_id==6'd34))? {1'b1,new_pc_init} :(rd_en & (wf_id_rd==6'd34))?{1'b0,pc_read}:data_flop34;
+<    assign data35=(recover_wr & (recover_wr_wfid==6'd35))? recover_wr_pc : 
+< 		 (wr & (wf_id==6'd35))? {1'b1,new_pc_init} :(rd_en & (wf_id_rd==6'd35))?{1'b0,pc_read}:data_flop35;
+<    assign data36=(recover_wr & (recover_wr_wfid==6'd36))? recover_wr_pc : 
+< 		 (wr & (wf_id==6'd36))? {1'b1,new_pc_init} :(rd_en & (wf_id_rd==6'd36))?{1'b0,pc_read}:data_flop36;
+<    assign data37=(recover_wr & (recover_wr_wfid==6'd37))? recover_wr_pc : 
+< 		 (wr & (wf_id==6'd37))? {1'b1,new_pc_init} :(rd_en & (wf_id_rd==6'd37))?{1'b0,pc_read}:data_flop37;
+<    assign data38=(recover_wr & (recover_wr_wfid==6'd38))? recover_wr_pc : 
+< 		 (wr & (wf_id==6'd38))? {1'b1,new_pc_init} :(rd_en & (wf_id_rd==6'd38))?{1'b0,pc_read}:data_flop38;
+<    assign data39=(recover_wr & (recover_wr_wfid==6'd39))? recover_wr_pc : 
+< 		 (wr & (wf_id==6'd39))? {1'b1,new_pc_init} :(rd_en & (wf_id_rd==6'd39))?{1'b0,pc_read}:data_flop39;
+---
+>    assign data0=(wr & (wf_id==6'd0))? {1'b1,new_pc_init} :(rd_en & (wf_id_rd==6'd0))?{1'b0,pc_read}:data_flop0;
+>    assign data1=(wr & (wf_id==6'd1))? {1'b1,new_pc_init} :(rd_en & (wf_id_rd==6'd1))?{1'b0,pc_read}:data_flop1;
+>    assign data2=(wr & (wf_id==6'd2))? {1'b1,new_pc_init} :(rd_en & (wf_id_rd==6'd2))?{1'b0,pc_read}:data_flop2;
+>    assign data3=(wr & (wf_id==6'd3))? {1'b1,new_pc_init} :(rd_en & (wf_id_rd==6'd3))?{1'b0,pc_read}:data_flop3;
+>    assign data4=(wr & (wf_id==6'd4))? {1'b1,new_pc_init} :(rd_en & (wf_id_rd==6'd4))?{1'b0,pc_read}:data_flop4;
+>    assign data5=(wr & (wf_id==6'd5))? {1'b1,new_pc_init} :(rd_en & (wf_id_rd==6'd5))?{1'b0,pc_read}:data_flop5;
+>    assign data6=(wr & (wf_id==6'd6))? {1'b1,new_pc_init} :(rd_en & (wf_id_rd==6'd6))?{1'b0,pc_read}:data_flop6;
+>    assign data7=(wr & (wf_id==6'd7))? {1'b1,new_pc_init} :(rd_en & (wf_id_rd==6'd7))?{1'b0,pc_read}:data_flop7;
+>    assign data8=(wr & (wf_id==6'd8))? {1'b1,new_pc_init} :(rd_en & (wf_id_rd==6'd8))?{1'b0,pc_read}:data_flop8;
+>    assign data9=(wr & (wf_id==6'd9))? {1'b1,new_pc_init} :(rd_en & (wf_id_rd==6'd9))?{1'b0,pc_read}:data_flop9;
+>    assign data10=(wr & (wf_id==6'd10))? {1'b1,new_pc_init} :(rd_en & (wf_id_rd==6'd10))?{1'b0,pc_read}:data_flop10;
+>    assign data11=(wr & (wf_id==6'd11))? {1'b1,new_pc_init} :(rd_en & (wf_id_rd==6'd11))?{1'b0,pc_read}:data_flop11;
+>    assign data12=(wr & (wf_id==6'd12))? {1'b1,new_pc_init} :(rd_en & (wf_id_rd==6'd12))?{1'b0,pc_read}:data_flop12;
+>    assign data13=(wr & (wf_id==6'd13))? {1'b1,new_pc_init} :(rd_en & (wf_id_rd==6'd13))?{1'b0,pc_read}:data_flop13;
+>    assign data14=(wr & (wf_id==6'd14))? {1'b1,new_pc_init} :(rd_en & (wf_id_rd==6'd14))?{1'b0,pc_read}:data_flop14;
+>    assign data15=(wr & (wf_id==6'd15))? {1'b1,new_pc_init} :(rd_en & (wf_id_rd==6'd15))?{1'b0,pc_read}:data_flop15;
+>    assign data16=(wr & (wf_id==6'd16))? {1'b1,new_pc_init} :(rd_en & (wf_id_rd==6'd16))?{1'b0,pc_read}:data_flop16;
+>    assign data17=(wr & (wf_id==6'd17))? {1'b1,new_pc_init} :(rd_en & (wf_id_rd==6'd17))?{1'b0,pc_read}:data_flop17;
+>    assign data18=(wr & (wf_id==6'd18))? {1'b1,new_pc_init} :(rd_en & (wf_id_rd==6'd18))?{1'b0,pc_read}:data_flop18;
+>    assign data19=(wr & (wf_id==6'd19))? {1'b1,new_pc_init} :(rd_en & (wf_id_rd==6'd19))?{1'b0,pc_read}:data_flop19;
+>    assign data20=(wr & (wf_id==6'd20))? {1'b1,new_pc_init} :(rd_en & (wf_id_rd==6'd20))?{1'b0,pc_read}:data_flop20;
+>    assign data21=(wr & (wf_id==6'd21))? {1'b1,new_pc_init} :(rd_en & (wf_id_rd==6'd21))?{1'b0,pc_read}:data_flop21;
+>    assign data22=(wr & (wf_id==6'd22))? {1'b1,new_pc_init} :(rd_en & (wf_id_rd==6'd22))?{1'b0,pc_read}:data_flop22;
+>    assign data23=(wr & (wf_id==6'd23))? {1'b1,new_pc_init} :(rd_en & (wf_id_rd==6'd23))?{1'b0,pc_read}:data_flop23;
+>    assign data24=(wr & (wf_id==6'd24))? {1'b1,new_pc_init} :(rd_en & (wf_id_rd==6'd24))?{1'b0,pc_read}:data_flop24;
+>    assign data25=(wr & (wf_id==6'd25))? {1'b1,new_pc_init} :(rd_en & (wf_id_rd==6'd25))?{1'b0,pc_read}:data_flop25;
+>    assign data26=(wr & (wf_id==6'd26))? {1'b1,new_pc_init} :(rd_en & (wf_id_rd==6'd26))?{1'b0,pc_read}:data_flop26;
+>    assign data27=(wr & (wf_id==6'd27))? {1'b1,new_pc_init} :(rd_en & (wf_id_rd==6'd27))?{1'b0,pc_read}:data_flop27;
+>    assign data28=(wr & (wf_id==6'd28))? {1'b1,new_pc_init} :(rd_en & (wf_id_rd==6'd28))?{1'b0,pc_read}:data_flop28;
+>    assign data29=(wr & (wf_id==6'd29))? {1'b1,new_pc_init} :(rd_en & (wf_id_rd==6'd29))?{1'b0,pc_read}:data_flop29;
+>    assign data30=(wr & (wf_id==6'd30))? {1'b1,new_pc_init} :(rd_en & (wf_id_rd==6'd30))?{1'b0,pc_read}:data_flop30;
+>    assign data31=(wr & (wf_id==6'd31))? {1'b1,new_pc_init} :(rd_en & (wf_id_rd==6'd31))?{1'b0,pc_read}:data_flop31;
+>    assign data32=(wr & (wf_id==6'd32))? {1'b1,new_pc_init} :(rd_en & (wf_id_rd==6'd32))?{1'b0,pc_read}:data_flop32;
+>    assign data33=(wr & (wf_id==6'd33))? {1'b1,new_pc_init} :(rd_en & (wf_id_rd==6'd33))?{1'b0,pc_read}:data_flop33;
+>    assign data34=(wr & (wf_id==6'd34))? {1'b1,new_pc_init} :(rd_en & (wf_id_rd==6'd34))?{1'b0,pc_read}:data_flop34;
+>    assign data35=(wr & (wf_id==6'd35))? {1'b1,new_pc_init} :(rd_en & (wf_id_rd==6'd35))?{1'b0,pc_read}:data_flop35;
+>    assign data36=(wr & (wf_id==6'd36))? {1'b1,new_pc_init} :(rd_en & (wf_id_rd==6'd36))?{1'b0,pc_read}:data_flop36;
+>    assign data37=(wr & (wf_id==6'd37))? {1'b1,new_pc_init} :(rd_en & (wf_id_rd==6'd37))?{1'b0,pc_read}:data_flop37;
+>    assign data38=(wr & (wf_id==6'd38))? {1'b1,new_pc_init} :(rd_en & (wf_id_rd==6'd38))?{1'b0,pc_read}:data_flop38;
+>    assign data39=(wr & (wf_id==6'd39))? {1'b1,new_pc_init} :(rd_en & (wf_id_rd==6'd39))?{1'b0,pc_read}:data_flop39;
+Only in ../../verilog/rtl/instr_buffer: build
+diff -r ./issue/finished_wf.v ../../verilog/rtl/issue/finished_wf.v
+5c5
+<    max_instr_inflight_array, no_instr_inflight_array,
+---
+>    max_instr_inflight_array,
+8,10c8,10
+<    f_vgpr_alu_wr_done_wfid, alu_wfid, f_salu_branch_wfid,
+<    f_decode_valid, f_decode_wf_halt, f_vgpr_alu_wr_done,
+<    f_sgpr_alu_wr_done, alu_valid, f_salu_branch_en, mem_wait_arry
+---
+>    f_vgpr_alu_wr_done_wfid, alu_wfid, f_salu_branch_wfid, f_decode_valid,
+>    f_decode_wf_halt, f_vgpr_alu_wr_done, f_sgpr_alu_wr_done, alu_valid,
+>    f_salu_branch_en, mem_wait_arry
+23c23
+<    output [`WF_PER_CU-1:0]    max_instr_inflight_array, no_instr_inflight_array;
+---
+>    output [`WF_PER_CU-1:0]    max_instr_inflight_array;
+29,30c29
+< 			      decoded_wf_done;
+<    
+---
+> 			      decoded_wf_done, decoded_no_inflight_instr;
+124c123
+<       .no_inflight_instr_flag(no_instr_inflight_array),
+---
+>       .no_inflight_instr_flag(decoded_no_inflight_instr),
+130c129
+<    assign done_wf_array = halted_reg_out & no_instr_inflight_array & ~mem_wait_arry;
+---
+>    assign done_wf_array = halted_reg_out & decoded_no_inflight_instr & ~mem_wait_arry;
+Only in ./issue: idemp_wait.v
+diff -r ./issue/instr_info_table.v ../../verilog/rtl/issue/instr_info_table.v
+6c6
+<    sgpr_lsu_rd_data, issue_alu_rd_data, issue_lsu_rd_data,
+---
+>    sgpr_lsu_rd_data, issued_rd_data,
+10,11c10
+<    f_sgpr_alu_wr_done_wfid, f_sgpr_lsu_instr_done_wfid, alu_wfid,
+<    lsu_wfid
+---
+>    f_sgpr_alu_wr_done_wfid, f_sgpr_lsu_instr_done_wfid, issued_wfid
+22c21
+< 				       alu_wfid, lsu_wfid;
+---
+> 				       issued_wfid;
+25c24
+< 					issue_alu_rd_data, issue_lsu_rd_data;
+---
+> 					issued_rd_data;
+59,60d57
+<    mux_40xPARAMb_to_1xPARAMb #(`ISSUE_INSTR_INFO_LENGTH) mux_rd4 
+<      (.out(issue_alu_rd_data), .in(reg_out), .select(alu_wfid));
+62c59
+<      (.out(issue_lsu_rd_data), .in(reg_out), .select(lsu_wfid));
+---
+>      (.out(issued_rd_data), .in(reg_out), .select(issued_wfid));
+diff -r ./issue/valid_entry.v ../../verilog/rtl/issue/valid_entry.v
+7,9c7,8
+<    f_salu_branch_en, f_salu_branch_taken, lsu_valid, alu_valid,
+<    f_decode_waitcnt, f_decode_idemp_barrier, f_decode_wfid, lsu_wfid,
+<    alu_wfid, f_salu_branch_wfid
+---
+>    f_salu_branch_en, f_salu_branch_taken, issued_valid,
+>    f_decode_waitcnt, f_decode_wfid, issued_wfid, f_salu_branch_wfid
+16,18c15,17
+< 	 f_salu_branch_en, f_salu_branch_taken, lsu_valid, alu_valid,
+< 	 f_decode_waitcnt, f_decode_idemp_barrier;
+<    input [`WF_ID_LENGTH-1:0] f_decode_wfid, lsu_wfid, alu_wfid, 
+---
+> 	 f_salu_branch_en, f_salu_branch_taken, issued_valid,
+> 	 f_decode_waitcnt;
+>    input [`WF_ID_LENGTH-1:0] f_decode_wfid, issued_wfid, 
+22,23c21,22
+<    wire [`WF_PER_CU-1:0]     decoded_init_instr, decoded_lsu_issue, 
+< 			     decoded_alu_issue, decoded_branch_taken,
+---
+>    wire [`WF_PER_CU-1:0]     decoded_init_instr, decoded_issued,
+> 			     decoded_branch_taken,
+28,29d26
+<    assign decode_init_en = f_decode_valid & ~f_decode_wf_halt & ~f_decode_barrier & ~f_decode_waitcnt & ~f_decode_idemp_barrier;
+< 
+36,45c33,36
+<    decoder_6b_40b_en lsu_issue_decoder(
+< 				       .addr_in(lsu_wfid),
+< 				       .out(decoded_lsu_issue),
+< 				       .en(lsu_valid)
+< 				       );
+< 
+<    decoder_6b_40b_en alu_issue_decoder(
+< 				       .addr_in(alu_wfid),
+< 				       .out(decoded_alu_issue),
+< 				       .en(alu_valid)
+---
+>    decoder_6b_40b_en instr_issued_decoder(
+> 				       .addr_in(issued_wfid),
+> 				       .out(decoded_issued),
+> 				       .en(issued_valid)
+61a53
+>    assign decode_init_en = f_decode_valid & ~f_decode_wf_halt & ~f_decode_barrier & ~f_decode_waitcnt;
+64c56
+< 			     ~(decoded_alu_issue | decoded_lsu_issue | decoded_branch_taken);
+---
+> 			     ~(decoded_issued | decoded_branch_taken);
+Only in ../../verilog/rtl/lsu: build
+diff -r ./lsu/lsu_rd_stage_router.v ../../verilog/rtl/lsu/lsu_rd_stage_router.v
+114a115,121
+>          default:
+>             begin
+>                out_vgpr_source1_addr <= 10'bx;
+>                out_vgpr_source2_addr <= 10'bx;
+>                out_sgpr_source1_addr <= 9'bx;
+>                out_sgpr_source2_addr <= 9'bx;
+>             end
+diff -r ./wavepool/wavepool_controller.v ../../verilog/rtl/wavepool/wavepool_controller.v
+1,10c1,23
+< module wavepool_controller 
+< (/*AUTOARG*/
+<    // Outputs
+<    q_wr, q_vtail_incr, q_reset, q_rd, valid_wf, decode_wfid,
+<    decode_instr_valid,
+<    // Inputs
+<    buff_wfid, buff_first, buff_ack, reserve_slotid, reserve_valid,
+<    halt_wfid, wf_halt, branch_wfid, branch_en, branch_taken,
+<    recover_en, recover_wfid, feed_wfid, feed_valid, clk, rst
+<    );
+---
+> module wavepool_controller (
+>   buff_wfid,
+>   buff_first,
+>   buff_ack,
+>   q_wr,
+>   reserve_slotid,
+>   reserve_valid,
+>   q_vtail_incr,
+>   halt_wfid,
+>   wf_halt,
+>   branch_wfid,
+>   branch_en,
+>   branch_taken,
+>   q_reset,
+>   feed_wfid,
+>   feed_valid,
+>   q_rd,
+>   valid_wf,
+>   decode_wfid,
+>   decode_instr_valid,
+>   clk,
+>   rst
+> );
+26,30d38
+< 
+<    input recover_en;
+<    input [5:0] recover_wfid;
+<    
+<   
+51,52d58
+<    wire [39:0] recover_temp_q_reset;
+<    
+67d72
+< decoder_6_to_40 dec_q_reset_recover(.out(recover_temp_q_reset), .in(recover_wfid));
+69c74
+< assign q_reset = (halt_temp_q_reset & {40{wf_halt}}) | (branch_temp_q_reset & {40{branch_taken_en}}) | (recover_temp_q_reset & {40{recover_en}});
+---
+> assign q_reset = (halt_temp_q_reset & {40{wf_halt}}) | (branch_temp_q_reset & {40{branch_taken_en}});
+diff -r ./wavepool/wavepool.interface ../../verilog/rtl/wavepool/wavepool.interface
+20,21d19
+<       issue_recover_en,
+<       issue_recover_wfid,
+39c37
+<          salu_branch_en, salu_branch_taken, decode_ins_half_rqd, issue_recover_en;
+---
+>          salu_branch_en, salu_branch_taken, decode_ins_half_rqd;
+41c39
+<          salu_branch_wfid, decode_ins_half_wfid, issue_recover_wfid;
+---
+>          salu_branch_wfid, decode_ins_half_wfid;
