@@ -1,0 +1,205 @@
+ s_buffer_load_dword  s0, s[8:11], 0x04                    // 00000000: C2000904
+S0<=(1040)(1,1.4013e-45f)
+
+ s_buffer_load_dword  s1, s[8:11], 0x18                    // 00000004: C2008918
+S1<=(1120)(0,0f)
+
+ s_buffer_load_dword  s2, s[12:15], 0x04                   // 00000008: C2010D04
+S2<=(2064)(2,2.8026e-45f)
+
+ s_buffer_load_dword  s3, s[12:15], 0x08                   // 0000000C: C2018D08
+S3<=(2080)(2,2.8026e-45f)
+
+ s_waitcnt     lgkmcnt(0)                                  // 00000010: BF8C007F
+
+
+ s_min_u32     s0, s0, 0x0000ffff                          // 00000014: 8380FF00 0000FFFF
+S0<=(1) scc<=(1) 
+
+ v_mov_b32     v1, s0                                      // 0000001C: 7E020200
+t0: V1<=(1) 
+
+ v_mul_i32_i24  v1, s16, v1                                // 00000020: 12020210
+t0: V1<=(63) 
+
+ v_add_i32     v0, vcc, v0, v1                             // 00000024: 4A000300
+t0: V0<=(63) wf_id0: vcc<=(0) 
+
+ v_add_i32     v0, vcc, s1, v0                             // 00000028: 4A000001
+t0: V0<=(63) wf_id0: vcc<=(0) 
+
+ s_sub_i32     s0, s2, s3                                  // 0000002C: 81800302
+S0<=(0) scc<=(0) 
+
+ v_lshrrev_b32  v1, s0, v0                                 // 00000030: 2C020000
+t0: V1<=(63) 
+
+ s_lshl_b32    s1, 1, s0                                   // 00000034: 8F010081
+S1<=(1) scc<=(1) 
+
+ s_buffer_load_dword  s3, s[12:15], 0x00                   // 00000038: C2018D00
+S3<=(2048)(3072,4.30479e-42f)
+
+ v_mul_lo_i32  v1, s1, v1                                  // 0000003C: D2D60001 02020201
+t0: V1<=(63) 
+
+ v_lshlrev_b32  v1, 1, v1                                  // 00000044: 34020281
+t0: V1<=(126) 
+
+ v_bfe_u32     v2, v0, 0, s0                               // 00000048: D2900002 00010100
+t0: V2<=(0) 
+
+ v_add_i32     v1, vcc, v1, v2                             // 00000050: 4A020501
+t0: V1<=(126) wf_id0: vcc<=(0) 
+
+ v_add_i32     v2, vcc, s1, v1                             // 00000054: 4A040201
+t0: V2<=(127) wf_id0: vcc<=(0) 
+
+ v_lshlrev_b32  v1, 2, v1                                  // 00000058: 34020282
+t0: V1<=(504) 
+
+ v_lshlrev_b32  v2, 2, v2                                  // 0000005C: 34040482
+t0: V2<=(508) 
+
+ s_waitcnt     lgkmcnt(0)                                  // 00000060: BF8C007F
+
+
+ v_add_i32     v1, vcc, s3, v1                             // 00000064: 4A020203
+t0: V1<=(3576) wf_id0: vcc<=(0) 
+
+ v_add_i32     v2, vcc, s3, v2                             // 00000068: 4A040403
+t0: V2<=(3580) wf_id0: vcc<=(0) 
+
+ tbuffer_load_format_x  v3, v1, s[4:7], 0 offen format:[BUF_DATA_FORMAT_32,BUF_NUM_FORMAT_FLOAT] // 0000006C: EBA01000 80010301
+t0: V3<=(3576)(234,3.27904e-43f) 
+
+ tbuffer_load_format_x  v4, v2, s[4:7], 0 offen format:[BUF_DATA_FORMAT_32,BUF_NUM_FORMAT_FLOAT] // 00000074: EBA01000 80010402
+t0: V4<=(3580)(218,3.05483e-43f) 
+
+ s_buffer_load_dword  s0, s[12:15], 0x10                   // 0000007C: C2000D10
+S0<=(2112)(0,0f)
+
+ s_lshl_b32    s1, 1, s2                                   // 00000080: 8F010281
+S1<=(4) scc<=(1) 
+
+ s_waitcnt     lgkmcnt(0)                                  // 00000084: BF8C007F
+
+
+ s_sub_i32     s2, 1, s0                                   // 00000088: 81820081
+S2<=(1) scc<=(0) 
+
+ v_and_b32     v0, s1, v0                                  // 0000008C: 36000001
+t0: V0<=(4) 
+
+ v_cmp_eq_i32  vcc, 0, v0                                  // 00000090: 7D040080
+wf_id0: vcc<=(0) 
+
+ v_mov_b32     v0, s0                                      // 00000094: 7E000200
+t0: V0<=(0) 
+
+ v_mov_b32     v5, s2                                      // 00000098: 7E0A0202
+t0: V5<=(1) 
+
+ v_cndmask_b32  v0, v5, v0, vcc                            // 0000009C: 00000105
+t0: V0<=(1) 
+
+ s_waitcnt     vmcnt(0)                                    // 000000A0: BF8C1F70
+
+
+ v_min_u32     v5, v3, v4                                  // 000000A4: 260A0903
+t0: V5<=(218) 
+
+ v_max_u32     v3, v3, v4                                  // 000000A8: 28060903
+t0: V3<=(234) 
+
+ v_cmp_eq_i32  vcc, 0, v0                                  // 000000AC: 7D040080
+wf_id0: vcc<=(0) 
+
+ v_cndmask_b32  v0, v5, v3, vcc                            // 000000B0: 00000705
+t0: V0<=(218) 
+
+ tbuffer_store_format_x  v0, v1, s[4:7], 0 offen format:[BUF_DATA_FORMAT_32,BUF_NUM_FORMAT_FLOAT] // 000000B4: EBA41000 80010001
+t0: (3576)<=V0(218,3.05483e-43f) 
+
+ s_waitcnt     expcnt(0)                                   // 000000BC: BF8C1F0F
+
+
+ v_cndmask_b32  v0, v3, v5, vcc                            // 000000C0: 00000B03
+t0: V0<=(234) 
+
+ tbuffer_store_format_x  v0, v2, s[4:7], 0 offen format:[BUF_DATA_FORMAT_32,BUF_NUM_FORMAT_FLOAT] // 000000C4: EBA41000 80010002
+t0: (3580)<=V0(234,3.27904e-43f) 
+
+ s_endpgm                                                  // 000000CC: BF810000
+
+local_size = 1 (1,1,1)
+global_size = 64 (64,1,1)
+group_count = 64 (64,1,1)
+wavefront_count = 64
+wavefronts_per_work_group = 1
+ tid tid2 tid1 tid0   gid gid2 gid1 gid0   lid lid2 lid1 lid0  wavefront            work-group
+   0    0    0    0     0    0    0    0     0    0    0    0      wavefront[i0-i0].0        work-group[i0-i1].0   
+   0    0    0    1     1    0    0    1     0    0    0    0      wavefront[i1-i1].0        work-group[i1-i2].0   
+   0    0    0    2     2    0    0    2     0    0    0    0      wavefront[i2-i2].0        work-group[i2-i3].0   
+   0    0    0    3     3    0    0    3     0    0    0    0      wavefront[i3-i3].0        work-group[i3-i4].0   
+   0    0    0    4     4    0    0    4     0    0    0    0      wavefront[i4-i4].0        work-group[i4-i5].0   
+   0    0    0    5     5    0    0    5     0    0    0    0      wavefront[i5-i5].0        work-group[i5-i6].0   
+   0    0    0    6     6    0    0    6     0    0    0    0      wavefront[i6-i6].0        work-group[i6-i7].0   
+   0    0    0    7     7    0    0    7     0    0    0    0      wavefront[i7-i7].0        work-group[i7-i8].0   
+   0    0    0    8     8    0    0    8     0    0    0    0      wavefront[i8-i8].0        work-group[i8-i9].0   
+   0    0    0    9     9    0    0    9     0    0    0    0      wavefront[i9-i9].0       work-group[i9-i10].0   
+   0    0    0   10    10    0    0   10     0    0    0    0    wavefront[i10-i10].0      work-group[i10-i11].0   
+   0    0    0   11    11    0    0   11     0    0    0    0    wavefront[i11-i11].0      work-group[i11-i12].0   
+   0    0    0   12    12    0    0   12     0    0    0    0    wavefront[i12-i12].0      work-group[i12-i13].0   
+   0    0    0   13    13    0    0   13     0    0    0    0    wavefront[i13-i13].0      work-group[i13-i14].0   
+   0    0    0   14    14    0    0   14     0    0    0    0    wavefront[i14-i14].0      work-group[i14-i15].0   
+   0    0    0   15    15    0    0   15     0    0    0    0    wavefront[i15-i15].0      work-group[i15-i16].0   
+   0    0    0   16    16    0    0   16     0    0    0    0    wavefront[i16-i16].0      work-group[i16-i17].0   
+   0    0    0   17    17    0    0   17     0    0    0    0    wavefront[i17-i17].0      work-group[i17-i18].0   
+   0    0    0   18    18    0    0   18     0    0    0    0    wavefront[i18-i18].0      work-group[i18-i19].0   
+   0    0    0   19    19    0    0   19     0    0    0    0    wavefront[i19-i19].0      work-group[i19-i20].0   
+   0    0    0   20    20    0    0   20     0    0    0    0    wavefront[i20-i20].0      work-group[i20-i21].0   
+   0    0    0   21    21    0    0   21     0    0    0    0    wavefront[i21-i21].0      work-group[i21-i22].0   
+   0    0    0   22    22    0    0   22     0    0    0    0    wavefront[i22-i22].0      work-group[i22-i23].0   
+   0    0    0   23    23    0    0   23     0    0    0    0    wavefront[i23-i23].0      work-group[i23-i24].0   
+   0    0    0   24    24    0    0   24     0    0    0    0    wavefront[i24-i24].0      work-group[i24-i25].0   
+   0    0    0   25    25    0    0   25     0    0    0    0    wavefront[i25-i25].0      work-group[i25-i26].0   
+   0    0    0   26    26    0    0   26     0    0    0    0    wavefront[i26-i26].0      work-group[i26-i27].0   
+   0    0    0   27    27    0    0   27     0    0    0    0    wavefront[i27-i27].0      work-group[i27-i28].0   
+   0    0    0   28    28    0    0   28     0    0    0    0    wavefront[i28-i28].0      work-group[i28-i29].0   
+   0    0    0   29    29    0    0   29     0    0    0    0    wavefront[i29-i29].0      work-group[i29-i30].0   
+   0    0    0   30    30    0    0   30     0    0    0    0    wavefront[i30-i30].0      work-group[i30-i31].0   
+   0    0    0   31    31    0    0   31     0    0    0    0    wavefront[i31-i31].0      work-group[i31-i32].0   
+   0    0    0   32    32    0    0   32     0    0    0    0    wavefront[i32-i32].0      work-group[i32-i33].0   
+   0    0    0   33    33    0    0   33     0    0    0    0    wavefront[i33-i33].0      work-group[i33-i34].0   
+   0    0    0   34    34    0    0   34     0    0    0    0    wavefront[i34-i34].0      work-group[i34-i35].0   
+   0    0    0   35    35    0    0   35     0    0    0    0    wavefront[i35-i35].0      work-group[i35-i36].0   
+   0    0    0   36    36    0    0   36     0    0    0    0    wavefront[i36-i36].0      work-group[i36-i37].0   
+   0    0    0   37    37    0    0   37     0    0    0    0    wavefront[i37-i37].0      work-group[i37-i38].0   
+   0    0    0   38    38    0    0   38     0    0    0    0    wavefront[i38-i38].0      work-group[i38-i39].0   
+   0    0    0   39    39    0    0   39     0    0    0    0    wavefront[i39-i39].0      work-group[i39-i40].0   
+   0    0    0   40    40    0    0   40     0    0    0    0    wavefront[i40-i40].0      work-group[i40-i41].0   
+   0    0    0   41    41    0    0   41     0    0    0    0    wavefront[i41-i41].0      work-group[i41-i42].0   
+   0    0    0   42    42    0    0   42     0    0    0    0    wavefront[i42-i42].0      work-group[i42-i43].0   
+   0    0    0   43    43    0    0   43     0    0    0    0    wavefront[i43-i43].0      work-group[i43-i44].0   
+   0    0    0   44    44    0    0   44     0    0    0    0    wavefront[i44-i44].0      work-group[i44-i45].0   
+   0    0    0   45    45    0    0   45     0    0    0    0    wavefront[i45-i45].0      work-group[i45-i46].0   
+   0    0    0   46    46    0    0   46     0    0    0    0    wavefront[i46-i46].0      work-group[i46-i47].0   
+   0    0    0   47    47    0    0   47     0    0    0    0    wavefront[i47-i47].0      work-group[i47-i48].0   
+   0    0    0   48    48    0    0   48     0    0    0    0    wavefront[i48-i48].0      work-group[i48-i49].0   
+   0    0    0   49    49    0    0   49     0    0    0    0    wavefront[i49-i49].0      work-group[i49-i50].0   
+   0    0    0   50    50    0    0   50     0    0    0    0    wavefront[i50-i50].0      work-group[i50-i51].0   
+   0    0    0   51    51    0    0   51     0    0    0    0    wavefront[i51-i51].0      work-group[i51-i52].0   
+   0    0    0   52    52    0    0   52     0    0    0    0    wavefront[i52-i52].0      work-group[i52-i53].0   
+   0    0    0   53    53    0    0   53     0    0    0    0    wavefront[i53-i53].0      work-group[i53-i54].0   
+   0    0    0   54    54    0    0   54     0    0    0    0    wavefront[i54-i54].0      work-group[i54-i55].0   
+   0    0    0   55    55    0    0   55     0    0    0    0    wavefront[i55-i55].0      work-group[i55-i56].0   
+   0    0    0   56    56    0    0   56     0    0    0    0    wavefront[i56-i56].0      work-group[i56-i57].0   
+   0    0    0   57    57    0    0   57     0    0    0    0    wavefront[i57-i57].0      work-group[i57-i58].0   
+   0    0    0   58    58    0    0   58     0    0    0    0    wavefront[i58-i58].0      work-group[i58-i59].0   
+   0    0    0   59    59    0    0   59     0    0    0    0    wavefront[i59-i59].0      work-group[i59-i60].0   
+   0    0    0   60    60    0    0   60     0    0    0    0    wavefront[i60-i60].0      work-group[i60-i61].0   
+   0    0    0   61    61    0    0   61     0    0    0    0    wavefront[i61-i61].0      work-group[i61-i62].0   
+   0    0    0   62    62    0    0   62     0    0    0    0    wavefront[i62-i62].0      work-group[i62-i63].0   
+   0    0    0   63    63    0    0   63     0    0    0    0    wavefront[i63-i63].0      work-group[i63-i64].0   
+
