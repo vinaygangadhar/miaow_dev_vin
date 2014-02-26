@@ -1,0 +1,18 @@
+local_size = 3 (3,1,1)
+global_size = 3 (3,1,1)
+group_count = 1 (1,1,1)
+wavefront_count = 1
+wavefronts_per_work_group = 1
+ tid tid2 tid1 tid0   gid gid2 gid1 gid0   lid lid2 lid1 lid0  wavefront            work-group
+   0    0    0    0     0    0    0    0     0    0    0    0      wavefront[i0-i2].0        work-group[i0-i3].0   
+   1    0    0    1     0    0    0    0     1    0    0    1      wavefront[i0-i2].1        work-group[i0-i3].1   
+   2    0    0    2     0    0    0    0     2    0    0    2      wavefront[i0-i2].2        work-group[i0-i3].2   
+
+ v_mov_b32     v2, v1                                      // 00000000: 7E040301
+t0: V2<=(0) t1: V2<=(0) t2: V2<=(0) 
+
+ v_add_i32     v3, vcc, s2, v2                             // 00000004: 4A060402
+t0: V3<=(7) wf_id0: vcc<=(0) t1: V3<=(7) wf_id1: vcc<=(0) t2: V3<=(7) wf_id2: vcc<=(0) 
+
+ s_endpgm                                                  // 00000008: BF810000
+

@@ -1,0 +1,9 @@
+8
+01
+04
+06
+2C // v_lshrrev_b32 v3, v2, s1
+00
+00
+81
+BF // s_endpgm

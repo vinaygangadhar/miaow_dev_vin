@@ -1,0 +1,13 @@
+12
+0C
+00
+24
+EA // lower 
+08
+02
+00
+04 // t_buffer_store_format_x src = v2, res buff = s[0:3], soffset = s4, vaddr = v8, imm_offset = 12, {I=0, O=0}
+00
+00
+81
+BF // s_endpgm

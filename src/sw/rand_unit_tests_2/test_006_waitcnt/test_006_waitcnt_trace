@@ -1,0 +1,50 @@
+local_size = 12 (12,1,1)
+global_size = 12 (12,1,1)
+group_count = 1 (1,1,1)
+wavefront_count = 1
+wavefronts_per_work_group = 1
+ tid tid2 tid1 tid0   gid gid2 gid1 gid0   lid lid2 lid1 lid0  wavefront            work-group
+   0    0    0    0     0    0    0    0     0    0    0    0     wavefront[i0-i11].0       work-group[i0-i12].0   
+   1    0    0    1     0    0    0    0     1    0    0    1     wavefront[i0-i11].1       work-group[i0-i12].1   
+   2    0    0    2     0    0    0    0     2    0    0    2     wavefront[i0-i11].2       work-group[i0-i12].2   
+   3    0    0    3     0    0    0    0     3    0    0    3     wavefront[i0-i11].3       work-group[i0-i12].3   
+   4    0    0    4     0    0    0    0     4    0    0    4     wavefront[i0-i11].4       work-group[i0-i12].4   
+   5    0    0    5     0    0    0    0     5    0    0    5     wavefront[i0-i11].5       work-group[i0-i12].5   
+   6    0    0    6     0    0    0    0     6    0    0    6     wavefront[i0-i11].6       work-group[i0-i12].6   
+   7    0    0    7     0    0    0    0     7    0    0    7     wavefront[i0-i11].7       work-group[i0-i12].7   
+   8    0    0    8     0    0    0    0     8    0    0    8     wavefront[i0-i11].8       work-group[i0-i12].8   
+   9    0    0    9     0    0    0    0     9    0    0    9     wavefront[i0-i11].9       work-group[i0-i12].9   
+  10    0    0   10     0    0    0    0    10    0    0   10     wavefront[i0-i11].10      work-group[i0-i12].10  
+  11    0    0   11     0    0    0    0    11    0    0   11     wavefront[i0-i11].11      work-group[i0-i12].11  
+
+###0_0_0
+ v_add_i32     v4, vcc, s2, v2                             // 00000000: 4A080402
+t0: V4<=(52) wf_id0: vcc<=(0) t1: V4<=(33) wf_id1: vcc<=(0) t2: V4<=(48) wf_id2: vcc<=(0) t3: V4<=(11) wf_id3: vcc<=(0) t4: V4<=(19) wf_id4: vcc<=(0) t5: V4<=(6) wf_id5: vcc<=(0) t6: V4<=(7) wf_id6: vcc<=(0) t7: V4<=(14) wf_id7: vcc<=(0) t8: V4<=(37) wf_id8: vcc<=(0) t9: V4<=(25) wf_id9: vcc<=(0) t10: V4<=(8) wf_id10: vcc<=(0) t11: V4<=(5) wf_id11: vcc<=(0) 
+
+###0_0_0
+ s_waitcnt     vmcnt(1) & lgkmcnt(0) & expcnt(0)           // 00000004: BF8C0001
+
+
+###0_0_0
+ s_mov_b32     s1, 15                                      // 00000008: BE81038F
+S1<=(15) 
+
+###0_0_0
+ s_mov_b32     s1, vcc_lo                                  // 0000000C: BE81036A
+S1<=(0) 
+
+###0_0_0
+ s_mov_b32     s0, -16                                     // 00000010: BE8003D0
+S0<=(-16) 
+
+###0_0_0
+ s_mov_b32     s6, s8                                      // 00000014: BE860308
+S6<=(12) 
+
+###0_0_0
+ s_mov_b32     vcc_hi, s0                                  // 00000018: BEEB0300
+S107<=(-16) 
+
+###0_0_0
+ s_endpgm                                                  // 0000001C: BF810000
+

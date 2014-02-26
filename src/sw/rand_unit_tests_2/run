@@ -1,0 +1,78 @@
+#!/usr/bin/perl -w
+
+use warnings "all";
+use Getopt::Long;
+
+#Declaration and initialization of variables
+my $test = "";
+my $script_name = $0;
+
+$opt_result = GetOptions (
+  "input=s"   => \$test,
+  "help"       => \$help,
+);
+
+if(!$opt_result)
+{
+  print STDERR "$script_name: Invalid command line options!\n";
+  print STDERR "$script_name: Use -help if you need it :)\n";
+  die;
+}
+
+if($help)
+{
+  print_help();
+  exit 0;
+}
+
+@list = `ls -d test*`;
+chomp(@list);
+if($test ne "")
+{
+  if(!(-d $test))
+  {
+    print STDERR "$script_name: Test named $test does not exist!\n";
+    die;
+  }
+
+  @list = ("$test");
+}
+
+foreach $t (@list)
+{
+
+  $t =~ s/\/$//;
+  $t =~ s/\/$//;
+print $t;
+system "
+  cp ../lib/libm2s-opencl.so ./$t/;
+  cd ./common/;
+  cp ut ut.cpp ut.hpp ut_Kernels.bin ut_Kernels.cl ../$t/;
+  cd ../;
+  cd ./$t;
+  ../../multi2sim-4.0/bin/m2s --si-debug-isa ${t}_trace --si-sim functional ut --load ut_Kernels.bin;
+  rm -f ut ut.cpp ut.hpp ut_Kernels.bin ut_Kernels.cl libm2s-opencl.so;
+  ../../common/trace_parser.pl -i ${t}_trace;
+  ";
+}
+
+sub print_help
+{
+print STDOUT qq{$script_name:
+
+DESCRIPTION:
+        This script can be used to generate trace, instruction memory buffer, data memory buffer and initial configuration of VGPR and SGPR values.
+
+USAGE:
+	$script_name -i <input_test_name> [-h]
+
+ARGUMENTS:
+
+-i <input_test_name> 
+-input <input_test_name>       This is a compulsory option; used to specify the name of test to be run.
+
+-h
+-help                           Well, you know what this option is for! You couldn't be reading this otherwise.
+};
+
+}

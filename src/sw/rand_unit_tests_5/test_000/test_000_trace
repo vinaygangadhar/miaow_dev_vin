@@ -1,0 +1,277 @@
+local_size = 108 (108,1,1)
+global_size = 108 (108,1,1)
+group_count = 1 (1,1,1)
+wavefront_count = 2
+wavefronts_per_work_group = 2
+ tid tid2 tid1 tid0   gid gid2 gid1 gid0   lid lid2 lid1 lid0  wavefront            work-group
+   0    0    0    0     0    0    0    0     0    0    0    0     wavefront[i0-i63].0      work-group[i0-i108].0   
+   1    0    0    1     0    0    0    0     1    0    0    1     wavefront[i0-i63].1      work-group[i0-i108].1   
+   2    0    0    2     0    0    0    0     2    0    0    2     wavefront[i0-i63].2      work-group[i0-i108].2   
+   3    0    0    3     0    0    0    0     3    0    0    3     wavefront[i0-i63].3      work-group[i0-i108].3   
+   4    0    0    4     0    0    0    0     4    0    0    4     wavefront[i0-i63].4      work-group[i0-i108].4   
+   5    0    0    5     0    0    0    0     5    0    0    5     wavefront[i0-i63].5      work-group[i0-i108].5   
+   6    0    0    6     0    0    0    0     6    0    0    6     wavefront[i0-i63].6      work-group[i0-i108].6   
+   7    0    0    7     0    0    0    0     7    0    0    7     wavefront[i0-i63].7      work-group[i0-i108].7   
+   8    0    0    8     0    0    0    0     8    0    0    8     wavefront[i0-i63].8      work-group[i0-i108].8   
+   9    0    0    9     0    0    0    0     9    0    0    9     wavefront[i0-i63].9      work-group[i0-i108].9   
+  10    0    0   10     0    0    0    0    10    0    0   10     wavefront[i0-i63].10     work-group[i0-i108].10  
+  11    0    0   11     0    0    0    0    11    0    0   11     wavefront[i0-i63].11     work-group[i0-i108].11  
+  12    0    0   12     0    0    0    0    12    0    0   12     wavefront[i0-i63].12     work-group[i0-i108].12  
+  13    0    0   13     0    0    0    0    13    0    0   13     wavefront[i0-i63].13     work-group[i0-i108].13  
+  14    0    0   14     0    0    0    0    14    0    0   14     wavefront[i0-i63].14     work-group[i0-i108].14  
+  15    0    0   15     0    0    0    0    15    0    0   15     wavefront[i0-i63].15     work-group[i0-i108].15  
+  16    0    0   16     0    0    0    0    16    0    0   16     wavefront[i0-i63].16     work-group[i0-i108].16  
+  17    0    0   17     0    0    0    0    17    0    0   17     wavefront[i0-i63].17     work-group[i0-i108].17  
+  18    0    0   18     0    0    0    0    18    0    0   18     wavefront[i0-i63].18     work-group[i0-i108].18  
+  19    0    0   19     0    0    0    0    19    0    0   19     wavefront[i0-i63].19     work-group[i0-i108].19  
+  20    0    0   20     0    0    0    0    20    0    0   20     wavefront[i0-i63].20     work-group[i0-i108].20  
+  21    0    0   21     0    0    0    0    21    0    0   21     wavefront[i0-i63].21     work-group[i0-i108].21  
+  22    0    0   22     0    0    0    0    22    0    0   22     wavefront[i0-i63].22     work-group[i0-i108].22  
+  23    0    0   23     0    0    0    0    23    0    0   23     wavefront[i0-i63].23     work-group[i0-i108].23  
+  24    0    0   24     0    0    0    0    24    0    0   24     wavefront[i0-i63].24     work-group[i0-i108].24  
+  25    0    0   25     0    0    0    0    25    0    0   25     wavefront[i0-i63].25     work-group[i0-i108].25  
+  26    0    0   26     0    0    0    0    26    0    0   26     wavefront[i0-i63].26     work-group[i0-i108].26  
+  27    0    0   27     0    0    0    0    27    0    0   27     wavefront[i0-i63].27     work-group[i0-i108].27  
+  28    0    0   28     0    0    0    0    28    0    0   28     wavefront[i0-i63].28     work-group[i0-i108].28  
+  29    0    0   29     0    0    0    0    29    0    0   29     wavefront[i0-i63].29     work-group[i0-i108].29  
+  30    0    0   30     0    0    0    0    30    0    0   30     wavefront[i0-i63].30     work-group[i0-i108].30  
+  31    0    0   31     0    0    0    0    31    0    0   31     wavefront[i0-i63].31     work-group[i0-i108].31  
+  32    0    0   32     0    0    0    0    32    0    0   32     wavefront[i0-i63].32     work-group[i0-i108].32  
+  33    0    0   33     0    0    0    0    33    0    0   33     wavefront[i0-i63].33     work-group[i0-i108].33  
+  34    0    0   34     0    0    0    0    34    0    0   34     wavefront[i0-i63].34     work-group[i0-i108].34  
+  35    0    0   35     0    0    0    0    35    0    0   35     wavefront[i0-i63].35     work-group[i0-i108].35  
+  36    0    0   36     0    0    0    0    36    0    0   36     wavefront[i0-i63].36     work-group[i0-i108].36  
+  37    0    0   37     0    0    0    0    37    0    0   37     wavefront[i0-i63].37     work-group[i0-i108].37  
+  38    0    0   38     0    0    0    0    38    0    0   38     wavefront[i0-i63].38     work-group[i0-i108].38  
+  39    0    0   39     0    0    0    0    39    0    0   39     wavefront[i0-i63].39     work-group[i0-i108].39  
+  40    0    0   40     0    0    0    0    40    0    0   40     wavefront[i0-i63].40     work-group[i0-i108].40  
+  41    0    0   41     0    0    0    0    41    0    0   41     wavefront[i0-i63].41     work-group[i0-i108].41  
+  42    0    0   42     0    0    0    0    42    0    0   42     wavefront[i0-i63].42     work-group[i0-i108].42  
+  43    0    0   43     0    0    0    0    43    0    0   43     wavefront[i0-i63].43     work-group[i0-i108].43  
+  44    0    0   44     0    0    0    0    44    0    0   44     wavefront[i0-i63].44     work-group[i0-i108].44  
+  45    0    0   45     0    0    0    0    45    0    0   45     wavefront[i0-i63].45     work-group[i0-i108].45  
+  46    0    0   46     0    0    0    0    46    0    0   46     wavefront[i0-i63].46     work-group[i0-i108].46  
+  47    0    0   47     0    0    0    0    47    0    0   47     wavefront[i0-i63].47     work-group[i0-i108].47  
+  48    0    0   48     0    0    0    0    48    0    0   48     wavefront[i0-i63].48     work-group[i0-i108].48  
+  49    0    0   49     0    0    0    0    49    0    0   49     wavefront[i0-i63].49     work-group[i0-i108].49  
+  50    0    0   50     0    0    0    0    50    0    0   50     wavefront[i0-i63].50     work-group[i0-i108].50  
+  51    0    0   51     0    0    0    0    51    0    0   51     wavefront[i0-i63].51     work-group[i0-i108].51  
+  52    0    0   52     0    0    0    0    52    0    0   52     wavefront[i0-i63].52     work-group[i0-i108].52  
+  53    0    0   53     0    0    0    0    53    0    0   53     wavefront[i0-i63].53     work-group[i0-i108].53  
+  54    0    0   54     0    0    0    0    54    0    0   54     wavefront[i0-i63].54     work-group[i0-i108].54  
+  55    0    0   55     0    0    0    0    55    0    0   55     wavefront[i0-i63].55     work-group[i0-i108].55  
+  56    0    0   56     0    0    0    0    56    0    0   56     wavefront[i0-i63].56     work-group[i0-i108].56  
+  57    0    0   57     0    0    0    0    57    0    0   57     wavefront[i0-i63].57     work-group[i0-i108].57  
+  58    0    0   58     0    0    0    0    58    0    0   58     wavefront[i0-i63].58     work-group[i0-i108].58  
+  59    0    0   59     0    0    0    0    59    0    0   59     wavefront[i0-i63].59     work-group[i0-i108].59  
+  60    0    0   60     0    0    0    0    60    0    0   60     wavefront[i0-i63].60     work-group[i0-i108].60  
+  61    0    0   61     0    0    0    0    61    0    0   61     wavefront[i0-i63].61     work-group[i0-i108].61  
+  62    0    0   62     0    0    0    0    62    0    0   62     wavefront[i0-i63].62     work-group[i0-i108].62  
+  63    0    0   63     0    0    0    0    63    0    0   63     wavefront[i0-i63].63     work-group[i0-i108].63  
+   0    0    0   64     0    0    0    0    64    0    0   64   wavefront[i64-i107].0      work-group[i0-i108].64  
+   1    0    0   65     0    0    0    0    65    0    0   65   wavefront[i64-i107].1      work-group[i0-i108].65  
+   2    0    0   66     0    0    0    0    66    0    0   66   wavefront[i64-i107].2      work-group[i0-i108].66  
+   3    0    0   67     0    0    0    0    67    0    0   67   wavefront[i64-i107].3      work-group[i0-i108].67  
+   4    0    0   68     0    0    0    0    68    0    0   68   wavefront[i64-i107].4      work-group[i0-i108].68  
+   5    0    0   69     0    0    0    0    69    0    0   69   wavefront[i64-i107].5      work-group[i0-i108].69  
+   6    0    0   70     0    0    0    0    70    0    0   70   wavefront[i64-i107].6      work-group[i0-i108].70  
+   7    0    0   71     0    0    0    0    71    0    0   71   wavefront[i64-i107].7      work-group[i0-i108].71  
+   8    0    0   72     0    0    0    0    72    0    0   72   wavefront[i64-i107].8      work-group[i0-i108].72  
+   9    0    0   73     0    0    0    0    73    0    0   73   wavefront[i64-i107].9      work-group[i0-i108].73  
+  10    0    0   74     0    0    0    0    74    0    0   74   wavefront[i64-i107].10     work-group[i0-i108].74  
+  11    0    0   75     0    0    0    0    75    0    0   75   wavefront[i64-i107].11     work-group[i0-i108].75  
+  12    0    0   76     0    0    0    0    76    0    0   76   wavefront[i64-i107].12     work-group[i0-i108].76  
+  13    0    0   77     0    0    0    0    77    0    0   77   wavefront[i64-i107].13     work-group[i0-i108].77  
+  14    0    0   78     0    0    0    0    78    0    0   78   wavefront[i64-i107].14     work-group[i0-i108].78  
+  15    0    0   79     0    0    0    0    79    0    0   79   wavefront[i64-i107].15     work-group[i0-i108].79  
+  16    0    0   80     0    0    0    0    80    0    0   80   wavefront[i64-i107].16     work-group[i0-i108].80  
+  17    0    0   81     0    0    0    0    81    0    0   81   wavefront[i64-i107].17     work-group[i0-i108].81  
+  18    0    0   82     0    0    0    0    82    0    0   82   wavefront[i64-i107].18     work-group[i0-i108].82  
+  19    0    0   83     0    0    0    0    83    0    0   83   wavefront[i64-i107].19     work-group[i0-i108].83  
+  20    0    0   84     0    0    0    0    84    0    0   84   wavefront[i64-i107].20     work-group[i0-i108].84  
+  21    0    0   85     0    0    0    0    85    0    0   85   wavefront[i64-i107].21     work-group[i0-i108].85  
+  22    0    0   86     0    0    0    0    86    0    0   86   wavefront[i64-i107].22     work-group[i0-i108].86  
+  23    0    0   87     0    0    0    0    87    0    0   87   wavefront[i64-i107].23     work-group[i0-i108].87  
+  24    0    0   88     0    0    0    0    88    0    0   88   wavefront[i64-i107].24     work-group[i0-i108].88  
+  25    0    0   89     0    0    0    0    89    0    0   89   wavefront[i64-i107].25     work-group[i0-i108].89  
+  26    0    0   90     0    0    0    0    90    0    0   90   wavefront[i64-i107].26     work-group[i0-i108].90  
+  27    0    0   91     0    0    0    0    91    0    0   91   wavefront[i64-i107].27     work-group[i0-i108].91  
+  28    0    0   92     0    0    0    0    92    0    0   92   wavefront[i64-i107].28     work-group[i0-i108].92  
+  29    0    0   93     0    0    0    0    93    0    0   93   wavefront[i64-i107].29     work-group[i0-i108].93  
+  30    0    0   94     0    0    0    0    94    0    0   94   wavefront[i64-i107].30     work-group[i0-i108].94  
+  31    0    0   95     0    0    0    0    95    0    0   95   wavefront[i64-i107].31     work-group[i0-i108].95  
+  32    0    0   96     0    0    0    0    96    0    0   96   wavefront[i64-i107].32     work-group[i0-i108].96  
+  33    0    0   97     0    0    0    0    97    0    0   97   wavefront[i64-i107].33     work-group[i0-i108].97  
+  34    0    0   98     0    0    0    0    98    0    0   98   wavefront[i64-i107].34     work-group[i0-i108].98  
+  35    0    0   99     0    0    0    0    99    0    0   99   wavefront[i64-i107].35     work-group[i0-i108].99  
+  36    0    0  100     0    0    0    0   100    0    0  100   wavefront[i64-i107].36     work-group[i0-i108].100 
+  37    0    0  101     0    0    0    0   101    0    0  101   wavefront[i64-i107].37     work-group[i0-i108].101 
+  38    0    0  102     0    0    0    0   102    0    0  102   wavefront[i64-i107].38     work-group[i0-i108].102 
+  39    0    0  103     0    0    0    0   103    0    0  103   wavefront[i64-i107].39     work-group[i0-i108].103 
+  40    0    0  104     0    0    0    0   104    0    0  104   wavefront[i64-i107].40     work-group[i0-i108].104 
+  41    0    0  105     0    0    0    0   105    0    0  105   wavefront[i64-i107].41     work-group[i0-i108].105 
+  42    0    0  106     0    0    0    0   106    0    0  106   wavefront[i64-i107].42     work-group[i0-i108].106 
+  43    0    0  107     0    0    0    0   107    0    0  107   wavefront[i64-i107].43     work-group[i0-i108].107 
+
+###0_0_0
+ v_sub_f32     v0, s2, v5                                  // 00000000: 08000A02
+t0: V0<=(2.8026e-45f) t1: V0<=(-1.96182e-44f) t2: V0<=(-3.92364e-44f) t3: V0<=(-3.64338e-44f) t4: V0<=(1.82169e-44f) t5: V0<=(1.12104e-44f) t6: V0<=(-2.8026e-45f) t7: V0<=(-2.24208e-44f) t8: V0<=(-2.24208e-44f) t9: V0<=(-1.4013e-45f) t10: V0<=(-3.92364e-44f) t11: V0<=(9.80909e-45f) t12: V0<=(7.00649e-45f) t13: V0<=(-5.60519e-45f) t14: V0<=(-3.36312e-44f) t15: V0<=(-1.26117e-44f) t16: V0<=(-4.06377e-44f) t17: V0<=(1.82169e-44f) t18: V0<=(5.60519e-45f) t19: V0<=(1.96182e-44f) t20: V0<=(-7.00649e-45f) t21: V0<=(-3.36312e-44f) t22: V0<=(-3.92364e-44f) t23: V0<=(-4.62428e-44f) t24: V0<=(-3.08286e-44f) t25: V0<=(-1.96182e-44f) t26: V0<=(2.10195e-44f) t27: V0<=(-3.50325e-44f) t28: V0<=(-2.66247e-44f) t29: V0<=(1.26117e-44f) t30: V0<=(5.60519e-45f) t31: V0<=(-1.4013e-44f) t32: V0<=(7.00649e-45f) t33: V0<=(-1.68156e-44f) t34: V0<=(-3.64338e-44f) t35: V0<=(1.26117e-44f) t36: V0<=(1.68156e-44f) t37: V0<=(2.8026e-45f) t38: V0<=(-2.10195e-44f) t39: V0<=(-1.82169e-44f) t40: V0<=(-4.76441e-44f) t41: V0<=(1.96182e-44f) t42: V0<=(-1.4013e-45f) t43: V0<=(-4.48416e-44f) t44: V0<=(-3.50325e-44f) t45: V0<=(1.54143e-44f) t46: V0<=(-1.96182e-44f) t47: V0<=(-1.54143e-44f) t48: V0<=(1.82169e-44f) t49: V0<=(-2.10195e-44f) t50: V0<=(-2.24208e-44f) t51: V0<=(7.00649e-45f) t52: V0<=(-2.66247e-44f) t53: V0<=(8.40779e-45f) t54: V0<=(0f) t55: V0<=(-2.10195e-44f) t56: V0<=(-3.92364e-44f) t57: V0<=(-4.06377e-44f) t58: V0<=(-3.22299e-44f) t59: V0<=(1.12104e-44f) t60: V0<=(-2.52234e-44f) t61: V0<=(-1.82169e-44f) t62: V0<=(0f) t63: V0<=(-2.8026e-45f) 
+
+###0_0_1
+ v_sub_f32     v0, s2, v5                                  // 00000000: 08000A02
+t0: V0<=(2.66247e-44f) t1: V0<=(2.38221e-44f) t2: V0<=(-2.8026e-45f) t3: V0<=(-2.8026e-45f) t4: V0<=(1.54143e-44f) t5: V0<=(9.80909e-45f) t6: V0<=(-2.10195e-44f) t7: V0<=(9.80909e-45f) t8: V0<=(-1.68156e-44f) t9: V0<=(2.10195e-44f) t10: V0<=(-1.68156e-44f) t11: V0<=(2.52234e-44f) t12: V0<=(-2.52234e-44f) t13: V0<=(7.00649e-45f) t14: V0<=(-1.96182e-44f) t15: V0<=(4.2039e-44f) t16: V0<=(-1.96182e-44f) t17: V0<=(2.8026e-45f) t18: V0<=(4.2039e-44f) t19: V0<=(4.2039e-44f) t20: V0<=(2.52234e-44f) t21: V0<=(1.26117e-44f) t22: V0<=(2.52234e-44f) t23: V0<=(-2.8026e-45f) t24: V0<=(8.40779e-45f) t25: V0<=(4.06377e-44f) t26: V0<=(-7.00649e-45f) t27: V0<=(-7.00649e-45f) t28: V0<=(-4.2039e-45f) t29: V0<=(4.2039e-45f) t30: V0<=(2.10195e-44f) t31: V0<=(2.8026e-45f) t32: V0<=(4.06377e-44f) t33: V0<=(0f) t34: V0<=(-2.52234e-44f) t35: V0<=(-8.40779e-45f) t36: V0<=(2.24208e-44f) t37: V0<=(1.82169e-44f) t38: V0<=(-1.96182e-44f) t39: V0<=(-5.60519e-45f) t40: V0<=(1.82169e-44f) t41: V0<=(3.78351e-44f) t42: V0<=(-2.24208e-44f) t43: V0<=(2.38221e-44f) 
+
+###0_0_0
+ v_cmp_eq_i32  vcc, m0, v9                                 // 00000004: 7D04127C
+wf_id0: vcc<=(0) wf_id1: vcc<=(0) wf_id2: vcc<=(0) wf_id3: vcc<=(0) wf_id4: vcc<=(0) wf_id5: vcc<=(0) wf_id6: vcc<=(0) wf_id7: vcc<=(0) wf_id8: vcc<=(0) wf_id9: vcc<=(0) wf_id10: vcc<=(0) wf_id11: vcc<=(0) wf_id12: vcc<=(0) wf_id13: vcc<=(0) wf_id14: vcc<=(0) wf_id15: vcc<=(0) wf_id16: vcc<=(0) wf_id17: vcc<=(0) wf_id18: vcc<=(0) wf_id19: vcc<=(0) wf_id20: vcc<=(0) wf_id21: vcc<=(0) wf_id22: vcc<=(0) wf_id23: vcc<=(0) wf_id24: vcc<=(0) wf_id25: vcc<=(0) wf_id26: vcc<=(0) wf_id27: vcc<=(0) wf_id28: vcc<=(0) wf_id29: vcc<=(0) wf_id30: vcc<=(0) wf_id31: vcc<=(0) wf_id32: vcc<=(0) wf_id33: vcc<=(0) wf_id34: vcc<=(0) wf_id35: vcc<=(0) wf_id36: vcc<=(0) wf_id37: vcc<=(0) wf_id38: vcc<=(0) wf_id39: vcc<=(0) wf_id40: vcc<=(0) wf_id41: vcc<=(0) wf_id42: vcc<=(0) wf_id43: vcc<=(0) wf_id44: vcc<=(0) wf_id45: vcc<=(0) wf_id46: vcc<=(0) wf_id47: vcc<=(0) wf_id48: vcc<=(0) wf_id49: vcc<=(0) wf_id50: vcc<=(0) wf_id51: vcc<=(0) wf_id52: vcc<=(0) wf_id53: vcc<=(0) wf_id54: vcc<=(0) wf_id55: vcc<=(0) wf_id56: vcc<=(0) wf_id57: vcc<=(0) wf_id58: vcc<=(1) wf_id59: vcc<=(0) wf_id60: vcc<=(0) wf_id61: vcc<=(0) wf_id62: vcc<=(0) wf_id63: vcc<=(0) 
+
+###0_0_1
+ v_cmp_eq_i32  vcc, m0, v9                                 // 00000004: 7D04127C
+wf_id0: vcc<=(0) wf_id1: vcc<=(0) wf_id2: vcc<=(0) wf_id3: vcc<=(0) wf_id4: vcc<=(0) wf_id5: vcc<=(0) wf_id6: vcc<=(0) wf_id7: vcc<=(0) wf_id8: vcc<=(0) wf_id9: vcc<=(0) wf_id10: vcc<=(0) wf_id11: vcc<=(0) wf_id12: vcc<=(0) wf_id13: vcc<=(0) wf_id14: vcc<=(0) wf_id15: vcc<=(0) wf_id16: vcc<=(0) wf_id17: vcc<=(0) wf_id18: vcc<=(0) wf_id19: vcc<=(0) wf_id20: vcc<=(0) wf_id21: vcc<=(0) wf_id22: vcc<=(0) wf_id23: vcc<=(0) wf_id24: vcc<=(0) wf_id25: vcc<=(0) wf_id26: vcc<=(0) wf_id27: vcc<=(0) wf_id28: vcc<=(1) wf_id29: vcc<=(0) wf_id30: vcc<=(0) wf_id31: vcc<=(0) wf_id32: vcc<=(0) wf_id33: vcc<=(0) wf_id34: vcc<=(0) wf_id35: vcc<=(0) wf_id36: vcc<=(0) wf_id37: vcc<=(0) wf_id38: vcc<=(0) wf_id39: vcc<=(0) wf_id40: vcc<=(0) wf_id41: vcc<=(0) wf_id42: vcc<=(0) wf_id43: vcc<=(0) 
+
+###0_0_0
+ v_add_i32     v5, vcc, m0, v4                             // 00000008: 4A0A087C
+t0: V5<=(19) wf_id0: vcc<=(0) t1: V5<=(10) wf_id1: vcc<=(0) t2: V5<=(25) wf_id2: vcc<=(0) t3: V5<=(43) wf_id3: vcc<=(0) t4: V5<=(12) wf_id4: vcc<=(0) t5: V5<=(30) wf_id5: vcc<=(0) t6: V5<=(38) wf_id6: vcc<=(0) t7: V5<=(48) wf_id7: vcc<=(0) t8: V5<=(16) wf_id8: vcc<=(0) t9: V5<=(32) wf_id9: vcc<=(0) t10: V5<=(12) wf_id10: vcc<=(0) t11: V5<=(5) wf_id11: vcc<=(0) t12: V5<=(2) wf_id12: vcc<=(0) t13: V5<=(44) wf_id13: vcc<=(0) t14: V5<=(24) wf_id14: vcc<=(0) t15: V5<=(22) wf_id15: vcc<=(0) t16: V5<=(31) wf_id16: vcc<=(0) t17: V5<=(37) wf_id17: vcc<=(0) t18: V5<=(30) wf_id18: vcc<=(0) t19: V5<=(44) wf_id19: vcc<=(0) t20: V5<=(23) wf_id20: vcc<=(0) t21: V5<=(37) wf_id21: vcc<=(0) t22: V5<=(28) wf_id22: vcc<=(0) t23: V5<=(7) wf_id23: vcc<=(0) t24: V5<=(30) wf_id24: vcc<=(0) t25: V5<=(34) wf_id25: vcc<=(0) t26: V5<=(32) wf_id26: vcc<=(0) t27: V5<=(18) wf_id27: vcc<=(0) t28: V5<=(3) wf_id28: vcc<=(0) t29: V5<=(23) wf_id29: vcc<=(0) t30: V5<=(48) wf_id30: vcc<=(0) t31: V5<=(46) wf_id31: vcc<=(0) t32: V5<=(18) wf_id32: vcc<=(0) t33: V5<=(42) wf_id33: vcc<=(0) t34: V5<=(22) wf_id34: vcc<=(0) t35: V5<=(1) wf_id35: vcc<=(0) t36: V5<=(40) wf_id36: vcc<=(0) t37: V5<=(13) wf_id37: vcc<=(0) t38: V5<=(29) wf_id38: vcc<=(0) t39: V5<=(43) wf_id39: vcc<=(0) t40: V5<=(10) wf_id40: vcc<=(0) t41: V5<=(4) wf_id41: vcc<=(0) t42: V5<=(45) wf_id42: vcc<=(0) t43: V5<=(21) wf_id43: vcc<=(0) t44: V5<=(24) wf_id44: vcc<=(0) t45: V5<=(15) wf_id45: vcc<=(0) t46: V5<=(22) wf_id46: vcc<=(0) t47: V5<=(45) wf_id47: vcc<=(0) t48: V5<=(17) wf_id48: vcc<=(0) t49: V5<=(48) wf_id49: vcc<=(0) t50: V5<=(4) wf_id50: vcc<=(0) t51: V5<=(31) wf_id51: vcc<=(0) t52: V5<=(37) wf_id52: vcc<=(0) t53: V5<=(36) wf_id53: vcc<=(0) t54: V5<=(45) wf_id54: vcc<=(0) t55: V5<=(32) wf_id55: vcc<=(0) t56: V5<=(33) wf_id56: vcc<=(0) t57: V5<=(16) wf_id57: vcc<=(0) t58: V5<=(14) wf_id58: vcc<=(0) t59: V5<=(35) wf_id59: vcc<=(0) t60: V5<=(22) wf_id60: vcc<=(0) t61: V5<=(3) wf_id61: vcc<=(0) t62: V5<=(9) wf_id62: vcc<=(0) t63: V5<=(39) wf_id63: vcc<=(0) 
+
+###0_0_1
+ v_add_i32     v5, vcc, m0, v4                             // 00000008: 4A0A087C
+t0: V5<=(8) wf_id0: vcc<=(0) t1: V5<=(47) wf_id1: vcc<=(0) t2: V5<=(13) wf_id2: vcc<=(0) t3: V5<=(6) wf_id3: vcc<=(0) t4: V5<=(24) wf_id4: vcc<=(0) t5: V5<=(4) wf_id5: vcc<=(0) t6: V5<=(30) wf_id6: vcc<=(0) t7: V5<=(31) wf_id7: vcc<=(0) t8: V5<=(13) wf_id8: vcc<=(0) t9: V5<=(43) wf_id9: vcc<=(0) t10: V5<=(10) wf_id10: vcc<=(0) t11: V5<=(16) wf_id11: vcc<=(0) t12: V5<=(44) wf_id12: vcc<=(0) t13: V5<=(48) wf_id13: vcc<=(0) t14: V5<=(42) wf_id14: vcc<=(0) t15: V5<=(42) wf_id15: vcc<=(0) t16: V5<=(38) wf_id16: vcc<=(0) t17: V5<=(19) wf_id17: vcc<=(0) t18: V5<=(21) wf_id18: vcc<=(0) t19: V5<=(43) wf_id19: vcc<=(0) t20: V5<=(40) wf_id20: vcc<=(0) t21: V5<=(17) wf_id21: vcc<=(0) t22: V5<=(15) wf_id22: vcc<=(0) t23: V5<=(6) wf_id23: vcc<=(0) t24: V5<=(29) wf_id24: vcc<=(0) t25: V5<=(16) wf_id25: vcc<=(0) t26: V5<=(11) wf_id26: vcc<=(0) t27: V5<=(15) wf_id27: vcc<=(0) t28: V5<=(17) wf_id28: vcc<=(0) t29: V5<=(2) wf_id29: vcc<=(0) t30: V5<=(37) wf_id30: vcc<=(0) t31: V5<=(25) wf_id31: vcc<=(0) t32: V5<=(1) wf_id32: vcc<=(0) t33: V5<=(42) wf_id33: vcc<=(0) t34: V5<=(33) wf_id34: vcc<=(0) t35: V5<=(49) wf_id35: vcc<=(0) t36: V5<=(18) wf_id36: vcc<=(0) t37: V5<=(3) wf_id37: vcc<=(0) t38: V5<=(33) wf_id38: vcc<=(0) t39: V5<=(16) wf_id39: vcc<=(0) t40: V5<=(41) wf_id40: vcc<=(0) t41: V5<=(47) wf_id41: vcc<=(0) t42: V5<=(8) wf_id42: vcc<=(0) t43: V5<=(44) wf_id43: vcc<=(0) 
+
+###0_0_0
+ s_barrier                                                 // 0000000C: BF8A0001
+wavefront[i0-i63] (gid=0) reached barrier (1 reached, 1 left)
+
+
+###0_0_1
+ s_barrier                                                 // 0000000C: BF8A0001
+wavefront[i64-i107] (gid=0) reached barrier (2 reached, 0 left)
+work-group[i0-i108] completed barrier, waking up wavefronts
+
+
+###0_0_0
+ s_mov_b32     s1, -10                                     // 00000010: BE8103CA
+S1<=(-10) 
+
+###0_0_1
+ s_mov_b32     s1, -10                                     // 00000010: BE8103CA
+S1<=(-10) 
+
+###0_0_0
+ s_mov_b32     s0, s2                                      // 00000014: BE800302
+S0<=(15) 
+
+###0_0_1
+ s_mov_b32     s0, s2                                      // 00000014: BE800302
+S0<=(30) 
+
+###0_0_0
+ s_mov_b32     s0, s8                                      // 00000018: BE800308
+S0<=(26) 
+
+###0_0_1
+ s_mov_b32     s0, s8                                      // 00000018: BE800308
+S0<=(8) 
+
+###0_0_0
+ s_mov_b32     s1, -7                                      // 0000001C: BE8103C7
+S1<=(-7) 
+
+###0_0_1
+ s_mov_b32     s1, -7                                      // 0000001C: BE8103C7
+S1<=(-7) 
+
+###0_0_0
+ s_mov_b32     s4, 64                                      // 00000020: BE8403C0
+S4<=(64) 
+
+###0_0_1
+ s_mov_b32     s4, 64                                      // 00000020: BE8403C0
+S4<=(64) 
+
+###0_0_0
+ v_mul_lo_i32  v2, m0, v2                                  // 00000024: D2D60002 0416047C
+t0: V2<=(0) t1: V2<=(0) t2: V2<=(0) t3: V2<=(0) t4: V2<=(0) t5: V2<=(0) t6: V2<=(0) t7: V2<=(0) t8: V2<=(0) t9: V2<=(0) t10: V2<=(0) t11: V2<=(0) t12: V2<=(0) t13: V2<=(0) t14: V2<=(0) t15: V2<=(0) t16: V2<=(0) t17: V2<=(0) t18: V2<=(0) t19: V2<=(0) t20: V2<=(0) t21: V2<=(0) t22: V2<=(0) t23: V2<=(0) t24: V2<=(0) t25: V2<=(0) t26: V2<=(0) t27: V2<=(0) t28: V2<=(0) t29: V2<=(0) t30: V2<=(0) t31: V2<=(0) t32: V2<=(0) t33: V2<=(0) t34: V2<=(0) t35: V2<=(0) t36: V2<=(0) t37: V2<=(0) t38: V2<=(0) t39: V2<=(0) t40: V2<=(0) t41: V2<=(0) t42: V2<=(0) t43: V2<=(0) t44: V2<=(0) t45: V2<=(0) t46: V2<=(0) t47: V2<=(0) t48: V2<=(0) t49: V2<=(0) t50: V2<=(0) t51: V2<=(0) t52: V2<=(0) t53: V2<=(0) t54: V2<=(0) t55: V2<=(0) t56: V2<=(0) t57: V2<=(0) t58: V2<=(0) t59: V2<=(0) t60: V2<=(0) t61: V2<=(0) t62: V2<=(0) t63: V2<=(0) 
+
+###0_0_1
+ v_mul_lo_i32  v2, m0, v2                                  // 00000024: D2D60002 0416047C
+t0: V2<=(0) t1: V2<=(0) t2: V2<=(0) t3: V2<=(0) t4: V2<=(0) t5: V2<=(0) t6: V2<=(0) t7: V2<=(0) t8: V2<=(0) t9: V2<=(0) t10: V2<=(0) t11: V2<=(0) t12: V2<=(0) t13: V2<=(0) t14: V2<=(0) t15: V2<=(0) t16: V2<=(0) t17: V2<=(0) t18: V2<=(0) t19: V2<=(0) t20: V2<=(0) t21: V2<=(0) t22: V2<=(0) t23: V2<=(0) t24: V2<=(0) t25: V2<=(0) t26: V2<=(0) t27: V2<=(0) t28: V2<=(0) t29: V2<=(0) t30: V2<=(0) t31: V2<=(0) t32: V2<=(0) t33: V2<=(0) t34: V2<=(0) t35: V2<=(0) t36: V2<=(0) t37: V2<=(0) t38: V2<=(0) t39: V2<=(0) t40: V2<=(0) t41: V2<=(0) t42: V2<=(0) t43: V2<=(0) 
+
+###0_0_0
+ s_min_u32     s7, 51, s6                                  // 0000002C: 838706B3
+S7<=(10) scc<=(0) 
+
+###0_0_1
+ s_min_u32     s7, 51, s6                                  // 0000002C: 838706B3
+S7<=(48) scc<=(0) 
+
+###0_0_0
+ s_movk_i32    s6, 0x0000                                  // 00000030: B0060000
+S6<=(0) 
+
+###0_0_1
+ s_movk_i32    s6, 0x0000                                  // 00000030: B0060000
+S6<=(0) 
+
+###0_0_0
+ s_mov_b32     s7, 0x00200000                              // 00000034: BE8703FF 00200000
+S7<=(2097152) 
+
+###0_0_1
+ s_mov_b32     s7, 0x00200000                              // 00000034: BE8703FF 00200000
+S7<=(2097152) 
+
+###0_0_0
+ s_movk_i32    s4, 0x0022                                  // 0000003C: B0040022
+S4<=(34) 
+
+###0_0_1
+ s_movk_i32    s4, 0x0022                                  // 0000003C: B0040022
+S4<=(34) 
+
+###0_0_0
+ s_buffer_load_dword  s2, s[6:9], s4                       // 00000040: C2010604
+S2<=(34)(-133117873,-1.17461e+34f)
+
+###0_0_1
+ s_buffer_load_dword  s2, s[6:9], s4                       // 00000040: C2010604
+S2<=(34)(-133117873,-1.17461e+34f)
+
+###0_0_0
+ ds_write_b32  v9, v2                                      // 00000044: D8340000 06000209
+GDS?:0 DS[30]<=(0) GDS?:0 DS[31]<=(0) GDS?:0 DS[29]<=(0) GDS?:0 DS[14]<=(0) GDS?:0 DS[3]<=(0) GDS?:0 DS[25]<=(0) GDS?:0 DS[29]<=(0) GDS?:0 DS[29]<=(0) GDS?:0 DS[10]<=(0) GDS?:0 DS[37]<=(0) GDS?:0 DS[33]<=(0) GDS?:0 DS[16]<=(0) GDS?:0 DS[26]<=(0) GDS?:0 DS[37]<=(0) GDS?:0 DS[43]<=(0) GDS?:0 DS[6]<=(0) GDS?:0 DS[29]<=(0) GDS?:0 DS[33]<=(0) GDS?:0 DS[14]<=(0) GDS?:0 DS[49]<=(0) GDS?:0 DS[10]<=(0) GDS?:0 DS[44]<=(0) GDS?:0 DS[24]<=(0) GDS?:0 DS[30]<=(0) GDS?:0 DS[4]<=(0) GDS?:0 DS[49]<=(0) GDS?:0 DS[43]<=(0) GDS?:0 DS[30]<=(0) GDS?:0 DS[30]<=(0) GDS?:0 DS[23]<=(0) GDS?:0 DS[19]<=(0) GDS?:0 DS[14]<=(0) GDS?:0 DS[4]<=(0) GDS?:0 DS[12]<=(0) GDS?:0 DS[10]<=(0) GDS?:0 DS[49]<=(0) GDS?:0 DS[9]<=(0) GDS?:0 DS[21]<=(0) GDS?:0 DS[25]<=(0) GDS?:0 DS[29]<=(0) GDS?:0 DS[43]<=(0) GDS?:0 DS[21]<=(0) GDS?:0 DS[20]<=(0) GDS?:0 DS[23]<=(0) GDS?:0 DS[17]<=(0) GDS?:0 DS[1]<=(0) GDS?:0 DS[28]<=(0) GDS?:0 DS[46]<=(0) GDS?:0 DS[8]<=(0) GDS?:0 DS[8]<=(0) GDS?:0 DS[26]<=(0) GDS?:0 DS[14]<=(0) GDS?:0 DS[3]<=(0) GDS?:0 DS[45]<=(0) GDS?:0 DS[2]<=(0) GDS?:0 DS[33]<=(0) GDS?:0 DS[38]<=(0) GDS?:0 DS[19]<=(0) GDS?:0 DS[0]<=(0) GDS?:0 DS[41]<=(0) GDS?:0 DS[30]<=(0) GDS?:0 DS[13]<=(0) GDS?:0 DS[30]<=(0) GDS?:0 DS[31]<=(0) 
+
+###0_0_1
+ ds_write_b32  v9, v2                                      // 00000044: D8340000 06000209
+GDS?:0 DS[43]<=(0) GDS?:0 DS[2]<=(0) GDS?:0 DS[33]<=(0) GDS?:0 DS[44]<=(0) GDS?:0 DS[34]<=(0) GDS?:0 DS[38]<=(0) GDS?:0 DS[15]<=(0) GDS?:0 DS[49]<=(0) GDS?:0 DS[1]<=(0) GDS?:0 DS[46]<=(0) GDS?:0 DS[20]<=(0) GDS?:0 DS[39]<=(0) GDS?:0 DS[14]<=(0) GDS?:0 DS[22]<=(0) GDS?:0 DS[26]<=(0) GDS?:0 DS[18]<=(0) GDS?:0 DS[25]<=(0) GDS?:0 DS[2]<=(0) GDS?:0 DS[41]<=(0) GDS?:0 DS[35]<=(0) GDS?:0 DS[40]<=(0) GDS?:0 DS[3]<=(0) GDS?:0 DS[8]<=(0) GDS?:0 DS[19]<=(0) GDS?:0 DS[18]<=(0) GDS?:0 DS[35]<=(0) GDS?:0 DS[31]<=(0) GDS?:0 DS[49]<=(0) GDS?:0 DS[0]<=(0) GDS?:0 DS[25]<=(0) GDS?:0 DS[1]<=(0) GDS?:0 DS[15]<=(0) GDS?:0 DS[3]<=(0) GDS?:0 DS[30]<=(0) GDS?:0 DS[36]<=(0) GDS?:0 DS[21]<=(0) GDS?:0 DS[27]<=(0) GDS?:0 DS[22]<=(0) GDS?:0 DS[14]<=(0) GDS?:0 DS[44]<=(0) GDS?:0 DS[45]<=(0) GDS?:0 DS[18]<=(0) GDS?:0 DS[39]<=(0) GDS?:0 DS[29]<=(0) 
+
+###0_0_0
+ s_cmp_eq_i32  s5, s1                                      // 0000004C: BF000105
+scc<=(0) 
+
+###0_0_1
+ s_cmp_eq_i32  s5, s1                                      // 0000004C: BF000105
+scc<=(0) 
+
+###0_0_0
+ v_cmp_gt_f32  s[8:9], -4, v5                              // 00000050: D0080008 04220AC4
+wf_id0: S[8:+1]<=(0) wf_id1: S[8:+1]<=(0) wf_id2: S[8:+1]<=(0) wf_id3: S[8:+1]<=(0) wf_id4: S[8:+1]<=(0) wf_id5: S[8:+1]<=(0) wf_id6: S[8:+1]<=(0) wf_id7: S[8:+1]<=(0) wf_id8: S[8:+1]<=(0) wf_id9: S[8:+1]<=(0) wf_id10: S[8:+1]<=(0) wf_id11: S[8:+1]<=(0) wf_id12: S[8:+1]<=(0) wf_id13: S[8:+1]<=(0) wf_id14: S[8:+1]<=(0) wf_id15: S[8:+1]<=(0) wf_id16: S[8:+1]<=(0) wf_id17: S[8:+1]<=(0) wf_id18: S[8:+1]<=(0) wf_id19: S[8:+1]<=(0) wf_id20: S[8:+1]<=(0) wf_id21: S[8:+1]<=(0) wf_id22: S[8:+1]<=(0) wf_id23: S[8:+1]<=(0) wf_id24: S[8:+1]<=(0) wf_id25: S[8:+1]<=(0) wf_id26: S[8:+1]<=(0) wf_id27: S[8:+1]<=(0) wf_id28: S[8:+1]<=(0) wf_id29: S[8:+1]<=(0) wf_id30: S[8:+1]<=(0) wf_id31: S[8:+1]<=(0) wf_id32: S[8:+1]<=(0) wf_id33: S[8:+1]<=(0) wf_id34: S[8:+1]<=(0) wf_id35: S[8:+1]<=(0) wf_id36: S[8:+1]<=(0) wf_id37: S[8:+1]<=(0) wf_id38: S[8:+1]<=(0) wf_id39: S[8:+1]<=(0) wf_id40: S[8:+1]<=(0) wf_id41: S[8:+1]<=(0) wf_id42: S[8:+1]<=(0) wf_id43: S[8:+1]<=(0) wf_id44: S[8:+1]<=(0) wf_id45: S[8:+1]<=(0) wf_id46: S[8:+1]<=(0) wf_id47: S[8:+1]<=(0) wf_id48: S[8:+1]<=(0) wf_id49: S[8:+1]<=(0) wf_id50: S[8:+1]<=(0) wf_id51: S[8:+1]<=(0) wf_id52: S[8:+1]<=(0) wf_id53: S[8:+1]<=(0) wf_id54: S[8:+1]<=(0) wf_id55: S[8:+1]<=(0) wf_id56: S[8:+1]<=(0) wf_id57: S[8:+1]<=(0) wf_id58: S[8:+1]<=(0) wf_id59: S[8:+1]<=(0) wf_id60: S[8:+1]<=(0) wf_id61: S[8:+1]<=(0) wf_id62: S[8:+1]<=(0) wf_id63: S[8:+1]<=(0) 
+
+###0_0_1
+ v_cmp_gt_f32  s[8:9], -4, v5                              // 00000050: D0080008 04220AC4
+wf_id0: S[8:+1]<=(0) wf_id1: S[8:+1]<=(0) wf_id2: S[8:+1]<=(0) wf_id3: S[8:+1]<=(0) wf_id4: S[8:+1]<=(0) wf_id5: S[8:+1]<=(0) wf_id6: S[8:+1]<=(0) wf_id7: S[8:+1]<=(0) wf_id8: S[8:+1]<=(0) wf_id9: S[8:+1]<=(0) wf_id10: S[8:+1]<=(0) wf_id11: S[8:+1]<=(0) wf_id12: S[8:+1]<=(0) wf_id13: S[8:+1]<=(0) wf_id14: S[8:+1]<=(0) wf_id15: S[8:+1]<=(0) wf_id16: S[8:+1]<=(0) wf_id17: S[8:+1]<=(0) wf_id18: S[8:+1]<=(0) wf_id19: S[8:+1]<=(0) wf_id20: S[8:+1]<=(0) wf_id21: S[8:+1]<=(0) wf_id22: S[8:+1]<=(0) wf_id23: S[8:+1]<=(0) wf_id24: S[8:+1]<=(0) wf_id25: S[8:+1]<=(0) wf_id26: S[8:+1]<=(0) wf_id27: S[8:+1]<=(0) wf_id28: S[8:+1]<=(0) wf_id29: S[8:+1]<=(0) wf_id30: S[8:+1]<=(0) wf_id31: S[8:+1]<=(0) wf_id32: S[8:+1]<=(0) wf_id33: S[8:+1]<=(0) wf_id34: S[8:+1]<=(0) wf_id35: S[8:+1]<=(0) wf_id36: S[8:+1]<=(0) wf_id37: S[8:+1]<=(0) wf_id38: S[8:+1]<=(0) wf_id39: S[8:+1]<=(0) wf_id40: S[8:+1]<=(0) wf_id41: S[8:+1]<=(0) wf_id42: S[8:+1]<=(0) wf_id43: S[8:+1]<=(0) 
+
+###0_0_0
+ s_lshr_b32    exec_lo, execz, s6                          // 00000058: 907E06FC
+S126<=(0) scc<=(0) 
+
+###0_0_1
+ s_lshr_b32    exec_lo, execz, s6                          // 00000058: 907E06FC
+S126<=(0) scc<=(0) 
+
+###0_0_0
+ s_endpgm                                                  // 0000005C: BF810000
+
+
+###0_0_1
+ s_endpgm                                                  // 0000005C: BF810000
+

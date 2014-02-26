@@ -1,0 +1,5 @@
+ v_sub_i32     v7, vcc, v3, v4                             // 00000000: 4C0E0903
+t0: V7<=(-16) wf_id0: vcc<=(1) t1: V7<=(12) wf_id1: vcc<=(0) t2: V7<=(14) wf_id2: vcc<=(0) t3: V7<=(43) wf_id3: vcc<=(0) t4: V7<=(15) wf_id4: vcc<=(0) t5: V7<=(6) wf_id5: vcc<=(0) t6: V7<=(-12) wf_id6: vcc<=(1) t7: V7<=(-32) wf_id7: vcc<=(1) t8: V7<=(-20) wf_id8: vcc<=(1) t9: V7<=(34) wf_id9: vcc<=(0) t10: V7<=(28) wf_id10: vcc<=(0) t11: V7<=(-25) wf_id11: vcc<=(1) 
+
+ s_endpgm                                                  // 00000004: BF810000
+

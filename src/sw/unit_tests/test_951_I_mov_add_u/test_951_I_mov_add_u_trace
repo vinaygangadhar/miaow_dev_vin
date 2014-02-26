@@ -1,0 +1,52 @@
+local_size = 1 (1,1,1)
+global_size = 1 (1,1,1)
+group_count = 1 (1,1,1)
+wavefront_count = 1
+wavefronts_per_work_group = 1
+ tid tid2 tid1 tid0   gid gid2 gid1 gid0   lid lid2 lid1 lid0  wavefront            work-group
+   0    0    0    0     0    0    0    0     0    0    0    0      wavefront[i0-i0].0        work-group[i0-i1].0   
+
+ s_mov_b32     s4, s5                                      // 00000000: BE840305
+S4<=(7) 
+
+ s_add_u32     s3, s1, s2                                  // 00000004: 80030201
+S3<=(10) scc<=(0) 
+
+ s_mov_b32     s4, s5                                      // 00000008: BE840305
+S4<=(7) 
+
+ s_add_u32     s3, s1, s2                                  // 0000000C: 80030201
+S3<=(10) scc<=(0) 
+
+ s_mov_b32     s4, s5                                      // 00000010: BE840305
+S4<=(7) 
+
+ s_add_u32     s3, s1, s2                                  // 00000014: 80030201
+S3<=(10) scc<=(0) 
+
+ s_mov_b32     s4, s5                                      // 00000018: BE840305
+S4<=(7) 
+
+ s_add_u32     s3, s1, s2                                  // 0000001C: 80030201
+S3<=(10) scc<=(0) 
+
+ s_mov_b32     s4, s5                                      // 00000020: BE840305
+S4<=(7) 
+
+ s_add_u32     s3, s1, s2                                  // 00000024: 80030201
+S3<=(10) scc<=(0) 
+
+ s_mov_b32     s4, s5                                      // 00000028: BE840305
+S4<=(7) 
+
+ s_add_u32     s3, s1, s2                                  // 0000002C: 80030201
+S3<=(10) scc<=(0) 
+
+ s_mov_b32     s4, s5                                      // 00000030: BE840305
+S4<=(7) 
+
+ s_add_u32     s3, s1, s2                                  // 00000034: 80030201
+S3<=(10) scc<=(0) 
+
+ s_endpgm                                                  // 00000038: BF810000
+

@@ -1,0 +1,5 @@
+ s_cmp_le_u32  exec_lo, s5                                 // 00000000: BF0B057E
+scc<=(0) 
+
+ s_endpgm                                                  // 00000004: BF810000
+

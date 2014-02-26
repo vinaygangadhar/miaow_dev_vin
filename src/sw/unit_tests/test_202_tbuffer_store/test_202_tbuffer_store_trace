@@ -1,0 +1,16 @@
+local_size = 4 (4,1,1)
+global_size = 4 (4,1,1)
+group_count = 1 (1,1,1)
+wavefront_count = 1
+wavefronts_per_work_group = 1
+ tid tid2 tid1 tid0   gid gid2 gid1 gid0   lid lid2 lid1 lid0  wavefront            work-group
+   0    0    0    0     0    0    0    0     0    0    0    0      wavefront[i0-i3].0        work-group[i0-i4].0   
+   1    0    0    1     0    0    0    0     1    0    0    1      wavefront[i0-i3].1        work-group[i0-i4].1   
+   2    0    0    2     0    0    0    0     2    0    0    2      wavefront[i0-i3].2        work-group[i0-i4].2   
+   3    0    0    3     0    0    0    0     3    0    0    3      wavefront[i0-i3].3        work-group[i0-i4].3   
+
+ tbuffer_store_format_x  v2, v8, s[0:3], s4 offset:12 format:[BUF_DATA_FORMAT_32,BUF_NUM_FORMAT_UINT] // 00000000: EA24000C 04000208
+t0: (12)<=V2(46,6.44597e-44f) t1: (12)<=V2(47,6.5861e-44f) t2: (12)<=V2(48,6.72623e-44f) t3: (12)<=V2(49,6.86636e-44f) 
+
+ s_endpgm                                                  // 00000008: BF810000
+

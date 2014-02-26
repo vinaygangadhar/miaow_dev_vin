@@ -1,0 +1,50 @@
+local_size = 12 (12,1,1)
+global_size = 12 (12,1,1)
+group_count = 1 (1,1,1)
+wavefront_count = 1
+wavefronts_per_work_group = 1
+ tid tid2 tid1 tid0   gid gid2 gid1 gid0   lid lid2 lid1 lid0  wavefront            work-group
+   0    0    0    0     0    0    0    0     0    0    0    0     wavefront[i0-i11].0       work-group[i0-i12].0   
+   1    0    0    1     0    0    0    0     1    0    0    1     wavefront[i0-i11].1       work-group[i0-i12].1   
+   2    0    0    2     0    0    0    0     2    0    0    2     wavefront[i0-i11].2       work-group[i0-i12].2   
+   3    0    0    3     0    0    0    0     3    0    0    3     wavefront[i0-i11].3       work-group[i0-i12].3   
+   4    0    0    4     0    0    0    0     4    0    0    4     wavefront[i0-i11].4       work-group[i0-i12].4   
+   5    0    0    5     0    0    0    0     5    0    0    5     wavefront[i0-i11].5       work-group[i0-i12].5   
+   6    0    0    6     0    0    0    0     6    0    0    6     wavefront[i0-i11].6       work-group[i0-i12].6   
+   7    0    0    7     0    0    0    0     7    0    0    7     wavefront[i0-i11].7       work-group[i0-i12].7   
+   8    0    0    8     0    0    0    0     8    0    0    8     wavefront[i0-i11].8       work-group[i0-i12].8   
+   9    0    0    9     0    0    0    0     9    0    0    9     wavefront[i0-i11].9       work-group[i0-i12].9   
+  10    0    0   10     0    0    0    0    10    0    0   10     wavefront[i0-i11].10      work-group[i0-i12].10  
+  11    0    0   11     0    0    0    0    11    0    0   11     wavefront[i0-i11].11      work-group[i0-i12].11  
+
+###0_0_0
+ s_movk_i32    s0, 0x0000                                  // 00000000: B0000000
+S0<=(0) 
+
+###0_0_0
+ s_movk_i32    s1, 0x00b0                                  // 00000004: B00100B0
+S1<=(176) 
+
+###0_0_0
+ s_movk_i32    s2, 0x0000                                  // 00000008: B0020000
+S2<=(0) 
+
+###0_0_0
+ s_movk_i32    s3, 0x0000                                  // 0000000C: B0030000
+S3<=(0) 
+
+###0_0_0
+ v_mov_b32     v1, 0x0000001d                              // 00000010: 7E0202FF 0000001D
+t0: V1<=(29) t1: V1<=(29) t2: V1<=(29) t3: V1<=(29) t4: V1<=(29) t5: V1<=(29) t6: V1<=(29) t7: V1<=(29) t8: V1<=(29) t9: V1<=(29) t10: V1<=(29) t11: V1<=(29) 
+
+###0_0_0
+ s_movk_i32    s3, 0x0003                                  // 00000018: B0030003
+S3<=(3) 
+
+###0_0_0
+ tbuffer_store_format_x  v8, v1, s[0:3], s3 offen offset:26 format:[BUF_DATA_FORMAT_32,BUF_NUM_FORMAT_UNORM] // 0000001C: E824101A 03000801
+t0: (29)<=V8(10,1.4013e-44f) t1: (29)<=V8(32,4.48416e-44f) t2: (29)<=V8(25,3.50325e-44f) t3: (29)<=V8(47,6.5861e-44f) t4: (29)<=V8(0,0f) t5: (29)<=V8(21,2.94273e-44f) t6: (29)<=V8(36,5.04467e-44f) t7: (29)<=V8(23,3.22299e-44f) t8: (29)<=V8(45,6.30584e-44f) t9: (29)<=V8(7,9.80909e-45f) t10: (29)<=V8(17,2.38221e-44f) t11: (29)<=V8(41,5.74532e-44f) 
+
+###0_0_0
+ s_endpgm                                                  // 00000024: BF810000
+

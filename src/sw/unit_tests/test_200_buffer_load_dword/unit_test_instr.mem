@@ -1,0 +1,9 @@
+8
+06
+00
+04
+C2 // s_buffer_load_dword s8, s0, s6
+00
+00
+81
+BF // s_endpgm

@@ -1,0 +1,13 @@
+local_size = 1 (1,1,1)
+global_size = 1 (1,1,1)
+group_count = 1 (1,1,1)
+wavefront_count = 1
+wavefronts_per_work_group = 1
+ tid tid2 tid1 tid0   gid gid2 gid1 gid0   lid lid2 lid1 lid0  wavefront            work-group
+   0    0    0    0     0    0    0    0     0    0    0    0      wavefront[i0-i0].0        work-group[i0-i1].0   
+
+ s_or_b32      s3, s1, s2                                  // 00000000: 88030201
+S3<=(6) scc<=(1) 
+
+ s_endpgm                                                  // 00000004: BF810000
+

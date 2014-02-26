@@ -1,0 +1,5 @@
+ s_add_i32     exec_lo, vccz, s9                           // 00000000: 817E09FB
+S126<=(3) scc<=(0) 
+
+ s_endpgm                                                  // 00000004: BF810000
+

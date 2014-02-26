@@ -1,0 +1,25 @@
+ v_add_i32     v1, vcc, s2, v0                             // 00000000: 4A020002
+t0: V1<=(29) wf_id0: vcc<=(0) t1: V1<=(9) wf_id1: vcc<=(0) t2: V1<=(2) wf_id2: vcc<=(0) t3: V1<=(37) wf_id3: vcc<=(0) t4: V1<=(34) wf_id4: vcc<=(0) t5: V1<=(3) wf_id5: vcc<=(0) t6: V1<=(7) wf_id6: vcc<=(0) t7: V1<=(44) wf_id7: vcc<=(0) t8: V1<=(12) wf_id8: vcc<=(0) t9: V1<=(39) wf_id9: vcc<=(0) t10: V1<=(1) wf_id10: vcc<=(0) t11: V1<=(17) wf_id11: vcc<=(0) 
+
+ s_barrier                                                 // 00000004: BF8A0004
+wavefront[i0-i11] (gid=0) reached barrier (1 reached, 0 left)
+work-group[i0-i12] completed barrier, waking up wavefronts
+
+
+ s_mov_b32     s1, s8                                      // 00000008: BE810308
+S1<=(13) 
+
+ s_mov_b32     s5, s7                                      // 0000000C: BE850307
+S5<=(23) 
+
+ s_mov_b32     s1, exec_hi                                 // 00000010: BE81037F
+S1<=(0) 
+
+ s_mov_b32     s3, m0                                      // 00000014: BE83037C
+S3<=(0) 
+
+ s_mov_b32     s5, s6                                      // 00000018: BE850306
+S5<=(42) 
+
+ s_endpgm                                                  // 0000001C: BF810000
+

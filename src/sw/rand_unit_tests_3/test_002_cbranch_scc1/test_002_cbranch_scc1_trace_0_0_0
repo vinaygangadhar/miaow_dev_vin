@@ -1,0 +1,23 @@
+ v_add_i32     v0, vcc, v7, v6                             // 00000000: 4A000D07
+t0: V0<=(64) wf_id0: vcc<=(0) t1: V0<=(34) wf_id1: vcc<=(0) t2: V0<=(33) wf_id2: vcc<=(0) t3: V0<=(34) wf_id3: vcc<=(0) t4: V0<=(54) wf_id4: vcc<=(0) t5: V0<=(86) wf_id5: vcc<=(0) t6: V0<=(33) wf_id6: vcc<=(0) t7: V0<=(74) wf_id7: vcc<=(0) t8: V0<=(49) wf_id8: vcc<=(0) t9: V0<=(54) wf_id9: vcc<=(0) t10: V0<=(60) wf_id10: vcc<=(0) t11: V0<=(44) wf_id11: vcc<=(0) 
+
+ s_cbranch_scc1  label_0006                                // 00000004: BF850004
+
+
+ s_mov_b32     s2, -10                                     // 00000008: BE8203CA
+S2<=(-10) 
+
+ s_mov_b32     s8, -4                                      // 0000000C: BE8803C4
+S8<=(-4) 
+
+ s_mov_b32     s7, s7                                      // 00000010: BE870307
+S7<=(20) 
+
+ s_mov_b32     s6, vcc_lo                                  // 00000014: BE86036A
+S6<=(0) 
+
+ s_mov_b32     exec_hi, s3                                 // 00000018: BEFF0303
+S127<=(8) 
+
+ s_endpgm                                                  // 0000001C: BF810000
+

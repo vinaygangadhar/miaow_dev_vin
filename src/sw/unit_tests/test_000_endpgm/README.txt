@@ -1,0 +1,2 @@
+Tests one instruction: 
+endpgm

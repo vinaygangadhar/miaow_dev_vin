@@ -1,0 +1,3 @@
+Tests two instructions: 
+v_sub_i32 with scalar source
+v_or_b32 with vector source
