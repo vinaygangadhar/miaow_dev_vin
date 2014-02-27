@@ -1,0 +1,149 @@
+#!/usr/bin/perl -w
+
+use warnings "all";
+use Getopt::Long;
+
+#Declaration and initialization of variables
+my $test = "";
+my $script_name = $0;
+my @arguments = " ";
+my $m2s_ver = 0;
+
+$opt_result = GetOptions (
+  "input=s"   => \$test,
+  "disasm"    => \$disasm,
+  "version=s" => \$m2s_ver,
+  "arguments=s" => \$arguments,
+  "help"       => \$help,
+);
+
+if(!$opt_result)
+{
+  print STDERR "$script_name: Invalid command line options!\n";
+  print STDERR "$script_name: Use -help if you need it :)\n";
+  die;
+}
+
+if($help)
+{
+  print_help();
+  exit 0;
+}
+
+@list = `ls -d */`;
+chomp(@list);
+if($test ne "")
+{
+  if(!(-d $test))
+  {
+    print STDERR "$script_name: Test named $test does not exist!\n";
+    die;
+  }
+
+  @list = ("$test");
+}
+
+if ($disasm)
+{
+  foreach $t (@list)
+  {i
+    $t =~ s/\/$//;
+    $t =~ s/\/$//;
+    print "$t\n";
+    
+    my $kernel_file = $t."_Kernels.cl";
+    my $kernel_bin = $t."_Kernels.bin";
+    
+    my $cc;
+
+    if($m2s_ver eq 3)
+    {
+      print "Using Multi2Sim 4.2-devl for disassembly\n";
+      $cc = "~/multi2sim-4.2-trunk/multi2sim/trunk/bin/m2s --si-disasm $kernel_bin";
+    }
+    
+    if($m2s_ver eq 2)
+    {
+      print "Using Multi2Sim 4.2 for disassembly\n";
+      $cc = "../../../multi2sim-4.2/bin/m2s --si-disasm $kernel_bin";
+    }
+    else
+    {
+      print "Using Multi2Sim 4.0 for disassembly\n";
+      $cc = "../../../multi2sim-4.0/bin/m2s --si-disasm $kernel_bin";
+    }
+    
+    system "
+    cd ./$t;
+    $cc;
+    ";
+
+  }
+  exit 0;
+}
+
+foreach $t (@list)
+{
+
+  $t =~ s/\/$//;
+  $t =~ s/\/$//;
+  print "$t\n";
+
+  my $kernel_file = $t."_Kernels.cl";                                                                               
+  my $kernel_bin = $t."_Kernels.bin";                                                                               
+  my $kernel_trace = $t."_trace";
+  
+  my $cmd;                                                
+    
+  if($m2s_ver eq 3)                                                                                                 
+  {
+    print "Using Multi2Sim 4.2-trunk for compilation\n"; 
+    $cmd = "~/multi2sim-4.2-trunk/multi2sim/trunk/bin/m2s --si-debug-isa $kernel_trace --si-sim functional $t --load $kernel_bin $arguments";                                                 
+  } 
+  
+  if($m2s_ver eq 2)                                                                                                 
+  {
+    print "Using Multi2Sim 4.2 for compilation\n"; 
+    $cmd = "../../../multi2sim-4.2/bin/m2s --si-debug-isa $kernel_trace --si-sim functional $t --load $kernel_bin $arguments";                                                 
+  } 
+  else
+  {
+    print "Using Multi2Sim 4.0 for compilation\n";
+    $cmd = "../../../multi2sim-4.0/bin/m2s --si-debug-isa $kernel_trace --si-sim functional $t --load $kernel_bin $arguments";
+  }
+
+  system "
+  cp ../../lib/libm2s-opencl.so ./$t/;
+  cd ./$t;
+  $cmd;
+  rm -f ./libm2s-opencl.so;
+  ../../../common/trace_parser.pl -i $kernel_trace;
+  ";
+
+}
+
+sub print_help
+{
+print STDOUT qq{$script_name:
+
+DESCRIPTION:
+        This script can be used to generate trace, instruction memory buffer, data memory buffer and initial configuration of VGPR and SGPR values.
+
+USAGE:
+	$script_name -i <input_test_name> -v <version 0,2,3> [-h] 
+
+ARGUMENTS:
+
+-i <input_test_name> 
+-input <input_test_name>       This is a compulsory option; used to specify the name of test to be run.
+
+-disasm                        Disassembly of Kernel Binary file
+
+-v
+-version		       Multi2sim version 0[m2s4.0] 2[m2s4.2] 3[m2s4.2-devl]. 3 is the development latest trunk
+
+-h
+-help                           Well, you know what this option is for! You couldn't be reading this otherwise.
+};
+
+}

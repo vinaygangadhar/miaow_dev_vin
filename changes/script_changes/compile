@@ -1,0 +1,147 @@
+#!/usr/bin/perl -w  
+
+use warnings "all";
+use Getopt::Long;
+
+#Declaration and initialization of variables
+my $test = "";
+my $script_name = $0;
+my @arguments = " ";
+my $cmake_file = "CMakeLists.txt";
+my $cmd;
+my $cc;
+my $m2s_ver = 0;
+
+$opt_result = GetOptions (
+  "input=s"   => \$test,
+  "bitness=s"	=> \$bitness,
+  "ver=s"	=> \$m2s_ver,
+  "help"       => \$help,
+);
+
+if(!$opt_result)
+{
+  print STDERR "$script_name: Invalid command line options!\n";
+  print STDERR "$script_name: Use -help if you need it :)\n";
+  die;
+}
+
+if($help)
+{
+  print_help();
+  exit 0;
+}
+
+## Check if the $test directory exists
+
+@list = `ls -d */`;
+chomp(@list);
+
+if($test ne "")
+{
+  if(!(-d $test))
+  {
+    print STDERR "$script_name: Test named $test does not exist!\n";
+    die;
+  }
+  
+  @list = ("$test");
+}
+
+
+foreach $t (@list)
+{
+
+  $t =~ s/\/$//;
+  $t =~ s/\/$//;
+  print "$t\n";
+  
+  my $kernel_file = $t."_Kernels.cl";
+  my $kernel_bin = $t."_Kernels.bin";
+  
+  chdir($t) or die "$!";
+ 
+  if(!(-e $cmake_file))
+  {
+    print STDERR "$script_name: Test named $test does not have $cmake_file file\n";
+    die;
+  }
+
+  if(-e ($t | $kernel_bin ) )
+  {
+    #Remove the executable
+    system "
+    rm -rf $t; 
+    rm -rf $kernel_bin;
+    "; 
+  }
+
+  
+  if($bitness)
+  {
+    print STDOUT "Using bitness as $bitness\n";
+    $cmd = "cmake $cmake_file -DBITNESS=$bitness";
+  }
+  else
+  {
+    print STDOUT "Using bitness as 32\n";
+    $cmd = "cmake $cmake_file -DBITNESS=32 ";
+  }
+
+  if($m2s_ver eq 3)
+  {
+    print STDOUT "Using Multi2Sim 4.3 for compilation\n";
+    $cc = "../../../multi2sim_dev/trunk/bin/m2c --amd --amd-device Tahiti $kernel_file";
+  }
+  elsif($m2s_ver eq 2)
+  {
+    print STDOUT "Using Multi2Sim 4.2 for compilation\n";
+    $cc = "../../../multi2sim-4.2/bin/m2c --amd --amd-device Tahiti $kernel_file";
+  }
+  else
+  {
+    print STDOUT "Using Multi2Sim 4.0 for compilation\n";
+    $cc = "../../../multi2sim-4.0/bin/m2s-clcc -d Tahiti $kernel_file";
+  }
+
+  system "
+  $cmd;
+  make;
+  cp -rf bin/x86*/Release/$t .;
+  rm -rf bin CMakeCache.txt CMakeFiles cmake_install.cmake Makefile;
+  $cc;
+  ";
+  
+  chdir '/home/miaow/miaow/src/sw/benchmarks_run/AMDAPP' or die "$!";
+
+}
+
+sub print_help
+{
+print STDOUT qq{$script_name:
+
+DESCRIPTION:
+        This script can be used to generate executable files form the source cpp files and Kernel binaries from Kernel Source .cl files. If the test is previously compiled, it will be having executable and kernel binary with parameters for that run. Rerun with new parametes to replace them.
+
+USAGE:
+	$script_name -i <input_test_name> [-h | -b | -v]
+
+ARGUMENTS:
+
+-i <input_test_name> 
+-input <input_test_name>       This is a compulsory option; used to specify the name of test to be compiled.  
+
+-b 
+-bitness 		       Bitness of the native archiecture to which you want the executable to run on. Defualts to 32 bit. Available options- 32,64
+
+-v
+-version		      Multi2sim version for the compilation of kernel sources. By default its m2s-4.0. Specify 2 for m2s-4.2.
+
+-h
+-help                           Well, you know what this option is for! You couldn't be reading this otherwise.
+
+EXAMPLES
+	$script_name -i BinarySearch -b 32 -v 2
+};
+
+}
