@@ -386,6 +386,12 @@ always @ (in_opcode) begin
          	out_vgpr_wr_en <= 1'b1;
          	temp_sgpr_wr_en <= 1'b0;
          end
+      {`ALU_VOP2_FORMAT, 12'h???, 12'h028} : // V_ADDC_U32 - VIN
+         begin
+         	temp_vcc_wr_en <= 1'b1;
+         	out_vgpr_wr_en <= 1'b1;
+         	temp_sgpr_wr_en <= 1'b0;
+				 end
 		default:
 			begin
 				temp_vcc_wr_en <= 1'bx;

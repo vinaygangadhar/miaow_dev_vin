@@ -431,6 +431,11 @@ module simd_alu
                alu_vgpr_dest_data <= (alu_source1_data & alu_source2_data) | (~alu_source1_data & alu_source3_data);
                alu_dest_vcc_value <= alu_source_vcc_value;
            end
+         {1'b1, `ALU_VOP2_FORMAT, 12'h028} : //VOP2: V_ADDC_U32 - VIN
+            begin
+               alu_done <= 1'b1;
+               {alu_dest_vcc_value, alu_vgpr_dest_data} <= alu_source1_data + alu_source2_data + alu_source_vcc_value;
+						end
          default :
             begin
                alu_done <= 1'b0;
