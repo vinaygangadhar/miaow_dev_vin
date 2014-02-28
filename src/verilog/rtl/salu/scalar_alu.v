@@ -200,7 +200,80 @@ begin
                 24'h000000 : begin infogen = s1_low == s2_low;
                                    out_hi = 32'bx;
                              end
-                // s_cmp_le_i32 0x05
+                // s_cmp_lg_i32 0x01 - VIN
+                24'h000001 : begin infogen = s1_low != s2_low;
+                                   out_hi = 32'bx;
+                             end
+                // s_cmp_gt_i32 0x02 - VIN
+                24'h000002 : begin
+										if(s1_low[31] == 1'b1 & s2_low[31] == 1'b1)
+											begin
+												infogen = s1_low < s2_low;
+                        out_hi = 32'bx;
+                      end
+										else if(s1_low[31] == 1'b1)
+											begin
+												infogen = 1'b0;
+                        out_hi = 32'bx;
+										  end
+										else if(s2_low[31] == 1'b1)
+											begin
+												infogen = 1'b1;
+                        out_hi = 32'bx;
+											end
+										else
+											begin
+												infogen = s1_low > s2_low;
+                        out_hi = 32'bx;
+											end
+								end
+                // s_cmp_ge_i32 0x03 - VIN
+                24'h000003 : begin
+										if(s1_low[31] == 1'b1 & s2_low[31] == 1'b1)
+											begin
+												infogen = s1_low <= s2_low;
+                        out_hi = 32'bx;
+                      end
+										else if(s1_low[31] == 1'b1)
+											begin
+												infogen = 1'b0;
+                        out_hi = 32'bx;
+										  end
+										else if(s2_low[31] == 1'b1)
+											begin
+												infogen = 1'b1;
+                        out_hi = 32'bx;
+											end
+										else
+											begin
+												infogen = s1_low >= s2_low;
+                        out_hi = 32'bx;
+											end
+								end
+                // s_cmp_lt_i32 0x04 - VIN
+                24'h000004 : begin
+                    if (s1_low[31] == 1'b1 & s2_low[31] == 1'b1)
+                      begin
+                        infogen = s1_low > s2_low;
+                        out_hi = 32'bx;
+                      end
+                    else if (s1_low[31] == 1'b1)
+                      begin
+                        infogen = 1'b1;
+                        out_hi = 32'bx;
+                      end
+                    else if (s2_low[31] == 1'b1)
+                      begin
+                        infogen = 1'b0;
+                        out_hi = 32'bx;
+                      end
+                    else
+                      begin
+                        infogen = s1_low < s2_low;
+                        out_hi = 32'bx;
+                      end
+                end
+                // s_cmp_le_i32 0x05 - VIN
                 24'h000005 : begin
                     if (s1_low[31] == 1'b1 & s2_low[31] == 1'b1)
                       begin
@@ -223,8 +296,24 @@ begin
                         out_hi = 32'bx;
                       end
                 end
-                // s_cmp_ge_u32 0x09
+								// s_cmp_eq_u32 0x06 - VIN
+                24'h000006 : begin infogen = s1_low == s2_low;
+                                   out_hi = 32'bx;
+														 end
+								// s_cmp_lg_u32 0x07 - VIN
+                24'h000007 : begin infogen = s1_low != s2_low;
+                                   out_hi = 32'bx;
+														 end
+								// s_cmp_gt_u32 0x08 - VIN
+                24'h000008 : begin infogen = s1_low > s2_low;
+                                   out_hi = 32'bx;
+														 end
+								// s_cmp_ge_u32 0x09
                 24'h000009 : begin infogen = s1_low >= s2_low;
+                                   out_hi = 32'bx;
+														 end
+								// s_cmp_lt_u32 0x0A - VIN
+                24'h00000A : begin infogen = s1_low < s2_low;
                                    out_hi = 32'bx;
                              end
                 // s_cmp_le_u32 0x0B

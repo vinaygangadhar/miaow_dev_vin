@@ -253,10 +253,26 @@ always@ (control_en or opcode or rst) begin
 				casex(opcode[23:0])
 					// s_cmp_eq_i32	0x00
 					24'h000000 : begin scc_en <= 1'b1; end
+					// s_cmp_lg_i32	0x01 - VIN
+					24'h000001 : begin scc_en <= 1'b1; end
+					// s_cmp_gt_i32	0x02 - VIN
+					24'h000002 : begin scc_en <= 1'b1; end
+					// s_cmp_ge_i32	0x03 - VIN
+					24'h000003 : begin scc_en <= 1'b1; end
+					// s_cmp_lt_i32	0x04 - VIN
+					24'h000004 : begin scc_en <= 1'b1; end
 					// s_cmp_le_i32	0x05
 					24'h000005 : begin scc_en <= 1'b1; end
-					// s_cmp_ge_u32	0x09
+					// s_cmp_eq_u32	0x06 - VIN
+					24'h000006 : begin scc_en <= 1'b1; end
+					// s_cmp_lg_u32	0x07 - VIN
+					24'h000007 : begin scc_en <= 1'b1; end
+					// s_cmp_gt_u32	0x08 - VIN
+					24'h000008 : begin scc_en <= 1'b1; end
+					// s_cmp_ge_u32	0x09 - VIN
 					24'h000009 : begin scc_en <= 1'b1; end
+					// s_cmp_lt_u32	0x0A - VIN
+					24'h00000A : begin scc_en <= 1'b1; end
 					// s_cmp_le_u32	0x0B
 					24'h00000B : begin scc_en <= 1'b1; end
 					// default
