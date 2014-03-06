@@ -21,6 +21,7 @@ module flag_generator(
  dest2_width,
  fp_instr,
  copy_d1_to_s4,
+ copy_d1_to_s3,
  copy_d1_to_s1,
  d1_vdst_to_sdst
 );
@@ -48,6 +49,7 @@ output [2:0] dest1_width;
 output [2:0] dest2_width;
 output fp_instr;
 output copy_d1_to_s4;
+output copy_d1_to_s3;
 output copy_d1_to_s1;
 output d1_vdst_to_sdst;
 
@@ -71,6 +73,7 @@ reg [2:0] dest1_width;
 reg [2:0] dest2_width;
 reg fp_instr;
 reg copy_d1_to_s4;
+reg copy_d1_to_s3;
 reg copy_d1_to_s1;
 reg d1_vdst_to_sdst;
 
@@ -113,6 +116,7 @@ begin
         fp_instr <= 1'b0;
         fp_instr <= 1'b0;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -139,6 +143,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b0;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -165,6 +170,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b0;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -191,6 +197,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b0;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -217,6 +224,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b0;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -243,6 +251,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b0;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -269,6 +278,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b0;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -295,6 +305,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b0;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -321,6 +332,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b0;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -347,6 +359,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b0;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -373,6 +386,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b0;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -400,6 +414,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b0;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -426,6 +441,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b0;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -452,6 +468,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b0;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -478,6 +495,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b0;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -504,6 +522,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b0;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -530,6 +549,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b0;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -556,6 +576,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b0;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -582,6 +603,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b0;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -608,6 +630,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b0;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -634,6 +657,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b0;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -660,6 +684,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b0;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -686,6 +711,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b0;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -713,6 +739,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b0;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -739,6 +766,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b0;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -765,6 +793,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b0;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -791,6 +820,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b0;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -817,6 +847,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b0;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -843,6 +874,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b0;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -869,6 +901,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b0;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -895,6 +928,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b0;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -921,6 +955,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b0;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -947,6 +982,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b0;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -973,6 +1009,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b0;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -999,6 +1036,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b0;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -1026,6 +1064,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b0;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -1052,6 +1091,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b0;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -1078,6 +1118,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b0;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -1104,6 +1145,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b0;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -1130,6 +1172,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b0;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -1156,6 +1199,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b0;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -1182,6 +1226,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b0;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -1208,6 +1253,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b0;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -1234,6 +1280,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b0;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -1260,6 +1307,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b0;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -1286,6 +1334,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b0;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -1312,6 +1361,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b0;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -1338,6 +1388,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b0;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -1364,6 +1415,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b0;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -1390,6 +1442,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b0;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -1416,6 +1469,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b0;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -1442,6 +1496,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b0;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -1468,6 +1523,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b0;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -1494,6 +1550,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b0;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -1520,6 +1577,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b0;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -1546,6 +1604,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b0;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -1572,6 +1631,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b0;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -1598,6 +1658,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b0;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -1624,6 +1685,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b0;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -1650,6 +1712,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b0;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -1676,6 +1739,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b0;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -1702,6 +1766,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b0;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -1728,6 +1793,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b0;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -1754,6 +1820,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b0;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -1780,6 +1847,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b0;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -1806,6 +1874,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b0;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -1832,6 +1901,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b0;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -1858,6 +1928,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b0;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -1885,6 +1956,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b0;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -1911,6 +1983,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b0;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b1;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -1937,6 +2010,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b0;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b1;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -1965,6 +2039,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b1;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -1992,6 +2067,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b0;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -2019,6 +2095,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b0;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -2045,6 +2122,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b0;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -2071,6 +2149,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b1;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -2097,6 +2176,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b1;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -2123,6 +2203,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b1;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -2149,6 +2230,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b1;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -2175,6 +2257,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b1;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -2201,6 +2284,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b1;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -2227,6 +2311,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b1;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -2253,6 +2338,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b1;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -2279,6 +2365,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b1;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -2305,6 +2392,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b1;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -2331,6 +2419,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b1;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -2357,6 +2446,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b1;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -2383,6 +2473,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b1;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -2409,6 +2500,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b1;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -2435,6 +2527,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b1;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -2461,6 +2554,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b1;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -2487,6 +2581,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b1;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -2513,6 +2608,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b1;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -2539,6 +2635,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b1;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -2565,6 +2662,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b1;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -2591,6 +2689,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b1;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -2617,6 +2716,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b1;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -2643,6 +2743,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b1;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -2669,6 +2770,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b1;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -2695,6 +2797,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b1;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -2721,6 +2824,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b1;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -2747,6 +2851,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b1;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -2773,6 +2878,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b1;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -2799,6 +2905,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b1;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -2825,6 +2932,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b1;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -2851,6 +2959,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b1;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -2877,6 +2986,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b1;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -2903,6 +3013,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b0;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -2929,6 +3040,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b0;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -2955,6 +3067,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b0;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -2981,6 +3094,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b0;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -3007,6 +3121,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b0;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -3033,6 +3148,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b1;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -3060,6 +3176,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b0;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -3086,6 +3203,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b0;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -3112,6 +3230,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b0;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -3138,6 +3257,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b1;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -3164,6 +3284,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b1;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -3190,6 +3311,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b1;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -3216,6 +3338,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b1;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -3242,6 +3365,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b0;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -3268,6 +3392,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b0;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -3294,6 +3419,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b0;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -3320,6 +3446,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b0;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -3346,6 +3473,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b1;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -3372,6 +3500,34 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b1;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
+        copy_d1_to_s1 <= 1'b0;
+        d1_vdst_to_sdst <= 1'b0;
+      end
+    //VOP2: V_MADMK_F32 - VIN
+    {2'b01,8'd4,24'h20}:
+      begin
+        wf_halt <= 1'b0;
+        wf_barrier <= 1'b0;
+        wf_branch <= 1'b0;
+        wf_waitcnt <= 1'b0;
+        scc_write <= 1'b0;
+        scc_read <= 1'b0;
+        vcc_write <= 1'b0;
+        vcc_read <= 1'b0;
+        exec_write <=1'b0;
+        exec_read <= 1'b1;
+        M0_write <= 1'b0;
+        M0_read <= 1'b0;
+        s1_width <= `DECODE_BIT32;
+        s2_width <= `DECODE_BIT32;
+        s3_width <= `DECODE_BIT0;
+        s4_width <= `DECODE_BIT0;
+        dest1_width <= `DECODE_BIT32;
+        dest2_width <= `DECODE_BIT0;
+        fp_instr <= 1'b1;
+        copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -3398,6 +3554,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b0;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -3424,6 +3581,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b0;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -3450,6 +3608,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b0;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -3476,6 +3635,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b0;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -3502,6 +3662,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b0;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -3528,6 +3689,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b0;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -3554,6 +3716,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b0;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -3580,6 +3743,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b0;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -3606,6 +3770,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b0;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -3632,6 +3797,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b0;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -3658,6 +3824,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b0;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -3684,6 +3851,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b0;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -3710,6 +3878,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b0;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -3736,10 +3905,11 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b0;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
-    //VOP2: V_MAC_F32
+    //VOP2: V_MAC_F32  - VIN
     {2'b01,8'd4,24'h1f}:
       begin
         wf_halt <= 1'b0;
@@ -3756,12 +3926,13 @@ begin
         M0_read <= 1'b0;
         s1_width <= `DECODE_BIT32;
         s2_width <= `DECODE_BIT32;
-        s3_width <= `DECODE_BIT0;
-        s4_width <= `DECODE_BIT32;
+        s3_width <= `DECODE_BIT32; // `DECODE_BIT0
+        s4_width <= `DECODE_BIT32; 
         dest1_width <= `DECODE_BIT32;
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b1;
         copy_d1_to_s4 <= 1'b1;
+        copy_d1_to_s3 <= 1'b1;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -3788,6 +3959,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b0;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -3814,6 +3986,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b0;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -3840,6 +4013,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b0;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -3866,6 +4040,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b0;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -3892,6 +4067,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b0;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -3918,6 +4094,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b0;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -3945,6 +4122,7 @@ begin
         dest2_width <= `DECODE_BIT32;
         fp_instr <= 1'b0;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -3971,6 +4149,7 @@ begin
         dest2_width <= `DECODE_BIT32;
         fp_instr <= 1'b0;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -3997,6 +4176,7 @@ begin
         dest2_width <= `DECODE_BIT32;
         fp_instr <= 1'b0;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -4023,6 +4203,7 @@ begin
         dest2_width <= `DECODE_BIT32;
         fp_instr <= 1'b0;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -4049,6 +4230,7 @@ begin
         dest2_width <= `DECODE_BIT32;
         fp_instr <= 1'b0;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -4075,6 +4257,7 @@ begin
         dest2_width <= `DECODE_BIT32;
         fp_instr <= 1'b0;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -4103,6 +4286,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b1;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b1;
       end
@@ -4130,6 +4314,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b0;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b1;
       end
@@ -4156,6 +4341,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b0;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -4182,6 +4368,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b0;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -4208,6 +4395,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b0;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -4234,6 +4422,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b1;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -4260,6 +4449,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b1;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -4286,6 +4476,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b1;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -4312,6 +4503,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b1;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -4338,6 +4530,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b0;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -4364,6 +4557,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b0;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -4390,6 +4584,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b0;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -4416,6 +4611,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b0;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -4442,6 +4638,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b1;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -4468,6 +4665,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b1;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -4494,6 +4692,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b0;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -4520,6 +4719,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b0;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -4546,6 +4746,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b0;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -4572,6 +4773,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b0;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -4598,6 +4800,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b0;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -4624,6 +4827,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b0;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -4650,6 +4854,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b0;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -4676,6 +4881,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b0;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -4702,6 +4908,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b0;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -4728,6 +4935,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b0;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -4754,6 +4962,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b0;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -4780,6 +4989,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b0;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -4806,6 +5016,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b0;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -4832,6 +5043,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b0;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -4858,6 +5070,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b1;
         copy_d1_to_s4 <= 1'b1;
+        copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -4884,6 +5097,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b1;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -4910,6 +5124,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b0;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -4936,6 +5151,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b0;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -4962,6 +5178,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b0;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -4988,6 +5205,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b0;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -5014,6 +5232,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b0;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -5040,6 +5259,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b1;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -5066,6 +5286,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b1;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -5092,6 +5313,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b1;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -5118,6 +5340,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b0;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -5144,6 +5367,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b0;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -5170,6 +5394,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b1;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -5196,6 +5421,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b0;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -5222,6 +5448,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b0;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -5248,6 +5475,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b1;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -5274,6 +5502,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b0;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -5300,6 +5529,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b0;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -5326,6 +5556,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b0;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -5352,6 +5583,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b0;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -5378,6 +5610,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b0;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -5404,6 +5637,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b0;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -5430,6 +5664,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b0;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -5456,6 +5691,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b1;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -5482,6 +5718,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b1;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -5508,6 +5745,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b1;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -5534,6 +5772,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b1;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -5560,6 +5799,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b1;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -5586,6 +5826,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b1;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -5612,6 +5853,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b1;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -5638,6 +5880,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b1;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -5664,6 +5907,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b1;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -5690,6 +5934,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b1;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -5716,6 +5961,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b1;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -5742,6 +5988,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b1;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -5768,6 +6015,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b1;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -5794,6 +6042,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b1;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -5820,6 +6069,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b1;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -5846,6 +6096,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b1;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -5872,6 +6123,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b1;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -5898,6 +6150,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b1;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -5924,6 +6177,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b1;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -5950,6 +6204,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b1;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -5976,6 +6231,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b1;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -6002,6 +6258,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b1;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -6028,6 +6285,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b1;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -6054,6 +6312,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b1;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -6080,6 +6339,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b1;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -6106,6 +6366,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b1;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -6132,6 +6393,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b1;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -6158,6 +6420,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b1;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -6184,6 +6447,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b1;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -6210,6 +6474,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b1;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -6236,6 +6501,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b1;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -6262,6 +6528,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b1;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -6288,6 +6555,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b0;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -6314,6 +6582,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b0;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -6340,6 +6609,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b0;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -6366,6 +6636,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b0;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -6392,6 +6663,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b0;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -6418,6 +6690,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b1;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -6444,6 +6717,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b1;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -6470,6 +6744,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b1;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -6496,6 +6771,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b1;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -6522,6 +6798,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b1;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -6548,6 +6825,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b0;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -6574,6 +6852,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b0;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -6600,6 +6879,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b0;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -6626,6 +6906,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b0;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -6653,6 +6934,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b0;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -6679,6 +6961,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b0;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -6705,6 +6988,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b0;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -6731,6 +7015,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b0;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -6757,6 +7042,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b0;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -6783,6 +7069,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b0;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -6809,6 +7096,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b0;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -6835,6 +7123,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b0;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -6861,6 +7150,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b0;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -6887,11 +7177,12 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b0;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
     //LDS/GDS --------------------------------------------
-    //LDS/GDS: DS_WRITE_32
+    //LDS/GDS: DS_WRITE_B32
     {2'b11,8'd2,24'hd}:
       begin
         wf_halt <= 1'b0;
@@ -6914,10 +7205,11 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b0;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
-    //LDS/GDS: DS_READ_32
+    //LDS/GDS: DS_READ_B32
     {2'b11,8'd2,24'h36}:
       begin
         wf_halt <= 1'b0;
@@ -6940,6 +7232,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b0;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -6967,6 +7260,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b0;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -6993,6 +7287,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b0;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -7019,6 +7314,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b0;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -7045,6 +7341,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b0;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -7071,6 +7368,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b0;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -7097,6 +7395,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b0;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -7123,6 +7422,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b0;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end
@@ -7149,6 +7449,7 @@ begin
         dest2_width <= `DECODE_BIT0;
         fp_instr <= 1'b0;
         copy_d1_to_s4 <= 1'b0;
+				copy_d1_to_s3 <= 1'b0;
         copy_d1_to_s1 <= 1'b0;
         d1_vdst_to_sdst <= 1'b0;
       end

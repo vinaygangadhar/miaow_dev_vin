@@ -128,6 +128,12 @@ always @ (in_opcode) begin
 				out_vgpr_wr_en <= 1'b1;
 				temp_sgpr_wr_en <= 1'b0;
 			end
+		{`ALU_VOP2_FORMAT, 12'h???, 12'h012} : //V_MAX_I32  - VIN
+			begin
+				temp_vcc_wr_en <= 1'b0;
+				out_vgpr_wr_en <= 1'b1;
+				temp_sgpr_wr_en <= 1'b0;
+			end
 		{`ALU_VOP2_FORMAT, 12'h???, 12'h013} : //V_MIN_U32
 			begin
 				temp_vcc_wr_en <= 1'b0;
