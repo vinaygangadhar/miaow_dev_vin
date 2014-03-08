@@ -183,6 +183,12 @@ always@ (control_en or opcode or rst) begin
 						scc_en <= 1'b1;
 						bit64_op <= 1'b0;
 					end
+					// s_max_i32	0x08 - VIN
+					24'h000008 : begin
+						//sgpr_en[1] <= 1'b0;
+						scc_en <= 1'b1;
+						bit64_op <= 1'b0;
+					end
 					// s_and_b32	0x0E
 					24'h00000E : begin
 						//sgpr_en[1] <= 1'b0;
@@ -191,6 +197,12 @@ always@ (control_en or opcode or rst) begin
 					end
 					// s_and_b64	0x0F
 					24'h00000F : begin
+						//sgpr_en[1] <= 1'b1;
+						scc_en <= 1'b1;
+						bit64_op <= 1'b1;
+					end
+					// s_or_b64	0x11
+					24'h000011 : begin
 						//sgpr_en[1] <= 1'b1;
 						scc_en <= 1'b1;
 						bit64_op <= 1'b1;

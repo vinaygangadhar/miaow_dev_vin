@@ -165,6 +165,12 @@ module simd_alu
                alu_vgpr_dest_data <= alu_source2_data >> alu_source1_data[4:0];
                alu_dest_vcc_value <= alu_source_vcc_value;
            end
+         {1'b1, `ALU_VOP2_FORMAT, 12'h018} : //VOP2: V_ASHRREV_I32 - VIN
+            begin
+               alu_done <= 1'b1;
+               alu_vgpr_dest_data <= alu_source2_data >> alu_source1_data[4:0];
+               alu_dest_vcc_value <= alu_source_vcc_value;
+           end
          {1'b1, `ALU_VOP2_FORMAT, 12'h014} : //VOP2: V_MAX_U32
             begin
                alu_done <= 1'b1;
@@ -431,6 +437,12 @@ module simd_alu
                alu_vgpr_dest_data <= (alu_source1_data >> alu_source2_data[4:0]) & ((1<<alu_source3_data[4:0])-1);
                alu_dest_vcc_value <= alu_source_vcc_value;
            end
+         {1'b1, `ALU_VOP3A_FORMAT, 12'h149} : //VOP3A: V_BFE_I32 - VIN
+            begin
+               alu_done <= 1'b1;
+               alu_vgpr_dest_data <= (alu_source1_data >> alu_source2_data[4:0]) & ((1<<alu_source3_data[4:0])-1);
+               alu_dest_vcc_value <= alu_source_vcc_value;
+           end
          {1'b1, `ALU_VOP3A_FORMAT, 12'h14A} : //VOP3A: V_BFI_B32
             begin
                alu_done <= 1'b1;
@@ -441,6 +453,11 @@ module simd_alu
             begin
                alu_done <= 1'b1;
                {alu_dest_vcc_value, alu_vgpr_dest_data} <= alu_source1_data + alu_source2_data + alu_source_vcc_value;
+						end
+         {1'b1, `ALU_VOP2_FORMAT, 12'h027} : //VOP2: V_SUBREV_I32 - VIN
+            begin
+               alu_done <= 1'b1;
+               {alu_dest_vcc_value, alu_vgpr_dest_data} <= alu_source2_data - alu_source1_data;
 						end
          default :
             begin

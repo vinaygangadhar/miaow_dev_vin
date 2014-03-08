@@ -152,6 +152,12 @@ always @ (in_opcode) begin
 				out_vgpr_wr_en <= 1'b1;
 				temp_sgpr_wr_en <= 1'b0;
 			end
+		{`ALU_VOP2_FORMAT, 12'h???, 12'h018} : //V_ASHRREV_I32 - VIN
+			begin
+				temp_vcc_wr_en <= 1'b0;
+				out_vgpr_wr_en <= 1'b1;
+				temp_sgpr_wr_en <= 1'b0;
+			end
 		{`ALU_VOP2_FORMAT, 12'h???, 12'h000} : //V_CNDMASK_B32
 			begin
 				temp_vcc_wr_en <= 1'b0;
@@ -386,6 +392,12 @@ always @ (in_opcode) begin
          	out_vgpr_wr_en <= 1'b1;
          	temp_sgpr_wr_en <= 1'b0;
          end
+      {`ALU_VOP3A_FORMAT, 12'h???, 12'h149} : // V_BFE_I32 = VIN
+         begin
+         	temp_vcc_wr_en <= 1'b0;
+         	out_vgpr_wr_en <= 1'b1;
+         	temp_sgpr_wr_en <= 1'b0;
+         end
       {`ALU_VOP3A_FORMAT, 12'h???, 12'h14A} : // V_BFI_B32
          begin
          	temp_vcc_wr_en <= 1'b0;
@@ -393,6 +405,12 @@ always @ (in_opcode) begin
          	temp_sgpr_wr_en <= 1'b0;
          end
       {`ALU_VOP2_FORMAT, 12'h???, 12'h028} : // V_ADDC_U32 - VIN
+         begin
+         	temp_vcc_wr_en <= 1'b1;
+         	out_vgpr_wr_en <= 1'b1;
+         	temp_sgpr_wr_en <= 1'b0;
+				 end
+      {`ALU_VOP2_FORMAT, 12'h???, 12'h027} : // V_SUBREV_I32 - VIN
          begin
          	temp_vcc_wr_en <= 1'b1;
          	out_vgpr_wr_en <= 1'b1;

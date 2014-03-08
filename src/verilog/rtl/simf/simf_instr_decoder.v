@@ -308,6 +308,24 @@ always @ (in_opcode) begin
       		out_vgpr_wr_en <= 1'b1;
             temp_sgpr_wr_en <= 1'b0;
 				 end
+      {`ALU_VOP3A_FORMAT, 12'h???, 12'h141} : //V_MAD_F32  - VIN
+         begin
+      		temp_vcc_wr_en <= 1'b0;
+      		out_vgpr_wr_en <= 1'b1;
+            temp_sgpr_wr_en <= 1'b0;
+				 end
+      {`ALU_VOP1_FORMAT, 12'h???, 12'h033} : //V_SQRT_F32  - VIN
+         begin
+      		temp_vcc_wr_en <= 1'b0;
+      		out_vgpr_wr_en <= 1'b1;
+            temp_sgpr_wr_en <= 1'b0;
+				 end
+      {`ALU_VOP1_FORMAT, 12'h???, 12'h02A} : //V_RCP_F32  - VIN
+         begin
+      		temp_vcc_wr_en <= 1'b0;
+      		out_vgpr_wr_en <= 1'b1;
+            temp_sgpr_wr_en <= 1'b0;
+				 end
 		default:
 			begin
 				temp_vcc_wr_en <= 1'bx;

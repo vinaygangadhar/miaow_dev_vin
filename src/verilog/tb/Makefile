@@ -4,6 +4,8 @@ VCS_OPTIONS += -debug_all
 VCS_OPTIONS += +v2k
 VCS_OPTIONS += -sverilog
 VCS_OPTIONS += -l compile.log
+VCS_SIM = /s/synopsys-2012_06_27/@sys/F-2011.12-SP1/bin/vcs
+
 
 ifdef GATES
 VCS_OPTIONS += -timescale=1ps/1ps
@@ -30,10 +32,10 @@ build:
 
 ifndef GATES
 compile: build
-	vcs $(VCS_OPTIONS) ../rtl/common/global_definitions.v ../rtl/common/issue_definitions.v ../rtl/alu/alu_definitions.v ../rtl/lsu/lsu_definitions.v ../rtl/decode/decode_definitions.v *.v *.c ../rtl/compute_unit/build/*.v ../rtl/decode/build/*.v ../rtl/exec/build/*.v ../rtl/fetch/build/*.v ../rtl/instr_buffer/build/*.v ../rtl/issue/build/*.v ../rtl/lsu/build/*.v ../rtl/memory/build/*.v ../rtl/memory/*.c ../rtl/salu/build/*.v ../rtl/sgpr/build/*.v ../rtl/alu/build/*.v ../rtl/simd/build/*.v ../rtl/simf/build/*.v ../rtl/rfa/build/*.v ../rtl/tracemon/build/*.v ../rtl/tracemon/*.c ../rtl/vgpr/build/*.v ../rtl/wavepool/build/*.v -y ../rtl/common/build/
+	$(VCS_SIM) $(VCS_OPTIONS) ../rtl/common/global_definitions.v ../rtl/common/issue_definitions.v ../rtl/alu/alu_definitions.v ../rtl/lsu/lsu_definitions.v ../rtl/decode/decode_definitions.v *.v *.c ../rtl/compute_unit/build/*.v ../rtl/decode/build/*.v ../rtl/exec/build/*.v ../rtl/fetch/build/*.v ../rtl/instr_buffer/build/*.v ../rtl/issue/build/*.v ../rtl/lsu/build/*.v ../rtl/memory/build/*.v ../rtl/memory/*.c ../rtl/salu/build/*.v ../rtl/sgpr/build/*.v ../rtl/alu/build/*.v ../rtl/simd/build/*.v ../rtl/simf/build/*.v ../rtl/rfa/build/*.v ../rtl/tracemon/build/*.v ../rtl/tracemon/*.c ../rtl/vgpr/build/*.v ../rtl/wavepool/build/*.v -y ../rtl/common/build/
 else
 compile: build
-	vcs $(VCS_OPTIONS) *.v *.c ../../../syn/synopsys/synth/*.syn.v ../rtl/common/global_definitions.v ../rtl/vgpr/build/*.v ../rtl/sgpr/build/*.v ../rtl/instr_buffer/build/*.v ../rtl/memory/build/*.v ../rtl/tracemon/build/*.v ../rtl/tracemon/*.c -y ../rtl/common/build/ -v ../lib/saed32nm_modified.v
+	$(VCS_SIM) $(VCS_OPTIONS) *.v *.c ../../../syn/synopsys/synth/*.syn.v ../rtl/common/global_definitions.v ../rtl/vgpr/build/*.v ../rtl/sgpr/build/*.v ../rtl/instr_buffer/build/*.v ../rtl/memory/build/*.v ../rtl/tracemon/build/*.v ../rtl/tracemon/*.c -y ../rtl/common/build/ -v ../lib/saed32nm_modified.v
 endif
 
 clean:

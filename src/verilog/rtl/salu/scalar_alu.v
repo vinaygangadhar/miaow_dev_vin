@@ -120,6 +120,13 @@ begin
                     partial_sum = 32'bx;
                     out_hi = 32'bx;
                 end
+                // s_max_i32    0x08
+                24'h000008 : begin
+                    out_low     = (s1_low > s2_low) ? s1_low : s2_low;
+                    infogen     = s1_low > s2_low;
+                    partial_sum = 32'bx;
+                    out_hi = 32'bx;
+                end
                 // s_max_u32    0x09
                 24'h000009 : begin
                     out_low     = (s1_low > s2_low) ? s1_low : s2_low;
@@ -137,6 +144,12 @@ begin
                 // s_and_b64    0x0F
                 24'h00000f : begin
                     {out_hi, out_low} = s1 & s2;
+                    infogen           = 1'bx;
+                    partial_sum       = 32'bx;
+                end
+                // s_or_b64    0x11
+                24'h000011 : begin
+                    {out_hi, out_low} = s1 | s2;
                     infogen           = 1'bx;
                     partial_sum       = 32'bx;
                 end
@@ -401,6 +414,8 @@ begin
                 24'h000003 : begin scc_val = partial_sum[31] ^ infogen; end
                 // s_min_u32    0x07
                 24'h000007 : begin scc_val = infogen; end
+                // s_max_i32    0x08
+                24'h000008 : begin scc_val = infogen; end
                 // s_max_u32    0x09
                 24'h000009 : begin scc_val = infogen; end
                 // s_and_b32    0x0E
@@ -409,6 +424,8 @@ begin
                 24'h00000F : begin scc_val = |out; end
                 // s_or_b32     0x10
                 24'h000010 : begin scc_val = |out_low; end
+                // s_or_b64     0x11
+                24'h000011 : begin scc_val = |out; end
                 // s_andn2_b64  0x15
                 24'h000015 : begin scc_val = |out; end
                 // s_lshl_b32   0x1E

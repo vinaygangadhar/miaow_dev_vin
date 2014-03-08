@@ -41,9 +41,18 @@ module simf_alu
    reg [31:0] final_source1_data;
    reg [31:0] final_source2_data;
 	 reg [31:0] final_source3_data; // VIN
-	 reg [31:0] temp_dest_data; //VIN
+	 reg [31:0] temp_dest_data; 		//VIN
 
-   //Signals used by the fpu
+   //Signals for  NEG bit operation  - VIN
+	 wire [31:0]     twos_compliment_inp1_s;
+   wire [31:0]     twos_compliment_inp2_s;
+   wire [31:0]     twos_compliment_inp3_s;
+
+   reg [31:0] abs_signed_source1_data;
+   reg [31:0] abs_signed_source2_data;
+	 reg [31:0] abs_signed_source3_data;
+
+	 //Signals used by the fpu
    reg [31:0] fpu_opa_i;
    reg [31:0] fpu_opb_i;
    reg [2:0] fpu_op_i;
@@ -53,8 +62,6 @@ module simf_alu
    wire fpu_ready_o;
 
    assign fpu_rmode_i = 2'b00;
-
-   assign alu_sgpr_dest_data = alu_dest_vcc_value;
 
    fpu_arith fpu(
                .clk(clk),
@@ -76,7 +83,60 @@ module simf_alu
                .snan_o()
                );
 
-   //TODO implement NEG bit operation
+   assign alu_sgpr_dest_data = alu_dest_vcc_value;
+   
+   assign twos_compliment_inp1_s = ~alu_source1_data + 32'd1;
+   assign twos_compliment_inp2_s = ~alu_source2_data + 32'd1;
+   assign twos_compliment_inp3_s = ~alu_source3_data + 32'd1;
+   
+
+   always @* begin
+      casex(alu_control[31:24])
+         {`ALU_VOP3A_FORMAT} :
+            begin
+               abs_signed_source1_data <= alu_control[`ALU_VOP3A_ABS1_POS]
+                                          ? (alu_source1_data[31] ? twos_compliment_inp1_s : alu_source1_data)
+                                          : alu_source1_data;
+               abs_signed_source2_data <= alu_control[`ALU_VOP3A_ABS2_POS]
+                                          ? (alu_source2_data[31] ? twos_compliment_inp2_s : alu_source2_data)
+                                          : alu_source2_data;
+               abs_signed_source3_data <= alu_control[`ALU_VOP3A_ABS3_POS]
+                                          ? (alu_source3_data[31] ? twos_compliment_inp3_s : alu_source3_data)
+                                          : alu_source3_data;
+            end
+         default : //VOP1, VOP2 and VOPC
+            begin
+              abs_signed_source1_data <= alu_source1_data;
+              abs_signed_source2_data <= alu_source2_data;
+              abs_signed_source3_data <= alu_source3_data;
+						end
+      endcase
+   end 
+
+   always @* begin
+      casex(alu_control[31:24])
+         {`ALU_VOP3A_FORMAT} :
+            begin
+               final_source1_data <= alu_control[`ALU_VOP3A_NEG1_POS] ? (~abs_signed_source1_data + 32'd1) : abs_signed_source1_data;
+               final_source2_data <= alu_control[`ALU_VOP3A_NEG2_POS] ? (~abs_signed_source2_data + 32'd1) : abs_signed_source2_data;
+               final_source3_data <= alu_control[`ALU_VOP3A_NEG3_POS] ? (~abs_signed_source3_data + 32'd1) : abs_signed_source3_data;
+						 end
+         {`ALU_VOP3B_FORMAT} :
+            begin
+               final_source1_data <= alu_control[`ALU_VOP3B_NEG1_POS] ? (~abs_signed_source1_data + 32'd1) : abs_signed_source1_data;
+               final_source2_data <= alu_control[`ALU_VOP3B_NEG2_POS] ? (~abs_signed_source2_data + 32'd1) : abs_signed_source2_data;
+               final_source3_data <= alu_control[`ALU_VOP3B_NEG3_POS] ? (~abs_signed_source3_data + 32'd1) : abs_signed_source3_data;
+						end
+         default : //VOP1, VOP2 and VOPC
+            begin
+              final_source1_data <= abs_signed_source1_data;
+              final_source2_data <= abs_signed_source2_data;
+              final_source3_data <= abs_signed_source3_data;
+						end
+      endcase
+   end 
+
+/*	 
    always @* begin
       casex(alu_control[31:24])
          {`ALU_VOP3A_FORMAT} :
@@ -99,7 +159,8 @@ module simf_alu
             end
       endcase
    end // always @ (...
-
+*/
+	
    always @* begin
       casex({alu_source_exec_value, alu_control[31:24], alu_control[11:0]})
          {1'b0, 8'h??, 12'h???} : //EXEC disabled
@@ -152,6 +213,16 @@ module simf_alu
                alu_vgpr_dest_data <= (final_source1_data >= final_source2_data) ? final_source1_data : final_source2_data;
                alu_dest_vcc_value <= alu_source_vcc_value;
 						end
+         {1'b1, `ALU_VOP1_FORMAT, 12'h02A} : //V_RCP_F32  - VIN
+            begin
+               alu_done <= 1'b1;
+               fpu_start_i <= 1'b0;
+               fpu_op_i <= 3'b011;
+               fpu_opa_i <= final_source3_data;
+               fpu_opb_i <= final_source1_data;
+               alu_vgpr_dest_data <= fpu_output_o;
+               alu_dest_vcc_value <= alu_source_vcc_value;
+						end
          {1'b1, `ALU_VOP2_FORMAT, 12'h008} : //V_MUL_F32
             begin
                alu_done <= fpu_ready_o;
@@ -163,6 +234,76 @@ module simf_alu
                alu_dest_vcc_value <= alu_source_vcc_value;
            end
          {1'b1, `ALU_VOP2_FORMAT, 12'h01F} : //V_MAC_F32 - VIN
+            begin
+               alu_dest_vcc_value <= alu_source_vcc_value;
+							 alu_vgpr_dest_data <= temp_dest_data;
+							 
+							 casex(fpu_ready_o)
+								1'b0 :
+									begin
+										fpu_start_i <= alu_start;
+										fpu_op_i <= 3'b010;
+										fpu_opa_i <= final_source1_data;
+										fpu_opb_i <= final_source2_data;
+										temp_dest_data <= fpu_output_o;
+										alu_done <= 1'b0;
+									end
+								1'b1 :
+									begin
+										fpu_start_i <= 1'b1;
+										fpu_op_i <= 3'b000;
+										fpu_opa_i <= temp_dest_data;
+										fpu_opb_i <= final_source3_data;
+									  temp_dest_data <= fpu_output_o;	
+										alu_done <= 1'b1;
+									end
+								default :
+									begin
+               			fpu_start_i <= 1'b0;
+               			fpu_op_i <= 3'b000;
+               			fpu_opa_i <= 32'b0;
+               			fpu_opb_i <= 32'b0;
+               			temp_dest_data <= {32{1'bx}};
+										alu_done <= 1'b1;
+           				end
+							endcase
+						end
+         {1'b1, `ALU_VOP2_FORMAT, 12'h020} : //V_MADMK_F32 - VIN
+            begin
+               alu_dest_vcc_value <= alu_source_vcc_value;
+							 alu_vgpr_dest_data <= temp_dest_data;
+							 
+							 casex(fpu_ready_o)
+								1'b0 :
+									begin
+										fpu_start_i <= alu_start;
+										fpu_op_i <= 3'b010;
+										fpu_opa_i <= final_source1_data;
+										fpu_opb_i <= final_source3_data;
+										temp_dest_data <= fpu_output_o;
+										alu_done <= 1'b0;
+									end
+								1'b1 :
+									begin
+										fpu_start_i <= 1'b1;
+										fpu_op_i <= 3'b000;
+										fpu_opa_i <= temp_dest_data;
+										fpu_opb_i <= final_source2_data;
+									  temp_dest_data <= fpu_output_o;	
+										alu_done <= 1'b1;
+									end
+								default :
+									begin
+               			fpu_start_i <= 1'b0;
+               			fpu_op_i <= 3'b000;
+               			fpu_opa_i <= 32'b0;
+               			fpu_opb_i <= 32'b0;
+               			temp_dest_data <= {32{1'bx}};
+										alu_done <= 1'b1;
+           				end
+							endcase
+						end
+         {1'b1, `ALU_VOP3A_FORMAT, 12'h141} : //V_MAD_F32 - VIN
             begin
                alu_dest_vcc_value <= alu_source_vcc_value;
 							 alu_vgpr_dest_data <= temp_dest_data;

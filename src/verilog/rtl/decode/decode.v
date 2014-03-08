@@ -162,9 +162,12 @@ wire s4_explicit_M0;
 wire dest1_explicit_M0;
 wire dest2_explicit_M0;
 
+wire [1:0] ext_literal_s3;
 wire long_instr_or_literal_required;
 wire [31:0] imm1_frominstr_fromliteral;
 reg [31:0] issue_imm_value1;
+reg [9:0] s3_field_const; //VIN
+
 
 wire [32:0] s1_fp_constant;
 wire [32:0] s2_fp_constant;
@@ -256,6 +259,7 @@ flag_generator flaggen(
   .copy_d1_to_s4(copy_d1_to_s4),
 	.copy_d1_to_s3(copy_d1_to_s3),
   .copy_d1_to_s1(copy_d1_to_s1),
+	.ext_literal_s3(ext_literal_s3),
   .d1_vdst_to_sdst(d1_vdst_to_sdst)
 );
 reg_field_encoder s1_encoder (
@@ -343,7 +347,21 @@ assign issue_m0_rd = implicit_M0_read | s1_explicit_M0 | s2_explicit_M0 | s3_exp
 assign dest1_field_converted = d1_vdst_to_sdst ? {dest1_field[9],2'b0,dest1_field[6:0]} : dest1_field;
 assign s4_field_converted = copy_d1_to_s4 ? dest1_field : s4_field;
 assign s1_field_converted = copy_d1_to_s1 ? dest1_field : s1_field;
-assign s3_field_converted = copy_d1_to_s3 ? dest1_field : s3_field;
+
+/* VIN */
+always@(s3_field or ext_literal_s3)
+begin
+	casex(ext_literal_s3)
+		2'b00 : s3_field_const <= s3_field;
+		2'b01 : s3_field_const <= `EXT_LIT_128;
+		2'b10 : s3_field_const <= `EXT_LIT_242;
+		2'b11 : s3_field_const <= `EXT_LIT_255;
+		default : s3_field_const <= s3_field;
+	endcase
+end
+/* VIN */
+
+assign s3_field_converted = copy_d1_to_s3 ? dest1_field : s3_field_const; // VIN
 assign issue_fu = fp_instr ? 2'b0 : raw_fu;
 
 assign width_qualified_s1_valid = (s1_width == `DECODE_BIT0) ? 1'b0 : encoded_s1_reg[11];
