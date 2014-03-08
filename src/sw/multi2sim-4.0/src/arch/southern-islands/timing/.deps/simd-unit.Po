@@ -1,0 +1,129 @@
+simd-unit.o: simd-unit.c /usr/include/assert.h /usr/include/features.h \
+ /usr/include/x86_64-linux-gnu/bits/predefs.h \
+ /usr/include/x86_64-linux-gnu/sys/cdefs.h \
+ /usr/include/x86_64-linux-gnu/bits/wordsize.h \
+ /usr/include/x86_64-linux-gnu/gnu/stubs.h \
+ /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
+ /usr/lib/gcc/x86_64-linux-gnu/4.6/include-fixed/limits.h \
+ /usr/lib/gcc/x86_64-linux-gnu/4.6/include-fixed/syslimits.h \
+ /usr/include/limits.h /usr/include/x86_64-linux-gnu/bits/posix1_lim.h \
+ /usr/include/x86_64-linux-gnu/bits/local_lim.h \
+ /usr/include/linux/limits.h \
+ /usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
+ ../../../../src/lib/esim/esim.h \
+ /usr/lib/gcc/x86_64-linux-gnu/4.6/include/stdint.h /usr/include/stdint.h \
+ /usr/include/x86_64-linux-gnu/bits/wchar.h /usr/include/stdio.h \
+ /usr/lib/gcc/x86_64-linux-gnu/4.6/include/stddef.h \
+ /usr/include/x86_64-linux-gnu/bits/types.h \
+ /usr/include/x86_64-linux-gnu/bits/typesizes.h /usr/include/libio.h \
+ /usr/include/_G_config.h /usr/include/wchar.h \
+ /usr/lib/gcc/x86_64-linux-gnu/4.6/include/stdarg.h \
+ /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
+ /usr/include/x86_64-linux-gnu/bits/sys_errlist.h \
+ /usr/include/x86_64-linux-gnu/bits/stdio.h \
+ /usr/include/x86_64-linux-gnu/bits/stdio2.h \
+ ../../../../src/lib/esim/trace.h ../../../../src/lib/util/list.h \
+ ../../../../src/arch/southern-islands/emu/emu.h \
+ ../../../../src/arch/southern-islands/emu/isa.h \
+ ../../../../src/arch/southern-islands/emu/wavefront.h \
+ ../../../../src/arch/southern-islands/asm/asm.h \
+ ../../../../src/arch/southern-islands/asm/asm.dat compute-unit.h \
+ branch-unit.h lds-unit.h scalar-unit.h vector-mem-unit.h gpu.h \
+ simd-unit.h uop.h ../../../../src/arch/southern-islands/emu/work-item.h \
+ ../../../../src/mem-system/module.h wavefront-pool.h
+
+/usr/include/assert.h:
+
+/usr/include/features.h:
+
+/usr/include/x86_64-linux-gnu/bits/predefs.h:
+
+/usr/include/x86_64-linux-gnu/sys/cdefs.h:
+
+/usr/include/x86_64-linux-gnu/bits/wordsize.h:
+
+/usr/include/x86_64-linux-gnu/gnu/stubs.h:
+
+/usr/include/x86_64-linux-gnu/gnu/stubs-64.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/4.6/include-fixed/limits.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/4.6/include-fixed/syslimits.h:
+
+/usr/include/limits.h:
+
+/usr/include/x86_64-linux-gnu/bits/posix1_lim.h:
+
+/usr/include/x86_64-linux-gnu/bits/local_lim.h:
+
+/usr/include/linux/limits.h:
+
+/usr/include/x86_64-linux-gnu/bits/posix2_lim.h:
+
+../../../../src/lib/esim/esim.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/4.6/include/stdint.h:
+
+/usr/include/stdint.h:
+
+/usr/include/x86_64-linux-gnu/bits/wchar.h:
+
+/usr/include/stdio.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/4.6/include/stddef.h:
+
+/usr/include/x86_64-linux-gnu/bits/types.h:
+
+/usr/include/x86_64-linux-gnu/bits/typesizes.h:
+
+/usr/include/libio.h:
+
+/usr/include/_G_config.h:
+
+/usr/include/wchar.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/4.6/include/stdarg.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdio_lim.h:
+
+/usr/include/x86_64-linux-gnu/bits/sys_errlist.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdio.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:
+
+../../../../src/lib/esim/trace.h:
+
+../../../../src/lib/util/list.h:
+
+../../../../src/arch/southern-islands/emu/emu.h:
+
+../../../../src/arch/southern-islands/emu/isa.h:
+
+../../../../src/arch/southern-islands/emu/wavefront.h:
+
+../../../../src/arch/southern-islands/asm/asm.h:
+
+../../../../src/arch/southern-islands/asm/asm.dat:
+
+compute-unit.h:
+
+branch-unit.h:
+
+lds-unit.h:
+
+scalar-unit.h:
+
+vector-mem-unit.h:
+
+gpu.h:
+
+simd-unit.h:
+
+uop.h:
+
+../../../../src/arch/southern-islands/emu/work-item.h:
+
+../../../../src/mem-system/module.h:
+
+wavefront-pool.h:
