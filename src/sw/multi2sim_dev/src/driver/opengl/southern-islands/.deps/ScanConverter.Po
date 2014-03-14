@@ -1,0 +1,3 @@
+ScanConverter.o: ScanConverter.cc ScanConverter.h
+
+ScanConverter.h:

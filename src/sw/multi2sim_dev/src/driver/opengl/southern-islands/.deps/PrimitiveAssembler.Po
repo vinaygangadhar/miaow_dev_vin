@@ -1,0 +1,3 @@
+PrimitiveAssembler.o: PrimitiveAssembler.cc PrimitiveAssembler.h
+
+PrimitiveAssembler.h:

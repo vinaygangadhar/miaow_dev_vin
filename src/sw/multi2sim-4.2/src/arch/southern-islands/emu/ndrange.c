@@ -26,6 +26,10 @@
 #include "work-item.h"
 
 
+/*MIAOW start */
+//#define MIAOW_DEBUG
+#include <math.h>
+///*MIAOW stop */
 
 /*
  * Public Functions
@@ -64,18 +68,68 @@ void si_ndrange_free(struct si_ndrange_t *ndrange)
 	free(ndrange);
 }
 
+/*MIAOW start */
+int kernel_config_count = 0;
+/*MIAOW stop */
 
 void si_ndrange_setup_size(struct si_ndrange_t *ndrange,
 	unsigned int *global_size, unsigned int *local_size, int work_dim)
 {
 	int i;
-
+	
 	/* Default value */
 	ndrange->global_size3[1] = 1;
 	ndrange->global_size3[2] = 1;
 	ndrange->local_size3[1] = 1;
 	ndrange->local_size3[2] = 1;
 	ndrange->work_dim = work_dim;
+
+
+/*MIAOW start */
+	char config_str[100];
+	sprintf(config_str, "config_%d.txt", kernel_config_count);
+	FILE* config = fopen(config_str, "w");
+/*MIAOW stop */
+		
+	
+/*MIAOW start*/
+//UNIT TEST CHANGES
+	char unit_test_input_buf[150000];
+	char *tok = NULL;
+	char *config_read_result = NULL;
+	char vreg_str[64][2500];
+	char sreg_str[2500];
+
+	FILE* unit_test_config = fopen("unit_test_config.txt", "r");
+	if(unit_test_config != 0)
+	{
+		int num_of_threads = 0;
+
+		config_read_result = fgets(unit_test_input_buf, 150000, unit_test_config);
+		if(config_read_result != NULL)
+		{   
+			tok = strtok(unit_test_input_buf, ";"); //WG count
+			ndrange->group_count = atoi(tok);
+
+			tok = strtok(NULL, ";"); //total number of threads
+			num_of_threads = atoi(tok);
+
+			ndrange->global_size = atoi(tok);     //1D size counter of global_size3
+			ndrange->global_size3[0] = atoi(tok); //Total number of work-items
+			ndrange->local_size3[0] = atoi(tok); // Number of work-items in a group
+			ndrange->local_size = atoi(tok);
+		}
+	}
+
+	//WorkGroup count and thread count
+	fprintf(config,"%d;%d;\n", ndrange->group_count, ndrange->global_size);
+
+	#ifdef MIAOW_DEBUG
+		fflush(config);
+	#endif
+
+/*MIAOW stop*/
+
 
 	/* Global work sizes */
 	for (i = 0; i < work_dim; i++)

@@ -1,0 +1,3 @@
+SPI.o: SPI.cc SPI.h
+
+SPI.h:
