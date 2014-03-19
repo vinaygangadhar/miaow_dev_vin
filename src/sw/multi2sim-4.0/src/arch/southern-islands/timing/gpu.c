@@ -1,4 +1,4 @@
-/*
+i_emu_report_file_name*
  *  Multi2Sim
  *  Copyright (C) 2012  Rafael Ubal (ubal@ece.neu.edu)
  *

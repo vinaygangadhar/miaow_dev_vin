@@ -12,6 +12,8 @@ gpu.o: gpu.c /usr/include/assert.h /usr/include/features.h \
  /usr/lib/gcc/x86_64-linux-gnu/4.6/include/stdarg.h \
  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
  /usr/include/x86_64-linux-gnu/bits/sys_errlist.h \
+ /usr/include/x86_64-linux-gnu/bits/stdio.h \
+ /usr/include/x86_64-linux-gnu/bits/stdio2.h \
  ../../../../src/arch/evergreen/emu/emu.h \
  ../../../../src/arch/evergreen/emu/ndrange.h \
  ../../../../src/driver/opencl-old/evergreen/bin-file.h \
@@ -30,9 +32,13 @@ gpu.o: gpu.c /usr/include/assert.h /usr/include/features.h \
  /usr/include/x86_64-linux-gnu/bits/select.h \
  /usr/include/x86_64-linux-gnu/bits/sigset.h \
  /usr/include/x86_64-linux-gnu/bits/time.h \
+ /usr/include/x86_64-linux-gnu/bits/select2.h \
  /usr/include/x86_64-linux-gnu/sys/sysmacros.h \
  /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h /usr/include/alloca.h \
- /usr/include/string.h /usr/include/xlocale.h \
+ /usr/include/x86_64-linux-gnu/bits/stdlib.h /usr/include/string.h \
+ /usr/include/xlocale.h /usr/include/x86_64-linux-gnu/bits/string.h \
+ /usr/include/x86_64-linux-gnu/bits/string2.h \
+ /usr/include/x86_64-linux-gnu/bits/string3.h \
  ../../../../src/lib/util/config.h ../../../../src/lib/util/debug.h \
  ../../../../src/lib/util/file.h ../../../../src/lib/util/linked-list.h \
  ../../../../src/lib/util/misc.h ../../../../src/lib/util/timer.h calc.h \
@@ -75,6 +81,10 @@ gpu.o: gpu.c /usr/include/assert.h /usr/include/features.h \
 /usr/include/x86_64-linux-gnu/bits/stdio_lim.h:
 
 /usr/include/x86_64-linux-gnu/bits/sys_errlist.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdio.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:
 
 ../../../../src/arch/evergreen/emu/emu.h:
 
@@ -126,15 +136,25 @@ gpu.o: gpu.c /usr/include/assert.h /usr/include/features.h \
 
 /usr/include/x86_64-linux-gnu/bits/time.h:
 
+/usr/include/x86_64-linux-gnu/bits/select2.h:
+
 /usr/include/x86_64-linux-gnu/sys/sysmacros.h:
 
 /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h:
 
 /usr/include/alloca.h:
 
+/usr/include/x86_64-linux-gnu/bits/stdlib.h:
+
 /usr/include/string.h:
 
 /usr/include/xlocale.h:
+
+/usr/include/x86_64-linux-gnu/bits/string.h:
+
+/usr/include/x86_64-linux-gnu/bits/string2.h:
+
+/usr/include/x86_64-linux-gnu/bits/string3.h:
 
 ../../../../src/lib/util/config.h:
 

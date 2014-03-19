@@ -171,7 +171,7 @@ void si_wavefront_execute(struct si_wavefront_t *wavefront)
 	inst = &wavefront->inst;
 	pc = wavefront->wavefront_pool - wavefront->wavefront_pool_start;
 
-	/*MIAOW start*/
+	/*MIAOW start - Print the debug message to stdout, stderr  to the open file stream*/
 	si_isa_debug("\n###%d_%d_%d", kernel_config_count - 1, wavefront->work_group->id, wavefront->id_in_work_group, pc, wavefront->inst_size);
 	/*MIAOW stop*/
 
@@ -222,7 +222,7 @@ void si_wavefront_execute(struct si_wavefront_t *wavefront)
 
 		/* Only one work item executes the instruction */
 		work_item = wavefront->scalar_work_item;
-		(*si_isa_inst_func[inst->info->inst])(work_item, inst);
+		(*si_isa_inst_func[inst->info->inst])(work_item, inst); //Calling a function pointer in machine.c
 
 		if (debug_status(si_isa_debug_category))
 		{

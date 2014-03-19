@@ -37,7 +37,10 @@ host_triplet = x86_64-unknown-linux-gnu
 subdir = runtime/cuda
 DIST_COMMON = $(srcdir)/Makefile.am $(srcdir)/Makefile.in
 ACLOCAL_M4 = $(top_srcdir)/aclocal.m4
-am__aclocal_m4_deps = $(top_srcdir)/configure.ac
+am__aclocal_m4_deps = $(top_srcdir)/m4/libtool.m4 \
+	$(top_srcdir)/m4/ltoptions.m4 $(top_srcdir)/m4/ltsugar.m4 \
+	$(top_srcdir)/m4/ltversion.m4 $(top_srcdir)/m4/lt~obsolete.m4 \
+	$(top_srcdir)/configure.ac
 am__configure_deps = $(am__aclocal_m4_deps) $(CONFIGURE_DEPENDENCIES) \
 	$(ACLOCAL_M4)
 mkinstalldirs = $(install_sh) -d
@@ -106,12 +109,12 @@ DIST_SOURCES = $(am____top_builddir__lib_libm2s_cuda_la_SOURCES_DIST)
 ETAGS = etags
 CTAGS = ctags
 DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST)
-ACLOCAL = ${SHELL} /home/miaow/vinay/miaow_dev_vin/src/sw/multi2sim-4.0/missing --run aclocal-1.11
+ACLOCAL = ${SHELL} /home/miaow/miaow/src/sw/multi2sim-4.0/missing --run aclocal-1.11
 AMTAR = $${TAR-tar}
 AR = ar
-AUTOCONF = ${SHELL} /home/miaow/vinay/miaow_dev_vin/src/sw/multi2sim-4.0/missing --run autoconf
-AUTOHEADER = ${SHELL} /home/miaow/vinay/miaow_dev_vin/src/sw/multi2sim-4.0/missing --run autoheader
-AUTOMAKE = ${SHELL} /home/miaow/vinay/miaow_dev_vin/src/sw/multi2sim-4.0/missing --run automake-1.11
+AUTOCONF = ${SHELL} /home/miaow/miaow/src/sw/multi2sim-4.0/missing --run autoconf
+AUTOHEADER = ${SHELL} /home/miaow/miaow/src/sw/multi2sim-4.0/missing --run autoheader
+AUTOMAKE = ${SHELL} /home/miaow/miaow/src/sw/multi2sim-4.0/missing --run automake-1.11
 AWK = mawk
 CC = gcc
 CCDEPMODE = depmode=gcc3
@@ -124,7 +127,7 @@ CXXDEPMODE = depmode=gcc3
 CXXFLAGS = -g -O2
 CYGPATH_W = echo
 DATADIR = ${prefix}/share
-DEFS = -DPACKAGE_NAME=\"multi2sim\" -DPACKAGE_TARNAME=\"multi2sim\" -DPACKAGE_VERSION=\"4.0.1\" -DPACKAGE_STRING=\"multi2sim\ 4.0.1\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DPACKAGE=\"multi2sim\" -DVERSION=\"4.0.1\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -DSTDC_HEADERS=1 -DHAVE_SYS_WAIT_H=1 -DHAVE_FCNTL_H=1 -DHAVE_FLOAT_H=1 -DHAVE_STDDEF_H=1 -DHAVE_STDINT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_SYS_IOCTL_H=1 -DHAVE_SYS_SOCKET_H=1 -DHAVE_SYS_TIME_H=1 -DHAVE_UNISTD_H=1 -DHAVE_UTIME_H=1 -DHAVE_ELF_H=1 -DHAVE_STRUCT_STAT_ST_BLKSIZE=1 -DHAVE_STRUCT_STAT_ST_BLOCKS=1 -DHAVE_ST_BLOCKS=1 -DHAVE_STRUCT_STAT_ST_RDEV=1 -DHAVE_UNISTD_H=1 -DHAVE_CHOWN=1 -DLSTAT_FOLLOWS_SLASHED_SYMLINK=1 -DHAVE_STDLIB_H=1 -DHAVE_MALLOC=1 -DHAVE_STDLIB_H=1 -DHAVE_UNISTD_H=1 -DHAVE_SYS_PARAM_H=1 -DHAVE_GETPAGESIZE=1 -DHAVE_MMAP=1 -DHAVE_STDLIB_H=1 -DHAVE_REALLOC=1 -DHAVE_ALARM=1 -DHAVE_BZERO=1 -DHAVE_FTRUNCATE=1 -DHAVE_GETCWD=1 -DHAVE_GETTIMEOFDAY=1 -DHAVE_MEMSET=1 -DHAVE_MKDIR=1 -DHAVE_MUNMAP=1 -DHAVE_SELECT=1 -DHAVE_SOCKET=1 -DHAVE_STRCASECMP=1 -DHAVE_STRCHR=1 -DHAVE_STRDUP=1 -DHAVE_STRNCASECMP=1 -DHAVE_STRTOL=1 -DHAVE_UTIME=1 -DHAVE_OPENGL=1 -DHAVE_GTK=1
+DEFS = -DPACKAGE_NAME=\"multi2sim\" -DPACKAGE_TARNAME=\"multi2sim\" -DPACKAGE_VERSION=\"4.0.1\" -DPACKAGE_STRING=\"multi2sim\ 4.0.1\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DPACKAGE=\"multi2sim\" -DVERSION=\"4.0.1\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -DSTDC_HEADERS=1 -DHAVE_SYS_WAIT_H=1 -DHAVE_FCNTL_H=1 -DHAVE_FLOAT_H=1 -DHAVE_STDDEF_H=1 -DHAVE_STDINT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_SYS_IOCTL_H=1 -DHAVE_SYS_SOCKET_H=1 -DHAVE_SYS_TIME_H=1 -DHAVE_UNISTD_H=1 -DHAVE_UTIME_H=1 -DHAVE_ELF_H=1 -DHAVE_STRUCT_STAT_ST_BLKSIZE=1 -DHAVE_STRUCT_STAT_ST_BLOCKS=1 -DHAVE_ST_BLOCKS=1 -DHAVE_STRUCT_STAT_ST_RDEV=1 -DHAVE_UNISTD_H=1 -DHAVE_CHOWN=1 -DLSTAT_FOLLOWS_SLASHED_SYMLINK=1 -DHAVE_STDLIB_H=1 -DHAVE_MALLOC=1 -DHAVE_STDLIB_H=1 -DHAVE_UNISTD_H=1 -DHAVE_SYS_PARAM_H=1 -DHAVE_GETPAGESIZE=1 -DHAVE_MMAP=1 -DHAVE_STDLIB_H=1 -DHAVE_REALLOC=1 -DHAVE_ALARM=1 -DHAVE_BZERO=1 -DHAVE_FTRUNCATE=1 -DHAVE_GETCWD=1 -DHAVE_GETTIMEOFDAY=1 -DHAVE_MEMSET=1 -DHAVE_MKDIR=1 -DHAVE_MUNMAP=1 -DHAVE_SELECT=1 -DHAVE_SOCKET=1 -DHAVE_STRCASECMP=1 -DHAVE_STRCHR=1 -DHAVE_STRDUP=1 -DHAVE_STRNCASECMP=1 -DHAVE_STRTOL=1 -DHAVE_UTIME=1
 DEPDIR = .deps
 DLLTOOL = false
 DSYMUTIL = 
@@ -136,8 +139,6 @@ EGREP = /bin/grep -E
 EXEEXT = 
 FGREP = /bin/grep -F
 GREP = /bin/grep
-GTK_CFLAGS = -pthread -I/usr/include/gtk-3.0 -I/usr/include/pango-1.0 -I/usr/include/gio-unix-2.0/ -I/usr/include/atk-1.0 -I/usr/include/cairo -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/freetype2 -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/pixman-1 -I/usr/include/libpng12  
-GTK_LIBS = -lgtk-3 -lgdk-3 -latk-1.0 -lgio-2.0 -lpangocairo-1.0 -lgdk_pixbuf-2.0 -lcairo-gobject -lpango-1.0 -lcairo -lgobject-2.0 -lglib-2.0  
 INSTALL = /usr/bin/install -c
 INSTALL_DATA = ${INSTALL} -m 644
 INSTALL_PROGRAM = ${INSTALL}
@@ -152,7 +153,7 @@ LIPO =
 LN_S = ln -s
 LTLIBOBJS = 
 M2S_INCLUDES =  -I$(top_srcdir)/src 
-MAKEINFO = ${SHELL} /home/miaow/vinay/miaow_dev_vin/src/sw/multi2sim-4.0/missing --run makeinfo
+MAKEINFO = ${SHELL} /home/miaow/miaow/src/sw/multi2sim-4.0/missing --run makeinfo
 MANIFEST_TOOL = :
 MKDIR_P = /bin/mkdir -p
 NM = /usr/bin/nm -B
@@ -171,17 +172,16 @@ PACKAGE_URL =
 PACKAGE_VERSION = 4.0.1
 PATH_SEPARATOR = :
 PKGDATADIR = ${datarootdir}/multi2sim
-PKG_CONFIG = /usr/bin/pkg-config
 RANLIB = ranlib
 SED = /bin/sed
 SET_MAKE = 
 SHELL = /bin/bash
 STRIP = strip
 VERSION = 4.0.1
-abs_builddir = /home/miaow/vinay/miaow_dev_vin/src/sw/multi2sim-4.0/runtime/cuda
-abs_srcdir = /home/miaow/vinay/miaow_dev_vin/src/sw/multi2sim-4.0/runtime/cuda
-abs_top_builddir = /home/miaow/vinay/miaow_dev_vin/src/sw/multi2sim-4.0
-abs_top_srcdir = /home/miaow/vinay/miaow_dev_vin/src/sw/multi2sim-4.0
+abs_builddir = /home/miaow/miaow/src/sw/multi2sim-4.0/runtime/cuda
+abs_srcdir = /home/miaow/miaow/src/sw/multi2sim-4.0/runtime/cuda
+abs_top_builddir = /home/miaow/miaow/src/sw/multi2sim-4.0
+abs_top_srcdir = /home/miaow/miaow/src/sw/multi2sim-4.0
 ac_ct_AR = ar
 ac_ct_CC = gcc
 ac_ct_CXX = g++
@@ -211,7 +211,7 @@ host_vendor = unknown
 htmldir = ${docdir}
 includedir = ${prefix}/include
 infodir = ${datarootdir}/info
-install_sh = ${SHELL} /home/miaow/vinay/miaow_dev_vin/src/sw/multi2sim-4.0/install-sh
+install_sh = ${SHELL} /home/miaow/miaow/src/sw/multi2sim-4.0/install-sh
 libdir = ${exec_prefix}/lib
 libexecdir = ${exec_prefix}/libexec
 localedir = ${datarootdir}/locale

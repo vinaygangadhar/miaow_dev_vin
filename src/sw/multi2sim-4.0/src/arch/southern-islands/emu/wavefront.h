@@ -40,7 +40,7 @@ struct si_wavefront_t
 	struct si_work_group_t *work_group;
 
 	/* Instruction buffer (code, not architectural instruction buffer) */
-	void *wavefront_pool;
+	void *wavefront_pool;  //generally holds 64 bit value
 	void *wavefront_pool_start;
 
 	/* Current instruction */

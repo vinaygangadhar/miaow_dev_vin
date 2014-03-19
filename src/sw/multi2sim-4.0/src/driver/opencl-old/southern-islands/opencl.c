@@ -2300,7 +2300,7 @@ void si_opencl_clEnqueueMapBuffer_wakeup(struct x86_ctx_t *ctx, void *data)
 
 int si_opencl_clEnqueueMapBuffer_impl(struct x86_ctx_t *ctx, int *argv_ptr)
 {
-	fatal("clEnqueueMapBuffer not implemented.");
+	fatal("clEnqueuemapBuffer not implemented.");
 
 	struct si_opencl_clEnqueueMapBuffer_args_t *argv;
 	struct si_command_queue_t *command_queue;
