@@ -807,6 +807,8 @@ static int opengl_abi_si_ndrange_initialize_impl(X86Context *ctx)
 		shader_enc_dict->num_vgpr_used;
 	ndrange->wg_id_sgpr = shader->shader_bin->
 		shader_enc_dict->shader_pgm_rsrc2_vs->user_sgpr;
+	
+
 	si_ndrange_setup_size(ndrange, global_size, local_size, work_dim);
 
 	/* Copy user elements from shader to ND-Range */

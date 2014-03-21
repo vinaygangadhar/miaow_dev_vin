@@ -10,9 +10,8 @@ api.lo: api.c /usr/include/unistd.h /usr/include/features.h \
  /usr/include/i386-linux-gnu/bits/typesizes.h \
  /usr/lib/gcc/x86_64-linux-gnu/4.6/include/stddef.h \
  /usr/include/i386-linux-gnu/bits/confname.h /usr/include/getopt.h \
- /usr/include/i386-linux-gnu/bits/unistd.h ../include/CL/cl.h \
- /usr/lib/gcc/x86_64-linux-gnu/4.6/include/stdint.h /usr/include/stdint.h \
- /usr/include/i386-linux-gnu/bits/wchar.h api.h
+ ../include/CL/cl.h /usr/lib/gcc/x86_64-linux-gnu/4.6/include/stdint.h \
+ /usr/include/stdint.h /usr/include/i386-linux-gnu/bits/wchar.h api.h
 
 /usr/include/unistd.h:
 
@@ -41,8 +40,6 @@ api.lo: api.c /usr/include/unistd.h /usr/include/features.h \
 /usr/include/i386-linux-gnu/bits/confname.h:
 
 /usr/include/getopt.h:
-
-/usr/include/i386-linux-gnu/bits/unistd.h:
 
 ../include/CL/cl.h:
 

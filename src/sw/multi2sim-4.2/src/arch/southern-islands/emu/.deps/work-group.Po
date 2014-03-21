@@ -17,30 +17,32 @@ work-group.o: work-group.c ../../../../src/lib/mhandle/mhandle.h \
  /usr/include/x86_64-linux-gnu/bits/select.h \
  /usr/include/x86_64-linux-gnu/bits/sigset.h \
  /usr/include/x86_64-linux-gnu/bits/time.h \
- /usr/include/x86_64-linux-gnu/bits/select2.h \
  /usr/include/x86_64-linux-gnu/sys/sysmacros.h \
  /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h /usr/include/alloca.h \
- /usr/include/x86_64-linux-gnu/bits/stdlib.h /usr/include/string.h \
- /usr/include/xlocale.h /usr/include/x86_64-linux-gnu/bits/string.h \
- /usr/include/x86_64-linux-gnu/bits/string2.h \
- /usr/include/x86_64-linux-gnu/bits/string3.h \
+ /usr/include/string.h /usr/include/xlocale.h \
  ../../../../src/lib/util/debug.h /usr/include/stdio.h \
  /usr/include/libio.h /usr/include/_G_config.h /usr/include/wchar.h \
  /usr/lib/gcc/x86_64-linux-gnu/4.6/include/stdarg.h \
  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
  /usr/include/x86_64-linux-gnu/bits/sys_errlist.h \
- /usr/include/x86_64-linux-gnu/bits/stdio.h \
- /usr/include/x86_64-linux-gnu/bits/stdio2.h \
  ../../../../src/mem-system/memory.h isa.h ndrange.h \
  ../../../../src/arch/southern-islands/asm/bin-file.h \
  ../../../../src/lib/util/elf-format.h /usr/include/elf.h \
  /usr/lib/gcc/x86_64-linux-gnu/4.6/include/stdint.h /usr/include/stdint.h \
- /usr/include/x86_64-linux-gnu/bits/wchar.h emu.h \
+ /usr/include/x86_64-linux-gnu/bits/wchar.h \
+ ../../../../src/driver/opencl/si-kernel.h emu.h \
  ../../../../src/arch/common/emu.h ../../../../src/lib/util/class.h \
  /usr/include/assert.h wavefront.h \
  ../../../../src/arch/southern-islands/asm/asm.h \
  ../../../../src/arch/southern-islands/asm/asm.dat work-group.h \
- work-item.h
+ work-item.h /usr/include/math.h \
+ /usr/include/x86_64-linux-gnu/bits/huge_val.h \
+ /usr/include/x86_64-linux-gnu/bits/huge_valf.h \
+ /usr/include/x86_64-linux-gnu/bits/huge_vall.h \
+ /usr/include/x86_64-linux-gnu/bits/inf.h \
+ /usr/include/x86_64-linux-gnu/bits/nan.h \
+ /usr/include/x86_64-linux-gnu/bits/mathdef.h \
+ /usr/include/x86_64-linux-gnu/bits/mathcalls.h
 
 ../../../../src/lib/mhandle/mhandle.h:
 
@@ -86,25 +88,15 @@ work-group.o: work-group.c ../../../../src/lib/mhandle/mhandle.h \
 
 /usr/include/x86_64-linux-gnu/bits/time.h:
 
-/usr/include/x86_64-linux-gnu/bits/select2.h:
-
 /usr/include/x86_64-linux-gnu/sys/sysmacros.h:
 
 /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h:
 
 /usr/include/alloca.h:
 
-/usr/include/x86_64-linux-gnu/bits/stdlib.h:
-
 /usr/include/string.h:
 
 /usr/include/xlocale.h:
-
-/usr/include/x86_64-linux-gnu/bits/string.h:
-
-/usr/include/x86_64-linux-gnu/bits/string2.h:
-
-/usr/include/x86_64-linux-gnu/bits/string3.h:
 
 ../../../../src/lib/util/debug.h:
 
@@ -121,10 +113,6 @@ work-group.o: work-group.c ../../../../src/lib/mhandle/mhandle.h \
 /usr/include/x86_64-linux-gnu/bits/stdio_lim.h:
 
 /usr/include/x86_64-linux-gnu/bits/sys_errlist.h:
-
-/usr/include/x86_64-linux-gnu/bits/stdio.h:
-
-/usr/include/x86_64-linux-gnu/bits/stdio2.h:
 
 ../../../../src/mem-system/memory.h:
 
@@ -144,6 +132,8 @@ ndrange.h:
 
 /usr/include/x86_64-linux-gnu/bits/wchar.h:
 
+../../../../src/driver/opencl/si-kernel.h:
+
 emu.h:
 
 ../../../../src/arch/common/emu.h:
@@ -161,3 +151,19 @@ wavefront.h:
 work-group.h:
 
 work-item.h:
+
+/usr/include/math.h:
+
+/usr/include/x86_64-linux-gnu/bits/huge_val.h:
+
+/usr/include/x86_64-linux-gnu/bits/huge_valf.h:
+
+/usr/include/x86_64-linux-gnu/bits/huge_vall.h:
+
+/usr/include/x86_64-linux-gnu/bits/inf.h:
+
+/usr/include/x86_64-linux-gnu/bits/nan.h:
+
+/usr/include/x86_64-linux-gnu/bits/mathdef.h:
+
+/usr/include/x86_64-linux-gnu/bits/mathcalls.h:

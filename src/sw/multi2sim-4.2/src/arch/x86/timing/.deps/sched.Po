@@ -19,8 +19,6 @@ sched.o: sched.c ../../../../src/arch/x86/emu/context.h \
  /usr/include/wchar.h /usr/lib/gcc/x86_64-linux-gnu/4.6/include/stdarg.h \
  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
  /usr/include/x86_64-linux-gnu/bits/sys_errlist.h \
- /usr/include/x86_64-linux-gnu/bits/stdio.h \
- /usr/include/x86_64-linux-gnu/bits/stdio2.h \
  ../../../../src/lib/util/class.h /usr/include/assert.h \
  ../../../../src/arch/x86/asm/inst.h ../../../../src/arch/x86/asm/asm.dat \
  ../../../../src/arch/x86/emu/emu.h ../../../../src/arch/common/emu.h \
@@ -32,9 +30,7 @@ sched.o: sched.c ../../../../src/arch/x86/emu/context.h \
  /usr/include/x86_64-linux-gnu/sys/select.h \
  /usr/include/x86_64-linux-gnu/bits/select.h \
  /usr/include/x86_64-linux-gnu/bits/sigset.h \
- /usr/include/x86_64-linux-gnu/bits/select2.h \
  /usr/include/x86_64-linux-gnu/sys/sysmacros.h /usr/include/alloca.h \
- /usr/include/x86_64-linux-gnu/bits/stdlib.h \
  ../../../../src/lib/util/misc.h core.h \
  ../../../../src/arch/x86/emu/uinst.h \
  ../../../../src/mem-system/prefetch-history.h cpu.h \
@@ -100,10 +96,6 @@ sched.o: sched.c ../../../../src/arch/x86/emu/context.h \
 
 /usr/include/x86_64-linux-gnu/bits/sys_errlist.h:
 
-/usr/include/x86_64-linux-gnu/bits/stdio.h:
-
-/usr/include/x86_64-linux-gnu/bits/stdio2.h:
-
 ../../../../src/lib/util/class.h:
 
 /usr/include/assert.h:
@@ -138,13 +130,9 @@ sched.o: sched.c ../../../../src/arch/x86/emu/context.h \
 
 /usr/include/x86_64-linux-gnu/bits/sigset.h:
 
-/usr/include/x86_64-linux-gnu/bits/select2.h:
-
 /usr/include/x86_64-linux-gnu/sys/sysmacros.h:
 
 /usr/include/alloca.h:
-
-/usr/include/x86_64-linux-gnu/bits/stdlib.h:
 
 ../../../../src/lib/util/misc.h:
 

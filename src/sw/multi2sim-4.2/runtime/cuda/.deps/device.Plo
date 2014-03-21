@@ -16,10 +16,9 @@ device.lo: device.c ../include/cuda.h /usr/include/stdlib.h \
  /usr/include/i386-linux-gnu/bits/select.h \
  /usr/include/i386-linux-gnu/bits/sigset.h \
  /usr/include/i386-linux-gnu/bits/time.h \
- /usr/include/i386-linux-gnu/bits/select2.h \
  /usr/include/i386-linux-gnu/sys/sysmacros.h \
  /usr/include/i386-linux-gnu/bits/pthreadtypes.h /usr/include/alloca.h \
- /usr/include/i386-linux-gnu/bits/stdlib.h device.h list.h mhandle.h
+ device.h list.h mhandle.h
 
 ../include/cuda.h:
 
@@ -65,15 +64,11 @@ device.lo: device.c ../include/cuda.h /usr/include/stdlib.h \
 
 /usr/include/i386-linux-gnu/bits/time.h:
 
-/usr/include/i386-linux-gnu/bits/select2.h:
-
 /usr/include/i386-linux-gnu/sys/sysmacros.h:
 
 /usr/include/i386-linux-gnu/bits/pthreadtypes.h:
 
 /usr/include/alloca.h:
-
-/usr/include/i386-linux-gnu/bits/stdlib.h:
 
 device.h:
 

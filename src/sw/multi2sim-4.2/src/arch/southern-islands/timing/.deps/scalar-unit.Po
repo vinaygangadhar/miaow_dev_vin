@@ -13,8 +13,6 @@ scalar-unit.o: scalar-unit.c \
  /usr/lib/gcc/x86_64-linux-gnu/4.6/include/stdarg.h \
  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
  /usr/include/x86_64-linux-gnu/bits/sys_errlist.h \
- /usr/include/x86_64-linux-gnu/bits/stdio.h \
- /usr/include/x86_64-linux-gnu/bits/stdio2.h \
  ../../../../src/arch/southern-islands/asm/asm.dat \
  ../../../../src/arch/southern-islands/emu/work-group.h \
  ../../../../src/lib/esim/trace.h ../../../../src/lib/util/list.h \
@@ -59,10 +57,6 @@ scalar-unit.o: scalar-unit.c \
 /usr/include/x86_64-linux-gnu/bits/stdio_lim.h:
 
 /usr/include/x86_64-linux-gnu/bits/sys_errlist.h:
-
-/usr/include/x86_64-linux-gnu/bits/stdio.h:
-
-/usr/include/x86_64-linux-gnu/bits/stdio2.h:
 
 ../../../../src/arch/southern-islands/asm/asm.dat:
 

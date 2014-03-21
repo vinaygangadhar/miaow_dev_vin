@@ -16,18 +16,15 @@ module.lo: module.c /usr/include/assert.h /usr/include/features.h \
  /usr/include/i386-linux-gnu/bits/select.h \
  /usr/include/i386-linux-gnu/bits/sigset.h \
  /usr/include/i386-linux-gnu/bits/time.h \
- /usr/include/i386-linux-gnu/bits/select2.h \
  /usr/include/i386-linux-gnu/sys/sysmacros.h \
  /usr/include/i386-linux-gnu/bits/pthreadtypes.h /usr/include/alloca.h \
- /usr/include/i386-linux-gnu/bits/stdlib.h elf-format.h \
- /usr/include/elf.h /usr/lib/gcc/x86_64-linux-gnu/4.6/include/stdint.h \
- /usr/include/stdint.h /usr/include/i386-linux-gnu/bits/wchar.h \
- /usr/include/stdio.h /usr/include/libio.h /usr/include/_G_config.h \
- /usr/include/wchar.h /usr/lib/gcc/x86_64-linux-gnu/4.6/include/stdarg.h \
+ elf-format.h /usr/include/elf.h \
+ /usr/lib/gcc/x86_64-linux-gnu/4.6/include/stdint.h /usr/include/stdint.h \
+ /usr/include/i386-linux-gnu/bits/wchar.h /usr/include/stdio.h \
+ /usr/include/libio.h /usr/include/_G_config.h /usr/include/wchar.h \
+ /usr/lib/gcc/x86_64-linux-gnu/4.6/include/stdarg.h \
  /usr/include/i386-linux-gnu/bits/stdio_lim.h \
- /usr/include/i386-linux-gnu/bits/sys_errlist.h \
- /usr/include/i386-linux-gnu/bits/stdio.h \
- /usr/include/i386-linux-gnu/bits/stdio2.h list.h mhandle.h module.h
+ /usr/include/i386-linux-gnu/bits/sys_errlist.h list.h mhandle.h module.h
 
 /usr/include/assert.h:
 
@@ -75,15 +72,11 @@ module.lo: module.c /usr/include/assert.h /usr/include/features.h \
 
 /usr/include/i386-linux-gnu/bits/time.h:
 
-/usr/include/i386-linux-gnu/bits/select2.h:
-
 /usr/include/i386-linux-gnu/sys/sysmacros.h:
 
 /usr/include/i386-linux-gnu/bits/pthreadtypes.h:
 
 /usr/include/alloca.h:
-
-/usr/include/i386-linux-gnu/bits/stdlib.h:
 
 elf-format.h:
 
@@ -108,10 +101,6 @@ elf-format.h:
 /usr/include/i386-linux-gnu/bits/stdio_lim.h:
 
 /usr/include/i386-linux-gnu/bits/sys_errlist.h:
-
-/usr/include/i386-linux-gnu/bits/stdio.h:
-
-/usr/include/i386-linux-gnu/bits/stdio2.h:
 
 list.h:
 

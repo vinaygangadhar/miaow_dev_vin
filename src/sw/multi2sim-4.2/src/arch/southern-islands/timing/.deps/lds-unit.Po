@@ -12,8 +12,6 @@ lds-unit.o: lds-unit.c ../../../../src/arch/southern-islands/emu/emu.h \
  /usr/lib/gcc/x86_64-linux-gnu/4.6/include/stdarg.h \
  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
  /usr/include/x86_64-linux-gnu/bits/sys_errlist.h \
- /usr/include/x86_64-linux-gnu/bits/stdio.h \
- /usr/include/x86_64-linux-gnu/bits/stdio2.h \
  ../../../../src/arch/common/emu.h ../../../../src/lib/util/class.h \
  /usr/include/assert.h \
  ../../../../src/arch/southern-islands/emu/wavefront.h \
@@ -29,10 +27,8 @@ lds-unit.o: lds-unit.c ../../../../src/arch/southern-islands/emu/emu.h \
  /usr/include/x86_64-linux-gnu/bits/select.h \
  /usr/include/x86_64-linux-gnu/bits/sigset.h \
  /usr/include/x86_64-linux-gnu/bits/time.h \
- /usr/include/x86_64-linux-gnu/bits/select2.h \
  /usr/include/x86_64-linux-gnu/sys/sysmacros.h \
  /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h /usr/include/alloca.h \
- /usr/include/x86_64-linux-gnu/bits/stdlib.h \
  ../../../../src/lib/util/list.h compute-unit.h branch-unit.h lds-unit.h \
  scalar-unit.h vector-mem-unit.h gpu.h \
  ../../../../src/arch/common/timing.h uop.h \
@@ -74,10 +70,6 @@ lds-unit.o: lds-unit.c ../../../../src/arch/southern-islands/emu/emu.h \
 
 /usr/include/x86_64-linux-gnu/bits/sys_errlist.h:
 
-/usr/include/x86_64-linux-gnu/bits/stdio.h:
-
-/usr/include/x86_64-linux-gnu/bits/stdio2.h:
-
 ../../../../src/arch/common/emu.h:
 
 ../../../../src/lib/util/class.h:
@@ -118,15 +110,11 @@ lds-unit.o: lds-unit.c ../../../../src/arch/southern-islands/emu/emu.h \
 
 /usr/include/x86_64-linux-gnu/bits/time.h:
 
-/usr/include/x86_64-linux-gnu/bits/select2.h:
-
 /usr/include/x86_64-linux-gnu/sys/sysmacros.h:
 
 /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h:
 
 /usr/include/alloca.h:
-
-/usr/include/x86_64-linux-gnu/bits/stdlib.h:
 
 ../../../../src/lib/util/list.h:
 

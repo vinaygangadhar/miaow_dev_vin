@@ -10,13 +10,10 @@ kernel.lo: kernel.c /usr/include/unistd.h /usr/include/features.h \
  /usr/include/i386-linux-gnu/bits/typesizes.h \
  /usr/lib/gcc/x86_64-linux-gnu/4.6/include/stddef.h \
  /usr/include/i386-linux-gnu/bits/confname.h /usr/include/getopt.h \
- /usr/include/i386-linux-gnu/bits/unistd.h /usr/include/stdio.h \
- /usr/include/libio.h /usr/include/_G_config.h /usr/include/wchar.h \
- /usr/lib/gcc/x86_64-linux-gnu/4.6/include/stdarg.h \
+ /usr/include/stdio.h /usr/include/libio.h /usr/include/_G_config.h \
+ /usr/include/wchar.h /usr/lib/gcc/x86_64-linux-gnu/4.6/include/stdarg.h \
  /usr/include/i386-linux-gnu/bits/stdio_lim.h \
- /usr/include/i386-linux-gnu/bits/sys_errlist.h \
- /usr/include/i386-linux-gnu/bits/stdio.h \
- /usr/include/i386-linux-gnu/bits/stdio2.h ../include/CL/cl.h \
+ /usr/include/i386-linux-gnu/bits/sys_errlist.h ../include/CL/cl.h \
  /usr/lib/gcc/x86_64-linux-gnu/4.6/include/stdint.h /usr/include/stdint.h \
  /usr/include/i386-linux-gnu/bits/wchar.h api.h program.h
 
@@ -48,8 +45,6 @@ kernel.lo: kernel.c /usr/include/unistd.h /usr/include/features.h \
 
 /usr/include/getopt.h:
 
-/usr/include/i386-linux-gnu/bits/unistd.h:
-
 /usr/include/stdio.h:
 
 /usr/include/libio.h:
@@ -63,10 +58,6 @@ kernel.lo: kernel.c /usr/include/unistd.h /usr/include/features.h \
 /usr/include/i386-linux-gnu/bits/stdio_lim.h:
 
 /usr/include/i386-linux-gnu/bits/sys_errlist.h:
-
-/usr/include/i386-linux-gnu/bits/stdio.h:
-
-/usr/include/i386-linux-gnu/bits/stdio2.h:
 
 ../include/CL/cl.h:
 

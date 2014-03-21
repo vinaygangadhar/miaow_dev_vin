@@ -18,8 +18,6 @@ machine-std.o: machine-std.c context.h /usr/include/pthread.h \
  /usr/include/wchar.h /usr/lib/gcc/x86_64-linux-gnu/4.6/include/stdarg.h \
  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
  /usr/include/x86_64-linux-gnu/bits/sys_errlist.h \
- /usr/include/x86_64-linux-gnu/bits/stdio.h \
- /usr/include/x86_64-linux-gnu/bits/stdio2.h \
  ../../../../src/lib/util/class.h /usr/include/assert.h \
  ../../../../src/arch/x86/asm/inst.h ../../../../src/arch/x86/asm/asm.dat \
  isa.h machine.h ../../../../src/arch/x86/asm/asm.dat regs.h uinst.h
@@ -83,10 +81,6 @@ context.h:
 /usr/include/x86_64-linux-gnu/bits/stdio_lim.h:
 
 /usr/include/x86_64-linux-gnu/bits/sys_errlist.h:
-
-/usr/include/x86_64-linux-gnu/bits/stdio.h:
-
-/usr/include/x86_64-linux-gnu/bits/stdio2.h:
 
 ../../../../src/lib/util/class.h:
 

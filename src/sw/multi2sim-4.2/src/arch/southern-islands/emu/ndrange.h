@@ -23,6 +23,7 @@
 #include <stdio.h>
 
 #include <arch/southern-islands/asm/bin-file.h>
+#include <driver/opencl/si-kernel.h>
 
 #include "emu.h"
 
@@ -47,6 +48,10 @@ struct si_ndrange_t
 
 	/* Number of work dimensions */
 	unsigned int work_dim;
+
+	/*MIAOW Start */
+	struct opencl_si_kernel_t *kernel; // Only for reading the kernel data and writing from unit_test_config
+	/*MIAOW Stop */
 
 	/* 3D work size counters */
 	unsigned int global_size3[3];  /* Total number of work_items */

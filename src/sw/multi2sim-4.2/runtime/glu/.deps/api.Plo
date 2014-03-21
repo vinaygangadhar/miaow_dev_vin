@@ -10,16 +10,13 @@ api.lo: api.c /usr/include/stdio.h /usr/include/features.h \
  /usr/include/_G_config.h /usr/include/wchar.h \
  /usr/lib/gcc/x86_64-linux-gnu/4.6/include/stdarg.h \
  /usr/include/i386-linux-gnu/bits/stdio_lim.h \
- /usr/include/i386-linux-gnu/bits/sys_errlist.h \
- /usr/include/i386-linux-gnu/bits/stdio.h \
- /usr/include/i386-linux-gnu/bits/stdio2.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/sys_errlist.h /usr/include/unistd.h \
  /usr/include/i386-linux-gnu/bits/posix_opt.h \
  /usr/include/i386-linux-gnu/bits/environments.h \
  /usr/include/i386-linux-gnu/bits/confname.h /usr/include/getopt.h \
- /usr/include/i386-linux-gnu/bits/unistd.h ../include/GL/glu.h \
- ../include/GL/gl.h /usr/lib/gcc/x86_64-linux-gnu/4.6/include/stdint.h \
- /usr/include/stdint.h /usr/include/i386-linux-gnu/bits/wchar.h api.h \
- debug.h string.h
+ ../include/GL/glu.h ../include/GL/gl.h \
+ /usr/lib/gcc/x86_64-linux-gnu/4.6/include/stdint.h /usr/include/stdint.h \
+ /usr/include/i386-linux-gnu/bits/wchar.h api.h debug.h string.h
 
 /usr/include/stdio.h:
 
@@ -53,10 +50,6 @@ api.lo: api.c /usr/include/stdio.h /usr/include/features.h \
 
 /usr/include/i386-linux-gnu/bits/sys_errlist.h:
 
-/usr/include/i386-linux-gnu/bits/stdio.h:
-
-/usr/include/i386-linux-gnu/bits/stdio2.h:
-
 /usr/include/unistd.h:
 
 /usr/include/i386-linux-gnu/bits/posix_opt.h:
@@ -66,8 +59,6 @@ api.lo: api.c /usr/include/stdio.h /usr/include/features.h \
 /usr/include/i386-linux-gnu/bits/confname.h:
 
 /usr/include/getopt.h:
-
-/usr/include/i386-linux-gnu/bits/unistd.h:
 
 ../include/GL/glu.h:
 

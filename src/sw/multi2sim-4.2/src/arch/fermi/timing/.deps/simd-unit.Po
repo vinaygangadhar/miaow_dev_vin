@@ -12,8 +12,6 @@ simd-unit.o: simd-unit.c ../../../../src/arch/fermi/emu/thread-block.h \
  /usr/lib/gcc/x86_64-linux-gnu/4.6/include/stdarg.h \
  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
  /usr/include/x86_64-linux-gnu/bits/sys_errlist.h \
- /usr/include/x86_64-linux-gnu/bits/stdio.h \
- /usr/include/x86_64-linux-gnu/bits/stdio2.h \
  ../../../../src/lib/esim/trace.h ../../../../src/lib/util/list.h \
  ../../../../src/arch/fermi/emu/warp.h \
  ../../../../src/arch/fermi/asm/asm.h \
@@ -58,10 +56,6 @@ simd-unit.o: simd-unit.c ../../../../src/arch/fermi/emu/thread-block.h \
 /usr/include/x86_64-linux-gnu/bits/stdio_lim.h:
 
 /usr/include/x86_64-linux-gnu/bits/sys_errlist.h:
-
-/usr/include/x86_64-linux-gnu/bits/stdio.h:
-
-/usr/include/x86_64-linux-gnu/bits/stdio2.h:
 
 ../../../../src/lib/esim/trace.h:
 

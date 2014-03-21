@@ -10,7 +10,6 @@ timer.o: timer.c /usr/include/x86_64-linux-gnu/sys/time.h \
  /usr/include/x86_64-linux-gnu/sys/select.h \
  /usr/include/x86_64-linux-gnu/bits/select.h \
  /usr/include/x86_64-linux-gnu/bits/sigset.h \
- /usr/include/x86_64-linux-gnu/bits/select2.h \
  ../../../src/lib/mhandle/mhandle.h /usr/include/stdlib.h \
  /usr/lib/gcc/x86_64-linux-gnu/4.6/include/stddef.h \
  /usr/include/x86_64-linux-gnu/bits/waitflags.h \
@@ -20,10 +19,7 @@ timer.o: timer.c /usr/include/x86_64-linux-gnu/sys/time.h \
  /usr/include/x86_64-linux-gnu/sys/types.h \
  /usr/include/x86_64-linux-gnu/sys/sysmacros.h \
  /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h /usr/include/alloca.h \
- /usr/include/x86_64-linux-gnu/bits/stdlib.h /usr/include/string.h \
- /usr/include/xlocale.h /usr/include/x86_64-linux-gnu/bits/string.h \
- /usr/include/x86_64-linux-gnu/bits/string2.h \
- /usr/include/x86_64-linux-gnu/bits/string3.h timer.h
+ /usr/include/string.h /usr/include/xlocale.h timer.h
 
 /usr/include/x86_64-linux-gnu/sys/time.h:
 
@@ -53,8 +49,6 @@ timer.o: timer.c /usr/include/x86_64-linux-gnu/sys/time.h \
 
 /usr/include/x86_64-linux-gnu/bits/sigset.h:
 
-/usr/include/x86_64-linux-gnu/bits/select2.h:
-
 ../../../src/lib/mhandle/mhandle.h:
 
 /usr/include/stdlib.h:
@@ -79,16 +73,8 @@ timer.o: timer.c /usr/include/x86_64-linux-gnu/sys/time.h \
 
 /usr/include/alloca.h:
 
-/usr/include/x86_64-linux-gnu/bits/stdlib.h:
-
 /usr/include/string.h:
 
 /usr/include/xlocale.h:
-
-/usr/include/x86_64-linux-gnu/bits/string.h:
-
-/usr/include/x86_64-linux-gnu/bits/string2.h:
-
-/usr/include/x86_64-linux-gnu/bits/string3.h:
 
 timer.h:

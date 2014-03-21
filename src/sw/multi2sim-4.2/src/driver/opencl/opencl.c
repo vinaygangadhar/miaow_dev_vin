@@ -876,6 +876,10 @@ static int opencl_abi_si_kernel_set_arg_sampler_impl(X86Context *ctx)
  *	Unique kernel ID.
  */
 
+/*MIAOW Start */
+extern int kernel_config_count;
+/* MIAOW Stop */
+
 static int opencl_abi_si_ndrange_initialize_impl(X86Context *ctx)
 {
 	struct elf_buffer_t *elf_buffer;
@@ -931,6 +935,7 @@ static int opencl_abi_si_ndrange_initialize_impl(X86Context *ctx)
 
 	/* Create ND-Range */
 	ndrange = si_ndrange_create();
+	
 	ndrange->local_mem_top = kernel->mem_size_local;
 	ndrange->num_sgpr_used = kernel->bin_file->
 		enc_dict_entry_southern_islands->num_sgpr_used;
@@ -938,7 +943,12 @@ static int opencl_abi_si_ndrange_initialize_impl(X86Context *ctx)
 		enc_dict_entry_southern_islands->num_vgpr_used;
 	ndrange->wg_id_sgpr = kernel->bin_file->
 		enc_dict_entry_southern_islands->compute_pgm_rsrc2->user_sgpr;
-	si_ndrange_setup_size(ndrange, global_size, local_size, work_dim);
+
+	/*MIAOW Start */
+	ndrange->kernel = kernel;
+	/*MIAOW Stop */
+
+	si_ndrange_setup_size(ndrange, global_size, local_size, work_dim);   //instr.mem
 
 	/* Copy user elements from kernel to ND-Range */
 	user_element_count = kernel->bin_file->
@@ -951,6 +961,45 @@ static int opencl_abi_si_ndrange_initialize_impl(X86Context *ctx)
 		ndrange->userElements[i] = user_elements[i];
 	}
 
+	/*MIAOW Start*/
+	FILE* unit_test_instr = fopen("unit_test_instr.mem", "r");
+	if(unit_test_instr != 0)
+	{
+		unsigned char instr_buf[200];
+		int input_instr_count = 0;
+			
+		fgets((char*)instr_buf, 200, unit_test_instr); // address
+		unsigned char* buf_ptr = (unsigned char*)kernel->bin_file->enc_dict_entry_southern_islands->sec_text_buffer.ptr; //Kernel Instruction pointer
+
+
+		while(fgets((char*)instr_buf, 200, unit_test_instr) != NULL)
+		{
+			instr_buf[2] = '\0'; //Interested only in first hex byte
+			
+			unsigned char current_instr = (unsigned char)strtol((char*)instr_buf, 0 , 16);
+			buf_ptr[input_instr_count++] = current_instr;
+		}
+		
+		kernel->bin_file->enc_dict_entry_southern_islands->sec_text_buffer.size = input_instr_count;
+
+		fclose(unit_test_instr);
+	}
+	/*MIAOW Stop*/
+
+	
+	/*MIAOW Start*/	
+	char instr_str[100];
+	sprintf(instr_str, "instr_%d.mem", kernel_config_count);
+	FILE* instr = fopen(instr_str, "w");
+	//fprintf(instr, "@%.8x\n", kernel->bin_file->enc_dict_entry_southern_islands->sec_text_buffer.ptr);
+	fprintf(instr, "@0\n");
+	for (int instr_count = 0; instr_count < kernel->bin_file->enc_dict_entry_southern_islands->sec_text_buffer.size; instr_count++)
+	{
+		fprintf(instr, "%.2x\n", ((unsigned char*)kernel->bin_file->enc_dict_entry_southern_islands->sec_text_buffer.ptr)[instr_count]);
+	}
+	fclose(instr);
+	/*MIAOW stop */
+
 	/* Set up instruction memory */
 	/* Initialize wavefront instruction buffer and PC */
 	elf_buffer = &kernel->bin_file->enc_dict_entry_southern_islands->
@@ -960,6 +1009,7 @@ static int opencl_abi_si_ndrange_initialize_impl(X86Context *ctx)
 
 	si_ndrange_setup_inst_mem(ndrange, elf_buffer->ptr, 
 		elf_buffer->size, 0);
+ /**/
 
 	assert(!driver_state.kernel);
 	driver_state.kernel = kernel;
@@ -973,10 +1023,56 @@ static int opencl_abi_si_ndrange_initialize_impl(X86Context *ctx)
 	if (si_gpu)
 		si_gpu_map_ndrange(ndrange);
 
+/*MIAOW Start */
+	//UNIT test
+	
+	FILE* unit_test_data = fopen("unit_test_data.mem", "r");
+	if(unit_test_data != 0)
+	{
+		unsigned char input_data_buf[100000];
+		int input_data_len = 0;
+		char input_data_read[20];
+		int input_data_address = 0;
+		
+		fgets(input_data_read, 20, unit_test_data);
+		input_data_address = strtol(input_data_read + 1, NULL, 16);  //Ex: @40 the address is 40
+		
+		while(fgets(input_data_read, 20, unit_test_data))
+		{
+			input_data_buf[input_data_len++] = strtol(input_data_read, NULL, 16) ;
+		}
+		
+		mem_write(si_emu->video_mem, input_data_address, input_data_len, input_data_buf);
+		si_emu->video_mem_top = input_data_address + input_data_len;
+	}
+
+/*MIAOW Stop */
+
+/*MIAOW Start */ // Data dump for other kernels
+	
+	char data_str[100];
+	sprintf(data_str, "data_%d.mem", kernel_config_count);
+
+	FILE* datafp = fopen(data_str, "w");
+	
+	fprintf(datafp, "@00000000\n");
+	unsigned char* buf = xcalloc(si_emu->video_mem_top, sizeof(unsigned char));
+	mem_read(si_emu->video_mem, 0, si_emu->video_mem_top, buf);
+
+	for(int mem_count = 0; mem_count < si_emu->video_mem_top; mem_count++)
+	{
+		fprintf(datafp, "%.2x\n", buf[mem_count]);
+	}
+	free(buf);
+	fclose(datafp);
+	
+	//kernel_config_count++;
+
+/*MIAOW Stop */
+
 	/* No return value */
 	return 0;
 }
-
 
 
 

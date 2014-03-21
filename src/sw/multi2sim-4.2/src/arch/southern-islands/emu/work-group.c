@@ -28,11 +28,20 @@
 #include "work-group.h"
 #include "work-item.h"
 
-
+/* MIAOW Start */
+//#define MIAOW_DEBUG
+#include <math.h>
+/* MIAOW Stop */
+	
 
 /*
  * Public Functions
  */
+
+/*MIAOW Start */
+extern int kernel_config_count;
+/*MIAOW Stop */
+
 
 struct si_work_group_t *si_work_group_create(unsigned int work_group_id, 
 	struct si_ndrange_t *ndrange)
@@ -41,6 +50,10 @@ struct si_work_group_t *si_work_group_create(unsigned int work_group_id,
 	struct si_wavefront_t *wavefront;
 	struct si_work_group_t *work_group;
 	struct si_work_item_t *work_item;
+
+	/*MIAOW Start */
+	struct opencl_si_kernel_t *kernel = ndrange->kernel;
+	/*MIAOW Stop */
 
 	int i;
 	int lid;
@@ -53,6 +66,57 @@ struct si_work_group_t *si_work_group_create(unsigned int work_group_id,
 	int work_item_gidx_start;
 	int work_item_gidy_start;
 	int work_item_gidz_start;
+
+	
+	/*MIAOW start */
+	char config_str[100];
+	sprintf(config_str, "config_%d.txt", kernel_config_count);
+	FILE* config = fopen(config_str, "w");
+	/*MIAOW stop */
+
+	/*MIAOW start*/
+	//UNIT TEST
+	
+	char unit_test_input_buf[150000];
+	char *tok = NULL;
+	char *config_read_result = NULL;
+	char vreg_str[64][2500];
+	char sreg_str[2500];
+	int num_of_threads = 0;
+
+	FILE* unit_test_config = fopen("unit_test_config.txt", "r");
+	if (unit_test_config != 0)
+	{
+
+		ndrange->local_size3[2] = 1;
+		ndrange->local_size3[1] = 1;
+		ndrange->global_size3[2] = 1;
+		ndrange->global_size3[1] = 1;
+		
+		config_read_result = fgets(unit_test_input_buf, 150000, unit_test_config);
+		if(config_read_result != NULL)
+		{
+			tok = strtok(unit_test_input_buf, ";"); //WG count
+			ndrange->group_count = atoi(tok);
+
+			tok = strtok(NULL, ";"); //total number of threads
+			num_of_threads = atoi(tok);
+
+			ndrange->global_size = atoi(tok);
+			ndrange->global_size3[0] = atoi(tok);
+			ndrange->local_size3[0] = atoi(tok);
+			ndrange->local_size = atoi(tok);
+
+		}
+	}
+
+	//WorkGroup count and thread count
+	fprintf(config,"%d;%d;\n", ndrange->group_count, ndrange->global_size);
+
+#ifdef MIAOW_DEBUG
+	fflush(config);
+#endif
+	/*MIAOW stop*/
 
 	/* Number of in work-items in work-group */
 	unsigned int work_items_per_group = ndrange->local_size3[0] * 
@@ -108,6 +172,11 @@ struct si_work_group_t *si_work_group_create(unsigned int work_group_id,
 		ndrange->group_count3[1]);
 	work_group->id = work_group_id;
 
+#ifdef MIAOW_DEBUG
+	fprintf(config, "Processing Workitems\n");
+	fflush(config);
+#endif
+
 	/* Number of work-items in work-group */
 	work_group->work_item_count = ndrange->local_size3[2] *
 		ndrange->local_size3[1] * ndrange->local_size3[0];
@@ -143,6 +212,9 @@ struct si_work_group_t *si_work_group_create(unsigned int work_group_id,
 				work_item->id_in_work_group_3d[2] = lidz;
 				work_item->id_in_work_group = lid;
 
+				/*MIAOW Start */
+				work_item->id = work_item->id_in_wavefront; 
+				/*MIAOW Stop */
 
 				/* First, last, and number of work-items 
 				 * in wavefront */
@@ -158,11 +230,12 @@ struct si_work_group_t *si_work_group_create(unsigned int work_group_id,
 				tid++;
 				lid++;
 
+
+				// Not sure if this m2s execution mask is correct
 				/* Initialize the execution mask */
 				if (work_item->id_in_wavefront < 32)
 				{
-					wavefront->sreg[SI_EXEC].as_uint |= 
-						1 << work_item->id_in_wavefront;
+					wavefront->sreg[SI_EXEC].as_uint |= 	1 << work_item->id_in_wavefront;
 				}
 				else if (work_item->id_in_wavefront < 64)
 				{
@@ -175,6 +248,7 @@ struct si_work_group_t *si_work_group_create(unsigned int work_group_id,
 						__FUNCTION__, 
 						work_item->id_in_wavefront);
 				}
+
 			}
 		}
 	}
@@ -187,6 +261,13 @@ struct si_work_group_t *si_work_group_create(unsigned int work_group_id,
 		/* Set PC */
 		wavefront->pc = 0;
 
+		//Initializing all sreg values to zero, so that config.txt doesnt change with each run
+  	/*MIAOW start*/
+		for (int sreg_init_index = 0; sreg_init_index < 256; sreg_init_index++)
+		{
+//			work_item->sreg[vreg_init_index].as_int = 0;
+		}
+
 		/* Save work-group IDs in scalar registers */
 		wavefront->sreg[ndrange->wg_id_sgpr].as_int =
 			wavefront->work_group->id_3d[0];
@@ -194,6 +275,14 @@ struct si_work_group_t *si_work_group_create(unsigned int work_group_id,
 			wavefront->work_group->id_3d[1];
 		wavefront->sreg[ndrange->wg_id_sgpr + 2].as_int =
 			wavefront->work_group->id_3d[2];
+
+		//Initializing all vreg values to zero, so that config.txt doesnt change with each run
+  	/*MIAOW start*/
+		for (int vreg_init_index = 0; vreg_init_index < 256; vreg_init_index++)
+		{
+			work_item->vreg[vreg_init_index].as_int = 0;
+		}
+  	/*MIAOW stop*/
 
 		SI_FOREACH_WORK_ITEM_IN_WAVEFRONT(wavefront, work_item_id)
 		{
@@ -289,7 +378,211 @@ struct si_work_group_t *si_work_group_create(unsigned int work_group_id,
 					user_elements[i].dataClass);
 			}
 		}
+
+	
+		//Simpler way of execution mask generation instead of iterating over each work-item
+		/*MIAOW Start */
+	/*
+		unsigned long long mask;
+		if(wavefront->work_item_count == 64)
+		{
+			mask = 0xFFFFFFFFFFFFFFFF;
+		}
+		else
+		{
+			mask = powl(2, wavefront->work_item_count) - 1;
+		}
+
+		wavefront->sreg[SI_EXEC].as_uint = (unsigned int)mask;
+		wavefront->sreg[SI_EXEC + 1].as_uint = mask>>32;
+		wavefront->sreg[SI_EXECZ].as_int = 0;
+	*/
+		/*MIAOW Stop */
+		
+		/*MIAOW start*/
+		
+		if(config_read_result != NULL)
+		{
+			if(NULL != fgets(unit_test_input_buf, 150000, unit_test_config))
+			{
+				int num_of_threads = 0;
+				int thread_init_count = 0;
+
+				tok = strtok(unit_test_input_buf, ";"); //WGID
+				tok = strtok(NULL, ";"); //WFID
+				tok = strtok(NULL, ";"); //WF count
+				tok = strtok(NULL, ";"); //work-item count
+
+				num_of_threads = atoi(tok);
+
+#ifdef MIAOW_DEBUG
+	if (num_of_threads != wavefront->work_item_count)
+	{
+	fprintf(config, "num_thread MISMATCH %d!=%d\n", num_of_threads, wavefront->work_item_count);
 	}
+	else
+	{
+	fprintf(config, "num_thread match %d=%d\n", num_of_threads, wavefront->work_item_count);
+	}
+	fflush(config);
+#endif
+
+				tok = strtok(NULL, ";"); //VREG size
+				kernel->bin_file->enc_dict_entry_southern_islands->num_vgpr_used = atoi(tok);
+
+				tok = strtok(NULL, ";"); //SREG size
+				kernel->bin_file->enc_dict_entry_southern_islands->num_sgpr_used = atoi(tok);
+
+				tok = strtok(NULL, ";"); //LDS size
+				kernel->bin_file->enc_dict_entry_southern_islands->lds_size_used = atoi(tok);
+
+				for(thread_init_count = 0; thread_init_count < num_of_threads; thread_init_count++)
+				{
+					tok = strtok(NULL, ";");
+					strcpy((char*)vreg_str[thread_init_count], tok);
+					assert(vreg_str[thread_init_count][0] == 'V');
+				}
+
+				tok = strtok(NULL, ";");
+				strcpy((char*)sreg_str, tok);
+				assert(sreg_str[0] == 'S');
+
+				tok = strtok(NULL, ";"); //PC
+			}
+
+#ifdef MIAOW_DEBUG
+	fprintf(config, "Initializing VREG \n");
+	fflush(config);
+#endif
+
+			//VREG value init
+			int wi_init_count = 0;
+			for (wi_init_count = 0; wi_init_count < wavefront->work_item_count; wi_init_count++)
+			{
+				if (wavefront->work_items != NULL)
+				{
+					int vreg_init_count = 0;
+					char* reg_tok;
+					struct si_work_item_t *wi = wavefront->work_items[wi_init_count];
+
+					reg_tok = strtok(vreg_str[wi_init_count], ":");
+					reg_tok = strtok(NULL, "=");
+
+					for(vreg_init_count = 0; reg_tok != NULL; vreg_init_count++)
+					{
+						int vreg_index = atoi(reg_tok);
+						reg_tok = strtok(NULL, ",");
+						assert(reg_tok != NULL);
+						wi->vreg[vreg_index].as_int = atoi(reg_tok);
+						reg_tok = strtok(NULL, "=");
+					}
+
+					// make sure that all reg values were read
+					assert(reg_tok == NULL);
+				}
+			}
+
+#ifdef MIAOW_DEBUG
+	fprintf(config, "Initializing SREG \n");
+	fflush(config);
+#endif
+
+#ifdef MIAOW_DEBUG
+	fprintf(config, "mask: %lld \n", mask);
+	fprintf(config, "MASK HI: %u \n", wavefront->sreg[SI_EXEC + 1].as_uint);
+	fprintf(config, "MASK LO: %u \n", wavefront->sreg[SI_EXEC].as_uint);
+	fflush(config);
+#endif
+
+	//SREG value init
+			int sreg_init_count = 0;
+			char* sreg_tok;
+			sreg_tok = strtok(sreg_str, ":");
+			sreg_tok = strtok(NULL, "=");
+			
+			for(sreg_init_count=0; sreg_tok != NULL; sreg_init_count++)
+			{
+				int sreg_index = atoi(sreg_tok);
+				sreg_tok = strtok(NULL, ",");
+				assert(sreg_tok != NULL);
+				wavefront->sreg[sreg_index].as_int = atoi(sreg_tok);
+				sreg_tok = strtok(NULL, "=");
+			}
+			// make sure that all reg values were read
+			assert(sreg_tok == NULL);
+		}
+*/		
+	/*MIAOW stop*/ // All the unit_test configuration data is read here
+
+	/*MIAOW Start*/
+	//Print the configuration here
+
+	//WorGroup ID
+	fprintf(config, "%d:", wavefront->work_group->id);
+
+	//Wavefront ID
+	fprintf(config, "%d:", wavefront->id);
+
+	//WorGroup Count
+	fprintf(config, "%d:", wavefront->work_group->wavefront_count);
+
+	//Work-Item Count
+	fprintf(config, "%d:", wavefront->work_item_count);
+
+	//VGPR Size, SGPR size, LDS size
+	fprintf(config, "%d:", kernel->bin_file->enc_dict_entry_southern_islands->num_vgpr_used);
+	fprintf(config, "%d:", kernel->bin_file->enc_dict_entry_southern_islands->num_sgpr_used);
+	fprintf(config, "%d:", kernel->bin_file->enc_dict_entry_southern_islands->lds_size_used);
+	
+#ifdef MIAOW_DEBUG
+	fflush(config);
+#endif
+
+		int wi_count = 0;
+		for (wi_count = 0; wi_count < wavefront->work_item_count; wi_count++)
+		{
+			//VGPR initial values
+			if (wavefront->work_items != NULL)
+			{
+				struct si_work_item_t* wi = wavefront->work_items[wi_count];
+
+				fprintf(config,"V:");
+				int vgpr_count = 0;
+				for (vgpr_count = 0; vgpr_count < (kernel->bin_file->enc_dict_entry_southern_islands->num_vgpr_used - 1); vgpr_count++)
+				{
+					//All VGPR values except the last
+					fprintf(config,"%d=%d,", vgpr_count, wi->vreg[vgpr_count]);
+				}
+				//Last SGPR value
+				fprintf(config,"%d=%d;", vgpr_count, wi->vreg[vgpr_count]);
+			}
+		}
+
+		//SGPR initial values
+		fprintf(config,"S:");
+		int sgpr_count = 0;
+	
+		for (sgpr_count = 0; sgpr_count < (kernel->bin_file->enc_dict_entry_southern_islands->num_sgpr_used - 1); sgpr_count++)
+		{
+			//All SGPR values except the last
+			fprintf(config,"%d=%d,", sgpr_count, wavefront->sreg[sgpr_count]);
+		}
+		
+		//Last SGPR value
+		fprintf(config,"%d=%d;", sgpr_count, wavefront->sreg[sgpr_count]);
+
+		//PC start
+		//fprintf(config,"%d",wavefront->wavefront_pool_start);
+		fprintf(config, "0");
+		fprintf(config,"\n");
+		/*MIAOW stop*/
+	}
+	
+	fclose(config); //Configuration file is printed
+
+	kernel_config_count++;
+
+	/*MIAOW stop */
 
 	/* Statistics */
 	si_emu->work_group_count++;
