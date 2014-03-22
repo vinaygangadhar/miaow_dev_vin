@@ -668,6 +668,7 @@ void si_ndrange_setup_work_items(struct si_ndrange_t *ndrange)
 		kernel->group_count3[1], kernel->group_count3[2]);
 	si_isa_debug("wavefront_count = %d\n", ndrange->wavefront_count);
 	si_isa_debug("wavefronts_per_work_group = %d\n", ndrange->wavefronts_per_work_group);
+
 	si_isa_debug(" tid tid2 tid1 tid0   gid gid2 gid1 gid0   lid lid2 lid1 lid0  wavefront            work-group\n");
 	for (tid = 0; tid < ndrange->work_item_count; tid++)
 	{
