@@ -40,6 +40,7 @@
 
 /*MIAOW Start */
 extern int kernel_config_count;
+extern FILE* config;
 /*MIAOW Stop */
 
 
@@ -67,11 +68,12 @@ struct si_work_group_t *si_work_group_create(unsigned int work_group_id,
 	int work_item_gidy_start;
 	int work_item_gidz_start;
 
-	
 	/*MIAOW start */
+/*
 	char config_str[100];
 	sprintf(config_str, "config_%d.txt", kernel_config_count);
 	FILE* config = fopen(config_str, "w");
+	*/
 	/*MIAOW stop */
 
 	/*MIAOW start*/
@@ -511,28 +513,28 @@ struct si_work_group_t *si_work_group_create(unsigned int work_group_id,
 			// make sure that all reg values were read
 			assert(sreg_tok == NULL);
 		}
-*/		
-	/*MIAOW stop*/ // All the unit_test configuration data is read here
+	
+		/*MIAOW stop*/ // All the unit_test configuration data is read here
 
 	/*MIAOW Start*/
 	//Print the configuration here
 
 	//WorGroup ID
-	fprintf(config, "%d:", wavefront->work_group->id);
+	fprintf(config, "%d;", wavefront->work_group->id);
 
 	//Wavefront ID
-	fprintf(config, "%d:", wavefront->id);
+	fprintf(config, "%d;", wavefront->id);
 
 	//WorGroup Count
-	fprintf(config, "%d:", wavefront->work_group->wavefront_count);
+	fprintf(config, "%d;", wavefront->work_group->wavefront_count);
 
 	//Work-Item Count
-	fprintf(config, "%d:", wavefront->work_item_count);
+	fprintf(config, "%d;", wavefront->work_item_count);
 
 	//VGPR Size, SGPR size, LDS size
-	fprintf(config, "%d:", kernel->bin_file->enc_dict_entry_southern_islands->num_vgpr_used);
-	fprintf(config, "%d:", kernel->bin_file->enc_dict_entry_southern_islands->num_sgpr_used);
-	fprintf(config, "%d:", kernel->bin_file->enc_dict_entry_southern_islands->lds_size_used);
+	fprintf(config, "%d;", kernel->bin_file->enc_dict_entry_southern_islands->num_vgpr_used);
+	fprintf(config, "%d;", kernel->bin_file->enc_dict_entry_southern_islands->num_sgpr_used);
+	fprintf(config, "%d;", kernel->bin_file->enc_dict_entry_southern_islands->lds_size_used);
 	
 #ifdef MIAOW_DEBUG
 	fflush(config);
@@ -576,11 +578,12 @@ struct si_work_group_t *si_work_group_create(unsigned int work_group_id,
 		fprintf(config, "0");
 		fprintf(config,"\n");
 		/*MIAOW stop*/
+	
 	}
 	
-	fclose(config); //Configuration file is printed
+	//fclose(config); //Configuration file is printed
 
-	kernel_config_count++;
+	//kernel_config_count++;
 
 	/*MIAOW stop */
 

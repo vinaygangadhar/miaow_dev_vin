@@ -1176,9 +1176,18 @@ void opencl_si_kernel_debug_ndrange_state(struct opencl_si_kernel_t *kernel,
 {
         int i;
 
-	struct si_buffer_desc_t buffer_desc;
-
-        si_isa_debug("\n");
+			/* MIAOW Start */
+			/* Debug */
+			si_isa_debug("local_size = %d (%d,%d,%d)\n", ndrange->local_size, ndrange->local_size3[0], ndrange->local_size3[1], ndrange->local_size3[2]);
+			si_isa_debug("global_size = %d (%d,%d,%d)\n", ndrange->global_size, ndrange->global_size3[0], ndrange->global_size3[1], ndrange->global_size3[2]);
+			si_isa_debug("group_count = %d (%d,%d,%d)\n", ndrange->group_count, ndrange->group_count3[0], ndrange->group_count3[1], ndrange->group_count3[2]);
+			si_isa_debug("total_wavefront_count = %d\n", ndrange->global_size/64);
+			 
+			/* MIAOW Stop */
+	
+			struct si_buffer_desc_t buffer_desc;
+			
+				si_isa_debug("\n");
         si_isa_debug("================ Initialization Summary ================"
                 "\n");
         si_isa_debug("\n");

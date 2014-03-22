@@ -91,6 +91,22 @@ void si_wavefront_sreg_init(struct si_wavefront_t *wavefront)
 	sreg[245].as_float = -2.0;
 	sreg[246].as_float = 4.0;
 	sreg[247].as_float = -4.0;
+
+	//Initializing sreg values to zero, so that config.txt doesnt change with each run
+	/*MIAOW start*/
+	for(int i = 0; i < 128; i++)
+	{
+		sreg[i].as_int = 0;
+	}
+	
+  sreg[SI_EXEC].as_int = 0xFFFFFFFF;
+  sreg[SI_EXEC + 1].as_int = 0xFFFFFFFF;
+  sreg[SI_EXECZ].as_int = 0;
+
+  sreg[SI_VCCZ].as_int = 1;
+  sreg[SI_SCC].as_int = 0;
+ 
+	/*MIAOW stop*/
 }
 
 
@@ -107,6 +123,11 @@ void si_wavefront_free(struct si_wavefront_t *wavefront)
 
 	wavefront = NULL;
 }
+
+
+/*MIAOW Start */
+extern int kernel_config_count;
+/*MIAOW Stop */
 
 /* Execute the next instruction for the wavefront */
 void si_wavefront_execute(struct si_wavefront_t *wavefront)
@@ -154,6 +175,11 @@ void si_wavefront_execute(struct si_wavefront_t *wavefront)
 	/* Set the current instruction */
 	inst = &wavefront->inst;
 
+	/*MIAOW start - Print the debug message to stdout, stderr  to the open file stream*/
+	si_isa_debug("\n###%d_%d_%d", kernel_config_count - 1, wavefront->work_group->id, wavefront->id, wavefront->pc, wavefront->inst_size);
+	/*MIAOW stop*/
+
+		
 	/* Execute the current instruction */
 	switch (inst->info->fmt)
 	{

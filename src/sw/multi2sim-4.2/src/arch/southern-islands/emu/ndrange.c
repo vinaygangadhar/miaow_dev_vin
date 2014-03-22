@@ -73,6 +73,10 @@ void si_ndrange_setup_size(struct si_ndrange_t *ndrange,
 {
 	int i;
 
+	/*MIAOW Start*/
+	struct opencl_si_kernel_t *kernel = ndrange->kernel;
+	/*MIAOW Stop */
+
 	/* Default value */
 	ndrange->global_size3[1] = 1;
 	ndrange->global_size3[2] = 1;
@@ -161,7 +165,45 @@ void si_ndrange_setup_size(struct si_ndrange_t *ndrange,
 		fclose(unit_test_config);
 	}
 
+	FILE* unit_test_instr = fopen("unit_test_instr.mem", "r");
+	if(unit_test_instr != 0)
+	{
+		unsigned char instr_buf[200];
+		int input_instr_count = 0; 
+										           
+		fgets((char*)instr_buf, 200, unit_test_instr); // address
+		unsigned char* buf_ptr = (unsigned char*)kernel->bin_file->enc_dict_entry_southern_islands->sec_text_buffer.ptr; //Kernel Instruction pointer
+
+		while(fgets((char*)instr_buf, 200, unit_test_instr) != NULL)
+		{ 
+			instr_buf[2] = '\0'; //Interested only in first hex byte
+																	     
+			unsigned char current_instr = (unsigned char)strtol((char*)instr_buf, 0 , 16); 
+			buf_ptr[input_instr_count++] = current_instr;
+	  }    
+																    
+		kernel->bin_file->enc_dict_entry_southern_islands->sec_text_buffer.size = input_instr_count;
+
+		fclose(unit_test_instr);
+
+	}
 	/*MIAOW Stop*/
+
+	/*MIAOW Start*/ 
+	char instr_str[100];
+	sprintf(instr_str, "instr_%d.mem", kernel_config_count);
+	
+	FILE* instr = fopen(instr_str, "w");
+	//fprintf(instr, "@%.8x\n", kernel->bin_file->enc_dict_entry_southern_islands->sec_text_buffer.ptr);
+  fprintf(instr, "@0\n");
+  for (int instr_count = 0; instr_count < kernel->bin_file->enc_dict_entry_southern_islands->sec_text_buffer.size; instr_count++)
+  {
+		fprintf(instr, "%.2x\n", ((unsigned char*)kernel->bin_file->enc_dict_entry_southern_islands->sec_text_buffer.ptr)[instr_count]);
+	}
+					
+	fclose(instr);
+	
+	/*MIAOW stop */
 
 }
 

@@ -1308,6 +1308,7 @@ void si_isa_S_NOT_B32_impl(struct si_work_item_t *work_item,
 	if (debug_status(si_isa_debug_category))
 	{
 		si_isa_debug("S%u<=(0x%x) ", INST.sdst, s0.as_uint);
+		si_isa_debug("scc<=(%d) ", nonzero.as_uint); //MIAOW
 	}
 }
 #undef INST
